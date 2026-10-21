@@ -1,0 +1,575 @@
+{
+  "recorded_utc": "2026-10-16T05:39:44.270382+00:00",
+  "protocol_sha256": "98ea656be3f3a4dbddc6b1b7b62761c4e2fc169545604df658a67abefde05903",
+  "file": "speech_pipeline/corpora.py",
+  "old_sha256": "848c56a0fab84766fefdf86ac87c65c57c5ac8e26197027a8d7879a96936251c",
+  "scope": "Engineering-only CLAN subprocess launch optimization: absolute source path already determines output location; omit cwd and use posix_spawn-compatible close_fds=False. Same binary/argv/input/PTY/parser, no model/grid/cohort/reference-policy changes. Protected model source remains unchanged.",
+  "preflight": "clan_launch_parity_preflight.json: all native values exact on four original-eval source examples and two synthetic predicted cases.",
+  "resume": "Interrupt only after saved epoch6 checkpoint, before fold2 selection freeze. Restore optimizer/scheduler/RNG and redo incomplete calibration. Completed folds remain frozen.",
+  "status": "passed",
+  "new_sha256": "c750d09365598bded13effcabd187661f16561361eb5eb1ff7f3d7491e943d3c",
+  "full_original_eval_sections": 139,
+  "all_native_values_exact": true,
+  "parity_seconds": 5.992720416048542,
+  "checks": [
+    {
+      "key": "ocsc/transcripts/4/4006.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4006.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4006.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4008.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4008.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4008.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4013.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4013.cha#section6",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4013.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4016.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4016.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/4/4016.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5001.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5001.cha#section6",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5001.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5009.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5009.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5023.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5023.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5023.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5028.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5028.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5028.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5030.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5030.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5030.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5032.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5032.cha#section6",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5032.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5034.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5034.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5034.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5050.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5050.cha#section6",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/5/5050.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6006.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6006.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6006.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6008.cha#section4",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6008.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6008.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6010.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6010.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6010.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6011.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6011.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6013.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6013.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6013.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6015.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6015.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6021.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6021.cha#section6",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6025.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6025.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6026.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6026.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6026.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6027.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6027.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6027.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6028.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6028.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6035.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6035.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6035.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6045.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6045.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6045.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6056.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6056.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6056.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/6/6057.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7019.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7019.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7019.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7021.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7021.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7023.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7023.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7030.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7030.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7030.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7034.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7034.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7034.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7043.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7043.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7043.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7045.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7045.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7045.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7052.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7052.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/7/7052.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8002.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8002.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8002.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8004.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8004.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8004.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8005.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8005.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8005.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8008.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8008.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8008.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8023.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8023.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8023.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8026.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8026.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8026.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8047.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8047.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/8/8047.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/9/9016.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/9/9016.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/9/9016.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/9/9042.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/9/9042.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/9/9042.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/9/9043.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/9/9043.cha#section7",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "ocsc/transcripts/9/9043.cha#section8",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2006.cha#section2",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2006.cha#section3",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2006.cha#section4",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2006.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2007.cha#section2",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2007.cha#section3",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2007.cha#section4",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2007.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2013.cha#section2",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2013.cha#section3",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2013.cha#section4",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2013.cha#section5",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2023.cha#section2",
+      "all_native_values_exact": true
+    },
+    {
+      "key": "nyu_emerson/transcripts/2023.cha#section3",
+      "all_native_values_exact": true
+    }
+  ],
+  "restart_utc": "2026-10-16T05:40:23.154580+00:00",
+  "resume_checkpoint_sha256": "0334bc453e2b23447fc182afd4bd451fb9183ebe130e09a9c4058000404b30a3",
+  "regression_tests": "119 passed; clan_spawn_regression_tests.log"
+}

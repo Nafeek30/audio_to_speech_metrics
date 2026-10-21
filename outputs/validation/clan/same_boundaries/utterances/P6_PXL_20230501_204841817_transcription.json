@@ -1,0 +1,2880 @@
+{
+  "patient_id": "P6",
+  "uncorrected_source": "PXL_20230501_204841817_transcription.xlsx",
+  "corrected_source": "PXL_20230501_204841817_transcription_corrected.txt",
+  "target_speaker": "S02",
+  "chat_filename": "P6_PXL_20230501_204841817_transcription.cha",
+  "method": "conversation_clause_predictions_v5",
+  "raw_sha256": "600ff907bdcb70b7c43bd65e94b7425636ea4b640a27bfd7e2e6ebe16dc81247",
+  "corrected_sha256": "68c9c09d06b168876a5e83d28e731bafb2ce6ae1ec7ae5735ce9d80c1ff1bf34",
+  "normalized_corrected_text": "I don't know. Yes Mine was a unicorn. And strawberry with pink icing. And unicorns and rainbows on it. It looked like a shooting star. Yeah. Yeah. Mom, have I had cake on a stick? It's like a cake on a stick. No. I really like ice cream. No. I did have ice cream before. At Culvers. Vanilla with sprinkles. My brother got the same thing. A cup. Charlie had his in a cup too. Charlie had his with vanilla and sprinkles in a cup. Mhmm. I usually eat cheeseburgers with no mustard. I don't like it. I love Culvers because it tastes so good. Yeah. I don't anymore. No. But Charlie does. Yeah. I think ketchup is too tomato-y. Yeah. I like having the flavor of the day. Sometimes, but sometimes I don't like it if it has chocolate. Yeah. Mint? I love mint. No. No. No. Yeah, I have them in the pot. But I couldn't put them in the garden. On the tab So, we like there have flowers, and, we have basil and lavender. I like all of the types. I grow mixed flowers. And Charlie grows orange flowers. I grow like flowers. Yeah. Yeah. I don't know. Maybe my mom will just use my... Well, my mom does. She told that one was bell peppers. And one with tomatoes. I like tomatoes. I like to eat them in things, I like to eat them plain sometimes. Yeah. Tomatoes. Ranch dressing. Yeah. No. I like to use the cheese stick thing. I know it doesn't really work. But I use it. I use it as my pizza dip. Just the sauce. My favorite pizza is pepperoni. Pepperoni. It's my favorite. No, mom. I'm not a mushroom girl. Not mushroom girl. I like brocolli and snap peas, tomatoes. What? Anything I like are the ones that I just eat them raw. I like eating lots of different snacks.",
+  "utterances": [
+    {
+      "utterance_id": 1,
+      "text": "I don't know.",
+      "turn_id": 1,
+      "source_rows": [
+        3
+      ],
+      "corrected_char_start": 0,
+      "corrected_char_end": 13,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "know"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "know"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 2,
+      "text": "Yes",
+      "turn_id": 1,
+      "source_rows": [
+        3
+      ],
+      "corrected_char_start": 14,
+      "corrected_char_end": 17,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yes"
+        ],
+        "counted_words": [
+          "Yes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 3,
+      "text": "Mine was a unicorn.",
+      "turn_id": 2,
+      "source_rows": [
+        10,
+        11,
+        12
+      ],
+      "corrected_char_start": 18,
+      "corrected_char_end": 37,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Mine",
+          "was",
+          "a",
+          "unicorn"
+        ],
+        "counted_words": [
+          "Mine",
+          "was",
+          "a",
+          "unicorn"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 4,
+      "text": "And strawberry with pink icing.",
+      "turn_id": 2,
+      "source_rows": [
+        10,
+        11,
+        12
+      ],
+      "corrected_char_start": 38,
+      "corrected_char_end": 69,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "strawberry",
+          "with",
+          "pink",
+          "icing"
+        ],
+        "counted_words": [
+          "And",
+          "strawberry",
+          "with",
+          "pink",
+          "icing"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 5,
+      "text": "And unicorns and rainbows on it.",
+      "turn_id": 2,
+      "source_rows": [
+        10,
+        11,
+        12
+      ],
+      "corrected_char_start": 70,
+      "corrected_char_end": 102,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "unicorns",
+          "and",
+          "rainbows",
+          "on",
+          "it"
+        ],
+        "counted_words": [
+          "And",
+          "unicorns",
+          "and",
+          "rainbows",
+          "on",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 6,
+      "text": "It looked like a shooting star.",
+      "turn_id": 2,
+      "source_rows": [
+        10,
+        11,
+        12
+      ],
+      "corrected_char_start": 103,
+      "corrected_char_end": 134,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "It",
+          "looked",
+          "like",
+          "a",
+          "shooting",
+          "star"
+        ],
+        "counted_words": [
+          "It",
+          "looked",
+          "like",
+          "a",
+          "shooting",
+          "star"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 7,
+      "text": "Yeah.",
+      "turn_id": 2,
+      "source_rows": [
+        10,
+        11,
+        12
+      ],
+      "corrected_char_start": 135,
+      "corrected_char_end": 140,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 8,
+      "text": "Yeah.",
+      "turn_id": 2,
+      "source_rows": [
+        10,
+        11,
+        12
+      ],
+      "corrected_char_start": 141,
+      "corrected_char_end": 146,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 9,
+      "text": "Mom, have I had cake on a stick?",
+      "turn_id": 2,
+      "source_rows": [
+        10,
+        11,
+        12
+      ],
+      "corrected_char_start": 147,
+      "corrected_char_end": 179,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Mom",
+          "have",
+          "I",
+          "had",
+          "cake",
+          "on",
+          "a",
+          "stick"
+        ],
+        "counted_words": [
+          "Mom",
+          "have",
+          "I",
+          "had",
+          "cake",
+          "on",
+          "a",
+          "stick"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 10,
+      "text": "It's like a cake on a stick.",
+      "turn_id": 2,
+      "source_rows": [
+        10,
+        11,
+        12
+      ],
+      "corrected_char_start": 180,
+      "corrected_char_end": 208,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "It's",
+          "like",
+          "a",
+          "cake",
+          "on",
+          "a",
+          "stick"
+        ],
+        "counted_words": [
+          "It's",
+          "like",
+          "a",
+          "cake",
+          "on",
+          "a",
+          "stick"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 11,
+      "text": "No.",
+      "turn_id": 2,
+      "source_rows": [
+        10,
+        11,
+        12
+      ],
+      "corrected_char_start": 209,
+      "corrected_char_end": 212,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "No"
+        ],
+        "counted_words": [
+          "No"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 12,
+      "text": "I really like ice cream.",
+      "turn_id": 2,
+      "source_rows": [
+        10,
+        11,
+        12
+      ],
+      "corrected_char_start": 213,
+      "corrected_char_end": 237,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "really",
+          "like",
+          "ice",
+          "cream"
+        ],
+        "counted_words": [
+          "I",
+          "really",
+          "like",
+          "ice",
+          "cream"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 13,
+      "text": "No. I did have ice cream before.",
+      "turn_id": 3,
+      "source_rows": [
+        23,
+        24,
+        25
+      ],
+      "corrected_char_start": 238,
+      "corrected_char_end": 270,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "No",
+          "I",
+          "did",
+          "have",
+          "ice",
+          "cream",
+          "before"
+        ],
+        "counted_words": [
+          "No",
+          "I",
+          "did",
+          "have",
+          "ice",
+          "cream",
+          "before"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 14,
+      "text": "At Culvers.",
+      "turn_id": 3,
+      "source_rows": [
+        23,
+        24,
+        25
+      ],
+      "corrected_char_start": 271,
+      "corrected_char_end": 282,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "At",
+          "Culvers"
+        ],
+        "counted_words": [
+          "At",
+          "Culvers"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 15,
+      "text": "Vanilla with sprinkles.",
+      "turn_id": 4,
+      "source_rows": [
+        27,
+        28
+      ],
+      "corrected_char_start": 283,
+      "corrected_char_end": 306,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Vanilla",
+          "with",
+          "sprinkles"
+        ],
+        "counted_words": [
+          "Vanilla",
+          "with",
+          "sprinkles"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 16,
+      "text": "My brother got the same thing.",
+      "turn_id": 4,
+      "source_rows": [
+        27,
+        28
+      ],
+      "corrected_char_start": 307,
+      "corrected_char_end": 337,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "My",
+          "brother",
+          "got",
+          "the",
+          "same",
+          "thing"
+        ],
+        "counted_words": [
+          "My",
+          "brother",
+          "got",
+          "the",
+          "same",
+          "thing"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 17,
+      "text": "A cup.",
+      "turn_id": 4,
+      "source_rows": [
+        27,
+        28
+      ],
+      "corrected_char_start": 338,
+      "corrected_char_end": 344,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "A",
+          "cup"
+        ],
+        "counted_words": [
+          "A",
+          "cup"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 18,
+      "text": "Charlie had his in a cup too.",
+      "turn_id": 4,
+      "source_rows": [
+        27,
+        28
+      ],
+      "corrected_char_start": 345,
+      "corrected_char_end": 374,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Charlie",
+          "had",
+          "his",
+          "in",
+          "a",
+          "cup",
+          "too"
+        ],
+        "counted_words": [
+          "Charlie",
+          "had",
+          "his",
+          "in",
+          "a",
+          "cup",
+          "too"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 19,
+      "text": "Charlie had his with vanilla and sprinkles in a cup.",
+      "turn_id": 4,
+      "source_rows": [
+        27,
+        28
+      ],
+      "corrected_char_start": 375,
+      "corrected_char_end": 427,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Charlie",
+          "had",
+          "his",
+          "with",
+          "vanilla",
+          "and",
+          "sprinkles",
+          "in",
+          "a",
+          "cup"
+        ],
+        "counted_words": [
+          "Charlie",
+          "had",
+          "his",
+          "with",
+          "vanilla",
+          "and",
+          "sprinkles",
+          "in",
+          "a",
+          "cup"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 20,
+      "text": "Mhmm.",
+      "turn_id": 4,
+      "source_rows": [
+        27,
+        28
+      ],
+      "corrected_char_start": 428,
+      "corrected_char_end": 433,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Mhmm"
+        ],
+        "counted_words": [],
+        "excluded_fillers": [
+          "Mhmm"
+        ],
+        "include_mlu": false,
+        "exclusion_reason": "no_eligible_words",
+        "word_count": null,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 21,
+      "text": "I usually eat cheeseburgers with no mustard.",
+      "turn_id": 4,
+      "source_rows": [
+        27,
+        28
+      ],
+      "corrected_char_start": 434,
+      "corrected_char_end": 478,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "usually",
+          "eat",
+          "cheeseburgers",
+          "with",
+          "no",
+          "mustard"
+        ],
+        "counted_words": [
+          "I",
+          "usually",
+          "eat",
+          "cheeseburgers",
+          "with",
+          "no",
+          "mustard"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 22,
+      "text": "I don't like it.",
+      "turn_id": 5,
+      "source_rows": [
+        32
+      ],
+      "corrected_char_start": 479,
+      "corrected_char_end": 495,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "like",
+          "it"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "like",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 23,
+      "text": "I love Culvers because it tastes so good.",
+      "turn_id": 6,
+      "source_rows": [
+        37
+      ],
+      "corrected_char_start": 496,
+      "corrected_char_end": 537,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "love",
+          "Culvers",
+          "because",
+          "it",
+          "tastes",
+          "so",
+          "good"
+        ],
+        "counted_words": [
+          "I",
+          "love",
+          "Culvers",
+          "because",
+          "it",
+          "tastes",
+          "so",
+          "good"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 24,
+      "text": "Yeah.",
+      "turn_id": 6,
+      "source_rows": [
+        37
+      ],
+      "corrected_char_start": 538,
+      "corrected_char_end": 543,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 25,
+      "text": "I don't anymore.",
+      "turn_id": 6,
+      "source_rows": [
+        37
+      ],
+      "corrected_char_start": 544,
+      "corrected_char_end": 560,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "anymore"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "anymore"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 26,
+      "text": "No.",
+      "turn_id": 7,
+      "source_rows": [
+        45,
+        46
+      ],
+      "corrected_char_start": 561,
+      "corrected_char_end": 564,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "No"
+        ],
+        "counted_words": [
+          "No"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 27,
+      "text": "But Charlie does.",
+      "turn_id": 7,
+      "source_rows": [
+        45,
+        46
+      ],
+      "corrected_char_start": 565,
+      "corrected_char_end": 582,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "Charlie",
+          "does"
+        ],
+        "counted_words": [
+          "But",
+          "Charlie",
+          "does"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 28,
+      "text": "Yeah.",
+      "turn_id": 8,
+      "source_rows": [
+        48,
+        49
+      ],
+      "corrected_char_start": 583,
+      "corrected_char_end": 588,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 29,
+      "text": "I think ketchup is too tomato-y.",
+      "turn_id": 8,
+      "source_rows": [
+        48,
+        49
+      ],
+      "corrected_char_start": 589,
+      "corrected_char_end": 621,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "think",
+          "ketchup",
+          "is",
+          "too",
+          "tomato-y"
+        ],
+        "counted_words": [
+          "I",
+          "think",
+          "ketchup",
+          "is",
+          "too",
+          "tomato-y"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "hyphen_or_fragment_word_grouping_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 30,
+      "text": "Yeah.",
+      "turn_id": 8,
+      "source_rows": [
+        48,
+        49
+      ],
+      "corrected_char_start": 622,
+      "corrected_char_end": 627,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 31,
+      "text": "I like having the flavor of the day.",
+      "turn_id": 9,
+      "source_rows": [
+        57
+      ],
+      "corrected_char_start": 628,
+      "corrected_char_end": 664,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "having",
+          "the",
+          "flavor",
+          "of",
+          "the",
+          "day"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "having",
+          "the",
+          "flavor",
+          "of",
+          "the",
+          "day"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 32,
+      "text": "Sometimes,",
+      "turn_id": 9,
+      "source_rows": [
+        57
+      ],
+      "corrected_char_start": 665,
+      "corrected_char_end": 675,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Sometimes"
+        ],
+        "counted_words": [
+          "Sometimes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 33,
+      "text": "but sometimes I don't like it if it has chocolate.",
+      "turn_id": 9,
+      "source_rows": [
+        57
+      ],
+      "corrected_char_start": 676,
+      "corrected_char_end": 726,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "sometimes",
+          "I",
+          "don't",
+          "like",
+          "it",
+          "if",
+          "it",
+          "has",
+          "chocolate"
+        ],
+        "counted_words": [
+          "but",
+          "sometimes",
+          "I",
+          "don't",
+          "like",
+          "it",
+          "if",
+          "it",
+          "has",
+          "chocolate"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 34,
+      "text": "Yeah.",
+      "turn_id": 10,
+      "source_rows": [
+        59
+      ],
+      "corrected_char_start": 727,
+      "corrected_char_end": 732,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 35,
+      "text": "Mint?",
+      "turn_id": 11,
+      "source_rows": [
+        70,
+        71
+      ],
+      "corrected_char_start": 733,
+      "corrected_char_end": 738,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Mint"
+        ],
+        "counted_words": [
+          "Mint"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 36,
+      "text": "I love mint.",
+      "turn_id": 11,
+      "source_rows": [
+        70,
+        71
+      ],
+      "corrected_char_start": 739,
+      "corrected_char_end": 751,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "love",
+          "mint"
+        ],
+        "counted_words": [
+          "I",
+          "love",
+          "mint"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 37,
+      "text": "No.",
+      "turn_id": 11,
+      "source_rows": [
+        70,
+        71
+      ],
+      "corrected_char_start": 752,
+      "corrected_char_end": 755,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "No"
+        ],
+        "counted_words": [
+          "No"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 38,
+      "text": "No.",
+      "turn_id": 11,
+      "source_rows": [
+        70,
+        71
+      ],
+      "corrected_char_start": 756,
+      "corrected_char_end": 759,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "No"
+        ],
+        "counted_words": [
+          "No"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 39,
+      "text": "No.",
+      "turn_id": 11,
+      "source_rows": [
+        70,
+        71
+      ],
+      "corrected_char_start": 760,
+      "corrected_char_end": 763,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "No"
+        ],
+        "counted_words": [
+          "No"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 40,
+      "text": "Yeah, I have them in the pot.",
+      "turn_id": 11,
+      "source_rows": [
+        70,
+        71
+      ],
+      "corrected_char_start": 764,
+      "corrected_char_end": 793,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "I",
+          "have",
+          "them",
+          "in",
+          "the",
+          "pot"
+        ],
+        "counted_words": [
+          "Yeah",
+          "I",
+          "have",
+          "them",
+          "in",
+          "the",
+          "pot"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 41,
+      "text": "But I couldn't put them in the garden.",
+      "turn_id": 11,
+      "source_rows": [
+        70,
+        71
+      ],
+      "corrected_char_start": 794,
+      "corrected_char_end": 832,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "I",
+          "couldn't",
+          "put",
+          "them",
+          "in",
+          "the",
+          "garden"
+        ],
+        "counted_words": [
+          "But",
+          "I",
+          "couldn't",
+          "put",
+          "them",
+          "in",
+          "the",
+          "garden"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 42,
+      "text": "On the tab",
+      "turn_id": 11,
+      "source_rows": [
+        70,
+        71
+      ],
+      "corrected_char_start": 833,
+      "corrected_char_end": 843,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "On",
+          "the",
+          "tab"
+        ],
+        "counted_words": [
+          "On",
+          "the",
+          "tab"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 43,
+      "text": "So, we like there have flowers, and, we have basil and lavender.",
+      "turn_id": 12,
+      "source_rows": [
+        73
+      ],
+      "corrected_char_start": 844,
+      "corrected_char_end": 908,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "So",
+          "we",
+          "like",
+          "there",
+          "have",
+          "flowers",
+          "and",
+          "we",
+          "have",
+          "basil",
+          "and",
+          "lavender"
+        ],
+        "counted_words": [
+          "So",
+          "we",
+          "like",
+          "there",
+          "have",
+          "flowers",
+          "and",
+          "we",
+          "have",
+          "basil",
+          "and",
+          "lavender"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 44,
+      "text": "I like all of the types.",
+      "turn_id": 13,
+      "source_rows": [
+        75
+      ],
+      "corrected_char_start": 909,
+      "corrected_char_end": 933,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "all",
+          "of",
+          "the",
+          "types"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "all",
+          "of",
+          "the",
+          "types"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 45,
+      "text": "I grow mixed flowers.",
+      "turn_id": 14,
+      "source_rows": [
+        78,
+        79
+      ],
+      "corrected_char_start": 934,
+      "corrected_char_end": 955,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "grow",
+          "mixed",
+          "flowers"
+        ],
+        "counted_words": [
+          "I",
+          "grow",
+          "mixed",
+          "flowers"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 46,
+      "text": "And Charlie grows orange flowers.",
+      "turn_id": 14,
+      "source_rows": [
+        78,
+        79
+      ],
+      "corrected_char_start": 956,
+      "corrected_char_end": 989,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "Charlie",
+          "grows",
+          "orange",
+          "flowers"
+        ],
+        "counted_words": [
+          "And",
+          "Charlie",
+          "grows",
+          "orange",
+          "flowers"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 47,
+      "text": "I grow like flowers.",
+      "turn_id": 15,
+      "source_rows": [
+        81
+      ],
+      "corrected_char_start": 990,
+      "corrected_char_end": 1010,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "grow",
+          "like",
+          "flowers"
+        ],
+        "counted_words": [
+          "I",
+          "grow",
+          "like",
+          "flowers"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 48,
+      "text": "Yeah.",
+      "turn_id": 15,
+      "source_rows": [
+        81
+      ],
+      "corrected_char_start": 1011,
+      "corrected_char_end": 1016,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 49,
+      "text": "Yeah.",
+      "turn_id": 16,
+      "source_rows": [
+        87
+      ],
+      "corrected_char_start": 1017,
+      "corrected_char_end": 1022,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 50,
+      "text": "I don't know.",
+      "turn_id": 17,
+      "source_rows": [
+        90,
+        91
+      ],
+      "corrected_char_start": 1023,
+      "corrected_char_end": 1036,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "know"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "know"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 51,
+      "text": "Maybe my mom will just use my...",
+      "turn_id": 17,
+      "source_rows": [
+        90,
+        91
+      ],
+      "corrected_char_start": 1037,
+      "corrected_char_end": 1069,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Maybe",
+          "my",
+          "mom",
+          "will",
+          "just",
+          "use",
+          "my"
+        ],
+        "counted_words": [
+          "Maybe",
+          "my",
+          "mom",
+          "will",
+          "just",
+          "use",
+          "my"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "possible_repair_or_abandonment_requires_audio"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 52,
+      "text": "Well, my mom does.",
+      "turn_id": 18,
+      "source_rows": [
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 1070,
+      "corrected_char_end": 1088,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Well",
+          "my",
+          "mom",
+          "does"
+        ],
+        "counted_words": [
+          "Well",
+          "my",
+          "mom",
+          "does"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 53,
+      "text": "She told that one was bell peppers.",
+      "turn_id": 18,
+      "source_rows": [
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 1089,
+      "corrected_char_end": 1124,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "She",
+          "told",
+          "that",
+          "one",
+          "was",
+          "bell",
+          "peppers"
+        ],
+        "counted_words": [
+          "She",
+          "told",
+          "that",
+          "one",
+          "was",
+          "bell",
+          "peppers"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 54,
+      "text": "And one with tomatoes.",
+      "turn_id": 18,
+      "source_rows": [
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 1125,
+      "corrected_char_end": 1147,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "one",
+          "with",
+          "tomatoes"
+        ],
+        "counted_words": [
+          "And",
+          "one",
+          "with",
+          "tomatoes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 55,
+      "text": "I like tomatoes.",
+      "turn_id": 18,
+      "source_rows": [
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 1148,
+      "corrected_char_end": 1164,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "tomatoes"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "tomatoes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 56,
+      "text": "I like to eat them in things,",
+      "turn_id": 18,
+      "source_rows": [
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 1165,
+      "corrected_char_end": 1194,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "to",
+          "eat",
+          "them",
+          "in",
+          "things"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "to",
+          "eat",
+          "them",
+          "in",
+          "things"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 57,
+      "text": "I like to eat them plain sometimes.",
+      "turn_id": 19,
+      "source_rows": [
+        98
+      ],
+      "corrected_char_start": 1195,
+      "corrected_char_end": 1230,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "to",
+          "eat",
+          "them",
+          "plain",
+          "sometimes"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "to",
+          "eat",
+          "them",
+          "plain",
+          "sometimes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 58,
+      "text": "Yeah.",
+      "turn_id": 19,
+      "source_rows": [
+        98
+      ],
+      "corrected_char_start": 1231,
+      "corrected_char_end": 1236,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 59,
+      "text": "Tomatoes.",
+      "turn_id": 19,
+      "source_rows": [
+        98
+      ],
+      "corrected_char_start": 1237,
+      "corrected_char_end": 1246,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Tomatoes"
+        ],
+        "counted_words": [
+          "Tomatoes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 60,
+      "text": "Ranch dressing.",
+      "turn_id": 19,
+      "source_rows": [
+        98
+      ],
+      "corrected_char_start": 1247,
+      "corrected_char_end": 1262,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Ranch",
+          "dressing"
+        ],
+        "counted_words": [
+          "Ranch",
+          "dressing"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 61,
+      "text": "Yeah.",
+      "turn_id": 20,
+      "source_rows": [
+        101
+      ],
+      "corrected_char_start": 1263,
+      "corrected_char_end": 1268,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 62,
+      "text": "No.",
+      "turn_id": 21,
+      "source_rows": [
+        104
+      ],
+      "corrected_char_start": 1269,
+      "corrected_char_end": 1272,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "No"
+        ],
+        "counted_words": [
+          "No"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 63,
+      "text": "I like to use the cheese stick thing.",
+      "turn_id": 22,
+      "source_rows": [
+        108,
+        109,
+        110
+      ],
+      "corrected_char_start": 1273,
+      "corrected_char_end": 1310,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "to",
+          "use",
+          "the",
+          "cheese",
+          "stick",
+          "thing"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "to",
+          "use",
+          "the",
+          "cheese",
+          "stick",
+          "thing"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 64,
+      "text": "I know it doesn't really work.",
+      "turn_id": 22,
+      "source_rows": [
+        108,
+        109,
+        110
+      ],
+      "corrected_char_start": 1311,
+      "corrected_char_end": 1341,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "know",
+          "it",
+          "doesn't",
+          "really",
+          "work"
+        ],
+        "counted_words": [
+          "I",
+          "know",
+          "it",
+          "doesn't",
+          "really",
+          "work"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 65,
+      "text": "But I use it.",
+      "turn_id": 22,
+      "source_rows": [
+        108,
+        109,
+        110
+      ],
+      "corrected_char_start": 1342,
+      "corrected_char_end": 1355,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "I",
+          "use",
+          "it"
+        ],
+        "counted_words": [
+          "But",
+          "I",
+          "use",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 66,
+      "text": "I use it as my pizza dip.",
+      "turn_id": 22,
+      "source_rows": [
+        108,
+        109,
+        110
+      ],
+      "corrected_char_start": 1356,
+      "corrected_char_end": 1381,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "use",
+          "it",
+          "as",
+          "my",
+          "pizza",
+          "dip"
+        ],
+        "counted_words": [
+          "I",
+          "use",
+          "it",
+          "as",
+          "my",
+          "pizza",
+          "dip"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 67,
+      "text": "Just the sauce.",
+      "turn_id": 23,
+      "source_rows": [
+        113
+      ],
+      "corrected_char_start": 1382,
+      "corrected_char_end": 1397,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Just",
+          "the",
+          "sauce"
+        ],
+        "counted_words": [
+          "Just",
+          "the",
+          "sauce"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 68,
+      "text": "My favorite pizza is pepperoni.",
+      "turn_id": 24,
+      "source_rows": [
+        115
+      ],
+      "corrected_char_start": 1398,
+      "corrected_char_end": 1429,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "My",
+          "favorite",
+          "pizza",
+          "is",
+          "pepperoni"
+        ],
+        "counted_words": [
+          "My",
+          "favorite",
+          "pizza",
+          "is",
+          "pepperoni"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 69,
+      "text": "Pepperoni.",
+      "turn_id": 25,
+      "source_rows": [
+        117
+      ],
+      "corrected_char_start": 1430,
+      "corrected_char_end": 1440,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Pepperoni"
+        ],
+        "counted_words": [
+          "Pepperoni"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 70,
+      "text": "It's my favorite.",
+      "turn_id": 25,
+      "source_rows": [
+        117
+      ],
+      "corrected_char_start": 1441,
+      "corrected_char_end": 1458,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "It's",
+          "my",
+          "favorite"
+        ],
+        "counted_words": [
+          "It's",
+          "my",
+          "favorite"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 71,
+      "text": "No, mom.",
+      "turn_id": 26,
+      "source_rows": [
+        126
+      ],
+      "corrected_char_start": 1459,
+      "corrected_char_end": 1467,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "No",
+          "mom"
+        ],
+        "counted_words": [
+          "No",
+          "mom"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 72,
+      "text": "I'm not a mushroom girl.",
+      "turn_id": 26,
+      "source_rows": [
+        126
+      ],
+      "corrected_char_start": 1468,
+      "corrected_char_end": 1492,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I'm",
+          "not",
+          "a",
+          "mushroom",
+          "girl"
+        ],
+        "counted_words": [
+          "I'm",
+          "not",
+          "a",
+          "mushroom",
+          "girl"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 73,
+      "text": "Not mushroom girl.",
+      "turn_id": 27,
+      "source_rows": [
+        129
+      ],
+      "corrected_char_start": 1493,
+      "corrected_char_end": 1511,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Not",
+          "mushroom",
+          "girl"
+        ],
+        "counted_words": [
+          "Not",
+          "mushroom",
+          "girl"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 74,
+      "text": "I like brocolli and snap peas, tomatoes.",
+      "turn_id": 27,
+      "source_rows": [
+        129
+      ],
+      "corrected_char_start": 1512,
+      "corrected_char_end": 1552,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "brocolli",
+          "and",
+          "snap",
+          "peas",
+          "tomatoes"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "brocolli",
+          "and",
+          "snap",
+          "peas",
+          "tomatoes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 75,
+      "text": "What?",
+      "turn_id": 27,
+      "source_rows": [
+        129
+      ],
+      "corrected_char_start": 1553,
+      "corrected_char_end": 1558,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "What"
+        ],
+        "counted_words": [
+          "What"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 76,
+      "text": "Anything I like are the ones that I just eat them raw.",
+      "turn_id": 27,
+      "source_rows": [
+        129
+      ],
+      "corrected_char_start": 1559,
+      "corrected_char_end": 1613,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Anything",
+          "I",
+          "like",
+          "are",
+          "the",
+          "ones",
+          "that",
+          "I",
+          "just",
+          "eat",
+          "them",
+          "raw"
+        ],
+        "counted_words": [
+          "Anything",
+          "I",
+          "like",
+          "are",
+          "the",
+          "ones",
+          "that",
+          "I",
+          "just",
+          "eat",
+          "them",
+          "raw"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 77,
+      "text": "I like eating lots of different snacks.",
+      "turn_id": 28,
+      "source_rows": [
+        138
+      ],
+      "corrected_char_start": 1614,
+      "corrected_char_end": 1653,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "eating",
+          "lots",
+          "of",
+          "different",
+          "snacks"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "eating",
+          "lots",
+          "of",
+          "different",
+          "snacks"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    }
+  ],
+  "turn_alignment": [
+    {
+      "source_word_gap": 3,
+      "corrected_word_gap": 4,
+      "left_source_anchor": -1,
+      "right_source_anchor": 3,
+      "left_corrected_anchor": -1,
+      "right_corrected_anchor": 4,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 19,
+      "corrected_word_gap": 48,
+      "left_source_anchor": 14,
+      "right_source_anchor": 19,
+      "left_corrected_anchor": 36,
+      "right_corrected_anchor": 48,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 28,
+      "corrected_word_gap": 57,
+      "left_source_anchor": 27,
+      "right_source_anchor": 34,
+      "left_corrected_anchor": 56,
+      "right_corrected_anchor": 62,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 38,
+      "corrected_word_gap": 93,
+      "left_source_anchor": 37,
+      "right_source_anchor": 38,
+      "left_corrected_anchor": 65,
+      "right_corrected_anchor": 93,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 42,
+      "corrected_word_gap": 97,
+      "left_source_anchor": 38,
+      "right_source_anchor": 42,
+      "left_corrected_anchor": 93,
+      "right_corrected_anchor": 97,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 49,
+      "corrected_word_gap": 109,
+      "left_source_anchor": 44,
+      "right_source_anchor": 49,
+      "left_corrected_anchor": 99,
+      "right_corrected_anchor": 109,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 53,
+      "corrected_word_gap": 113,
+      "left_source_anchor": 50,
+      "right_source_anchor": 53,
+      "left_corrected_anchor": 110,
+      "right_corrected_anchor": 113,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 61,
+      "corrected_word_gap": 121,
+      "left_source_anchor": 58,
+      "right_source_anchor": 61,
+      "left_corrected_anchor": 118,
+      "right_corrected_anchor": 121,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 69,
+      "corrected_word_gap": 140,
+      "left_source_anchor": 68,
+      "right_source_anchor": 69,
+      "left_corrected_anchor": 128,
+      "right_corrected_anchor": 140,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 70,
+      "corrected_word_gap": 141,
+      "left_source_anchor": 69,
+      "right_source_anchor": 78,
+      "left_corrected_anchor": 140,
+      "right_corrected_anchor": 149,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 93,
+      "corrected_word_gap": 166,
+      "left_source_anchor": 84,
+      "right_source_anchor": 93,
+      "left_corrected_anchor": 156,
+      "right_corrected_anchor": 166,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 105,
+      "corrected_word_gap": 178,
+      "left_source_anchor": 104,
+      "right_source_anchor": 105,
+      "left_corrected_anchor": 177,
+      "right_corrected_anchor": 178,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 111,
+      "corrected_word_gap": 184,
+      "left_source_anchor": 110,
+      "right_source_anchor": 111,
+      "left_corrected_anchor": 183,
+      "right_corrected_anchor": 184,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 121,
+      "corrected_word_gap": 193,
+      "left_source_anchor": 119,
+      "right_source_anchor": 121,
+      "left_corrected_anchor": 191,
+      "right_corrected_anchor": 193,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 125,
+      "corrected_word_gap": 198,
+      "left_source_anchor": 124,
+      "right_source_anchor": 125,
+      "left_corrected_anchor": 196,
+      "right_corrected_anchor": 198,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 126,
+      "corrected_word_gap": 199,
+      "left_source_anchor": 125,
+      "right_source_anchor": 126,
+      "left_corrected_anchor": 198,
+      "right_corrected_anchor": 199,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 136,
+      "corrected_word_gap": 209,
+      "left_source_anchor": 135,
+      "right_source_anchor": 136,
+      "left_corrected_anchor": 208,
+      "right_corrected_anchor": 209,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 162,
+      "corrected_word_gap": 234,
+      "left_source_anchor": 161,
+      "right_source_anchor": 162,
+      "left_corrected_anchor": 231,
+      "right_corrected_anchor": 234,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 170,
+      "corrected_word_gap": 245,
+      "left_source_anchor": 165,
+      "right_source_anchor": 170,
+      "left_corrected_anchor": 240,
+      "right_corrected_anchor": 245,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 171,
+      "corrected_word_gap": 246,
+      "left_source_anchor": 170,
+      "right_source_anchor": 172,
+      "left_corrected_anchor": 245,
+      "right_corrected_anchor": 247,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 172,
+      "corrected_word_gap": 247,
+      "left_source_anchor": 170,
+      "right_source_anchor": 172,
+      "left_corrected_anchor": 245,
+      "right_corrected_anchor": 247,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 196,
+      "corrected_word_gap": 272,
+      "left_source_anchor": 195,
+      "right_source_anchor": 196,
+      "left_corrected_anchor": 271,
+      "right_corrected_anchor": 272,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 199,
+      "corrected_word_gap": 275,
+      "left_source_anchor": 198,
+      "right_source_anchor": 199,
+      "left_corrected_anchor": 274,
+      "right_corrected_anchor": 275,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 204,
+      "corrected_word_gap": 280,
+      "left_source_anchor": 203,
+      "right_source_anchor": 204,
+      "left_corrected_anchor": 279,
+      "right_corrected_anchor": 280,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 205,
+      "corrected_word_gap": 284,
+      "left_source_anchor": 204,
+      "right_source_anchor": 205,
+      "left_corrected_anchor": 280,
+      "right_corrected_anchor": 284,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 207,
+      "corrected_word_gap": 291,
+      "left_source_anchor": 206,
+      "right_source_anchor": 207,
+      "left_corrected_anchor": 285,
+      "right_corrected_anchor": 291,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 210,
+      "corrected_word_gap": 314,
+      "left_source_anchor": 209,
+      "right_source_anchor": 210,
+      "left_corrected_anchor": 293,
+      "right_corrected_anchor": 314,
+      "review_required": true
+    }
+  ],
+  "corrected_exact_word_anchor_fraction": 0.4236760124610592,
+  "corrected_metrics": {
+    "total_utterances": 77,
+    "mlu_nutterances": 76,
+    "total_words": 320,
+    "mlu_nwords": 320,
+    "mlu_words": 4.2105263157894735,
+    "mlu_words_sd": 2.8988009747847028,
+    "mlu_words_sample_sd": 2.918062322723462,
+    "mlu_morphemes": null,
+    "mlu_status": "provisional_documented_exclusions_pending_review",
+    "clinical_mlu_words": null,
+    "flagged_utterances": 15,
+    "excluded_utterances": 1,
+    "policy": "Utterances retain fillers and repetitions; word metrics exclude listed fillers"
+  },
+  "uncorrected_metrics": {
+    "total_utterances": 45,
+    "mlu_nutterances": 45,
+    "total_words": 217,
+    "mlu_nwords": 217,
+    "mlu_words": 4.822222222222222,
+    "mlu_words_sd": 2.6690729883770414,
+    "mlu_words_sample_sd": 2.6992329625022338,
+    "mlu_morphemes": null,
+    "mlu_status": "provisional_documented_exclusions_pending_review",
+    "clinical_mlu_words": null,
+    "flagged_utterances": 13,
+    "excluded_utterances": 0,
+    "policy": "Utterances retain fillers and repetitions; word metrics exclude listed fillers"
+  }
+}

@@ -1,0 +1,1146 @@
+{
+  "run_utc": "2026-10-21T02:06:42.275943+00:00",
+  "input": "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/validation/cv_hyperparameter_v4/production_smoke_ocsc.json",
+  "input_sha256": "3a3f85c76f96fe6b5c4aa5e0b08a18cba427d18dcec8da91c76d1ca07938e334",
+  "segmenter": {
+    "name": "pretrained_joint_gap_segmentation",
+    "kind": "pretrained",
+    "device": "mps",
+    "selected": "cv_search_lr2_count1_final",
+    "threshold": null,
+    "decoding": "argmax",
+    "artifacts": {
+      "model.safetensors": "536749495e695a24bbe2f1f2561cadf0e8e1a72ff5e13d5809a59486531380d2",
+      "segmenter.json": "178a784e45a711f7cced98f33c85df744fbdaba4b383ec03f08aafa7d1692507",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+    },
+    "training_input_sha256": "206e478138b7d8516fcc190fab5b7f3c079ac03f840c9e59c8d92597ace63026"
+  },
+  "utterances": [
+    {
+      "utterance_id": 1,
+      "text": "mhm",
+      "source_start": 0,
+      "source_end": 3,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "mhm"
+        ],
+        "counted_words": [],
+        "excluded_fillers": [
+          "mhm"
+        ],
+        "include_mlu": false,
+        "exclusion_reason": "no_eligible_words",
+        "word_count": null,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 2,
+      "text": "a robot head",
+      "source_start": 0,
+      "source_end": 12,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "a",
+          "robot",
+          "head"
+        ],
+        "counted_words": [
+          "a",
+          "robot",
+          "head"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 3,
+      "text": "um a boat",
+      "source_start": 0,
+      "source_end": 9,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "um",
+          "a",
+          "boat"
+        ],
+        "counted_words": [
+          "a",
+          "boat"
+        ],
+        "excluded_fillers": [
+          "um"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 4,
+      "text": "a lion and fishes",
+      "source_start": 0,
+      "source_end": 17,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "a",
+          "lion",
+          "and",
+          "fishes"
+        ],
+        "counted_words": [
+          "a",
+          "lion",
+          "and",
+          "fishes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 5,
+      "text": "and water",
+      "source_start": 0,
+      "source_end": 9,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "water"
+        ],
+        "counted_words": [
+          "and",
+          "water"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 6,
+      "text": "they're swimming",
+      "source_start": 0,
+      "source_end": 16,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "they're",
+          "swimming"
+        ],
+        "counted_words": [
+          "they're",
+          "swimming"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 7,
+      "text": "swimming",
+      "source_start": 0,
+      "source_end": 8,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "swimming"
+        ],
+        "counted_words": [
+          "swimming"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 8,
+      "text": "don't know",
+      "source_start": 0,
+      "source_end": 10,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "don't",
+          "know"
+        ],
+        "counted_words": [
+          "don't",
+          "know"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 9,
+      "text": "because because he's he's um he's fishing",
+      "source_start": 0,
+      "source_end": 41,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "because",
+          "because",
+          "he's",
+          "he's",
+          "um",
+          "he's",
+          "fishing"
+        ],
+        "counted_words": [
+          "because",
+          "because",
+          "he's",
+          "he's",
+          "he's",
+          "fishing"
+        ],
+        "excluded_fillers": [
+          "um"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 10,
+      "text": "with he's fishing on a boat",
+      "source_start": 0,
+      "source_end": 27,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "with",
+          "he's",
+          "fishing",
+          "on",
+          "a",
+          "boat"
+        ],
+        "counted_words": [
+          "with",
+          "he's",
+          "fishing",
+          "on",
+          "a",
+          "boat"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 11,
+      "text": "fish",
+      "source_start": 0,
+      "source_end": 4,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "fish"
+        ],
+        "counted_words": [
+          "fish"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 12,
+      "text": "no",
+      "source_start": 0,
+      "source_end": 2,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "no"
+        ],
+        "counted_words": [
+          "no"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 13,
+      "text": "no",
+      "source_start": 0,
+      "source_end": 2,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "no"
+        ],
+        "counted_words": [
+          "no"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 14,
+      "text": "that's all is there",
+      "source_start": 3,
+      "source_end": 22,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "that's",
+          "all",
+          "is",
+          "there"
+        ],
+        "counted_words": [
+          "that's",
+          "all",
+          "is",
+          "there"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 15,
+      "text": "um a bed",
+      "source_start": 0,
+      "source_end": 8,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "um",
+          "a",
+          "bed"
+        ],
+        "counted_words": [
+          "a",
+          "bed"
+        ],
+        "excluded_fillers": [
+          "um"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 16,
+      "text": "and a shape",
+      "source_start": 0,
+      "source_end": 11,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "a",
+          "shape"
+        ],
+        "counted_words": [
+          "and",
+          "a",
+          "shape"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 17,
+      "text": "and a person",
+      "source_start": 0,
+      "source_end": 12,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "a",
+          "person"
+        ],
+        "counted_words": [
+          "and",
+          "a",
+          "person"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 18,
+      "text": "he's about to sleep in the water",
+      "source_start": 0,
+      "source_end": 32,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "he's",
+          "about",
+          "to",
+          "sleep",
+          "in",
+          "the",
+          "water"
+        ],
+        "counted_words": [
+          "he's",
+          "about",
+          "to",
+          "sleep",
+          "in",
+          "the",
+          "water"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 19,
+      "text": "because he's silly",
+      "source_start": 0,
+      "source_end": 18,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "because",
+          "he's",
+          "silly"
+        ],
+        "counted_words": [
+          "because",
+          "he's",
+          "silly"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 20,
+      "text": "sleeping outside in a tt",
+      "source_start": 0,
+      "source_end": 24,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "sleeping",
+          "outside",
+          "in",
+          "a",
+          "tt"
+        ],
+        "counted_words": [
+          "sleeping",
+          "outside",
+          "in",
+          "a",
+          "tt"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 21,
+      "text": "in a tent",
+      "source_start": 25,
+      "source_end": 34,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "in",
+          "a",
+          "tent"
+        ],
+        "counted_words": [
+          "in",
+          "a",
+          "tent"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 22,
+      "text": "a squid",
+      "source_start": 0,
+      "source_end": 7,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "a",
+          "squid"
+        ],
+        "counted_words": [
+          "a",
+          "squid"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 23,
+      "text": "and a man running away from the squid",
+      "source_start": 0,
+      "source_end": 37,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "a",
+          "man",
+          "running",
+          "away",
+          "from",
+          "the",
+          "squid"
+        ],
+        "counted_words": [
+          "and",
+          "a",
+          "man",
+          "running",
+          "away",
+          "from",
+          "the",
+          "squid"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 24,
+      "text": "um a table",
+      "source_start": 0,
+      "source_end": 10,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "um",
+          "a",
+          "table"
+        ],
+        "counted_words": [
+          "a",
+          "table"
+        ],
+        "excluded_fillers": [
+          "um"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 25,
+      "text": "squid",
+      "source_start": 0,
+      "source_end": 5,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "squid"
+        ],
+        "counted_words": [
+          "squid"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 26,
+      "text": "on a table",
+      "source_start": 6,
+      "source_end": 16,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "on",
+          "a",
+          "table"
+        ],
+        "counted_words": [
+          "on",
+          "a",
+          "table"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 27,
+      "text": "a floor that the um man is walking on",
+      "source_start": 17,
+      "source_end": 54,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "a",
+          "floor",
+          "that",
+          "the",
+          "um",
+          "man",
+          "is",
+          "walking",
+          "on"
+        ],
+        "counted_words": [
+          "a",
+          "floor",
+          "that",
+          "the",
+          "man",
+          "is",
+          "walking",
+          "on"
+        ],
+        "excluded_fillers": [
+          "um"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 28,
+      "text": "no",
+      "source_start": 0,
+      "source_end": 2,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "no"
+        ],
+        "counted_words": [
+          "no"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 29,
+      "text": "a girl is holding a giant carrot",
+      "source_start": 0,
+      "source_end": 32,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "a",
+          "girl",
+          "is",
+          "holding",
+          "a",
+          "giant",
+          "carrot"
+        ],
+        "counted_words": [
+          "a",
+          "girl",
+          "is",
+          "holding",
+          "a",
+          "giant",
+          "carrot"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 30,
+      "text": "to put it in her garden",
+      "source_start": 0,
+      "source_end": 23,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "to",
+          "put",
+          "it",
+          "in",
+          "her",
+          "garden"
+        ],
+        "counted_words": [
+          "to",
+          "put",
+          "it",
+          "in",
+          "her",
+          "garden"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 31,
+      "text": "yeah",
+      "source_start": 0,
+      "source_end": 4,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 32,
+      "text": "other plants",
+      "source_start": 0,
+      "source_end": 12,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "other",
+          "plants"
+        ],
+        "counted_words": [
+          "other",
+          "plants"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 33,
+      "text": "um vegetables",
+      "source_start": 0,
+      "source_end": 13,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "um",
+          "vegetables"
+        ],
+        "counted_words": [
+          "vegetables"
+        ],
+        "excluded_fillers": [
+          "um"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 34,
+      "text": "no",
+      "source_start": 0,
+      "source_end": 2,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "no"
+        ],
+        "counted_words": [
+          "no"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 35,
+      "text": "what's what",
+      "source_start": 0,
+      "source_end": 11,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "what's",
+          "what"
+        ],
+        "counted_words": [
+          "what's",
+          "what"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 36,
+      "text": "slimy",
+      "source_start": 0,
+      "source_end": 5,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "slimy"
+        ],
+        "counted_words": [
+          "slimy"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 37,
+      "text": "a lizard",
+      "source_start": 0,
+      "source_end": 8,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "a",
+          "lizard"
+        ],
+        "counted_words": [
+          "a",
+          "lizard"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 38,
+      "text": "a gate",
+      "source_start": 0,
+      "source_end": 6,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "a",
+          "gate"
+        ],
+        "counted_words": [
+          "a",
+          "gate"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 39,
+      "text": "clouds",
+      "source_start": 0,
+      "source_end": 6,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "clouds"
+        ],
+        "counted_words": [
+          "clouds"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    }
+  ],
+  "segmentation_context": "turn_ml",
+  "boundary_margin": 0.0,
+  "workflow_selection": {
+    "context": "turn_ml",
+    "margin": 0.0,
+    "method": "cv_hyperparameter_v4/lr2_count1/turn_ml",
+    "model_directory": "outputs/results/cv_hyperparameter_v4/lr2_count1/final/model",
+    "weights_sha256": "536749495e695a24bbe2f1f2561cadf0e8e1a72ff5e13d5809a59486531380d2",
+    "validation_primary_ape": 11.807088814203796,
+    "cv_selection_source": "outputs/results/cv_hyperparameter_v4/cv_selection.json",
+    "selection_source": "outputs/results/cv_hyperparameter_v4/lr2_count1/final/selection.json",
+    "scope": "Recipe chosen by five-fold participant-grouped training-only CV; original eval for final checkpoint/margin; original test after freeze"
+  },
+  "chat_file": "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/results/cv_hyperparameter_v4/production_smoke_ocsc/transcript.cha",
+  "chat_sha256": "9f21f842a35a9f2923c6d73aad60cc7d7eb6c548b68a8312b460789b6e6213a8",
+  "chat_metrics": {
+    "values": {
+      "total_utterances": 39,
+      "eligible_mlu_utterances": 39.0,
+      "MLUw": 2.8974358974358974,
+      "length_sd": 2.11,
+      "mlu_words": 113.0,
+      "TNW": 113.0,
+      "NDW": 64.0,
+      "TTR": 0.5663716814159292,
+      "MATTR": 0.633
+    },
+    "official_outputs": {
+      "mlu": {
+        "command": "mlu +t*PAR -t%mor",
+        "output_sha256": "b86a5f66729f16f937aece724804cd2a79a370aea046e687ce7f5470b341edab",
+        "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_3j3gf4lm/sample.cha\nTue Oct 20 21:06:42 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_3j3gf4lm/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 39, words = 113\n\tRatio of words over utterances = 2.897\n\tStandard deviation = 2.110\n\n",
+        "utterances": 39.0,
+        "total": 113.0,
+        "mlu": 2.897,
+        "sd": 2.11
+      },
+      "freq": {
+        "command": "freq +t*PAR -t%mor +k +b50",
+        "output_sha256": "d380c636288c0c1231261aa8afbaebd72e47a9616cbd889de0d007185295705d",
+        "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_hx3j5phx/sample.cha\nTue Oct 20 21:06:42 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_hx3j5phx/sample.cha>\nSpeaker: *PAR:\n 18 a\n  1 about\n  1 all\n  5 and\n  1 away\n  3 because\n  1 bed\n  2 boat\n  1 carrot\n  1 clouds\n  1 don't\n  1 fish\n  1 fishes\n  2 fishing\n  1 floor\n  1 from\n  1 garden\n  1 gate\n  1 giant\n  1 girl\n  6 he's\n  1 head\n  1 her\n  1 holding\n  4 in\n  3 is\n  1 it\n  1 know\n  1 lion\n  1 lizard\n  2 man\n  1 mhm\n  4 no\n  3 on\n  1 other\n  1 outside\n  1 person\n  1 plants\n  1 put\n  1 robot\n  1 running\n  1 shape\n  1 silly\n  1 sleep\n  1 sleeping\n  1 slimy\n  3 squid\n  2 swimming\n  2 table\n  1 tent\n  1 that\n  1 that's\n  3 the\n  1 there\n  1 they're\n  2 to\n  1 tt\n  1 vegetables\n  1 walking\n  2 water\n  1 what\n  1 what's\n  1 with\n  1 yeah\n------------------------------\n   64  Total number of different item types used\n  113  Total number of items (tokens)\n0.566  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.633  MATTR\n\n",
+        "NDW": 64.0,
+        "TNW": 113.0,
+        "TTR": 0.566,
+        "MATTR": 0.633
+      }
+    },
+    "engine": "native_CLAN_MLU_FREQ",
+    "policy": "Faithful words, uh/um pause-marked; other words retained. Native MLU and FREQ have distinct eligibility policies. Ratios from exact counts; SD/MATTR native three-decimal precision.",
+    "unavailable": [
+      "MLUm",
+      "PGU",
+      "maze_percentage",
+      "production_error_counts",
+      "WPM"
+    ]
+  },
+  "lexical_metrics": {
+    "basic_ntokens": 111,
+    "basic_ntypes": 60,
+    "basic_ncontent_tokens": 45,
+    "basic_ncontent_types": 37,
+    "basic_nfunction_tokens": 66,
+    "basic_nfunction_types": 23,
+    "lexical_density_tokens": 0.40540540540540543,
+    "lexical_density_types": 0.6166666666666667,
+    "simple_ttr_aw": 0.5405405405405406,
+    "log_ttr_aw": 0.869374308520453,
+    "maas_ttr_aw": 0.06386555709506465,
+    "mattr50_aw": 0.6219354838709678,
+    "msttr50_aw": 0.65,
+    "hdd42_aw": 0.703187726665696,
+    "mtld_original_aw": 26.615070377441274
+  },
+  "lexical_profile": "Historical TAALED 1.4.1 dictionary/category rules with current spaCy model; fixed pause cleaning. Vocabulary measures use the whole source text, independent of predicted utterance cuts.",
+  "lexical_pause_removals": {
+    "mhm": 1,
+    "um": 6
+  },
+  "lexical_assets": {
+    "real_words.txt": "321e466037d790f4964971287499a6e302a81046929318c3687cf56a079d78d6",
+    "adj_lem_list.txt": "1dfca246e94a23a4e29c9e6b0bd96674971de76ed40f14862f7eb4e710d9e682"
+  },
+  "scope": "Target-speaker transcript only. Automatic boundaries remain unreviewed; no audio, clinical diagnosis or invented morphology/grammar/maze labels."
+}

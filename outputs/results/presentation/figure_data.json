@@ -1,0 +1,296 @@
+{
+  "software": [
+    {
+      "label": "Total words",
+      "metric": "basic_ntokens",
+      "previous": 3.65,
+      "current": 3.677478876400752
+    },
+    {
+      "label": "Different words",
+      "metric": "basic_ntypes",
+      "previous": 2.97,
+      "current": 3.0273261563757483
+    },
+    {
+      "label": "Content words",
+      "metric": "basic_ncontent_tokens",
+      "previous": 4.24,
+      "current": 4.383075947901599
+    },
+    {
+      "label": "Different content words",
+      "metric": "basic_ncontent_types",
+      "previous": 3.29,
+      "current": 3.4061119031710336
+    },
+    {
+      "label": "Function words",
+      "metric": "basic_nfunction_tokens",
+      "previous": 3.98,
+      "current": 3.954194985491823
+    },
+    {
+      "label": "Different function words",
+      "metric": "basic_nfunction_types",
+      "previous": 3.18,
+      "current": 3.1714292286027157
+    },
+    {
+      "label": "TTR",
+      "metric": "simple_ttr_aw",
+      "previous": 2.89,
+      "current": 2.876693245001101
+    },
+    {
+      "label": "MATTR-50",
+      "metric": "mattr50_aw",
+      "previous": 1.13,
+      "current": 1.1125222808179682
+    },
+    {
+      "label": "Eligible utterance count",
+      "metric": "mlu_nutterances",
+      "previous": 21.82,
+      "current": 5.463755105960763
+    },
+    {
+      "label": "Mean utterance length (MLUw)",
+      "metric": "mlu_words",
+      "previous": 15.27,
+      "current": 4.684840543621121
+    },
+    {
+      "label": "Utterance length SD",
+      "metric": "mlu_words_sd",
+      "previous": 22.95,
+      "current": 4.711109977684237
+    }
+  ],
+  "manual": [
+    {
+      "label": "Total words",
+      "metric": "basic_ntokens",
+      "previous": 0.0,
+      "current": 0.0
+    },
+    {
+      "label": "Different words",
+      "metric": "basic_ntypes",
+      "previous": 0.24507388938961977,
+      "current": 0.342438190575577
+    },
+    {
+      "label": "Content words",
+      "metric": "basic_ncontent_tokens",
+      "previous": 0.418039960065057,
+      "current": 0.36847499073115314
+    },
+    {
+      "label": "Different content words",
+      "metric": "basic_ncontent_types",
+      "previous": 0.29100862193321947,
+      "current": 0.40306135263001797
+    },
+    {
+      "label": "Function words",
+      "metric": "basic_nfunction_tokens",
+      "previous": 0.26361011245950733,
+      "current": 0.23498288338666015
+    },
+    {
+      "label": "Different function words",
+      "metric": "basic_nfunction_types",
+      "previous": 0.965997384282066,
+      "current": 1.0344788086956938
+    },
+    {
+      "label": "TTR",
+      "metric": "simple_ttr_aw",
+      "previous": 0.24507388938962085,
+      "current": 0.34243819057557806
+    },
+    {
+      "label": "MATTR-50",
+      "metric": "mattr50_aw",
+      "previous": 0.14296700894777573,
+      "current": 0.16091614768640042
+    },
+    {
+      "label": "Utterance count",
+      "metric": "total_utterances",
+      "previous": 11.14245203649319,
+      "current": 7.959851305756537
+    },
+    {
+      "label": "Mean utterance length (MLUw)",
+      "metric": "mlu_words",
+      "previous": 15.094337523100439,
+      "current": 9.117114336859553
+    },
+    {
+      "label": "Utterance length SD",
+      "metric": "mlu_words_sd",
+      "previous": 35.86936497144203,
+      "current": 25.09295342257285
+    }
+  ],
+  "boundaries": [
+    {
+      "label": "Jade",
+      "previous": {
+        "agreement_percent": 99.34065934065934,
+        "kappa": 0.9497324218145824
+      },
+      "current": {
+        "agreement_percent": 99.56043956043956,
+        "kappa": 0.9676880555168919
+      }
+    },
+    {
+      "label": "Yamen",
+      "previous": {
+        "agreement_percent": 94.02390438247012,
+        "kappa": 0.8533450189891909
+      },
+      "current": {
+        "agreement_percent": 94.82071713147411,
+        "kappa": 0.8742799899824695
+      }
+    },
+    {
+      "label": "Pooled",
+      "previous": {
+        "agreement_percent": 98.37954627295643,
+        "kappa": 0.9165835049413086
+      },
+      "current": {
+        "agreement_percent": 98.70363701836514,
+        "kappa": 0.9350197400321613
+      }
+    }
+  ],
+  "wer": [
+    {
+      "patient_id": "P1",
+      "n_recordings": "2",
+      "mean_recording_wer_percent": "5.9148367759171165",
+      "pooled_wer_percent": "5.930807248764415",
+      "reference_words": "1214",
+      "uncorrected_words": "1281",
+      "substitutions": "5",
+      "deletions": "0",
+      "insertions": "67",
+      "word_edits": "72"
+    },
+    {
+      "patient_id": "P2",
+      "n_recordings": "4",
+      "mean_recording_wer_percent": "7.817308088939057",
+      "pooled_wer_percent": "7.746478873239437",
+      "reference_words": "4118",
+      "uncorrected_words": "4397",
+      "substitutions": "36",
+      "deletions": "2",
+      "insertions": "281",
+      "word_edits": "319"
+    },
+    {
+      "patient_id": "P3",
+      "n_recordings": "4",
+      "mean_recording_wer_percent": "13.29555294476513",
+      "pooled_wer_percent": "11.808227286179344",
+      "reference_words": "3379",
+      "uncorrected_words": "3553",
+      "substitutions": "171",
+      "deletions": "27",
+      "insertions": "201",
+      "word_edits": "399"
+    },
+    {
+      "patient_id": "P4",
+      "n_recordings": "4",
+      "mean_recording_wer_percent": "12.739700080622438",
+      "pooled_wer_percent": "12.679045092838196",
+      "reference_words": "1885",
+      "uncorrected_words": "1940",
+      "substitutions": "106",
+      "deletions": "39",
+      "insertions": "94",
+      "word_edits": "239"
+    },
+    {
+      "patient_id": "P5",
+      "n_recordings": "4",
+      "mean_recording_wer_percent": "27.0444751177347",
+      "pooled_wer_percent": "23.248730964467004",
+      "reference_words": "985",
+      "uncorrected_words": "1001",
+      "substitutions": "103",
+      "deletions": "55",
+      "insertions": "71",
+      "word_edits": "229"
+    },
+    {
+      "patient_id": "P6",
+      "n_recordings": "4",
+      "mean_recording_wer_percent": "23.543397539834835",
+      "pooled_wer_percent": "23.298816568047336",
+      "reference_words": "1352",
+      "uncorrected_words": "1215",
+      "substitutions": "132",
+      "deletions": "160",
+      "insertions": "23",
+      "word_edits": "315"
+    },
+    {
+      "patient_id": "P7",
+      "n_recordings": "3",
+      "mean_recording_wer_percent": "21.452052570412906",
+      "pooled_wer_percent": "16.407599309153714",
+      "reference_words": "579",
+      "uncorrected_words": "600",
+      "substitutions": "40",
+      "deletions": "17",
+      "insertions": "38",
+      "word_edits": "95"
+    },
+    {
+      "patient_id": "P8",
+      "n_recordings": "4",
+      "mean_recording_wer_percent": "4.150008506133613",
+      "pooled_wer_percent": "4.163434186708042",
+      "reference_words": "3867",
+      "uncorrected_words": "3882",
+      "substitutions": "90",
+      "deletions": "28",
+      "insertions": "43",
+      "word_edits": "161"
+    },
+    {
+      "patient_id": "P9",
+      "n_recordings": "4",
+      "mean_recording_wer_percent": "4.892613411256766",
+      "pooled_wer_percent": "4.8582995951417",
+      "reference_words": "5187",
+      "uncorrected_words": "5220",
+      "substitutions": "75",
+      "deletions": "72",
+      "insertions": "105",
+      "word_edits": "252"
+    },
+    {
+      "patient_id": "P10",
+      "n_recordings": "4",
+      "mean_recording_wer_percent": "5.071362253700216",
+      "pooled_wer_percent": "5.516637478108581",
+      "reference_words": "1142",
+      "uncorrected_words": "1113",
+      "substitutions": "22",
+      "deletions": "35",
+      "insertions": "6",
+      "word_edits": "63"
+    }
+  ],
+  "previous_software_precision": "Two decimals, transcribed from the original figure; current values from publication_tables.csv"
+}

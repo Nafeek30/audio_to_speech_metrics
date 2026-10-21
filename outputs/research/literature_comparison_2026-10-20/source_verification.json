@@ -1,0 +1,27 @@
+{
+  "review_date": "2026-10-20",
+  "scope": "Literature and documentation only; existing scores read, no predictions or evaluations run.",
+  "source_hashes": {
+    "HANDOFF_2026-10-20.md": "1855b4bbf97f3a7fad6c31f184731e0c8fe1f9f5b4d615802b83be9d11e91e9c",
+    "outputs/results/common_benchmark/REPORT.md": "6bfa76e02ea6f94586a29b2486e8763687517b706f83597b845996040bd5e61f",
+    "outputs/results/common_benchmark/ORIGINAL_CHAT_AUDIT.md": "3846a8a72870af46f5b7a63c8acafa40fbec41c1c18f5449482f875f2f197992",
+    "outputs/results/cv_hyperparameter_v4/REPORT.md": "0efe17686eaa86e22fb8d3d9dd20b415449bd3680e9c525c97c4041cd1da477d",
+    "outputs/research/literature_comparison_2026-10-20/sources/Hou_2026_SATE_author_copy.pdf": "e6706174e7e6f3ed9acde9cd3e52690bde4699209c4e71c99ef81ed33206a396"
+  },
+  "SATE": {
+    "doi": "10.1145/3832036",
+    "author_copy_url": "https://cse.buffalo.edu/~wenyaoxu/papers/journal/xu-imwut2026.pdf",
+    "pages": 37,
+    "visually_verified_table_pages": [
+      17,
+      22
+    ],
+    "metric_warning": "Table 9 signed percentage differences are not MAPE; MLUm differs from MLUw; SD of differences differs from utterance-length SD."
+  },
+  "Ortiz_2026": {
+    "doi": "10.1044/2026_JSLHR-25-00543",
+    "verified_from": "Crossref publisher-deposited title, date, authors, and abstract",
+    "publication_date": "2026-10-19",
+    "verification_scope": "Abstract only; full tables not verified."
+  }
+}

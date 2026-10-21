@@ -1,0 +1,185 @@
+{
+  "supervisor_pid": 15876,
+  "started_utc": "2026-10-16T04:59:11.284211+00:00",
+  "phase": "failed",
+  "progress": {
+    "lr2_count1": {
+      "fold_1": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 3,
+          "mean_training_loss": 0.20546296933809152,
+          "inner_objective": 15.863587033939629,
+          "elapsed_seconds": 304.6347624580376
+        }
+      },
+      "fold_2": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 6,
+          "mean_training_loss": 0.17108630106235162,
+          "inner_objective": 15.069842246048855,
+          "elapsed_seconds": 606.5879845410818
+        }
+      },
+      "fold_3": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 4,
+          "mean_training_loss": 0.17381615180466042,
+          "inner_objective": 14.565987811277237,
+          "elapsed_seconds": 409.1108497499954
+        }
+      },
+      "fold_4": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 4,
+          "mean_training_loss": 0.19228697026956756,
+          "inner_objective": 12.573405974243576,
+          "elapsed_seconds": 400.173734290991
+        }
+      },
+      "fold_5": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 4,
+          "mean_training_loss": 0.17724517308105933,
+          "inner_objective": 9.885206830835953,
+          "elapsed_seconds": 394.2081662910059
+        }
+      },
+      "final": {
+        "selection_frozen": false,
+        "scored": false
+      }
+    },
+    "lr2_count025": {
+      "fold_1": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 3,
+          "mean_training_loss": 0.1714735752186523,
+          "inner_objective": 15.880046115133318,
+          "elapsed_seconds": 304.0081233329838
+        },
+        "checkpoint": {
+          "epoch": 3,
+          "saved_utc": "2026-10-16T05:15:16.770911+00:00",
+          "next_epoch": 4,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr2_count025/fold_1/training_state.pt"
+        }
+      },
+      "fold_2": {
+        "selection_frozen": false,
+        "scored": false,
+        "latest_epoch": {
+          "epoch": 6,
+          "mean_training_loss": 0.14952025856727208,
+          "inner_objective": 15.769878430063693,
+          "elapsed_seconds": 631.1943010420073
+        },
+        "checkpoint": {
+          "epoch": 6,
+          "saved_utc": "2026-10-16T05:32:44.688490+00:00",
+          "next_epoch": 7,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr2_count025/fold_2/training_state.pt"
+        }
+      },
+      "fold_3": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_4": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_5": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "final": {
+        "selection_frozen": false,
+        "scored": false
+      }
+    },
+    "lr3_count1": {
+      "fold_1": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_2": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_3": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_4": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_5": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "final": {
+        "selection_frozen": false,
+        "scored": false
+      }
+    },
+    "lr3_count025": {
+      "fold_1": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_2": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_3": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_4": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_5": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "final": {
+        "selection_frozen": false,
+        "scored": false
+      }
+    }
+  },
+  "stages": [
+    {
+      "name": "cv_training_selection_and_test",
+      "exit_code": -15,
+      "finished_utc": "2026-10-16T05:39:52.751414+00:00"
+    }
+  ],
+  "heartbeat_utc": "2026-10-16T05:39:42.748583+00:00",
+  "worker_pid": 15878,
+  "command": [
+    "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/.venv/bin/python",
+    "-u",
+    "-m",
+    "speech_pipeline.research.cv_hyperparameter",
+    "run"
+  ],
+  "failed_stage": "cv_training_selection_and_test",
+  "finished_utc": "2026-10-16T05:39:52.751448+00:00"
+}

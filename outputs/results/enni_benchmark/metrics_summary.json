@@ -1,0 +1,164 @@
+{
+  "All": {
+    "count": 361,
+    "segmentation_paragraph": {
+      "micro_precision": 0.7580010937215177,
+      "micro_recall": 0.9069325440099704,
+      "micro_f1": 0.8258057194734453,
+      "macro_f1": 0.833880385084919
+    },
+    "segmentation_turn_aware": {
+      "micro_precision": 0.7518182046958753,
+      "micro_recall": 0.930830347406138,
+      "micro_f1": 0.8318019824033857,
+      "macro_f1": 0.8404795675014687
+    },
+    "downstream_metrics": {
+      "total_utterances_ntu": {
+        "pearson_r": 0.9299878399227985,
+        "mae": 21.213296398891966,
+        "signed_bias_raw": 21.168975069252078,
+        "mean_percentage_diff": 23.48150138094036,
+        "mape": 23.51996203889233
+      },
+      "total_words_ntw": {
+        "pearson_r": 0.999778809105392,
+        "mae": 1.5346260387811634,
+        "signed_bias_raw": 1.3628808864265929,
+        "mean_percentage_diff": 0.24416298190052801,
+        "mape": 0.26906579397184377
+      },
+      "different_words_ndw": {
+        "pearson_r": 1.0,
+        "mae": 0.0,
+        "signed_bias_raw": 0.0,
+        "mean_percentage_diff": 0.0,
+        "mape": 0.0
+      },
+      "mlu_in_words_mluw": {
+        "pearson_r": 0.8579156188721271,
+        "mae": 1.3235769328464555,
+        "signed_bias_raw": -1.3206008075514428,
+        "mean_percentage_diff": -17.768604968364347,
+        "mape": 17.808451995092675
+      },
+      "utterance_length_sd": {
+        "mape": 12.726544575508102
+      },
+      "ttr": {
+        "mape": 0.0
+      },
+      "mattr": {
+        "mape": 0.0
+      }
+    }
+  },
+  "TD": {
+    "count": 286,
+    "segmentation_paragraph": {
+      "micro_precision": 0.7722029794532065,
+      "micro_recall": 0.9128239783749403,
+      "micro_f1": 0.8366458382671743,
+      "macro_f1": 0.8430302975982826
+    },
+    "segmentation_turn_aware": {
+      "micro_precision": 0.7699277741300066,
+      "micro_recall": 0.9322626808713627,
+      "micro_f1": 0.8433544303797469,
+      "macro_f1": 0.849955981129533
+    },
+    "downstream_metrics": {
+      "total_utterances_ntu": {
+        "pearson_r": 0.9502121965385482,
+        "mae": 18.6013986013986,
+        "signed_bias_raw": 18.545454545454547,
+        "mean_percentage_diff": 20.92731028494342,
+        "mape": 20.975856779770904
+      },
+      "total_words_ntw": {
+        "pearson_r": 0.9998526920672257,
+        "mae": 0.9755244755244755,
+        "signed_bias_raw": 0.8986013986013986,
+        "mean_percentage_diff": 0.15697618432056964,
+        "mape": 0.16662123934735001
+      },
+      "different_words_ndw": {
+        "pearson_r": 0.9999999999999999,
+        "mae": 0.0,
+        "signed_bias_raw": 0.0,
+        "mean_percentage_diff": 0.0,
+        "mape": 0.0
+      },
+      "mlu_in_words_mluw": {
+        "pearson_r": 0.8614707663284518,
+        "mae": 1.2624417516986837,
+        "signed_bias_raw": -1.2586851739661675,
+        "mean_percentage_diff": -16.40348910548317,
+        "mape": 16.453785527332567
+      },
+      "utterance_length_sd": {
+        "mape": 11.955367273320945
+      },
+      "ttr": {
+        "mape": 0.0
+      },
+      "mattr": {
+        "mape": 0.0
+      }
+    }
+  },
+  "SLI": {
+    "count": 75,
+    "segmentation_paragraph": {
+      "micro_precision": 0.7092566943674977,
+      "micro_recall": 0.8855742902435509,
+      "micro_f1": 0.7876690380055118,
+      "macro_f1": 0.7989887187006265
+    },
+    "segmentation_turn_aware": {
+      "micro_precision": 0.6923574431389458,
+      "micro_recall": 0.9256376999567661,
+      "micro_f1": 0.7921805624074988,
+      "macro_f1": 0.8043428435331174
+    },
+    "downstream_metrics": {
+      "total_utterances_ntu": {
+        "pearson_r": 0.9169937027835287,
+        "mae": 31.173333333333332,
+        "signed_bias_raw": 31.173333333333332,
+        "mean_percentage_diff": 33.2214834270087,
+        "mape": 33.2214834270087
+      },
+      "total_words_ntw": {
+        "pearson_r": 0.9995763054756819,
+        "mae": 3.6666666666666665,
+        "signed_bias_raw": 3.1333333333333333,
+        "mean_percentage_diff": 0.5766353033387692,
+        "mape": 0.6597210289399135
+      },
+      "different_words_ndw": {
+        "pearson_r": 0.9999999999999998,
+        "mae": 0.0,
+        "signed_bias_raw": 0.0,
+        "mean_percentage_diff": 0.0,
+        "mape": 0.0
+      },
+      "mlu_in_words_mluw": {
+        "pearson_r": 0.8018314384095367,
+        "mae": 1.5567057569566256,
+        "signed_bias_raw": -1.5567057569566256,
+        "mean_percentage_diff": -22.974246792151217,
+        "mape": 22.974246792151217
+      },
+      "utterance_length_sd": {
+        "mape": 15.667300687848474
+      },
+      "ttr": {
+        "mape": 0.0
+      },
+      "mattr": {
+        "mape": 0.0
+      }
+    }
+  }
+}

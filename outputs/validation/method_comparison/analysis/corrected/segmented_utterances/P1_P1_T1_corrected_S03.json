@@ -1,0 +1,3105 @@
+{
+  "method": "conversation_clause_predictions_v5",
+  "raw_sha256": "c6b3ceb4fa9865c5d296e6e6a033f926d00ee29dc16f26bd07101ba2ebd71a94",
+  "source_file": "P1/P1_T1_corrected.txt",
+  "target_speaker": "S03",
+  "turn_mapping": [
+    {
+      "source_word_gap": 230,
+      "corrected_word_gap": 215,
+      "left_source_anchor": 229,
+      "right_source_anchor": 230,
+      "left_corrected_anchor": 214,
+      "right_corrected_anchor": 215,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 359,
+      "corrected_word_gap": 343,
+      "left_source_anchor": 358,
+      "right_source_anchor": 359,
+      "left_corrected_anchor": 342,
+      "right_corrected_anchor": 343,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 368,
+      "corrected_word_gap": 352,
+      "left_source_anchor": 367,
+      "right_source_anchor": 368,
+      "left_corrected_anchor": 351,
+      "right_corrected_anchor": 352,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 376,
+      "corrected_word_gap": 360,
+      "left_source_anchor": 375,
+      "right_source_anchor": 376,
+      "left_corrected_anchor": 359,
+      "right_corrected_anchor": 360,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 542,
+      "corrected_word_gap": 518,
+      "left_source_anchor": 541,
+      "right_source_anchor": 542,
+      "left_corrected_anchor": 517,
+      "right_corrected_anchor": 518,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 616,
+      "corrected_word_gap": 588,
+      "left_source_anchor": 615,
+      "right_source_anchor": 616,
+      "left_corrected_anchor": 587,
+      "right_corrected_anchor": 588,
+      "review_required": false
+    }
+  ],
+  "utterances": [
+    {
+      "utterance_id": 1,
+      "text": "So I my other classes, I haven't been, I've been kind of.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 0,
+      "corrected_char_end": 57,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "So",
+          "I",
+          "my",
+          "other",
+          "classes",
+          "I",
+          "haven't",
+          "been",
+          "I've",
+          "been",
+          "kind",
+          "of"
+        ],
+        "counted_words": [
+          "So",
+          "I",
+          "my",
+          "other",
+          "classes",
+          "I",
+          "haven't",
+          "been",
+          "I've",
+          "been",
+          "kind",
+          "of"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 2,
+      "text": "Having my grades been a bit rocky in physics, I mean math because or it's algebra because I. for like two weeks, I didn't listen to anything the teacher was saying and so.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 58,
+      "corrected_char_end": 229,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Having",
+          "my",
+          "grades",
+          "been",
+          "a",
+          "bit",
+          "rocky",
+          "in",
+          "physics",
+          "I",
+          "mean",
+          "math",
+          "because",
+          "or",
+          "it's",
+          "algebra",
+          "because",
+          "I",
+          "for",
+          "like",
+          "two",
+          "weeks",
+          "I",
+          "didn't",
+          "listen",
+          "to",
+          "anything",
+          "the",
+          "teacher",
+          "was",
+          "saying",
+          "and",
+          "so"
+        ],
+        "counted_words": [
+          "Having",
+          "my",
+          "grades",
+          "been",
+          "a",
+          "bit",
+          "rocky",
+          "in",
+          "physics",
+          "I",
+          "mean",
+          "math",
+          "because",
+          "or",
+          "it's",
+          "algebra",
+          "because",
+          "I",
+          "for",
+          "like",
+          "two",
+          "weeks",
+          "I",
+          "didn't",
+          "listen",
+          "to",
+          "anything",
+          "the",
+          "teacher",
+          "was",
+          "saying",
+          "and",
+          "so"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 33,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "possible_repair_or_abandonment_requires_audio"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 3,
+      "text": "My grade kind of dipped down, so I've had to try and get it back up and.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 230,
+      "corrected_char_end": 302,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "My",
+          "grade",
+          "kind",
+          "of",
+          "dipped",
+          "down",
+          "so",
+          "I've",
+          "had",
+          "to",
+          "try",
+          "and",
+          "get",
+          "it",
+          "back",
+          "up",
+          "and"
+        ],
+        "counted_words": [
+          "My",
+          "grade",
+          "kind",
+          "of",
+          "dipped",
+          "down",
+          "so",
+          "I've",
+          "had",
+          "to",
+          "try",
+          "and",
+          "get",
+          "it",
+          "back",
+          "up",
+          "and"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 17,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 4,
+      "text": "So",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 303,
+      "corrected_char_end": 305,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "So"
+        ],
+        "counted_words": [
+          "So"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 5,
+      "text": "yeah,",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 306,
+      "corrected_char_end": 311,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 6,
+      "text": "I've another thing is at the beginning of the semester.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 312,
+      "corrected_char_end": 367,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I've",
+          "another",
+          "thing",
+          "is",
+          "at",
+          "the",
+          "beginning",
+          "of",
+          "the",
+          "semester"
+        ],
+        "counted_words": [
+          "I've",
+          "another",
+          "thing",
+          "is",
+          "at",
+          "the",
+          "beginning",
+          "of",
+          "the",
+          "semester"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 7,
+      "text": "and health, we had a project that was",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 368,
+      "corrected_char_end": 405,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "health",
+          "we",
+          "had",
+          "a",
+          "project",
+          "that",
+          "was"
+        ],
+        "counted_words": [
+          "and",
+          "health",
+          "we",
+          "had",
+          "a",
+          "project",
+          "that",
+          "was"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 8,
+      "text": "or we had a beginning thing and for some reason it was worth.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 406,
+      "corrected_char_end": 467,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "or",
+          "we",
+          "had",
+          "a",
+          "beginning",
+          "thing",
+          "and",
+          "for",
+          "some",
+          "reason",
+          "it",
+          "was",
+          "worth"
+        ],
+        "counted_words": [
+          "or",
+          "we",
+          "had",
+          "a",
+          "beginning",
+          "thing",
+          "and",
+          "for",
+          "some",
+          "reason",
+          "it",
+          "was",
+          "worth"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 13,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 9,
+      "text": "A lot of points and",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 468,
+      "corrected_char_end": 487,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "A",
+          "lot",
+          "of",
+          "points",
+          "and"
+        ],
+        "counted_words": [
+          "A",
+          "lot",
+          "of",
+          "points",
+          "and"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 10,
+      "text": "so",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 488,
+      "corrected_char_end": 490,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "so"
+        ],
+        "counted_words": [
+          "so"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 11,
+      "text": "uh I",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 491,
+      "corrected_char_end": 495,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "uh",
+          "I"
+        ],
+        "counted_words": [
+          "I"
+        ],
+        "excluded_fillers": [
+          "uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 12,
+      "text": "I I missed that day",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 496,
+      "corrected_char_end": 515,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "I",
+          "missed",
+          "that",
+          "day"
+        ],
+        "counted_words": [
+          "I",
+          "I",
+          "missed",
+          "that",
+          "day"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 13,
+      "text": "and so my grade I've been slowly getting it up.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 516,
+      "corrected_char_end": 563,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "so",
+          "my",
+          "grade",
+          "I've",
+          "been",
+          "slowly",
+          "getting",
+          "it",
+          "up"
+        ],
+        "counted_words": [
+          "and",
+          "so",
+          "my",
+          "grade",
+          "I've",
+          "been",
+          "slowly",
+          "getting",
+          "it",
+          "up"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 14,
+      "text": "From a D back up to a C plus and a B, so I've had to spend most of the year getting my health grade back up.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 564,
+      "corrected_char_end": 672,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "From",
+          "a",
+          "D",
+          "back",
+          "up",
+          "to",
+          "a",
+          "C",
+          "plus",
+          "and",
+          "a",
+          "B",
+          "so",
+          "I've",
+          "had",
+          "to",
+          "spend",
+          "most",
+          "of",
+          "the",
+          "year",
+          "getting",
+          "my",
+          "health",
+          "grade",
+          "back",
+          "up"
+        ],
+        "counted_words": [
+          "From",
+          "a",
+          "D",
+          "back",
+          "up",
+          "to",
+          "a",
+          "C",
+          "plus",
+          "and",
+          "a",
+          "B",
+          "so",
+          "I've",
+          "had",
+          "to",
+          "spend",
+          "most",
+          "of",
+          "the",
+          "year",
+          "getting",
+          "my",
+          "health",
+          "grade",
+          "back",
+          "up"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 27,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 15,
+      "text": "And we're having E O Cs.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 673,
+      "corrected_char_end": 697,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "we're",
+          "having",
+          "E",
+          "O",
+          "Cs"
+        ],
+        "counted_words": [
+          "And",
+          "we're",
+          "having",
+          "E",
+          "O",
+          "Cs"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 16,
+      "text": "Pretty soon,",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 698,
+      "corrected_char_end": 710,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Pretty",
+          "soon"
+        ],
+        "counted_words": [
+          "Pretty",
+          "soon"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 17,
+      "text": "so",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 711,
+      "corrected_char_end": 713,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "so"
+        ],
+        "counted_words": [
+          "so"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 18,
+      "text": "yeah,",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 714,
+      "corrected_char_end": 719,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 19,
+      "text": "I there",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 720,
+      "corrected_char_end": 727,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "there"
+        ],
+        "counted_words": [
+          "I",
+          "there"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 20,
+      "text": "I I did, we did a thing in math today where we did a little preview of it.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 728,
+      "corrected_char_end": 802,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "I",
+          "did",
+          "we",
+          "did",
+          "a",
+          "thing",
+          "in",
+          "math",
+          "today",
+          "where",
+          "we",
+          "did",
+          "a",
+          "little",
+          "preview",
+          "of",
+          "it"
+        ],
+        "counted_words": [
+          "I",
+          "I",
+          "did",
+          "we",
+          "did",
+          "a",
+          "thing",
+          "in",
+          "math",
+          "today",
+          "where",
+          "we",
+          "did",
+          "a",
+          "little",
+          "preview",
+          "of",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 21,
+      "text": "And I'm not feeling very confident, cause I only retain.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 803,
+      "corrected_char_end": 859,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "I'm",
+          "not",
+          "feeling",
+          "very",
+          "confident",
+          "cause",
+          "I",
+          "only",
+          "retain"
+        ],
+        "counted_words": [
+          "And",
+          "I'm",
+          "not",
+          "feeling",
+          "very",
+          "confident",
+          "cause",
+          "I",
+          "only",
+          "retain"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 22,
+      "text": "Information for tests until the test happens",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 860,
+      "corrected_char_end": 904,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Information",
+          "for",
+          "tests",
+          "until",
+          "the",
+          "test",
+          "happens"
+        ],
+        "counted_words": [
+          "Information",
+          "for",
+          "tests",
+          "until",
+          "the",
+          "test",
+          "happens"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 23,
+      "text": "and I forget everything that I've learned.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 905,
+      "corrected_char_end": 947,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "I",
+          "forget",
+          "everything",
+          "that",
+          "I've",
+          "learned"
+        ],
+        "counted_words": [
+          "and",
+          "I",
+          "forget",
+          "everything",
+          "that",
+          "I've",
+          "learned"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 24,
+      "text": "And so I'm probably gonna.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 948,
+      "corrected_char_end": 974,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "so",
+          "I'm",
+          "probably",
+          "gonna"
+        ],
+        "counted_words": [
+          "And",
+          "so",
+          "I'm",
+          "probably",
+          "gonna"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 25,
+      "text": "Probably not gonna do too great on the E O Cs.",
+      "turn_id": 1,
+      "source_rows": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "corrected_char_start": 975,
+      "corrected_char_end": 1021,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Probably",
+          "not",
+          "gonna",
+          "do",
+          "too",
+          "great",
+          "on",
+          "the",
+          "E",
+          "O",
+          "Cs"
+        ],
+        "counted_words": [
+          "Probably",
+          "not",
+          "gonna",
+          "do",
+          "too",
+          "great",
+          "on",
+          "the",
+          "E",
+          "O",
+          "Cs"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 26,
+      "text": "I'm in art one, physics one, algebra one, uh English and.",
+      "turn_id": 2,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "corrected_char_start": 1022,
+      "corrected_char_end": 1079,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I'm",
+          "in",
+          "art",
+          "one",
+          "physics",
+          "one",
+          "algebra",
+          "one",
+          "uh",
+          "English",
+          "and"
+        ],
+        "counted_words": [
+          "I'm",
+          "in",
+          "art",
+          "one",
+          "physics",
+          "one",
+          "algebra",
+          "one",
+          "English",
+          "and"
+        ],
+        "excluded_fillers": [
+          "uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 27,
+      "text": "Or I have there are A days and B days, so on, today I had uh digital media, uh which is a class about.",
+      "turn_id": 2,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "corrected_char_start": 1080,
+      "corrected_char_end": 1182,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Or",
+          "I",
+          "have",
+          "there",
+          "are",
+          "A",
+          "days",
+          "and",
+          "B",
+          "days",
+          "so",
+          "on",
+          "today",
+          "I",
+          "had",
+          "uh",
+          "digital",
+          "media",
+          "uh",
+          "which",
+          "is",
+          "a",
+          "class",
+          "about"
+        ],
+        "counted_words": [
+          "Or",
+          "I",
+          "have",
+          "there",
+          "are",
+          "A",
+          "days",
+          "and",
+          "B",
+          "days",
+          "so",
+          "on",
+          "today",
+          "I",
+          "had",
+          "digital",
+          "media",
+          "which",
+          "is",
+          "a",
+          "class",
+          "about"
+        ],
+        "excluded_fillers": [
+          "uh",
+          "uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 22,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 28,
+      "text": "Illustrator, Photoshop, uh things like that, then next",
+      "turn_id": 2,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "corrected_char_start": 1183,
+      "corrected_char_end": 1237,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Illustrator",
+          "Photoshop",
+          "uh",
+          "things",
+          "like",
+          "that",
+          "then",
+          "next"
+        ],
+        "counted_words": [
+          "Illustrator",
+          "Photoshop",
+          "things",
+          "like",
+          "that",
+          "then",
+          "next"
+        ],
+        "excluded_fillers": [
+          "uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 29,
+      "text": "I then then I have lunch period, which is really early, so I usually don't eat very much at all.",
+      "turn_id": 2,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "corrected_char_start": 1238,
+      "corrected_char_end": 1334,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "then",
+          "then",
+          "I",
+          "have",
+          "lunch",
+          "period",
+          "which",
+          "is",
+          "really",
+          "early",
+          "so",
+          "I",
+          "usually",
+          "don't",
+          "eat",
+          "very",
+          "much",
+          "at",
+          "all"
+        ],
+        "counted_words": [
+          "I",
+          "then",
+          "then",
+          "I",
+          "have",
+          "lunch",
+          "period",
+          "which",
+          "is",
+          "really",
+          "early",
+          "so",
+          "I",
+          "usually",
+          "don't",
+          "eat",
+          "very",
+          "much",
+          "at",
+          "all"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 20,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 30,
+      "text": "Then after that, I have algebra",
+      "turn_id": 2,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "corrected_char_start": 1335,
+      "corrected_char_end": 1366,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Then",
+          "after",
+          "that",
+          "I",
+          "have",
+          "algebra"
+        ],
+        "counted_words": [
+          "Then",
+          "after",
+          "that",
+          "I",
+          "have",
+          "algebra"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 31,
+      "text": "and then I have physics",
+      "turn_id": 2,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "corrected_char_start": 1367,
+      "corrected_char_end": 1390,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "I",
+          "have",
+          "physics"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "I",
+          "have",
+          "physics"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 32,
+      "text": "and then I have a study hall.",
+      "turn_id": 2,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "corrected_char_start": 1391,
+      "corrected_char_end": 1420,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "I",
+          "have",
+          "a",
+          "study",
+          "hall"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "I",
+          "have",
+          "a",
+          "study",
+          "hall"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 33,
+      "text": "After that, where it's just studying and stuff and you can do whatever you want and so uh on the opposite days, I have in the mornings, I'd have health class.",
+      "turn_id": 2,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "corrected_char_start": 1421,
+      "corrected_char_end": 1579,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "After",
+          "that",
+          "where",
+          "it's",
+          "just",
+          "studying",
+          "and",
+          "stuff",
+          "and",
+          "you",
+          "can",
+          "do",
+          "whatever",
+          "you",
+          "want",
+          "and",
+          "so",
+          "uh",
+          "on",
+          "the",
+          "opposite",
+          "days",
+          "I",
+          "have",
+          "in",
+          "the",
+          "mornings",
+          "I'd",
+          "have",
+          "health",
+          "class"
+        ],
+        "counted_words": [
+          "After",
+          "that",
+          "where",
+          "it's",
+          "just",
+          "studying",
+          "and",
+          "stuff",
+          "and",
+          "you",
+          "can",
+          "do",
+          "whatever",
+          "you",
+          "want",
+          "and",
+          "so",
+          "on",
+          "the",
+          "opposite",
+          "days",
+          "I",
+          "have",
+          "in",
+          "the",
+          "mornings",
+          "I'd",
+          "have",
+          "health",
+          "class"
+        ],
+        "excluded_fillers": [
+          "uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 30,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 34,
+      "text": "Then I would have lunch",
+      "turn_id": 2,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "corrected_char_start": 1580,
+      "corrected_char_end": 1603,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Then",
+          "I",
+          "would",
+          "have",
+          "lunch"
+        ],
+        "counted_words": [
+          "Then",
+          "I",
+          "would",
+          "have",
+          "lunch"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 35,
+      "text": "and then I would have art, then government and then English.",
+      "turn_id": 2,
+      "source_rows": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "corrected_char_start": 1604,
+      "corrected_char_end": 1664,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "I",
+          "would",
+          "have",
+          "art",
+          "then",
+          "government",
+          "and",
+          "then",
+          "English"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "I",
+          "would",
+          "have",
+          "art",
+          "then",
+          "government",
+          "and",
+          "then",
+          "English"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 36,
+      "text": "I currently have a pretty good grade in algebra.",
+      "turn_id": 3,
+      "source_rows": [
+        29
+      ],
+      "corrected_char_start": 1665,
+      "corrected_char_end": 1713,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "currently",
+          "have",
+          "a",
+          "pretty",
+          "good",
+          "grade",
+          "in",
+          "algebra"
+        ],
+        "counted_words": [
+          "I",
+          "currently",
+          "have",
+          "a",
+          "pretty",
+          "good",
+          "grade",
+          "in",
+          "algebra"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 37,
+      "text": "So currently I'm doing pretty good in it.",
+      "turn_id": 4,
+      "source_rows": [
+        31
+      ],
+      "corrected_char_start": 1714,
+      "corrected_char_end": 1755,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "So",
+          "currently",
+          "I'm",
+          "doing",
+          "pretty",
+          "good",
+          "in",
+          "it"
+        ],
+        "counted_words": [
+          "So",
+          "currently",
+          "I'm",
+          "doing",
+          "pretty",
+          "good",
+          "in",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 38,
+      "text": "Uh well, in terms of work, I'm am actually kind of nervous for sophomore year because I hear it's a lot more work",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 1756,
+      "corrected_char_end": 1869,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "well",
+          "in",
+          "terms",
+          "of",
+          "work",
+          "I'm",
+          "am",
+          "actually",
+          "kind",
+          "of",
+          "nervous",
+          "for",
+          "sophomore",
+          "year",
+          "because",
+          "I",
+          "hear",
+          "it's",
+          "a",
+          "lot",
+          "more",
+          "work"
+        ],
+        "counted_words": [
+          "well",
+          "in",
+          "terms",
+          "of",
+          "work",
+          "I'm",
+          "am",
+          "actually",
+          "kind",
+          "of",
+          "nervous",
+          "for",
+          "sophomore",
+          "year",
+          "because",
+          "I",
+          "hear",
+          "it's",
+          "a",
+          "lot",
+          "more",
+          "work"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 22,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 39,
+      "text": "and you have to take.",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 1870,
+      "corrected_char_end": 1891,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "you",
+          "have",
+          "to",
+          "take"
+        ],
+        "counted_words": [
+          "and",
+          "you",
+          "have",
+          "to",
+          "take"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 40,
+      "text": "Uh there's you have to do harder versions like English ten, I think civics, I'm.",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 1892,
+      "corrected_char_end": 1972,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "there's",
+          "you",
+          "have",
+          "to",
+          "do",
+          "harder",
+          "versions",
+          "like",
+          "English",
+          "ten",
+          "I",
+          "think",
+          "civics",
+          "I'm"
+        ],
+        "counted_words": [
+          "there's",
+          "you",
+          "have",
+          "to",
+          "do",
+          "harder",
+          "versions",
+          "like",
+          "English",
+          "ten",
+          "I",
+          "think",
+          "civics",
+          "I'm"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 14,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 41,
+      "text": "I I don't know if it's US history or civics after government, but yeah, there's definitely gonna be a lot more work.",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 1973,
+      "corrected_char_end": 2089,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "I",
+          "don't",
+          "know",
+          "if",
+          "it's",
+          "US",
+          "history",
+          "or",
+          "civics",
+          "after",
+          "government",
+          "but",
+          "yeah",
+          "there's",
+          "definitely",
+          "gonna",
+          "be",
+          "a",
+          "lot",
+          "more",
+          "work"
+        ],
+        "counted_words": [
+          "I",
+          "I",
+          "don't",
+          "know",
+          "if",
+          "it's",
+          "US",
+          "history",
+          "or",
+          "civics",
+          "after",
+          "government",
+          "but",
+          "yeah",
+          "there's",
+          "definitely",
+          "gonna",
+          "be",
+          "a",
+          "lot",
+          "more",
+          "work"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 22,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 42,
+      "text": "And I feel like I should study more instead of cramming right before tests, I do that a lot",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 2090,
+      "corrected_char_end": 2181,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "I",
+          "feel",
+          "like",
+          "I",
+          "should",
+          "study",
+          "more",
+          "instead",
+          "of",
+          "cramming",
+          "right",
+          "before",
+          "tests",
+          "I",
+          "do",
+          "that",
+          "a",
+          "lot"
+        ],
+        "counted_words": [
+          "And",
+          "I",
+          "feel",
+          "like",
+          "I",
+          "should",
+          "study",
+          "more",
+          "instead",
+          "of",
+          "cramming",
+          "right",
+          "before",
+          "tests",
+          "I",
+          "do",
+          "that",
+          "a",
+          "lot"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 19,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 43,
+      "text": "and.",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 2182,
+      "corrected_char_end": 2186,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and"
+        ],
+        "counted_words": [
+          "and"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 44,
+      "text": "I should probably study more,",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 2187,
+      "corrected_char_end": 2216,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "should",
+          "probably",
+          "study",
+          "more"
+        ],
+        "counted_words": [
+          "I",
+          "should",
+          "probably",
+          "study",
+          "more"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 45,
+      "text": "but sometimes I like, I don't know, I've never really understood studying, cause I don't know if.",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 2217,
+      "corrected_char_end": 2314,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "sometimes",
+          "I",
+          "like",
+          "I",
+          "don't",
+          "know",
+          "I've",
+          "never",
+          "really",
+          "understood",
+          "studying",
+          "cause",
+          "I",
+          "don't",
+          "know",
+          "if"
+        ],
+        "counted_words": [
+          "but",
+          "sometimes",
+          "I",
+          "like",
+          "I",
+          "don't",
+          "know",
+          "I've",
+          "never",
+          "really",
+          "understood",
+          "studying",
+          "cause",
+          "I",
+          "don't",
+          "know",
+          "if"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 17,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 46,
+      "text": "You just memorize things or until you, I usually just do that when I study is I. Memorize something until I can retain it until the test",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 2315,
+      "corrected_char_end": 2451,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "You",
+          "just",
+          "memorize",
+          "things",
+          "or",
+          "until",
+          "you",
+          "I",
+          "usually",
+          "just",
+          "do",
+          "that",
+          "when",
+          "I",
+          "study",
+          "is",
+          "I",
+          "Memorize",
+          "something",
+          "until",
+          "I",
+          "can",
+          "retain",
+          "it",
+          "until",
+          "the",
+          "test"
+        ],
+        "counted_words": [
+          "You",
+          "just",
+          "memorize",
+          "things",
+          "or",
+          "until",
+          "you",
+          "I",
+          "usually",
+          "just",
+          "do",
+          "that",
+          "when",
+          "I",
+          "study",
+          "is",
+          "I",
+          "Memorize",
+          "something",
+          "until",
+          "I",
+          "can",
+          "retain",
+          "it",
+          "until",
+          "the",
+          "test"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 27,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 47,
+      "text": "and it's kind of fades off from there.",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 2452,
+      "corrected_char_end": 2490,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "it's",
+          "kind",
+          "of",
+          "fades",
+          "off",
+          "from",
+          "there"
+        ],
+        "counted_words": [
+          "and",
+          "it's",
+          "kind",
+          "of",
+          "fades",
+          "off",
+          "from",
+          "there"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 48,
+      "text": "But I I usually, I don't know if that's how most people study like is that.",
+      "turn_id": 5,
+      "source_rows": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 2491,
+      "corrected_char_end": 2566,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "I",
+          "I",
+          "usually",
+          "I",
+          "don't",
+          "know",
+          "if",
+          "that's",
+          "how",
+          "most",
+          "people",
+          "study",
+          "like",
+          "is",
+          "that"
+        ],
+        "counted_words": [
+          "But",
+          "I",
+          "I",
+          "usually",
+          "I",
+          "don't",
+          "know",
+          "if",
+          "that's",
+          "how",
+          "most",
+          "people",
+          "study",
+          "like",
+          "is",
+          "that"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 16,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 49,
+      "text": "I for when I study, I usually just.",
+      "turn_id": 6,
+      "source_rows": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "corrected_char_start": 2567,
+      "corrected_char_end": 2602,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "for",
+          "when",
+          "I",
+          "study",
+          "I",
+          "usually",
+          "just"
+        ],
+        "counted_words": [
+          "I",
+          "for",
+          "when",
+          "I",
+          "study",
+          "I",
+          "usually",
+          "just"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 50,
+      "text": "I look through readings again",
+      "turn_id": 6,
+      "source_rows": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "corrected_char_start": 2603,
+      "corrected_char_end": 2632,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "look",
+          "through",
+          "readings",
+          "again"
+        ],
+        "counted_words": [
+          "I",
+          "look",
+          "through",
+          "readings",
+          "again"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 51,
+      "text": "and then I kind of either make a flashcards or block out answers with my hands and then.",
+      "turn_id": 6,
+      "source_rows": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "corrected_char_start": 2633,
+      "corrected_char_end": 2721,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "I",
+          "kind",
+          "of",
+          "either",
+          "make",
+          "a",
+          "flashcards",
+          "or",
+          "block",
+          "out",
+          "answers",
+          "with",
+          "my",
+          "hands",
+          "and",
+          "then"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "I",
+          "kind",
+          "of",
+          "either",
+          "make",
+          "a",
+          "flashcards",
+          "or",
+          "block",
+          "out",
+          "answers",
+          "with",
+          "my",
+          "hands",
+          "and",
+          "then"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 52,
+      "text": "Go through the answers again",
+      "turn_id": 6,
+      "source_rows": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "corrected_char_start": 2722,
+      "corrected_char_end": 2750,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Go",
+          "through",
+          "the",
+          "answers",
+          "again"
+        ],
+        "counted_words": [
+          "Go",
+          "through",
+          "the",
+          "answers",
+          "again"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 53,
+      "text": "and I you know, memorize them a couple like seven times and then I. You know, try",
+      "turn_id": 6,
+      "source_rows": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "corrected_char_start": 2751,
+      "corrected_char_end": 2832,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "I",
+          "you",
+          "know",
+          "memorize",
+          "them",
+          "a",
+          "couple",
+          "like",
+          "seven",
+          "times",
+          "and",
+          "then",
+          "I",
+          "You",
+          "know",
+          "try"
+        ],
+        "counted_words": [
+          "and",
+          "I",
+          "you",
+          "know",
+          "memorize",
+          "them",
+          "a",
+          "couple",
+          "like",
+          "seven",
+          "times",
+          "and",
+          "then",
+          "I",
+          "You",
+          "know",
+          "try"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 17,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 54,
+      "text": "and remember that like a couple days before the test and I'll do that a couple times.",
+      "turn_id": 6,
+      "source_rows": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "corrected_char_start": 2833,
+      "corrected_char_end": 2918,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "remember",
+          "that",
+          "like",
+          "a",
+          "couple",
+          "days",
+          "before",
+          "the",
+          "test",
+          "and",
+          "I'll",
+          "do",
+          "that",
+          "a",
+          "couple",
+          "times"
+        ],
+        "counted_words": [
+          "and",
+          "remember",
+          "that",
+          "like",
+          "a",
+          "couple",
+          "days",
+          "before",
+          "the",
+          "test",
+          "and",
+          "I'll",
+          "do",
+          "that",
+          "a",
+          "couple",
+          "times"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 17,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 55,
+      "text": "So that's kind of how I do it.",
+      "turn_id": 7,
+      "source_rows": [
+        53
+      ],
+      "corrected_char_start": 2919,
+      "corrected_char_end": 2949,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "So",
+          "that's",
+          "kind",
+          "of",
+          "how",
+          "I",
+          "do",
+          "it"
+        ],
+        "counted_words": [
+          "So",
+          "that's",
+          "kind",
+          "of",
+          "how",
+          "I",
+          "do",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+PREPARED 1 / 100
+TRAIN fold_1 fit children 147 inner children 37 windows 1661 device mps
+BATCH fold_1 epoch 1 50 / 208
+BATCH fold_1 epoch 1 100 / 208
+BATCH fold_1 epoch 1 150 / 208
+BATCH fold_1 epoch 1 200 / 208
+EPOCH fold_1 {"epoch": 1, "mean_training_loss": 0.8353406520417104, "inner_objective": 12.154527995387896, "elapsed_seconds": 114.5049932920374}
+BATCH fold_1 epoch 2 50 / 208
+BATCH fold_1 epoch 2 100 / 208
+BATCH fold_1 epoch 2 150 / 208
+BATCH fold_1 epoch 2 200 / 208
+EPOCH fold_1 {"epoch": 2, "mean_training_loss": 0.25076768447000247, "inner_objective": 12.810506161875914, "elapsed_seconds": 208.2102687500883}
+BATCH fold_1 epoch 3 50 / 208
+BATCH fold_1 epoch 3 100 / 208
+BATCH fold_1 epoch 3 150 / 208
+BATCH fold_1 epoch 3 200 / 208
+EPOCH fold_1 {"epoch": 3, "mean_training_loss": 0.20546296933809152, "inner_objective": 15.863587033939629, "elapsed_seconds": 304.6347624580376}
+FROZEN fold_1 {"selected_epoch": 1, "margin": 0.0, "inner_objective": 12.154527995387896}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/research/participant_cv.py", line 429, in <module>
+    'A separate inner participant holdout selects epochs and the fixed seven-margin calibration; the outer participants never enter either fitting or selection. '
+                    ^^^^^^
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/research/participant_cv.py", line 426, in main
+    save(OUT/'cross_validation_results.json',result)
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/research/participant_cv.py", line 416, in run
+    within_fold_participant_overlap=0,original_eval_or_test_in_cv=False,all_folds_fresh_original_pretrained_initialization=True,
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/research/participant_cv.py", line 327, in evaluate_job
+    ids[(torch.rand(ids.shape,device=device)<.05)&allowed]=tokenizer.unk_token_id
+    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/research/participant_cv.py", line 131, in job_rows
+    if digest(ROOT/filename)!=sha:raise ValueError('Registered CV implementation changed; record an amendment before continuing')
+    ^^^^
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/research/participant_cv.py", line 126, in plan
+    if amendments.exists():
+    
+ValueError: Registered CV implementation changed; record an amendment before continuing

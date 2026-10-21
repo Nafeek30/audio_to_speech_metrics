@@ -1,0 +1,46 @@
+{
+  "python": "3.13.1 (v3.13.1:06714517797, Dec  3 2024, 14:00:22) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "versions": {
+    "torch": "2.10.0",
+    "transformers": "4.57.6",
+    "spacy": "3.8.14",
+    "pylangacq": "0.23.0",
+    "taaled": "0.32",
+    "numpy": "2.5.1",
+    "pydantic": "2.13.4"
+  },
+  "files": {
+    "speech_pipeline/research/common_benchmark.py": "c50c094eca8719d1d3244b603d58087e3d143eebd7a8ecbe4e4283b6ef052ff8",
+    "speech_pipeline/research/original_chat_audit.py": "1f5a9c3eb5230efe167e8a7c0dc02c791e6f6e49a6f9f94352c525c36d080784",
+    "speech_pipeline/moss.py": "e49f5c1c8486d42422610ca96ff189363f03bff3c13a716c924706a3b0d12f24",
+    "tests/test_common_benchmark.py": "3f1a81d05cd45201c89a0af18008946f1a6f1397299b3b40f7e00d7eb6ceb1de",
+    "tests/test_moss.py": "ccccc61e375e464431fd263d00c8f859bce642201e632255a61e408736589d87",
+    "outputs/results/benchmark/context_segmenter/model.safetensors": "9f90262f4154c2261034872153b9c7cde9040cca892fd99f763ca532265a9b31",
+    "outputs/results/benchmark/metric_segmenter/model.safetensors": "ad8f44b88979572231ff59e886d0e8464b15a2d6d9037841d2e2b23dd861ebbb",
+    ".venv/bin/clan-mlu": "e6c1bbef66e496cd6cc0dcb63c8c0a205fada0b527326b89cc59b248fbd1adac",
+    ".venv/bin/clan-freq": "fb2309d3b09ab829845cdd94e1c9217c8239a9ab509bd105395b13cf20491fa3",
+    "speech_pipeline/research/moss_audio.py": "4906943c2c60cc4e9d375852666bd545d38c4078adceeab22fcad41eeb76f646",
+    "speech_pipeline/research/moss_pilot.py": "5ff38a1f873767828eb42fe38b8d67a4ca3d39120818822669b95ab2f1a7a9de",
+    "speech_pipeline/research/lucid_download.py": "5ae5131fe6b385ab9edcd403bd550f43d76ea2795b33979cc8765a8cc2da8e35",
+    "speech_pipeline/research/lucid_validation.py": "18aa00b8fb728a4fb2875ce04cc032263802b1d2d57bfb963d642e09dff856c6",
+    "tests/test_lucid_validation.py": "253082e0b745beb0805cbdee8539092276a6df2c6b02996b2aedd85fe41f13ac"
+  },
+  "checks": {
+    "tests": 78,
+    "passed": true,
+    "moss_integration_fixture": "Synthetic only, not audio/ASR validation",
+    "moss_native_clan": "software_reference_computed",
+    "real_moss_pilot": "Completed EOS, 300.021 seconds, oracle role mapping; cohort validation not established",
+    "lucid_published": "180 metadata-joined rows scored, 60 vocoder rows ambiguous; mismatch audit, not successful exact reproduction",
+    "regression_log": "/private/tmp/speech_public_benchmark_final_tests.log"
+  },
+  "batchalign_full_pipeline_smoke": {
+    "failed": false,
+    "kind": "Chat",
+    "error": "",
+    "full_pipeline_matches_direct_backend": true,
+    "full_pipeline_units": 16,
+    "backend_units": 16
+  }
+}

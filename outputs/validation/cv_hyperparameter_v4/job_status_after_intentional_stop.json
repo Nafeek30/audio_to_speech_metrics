@@ -1,0 +1,302 @@
+{
+  "supervisor_pid": 78544,
+  "started_utc": "2026-10-16T05:40:23.408153+00:00",
+  "phase": "failed",
+  "progress": {
+    "lr2_count1": {
+      "fold_1": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 3,
+          "mean_training_loss": 0.20546296933809152,
+          "inner_objective": 15.863587033939629,
+          "elapsed_seconds": 304.6347624580376
+        }
+      },
+      "fold_2": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 6,
+          "mean_training_loss": 0.17108630106235162,
+          "inner_objective": 15.069842246048855,
+          "elapsed_seconds": 606.5879845410818
+        }
+      },
+      "fold_3": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 4,
+          "mean_training_loss": 0.17381615180466042,
+          "inner_objective": 14.565987811277237,
+          "elapsed_seconds": 409.1108497499954
+        }
+      },
+      "fold_4": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 4,
+          "mean_training_loss": 0.19228697026956756,
+          "inner_objective": 12.573405974243576,
+          "elapsed_seconds": 400.173734290991
+        }
+      },
+      "fold_5": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 4,
+          "mean_training_loss": 0.17724517308105933,
+          "inner_objective": 9.885206830835953,
+          "elapsed_seconds": 394.2081662910059
+        }
+      },
+      "final": {
+        "selection_frozen": false,
+        "scored": false
+      }
+    },
+    "lr2_count025": {
+      "fold_1": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 3,
+          "mean_training_loss": 0.1714735752186523,
+          "inner_objective": 15.880046115133318,
+          "elapsed_seconds": 304.0081233329838
+        },
+        "checkpoint": {
+          "epoch": 3,
+          "saved_utc": "2026-10-16T05:15:16.770911+00:00",
+          "next_epoch": 4,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr2_count025/fold_1/training_state.pt"
+        }
+      },
+      "fold_2": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 6,
+          "mean_training_loss": 0.14952025856727208,
+          "inner_objective": 15.769878430063693,
+          "elapsed_seconds": 631.1943010420073
+        },
+        "checkpoint": {
+          "epoch": 6,
+          "saved_utc": "2026-10-16T05:32:44.688490+00:00",
+          "next_epoch": 7,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr2_count025/fold_2/training_state.pt"
+        }
+      },
+      "fold_3": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 4,
+          "mean_training_loss": 0.15065153032990555,
+          "inner_objective": 14.605303296693535,
+          "elapsed_seconds": 306.2770753749646
+        },
+        "checkpoint": {
+          "epoch": 4,
+          "saved_utc": "2026-10-16T05:47:05.538773+00:00",
+          "next_epoch": 5,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr2_count025/fold_3/training_state.pt"
+        }
+      },
+      "fold_4": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 3,
+          "mean_training_loss": 0.18276445079102832,
+          "inner_objective": 13.227819868764001,
+          "elapsed_seconds": 217.90387645806186
+        },
+        "checkpoint": {
+          "epoch": 3,
+          "saved_utc": "2026-10-16T05:51:58.892292+00:00",
+          "next_epoch": 4,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr2_count025/fold_4/training_state.pt"
+        }
+      },
+      "fold_5": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 3,
+          "mean_training_loss": 0.16760229305407712,
+          "inner_objective": 9.704631376655525,
+          "elapsed_seconds": 221.1033668750897
+        },
+        "checkpoint": {
+          "epoch": 3,
+          "saved_utc": "2026-10-16T05:56:51.217993+00:00",
+          "next_epoch": 4,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr2_count025/fold_5/training_state.pt"
+        }
+      },
+      "final": {
+        "selection_frozen": false,
+        "scored": false
+      }
+    },
+    "lr3_count1": {
+      "fold_1": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 4,
+          "mean_training_loss": 0.17170322399873,
+          "inner_objective": 13.92520515320608,
+          "elapsed_seconds": 293.58649220794905
+        },
+        "checkpoint": {
+          "epoch": 4,
+          "saved_utc": "2026-10-16T06:02:57.503707+00:00",
+          "next_epoch": 5,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr3_count1/fold_1/training_state.pt"
+        }
+      },
+      "fold_2": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 5,
+          "mean_training_loss": 0.15272304515043894,
+          "inner_objective": 14.60191838531499,
+          "elapsed_seconds": 346.70475183299277
+        },
+        "checkpoint": {
+          "epoch": 5,
+          "saved_utc": "2026-10-16T06:09:56.475777+00:00",
+          "next_epoch": 6,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr3_count1/fold_2/training_state.pt"
+        }
+      },
+      "fold_3": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 3,
+          "mean_training_loss": 0.16961519038257886,
+          "inner_objective": 13.83412170453582,
+          "elapsed_seconds": 200.7220381660154
+        },
+        "checkpoint": {
+          "epoch": 3,
+          "saved_utc": "2026-10-16T06:14:28.309656+00:00",
+          "next_epoch": 4,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr3_count1/fold_3/training_state.pt"
+        }
+      },
+      "fold_4": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 3,
+          "mean_training_loss": 0.19544047075060178,
+          "inner_objective": 12.097668955344526,
+          "elapsed_seconds": 205.69318683294114
+        },
+        "checkpoint": {
+          "epoch": 3,
+          "saved_utc": "2026-10-16T06:19:03.695804+00:00",
+          "next_epoch": 4,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr3_count1/fold_4/training_state.pt"
+        }
+      },
+      "fold_5": {
+        "selection_frozen": true,
+        "scored": true,
+        "latest_epoch": {
+          "epoch": 4,
+          "mean_training_loss": 0.1570757625224156,
+          "inner_objective": 11.151766377468311,
+          "elapsed_seconds": 278.71477004198823
+        },
+        "checkpoint": {
+          "epoch": 4,
+          "saved_utc": "2026-10-16T06:24:51.570489+00:00",
+          "next_epoch": 5,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr3_count1/fold_5/training_state.pt"
+        }
+      },
+      "final": {
+        "selection_frozen": false,
+        "scored": false
+      }
+    },
+    "lr3_count025": {
+      "fold_1": {
+        "selection_frozen": false,
+        "scored": false,
+        "latest_epoch": {
+          "epoch": 4,
+          "mean_training_loss": 0.14580503081043178,
+          "inner_objective": 12.782587015677928,
+          "elapsed_seconds": 280.2293785830261
+        },
+        "checkpoint": {
+          "epoch": 4,
+          "saved_utc": "2026-10-16T06:30:42.103378+00:00",
+          "next_epoch": 5,
+          "full_optimizer_scheduler_rng_saved": true,
+          "path": "outputs/results/cv_hyperparameter_v4/lr3_count025/fold_1/training_state.pt"
+        }
+      },
+      "fold_2": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_3": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_4": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "fold_5": {
+        "selection_frozen": false,
+        "scored": false
+      },
+      "final": {
+        "selection_frozen": false,
+        "scored": false
+      }
+    }
+  },
+  "stages": [
+    {
+      "name": "cv_training_selection_and_test",
+      "exit_code": -15,
+      "finished_utc": "2026-10-16T06:30:45.802729+00:00"
+    }
+  ],
+  "heartbeat_utc": "2026-10-16T06:30:35.794529+00:00",
+  "worker_pid": 78548,
+  "command": [
+    "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/.venv/bin/python",
+    "-u",
+    "-m",
+    "speech_pipeline.research.cv_hyperparameter",
+    "run"
+  ],
+  "failed_stage": "cv_training_selection_and_test",
+  "finished_utc": "2026-10-16T06:30:45.802758+00:00"
+}

@@ -1,0 +1,1694 @@
+PAGE 1
+Sp
+eech Annotation and Transcription Enhancer (SATE): An
+Automated System for Child Language Sample Analysis
+SHUWEI HOU∗, University at Buffalo, USA
+WEI BO, University at Buffalo, USA
+LONG CAO, University at Buffalo, USA
+V ARUN SHIJO,University at Buffalo, USA
+CHUHUI LIU, University at Buffalo, USA
+XIAOYU ZHANG, University at Buffalo, USA
+ANARGHYA DAS, University at Buffalo, USA
+LING-YU GUO, University at Buffalo, USA
+WENYAO XU, University at Buffalo, USA
+Developmental language disorder affects approximately 7-10% of children in the United States and is associated with long-
+term difficulties in literacy, academic achievement, and social participation. Language sample analysis (LSA) is widely re-
+garded as a gold-standard approach for evaluating children’s language development; yet, it remains underused in clinical and
+research practice because it depends on labor-intensive and time-consuming manual transcription and coding. Therefore, we
+propose SATE, a scalable and automated system for child language assessment. It implements a modular machine learning
+pipeline that reproduces the full LSA workflow, including verbatim transcription, utterance segmentation, speaker identifica-
+tion, maze annotation, lexical and grammatical analyses, and language metrics computation. The pipeline is complemented
+by a user interface that supports efficient review and correction of model output, allowing researchers and clinicians to val-
+idate and refine automated results. Experimental evaluation on child speech corpora demonstrates that SATE substantially
+outperforms existing baselines, achieving 11.81% word error rate and strong correlations with authenticated results of lan-
+guage metrics. A counterbalanced human-in-the-loop study showed that SATE-assisted LSA reduced task completion time
+by 55.3% while maintaining comparable accuracy to manual LSA, and usability questionnaires yielded a mean SUS score of
+81.25. These results provide evidence that SATE is a practical tool for child language sample analysis.
+CCS Concepts: • Computing methodologies → Machine learning approaches; Speech recognition ; Information
+extraction; • Applied computing → Health informatics; • Human-centered computing → User studies.
+∗Corr
+esponding author.
+A
+uthors’ Contact Information: Shuwei Hou (corresponding author), University at Buffalo, Department of Computer Science and Engineering,
+Buffalo, New York, USA, shuweiho@buffalo.edu; Wei Bo, University at Buffalo, Department of Computer Science and Engineering, Buffalo,
+New York, USA, weibo@buffalo.edu; Long Cao , University at Buffalo, Department of Computer Science and Engineering, Buffalo, New
+York, USA, longcao@buffalo.edu; Varun Shijo, University at Buffalo, Department of Computer Science and Engineering, Buffalo, New York,
+USA, varunshi@buffalo.edu; Chuhui Liu, University at Buffalo, Department of Computer Science and Engineering, Buffalo, New York, USA,
+chuhuili@buffalo.edu; Xiaoyu Zhang , University at Buffalo, Department of Computer Science and Engineering, Buffalo, New York, USA,
+zhang376@buffalo.edu; Anarghya Das, University at Buffalo, Department of Computer Science and Engineering, Buffalo, New York, USA,
+anarghya@buffalo.edu; Ling-yu Guo, University at Buffalo, Department of Communicative Disorders and Sciences, Buffalo, New York, USA,
+lingyugu@buffalo.edu; Wenyao Xu, University at Buffalo, Department of Computer Science and Engineering, Buffalo, New York, USA,
+wenyaoxu@buffalo.edu.
+This
+work is licensed under a Creative Commons Attribution 4.0 International License.
+© 2026 Copyright held by the owner/author(s).
+ACM 2474-9567/2026/9-ART107
+https://doi.org/10.1145/3832036
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 2
+107:2
+• Hou et al.
+Additional Key Words and Phrases: Language Sample Analysis, Child Language Assessment, Automatic Speech Recognition,
+Speech and Language Model
+ACM Reference Format:
+Shuwei Hou, Wei Bo, Long Cao, Varun Shijo, Chuhui Liu, Xiaoyu Zhang, Anarghya Das, Ling-yu Guo, and Wenyao Xu. 2026.
+Speech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis. Proc.
+ACM Interact. Mob. Wearable Ubiquitous Technol.10, 3, Article 107 (September 2026),37 pages. https://doi.org/10.1145/3832036
+1 INTRODUCTION
+Developmental language disorder (DLD) is a neurodevelopmental condition characterized by persistent diffi-
+culties in the acquisition and use of language that cannot be explained by hearing loss, intellectual disability,
+or other biomedical conditions. Large epidemiological studies have estimated prevalence around 7% to 10% of
+school-age children, underscoring its public health relevance [4, 5, 31, 42]. Children with DLD are at increased
+risk for reading difficulties, reduced educational attainment, and long-term impacts on employment and mental
+health [29, 46]. However, only about 30% of children with DLD have been identified [29]. Thus, there is a sus-
+tained need for methods that can reliably evaluate children’s language development and support both clinical
+decision making and research on mechanisms and interventions.
+Language sample analysis (LSA) occupies a central position in this landscape. Unlike standardized language
+tests, which typically elicit constrained responses, LSA examines children’s spontaneous language use in real-
+life situations, such as conversation or story telling. This approach enables detailed profiling of children’s lexical,
+morphological, syntactic, and discourse skills, as well as the disfluencies they produce. Research has consistently
+shown that LSA measures can help clinicians diagnose children with DLD and identify intervention goals [ 11,
+32, 44]. As a result, LSA is widely regarded as a gold-standard method for child language assessment.
+Despite the usefulness of LSA, it is still not conducted regularly in clinical settings partly due to the time
+constraint. For example, a conversational language sample of 15 to 20 minutes is typically needed for a preschool
+child to obtain the recommended sample length, such as 50 to 100 utterances. Typically, a one-minute language
+sample takes an experienced SLP 5 to 8 minutes to process. Thus, it may take approximately 1 to 3 hours to process
+the language sample for a preschooler. Surveys of practicing SLPs report substantial barriers to the routine use
+of LSA, including the extensive time required for transcription and coding, the need for specialized training, and
+concerns about scoring consistency [19, 45]. These challenges are further compounded by a persistent shortage
+of SLPs and their increasing workloads, which limit the feasibility of applying LSA in clinical practice.
+A central promise of ubiquitous computing in education is support that reaches learners wherever learning
+happens, in classrooms, therapy rooms, and homes. For learners facing language challenges, this support remains
+largely out of reach: most children with DLD are never identified, and for those who are, progress monitoring
+depends on hours of specialist coding per sample. Diagnosis therefore comes late, and improvement is rarely
+measured. Removing this analysis bottleneck is a prerequisite for educational environments that can detect,
+diagnose, and track language difficulties as part of everyday practice.
+Existing computational approaches only partially address these limitations. Existing LSA tools such as CLAN
+[26] and SALT [16] support standardized coding conventions and metric computation, but they generally assume
+that transcripts and annotations have already been produced by trained human coders. General-purpose and
+child-adapted ASR systems can reduce part of the transcription burden, but they are not designed to preserve
+all LSA-relevant phenomena or to produce editable intermediate annotations such as C-unit boundaries, maze
+labels, speaker labels, and morpheme codes. Existing automated LSA systems also provide limited support for
+expert verification and correction. Collectively, these gaps highlight the need for a comprehensive, efficient, and
+verifiable approach to automating Language Sample Analysis while preserving efficient expert oversight.
+Therefore, we propose SATE (Speech Annotation and Transcription Enhancer), a human-in-the-loop system
+for automated child LSA. SATE combines three design choices. First, it implements a domain-adapted pipeline
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 3
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:3
+that converts child speech into structured LSA outputs, including transcript, C-unit boundaries, speaker labels,
+maze labels, morpheme labels, and language metrics. Second, it introduces end-to-end transcription-and-maze
+models to examine whether joint modeling can reduce error accumulation between ASR and downstream anno-
+tation. Third, it provides an interactive interface that allows experts to review, verify, and correct all intermediate
+outputs before final metric interpretation. This design positions automation as a support for expert judgment
+rather than a replacement for expert review.
+To validate the proposed system, we evaluate the performance of each machine learning component using
+objective metrics. We further compare SATE result with those from manual LSA performed by experienced
+researchers, which demonstrate that SATE produces consistent language metrics and preserves diagnostic in-
+sight. In addition, we conduct a counterbalanced human-in-the-loop evaluation, showing that SATE-assisted
+LSA substantially reduces completion time while maintaining comparable or better final transcript and annota-
+tion accuracy than manual LSA.
+In summary, our contributions are as follows:
+• A verifiable LSA automation system that directly addresses a long-standing barrier in speech pathol-
+ogy: the heavy time and expertise burden that has prevented use of LSA. By converting the traditionally
+manual, low-efficiency workflow into an automated pipeline with interpretable and editable intermediate
+representations, the system enables reliable LSA at scale.
+• A joint modeling framework that mitigates error accumulation between transcription and disfluency
+detection. We introduce two end-to-end architectures and an evaluation protocol that makes annotation
+performance comparable under ASR discrepancies, demonstrating joint modeling improved robustness to
+upstream transcription errors.
+• A human-in-the-loop interaction paradigm that improves the usability of automated LSA, integrating
+audio-synchronized review with multi-layer visualization and efficient editing of transcripts and linguistic
+annotations. This is the first system that couples an automated LSA pipeline with an expert-facing correc-
+tion interface, and we provide preliminary human-in-the-loop evidence of its practical utility through a
+pilot user study.
+2 BACKGROUND AND RELATED WORK
+In this section, Section 2.1 first introduces the LSA workflow and the task requirements that motivate the system
+design. Sections 2.2–2.3 then review related work on children’s ASR and component-level automation. Finally,
+Section 2.4 discusses existing automated LSA systems and the remaining gap for verifiable human-in-the-loop
+analysis.
+2.1 Language Sample Analysis Workflow and Automation Requirements
+A typical manual LSA workflow is illustrated in Figure 1. A trained SLP first listens to a child language sample
+and produces a verbatim orthographic transcript. The transcript is then segmented into communication units
+(C-units), speaker turns are identified, and disfluencies are annotated as mazes. Inflectional morphemes are
+subsequently coded at the word level, and summary language metrics are computed. These metrics are then
+interpreted relative to age expectations, diagnostic needs, and intervention goals.
+Several LSA conventions are especially important for automation. A C-unit is commonly defined as an in-
+dependent clause together with any dependent clauses that belong to it [ 24]. This definition differs from ordi-
+nary sentence segmentation because children’s spontaneous speech often contains incomplete clauses, coordina-
+tion, noncanonical grammar, and disfluencies. Maze annotation identifies repetitions, revisions, and filler words.
+These segments are clinically meaningful because they may reflect language planning and repair processes, but
+they are also excluded from some downstream linguistic metrics so that repetitions or abandoned forms do not
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 4
+107:4
+• Hou et al.
+Fig.
+1. Typical Language Sample Analysis Workflow.
+inflate measures of syntactic or lexical ability. Morphological coding focuses on inflectional morphemes such as
+plural -s, possessive -s, third-person singular -s, past tense -ed, past participle, and present participle -ing.
+This workflow creates two requirements that are not addressed by ordinary transcription systems. First, the
+system must preserve verbatim child productions, including disfluencies, grammatical errors, and atypical forms,
+rather than normalizing them into fluent adult-like sentences. Second, the system must expose intermediate
+representations for review, because errors in transcription, segmentation, maze annotation, or morpheme coding
+can change final LSA metrics. These requirements motivate the design of SATE as an automated but verifiable
+workflow rather than a fully automatic black-box predictor.
+2.2 Children’s Automatic Speech Recognition and Speech Assessment
+Verbatim transcription of child speech is the foundation of automated LSA, yet children’s ASR remains a difficult
+problem. Compared with adult speech, children’s speech contains greater acoustic variability, higher pitch, less
+stable articulation, developing phonology, invented words, frequent disfluencies, and noncanonical grammatical
+constructions [14]. These properties produce a persistent domain mismatch for ASR models trained primarily on
+adult fluent speech. Language model priors can further normalize or suppress precisely the atypical productions
+that LSA needs to preserve, including repetitions, revisions, omissions, and morphological errors [41].
+Recent work has therefore explored child-specific adaptation of modern ASR systems. Rolland and Abad stud-
+ied transfer-based strategies for improving children’s ASR, including adaptation methods designed to address
+the acoustic variability and data scarcity of child speech [36]. Jain et al. examined native and non-native English
+child speech recognition with Whisper and showed that fine-tuning large pretrained models on child speech
+can substantially improve performance on child ASR benchmarks [18]. Attia et al. similarly demonstrated that
+child-oriented ASR adaptation can reduce recognition errors in children’s speech [ 2]. In adjacent educational
+assessment work, Wang et al. proposed a unified model for oral reading fluency and student prosody, illustrating
+the broader movement toward task-specific child speech technologies for educational and language assessment
+contexts [43].
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 5
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:5
+These studies show that child-specific ASR adaptation is essential, but they also leave an important gap for
+LSA. Most child-ASR work optimizes transcription accuracy or reading-fluency outcomes, whereas LSA requires
+a transcript that preserves disfluent and clinically meaningful productions and supports downstream C-unit,
+maze, speaker, and morpheme annotations. SATE builds on the insight that child-domain adaptation is necessary,
+while extending the objective from transcription alone to a structured and editable LSA workflow.
+2.3 Component-Level Automation for LSA Annotations
+Speech and language processing research has developed models for transcription, disfluency detection, segmen-
+tation, and linguistic analysis. However, these components remain poorly suited for child LSA due to domain
+mismatch and error propagation.
+Disfluency and Maze Detection. Maze annotation is related to disfluency detection in NLP and speech process-
+ing. Early text-based methods relied on surface cues such as repeated words [ 23], while more recent approaches
+use contextual representations from bidirectional LSTM and Transformer architectures [25, 48]. Audio-based
+and audio-text methods use prosodic cues and acoustic-textual fusion to improve detection [ 12, 37, 39]. Recent
+work has also explored generating disfluency tokens during speech transcription [49]. However, most disfluency
+systems are designed for adult conversational speech or generic disfluency labels, not for child LSA conventions.
+In child LSA, maze annotations must be compatible with SALT/CHAT-style coding and must operate reliably on
+spontaneous language from children with and without DLD.
+Applying existing disfluency methods directly to LSA therefore presents three challenges. First, text-only
+models inherit upstream ASR errors. Second, audio-only models require alignment back to transcript tokens
+before LSA metrics can be computed. Third, child speech and DLD speech contain disfluency, grammar, and
+phonological patterns that differ from adult corpora [5]. These challenges motivate a domain-adapted maze
+classifier and the end-to-end transcription-and-maze models evaluated in this paper.
+Utterance and C-unit Segmentation. Sentence segmentation models divide text into sentence-like units for
+downstream NLP tasks [13, 30]. C-unit segmentation differs from ordinary sentence boundary detection be-
+cause it follows clinical LSA conventions rather than written punctuation or adult sentence structure. Batchalign
+includes C-unit-oriented processing for CHAT transcripts [22], but few segmentation systems are trained specif-
+ically for children’s spontaneous language. Disfluencies, incomplete utterances, and noncanonical grammar are
+especially common in child speech and can degrade generic segmentation models.
+Morphological Analysis. Morphological analysis has long been supported by tools such as CLAN and its MOR
+program [26]. Neural NLP toolkits such as Stanza provide tokenization, lemmatization, POS tagging, dependency
+parsing, and Universal Dependencies morphological features [9, 33]. However, LSA morpheme coding differs
+from generic morphological tagging because it must map linguistic features to clinically meaningful inflectional
+morpheme categories. In addition, mazes can disrupt the local syntactic context used by morphological analyzers.
+For this reason, SATE performs morpheme annotation after maze detection and exclusion.
+2.4 Automated Language Sample Analysis Systems
+Batchalign [22] is a major effort toward automated LSA. It can generate CHAT-format [26] transcripts from
+speech and connects ASR with downstream transcript processing. For the clinical and research use case targeted
+by SATE, however, two limitations remain important.
+Limitation 1: Sequential pipeline without mitigation of error accumulation. Batchalign integrates existing mod-
+els into a sequential pipeline where each stage operates independently. Although the authors note that low ASR
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 6
+107:6
+• Hou et al.
+error rates minimize downstream impact, the system lacks explicit mechanisms for mitigating error accumula-
+tion across stage. The system becomes problematic when applied to challenging populations such as children
+with DLD, where higher ASR error rates can cascade through segmentation and annotation stages.
+Limitation 2: Lack of human-in-the-loop verification. Batchalign outputs finalized transcripts without provid-
+ing mechanisms for efficient expert review or correction. Clinical practice guidelines require that language as-
+sessment results be verified by qualified professionals before they are used to support diagnostic or intervention
+decisions [1]. Without an efficient and user-friendly interface for human-in-the-loop interaction, the applicabil-
+ity of the system in real-world clinical practice is fundamentally constrained, regardless of its underlying model
+performance.
+In summary, prior work establishes the importance of child-specific ASR adaptation and provides component
+technologies for disfluency detection, segmentation, and morphological analysis. However, existing approaches
+do not fully address the combined requirements of child LSA: preserving clinically meaningful verbatim pro-
+ductions, producing structured LSA annotations, reducing error propagation, and supporting expert verification.
+SATE addresses this gap through domain-adapted models, end-to-end transcription-and-maze architectures, and
+an interactive interface for efficient human oversight.
+3 DATASET AND PREPROCESSING
+All training and evaluation data used in this study is from the Edmonton Narrative Norms Instrument (ENNI)
+dataset [38]. The ENNI corpus was collected to support the assessment of children’s narrative language abilities
+and contains spontaneous speech samples from 361 children aged 4 to 9 years, including both typically devel-
+oping (TD) children and children diagnosed with DLD. In the dataset, children were prompted to describe short
+stories composed of 3 sequential pictures from 2 narrative types that introduce linguistic variety.
+The ENNI dataset was transcribed in 2 formats. One widely used format is the Codes for the Human Analysis
+of Transcripts (CHAT), which is publicly available through the TalkBank [26] CHILDES [27] database. CHAT
+transcriptions encode maze using symbolic annotations (e.g., <, >, [/], or [//]), and each transcription line cor-
+responds to a single C-unit with associated speaker labels and time stamps. For example, a CHAT line such as
+*CHI: <he was> [/] he was running. indicates that the utterance was produced by the child speaker, that
+the entire line is one C-unit, and that <he was> [/] is a repetition maze. Similarly, *CHI: <he is> [//] he
+was happy. represents a revision maze, while speaker prefixes such as *CHI: and *INV: distinguish child and
+examiner utterances. As a result, the CHAT format offers reliable reference annotations for evaluating verbatim
+transcription, maze detection, speaker identification, and C-unit segmentation.
+However, the inflectional morpheme annotations are generated automatically by the Computerized Language
+Analysis (CLAN) software as dependent tiers rather than being manually annotated and verified by experts.
+Therefore, we did not use the CHAT-format transcripts for evaluating morpheme annotation performance. We
+incorporated a second version of the ENNI transcripts in Systematic Analysis of Language Transcripts (SALT)
+format, obtained from prior work [ 15]. In this dataset, all inflectional morphemes were manually annotated by
+licensed SLPs, and reliable LSA metrics were computed based on these expert-coded transcripts. The SALT ver-
+sion contains the same language samples as the CHAT version, and its orthographic transcriptions and C-unit
+boundaries are consistent with the CHAT transcripts. The main difference is that the SALT version includes
+expert-verified inflectional morpheme coding. For example, SALT marks bound morphemes using suffix anno-
+tations appended to word roots, such as dog/s for plural -s, walk/ed for past tense -ed, walk/ing for present
+participle -ing, and walk/3s for third-person singular -s. This SALT-format dataset was therefore used for eval-
+uating morpheme annotation and for assessing the overall system performance of SATE.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 7
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:7
+Table 1. Summary of transcript preprocessing rules for CHAT and SALT formats. “Converted” indicates that the annotation
+was transformed into structured labels or metadata for model training/evaluation; “Cleaned” indicates that the symbol was
+removed or normalized from the lexical transcript.
+Format Categor
+y Example Operation
+CHA
+T Speaker label *CHI:, *INV: Converted
+CHAT Timestamp for audio boundary 1223_2058 Converted
+CHAT C-unit boundary Each main-tier utterance Converted
+CHAT Repetition maze <he was> [/] Converted
+CHAT Revision maze <he is> [//] , <he is> [/-] Converted
+CHAT Filler word &-um, &=um, &~um, um, uh, ah Converted
+CHAT Noncompletion n(o)t, (i)s Cleaned
+CHAT Child-invented word marker word@c Cleaned
+CHAT Pause and other non-lexical label (.), (..), (...), &=laughs Cleaned
+SALT Inflectional morpheme annotation dog/s, walk/ed, walk/ing, walk/3s Converted
+Befor
+e model training and evaluation, CHAT and SALT transcripts were normalized into task-specific struc-
+tured representations. For CHAT transcripts, speaker labels, timestamps, C-unit boundaries, and maze anno-
+tations were extracted from the main-tier utterance lines. Annotations that corresponded to LSA-relevant la-
+bels were converted into structured labels, while pause markers, dependent annotations, and other non-lexical
+markup were removed from the lexical transcript. For SALT transcripts, expert-coded morpheme suffixes were
+converted into word-level morpheme labels while preserving the same C-unit and lexical transcript structure as
+the CHAT version. Table 1 summarizes the main preprocessing rules.
+For all experiments, the data were split into 70% training and 30% testing sets at the speaker level and the
+proportions of TD and DLD children were matched across the training and test partitions. Specifically, the split
+was performed by assigning 70% of speakers to the training set and the remaining 30% of speakers to the test
+set. No speaker appeared in both partitions. This speaker-level split prevents data leakage caused by having
+language samples from the same child appear in both training and evaluation, ensuring that test performance
+reflects generalization to unseen speakers rather than memorization of speaker-specific acoustic or linguistic
+patterns.
+4 SATE: SPEECH ANNOTATION AND TRANSCRIPTION ENHANCER
+Our SATE system consists of two mutually reinforcing components as shown in Figure 2. The first component
+is an automated machine learning pipeline that reproduces the Language Sample Analysis (LSA) workflow, in-
+cluding verbatim transcription, utterance segmentation into communication units, speaker identification, maze
+annotation, morphological analysis, and computation of language metrics. The second component is an interac-
+tive web-based environment that presents model outputs in an interpretable form and enables efficient review,
+audio-synchronized verification, and correction of model predictions. Together, these components form an inte-
+grated system that balances automation with human oversight, ensuring both efficiency and analytic reliability.
+This section is organized as follows. Section 4.1 describes our pipeline solution, in which each analytic task is
+addressed by a individual machine learning model operating in sequence. Section 4.2 presents two end-to-end
+modeling approaches that unify transcription and annotation within a single model, thereby mitigating the error
+propagation in sequential pipelines. Finally, Section 4.4 introduces the design of the user interface, including
+the review panel layout, annotation display, and editing operations that support efficient human-in-the-loop
+verification and correction.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 8
+107:8
+• Hou et al.
+Fig.
+2. SATE System Overview. The “Automated LSA” panel summarizes the functional modules supported by SATE and
+should not be interpreted as a fixed backend execution order. The actual backend configurations are detailed in Figure 3.
+4.1 Pipeline Solution of Automatic Language Sample Analysis
+In the pipeline solution, SATE implements a sequence of independent models that mirror each step of the LSA
+workflow. Each component addresses a well-defined subtask and produces structured outputs that serve as in-
+puts to subsequent stages. The upper half of Figure 3 illustrates how raw audio is progressively transformed
+into LSA metrics through successive model inference steps. This pipeline formulation emphasizes transparency,
+modularity, and interpretability, and each stage can be independently developed, evaluated and updated.
+4.1.1 Verbatim Transcription Model. To develop an ASR system that is accurate for children’s speech while
+preserving everything that is actually spoken in verbatim transcription, SATE adopts a supervised full-parameter
+fine-tuning strategy using spontaneous child speech dataset that corresponding transcripts preserve speech
+maze and linguistically relevant deviations, such as morphological errors. This fine-tuning strategy ensures that
+the ASR model is not only acoustically adapted to children’s speech, but also linguistically aligned with the
+requirements of downstream LSA tasks.
+The ASR component is initialized from the publicly released openai/whisper-small checkpoint [ 34]. All
+encoder and decoder parameters are updated during fine-tuning, with no layers frozen. Audio is resampled to
+16 kHz and converted to log-mel features using the backbone’s standard preprocessing. Training hyperparame-
+ters and decoding settings are listed in Section 4.3.
+At inference time, this module takes a complete speech sample audio file as input and produces a continuous
+verbatim transcript of the entire recording. The output is not segmented at this stage, and maze structures within
+the transcript are not identified. These analyses are performed by downstream models in the SATE pipeline.
+4.1.2 C-units Segmentation Model. After transcription, automated C-unit segmentation in the SATE pipeline
+operates directly on the textual output and is formulated as a token-level binary classification task, in which
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 9
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:9
+each token is assigned a binary boundary label indicating whether it terminates a C-unit. For an input token
+sequence {𝑤1, … , 𝑤𝑇 }, the model predicts 𝑦𝑡 ∈ {0, 1}, where 𝑦𝑡 = 1 indicates that token 𝑤𝑡 is the final word of a
+C-unit. We developed a BERT-based token classification model using C-unit boundary labels derived from the
+public ENNI CHAT transcripts. Because each CHAT main-tier utterance line corresponds to one C-unit, the final
+word of each line was labeled as a C-unit boundary and all other words were labeled as non-boundaries.
+The segmentation model is initialized from bert-base-uncased [10] with a linear classification head over
+contextualized token representations; all transformer layers are fine-tuned. Inputs are truncated or padded to
+512 WordPiece tokens. When a word is split into multiple subwords, the boundary label is assigned to the first
+subword, while remaining subwords and special tokens are masked out of the loss. To use the context window
+efficiently, adjacent CHAT utterances are concatenated until the resulting sequence approaches the model con-
+text limit. Inline CHAT maze symbols are removed, but maze words are retained so the model learns C-unit
+boundaries in the presence of disfluent child speech. Training hyperparameters are listed in Section 4.3.
+4.1.3 Speaker Identification. Language samples often involve interactions between children and adults (e.g., par-
+ent, SLP). Thus, distinguishing between speakers is essential for computing metrics for the child specifically, as
+well as for identifying interaction dynamics. SATE performs speaker identification by combining time alignment
+with acoustic classification models. Forced alignment is first performed using a wav2vec2-CTC based aligner,
+which provides temporal localization of each word and yields the start and end time boundaries of each C-unit.
+These boundaries are then used to segment the full recording into corresponding C-unit audio segments. Each
+audio segment is passed to the bookbot/wav2vec2-adult-child-cls model, an off-the-shelf wav2vec 2.0 audio
+classification model designed for adult and child speech classification. This two-stage approach enables SATE
+to classify speakers at the span of each C-unit using acoustic features, improving accuracy while maintaining
+alignment between utterance-level and speaker-level segmentation.
+We do not introduce a novel speaker identification model in this work. Our contribution in this component
+lies not in model innovation, but in the systematic integration of speaker identification into the automated LSA
+workflow, ensuring reliable alignment with transcription, segmentation, and subsequent linguistic analyses.
+Fig.
+3. Comparison of Pipeline and End-to-end Approach for Transcription and Maze Annotation.
+4.1.4 Maze Annotation Model. SATE’s maze annotation model is also based on a BERT-based token classifier.
+We formulate maze detection as a token-level multi-label classification problem. Each token receives three inde-
+pendent binary labels indicating whether it participates in a repetition, a revision, or a filled-pause production.
+Non-maze tokens correspond to the all-zero label vector, so the classifier learns to distinguish ordinary content
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 10
+107:10
+• Hou et al.
+words from maze tokens without requiring a separate maze-detection stage. Contextualized embeddings from
+the BERT transformer backbone are passed through a final linear classification layer and a per-label sigmoid ac-
+tivation function to produce token-level probabilities. Similar to the segmentation model, the maze annotation
+model is initialized from bert-base-uncased [10] with a linear classification head, and all transformer layers
+are fine-tuned. Training labels are extracted from CHAT maze annotations in the ENNI training split. The lexical
+transcript is cleaned by removing symbolic CHAT markers while preserving the actual maze words, allowing
+each word to be paired with its corresponding maze label. Training hyperparameters are listed in Section 4.3.
+4.1.5 Morphological Analysis. Rather than developing a new morphological analysis model, our goal is to re-
+liably integrate established linguistic analysis tools into an automated LSA workflow. Accordingly, SATE uses
+the Stanza natural language processing toolkit [33], which provides universal part-of-speech tags, language-
+specific POS tags, and rich morphological feature annotations based on the Universal Dependencies framework
+[9]. Stanza has been validated across a wide range of corpora and languages, making it a stable foundation for
+morphological analysis.
+To align Stanza outputs with the inflectional morpheme categories defined in LSA, we implement a conver-
+sion pipeline that maps Universal Dependencies features such as Number, Tense, and Person to the six target
+morpheme types. This conversion process reproduces the morpheme coding decisions made in manual LSA
+and yields word-level morpheme labels that can be directly used for metric computation. Importantly, morpho-
+logical analysis in SATE is performed only after maze has been detected and ignored from the transcriptions.
+Mazes such as repetitions and revisions often disrupt local syntactic context and can introduce spurious cues for
+morphological analyzers. By excluding mazes prior to morphological processing, SATE ensures that inflectional
+features are derived from linguistically well-formed utterances, resulting in more stable and reliable morpheme
+annotation. Experimental results demonstrate that this design substantially improves the accuracy as shown in
+Table 6.
+4.1.6 Language Sample Analysis Metrics. Once transcription and all processing are complete, SATE computes
+the LSA metrics widely used in both clinical and research practice. Core measures include the number of total
+utterances (NTU), number of total words (NTW), number of different words (NDW), and mean length of utter-
+ance in morphemes (MLUm). All metric definitions and calculation procedures strictly follow SALT conventions
+[16], which is the most widely adopted standard among SLPs [45]. In addition to these core measures, SATE also
+computes lexical diversity metrics, including Type–Token Ratio (TTR) [ 35] and Vocabulary Diversity (VOC-D)
+[28], both of which have been extensively validated in LSA research.
+The computation of these metrics marks the completion of the LSA workflow. In clinical practice, SLPs typi-
+cally compare a child’s metrics with normative values from age-matched peers to support diagnostic decisions, or
+track changes in these metrics over time to evaluate the progress of intervention. For researchers, these metrics
+serve as the foundational starting point for quantitative analyses of children’s language development.
+4.2 End-to-end Models for Transcription and Annotation
+The pipeline solution provides the complete modular SATE workflow and supports all downstream LSA com-
+ponents. However, because transcription and maze annotation are performed by separate models, ASR errors
+may propagate into maze prediction. We therefore introduce the following E2E models as complementary de-
+signs focused specifically on joint transcription and maze annotation. As reported in Table 7, we evaluate maze
+annotation under three transcription conditions: using fully corrected transcripts, incorporating substitution
+errors, and incorporating all transcription errors. The results demonstrate a consistent decline in annotation
+performance as transcription errors increase, illustrating the compounding effect of upstream inaccuracies on
+downstream tasks. To address this limitation, we adopt an end-to-end modeling strategy that jointly performs
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 11
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:11
+Fig.
+4. End-to-end Models for Transcription and Maze Annotation. The Whisper encoder-decoder backbone is reused from
+openai/whisper-small. Newly introduced components are highlighted: tokenizer is modified to add maze special tokens
+in Solution 1, and the layer-fusion adapter, maze Transformer encoder, and maze classification head in Solution 2.
+transcription and maze annotation within a unified optimization framework. By learning both tasks simultane-
+ously, the model reduces error propagation and improves robustness to imperfect intermediate representations.
+Specifically, we propose two end-to-end models based on transformer encoder-decoder architectures. The first
+method treats maze labels as special tokens and directly inserts them into the transcription output. The model
+is trained to generate both lexical tokens and maze tokens simultaneously. The second approach augments the
+encoder-decoder model with an additional lightweight transformer encoder that predicts maze labels based
+on the decoder’s hidden representations, separating lexical generation from label prediction while maintaining
+shared linguistic representations.
+In both architectures, transcription and maze annotation are predicted jointly, whereas subsequent process-
+ing stages including C-unit segmentation, speaker identification, morphological analysis, and language metric
+computation follow the same methods as in the pipeline solution. The overall processing flow is illustrated in
+Figure 3.
+4.2.1 End-to-end Solution 1: Inline Label Generation via Special Tokens. Special tokens have been widely used
+in transformer-based text modeling to encode structural and control information, such as sentence boundary
+markers, padding tokens, task identifiers, and prompt-conditioning tokens. These tokens allow models to incor-
+porate auxiliary signals into the generation process without altering the core architecture, effectively guiding
+decoding behavior through learned symbolic representations.
+In speech modeling, especially in automatic speech recognition systems, special tokens are adopted to control
+transcription behavior. For example, Whisper [34] introduces language tokens to specify the target transcription
+language, as well as voice activity tokens to suppress transcription in non-speech segments. Beyond these uses,
+special tokens have also been explored for timestamp prediction [17], speaker diarization [20], and sound event
+detection [47]. Although special-token approaches have been studied in speech and text modeling, their applica-
+tion to disfluency and maze annotation in LSA remains limited. One of the few existing works [ 49] benchmarks
+speech disfluency detection using token prediction during transcription. However, that work relies on synthetic
+training data and does not preserve LSA-compatible lexical transcripts, limiting its applicability for real-world
+language analysis.
+In our model, we design five special tokens to represent maze locations in transcription as shown in Table
+2, including the start and end of repetition, the start and end of revision, and a token indicating that the fol-
+lowing word is filler word. This design allows explicitly encode the span boundaries and types of maze. We
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 12
+107:12
+• Hou et al.
+Table 2. Conversion from original CHAT-format maze annotations to special tokens used in End-to-end Transcription and
+Maze Annotation Solution 1.
+Maze
+Type CHAT Original Format Special Tokens Transcription Example
+Rep
+etition and then <he was> [/] he
+was getting happy and hap-
+pier.
+<REPST> <REPED> and then <REPST> he was <REPED> he
+was getting happy and happier.
+Re
+vision <and then he was so> [//]
+and then my brother was so
+happy.
+<REVST> <REVED> <REVST> and then he was so <REVED>
+and then my brother was so happy.
+Filler
+Word the &-um doctor bunny
+came.
+<FILLE> the <FILLE> um doctor bunny came.
+e
+xperimented with alternative designs, such as inserting a special token before each word, but found that exces-
+sive insertion of special tokens degraded transcription quality by overloading the decoding space. The adopted
+token design therefore balances annotation expressiveness with transcription accuracy. To enable the model to
+generate special tokens during transcription, we introduce two key modifications. First, we insert special tokens
+into training transcripts by transforming symbolic maze annotations from CHAT-format corpora. Second, we
+extend the tokenizer vocabulary to include the special tokens, allowing the decoder to model them as part of
+the output space. These modifications are implemented on top of the Whisper encoder–decoder architecture, as
+illustrated in Figure 4.
+E2E Solution 1 keeps the original Whisper backbone unchanged and modifies only the target token space used
+by the decoder. Specifically, we start from the same openai/whisper-small checkpoint used in the pipeline
+ASR model and extend the Whisper tokenizer with five maze tokens: <REPST>, <REPED>, <REVST>, <REVED>, and
+<FILLE>. After adding these tokens, the decoder token embedding matrix and output vocabulary projection are
+resized so that the new symbols can be generated in the same way as ordinary transcription tokens. These maze
+tokens are constructed by converting the original CHAT maze annotations shown in Table2. During the training
+stage, all Whisper parameters are fine-tuned, and the shared training hyperparameters and decoding settings
+are reported in Section 4.3.
+Through this design, the model learns to produce lexical transcription and maze annotation simultaneously
+from raw speech input. Compared with the pipeline solution, this joint modeling approach introduces only a
+negligible number of additional parameters and reduces error accumulation by optimizing both tasks within
+a single unified framework. Importantly, speech mazes are expressed through both lexical and acoustic cues.
+In the model architecture, cross-attention integrates acoustic representations from the audio encoder with the
+previously generated text tokens. This design enables effective multimodal fusion during decoding, allowing the
+model to jointly leverage complementary acoustic and textual information, thereby improving the robustness
+and accuracy of maze detection.
+Despite these advantages, jointly predicting lexical and maze tokens imposes a higher modeling burden on
+the decoder. Under fixed model capacity, this results in a slight degradation in transcription accuracy compared
+with models trained to predict text tokens alone, as shown in Table 4. To address this limitation, we propose a
+second end-to-end architecture described in the following section.
+4.2.2 End-to-end Solution 2: Decoder-Augmented Token-Level Labeling. Our second end-to-end architecture is
+built upon the Whisper transformer encoder-decoder backbone, but decouples lexical generation from maze
+labeling to reduce the modeling burden. The model generates standard transcription tokens as in conventional
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 13
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:13
+ASR, while maze labels are predicted by an additional branch that reuses the decoder hidden representations. In
+contrast to Solution 1, this model does not modify the Whisper tokenizer or transcription vocabulary. The ASR
+pathway therefore remains the original Whisper transcription model, while the newly introduced components
+are the layer-fusion adapter and the maze-labeling branch attached to the decoder representations. Specifically,
+we design the following three components to achieve that:
+Attention-based Adapter for Layer Fusion. Let H(𝑙) ∈ ℝ 𝑇 ×𝑑 denote the decoder hidden states at layer 𝑙 ∈
+{1, … , 𝐿} for a token sequence of length 𝑇 . We first inject a learnable layer positional embedding P(𝑙)∈ ℝ 𝑑 to
+distinguish representations from different decoder depths:
+̃H(𝑙)= H(𝑙)+ P(𝑙). (1)
+For each token position 𝑡 ∈ {1, … , 𝑇 } , we use the hidden representation from the final decoder layer as the
+query and attend over the stacked representations from all decoder layers. The attention weights are computed
+independently for each token and normalized across the layer dimension. As a result, the model assigns a layer-
+wise attention weight 𝛼𝑡,𝑙 to each decoder layer for a given token position, indicating how much each decoder
+layer contributes to the representation used for maze labeling.
+𝛼𝑡,𝑙 = softmax𝑙 (
+(W𝑞h(𝐿)
+𝑡 )
+⊤
+(W𝑘 ̃h(𝑙)
+𝑡 )
+√𝑑
+) . (2)
+Giv
+en these weights, we compute a fused token representation by taking a weighted sum of the value projec-
+tions from all decoder layers:
+z𝑡 =
+𝐿
+∑
+𝑙=1
+𝛼𝑡,𝑙 (W𝑣 ̃h(𝑙)
+𝑡 ). (3)
+Here, W𝑣 ̃h(𝑙)
+𝑡 ∈ ℝ𝑑 denotes the value representation of token 𝑡 at decoder layer 𝑙, and z𝑡 ∈ ℝ𝑑 represents a layer-
+fused embedding that combines information from multiple decoder depths. Intuitively, this aggregation allows
+the model to selectively emphasize lower-layer representations that capture local lexical or acoustic-aligned
+cues, or higher-layer representations that encode more abstract linguistic context, depending on which cues are
+most informative for maze detection at that token.
+Then, the fused representation z𝑡 is passed through an output projection:
+m𝑡 = W𝑜z𝑡 . (4)
+The resulting vector m𝑡 ∈ ℝ 𝑑𝑚 serves as the input to the subsequent Transformer encoder. While z𝑡 aggregates
+information across decoder layers, m𝑡 maps this fused representation into a feature space that is optimized for
+downstream maze classification.
+Maze Transformer Encoder and Label Prediction. The fused sequence M = [m 1, m2, … , m𝑇 ] ∈ ℝ 𝑇 ×𝑑𝑚 is then
+processed by a lightweight transformer encoder with four layers. This maze transformer encoder uses hidden
+dimension 𝑑𝑚 = 768, 12 attention heads, and dropout 0.1. The encoder output is fed into a classification head to
+produce logits O ∈ ℝ𝑇 ×𝐶, where 𝐶 = 4 corresponds to fluent, repetition, revision, and filler words labels.
+Joint Optimization Objective. The model is jointly optimized for transcription and maze labeling with a weighted
+multi-task objective:
+ℒ = (1 − 𝜆)ℒASR + 𝜆 ℒmaze. (5)
+ℒASR is standard cross entropy over the transcription vocabulary. ℒmaze uses focal loss [21] to address class im-
+balance, since maze tokens account for a small fraction of all tokens. The Whisper backbone is initialized from
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 14
+107:14
+• Hou et al.
+Table 3. Training settings for the learnable SATE components. Effective batch size is computed as per-device batch size
+multiplied by gradient accumulation steps.
+Comp
+onent Base Model Loss LR Warmup Eff. Batch Budget / Selection
+ASR
+(Pipeline) openai/whisper-small CE 1×10−5 500 steps 16 (8 ×2) 10,000 steps / min val WER
+C-unit Segmentation bert-base-uncased CE 2×10−5 10% steps 8 30 epochs / max val F1
+Maze (Pipeline) bert-base-uncased BCE 3×10−5 10% steps 16 10,000 steps / max val micro-F1
+E2E Solution 1 openai/whisper-small CE 1×10−5 500 steps 16 (8 ×2) 10,000 steps / min val WER
+E2E Solution 2 openai/whisper-small CE + focal 1×10−5 500 steps 16 (8 ×2) 10,000 steps / min val WER
+the
+same openai/whisper-small checkpoint as Solution 1 and the pipeline ASR model. The adapter parame-
+ters, the four-layer maze transformer encoder, and the maze classification head are initialized from scratch. All
+backbone, adapter, and maze-branch parameters are optimized jointly, with no frozen Whisper layers.
+Training audio, transcript targets, and parallel word-level maze labels are derived from the ENNI training set
+using the same CHAT preprocessing described at Section 3. Unlike Solution 1, which rewrites maze annotations
+as inline special tokens, Solution 2 keeps the transcript target as a standard Whisper transcription sequence and
+represents maze annotations as a parallel label sequence. The auxiliary classifier is therefore supervised at token
+positions aligned with the output transcript tokens. The multi-task weight 𝜆 = 0.5 , focal-loss settings, and other
+shared training hyperparameters are reported in Section 4.3.
+At inference time, the ASR backbone first generates a clean transcript using greedy decoding. The generated
+transcript is then re-tokenized and passed back through the joint model together with the audio features to obtain
+token-level maze logits. Maze predictions are selected by argmax and aggregated to word level by majority vote
+across the subword pieces of each predicted word.
+Overall, this decoder-augmented architecture with joint optimization encourages decoder representations to
+remain reliable for transcription while being discriminative for maze detection.
+4.3 Implementation Details
+To support reproducibility, we summarize the main training settings for each learnable component in Table 3.
+All models were trained on the ENNI training partition described in Section 3. The training partition was further
+split into 90% training and 10% validation data for checkpoint selection. Unless otherwise stated, models were
+optimized with AdamW, linear warmup followed by linear decay, gradient clipping with maximum norm 1.0,
+and mixed-precision training when supported. A fixed random seed of 42 was used for ASR and end-to-end
+model training. No layers were frozen for the fine-tuned ASR, BERT-based, or end-to-end models. The speaker
+identification model, morpheme annotation were used off the shelf and was not fine-tuned.
+For the pipeline maze classifier, binary cross-entropy was applied independently to repetition, revision, and
+filled-pause labels, with a threshold of 0.5 at inference. For E2E Solution 2, the multi-task objective was ℒ =
+0.5 ℒASR + 0.5ℒmaze, where ℒmaze used focal loss with 𝛾 = 2.0 and uniform 𝛼 = 1.0 . During inference, Whisper-
+based models used greedy decoding with beam size 1, temperature 0.0, length penalty 1.0, and timestamp pre-
+diction disabled. E2E Solution 1 additionally disabled forced decoder prompts and token suppression to allow
+generation of the added maze tokens.
+4.4 User Interface for Efficient Review and Editing
+Although automation is essential for efficiency, human verification remains a necessary component to ensure
+that the final results are trustworthy. In the SATE workflow, users begin by uploading audio recordings to the
+server, where a deployed machine learning pipeline automatically processes it and returns structured results to
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 15
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:15
+the front-end interface. These results include C-unit segmented transcripts, speaker labels, word-level maze and
+inflectional morpheme annotations, and computed LSA metrics. Users can then play back the audio within the
+interface, inspect the transcription and annotations, and correct any errors generated by the model. Through
+this review and editing process, all intermediate LSA result are validated, ensuring that the final metric reports
+are reliable and suitable for clinical or research use.
+Prior work shows that usability, cognitive load, and interface transparency strongly affect experts’ ability to
+efficiently and reliably validate system outputs, particularly in multimodal transcription and annotation tasks
+involving both audio and text [8, 40]. Guided by these principles, SATE incorporates an audio-synchronized and
+annotation-aware interface. The design focuses on two objectives: presenting transcriptions and maze annota-
+tions in a manner that is transparent, to support rapid inspection and comprehension, and to enable efficient
+editing operations that allow users to correct errors with minimal cognitive load. These two design emphases
+are addressed in the following sections.
+4.4.1 Review Panel Design. The review panel is organized into three coordinated regions: a navigation panel on
+the left, a transcription panel in the center and a language analysis panel on the right, as illustrated in Figure
+5. The central transcription panel consists of vertically stacked units corresponding to individual C-units. Each
+unit displays the speaker label, the orthographic transcript and any annotations such as maze or inflectional mor-
+pheme. During audio playback, the active C-unit and word are highlighted in synchronize, which significantly
+reduces search time and facilitates the human detection of transcription or annotation errors.
+Within each C-unit, maze and morpheme annotations are visually distinguished using different highlight
+styles, enabling users to recognize annotation types at a glance while preserving readability of the transcript.
+Additional details remain accessible: when a user selects an annotated token, the corresponding metadata, such
+as maze category or morpheme suffix, is popped up on demand, supporting closer inspection without cluttering
+the primary view. The right side analysis panel include LSA metrics computed from the current transcript and
+selected speaker, updating dynamically in response to user edits.
+4.4.2 Editing Operations. To support efficient and reliable human-in-the-loop correction, SATE provides two
+types of editing operations that align with the hierarchical structure of LSA transcription: transcription and
+annotation editing and unit editing, as illustrated in Figure 5.
+Transcription and annotation editing enables revision of lexical content and maze, morpheme labels. When
+a user double-clicks a C-unit, the interface transitions into an editable text in SALT annotation format, which
+uses symbolic markers to encode annotations. Users can correct transcription errors, adjust maze boundaries or
+revise morphological markers. Unit editing supports modifications including splitting a C-unit, merging adjacent
+units, reassigning speaker labels and adding, excluding or deleting units.
+The combined design of editing functions enables users to validate and correct all intermediate output underly-
+ing LSA conventions, ensuring that the final metrics results reflect expert judgment while retaining the efficiency
+benefits of automation. More importantly, this design transforms SATE from an automated LSA model into a
+fully usable tool for clinical and research practice.
+5 EXPERIMENTS
+This section presents a comprehensive evaluation of the proposed SATE system, ranging from component-level
+model performance to system-level and human-in-the-loop validation. First, we evaluate each module in the
+pipeline solution independently, including automatic speech recognition, C-unit segmentation, maze annota-
+tion, and morphological analysis. Second, we evaluate the proposed end-to-end models that jointly perform
+transcription and maze annotation, and compare their results with the pipeline solution to examine robustness
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 16
+107:16
+• Hou et al.
+Fig.
+5. User Interface of SATE System.
+under upstream ASR errors. Third, we assess the overall performance of SATE by comparing automatically gen-
+erated LSA metrics with those produced by expert-coded reference transcripts, without any manual review or
+correction, to examine the consistency between automated and human analysis. Finally, we report a counter-
+balanced human-in-the-loop evaluation that compares SATE-assisted LSA with manual LSA in terms of task
+completion time, final transcript and annotation accuracy, editing behavior, and user-perceived usability.
+5.1 Evaluation of Pipeline Solution
+5.1.1 Automatic Speech Recognition. Word error rate (WER) is used to evaluate the performance of ASR compo-
+nent of SATE pipeline solution. WER is defined as the sum of substitution, deletion, and insertion errors divided
+by the total number of reference words, and is the standard metric used across ASR research. As shown in Table
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 17
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:17
+Table 4. Practical comparison against existing systems without task-specific adaptation. We evaluate ASR performance on
+two dimensions: (1) maze-word transcription, where evaluation is restricted to words annotated as maze words in the ground
+truth, and (2) overall transcription on all words. Insertion errors are reported only for all words: an inserted word exists only
+in the ASR output, whereas maze status is only exists in the expert annotation of the reference transcript when we evaluate
+ASR performance only, so insertions cannot be attributed to the maze-word subset. Only our models are explicitly adapted
+to the child-speech story-retelling domain of ENNI, underscoring the necessity of domain-specific fine-tuning for this task.
+T
+ype Model Maze Words (12.23%) All Words
+WER
+Substitution Deletion WER Substitution Deletion Insertion
+General
+ASR
+Whisper Small 57.00% 17.03% 39.97% 31.79% 14.77% 12.43% 4.59%
+Whisper Medium 56.17% 13.27% 42.90% 28.33% 11.82% 12.35% 4.16%
+Whisper Large v3 58.59% 11.15% 47.44% 25.63% 9.80% 12.73% 3.10%
+Batchalign 43.76% 15.92% 27.84% 23.75% 11.25% 8.09% 4.41%
+ElevenLabs Scribe v1 39.27% 15.83% 23.44% 27.61% 6.37% 18.64% 2.61%
+ElevenLabs Scribe v2 38.79% 13.62% 25.17% 27.30% 5.63% 19.65% 2.02%
+Child-sp
+eech adapted ChildASR 1 [18] (Whisper Large v2) 41.83% 19.01% 22.82% 39.81% 13.70% 7.78% 18.34%
+ChildASR 2 [2] (Whisper Medium) 37.96% 14.76% 23.20% 26.58% 10.94% 8.73% 6.91%
+Ours
+(ENNI-adapted)
+Ours (Pipeline) 22.81% 13.24% 9.57% 11.81% 6.92% 2.73% 2.16%
+Ours (E2E 1) 22.51% 14.88% 7.63% 12.13% 7.17% 2.64% 2.32%
+Ours (E2E 2) 22.76% 13.62% 9.13% 12.01% 6.98% 2.70% 2.33%
+T
+able 5. C-unit Segmentation Model Performance. Batchalign and SaT were evaluated using their released/default models
+without ENNI-specific fine-tuning; our model was fine-tuned on the ENNI training split.
+Mo
+del Precision Recall F1
+SaT
+3L [13] 74.2 47.7 58.1
+Batchalign [22] 84.3 93.0 88.4
+Ours 93.9 94.3 94.1
+4,
+we compare three categories of models: general ASR models with official pretrained weights, child-speech-
+adapted models from prior work fine-tuned on non-ENNI child speech datasets, and our ENNI-adapted models
+fine-tuned on the ENNI training set. This comparison should be interpreted as a practical deployment benchmark
+rather than a controlled comparison of ASR architectures, because the external systems were evaluated using
+their released models without ENNI-specific fine-tuning.
+This evaluation establishes the transcription module as a reliable component for downstream analysis and
+demonstrates that domain-adapted models are essential for consistent performance in child language research.
+5.1.2 C-unit Segmentation. C-unit segmentation is formulated as a token-level binary classification task in
+which each token is predicted as either a boundary word or a non-boundary word. To isolate segmentation
+performance from upstream ASR errors, we used ground-truth transcripts as input and compared our segmen-
+tation model with two baselines: the segmentation method in Batchalign [ 22] and the SaT [ 13] model, as shown
+in Table 5. Both baselines were evaluated using their released/default models without additional fine-tuning on
+the ENNI training split. Therefore, this comparison should be interpreted as a practical benchmark of existing
+segmentation tools on child LSA data rather than a controlled architecture comparison under identical training
+conditions.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 18
+107:18
+• Hou et al.
+5.1.3 Maze Annotation. Maze annotation performance was evaluated across three categories: repetitions, revi-
+sions, and filler words. The evaluation used ground-truth transcripts that were segmented into C-units as input
+to eliminate the influence of upstream ASR and segmentation errors and enable direct evaluation of maze annota-
+tion performance. We compared our model against Batchalign and another baseline disfluency detection model
+[37]. The baseline systems were evaluated using their released/default models or settings without additional
+fine-tuning on the ENNI training split, whereas our BERT-based maze classifier was fine-tuned on the ENNI
+training data. Thus, this comparison evaluates how existing disfluency or LSA annotation tools perform when
+directly applied to child LSA transcripts, while also showing the benefit of domain-specific adaptation. Results
+in Figure 6 show that our fine-tuned BERT-based classifier achieves higher accuracy across all maze categories,
+demonstrating its effectiveness in children’s language sample analysis.
+Maze
+Type Metric Batchalign [ 22] Disfluency [ 37] Ours
+Rep
+etition Precision 90.55 73.77 75.56
+Recall 58.80 59.41 69.06
+F1 71.30 65.81 72.17
+Revision Precision N/A 71.19 76.42
+Recall N/A 60.18 78.76
+F1 N/A 65.22 77.57
+Filler Precision 100 99.44 99.86
+Recall 98.61 98.61 100
+F1 99.30 99.02 99.93
+Fig.
+6. Visualization and comparison of maze annotation performance across Batchalign [ 22], the disfluency detection
+method from [37], and our model. Baseline systems were evaluated without ENNI-specific fine-tuning; our model was fine-
+tuned on the ENNI training split.
+5.1.4 Morpheme Annotation. For this evaluation, the model was also provided with clean ground-truth tran-
+scripts that had already been correctly segmented into C-units. Results reported in Table 6 demonstrate that the
+Stanza-based morpheme annotation module performs exceptionally well, accurately mapping linguistic morpho-
+logical features to the inflectional morpheme categories defined in LSA.
+In addition, we examined the impact of maze structures on morpheme detection accuracy by comparing model
+performance on transcripts that retained maze content with performance on transcripts in which maze were re-
+moved prior to analysis. As shown in Table6, morpheme detection performance improved when maze structures
+were excluded. This result reflects the fact that maze phenomena often disrupt grammatical structure, which can
+obscure morphological cues and negatively affect downstream linguistic analysis. Therefore, we identified and
+excluded the maze before morpheme detection in the SATE pipeline, to generate more stable and reliable mor-
+pheme annotation results.
+5.1.5 Evaluation of Morpheme Annotation on Different ASR Transcriptions. The preceding evaluation isolates
+morpheme annotation performance using clean reference transcripts. However, in the complete SATE workflow,
+the morpheme annotation module operates on automatically generated ASR transcripts. Therefore, we further
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 19
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:19
+Table 6. Morpheme annotation performance on clean reference transcripts. Because the Stanza-based morpheme annota-
+tion module and the rule-based mapping procedure were used off the shelf without ENNI-specific training or fine-tuning,
+this evaluation was conducted on the full expert-coded ENNI/SALT dataset rather than only the held-out test split.
+Maze
+Included Maze Removed
+Morpheme
+Type Precision Recall F1 Precision Recall F1
+P
+lural 93.98 95.25 94.61 94.15 96.60 95.36
+Possessive 98.22 84.87 91.06 98.56 87.69 92.81
+3rd Person Singular 88.44 92.63 90.49 88.58 95.08 91.71
+Past Tense 89.94 81.19 85.34 90.04 83.23 86.50
+Progressive 98.90 78.40 87.46 98.90 79.86 88.37
+O
+verall (Macro Avg.) 93.90 86.47 89.79 94.04 88.49 90.95
+e
+valuated how upstream transcription quality affects downstream morpheme annotation by applying the same
+fixed morpheme annotation procedure to outputs from different ASR systems.
+Because ASR outputs and reference transcripts do not necessarily contain identical word sequences, mor-
+pheme annotation was evaluated after aligning the ground-truth and ASR word sequences with Levenshtein
+alignment, using equal costs for substitution, insertion, and deletion. A ground-truth morpheme predicted with
+the correct type at its aligned ASR word is a true positive (TP). A ground-truth morpheme whose aligned word
+lacks the correct label is an aligned false negative (𝐹 𝑁 aligned, a detector error), and a ground-truth morpheme
+whose word was deleted by the ASR is a misaligned false negative (𝐹 𝑁 misaligned, an ASR-induced error). Sym-
+metrically, remaining predictions on aligned words are aligned false positives (𝐹 𝑃 aligned), and predictions on
+ASR-inserted words are misaligned false positives (𝐹 𝑃 misaligned).
+Figure 13 in Appendix C visualizes this decomposition. The number of ground-truth morphemes is fixed across
+ASR systems, so the larger 𝐹 𝑁misaligned segments of error-prone ASR systems directly reflect morphemes that
+become unrecoverable when the corresponding words are missing from the transcript, while the prediction-side
+panels separate detector over-prediction from predictions on inserted words. The decomposition thus makes
+explicit how much of the downstream error is attributable to the morpheme detector versus upstream transcrip-
+tion.
+We evaluated each ASR condition under two settings: in the with-maze setting, the raw ASR transcript was
+used directly, whereas in the maze-removed setting, words predicted as mazes were removed before morpheme
+evaluation, using the external BERT-based maze classifier for the non-E2E systems and each model’s own maze
+annotations for Ours-E2E-1 and Ours-E2E-2. This comparison tests whether excluding disfluent material im-
+proves morpheme annotation under realistic transcription conditions, as suggested by the clean-transcript re-
+sults in Table 6.
+For each morpheme category, we computed total precision, recall, and F1 by including both detector-induced
+and ASR-induced errors:
+𝑃total = 𝑇 𝑃
+𝑇
+𝑃 + 𝐹 𝑃aligned + 𝐹 𝑃misaligned
+, 𝑅 total = 𝑇 𝑃
+𝑇
+𝑃 + 𝐹 𝑁aligned + 𝐹 𝑁misaligned
+, (6)
+𝐹 1total = 2𝑃total𝑅total
+𝑃total +
+𝑅total
+. (7)
+Figure 7 summarizes the downstream morpheme annotation results. The ASR models developed in this work
+achieve the strongest downstream morpheme performance in both macro and micro F1, outperforming both
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 20
+107:20
+• Hou et al.
+Fig.
+7. Downstream morpheme annotation performance across ASR transcriptions. The top row reports macro and micro
+F1 for each ASR system under the with-maze and maze-removed settings. The bottom row reports per-morpheme F1 scores
+for five morphemes.
+general-purpose ASR systems and child-speech baselines; the benefit of our ASR adaptation is therefore not
+limited to lower WER, as improved child-speech transcription translates directly into more reliable downstream
+linguistic annotation. Maze removal yields a further consistent improvement for most ASR systems, support-
+ing the design choice in SATE to exclude mazes before morpheme annotation. Across morpheme categories,
+possessive morphemes remain the most difficult.
+5.2 Evaluation of End-to-end Transcription and Maze Annotation Model
+Transcription performance of the two end-to-end models is reported in Table 4: both achieve WER comparable
+to the pipeline ASR model, indicating that joint optimization preserves recognition accuracy.
+Evaluating maze annotation is more challenging because the predicted and reference transcripts do not share
+identical word sequences. We therefore align them with the same minimum-edit-distance procedure as in Sec-
+tion 5.1.5: correctly transcribed and substituted tokens retain a one-to-one label correspondence, whereas dele-
+tion errors introduce false negatives and insertion errors introduce false positives. Annotation performance is
+then evaluated under three nested conditions, as reported in Table 7: correctly transcribed tokens only ( 𝐶), ad-
+ditionally including substitution errors (𝐶 + 𝑆 ), and including all ASR errors (𝐶 + 𝑆 + 𝐷 + 𝐼 ).
+Although the end-to-end models do not consistently outperform the pipeline solution in absolute F1, they are
+more robust to transcription errors. Under the correctly-transcribed condition, the pipeline achieves the highest
+F1 for all three maze types; as the evaluation scope expands, the best-performing method shifts, and under the all-
+errors condition E2E Solution 2 leads for repetition labeling and E2E Solution 1 for filler words. To quantify this
+robustness, we measure how much the F1 score of method 𝑚 for maze category 𝑘 decreases when the evaluation
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 21
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:21
+scope expands from 𝐶 to 𝐸 ∈ {𝐶 + 𝑆, 𝐶 + 𝑆 + 𝐷 + 𝐼 }:
+Δrel(𝑚, 𝑘, 𝐸) =
+𝐹 𝐶
+𝑚,𝑘 − 𝐹 𝐸
+𝑚,𝑘
+𝐹 𝐶
+𝑚
+,𝑘
+× 100%, Δ abs(𝑚, 𝑘, 𝐸) = 𝐹𝐶
+𝑚,𝑘 − 𝐹 𝐸
+𝑚,𝑘 . (8)
+Here, 𝐹 𝐶
+𝑚,𝑘 and 𝐹 𝐸
+𝑚,𝑘 denote the corresponding F1 scores, normalized to [0, 1] when computing the absolute
+decrease. Each cell of Table 8 reports Δrel, with Δabs in parentheses. The end-to-end models exhibit smaller
+degradation than the pipeline under both expanded conditions, indicating that joint modeling mitigates the
+accumulation of upstream transcription errors.
+Table 7. Maze Annotation Performance across Different Transcription Error Scopes and Solutions. The three evaluation
+conditions are: Correctly Transcribed Tokens Only, which evaluates only tokens correctly recognized by ASR; Correctly
+Transcribed Tokens + Substitution Errors, which additionally includes aligned substitution errors; and All ASR Errors In-
+cluded, which further accounts for insertion- and deletion-induced false positives and false negatives. Bold values indicate
+the numerically best value among the three methods for each metric within a maze type; bolding does not indicate statisti-
+cal significance.
+Pip
+eline Solution E2E Solution 1 E2E Solution 2
+Maze
+Type Precision Recall F1 Precision Recall F1 Precision Recall F1
+Condition:
+Correctly Transcribed Tokens Only
+Rep
+etition 73.80 69.25 71.45 69.18 65.43 67.25 70.19 71.87 71.02
+Revision 72.51 72.96 72.73 68.47 71.16 69.76 61.66 75.37 67.83
+Filler Words 100 100 100 100 99.82 99.91 99.01 88.32 93.36
+Condition:
+Correctly Transcribed Tokens + Substitution Errors
+Rep
+etition 68.73 62.39 65.41 65.17 61.20 63.12 66.32 65.79 66.05
+Revision 68.88 69.88 69.38 65.85 69.64 67.69 60.54 72.63 66.03
+Filler Words 85.59 88.79 87.16 86.31 87.84 84.51 89.34 78.25 83.43
+Condition:
+All ASR Errors Included
+Rep
+etition 65.07 54.83 59.51 59.96 54.68 57.20 62.61 57.73 60.07
+Revision 64.09 62.86 63.47 61.61 62.61 62.11 56.26 65.87 60.69
+Filler Words 80.51 79.39 79.94 80.67 80.78 80.72 82.95 71.17 76.61
+5.3
+Evaluation of the Overall Performance of SATE
+While modular evaluation provides insight into individual components, a system-level assessment is necessary
+to evaluate SATE as a complete LSA system that converts raw child speech into clinically interpretable language
+metrics. To this end, we computed the most widely used LSA metrics (NTU, NTW, NDW, and MLUm) from
+the transcripts and annotations generated by each SATE variant, and from Batchalign as a complete-system
+automated baseline, and compared them against the metrics derived by SLP experts. Agreement is reported as
+Pearson correlation, mean absolute error, mean signed difference, and standard deviation of differences in Table
+9, complemented by Bland-Altman analyses [ 6] in Figure 8 and statistical tests of systematic bias and residual
+variance in Table 10.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 22
+107:22
+• Hou et al.
+Table 8. Error Accumulation Comparison. Each cell reports the relative F1 decrease Δrel defined in Equation (8) when moving
+from the correctly transcribed condition to a broader evaluation condition that includes ASR-induced errors; values in paren-
+theses give the corresponding absolute decrease Δabs. Smaller values indicate less performance degradation and therefore
+stronger robustness to transcription-error accumulation. Bold values indicate the smallest degradation within each maze
+type and comparison setting; bolding does not indicate statistical significance.
+Metho
+d Repetition Revision Filler Words
+Corr
+ectly Transcribed Tokens Only vs. Correctly Transcribed Tokens + Substitution Errors
+Pip
+eline Solution 8.46% (0.06) 4.62% (0.03) 12.84% (0.12)
+E2E Solution 1 6.14% (0.04) 3.00% (0.02) 12.57% (0.12)
+E2E Solution 2 6.99% (0.04) 2.64% (0.01) 10.64% (0.09)
+Corr
+ectly Transcribed Tokens Only vs. All ASR Errors Included
+Pip
+eline Solution 16.70% (0.12) 12.74% (0.09) 20.06% (0.20)
+E2E Solution 1 14.95% (0.10) 11.00% (0.07) 19.20% (0.19)
+E2E Solution 2 15.41% (0.10) 10.53% (0.07) 17.94% (0.16)
+T
+able 9. Agreement between SLP experts and automated LSA systems on LSA metrics. We report Pearson correlation, mean
+absolute error (MAE), mean signed difference, and standard deviation of signed differences. Values in parentheses indicate
+percentage differences relative to the SLP expert value. Signed difference is defined as automated system minus SLP expert,
+so positive values indicate overestimation. Bold values indicate the best value within each metric block (highest Pearson’s
+𝑟; smallest MAE, absolute mean signed difference, and SD of difference), with ties all bolded; bolding does not indicate
+statistical significance.
+Metric Metho
+d Pearson’s 𝑟 MAE
+Mean Signed
+Difference (%)
+SD of
+Difference (%)
+N
+TU Batchalign 0.88 16.17 14.98 (17.59%) 13.95 (14.84%)
+Pipeline Solution 0.92 19.88 18.03 (19.64%) 15.15 (17.61%)
+End-to-end Solution 1 0.91 17.49 14.68 (15.21%) 15.65 (19.09%)
+End-to-end Solution 2 0.90 13.61 10.07 (10.35%) 13.84 (18.71%)
+NTW Batchalign 0.97 53.46 38.89 (6.89%) 54.62 (9.36%)
+Pipeline Solution 0.98 32.78 16.89 (2.24%) 37.31 (9.09%)
+End-to-end Solution 1 0.98 30.04 0.04 (-1.54%) 43.42 (10.46%)
+End-to-end Solution 2 0.98 48.35 -43.74 (-10.17%) 40.26 (10.14%)
+NDW Batchalign 0.96 24.12 23.92 (16.13%) 12.51 (9.84%)
+Pipeline Solution 0.97 9.83 7.48 (5.03%) 9.80 (7.85%)
+End-to-end Solution 1 0.97 10.05 7.32 (4.80%) 10.84 (7.33%)
+End-to-end Solution 2 0.96 7.72 2.35 (1.67%) 9.80 (7.55%)
+MLUm Batchalign 0.78 1.42 -1.36 (-18.85%) 0.87 (13.24%)
+Pipeline Solution 0.78 1.89 -1.85 (-25.69%) 1.01 (13.29%)
+End-to-end Solution 1 0.77 1.84 -1.81 (-24.96%) 1.00 (12.92%)
+End-to-end Solution 2 0.78 2.10 -2.06 (-28.84%) 0.99 (13.34%)
+A
+s shown in Table 9, the automated systems exhibited complementary agreement patterns across metrics.
+All systems overestimated NTU, partly because the ENNI practice sections at the beginning of recordings are
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 23
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:23
+Fig.
+8. Percentage Bland-Altman analysis of agreement between automated LSA systems and SLP expert-derived metrics.
+Rows correspond to NTU, NTW, NDW, and MLUm; columns correspond to Batchalign, Pipeline Solution, End-to-end Solu-
+tion 1, and End-to-end Solution 2. Each panel reports the mean percentage bias, upper and lower 95% limits of agreement
+(LoA), and the interquartile range (IQR) of the percentage differences.
+excluded from the ground-truth transcripts but can be transcribed by automated systems; End-to-end Solution
+2 showed the smallest bias. For NTW, End-to-end Solution 1 agreed most closely with the experts, whereas
+Batchalign overestimated and End-to-end Solution 2 underestimated the word counts, and for NDW all SATE
+variants substantially reduced the positive bias of Batchalign, so the best-performing variant differs by metric.
+In contrast, all systems systematically underestimated MLUm, the most challenging system-level metric because
+it compounds errors from multiple upstream stages; MLUm estimates should therefore be interpreted cautiously
+and prioritized during expert review in the human-in-the-loop workflow.
+Table 10 clarifies which deviations are statistically significant. Most method–metric combinations showed a
+significant mean percentage bias, indicating that high correlations alone should not be read as full agreement;
+the main exception was End-to-end Solution 1 for NTW, whose bias was not significantly different from zero.
+Brown-Forsythe tests found no significant differences in residual variance across systems for any metric. The
+differences among systems therefore lie primarily in systematic bias rather than residual variability.
+Beyond numerical agreement, LSA metrics are also interpreted in terms of developmental change and group
+differences. As shown in Figure 12 in Appendix B, both TD and DLD groups exhibited age-related increases in
+most metrics in the ground-truth data, and the Pipeline Solution and both end-to-end solutions preserved these
+trends. The direction of the TD–DLD contrast was also largely preserved: DLD children showed lower metric
+values than TD children in most comparable age groups.
+Taken together, automated LSA metrics are not yet interchangeable with expert-coded metrics, especially for
+NTU and MLUm, but SATE largely preserves the developmental trends and group-difference patterns present in
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 24
+107:24
+• Hou et al.
+Table 10. Statistical tests of systematic percentage bias and Bland-Altman residual-variance differences. Bias 𝑝 values are
+from one-sample 𝑡 tests of whether the mean percentage difference between an automated system and SLP experts differs
+from zero; significant values indicate systematic over- or under-estimation, with the direction determined by the mean
+signed difference in Table 9. Brown-Forsythe 𝑝 values test whether the variance of Bland-Altman percentage differences
+differs across the four automated systems for each metric; significant values would indicate different levels of residual spread
+across systems. Bold indicates a bias that is not significantly different from zero ( 𝑝 ≥ .05 ), i.e., the closest agreement with
+experts.
+Metric
+Batchalign
+bias 𝑝
+Pip
+eline
+bias 𝑝
+E2E-1
+bias 𝑝
+E2E-2
+bias 𝑝
+Brown-
+Forsythe 𝑝
+N
+TU < .001 < .001 < .001 < .001 .339
+NTW < .001 .020 .160 < .001 .636
+NDW < .001 < .001 < .001 .037 .530
+MLUm < .001 < .001 < .001 < .001 .917
+Fig.
+9. WER breakdown by subgroup on the ENNI test set. Stacked bars show substitution, deletion, and insertion error
+rates for each ASR system, with the total WER annotated above each bar. Results are reported separately for TD and DLD
+children.
+expert analysis. SATE therefore provides a useful automated first-pass estimate, especially for NTW and NDW,
+while expert verification remains essential before clinical interpretation.
+5.4 Subgroup Analysis by TD/DLD Group
+Because SATE is intended to support language assessment for children with DLD, we conducted an additional
+subgroup analysis on the held-out ENNI test set, stratified into TD children and children with DLD. We evalu-
+ated ASR performance, maze annotation performance, and agreement on LSA metrics, using the same protocols
+as the corresponding component-level and system-level evaluations, with full maze and LSA metric results pro-
+vided in Appendix B. Because the DLD subset is considerably smaller than the TD subset (6,252 versus 51,891
+reference tokens), these results are intended as descriptive subgroup evidence rather than as a powered statistical
+comparison between groups.
+As shown in Figure 9, all systems show higher WER for DLD samples than for TD samples, indicating that
+DLD speech remains more challenging for automatic transcription. Nevertheless, the proposed SATE models
+substantially reduce WER in both groups: the pipeline ASR model achieves 11.0% WER on TD samples and
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 25
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:25
+Table 11. ENNI test-set samples used in the human-in-the-loop evaluation.
+Sample
+Duration C-units Words Maze words Morpheme usages
+A 30
+s 7 59 3 7
+B 27 s 7 57 2 7
+18.2%
+on DLD samples, compared with 22.7% and 32.1% for Batchalign, and the two end-to-end variants perform
+comparably.
+Maze annotation also remains effective for DLD samples (Appendix Table 21). Our model substantially out-
+performs the disfluency baseline on revision detection in both subgroups and achieves almost perfect F1 for filler
+words. Repetition detection shows a more nuanced pattern: our model achieves the highest F1 for TD repetitions
+and the highest recall for DLD repetitions, while Batchalign achieves higher DLD repetition F1 through higher
+precision, making repetition detection in DLD speech an important target for future improvement.
+For LSA metrics (Appendix Table 22), SATE preserves strong agreement with expert analysis in both sub-
+groups, with NTW and NDW remaining highly correlated with expert-derived values. Consistent with the over-
+all evaluation, MLUm remains the most challenging metric, although its correlations in the DLD subgroup remain
+moderate to high across the three SATE variants, ranging from 0.78 to 0.87. These results support SATE’s utility
+for children with DLD while identifying DLD speech and MLUm estimation as key targets for future robustness
+improvements.
+5.5 Usability and Human-in-the-loop Evaluation
+5.5.1 Participants and Study Protocol. To evaluate SATE as a human-in-the-loop LSA system, we designed the
+user study around two primary aims: (1) to evaluate whether SATE-assisted LSA reduces completion time rel-
+ative to fully manual LSA, and (2) to evaluate whether SATE-assisted LSA maintains comparable accuracy af-
+ter human review. The study began in February 2026. Twelve participants were recruited through a university
+Speech-Language Pathology (SLP) program. Most participants were SLP graduate students, and one participant
+was a licensed SLP. All participants had prior exposure to LSA conventions and SALT-based language sample
+transcription or analysis.
+The study used the pipeline version of SATE, which is the configuration deployed in the current interface; the
+end-to-end variants were evaluated algorithmically in Section 4.2 but were not used as the source of interface
+outputs here. Two short language samples from the ENNI test set were selected for the main tasks, summa-
+rized in Table 11. The two samples were similar in length and linguistic complexity to support counterbalanced
+comparison between the SATE-assisted and manual conditions.
+Each participant completed two main tasks: one SATE-assisted LSA task and one fully manual LSA task.
+In the SATE-assisted condition, participants uploaded the audio sample to SATE, reviewed the automatically
+generated pipeline output, and corrected transcription, C-unit segmentation, speaker label, maze annotation, and
+morpheme annotation errors when needed. In the manual condition, participants performed LSA from scratch
+using SALT. Task time excluded software setup. Manual timing began when the participant started playing the
+audio and entering the transcript in SALT and ended when the final transcript was saved. SATE timing began
+when the participant uploaded the audio file to SATE and ended when the corrected output was saved.
+We used a within-subject counterbalanced design to control for tool order and sample differences. The 12
+participants were organized into three complete groups of four participants, and within each group, participants
+were assigned to one of four task orders, as shown in Table 12. Thus, each group produced four SATE-assisted
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 26
+107:26
+• Hou et al.
+Table 12. Counterbalanced task orders for the human-in-the-loop evaluation.
+Or
+der Task 1 Task 2
+1
+Manual – Sample B SATE – Sample A
+2 Manual – Sample A SATE – Sample B
+3 SATE – Sample A Manual – Sample B
+4 SATE – Sample B Manual – Sample A
+Fig.
+10. Time efficiency comparison between manual LSA and SATE-assisted LSA. Each group contains four participants
+assigned to one complete counterbalanced set of task orders. Bars show the summed task duration within each group and
+overall across all 12 participants. Red labels indicate the percentage reduction in total duration when using SATE compared
+with manual LSA.
+Table 13. Per-participant Manual and SATE durations (seconds), grouped by counterbalanced order (O1–O4).
+Gr
+oup Gr
+oup 1 Gr
+oup 2 Gr
+oup 3
+Participant P1
+(O1) P2 (O2) P3 (O3) P4 (O4) P5
+(O1) P6 (O2) P7 (O3) P8 (O4) P9
+(O1) P10 (O2) P11 (O3) P12 (O4)
+SA
+TE (s) 92
+118 110 315 138
+395 312 178 104
+121 265 148
+Manual (s) 383
+547 441 373 390
+438 440 420 330
+329 439 608
+obser
+vations and four manual observations balanced across sample and task order. After completing both tasks,
+participants filled out a post-study questionnaire that included the System Usability Scale (SUS) [7].
+5.5.2 Results and Analysis.
+Efficiency. Efficiency was analyzed at the level of each complete counterbalanced group of four participants:
+within each group, we summed the four SATE-assisted and the four manual task times and compared the group-
+level totals, which balances the effects of task order and sample assignment.
+Table 13 reports the per-participant task durations. Across all 12 participants, manual LSA required 5,138 sec-
+onds in total, whereas SATE-assisted LSA required 2,296 seconds, a reduction of 55.3%. As shown in Figure 10,
+SATE-assisted LSA was faster than manual LSA in all three counterbalanced groups, with group-level reductions
+ranging from 39.4% to 63.6%. These results provide direct evidence that the human-in-the-loop workflow sub-
+stantially reduced LSA completion time while preserving expert review and correction of intermediate outputs.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 27
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:27
+Table 14. Accuracy summary for unedited SATE, SATE-assisted review, and manual LSA. For SATE-raw, values are fixed
+pipeline outputs for each sample. For SATE-reviewed and Manual, values are mean (SD).
+Stor
+y A Stor
+y B
+Metric SA
+TE-raw SATE-reviewed Manual SA
+TE-raw SATE-reviewed Manual
+WER 0.017
+0.054 (0.045) 0.051 (0.026) 0.018
+0.018 (0.000) 0.102 (0.017)
+Segmentation F1 0.933 0.946 (0.048) 0.978 (0.035) 1.000
+1.000 (0.000) 0.952 (0.074)
+Maze Label F1 0.800 0.800 (0.000) 0.483 (0.392) 0.000
+0.334 (0.365) 0.389 (0.443)
+Morpheme Label F1 1.000 0.974 (0.040) 0.939 (0.054) 1.000
+1.000 (0.000) 0.949 (0.040)
+|ΔMLU𝑚| 1.125 1.007 (0.717) 0.467 (0.580) 0.143
+0.072 (0.078) 0.214 (0.175)
+|ΔNTW| 0.000 0.500 (0.548) 0.833 (0.753) 1.000
+0.500 (0.548) 0.833 (1.169)
+|ΔNTU| 1.000 0.833 (0.753) 0.333 (0.516) 0.000
+0.000 (0.000) 0.000 (0.000)
+|ΔNDW| 0.000 0.167 (0.408) 0.000 (0.000) 1.000
+0.500 (0.548) 0.333 (0.516)
+A
+ccuracy. The accuracy analysis addressed two questions: what human review contributes to the raw pipeline
+output (SATE-raw versus SATE-reviewed), and how the reviewed output compares with fully manual LSA. All
+outputs were scored against the expert-coded reference transcripts on word error rate (WER), C-unit segmen-
+tation F1, maze label F1, morpheme label F1, and absolute errors for NTU, NTW, NDW, and MLUm. Table 14
+reports the story-level results for the three conditions.
+Comparing SATE-reviewed with SATE-raw in Table 14 shows that human review did not uniformly improve
+every metric, largely because the initial SATE outputs were already highly accurate for these short samples. Re-
+view produced targeted gains, most notably for the Story B maze labels and several final metric errors, whereas
+a few Story A metrics such as WER and the NTW error slightly worsened after review. This reflects the inher-
+ent ambiguity of child speech, especially for short words: different transcribers can reasonably produce slightly
+different transcripts, and because the ground-truth annotation is itself an expert transcription, participants’ cor-
+rections represent a second subjective reading whose small deviations register as increased error, just as the fully
+manual condition also shows nonzero WER against the same reference. These results suggest that the value of
+human review was not to repair large systematic errors, but to verify the automated output and correct specific
+remaining errors.
+We then compared SATE-reviewed with fully manual LSA within each participant using paired Wilcoxon
+signed-rank tests across the 12 participants, with the per-metric distributions and complete test statistics an-
+notated in Figure 11. SATE-reviewed LSA achieved significantly lower WER (Δ = −0.041 , 𝑝 = 0.0073 ) and
+significantly higher morpheme label F1 (Δ = +0.043, 𝑝 = 0.0312) than Manual LSA, while maze label F1 and
+segmentation F1 were numerically higher but not significantly different ( 𝑝 = 0.5283 and 𝑝 = 0.6250 , respec-
+tively). Maze label F1 was the noisiest metric, as the two reference samples contained only three and two maze
+words, so its null result reflects limited statistical power rather than demonstrated equivalence.
+Taken together, human review left the already strong SATE-raw outputs largely unchanged while correcting
+specific remaining errors, and on the four transcription and annotation metrics the reviewed output was as
+accurate as or more accurate than fully manual LSA in this pilot study. The time savings reported above therefore
+did not come at the cost of analysis accuracy on these measures.
+Usability. Seven of the 12 participants in the counterbalanced user study completed valid post-study question-
+naires. In addition, three licensed SLPs recruited from an earlier focus group completed the same SUS question-
+naire after interacting with the SATE interface. Therefore, the usability analysis included 10 valid SUS question-
+naires. The three focus-group responses were included only in the usability analysis and were not used in the
+efficiency or accuracy analyses.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 28
+107:28
+• Hou et al.
+Fig.
+11. Per-participant accuracy of SATE-reviewed LSA versus Manual LSA on four transcription and annotation metrics:
+WER, morpheme label F1, maze label F1, and segmentation F1. Box plots show the distribution across 𝑛 = 12 participants;
+overlaid markers indicate individual scores, with circles for Story A and triangles for Story B. Each participant contributed
+one SATE-reviewed sample and one Manual sample, and story assignment was counterbalanced across tools. Within-box
+annotations report mean and standard deviation. Δ values report SATE − Manual, and 𝑝-values are from paired Wilcoxon
+signed-rank tests across participants.
+Table 15. Individual SUS scores from the usability questionnaire.
+Resp
+ondent SUS Resp
+ondent SUS
+R1 80.0 R6 92.5
+R2 80.0 R7 70.0
+R3 75.0 R8 72.5
+R4 77.5 R9 87.5
+R5 90.0 R10 87.5
+The
+SUS is a standardized 10-item questionnaire widely used in human-computer interaction research, and has
+been shown to correlate with user satisfaction, learnability, and perceived efficiency across diverse systems [ 7].
+Scores were computed using the standard procedure described in Appendix A.3. Table 15 reports the individual
+SUS scores, and the complete item-level responses are provided in Appendix Table 19. The mean score was 81.25
+(SD = 7.75), with a 95% confidence interval of [75.71, 86.79], above the empirical SUS average of 70.14 reported
+across 2,324 surveys from 206 studies [3]. These results suggest that respondents perceived SATE as usable for
+reviewing and correcting automated LSA outputs. Given the modest sample size and the inclusion of responses
+from both the counterbalanced study and the earlier focus group, we interpret these findings as preliminary
+evidence of perceived usability rather than definitive validation of clinical deployment readiness.
+In addition to perceived usability, we examined the edits participants made when reviewing SATE outputs.
+Edit counts were computed by comparing each participant’s final SATE-reviewed output with the corresponding
+SATE-raw output, and thus reflect net changes in the reviewed transcript and annotations rather than low-level
+interaction logs. We counted four types of changes: word-level transcription, C-unit segmentation, maze label,
+and morpheme label edits.
+As shown in Table 16, participants made only a small number of corrections: edits on Story A were mostly
+word-level, whereas Story B required only occasional maze label edits. This pattern suggests that SATE-raw
+outputs already provided a strong starting point for these short samples, and that human review primarily
+functioned as a targeted verification and correction step rather than a full re-annotation process.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 29
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:29
+Table 16. Edit counts made by participants on top of SATE-raw output, broken down by edit type and story. Values are mean
+± SD across 𝑛=6 participants per story. A count of zero indicates that no net modification was made for that edit type.
+Stor
+y Word Segmentation Maze label Morpheme label
+A1
+(𝑛=6) 2.17 ± 2.64 0.50 ± 0.55 0.00 ± 0.00 0.33 ± 0.52
+B1 (𝑛=6) 0.00 ± 0.00 0.00 ± 0.00 0.50 ± 0.55 0.00 ± 0.00
+Be
+yond SUS scores and edit counts, the questionnaire included additional items about interface clarity, an-
+notation editing, perceived accuracy, workflow fit, and remaining pain points. Appendix Table 20 summarizes
+this structured feedback using the exact wording of representative questionnaire statements, together with the
+mean rating and standard deviation.
+The structured feedback highlights several strengths of the interface: all valid respondents agreed that they
+could quickly understand the workflow and operations of SATE, the transcription and annotation display was
+rated positively, and editing-related items were also positive (90% of respondents agreed that maze-label editing
+was intuitive and convenient, 80% that speaker-label editing was convenient, and 90% that reviewing and cor-
+recting utterances was manageable within a reasonable time). These results support the design goal of making
+automated LSA outputs inspectable and correctable rather than presenting them as uneditable final results.
+The feedback also identified areas for improvement: trust in the final LSA metrics after manual revision was
+positive but moderate (mean = 3.80), ratings of automatic output quality were positive but lower than those of
+interface clarity and workflow learnability, and responses to the error/unexpected-behavior item were mixed,
+with some respondents reporting errors during use. These responses motivate clearer traceability between tran-
+script edits, annotation changes, and metric recalculation, additional interface robustness testing, and clearer
+error handling.
+6 DISCUSSION, LIMITATION, AND FUTURE WORK
+Our experimental evaluation demonstrates that SATE advances the current LSA system across multiple dimen-
+sions. At the component level, the domain-adapted ASR model achieves 11.81% word error rate compared with
+23.75% for Batchalign. The C-unit segmentation and maze annotation models similarly outperform baseline ap-
+proaches when evaluated on children’s speech data. Beyond these objective model performance, SATE integrates
+an interactive interface specifically designed for SLPs, enabling efficient review and correction of automated
+outputs. The human-in-the-loop evaluation shows that the interface reduced task completion time by 55.3%,
+supported targeted correction of automated outputs, and received a mean SUS score of 81.25, suggesting posi-
+tive perceived usability. By combining high-performing automated models with human-in-the-loop verification
+capabilities, SATE addresses the core efficiency barrier that has limited clinical adoption of LSA.
+Our comparison of pipeline and end-to-end approaches reveals complementary strengths. The pipeline solu-
+tion achieves superior performance on individual components with clean inputs, offering modularity and inter-
+pretability. The end-to-end solutions demonstrate greater robustness to error accumulation, with substantially
+smaller performance degradation as transcription errors increase. Accordingly, we recommend the pipeline ap-
+proach when transcription quality is relatively high, and the end-to-end approaches for more challenging audio
+conditions where higher ASR error rates are expected.
+Several limitations should be acknowledged. First, all experiments were conducted on the ENNI dataset, which
+represents a limited sample size and a specific elicitation context. Second, agreement with SLP experts is not
+uniform across LSA metrics: the count-based lexical measures NTW and NDW are relatively stable, whereas
+NTU exhibited larger absolute differences from expert values, and MLUm showed the weakest agreement (𝑟 =
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 30
+107:30
+• Hou et al.
+0.78), as expected for a ratio that compounds errors from multiple upstream stages; its negative mean difference
+indicates a tendency toward underestimation.
+Clinically, the automated outputs should be treated as screening- or review-support measures rather than
+replacements for expert judgment: SATE captures the overall ranking and developmental patterns of children’s
+language, but residual systematic bias can distort individual-level interpretation, for example by making a child’s
+language appear less syntactically mature than it is and exaggerating perceived impairment severity. SATE is
+therefore best used as a human-in-the-loop system, in which automated estimates guide efficient review and
+clinicians verify C-unit boundaries, maze exclusion, and morpheme labels before making diagnostic decisions.
+Future work will pursue several directions. First, rigorous clinical validation studies should examine whether
+SATE-assisted LSA leads to diagnostic decisions concordant with fully manual analysis while achieving signif-
+icant improvements in efficiency. Second, we plan to integrate SATE with wearable recording devices to ana-
+lyze children’s everyday language in the settings where it is naturally produced, shifting LSA from a one-time,
+appointment-based assessment toward repeatable longitudinal measurement; in such continuous use, efficient
+human-in-the-loop verification becomes an interaction design challenge as much as an accuracy one. Third,
+we will extend the end-to-end architecture to jointly optimize more components such as C-unit segmentation
+and morphological analysis. Finally, we aim to conduct broader system deployment and data collection efforts
+to construct normative databases that can serve as standardized references for SLPs when making diagnostic
+decisions.
+7 CONCLUSION
+This paper presented SATE (Speech Annotation and Transcription Enhancer), an automated system addressing
+the efficiency barriers that have limited clinical adoption of Language Sample Analysis for child language assess-
+ment. SATE implements a machine learning pipeline reproducing the complete LSA workflow and the system
+is further complemented by an interactive interface supporting human-in-the-loop verification.
+Our evaluation demonstrated three key findings. First, our system significantly outperforms baseline methods,
+achieving a word error rate of 11.81% compared with 23.75% for existing automated LSA systems on children’s
+speech. Second, end-to-end architectures for joint transcription and maze annotation reduce error accumulation,
+offering improved robustness when transcription quality is degraded. Third, system-level evaluation showed
+strong correlations between automated and expert-produced metrics, confirming that SATE preserves diagnos-
+tically relevant patterns. A pilot human-in-the-loop evaluation provided evidence that SATE can reduce manual
+workload while preserving final LSA accuracy after user review.
+By transforming the labor-intensive LSA workflow into an automated pipeline with transparent, verifiable,
+and editable intermediate representations, SATE makes gold-standard language assessment accessible at scale.
+For the ubiquitous computing community, SATE turns children’s daily spontaneous speech into developmen-
+tal measures that specialist can verify. This makes downstream applications practical: automatic analysis of
+each therapy session to track a child’s progress during intervention, classroom deployment for large-scale DLD
+screening, and home deployment to study how children’s language input environments shape their language
+development.
+Acknowledgments
+This material is based upon work supported under the AI Research Institutes program by National Science
+Foundation and the Institute of Education Sciences, U.S. Department of Education, through Award # 2229873 -
+National AI Institute for Exceptional Education. Any opinions, findings and conclusions or recommendations
+expressed in this material are those of the author(s) and do not necessarily reflect the views of the National
+Science Foundation, the Institute of Education Sciences, or the U.S. Department of Education.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 31
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:31
+References
+[1] American Speech-Language-Hearing Association. 2023. Code of Ethics. ASHA Policy Document. https://www.asha.org/policy/code-
+of-ethics/ Effective March 1, 2023.
+[2] Ahmed Adel Attia, Jing Liu, Wei Ai, Dorottya Demszky, and Carol Espy-Wilson. 2024. Kid-whisper: Towards bridging the performance
+gap in automatic speech recognition for children vs. adults. In Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society, Vol. 7.
+74–80.
+[3] Aaron Bangor, Philip T Kortum, and James T Miller. 2008. An empirical evaluation of the system usability scale. Intl. Journal of
+Human–Computer Interaction 24, 6 (2008), 574–594.
+[4] Dorothy VM Bishop, Margaret J Snowling, Paul A Thompson, Trisha Greenhalgh, Catalise-2 Consortium, Catherine Adams, Lisa
+Archibald, Gillian Baird, Ann Bauer, Jude Bellair, et al. 2017. Phase 2 of CATALISE: A multinational and multidisciplinary Delphi
+consensus study of problems with language development: Terminology. Journal of child psychology and psychiatry 58, 10 (2017), 1068–
+1080.
+[5] Dorothy VM Bishop, Margaret J Snowling, Paul A Thompson, Trisha Greenhalgh, TM Klee, et al. 2017. CATALISE: a multinational and
+multidisciplinary Delphi consensus study of problems with language development. Phase 2. Journal of Child Psychology and Psychiatry
+(2017).
+[6] J Martin Bland and Douglas G Altman. 1986. Statistical methods for assessing agreement between two methods of clinical measurement.
+The lancet 327, 8476 (1986), 307–310.
+[7] John Brooke et al. 1996. SUS-A quick and dirty usability scale. Usability evaluation in industry 189, 194 (1996), 4–7.
+[8] Manuel Burghardt. 2012. Usability recommendations for annotation tools. Association for Computational Linguistics.
+[9] Marie-Catherine De Marneffe, Christopher D Manning, Joakim Nivre, and Daniel Zeman. 2021. Universal dependencies. Computational
+linguistics 47, 2 (2021), 255–308.
+[10] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. BERT: Pre-training of Deep Bidirectional Transformers
+for Language Understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational
+Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 4171–4186.
+[11] Kerry Danahy Ebert. 2020. Language sample analysis with bilingual children: Translating research to practice. Topics in Language
+Disorders 40, 2 (2020), 182–201.
+[12] James Ferguson, Greg Durrett, and Dan Klein. 2015. Disfluency detection with a semi-markov model and prosodic features. In Proceed-
+ings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies.
+257–262.
+[13] Markus Frohmann, Igor Sterner, Ivan Vulić, Benjamin Minixhofer, and Markus Schedl. 2024. Segment any text: A universal approach
+for robust, efficient and adaptable sentence segmentation. arXiv preprint arXiv:2406.16678 (2024).
+[14] Matteo Gerosa, Diego Giuliani, and Fabio Brugnara. 2007. Acoustic variability and automatic recognition of children’s speech. Speech
+Communication 49, 10-11 (2007), 847–860.
+[15] Ling-Yu Guo, Sarita Eisenberg, Phyllis Schneider, and Linda Spencer. 2019. Percent grammatical utterances between 4 and 9 years of
+age for the Edmonton Narrative Norms Instrument: Reference data and psychometric properties. American Journal of Speech-Language
+Pathology 28, 4 (2019), 1448–1462.
+[16] John Heilmann and Jon F Miller. 2023. Systematic analysis of language transcripts solutions: A tutorial. Perspectives of the ASHA Special
+Interest Groups 8, 1 (2023), 1–18.
+[17] Ke Hu, Krishna Puvvada, Elena Rastorgueva, Zhehuai Chen, He Huang, Shuoyang Ding, Kunal Dhawan, Hainan Xu, Jagadeesh Balam,
+and Boris Ginsburg. 2025. Word Level Timestamp Generation for Automatic Speech Recognition and Translation. arXiv preprint
+arXiv:2505.15646 (2025).
+[18] Rishabh Jain, Andrei Barcovschi, Mariam Yahayah Yiwere, Peter Corcoran, and Horia Cucu. 2024. Exploring native and non-native
+English child speech recognition with Whisper. IEEE Access 12 (2024), 41601–41610.
+[19] Inge S Klatte, Vera Van Heugten, Rob Zwitserlood, and Ellen Gerrits. 2022. Language sample analysis in clinical practice: Speech-
+language pathologists’ barriers, facilitators, and needs. Language, Speech, and Hearing Services in Schools 53, 1 (2022), 1–16.
+[20] Camille Lavigne and Alex Stasica. 2024. Whisper–TAD: A General Model for Transcription, Alignment and Diarization of Speech. In
+Proceedings of the Sixth International Conference on Computational Linguistics in Bulgaria (CLIB 2024). 33–38.
+[21] Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, and Piotr Dollár. 2017. Focal loss for dense object detection. In Proceedings of
+the IEEE international conference on computer vision. 2980–2988.
+[22] Houjun Liu, Brian MacWhinney, Davida Fromm, and Alyssa Lanzi. 2023. Automation of language sample analysis. Journal of Speech,
+Language, and Hearing Research 66, 7 (2023), 2421–2433.
+[23] Yang Liu, Elizabeth Shriberg, and Andreas Stolcke. 2003. Automatic disfluency identification in conversational speech using multiple
+knowledge sources.. In Interspeech. 957–960.
+[24] Walter Loban. 1976. Language Development: Kindergarten Through Grade Twelve. (1976).
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 32
+107:32
+• Hou et al.
+[25] Paria Jamshid Lou and Mark Johnson. 2020. Improving disfluency detection by self-training a self-attentive model. arXiv preprint
+arXiv:2004.05323 (2020).
+[26] Brian MacWhinney. 2007. The talkbank project. In Creating and digitizing language corpora: Volume 1: Synchronic databases . Springer,
+163–180.
+[27] Brian MacWhinney. 2014. The CHILDES project: Tools for analyzing talk, Volume I: Transcription format and programs. Psychology Press.
+[28] Philip M McCarthy and Scott Jarvis. 2007. vocd: A theoretical and empirical evaluation. Language Testing 24, 4 (2007), 459–488.
+[29] Karla K McGregor. 2020. How we fail children with developmental language disorder. Language, speech, and hearing services in schools
+51, 4 (2020), 981–992.
+[30] Benjamin Minixhofer, Jonas Pfeiffer, and Ivan Vulić. 2023. Where’s the Point? Self-Supervised Multilingual Punctuation-Agnostic
+Sentence Segmentation. arXiv preprint arXiv:2305.18893 (2023).
+[31] Courtenay Frazier Norbury, Debbie Gooch, Charlotte Wray, Gillian Baird, Tony Charman, Emily Simonoff, George Vamvakas, and
+Andrew Pickles. 2016. The impact of nonverbal ability on prevalence and clinical presentation of language disorder: Evidence from a
+population study. Journal of child psychology and psychiatry 57, 11 (2016), 1247–1257.
+[32] José A Ortiz, Jessica M Nolasco, Yi Ting Huang, and Jason C Chow. 2024. The use of language sample analysis to differentiate devel-
+opmental language disorder from typical language in bilingual children: A systematic review and meta-analysis. Journal of Speech,
+Language, and Hearing Research 67, 10 (2024), 3803–3825.
+[33] Peng Qi, Yuhao Zhang, Yuhui Zhang, Jason Bolton, and Christopher D Manning. 2020. Stanza: A Python natural language processing
+toolkit for many human languages. arXiv preprint arXiv:2003.07082 (2020).
+[34] Alec Radford, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and Ilya Sutskever. 2023. Robust speech recognition via
+large-scale weak supervision. In International conference on machine learning. PMLR, 28492–28518.
+[35] Brian Richards. 1987. Type/token ratios: What do they really tell us? Journal of child language 14, 2 (1987), 201–209.
+[36] Thomas Rolland and Alberto Abad. 2024. Towards improved automatic speech recognition for children. Transfer 21 (2024), 25–36.
+[37] Amrit Romana, Kazuhito Koishida, and Emily Mower Provost. 2024. Automatic disfluency detection from untranscribed speech.
+IEEE/ACM Transactions on Audio, Speech, and Language Processing (2024).
+[38] Phyllis Schneider, Denyse Hayward, Rita Vis Dubé, et al. 2006. Storytelling from pictures using the Edmonton narrative norms instru-
+ment. Journal of speech language pathology and audiology 30, 4 (2006), 224.
+[39] Elizabeth Shriberg, Rebecca A Bates, and Andreas Stolcke. 1997. A prosody only decision-tree model for disfluency detection.. In
+Eurospeech, Vol. 97. 2383–2386.
+[40] Matthias Sperber, Graham Neubig, Satoshi Nakamura, and Alex Waibel. 2016. Optimizing computer-assisted transcription quality
+with iterative user interfaces. In Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC’16) .
+1986–1992.
+[41] Gabriel Synnaeve, Qiantong Xu, Jacob Kahn, Tatiana Likhomanenko, Edouard Grave, Vineel Pratap, Anuroop Sriram, Vitaliy Liptchin-
+sky, and Ronan Collobert. 2019. End-to-end asr: from supervised to semi-supervised learning with modern architectures. arXiv preprint
+arXiv:1911.08460 (2019).
+[42] J Bruce Tomblin, Nancy L Records, Paula Buckwalter, Xuyang Zhang, Elaine Smith, and Marlea O’Brien. 1997. Prevalence of specific
+language impairment in kindergarten children. Journal of speech, language, and hearing research 40, 6 (1997), 1245–1260.
+[43] Yihao Wang, Zhongdi Wu, Joseph Nese, Akihito Kamata, Vedant Nilabh, and Eric C Larson. 2025. A unified model for oral reading
+fluency and student prosody. In ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) .
+IEEE, 1–5.
+[44] Amy Wilder and Sean M Redmond. 2022. The reliability of short conversational language sample measures in children with and without
+developmental language disorder. Journal of Speech, Language, and Hearing Research 65, 5 (2022), 1939–1955.
+[45] Amy Wilder and Sean M Redmond. 2024. Updates on clinical language sampling practices: A survey of speech-language pathologists
+practicing in the United States. Language, Speech, and Hearing Services in Schools 55, 4 (2024), 1151–1166.
+[46] Adrienne Wilmot, Mark Boyes, Rachel Sievers, Suze Leitão, and Courtenay Norbury. 2024. Impact of developmental language disorders
+on mental health and well-being across the lifespan: a qualitative study including the perspectives of UK adults with DLD and Australian
+speech-language therapists. BMJ open 14, 10 (2024), e087532.
+[47] Khalid Zaman, Kai Li, Melike Sah, Cem Direkoglu, Shogo Okada, and Masashi Unoki. 2025. Transformers and audio detection tasks:
+An overview. Digital Signal Processing 158 (2025), 104956.
+[48] Vicky Zayats, Mari Ostendorf, and Hannaneh Hajishirzi. 2016. Disfluency detection using a bidirectional LSTM. arXiv preprint
+arXiv:1604.03209 (2016).
+[49] Xuanru Zhou, Jiachen Lian, Cheol Jun Cho, Jingwen Liu, Zongli Ye, Jinming Zhang, Brittany Morin, David Baquirin, Jet Vonk, Zoe
+Ezzes, et al. 2024. Time and tokens: Benchmarking end-to-end speech dysfluency detection. arXiv preprint arXiv:2409.13582 (2024).
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 33
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:33
+A SUPPLEMENTARY USABILITY EV ALUATION MATERIALS
+This appendix provides supplementary materials for the human-in-the-loop usability evaluation. Section A.1
+reports per-participant transcription and annotation accuracy for the two study stories. Section A.2 lists the SUS
+questionnaire items and complete item-level responses. Section A.3 describes the SUS scoring procedure used
+to compute the usability scores reported in the main text. Section A.4 reports the item-level summaries of the
+structured usability feedback.
+A.1 Per-Participant Transcription and Annotation Accuracy
+Table 17 reports the complete per-participant accuracy results for Story A1 and Story B1.
+Table 17. Per-participant transcription accuracy on Story A1 and Story B1. Each cell shows “A1 value / B1 value”; the label
+in parentheses indicates which tool the participant used on each story. SATE-raw refers to the un-edited SATE pipeline
+output. Metrics: WER: word error rate, (𝑆+𝐷+𝐼 )/𝑁ref over ref tokens after stripping pauses and morpheme suffixes (lower
+is better); Seg F1 : C-unit boundary F1, computed by aligning ref/hyp non-maze word streams by minimum edit distance
+and comparing the boundary flag (last word of a C-unit) at each aligned position (TP if both flagged, FP/FN otherwise);
+Maze F1: same alignment, but comparing maze membership at each position; Morph F1: same alignment, but comparing the
+morpheme suffix (e.g. /3s, /ed) at each position; MLUm Diff : hyp minus ref mean length of utterance counted in morphemes
+(each suffix-bearing word counts as 2); NTW / NTU / NDW Diff : hyp minus ref counts of total words, total C-units, and
+distinct word types (root forms), respectively (sign indicates direction; 0 = identical to GT).
+Participant WER
+Seg F1 Maze F1 Morph F1 MLU m Diff NTW Diff NTU Diff NDW Diff
+SA
+TE-raw (A/B) 0.017/0.018 0.933/1.000 0.800/0.000 1.000/1.000 −1.125/+0.143 +0/ + 1 +1/ + 0 +0/ + 1
+P1
+(Manual A / SATE B) 0.102/0.018 0.933/1.000 0.000/0.000 0.923/1.000 −1.375/+0.143 −1/ + 1 +1/ + 0 +0/ + 1
+P2 (SATE A / Manual B) 0.017/0.105 0.933/1.000 0.800/0.000 1.000/1.000 −1.125/−0.143 +0/ − 1 +1/ + 0 +0/ + 0
+P3 (SATE A / Manual B) 0.017/0.123 0.933/0.857 0.800/0.000 1.000/0.923 −1.125/−0.143 +0/ + 0 +1/ + 0 +0/ − 1
+P4 (Manual A / SATE B) 0.034/0.018 0.933/1.000 0.800/0.667 0.857/1.000 −1.000/+0.000 +1/ + 0 +1/ + 0 +0/ + 0
+P5 (Manual A / SATE B) 0.034/0.018 1.000/1.000 0.800/0.667 1.000/1.000 +0.000/+0.000 +0/ + 0 +0/ + 0 +0/ + 0
+P6 (SATE A / Manual B) 0.068/0.088 1.000/1.000 0.800/0.667 0.923/0.923 −0.286/−0.143 −1/ + 0 +0/ + 0 +0/ + 0
+P7 (SATE A / Manual B) 0.034/0.088 1.000/1.000 0.800/0.667 0.923/0.923 −0.143/−0.143 +0/ + 0 +0/ + 0 +0/ + 0
+P8 (Manual A / SATE B) 0.034/0.018 1.000/1.000 0.000/0.667 1.000/1.000 +0.286/+0.000 +2/ + 0 +0/ + 0 +0/ + 0
+P9 (Manual A / SATE B) 0.051/0.018 1.000/1.000 0.500/0.000 0.923/1.000 −0.143/+0.143 +0/ + 1 +0/ + 0 +0/ + 1
+P10 (SATE A / Manual B) 0.051/0.123 0.933/0.857 0.800/0.000 1.000/0.923 −1.250/−0.571 −1/ − 3 +1/ + 0 +0/ − 1
+P11 (SATE A / Manual B) 0.136/0.088 0.875/1.000 0.800/1.000 1.000/1.000 −2.111/+0.143 −1/ + 1 +2/ + 0 −1/ + 0
+P12 (Manual A / SATE B) 0.051/0.018 1.000/1.000 0.800/0.000 0.933/1.000 +0.000/+0.143 −1/ + 1 +0/ + 0 +0/ + 1
+A.2
+SUS Questionnaire and Item-Level Responses
+Table 18 lists the SUS questionnaire items used in the post-study survey. Table19 reports the complete item-level
+SUS responses used to compute the usability score summarized in the main usability evaluation.
+A.3 SUS Scoring Procedure
+SUS scores were computed following the standard scoring procedure [7]. Each of the ten SUS items was rated
+on a 5-point Likert scale from 1 (strongly disagree) to 5 (strongly agree). For positively worded items (S1, S3, S5,
+S7, and S9), the item contribution was computed as the raw item score minus 1. For negatively worded items (S2,
+S4, S6, S8, and S10), the item contribution was computed as 5 minus the raw item score. The ten adjusted item
+contributions were then summed and multiplied by 2.5, yielding a total SUS score ranging from 0 to 100, where
+higher scores indicate better perceived usability.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 34
+107:34
+• Hou et al.
+Table 18. SUS questionnaire items used in the post-study survey. Negative items are reverse-scored when computing the
+SUS total.
+Item
+Question content Scoring
+S1
+I think that I would like to use SATE frequently. Positive
+S2 I found SATE unnecessarily complex. Negative
+S3 I thought SATE was easy to use. Positive
+S4 I think that I would need the support of a technical person to be able to use SATE. Negative
+S5 I found the various functions in SATE were well integrated. Positive
+S6 I thought there was too much inconsistency in SATE. Negative
+S7 I would imagine that most people would learn to use SATE very quickly. Positive
+S8 I found SATE very cumbersome to use. Negative
+S9 I felt very confident using SATE. Positive
+S10 I needed to learn a lot of things before I could get going with SATE. Negative
+T
+able 19. Complete SUS item-level responses. S1–S10 correspond to the ten SUS items listed in Table 18. Item values are
+raw 1–5 Likert ratings. SUS total was computed using the standard scoring procedure.
+Resp
+ondent S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 SUS
+R1 5
+1 4 3 4 1 4 1 3 2 80.0
+R2 4 2 4 1 3 2 4 2 5 1 80.0
+R3 4 2 4 2 4 2 4 2 4 2 75.0
+R4 5 2 5 3 4 4 4 1 4 1 77.5
+R5 5 2 5 1 4 1 5 1 3 1 90.0
+R6 3 1 5 1 5 1 4 1 5 1 92.5
+R7 3 2 3 1 3 1 4 3 4 2 70.0
+R8 4 2 4 2 3 2 4 2 4 2 72.5
+R9 3 1 4 1 5 1 5 1 4 2 87.5
+R10 5 1 4 1 5 1 3 1 4 2 87.5
+Formally
+, for respondent 𝑖, the SUS score was computed as:
+SUS𝑖 = 2.5 × ( ∑
+𝑗∈{1,3,5,7,9}
+(𝑥𝑖𝑗 − 1) + ∑
+𝑗∈{2,4,6,8,10}
+(5 − 𝑥𝑖𝑗)) ,
+where 𝑥𝑖𝑗 denotes respondent 𝑖’s raw Likert rating for item 𝑗.
+A.4 Structured Usability Feedback Items
+B ADDITIONAL SUBGROUP ANALYSIS RESULTS
+This appendix provides the full subgroup results for maze annotation and LSA metric agreement, together with
+the age-by-group distributions of LSA metrics (Figure 12). These materials support the analyses summarized in
+Section 5.3 and Section 5.4.
+B.1 Maze Annotation Performance by TD/DLD Group
+Table 21 reports the full TD/DLD subgroup maze annotation results. The same evaluation protocol and metrics
+are used as in the main maze annotation evaluation.
+B.2 LSA Metric Agreement by TD/DLD Group
+Table 22 reports the complete TD/DLD subgroup agreement results for LSA metrics.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 35
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:35
+Table 20. Structured usability feedback from questionnaire items. Representative statements are quoted directly from the
+questionnaire. Values indicate mean and standard deviation of valid responses on a 5-point Likert scale.
+Theme Repr
+esentative questionnaire statement Mean (SD)
+W
+orkflow learnability “I can quickly understand the workflow and operations of SATE. ” 4.40 (0.52)
+Interface clarity “The transcription and annotation style are easy to understand for me. ” 4.40 (0.70)
+Speech analysis panel “The speech analysis panel is easy to understand for me. ” 4.30 (0.67)
+Editing operations “Editing maze annotations was intuitive & convenient. ” 4.10 (0.57)
+Editing operations “Changing speaker labels (single/bulk) was convenient. ” 4.10 (0.74)
+Review efficiency “Reviewing and correcting utterances was manageable within a reasonable time. ” 4.30 (0.67)
+Automatic output quality “Automatic maze annotations (repetition, revision, filler words, pause) were generally accurate. ” 4.00 (0.67)
+Automatic output quality “Automatic morpheme annotations were generally accurate. ” 4.10 (0.88)
+Trust in final metrics “I trust the final LSA metrics generated by SATE after my manual revisions. ” 3.80 (1.03)
+Perceived time savings “SATE could save me time compared to fully manual LSA. ” 4.78 (0.67)
+Workflow fit “SATE fits well with my current workflow. ” 4.57 (0.79)
+Remaining pain point “I encountered errors or unexpected behavior during the tasks. ” 2.60 (1.58)
+Fig.
+12. Distribution of LSA metrics across age groups for TD and DLD children. Columns correspond to Ground Truth,
+Pipeline Solution, End-to-end Solution 1, and End-to-end Solution 2; rows correspond to NTU, NTW, NDW, and MLUm. The
+x-axis shows age groups from 4 to 9 years, and the y-axis shows the corresponding metric value. Within each panel, blue
+denotes TD and orange denotes DLD. Boxplots summarize subgroup distributions, overlaid points show individual samples,
+and solid lines connect age-specific subgroup means. Y-axis scales are shared within each row to facilitate comparison of
+the same metric across methods.
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 36
+107:36
+• Hou et al.
+Table 21. Estimated TD/DLD subgroup maze annotation performance.
+Gr
+oup Maze Type Metric Batchalign [22] Disfluency [37] Ours
+TD Rep
+etition Precision 91.17 74.20 76.40
+Recall 57.25 58.10 68.20
+F1 70.33 65.17 72.07
+Revision Precision N/A 72.35 77.10
+Recall N/A 61.10 79.30
+F1 N/A 66.25 78.18
+Filler Precision 100.00 99.50 99.84
+Recall 98.85 98.85 100.00
+F1 99.42 99.17 99.92
+DLD Rep
+etition Precision 87.82 71.60 72.85
+Recall 67.20 66.20 73.95
+F1 76.14 68.79 73.40
+Revision Precision N/A 66.80 72.80
+Recall N/A 55.90 75.60
+F1 N/A 60.87 74.17
+Filler Precision 100.00 99.05 99.10
+Recall 97.27 97.27 100.00
+F1 98.62 98.15 99.55
+T
+able 22. Agreement between SLP experts and SATE on LSA metrics stratified by clinical group. Pearson’s 𝑟, mean absolute
+error (MAE), mean difference, and standard deviation of difference are computed using the same protocol as the overall
+system-level evaluation. Values in parentheses indicate percentage differences. 𝑛 denotes the number of language samples
+in each subgroup. DLD samples are labeled SLI in the original ENNI files.
+Metric Metho
+d Group 𝑛 Pearson’s 𝑟 MAE Mean Diff. SD Diff.
+N
+TU Pipeline TD 84 0.93 19.49 18.27 (20.27%) 14.71 (14.94%)
+Pipeline DLD 8 0.81 21.63 13.13 (10.81%) 19.73 (35.69%)
+E2E-1 TD 84 0.91 16.67 14.38 (15.38%) 14.95 (17.51%)
+E2E-1 DLD 8 0.93 22.38 14.13 (10.52%) 22.44 (32.16%)
+E2E-2 TD 84 0.91 13.50 10.67 (11.36%) 13.53 (17.03%)
+E2E-2 DLD 8 0.84 14.75 3.75 (-0.27%) 16.46 (31.20%)
+NTW Pipeline TD 84 0.98 33.06 18.85 (2.94%) 37.04 (7.84%)
+Pipeline DLD 8 0.99 30.00 -3.75 (-5.30%) 36.19 (16.60%)
+E2E-1 TD 84 0.98 30.06 1.46 (-1.12%) 43.64 (10.25%)
+E2E-1 DLD 8 0.99 31.88 -16.88 (-6.63%) 40.28 (12.21%)
+E2E-2 TD 84 0.98 46.79 -41.74 (-9.66%) 40.21 (10.09%)
+E2E-2 DLD 8 0.99 64.75 -64.75 (-15.49%) 36.69 (9.67%)
+NDW Pipeline TD 84 0.97 9.95 7.90 (5.44%) 9.66 (7.38%)
+Pipeline DLD 8 0.97 8.63 4.38 (1.52%) 10.45 (11.38%)
+E2E-1 TD 84 0.96 10.06 7.27 (4.67%) 10.98 (7.36%)
+E2E-1 DLD 8 0.96 9.88 7.63 (6.17%) 10.08 (7.37%)
+E2E-2 TD 84 0.96 7.76 2.76 (1.78%) 9.86 (7.37%)
+E2E-2 DLD 8 0.99 7.25 -2.00 (0.45%) 8.49 (9.70%)
+MLUm Pipeline TD 84 0.76 1.90 -1.86 (-25.89%) 0.99 (12.37%)
+Pipeline DLD 8 0.87 1.75 -1.57 (-22.35%) 1.17 (20.96%)
+E2E-1 TD 84 0.77 1.83 -1.82 (-25.01%) 0.96 (11.65%)
+E2E-1 DLD 8 0.86 1.82 -1.60 (-22.97%) 1.24 (22.77%)
+E2E-2 TD 84 0.78 2.11 -2.10 (-29.53%) 0.91 (10.65%)
+E2E-2 DLD 8 0.78 2.08 -1.63 (-21.59%) 1.58 (30.07%)
+Pr
+oc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.
+
+PAGE 37
+Sp
+eech Annotation and Transcription Enhancer (SATE): An Automated System for Child Language Sample Analysis • 107:37
+C MORPHEME ANNOTATION ERROR COMPOSITION ACROSS ASR SYSTEMS
+This appendix provides the error composition underlying the downstream morpheme annotation evaluation in
+Section 5.1.5, separating detector-induced from ASR-induced errors on both the ground-truth and prediction
+sides (Figure 13).
+Fig.
+13. Error composition of morpheme annotation across different ASR transcriptions. The first two panels decompose all
+ground-truth morphemes, separating TP, aligned FN, and ASR-induced misaligned FN. The last two panels decompose all
+predicted morphemes, separating TP, aligned FP, and ASR-induced misaligned FP. Results are shown for both original ASR
+transcripts with mazes retained and transcripts after maze removal.
+Received 1 February 2026; revised 1 May 2026; accepted 21 July 2026
+Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 10, No. 3, Article 107. Publication date: September 2026.

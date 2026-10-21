@@ -1,0 +1,47 @@
+{
+  "verified_date": "2026-10-15",
+  "sources": [
+    {
+      "citation": "Liu, MacWhinney, Fromm & Lanzi (2023), Automation of Language Sample Analysis",
+      "url": "https://aphasia.talkbank.org/publications/2023/Liu23.pdf",
+      "role": "Published Batchalign system context; original adult clinical cohorts differ from our public child corpora",
+      "status": "Official 0.10.4 segmentation component rerun on our identical public paragraphs; not numerical reproduction of original article"
+    },
+    {
+      "citation": "Wagner et al. (2025), The Ohio Child Speech Corpus",
+      "url": "https://talkbank.org/childes/access/Eng-NA/0docs/OCSC.pdf",
+      "doi": "10.1016/j.specom.2025.103206",
+      "role": "Published corpus and MLU analyses; common human CHAT references with audio",
+      "status": "126-task combined benchmark includes 111 OCSC sections; first OCSC audio task preselected for MOSS pilot. Published age/robot analyses not reproduced"
+    },
+    {
+      "citation": "Steen et al. (2026), Introducing the NYU\u2013Emerson Corpus",
+      "url": "https://talkbank.org/asd/access/English/NYU-Emerson.html",
+      "doi": "10.21415/VT7P-YF83",
+      "role": "Clinical child corpus with human CHAT references and video",
+      "status": "15 transcript test sections, four test children; audio not evaluated this continuation"
+    },
+    {
+      "citation": "Pelfrey et al. (2024), Evaluating the accuracy of automated processing of child and adult language production in preschool classrooms",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1322665/full",
+      "role": "Published child language-metric errors",
+      "access": "Article limits data to IRB-approved study team members; do not imply a public direct-replication benchmark",
+      "status": "Context only, not a ranked cross-dataset comparison"
+    },
+    {
+      "citation": "Baese-Berk et al. (2021), Lexical Diversity, Lexical Sophistication, and Predictability for Speech in Multiple Listening Conditions",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.661415/full",
+      "doi": "10.3389/fpsyg.2021.661415",
+      "supplement": "https://osf.io/dfhpu/?view_only=49d95d90424941da82217a239ab7450c",
+      "role": "Actual published TAALED result rows, not just aggregate reliability",
+      "status": "All 300 source TextGrids and first stereo audio downloaded through user-authorized access. 180 metadata-joined rows compared across 15 metrics; 60 vocoder rows ambiguous. Significant discrepancies/no exact token matches. Original cleaned input mapping and historical tool configuration still needed; not exact reproduction."
+    },
+    {
+      "citation": "Schneider et al. (2006), ENNI",
+      "url": "https://talkbank.org/childes/access/Clinical-Eng/ENNI.html",
+      "conventions": "https://talkbank.org/childes/access/Clinical-Eng/ENNI-materials/Complexity/mlcu.pdf",
+      "role": "Norms and human C-units for MLCU/TNW/NDW",
+      "status": "Not imported/evaluated; no TalkBank audio. MLCU splits contractions and excludes mazes, certain responses, interruptions and story enders; current profile cannot silently be equated to these norms"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "scope": "Replotted existing validation counts only; no model rerun or fresh evaluation.",
+  "split": "validation",
+  "aggregation": "Micro-aggregated saved boundary TP/FP/FN within corpus",
+  "source_files": {
+    "spaCy + rules": {
+      "path": "outputs/results/transcript_validation/chat_validation.json",
+      "sha256": "2a025675c8886ee69acf9d577c3c988c1b331f4a9a83563ce12f257b3b6df5dc"
+    },
+    "Our model": {
+      "path": "outputs/results/transcript_validation/chat_calibrated_results.json",
+      "sha256": "02fc00313920f03ae77b2c124c3343a9e16b9f75649514b4f1755c7f6f63725d"
+    }
+  },
+  "results": [
+    {
+      "corpus": "ocsc",
+      "method": "spaCy + rules",
+      "saved_method": "turn_rules",
+      "participants": 45,
+      "sections": 125,
+      "tp": 6875,
+      "fp": 365,
+      "fn": 4792,
+      "Precision": 94.95856353591161,
+      "Recall": 58.926887803205624,
+      "F1": 72.72438779288095
+    },
+    {
+      "corpus": "ocsc",
+      "method": "Our model",
+      "saved_method": "turn_ml/margin=0.25",
+      "participants": 45,
+      "sections": 125,
+      "tp": 10312,
+      "fp": 1347,
+      "fn": 1355,
+      "Precision": 88.44669354147011,
+      "Recall": 88.3860461129682,
+      "F1": 88.41635942724857
+    },
+    {
+      "corpus": "nyu_emerson",
+      "method": "spaCy + rules",
+      "saved_method": "turn_rules",
+      "participants": 4,
+      "sections": 14,
+      "tp": 224,
+      "fp": 11,
+      "fn": 115,
+      "Precision": 95.31914893617021,
+      "Recall": 66.07669616519173,
+      "F1": 78.04878048780488
+    },
+    {
+      "corpus": "nyu_emerson",
+      "method": "Our model",
+      "saved_method": "turn_ml/margin=0.25",
+      "participants": 4,
+      "sections": 14,
+      "tp": 298,
+      "fp": 52,
+      "fn": 41,
+      "Precision": 85.14285714285714,
+      "Recall": 87.90560471976401,
+      "F1": 86.5021770682148
+    }
+  ]
+}

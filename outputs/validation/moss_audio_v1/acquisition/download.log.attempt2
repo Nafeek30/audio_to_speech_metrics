@@ -1,0 +1,48 @@
+Selected recordings: {'ocsc': 301}
+CHAT roles: {'train': 211, 'test': 45, 'validation': 45}
+Plan: /Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/validation/moss_audio_v1/acquisition/plan.json
+[1/301] ocsc: verified 4001.wav
+[2/301] ocsc: verified 4002.wav
+[3/301] ocsc: verified 4003.wav
+[4/301] ocsc: verified 4004.wav
+[5/301] ocsc: verified 4005.wav
+[6/301] ocsc: verified 4006.wav
+[7/301] ocsc: verified 4008.wav
+[8/301] ocsc: verified 4009.wav
+[9/301] ocsc: verified 4010.wav
+[10/301] ocsc: verified 4011.wav
+[11/301] ocsc: verified 4013.wav
+[12/301] ocsc: verified 4014.wav
+[13/301] ocsc: verified 4015.wav
+[14/301] ocsc: verified 4016.wav
+[15/301] ocsc: verified 4017.wav
+[16/301] ocsc: verified 4018.wav
+[17/301] ocsc: verified 4019.wav
+Traceback (most recent call last):
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/scripts/download_public_audio.py", line 10, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/audio_download.py", line 696, in main
+    if args.limit is not None and args.limit < 1:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/audio_download.py", line 614, in download_jobs
+    remote = resolve_media(client, job, url_map or {})
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/audio_download.py", line 409, in http_download
+    with partial.open('ab' if offset else 'wb') as output:
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/audio_download.py", line 409, in <lambda>
+    with partial.open('ab' if offset else 'wb') as output:
+                                  ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 479, in read
+    s = self.fp.read(amt)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt

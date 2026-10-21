@@ -1,0 +1,26 @@
+[
+  {
+    "recorded_utc": "2026-10-16T03:16:42.743793+00:00",
+    "protocol_sha256": "b86f6311d8b942a3eabbffcd64401c743f0d3995665d0651c43323181a15373f",
+    "reason": "User requested durable unattended execution and exact continuation tomorrow. Engineering-only epoch checkpoints, optimizer/scheduler/RNG restore, detached supervision and unavailable-metric report formatting. No changes to participants, folds, model, seed, loss, epochs, margins or selection objective.",
+    "code_sha256": {
+      "speech_pipeline/research/participant_cv.py": "f7a3cdee500b607e844a17ba7efcc977f397fc87fa5feffcaa4d8dc8cc5cb0ab"
+    }
+  },
+  {
+    "recorded_utc": "2026-10-16T03:21:46.261420+00:00",
+    "protocol_sha256": "b86f6311d8b942a3eabbffcd64401c743f0d3995665d0651c43323181a15373f",
+    "reason": "Durable byte-identical backup of original pinned pretrained files, with fallback if the temporary cache disappears after reboot. No model/data/selection setting changes.",
+    "code_sha256": {
+      "speech_pipeline/research/participant_cv.py": "92ce2339c6e276968fcbe24777ea8abe009066768838b25a58bda438f18a0383"
+    }
+  },
+  {
+    "recorded_utc": "2026-10-16T03:44:27.460702+00:00",
+    "protocol_sha256": "b86f6311d8b942a3eabbffcd64401c743f0d3995665d0651c43323181a15373f",
+    "reason": "Hold final single-model test for separately registered eval-only ensemble improvement selection. Five-fold fitting and outer evaluation unchanged; final training unchanged.",
+    "code_sha256": {
+      "speech_pipeline/research/participant_cv.py": "5015eccbb7146b42482897c84ec695509922e901007e68d482bf6867b5c0d2b6"
+    }
+  }
+]

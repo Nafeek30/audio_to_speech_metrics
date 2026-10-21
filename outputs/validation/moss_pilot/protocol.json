@@ -1,0 +1,18 @@
+{
+  "recording": "ocsc/transcripts/4/4002.cha#section5",
+  "selection": "First record of frozen public test in saved order; chosen before MOSS output",
+  "task": "ExpPictures",
+  "audio_url": "https://media.talkbank.org/childes/Eng-NA/OCSC/4/4002.wav?f=save",
+  "audio_start_ms": 474844,
+  "audio_end_ms": 774865,
+  "audio_seconds": 300.021,
+  "reference_sha256": "2b2a888ee1652c39c48b781933068c89844ecb712dba1630910ae29d35bb5485",
+  "target": "CHI",
+  "purpose": "Feasibility pilot, not a cohort benchmark or independent confirmation",
+  "model_revision": "704aa4a9c304e8520be88901e0d1960158ef5b15",
+  "code_revision": "e3bdd93f8ad58418e04659818efd5fd87a0bc486",
+  "decoding": "Official default prompt, deterministic generation, no hotwords or reference text; max_new_tokens 8192; stop and retain failure if truncated",
+  "metrics": "Native original CHAT word MLU, eligible utterance count and length SD, TNW/NDW/TTR/MATTR; WER separately; learned model frozen; anonymous speaker ID mapping disclosed separately, no gold word edits",
+  "scope": "Full original 300-second task; if runtime infeasible, declare smaller pilot before generation and retain full-task registration",
+  "budget": "First-run setup/inference capped at 15 minutes; earlier download failure is not inference"
+}

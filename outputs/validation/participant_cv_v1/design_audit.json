@@ -1,0 +1,52 @@
+{
+  "prior_run": {
+    "selected_utc": "2026-10-15T16:18:40.030077+00:00",
+    "test_started_utc": "2026-10-15T16:18:43.999852+00:00",
+    "selection_preceded_test": true,
+    "participant_overlap_detected": false,
+    "cross_validation_previously_run": false
+  },
+  "new_study": {
+    "k": 5,
+    "original_cohort_assignments_unchanged": true,
+    "cv_pool": "original_train_only",
+    "pool_participants": 231,
+    "pool_sections": 630,
+    "original_eval_test_excluded": true,
+    "pretrained_revision": "44acabbec0ef496f6dbc93adadea57f376b7c0ec",
+    "old_finetuned_initialization_prohibited": true
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "fit": 147,
+      "inner": 37,
+      "outer": 47
+    },
+    {
+      "fold": 2,
+      "fit": 148,
+      "inner": 37,
+      "outer": 46
+    },
+    {
+      "fold": 3,
+      "fit": 148,
+      "inner": 37,
+      "outer": 46
+    },
+    {
+      "fold": 4,
+      "fit": 148,
+      "inner": 37,
+      "outer": 46
+    },
+    {
+      "fold": 5,
+      "fit": 148,
+      "inner": 37,
+      "outer": 46
+    }
+  ],
+  "protocol_sha256": "b86f6311d8b942a3eabbffcd64401c743f0d3995665d0651c43323181a15373f"
+}

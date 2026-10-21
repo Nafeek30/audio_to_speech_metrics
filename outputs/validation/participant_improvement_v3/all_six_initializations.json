@@ -1,0 +1,63 @@
+{
+  "audited_utc": "2026-10-16T04:19:08.828517+00:00",
+  "jobs": [
+    {
+      "job": "fold_1",
+      "encoder_sha256": "7856044d12654d8a7e501544e6bcbc0efff9d7903665b92e7419ebde73c72ca8",
+      "head_sha256": "7f627dc830e902a367f75ac4929ce4b5671857aa890e76c282a5f62c406822f7",
+      "seed": 20261016,
+      "fit_participants": 147,
+      "inner_participants": 37,
+      "initialization_sha256": "b3b8bd7275bfba29a6418a5d7fbfee21db5cf3aab44b11449007073677a0ebb4"
+    },
+    {
+      "job": "fold_2",
+      "encoder_sha256": "7856044d12654d8a7e501544e6bcbc0efff9d7903665b92e7419ebde73c72ca8",
+      "head_sha256": "c1e5cc5f5d453b01a920529f2c98d709e3b6f456bcabe6be7214c1a7d1f3a346",
+      "seed": 20261017,
+      "fit_participants": 148,
+      "inner_participants": 37,
+      "initialization_sha256": "f358bb60ea04ee2800d8062ad7215f5dae84f7a5167a0bedf21a9e033da561e0"
+    },
+    {
+      "job": "fold_3",
+      "encoder_sha256": "7856044d12654d8a7e501544e6bcbc0efff9d7903665b92e7419ebde73c72ca8",
+      "head_sha256": "8f2ce1d637cfb81e8f12d282df3a39ba1241ae7fa7e81d382a6c2c4df13e0698",
+      "seed": 20261018,
+      "fit_participants": 148,
+      "inner_participants": 37,
+      "initialization_sha256": "abadede48c5be15ed4e3cdf829cad93400ad188837d6393778511b6da73ccdab"
+    },
+    {
+      "job": "fold_4",
+      "encoder_sha256": "7856044d12654d8a7e501544e6bcbc0efff9d7903665b92e7419ebde73c72ca8",
+      "head_sha256": "13c2260df1a8e1970473ce4389483515a02ecff473879e75fa85b8f50b021ccf",
+      "seed": 20261019,
+      "fit_participants": 148,
+      "inner_participants": 37,
+      "initialization_sha256": "2d8bf3610b8ddf6d520bbc966b6a109b5ebc9c59ad378053ca0b8bd8da078cdc"
+    },
+    {
+      "job": "fold_5",
+      "encoder_sha256": "7856044d12654d8a7e501544e6bcbc0efff9d7903665b92e7419ebde73c72ca8",
+      "head_sha256": "a8472f4cbbaebee2a2f38a82bb17e4b55360a1dbe5a1770f9c8b928d1abc9905",
+      "seed": 20261020,
+      "fit_participants": 148,
+      "inner_participants": 37,
+      "initialization_sha256": "e7ce62d96414eac117f9af3382282aa74a4375f931e5cfe8be4202d39ad585df"
+    },
+    {
+      "job": "final",
+      "encoder_sha256": "7856044d12654d8a7e501544e6bcbc0efff9d7903665b92e7419ebde73c72ca8",
+      "head_sha256": "05f443cd12eec908eba919d0771637e9dd526249a3d99e83bee11ee846070601",
+      "seed": 20261115,
+      "fit_participants": 231,
+      "inner_participants": 49,
+      "initialization_sha256": "45a8aa9fb4aba173ec93366fa229f4948ad9d21b6cd34ddd3a4abd5a3145ef67"
+    }
+  ],
+  "all_same_original_pretrained_encoder": true,
+  "all_six_task_heads_independently_initialized": true,
+  "original_eval_test_excluded_from_all_gradients": true,
+  "participant_overlap": 0
+}

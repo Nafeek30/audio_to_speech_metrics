@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speech-taaled-pipeline"
+version = "0.1.0"
+description = "Segment mapped-speaker transcripts, compare TAALED measures, and export CHAT for CLAN."
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "click>=8.1,<9",
+    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+    "openpyxl>=3.1,<4",
+    "pylats==0.64",
+    "numpy>=2,<3",
+    "scipy>=1.15,<2",
+    "setuptools>=68,<81",
+    "spacy>=3.8,<3.9",
+    "taaled==0.32",
+]
+
+[project.scripts]
+speech-taaled = "speech_pipeline.pipeline:main"
+
+[project.optional-dependencies]
+figures = ["Pillow>=11,<13", "reportlab>=4,<5", "matplotlib>=3.10,<4"]
+public-data = ["pylangacq>=0.23,<0.24"]
+transformer = ["torch==2.10.0"]
+segmenter = ["torch==2.10.0", "transformers>=4.45,<5", "safetensors>=0.4,<1"]
+pretrained = ["torch==2.10.0", "transformers>=4.45,<5", "safetensors>=0.4,<1", "wtpsplit>=2.1,<3", "scikit-learn>=1.6,<2", "sentencepiece==0.2.1", "protobuf>=5,<7"]
+
+[tool.setuptools.packages.find]
+include = ["speech_pipeline*"]

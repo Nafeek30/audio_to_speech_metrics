@@ -1,0 +1,481 @@
+{
+  "status": "completed_single_sample_pilot",
+  "protocol_sha256": "21e5d3b381930971d8f97d852f0b05da57d85b08387201a4053272237abd8f14",
+  "scoring_protocol_sha256": "cd242a5c1acc924487277749cfbd294536e29b3e89ce67d91fb210e73f7c4d62",
+  "raw_output_sha256": "5ccb79ea9ad3e9c395e7b83637fa07d6eac071f3d581479ac6fa7c076198335d",
+  "audio_seconds": 300.021,
+  "mapping": {
+    "assignments": [
+      {
+        "reference_speaker": "CHI",
+        "predicted_speaker": "S02",
+        "edits": {
+          "substitutions": 19,
+          "deletions": 14,
+          "insertions": 2
+        },
+        "reference_words": 186,
+        "predicted_words": 174
+      },
+      {
+        "reference_speaker": "EXP",
+        "predicted_speaker": "S01",
+        "edits": {
+          "substitutions": 13,
+          "deletions": 10,
+          "insertions": 14
+        },
+        "reference_words": 318,
+        "predicted_words": 322
+      }
+    ],
+    "word_edits": 72,
+    "reference_words": 504,
+    "cpwer_percent": 14.285714285714286,
+    "role": "Oracle minimum-edit mapping for evaluation only; automatic target-role identification is unvalidated"
+  },
+  "target_speaker": "S02",
+  "temporal_audit": {
+    "segments": 106,
+    "first_start": 0.03,
+    "last_end": 300.04,
+    "audio_seconds": 300.021,
+    "outside_audio": [],
+    "out_of_start_order": [],
+    "scope": "Predicted segment envelopes, not reviewed word timings or DER reference"
+  },
+  "target_wer_percent": 18.817204301075268,
+  "cpwer_percent": 14.285714285714286,
+  "unavailable_reason": null,
+  "metrics": [
+    {
+      "method": "latest_minilm",
+      "metric": "eligible_mlu_utterances",
+      "reference": 72.0,
+      "predicted": 70,
+      "signed_error": -2.0,
+      "ape": 2.7777777777777777
+    },
+    {
+      "method": "latest_minilm",
+      "metric": "MLUw",
+      "reference": 2.486111111111111,
+      "predicted": 2.4571428571428573,
+      "signed_error": -0.028968253968253865,
+      "ape": 1.1652035115722226
+    },
+    {
+      "method": "latest_minilm",
+      "metric": "length_sd",
+      "reference": 1.143,
+      "predicted": 0.9514757603055264,
+      "signed_error": -0.19152423969447363,
+      "ape": 16.756276438711602
+    },
+    {
+      "method": "latest_minilm",
+      "metric": "mlu_words",
+      "reference": 179.0,
+      "predicted": 172,
+      "signed_error": -7.0,
+      "ape": 3.910614525139665
+    },
+    {
+      "method": "latest_minilm",
+      "metric": "freq/TNW",
+      "reference": 179.0,
+      "predicted": 172,
+      "signed_error": -7.0,
+      "ape": 3.910614525139665
+    },
+    {
+      "method": "latest_minilm",
+      "metric": "freq/NDW",
+      "reference": 73.0,
+      "predicted": 70,
+      "signed_error": -3.0,
+      "ape": 4.109589041095891
+    },
+    {
+      "method": "latest_minilm",
+      "metric": "freq/TTR",
+      "reference": 0.40782122905027934,
+      "predicted": 0.4069767441860465,
+      "signed_error": -0.0008444848642328306,
+      "ape": 0.20707231602421464
+    },
+    {
+      "method": "latest_minilm",
+      "metric": "freq/MATTR",
+      "reference": 0.538,
+      "predicted": 0.5391869918699187,
+      "signed_error": 0.0011869918699186632,
+      "ape": 0.22063045909268833
+    },
+    {
+      "method": "moss_source_segments",
+      "metric": "eligible_mlu_utterances",
+      "reference": 72.0,
+      "predicted": 61,
+      "signed_error": -11.0,
+      "ape": 15.277777777777779
+    },
+    {
+      "method": "moss_source_segments",
+      "metric": "MLUw",
+      "reference": 2.486111111111111,
+      "predicted": 2.819672131147541,
+      "signed_error": 0.33356102003642984,
+      "ape": 13.41697957688433
+    },
+    {
+      "method": "moss_source_segments",
+      "metric": "length_sd",
+      "reference": 1.143,
+      "predicted": 1.7971580180057467,
+      "signed_error": 0.6541580180057467,
+      "ape": 57.23167261642578
+    },
+    {
+      "method": "moss_source_segments",
+      "metric": "mlu_words",
+      "reference": 179.0,
+      "predicted": 172,
+      "signed_error": -7.0,
+      "ape": 3.910614525139665
+    },
+    {
+      "method": "moss_source_segments",
+      "metric": "freq/TNW",
+      "reference": 179.0,
+      "predicted": 172,
+      "signed_error": -7.0,
+      "ape": 3.910614525139665
+    },
+    {
+      "method": "moss_source_segments",
+      "metric": "freq/NDW",
+      "reference": 73.0,
+      "predicted": 70,
+      "signed_error": -3.0,
+      "ape": 4.109589041095891
+    },
+    {
+      "method": "moss_source_segments",
+      "metric": "freq/TTR",
+      "reference": 0.40782122905027934,
+      "predicted": 0.4069767441860465,
+      "signed_error": -0.0008444848642328306,
+      "ape": 0.20707231602421464
+    },
+    {
+      "method": "moss_source_segments",
+      "metric": "freq/MATTR",
+      "reference": 0.538,
+      "predicted": 0.5391869918699187,
+      "signed_error": 0.0011869918699186632,
+      "ape": 0.22063045909268833
+    },
+    {
+      "method": "latest_minilm_native_clan",
+      "metric": "eligible_mlu_utterances",
+      "reference": 72.0,
+      "predicted": 70.0,
+      "signed_error": -2.0,
+      "ape": 2.7777777777777777
+    },
+    {
+      "method": "latest_minilm_native_clan",
+      "metric": "MLUw",
+      "reference": 2.486111111111111,
+      "predicted": 2.4857142857142858,
+      "signed_error": -0.0003968253968253954,
+      "ape": 0.015961691939345515
+    },
+    {
+      "method": "latest_minilm_native_clan",
+      "metric": "length_sd",
+      "reference": 1.143,
+      "predicted": 0.937,
+      "signed_error": -0.20599999999999996,
+      "ape": 18.02274715660542
+    },
+    {
+      "method": "latest_minilm_native_clan",
+      "metric": "mlu_words",
+      "reference": 179.0,
+      "predicted": 174.0,
+      "signed_error": -5.0,
+      "ape": 2.793296089385475
+    },
+    {
+      "method": "latest_minilm_native_clan",
+      "metric": "freq/TNW",
+      "reference": 179.0,
+      "predicted": 174.0,
+      "signed_error": -5.0,
+      "ape": 2.793296089385475
+    },
+    {
+      "method": "latest_minilm_native_clan",
+      "metric": "freq/NDW",
+      "reference": 73.0,
+      "predicted": 71.0,
+      "signed_error": -2.0,
+      "ape": 2.73972602739726
+    },
+    {
+      "method": "latest_minilm_native_clan",
+      "metric": "freq/TTR",
+      "reference": 0.40782122905027934,
+      "predicted": 0.40804597701149425,
+      "signed_error": 0.00022474796121491059,
+      "ape": 0.055109431585573965
+    },
+    {
+      "method": "latest_minilm_native_clan",
+      "metric": "freq/MATTR",
+      "reference": 0.538,
+      "predicted": 0.541,
+      "signed_error": 0.0030000000000000027,
+      "ape": 0.5576208178438666
+    },
+    {
+      "method": "moss_source_segments_native_clan",
+      "metric": "eligible_mlu_utterances",
+      "reference": 72.0,
+      "predicted": 61.0,
+      "signed_error": -11.0,
+      "ape": 15.277777777777779
+    },
+    {
+      "method": "moss_source_segments_native_clan",
+      "metric": "MLUw",
+      "reference": 2.486111111111111,
+      "predicted": 2.8524590163934427,
+      "signed_error": 0.3663479052823315,
+      "ape": 14.735781664987638
+    },
+    {
+      "method": "moss_source_segments_native_clan",
+      "metric": "length_sd",
+      "reference": 1.143,
+      "predicted": 1.773,
+      "signed_error": 0.6299999999999999,
+      "ape": 55.11811023622046
+    },
+    {
+      "method": "moss_source_segments_native_clan",
+      "metric": "mlu_words",
+      "reference": 179.0,
+      "predicted": 174.0,
+      "signed_error": -5.0,
+      "ape": 2.793296089385475
+    },
+    {
+      "method": "moss_source_segments_native_clan",
+      "metric": "freq/TNW",
+      "reference": 179.0,
+      "predicted": 174.0,
+      "signed_error": -5.0,
+      "ape": 2.793296089385475
+    },
+    {
+      "method": "moss_source_segments_native_clan",
+      "metric": "freq/NDW",
+      "reference": 73.0,
+      "predicted": 71.0,
+      "signed_error": -2.0,
+      "ape": 2.73972602739726
+    },
+    {
+      "method": "moss_source_segments_native_clan",
+      "metric": "freq/TTR",
+      "reference": 0.40782122905027934,
+      "predicted": 0.40804597701149425,
+      "signed_error": 0.00022474796121491059,
+      "ape": 0.055109431585573965
+    },
+    {
+      "method": "moss_source_segments_native_clan",
+      "metric": "freq/MATTR",
+      "reference": 0.538,
+      "predicted": 0.541,
+      "signed_error": 0.0030000000000000027,
+      "ape": 0.5576208178438666
+    }
+  ],
+  "native_reference": {
+    "eligible_mlu_utterances": 72.0,
+    "MLUw": 2.486111111111111,
+    "length_sd": 1.143,
+    "mlu_words": 179.0,
+    "freq/TNW": 179.0,
+    "freq/NDW": 73.0,
+    "freq/TTR": 0.40782122905027934,
+    "freq/MATTR": 0.538
+  },
+  "native_predictions": {
+    "latest_minilm_native_clan": {
+      "values": {
+        "eligible_mlu_utterances": 70.0,
+        "MLUw": 2.4857142857142858,
+        "length_sd": 0.937,
+        "mlu_words": 174.0,
+        "freq/TNW": 174.0,
+        "freq/NDW": 71.0,
+        "freq/TTR": 0.40804597701149425,
+        "freq/MATTR": 0.541
+      },
+      "original_chat": "@UTF8\n@Begin\n@Languages:\teng\n@Participants:\tPAR Target Participant\n@ID:\teng|speechpipeline|PAR|||||Participant|||\n@Comment:\tMOSS source: MOSS pilot; selected anonymous speaker: S02.\n@Comment:\tTarget mapping evidence: Evaluation-only oracle role mapping\n@Comment:\tAutomatic unreviewed transcript and boundaries; no inferred diagnosis or MOR.\n@Comment:\tFillers and repetitions retained. No invented retrace, maze, or grammar coding.\n@Comment:\tNo utterance bullets: source segment envelopes are not word alignments.\n*PAR:\tI see a lion .\n*PAR:\ta person .\n*PAR:\ta flowers .\n*PAR:\tand a fish .\n*PAR:\tAnd leaves .\n*PAR:\tAnd grass .\n*PAR:\tA dragonfly .\n*PAR:\tA boat .\n*PAR:\tA caterpillar .\n*PAR:\tI don't know .\n*PAR:\tSwimming .\n*PAR:\tI don't know .\n*PAR:\tThere is another leaf .\n*PAR:\tI don't know .\n*PAR:\tUm purple Blue .\n*PAR:\tYeah .\n*PAR:\tNo .\n*PAR:\tCause Cause lion .\n*PAR:\ta pony .\n*PAR:\tUm cars .\n*PAR:\tAnd a bed .\n*PAR:\tAnd a stock .\n*PAR:\tAnd a person .\n*PAR:\tAnd a fish .\n*PAR:\tAnd an airplane .\n*PAR:\tAnd a pillow .\n*PAR:\tAnd a .\n*PAR:\tand a paper airplane .\n*PAR:\tAnd a blanket .\n*PAR:\tAnd a window .\n*PAR:\tAnd fish .\n*PAR:\tfood .\n*PAR:\tAnd a picture .\n*PAR:\tA snow outfit .\n*PAR:\tI don't know .\n*PAR:\tYeah .\n*PAR:\tAirplanes .\n*PAR:\tMm-hmm .\n*PAR:\tYeah .\n*PAR:\tI pretend .\n*PAR:\ta princess .\n*PAR:\tI spin round and round .\n*PAR:\tNo .\n*PAR:\tAn octopus .\n*PAR:\tA clock .\n*PAR:\tAnd a mouse .\n*PAR:\tAnd a person .\n*PAR:\tAnd another mouse .\n*PAR:\tA science .\n*PAR:\tMm-hmm .\n*PAR:\tI don't know .\n*PAR:\tI don't know .\n*PAR:\tA book .\n*PAR:\tA pen .\n*PAR:\tAnd light bulbs .\n*PAR:\tA sheet .\n*PAR:\tAnd paper .\n*PAR:\tI don't know .\n*PAR:\tMaybe they're she .\n*PAR:\tshe's doing science with them .\n*PAR:\tNo .\n*PAR:\tA beet .\n*PAR:\tAnd a person .\n*PAR:\tAnd a slug .\n*PAR:\tAnd another slug .\n*PAR:\tAnd another slug .\n*PAR:\tAnd some more beets .\n*PAR:\tA fence .\n*PAR:\tA sky .\n*PAR:\tI think she's bigger .\n@End\n",
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "1ef255fc05dca8e11ba5291de15fa3df9c9e2eca936210142841adbe068517f4",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_uozyd5hp/sample.cha\nThu Oct 15 16:36:06 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_uozyd5hp/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 70, words = 174\n\tRatio of words over utterances = 2.486\n\tStandard deviation = 0.937\n\n",
+          "utterances": 70.0,
+          "total": 174.0,
+          "mlu": 2.486,
+          "sd": 0.937
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "e14e5d1fe11665eafbce38daf822d32b2e95c3e3ad7c7e4a9e315feea1b311b0",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_5t4pdndh/sample.cha\nThu Oct 15 16:36:06 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_5t4pdndh/sample.cha>\nSpeaker: *PAR:\n 32 a\n  2 airplane\n  1 airplanes\n  2 an\n 26 and\n  4 another\n  1 bed\n  1 beet\n  1 beets\n  1 bigger\n  1 blanket\n  1 blue\n  1 boat\n  1 book\n  1 bulbs\n  1 cars\n  1 caterpillar\n  2 cause\n  1 clock\n  1 doing\n  7 don't\n  1 dragonfly\n  1 fence\n  3 fish\n  1 flowers\n  1 food\n  1 grass\n 11 i\n  1 is\n  7 know\n  1 leaf\n  1 leaves\n  1 light\n  2 lion\n  1 maybe\n  2 mm-hmm\n  1 more\n  2 mouse\n  3 no\n  1 octopus\n  1 outfit\n  2 paper\n  1 pen\n  4 person\n  1 picture\n  1 pillow\n  1 pony\n  1 pretend\n  1 princess\n  1 purple\n  2 round\n  2 science\n  1 see\n  1 she\n  2 she's\n  1 sheet\n  1 sky\n  3 slug\n  1 snow\n  1 some\n  1 spin\n  1 stock\n  1 swimming\n  1 them\n  1 there\n  1 they're\n  1 think\n  2 um\n  1 window\n  1 with\n  3 yeah\n------------------------------\n   71  Total number of different item types used\n  174  Total number of items (tokens)\n0.408  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.541  MATTR\n\n",
+          "NDW": 71.0,
+          "TNW": 174.0,
+          "TTR": 0.408,
+          "MATTR": 0.541
+        }
+      }
+    },
+    "moss_source_segments_native_clan": {
+      "values": {
+        "eligible_mlu_utterances": 61.0,
+        "MLUw": 2.8524590163934427,
+        "length_sd": 1.773,
+        "mlu_words": 174.0,
+        "freq/TNW": 174.0,
+        "freq/NDW": 71.0,
+        "freq/TTR": 0.40804597701149425,
+        "freq/MATTR": 0.541
+      },
+      "original_chat": "@UTF8\n@Begin\n@Languages:\teng\n@Participants:\tPAR Target Participant\n@ID:\teng|speechpipeline|PAR|||||Participant|||\n@Comment:\tMOSS source: MOSS pilot; selected anonymous speaker: S02.\n@Comment:\tTarget mapping evidence: Evaluation-only oracle role mapping\n@Comment:\tAutomatic unreviewed transcript and boundaries; no inferred diagnosis or MOR.\n@Comment:\tFillers and repetitions retained. No invented retrace, maze, or grammar coding.\n@Comment:\tNo utterance bullets: source segment envelopes are not word alignments.\n*PAR:\tI see a lion a person a flowers and a fish .\n*PAR:\tAnd leaves .\n*PAR:\tAnd grass .\n*PAR:\tA dragonfly .\n*PAR:\tA boat .\n*PAR:\tA caterpillar .\n*PAR:\tI don't know .\n*PAR:\tSwimming .\n*PAR:\tI don't know .\n*PAR:\tThere is another leaf .\n*PAR:\tI don't know .\n*PAR:\tUm purple .\n*PAR:\tBlue .\n*PAR:\tYeah .\n*PAR:\tNo .\n*PAR:\tCause .\n*PAR:\tCause lion a pony .\n*PAR:\tUm cars .\n*PAR:\tAnd a bed .\n*PAR:\tAnd a stock .\n*PAR:\tAnd a person .\n*PAR:\tAnd a fish .\n*PAR:\tAnd an airplane .\n*PAR:\tAnd a pillow .\n*PAR:\tAnd a and a paper airplane .\n*PAR:\tAnd a blanket .\n*PAR:\tAnd a window .\n*PAR:\tAnd fish food And a picture .\n*PAR:\tA snow outfit .\n*PAR:\tI don't know .\n*PAR:\tYeah .\n*PAR:\tAirplanes .\n*PAR:\tMm-hmm .\n*PAR:\tYeah .\n*PAR:\tI pretend a princess .\n*PAR:\tI spin round and round .\n*PAR:\tNo .\n*PAR:\tAn octopus .\n*PAR:\tA clock .\n*PAR:\tAnd a mouse .\n*PAR:\tAnd a person .\n*PAR:\tAnd another mouse A science .\n*PAR:\tMm-hmm .\n*PAR:\tI don't know .\n*PAR:\tI don't know .\n*PAR:\tA book .\n*PAR:\tA pen .\n*PAR:\tAnd light bulbs .\n*PAR:\tA sheet .\n*PAR:\tAnd paper .\n*PAR:\tI don't know .\n*PAR:\tMaybe they're she she's doing science with them .\n*PAR:\tNo .\n*PAR:\tA beet .\n*PAR:\tAnd a person And a slug .\n*PAR:\tAnd another slug .\n*PAR:\tAnd another slug .\n*PAR:\tAnd some more beets .\n*PAR:\tA fence .\n*PAR:\tA sky .\n*PAR:\tI think she's bigger .\n@End\n",
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "e5571747e352ea01155fbf6f5b3d55d69812ca54812395cb43e280fd5a6ad9d9",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_6vw9bjqd/sample.cha\nThu Oct 15 16:36:06 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_6vw9bjqd/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 61, words = 174\n\tRatio of words over utterances = 2.852\n\tStandard deviation = 1.773\n\n",
+          "utterances": 61.0,
+          "total": 174.0,
+          "mlu": 2.852,
+          "sd": 1.773
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "6f3e3390f58093c661d883139b19b85eb6b6c36b4aa9a9b06d57b550e6e8e2cf",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_3agjq07v/sample.cha\nThu Oct 15 16:36:06 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_3agjq07v/sample.cha>\nSpeaker: *PAR:\n 32 a\n  2 airplane\n  1 airplanes\n  2 an\n 26 and\n  4 another\n  1 bed\n  1 beet\n  1 beets\n  1 bigger\n  1 blanket\n  1 blue\n  1 boat\n  1 book\n  1 bulbs\n  1 cars\n  1 caterpillar\n  2 cause\n  1 clock\n  1 doing\n  7 don't\n  1 dragonfly\n  1 fence\n  3 fish\n  1 flowers\n  1 food\n  1 grass\n 11 i\n  1 is\n  7 know\n  1 leaf\n  1 leaves\n  1 light\n  2 lion\n  1 maybe\n  2 mm-hmm\n  1 more\n  2 mouse\n  3 no\n  1 octopus\n  1 outfit\n  2 paper\n  1 pen\n  4 person\n  1 picture\n  1 pillow\n  1 pony\n  1 pretend\n  1 princess\n  1 purple\n  2 round\n  2 science\n  1 see\n  1 she\n  2 she's\n  1 sheet\n  1 sky\n  3 slug\n  1 snow\n  1 some\n  1 spin\n  1 stock\n  1 swimming\n  1 them\n  1 there\n  1 they're\n  1 think\n  2 um\n  1 window\n  1 with\n  3 yeah\n------------------------------\n   71  Total number of different item types used\n  174  Total number of items (tokens)\n0.408  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.541  MATTR\n\n",
+          "NDW": 71.0,
+          "TNW": 174.0,
+          "TTR": 0.408,
+          "MATTR": 0.541
+        }
+      }
+    }
+  },
+  "calculator_check": {
+    "status": "software_reference_computed",
+    "metrics": {
+      "mlu_nutterances": {
+        "custom": 70,
+        "reference": 70.0,
+        "difference": 0.0,
+        "absolute_error": 0.0,
+        "absolute_percent_error": 0.0
+      },
+      "mlu_nwords": {
+        "custom": 172,
+        "reference": 172.0,
+        "difference": 0.0,
+        "absolute_error": 0.0,
+        "absolute_percent_error": 0.0
+      },
+      "mlu_words": {
+        "custom": 2.4571428571428573,
+        "reference": 2.457,
+        "difference": 0.00014285714285744433,
+        "absolute_error": 0.00014285714285744433,
+        "absolute_percent_error": 0.005814291528589513
+      },
+      "mlu_words_sd": {
+        "custom": 0.9514757603055264,
+        "reference": 0.951,
+        "difference": 0.00047576030552642923,
+        "absolute_error": 0.00047576030552642923,
+        "absolute_percent_error": 0.05002737176934061
+      }
+    },
+    "requested_metrics": {
+      "TNW": {
+        "custom": 172,
+        "reference": 172.0,
+        "difference": 0.0,
+        "absolute_error": 0.0,
+        "absolute_percent_error": 0.0
+      },
+      "NDW": {
+        "custom": 70,
+        "reference": 70.0,
+        "difference": 0.0,
+        "absolute_error": 0.0,
+        "absolute_percent_error": 0.0
+      },
+      "TTR": {
+        "custom": 0.4069767441860465,
+        "reference": 0.407,
+        "difference": -2.3255813953459992e-05,
+        "absolute_error": 2.3255813953459992e-05,
+        "absolute_percent_error": 0.0057139592023243225
+      },
+      "MATTR": {
+        "custom": 0.5391869918699187,
+        "reference": 0.539,
+        "difference": 0.00018699186991866235,
+        "absolute_error": 0.00018699186991866235,
+        "absolute_percent_error": 0.03469236918713587
+      },
+      "MLUw": {
+        "custom": 2.4571428571428573,
+        "reference": 2.457,
+        "difference": 0.00014285714285744433,
+        "absolute_error": 0.00014285714285744433,
+        "absolute_percent_error": 0.005814291528589513
+      }
+    },
+    "official_outputs": {
+      "mlu": {
+        "command": "mlu +t*PAR -t%mor",
+        "output_sha256": "05a6f1691dccbeb826d54f73b6726bdcf4dcda5ef771ce9c91b5c8f07a964201",
+        "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_50h8hvfi/sample.cha\nThu Oct 15 16:36:06 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_50h8hvfi/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 70, words = 172\n\tRatio of words over utterances = 2.457\n\tStandard deviation = 0.951\n\n",
+        "utterances": 70.0,
+        "total": 172.0,
+        "mlu": 2.457,
+        "sd": 0.951
+      },
+      "freq": {
+        "command": "freq +t*PAR -t%mor +k +b50",
+        "output_sha256": "84b82c593721221f1046d5a0dbd43752303559c55c714b3d6430e32c30af471a",
+        "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_aga167su/sample.cha\nThu Oct 15 16:36:06 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_aga167su/sample.cha>\nSpeaker: *PAR:\n 32 a\n  2 airplane\n  1 airplanes\n  2 an\n 26 and\n  4 another\n  1 bed\n  1 beet\n  1 beets\n  1 bigger\n  1 blanket\n  1 blue\n  1 boat\n  1 book\n  1 bulbs\n  1 cars\n  1 caterpillar\n  2 cause\n  1 clock\n  1 doing\n  7 don't\n  1 dragonfly\n  1 fence\n  3 fish\n  1 flowers\n  1 food\n  1 grass\n 11 i\n  1 is\n  7 know\n  1 leaf\n  1 leaves\n  1 light\n  2 lion\n  1 maybe\n  2 mm-hmm\n  1 more\n  2 mouse\n  3 no\n  1 octopus\n  1 outfit\n  2 paper\n  1 pen\n  4 person\n  1 picture\n  1 pillow\n  1 pony\n  1 pretend\n  1 princess\n  1 purple\n  2 round\n  2 science\n  1 see\n  1 she\n  2 she's\n  1 sheet\n  1 sky\n  3 slug\n  1 snow\n  1 some\n  1 spin\n  1 stock\n  1 swimming\n  1 them\n  1 there\n  1 they're\n  1 think\n  1 window\n  1 with\n  3 yeah\n------------------------------\n   70  Total number of different item types used\n  172  Total number of items (tokens)\n0.407  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.539  MATTR\n\n",
+        "NDW": 70.0,
+        "TNW": 172.0,
+        "TTR": 0.407,
+        "MATTR": 0.539
+      }
+    },
+    "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+  },
+  "native_precision": "MLUw and TTR reconstructed from exact native counts to avoid false zero errors from rounded ratios. Native SD/MATTR retain three-decimal output precision.",
+  "boundary_f1": null,
+  "boundary_reason": "ASR changes the word stream; no partial aligned-gap F1 used",
+  "caveat": "One preselected exposed test child/task, oracle speaker-role mapping. No population estimate, published-score ranking or validated automatic patient identification. FREQ/clinical eligibility policy differences retained."
+}

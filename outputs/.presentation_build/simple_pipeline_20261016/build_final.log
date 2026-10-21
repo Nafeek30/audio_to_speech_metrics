@@ -1,0 +1,17 @@
+Inspect result written to file: /Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/.presentation_build/simple_pipeline_20261016/candidate.pptx.inspect.ndjson
+node:internal/fs/promises:697
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: EEXIST: file already exists, open '/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/.presentation_build/simple_pipeline_20261016/validation.json'
+    at async open (node:internal/fs/promises:697:25)
+    at async Object.writeFile (node:internal/fs/promises:1317:14)
+    at async finalizePresentation (file:///Users/nafeekazi/.codex/plugins/cache/openai-primary-runtime/presentations/26.1013.11914/skills/presentations/container_tools/artifact_tool_utils.mjs:1058:5)
+    at async file:///Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/.presentation_build/simple_pipeline_20261016/build.mjs:276:14 {
+  errno: -17,
+  code: 'EEXIST',
+  syscall: 'open',
+  path: '/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/.presentation_build/simple_pipeline_20261016/validation.json'
+}
+
+Node.js v24.19.0

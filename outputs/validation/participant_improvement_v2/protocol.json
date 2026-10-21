@@ -1,0 +1,55 @@
+{
+  "registered_utc": "2026-10-16T03:46:59.142890+00:00",
+  "reason": "User requests CV to improve model accuracy, beyond reporting CV statistics",
+  "parent_protocol_sha256": "b86f6311d8b942a3eabbffcd64401c743f0d3995665d0651c43323181a15373f",
+  "cohort_manifest_sha256": "206e478138b7d8516fcc190fab5b7f3c079ac03f840c9e59c8d92597ace63026",
+  "candidates": [
+    {
+      "name": "full_train",
+      "members": [
+        "final"
+      ]
+    },
+    {
+      "name": "five_fold_ensemble",
+      "members": [
+        "fold_1",
+        "fold_2",
+        "fold_3",
+        "fold_4",
+        "fold_5"
+      ]
+    },
+    {
+      "name": "six_model_ensemble",
+      "members": [
+        "fold_1",
+        "fold_2",
+        "fold_3",
+        "fold_4",
+        "fold_5",
+        "final"
+      ]
+    }
+  ],
+  "margins": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "method": "Equal mean of boundary probabilities, converted to log odds before the common boundary margin. Singleton uses exact original logits.",
+  "selection": "Minimum original-eval corpus-balanced mean participant APE across eligible utterance count, MLUw and length SD. Ties keep listed candidate then margin order.",
+  "gradients": "Original training participants only; five-fold training recipe unchanged; final full-training model selected epoch on original eval.",
+  "cv_use": "Fold models provide a fixed variance-reduction ensemble candidate. Outer-fold metrics never choose candidates, members, weights or margins.",
+  "original_test": "Open only after candidate, margin and all component weight hashes are frozen; score chosen candidate once. Never select from final test.",
+  "oof_policy": "Five-fold OOF scores describe the dedicated held-out fold model only. Ensemble is evaluated on original eval/test, which every member excludes from gradients.",
+  "new_final_test_scored_at_registration": false,
+  "implementation_sha256": {
+    "speech_pipeline/research/participant_improvement.py": "8079222a8faa60c1b26184cae433eec50e336eb8a8dfa62a1b0eaf7c98dab759",
+    "speech_pipeline/ensemble.py": "e73f20fa81b8bae8138fdc296dfa620c694a824695f238bf831ad2caad9d4f55"
+  }
+}

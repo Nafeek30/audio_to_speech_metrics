@@ -1,0 +1,1832 @@
+{
+  "method": "pretrained_joint_gap_segmentation",
+  "raw_sha256": "84f7d1aba9515c1b28be1227579b657e50b3cc173b5387f401168d813b6f55f5",
+  "source_file": "P5/PXL_20230427_185012191_transcription.xlsx",
+  "target_speaker": "S02",
+  "utterances": [
+    {
+      "utterance_id": 1,
+      "text": "I'm home",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "I'm",
+          "home"
+        ],
+        "counted_words": [
+          "I'm",
+          "home"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        4
+      ],
+      "source_start": "00:10.280",
+      "source_end": "00:11.810",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 0,
+      "paragraph_char_end": 8,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 2,
+      "text": "sculptor",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "sculptor"
+        ],
+        "counted_words": [
+          "sculptor"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        4
+      ],
+      "source_start": "00:10.280",
+      "source_end": "00:11.810",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 9,
+      "paragraph_char_end": 17,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 3,
+      "text": "I thought you said",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "I",
+          "thought",
+          "you",
+          "said"
+        ],
+        "counted_words": [
+          "I",
+          "thought",
+          "you",
+          "said"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        4
+      ],
+      "source_start": "00:10.280",
+      "source_end": "00:11.810",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 18,
+      "paragraph_char_end": 36,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 4,
+      "text": "Uh science",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "science"
+        ],
+        "counted_words": [
+          "science"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        6
+      ],
+      "source_start": "00:14.780",
+      "source_end": "00:17.010",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 37,
+      "paragraph_char_end": 47,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 5,
+      "text": "space",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "space"
+        ],
+        "counted_words": [
+          "space"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        6
+      ],
+      "source_start": "00:14.780",
+      "source_end": "00:17.010",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 48,
+      "paragraph_char_end": 53,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 6,
+      "text": "Space",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Space"
+        ],
+        "counted_words": [
+          "Space"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        8
+      ],
+      "source_start": "00:20.610",
+      "source_end": "00:21.250",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 54,
+      "paragraph_char_end": 59,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 7,
+      "text": "Yeah",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        10
+      ],
+      "source_start": "00:21.880",
+      "source_end": "00:22.210",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 60,
+      "paragraph_char_end": 64,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 8,
+      "text": "Kinda",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Kinda"
+        ],
+        "counted_words": [
+          "Kinda"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        16
+      ],
+      "source_start": "01:01.550",
+      "source_end": "01:02.110",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 65,
+      "paragraph_char_end": 70,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 9,
+      "text": "I draw",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "I",
+          "draw"
+        ],
+        "counted_words": [
+          "I",
+          "draw"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        19
+      ],
+      "source_start": "01:09.280",
+      "source_end": "01:10.480",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 71,
+      "paragraph_char_end": 77,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 10,
+      "text": "sometimes",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "sometimes"
+        ],
+        "counted_words": [
+          "sometimes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        19
+      ],
+      "source_start": "01:09.280",
+      "source_end": "01:10.480",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 78,
+      "paragraph_char_end": 87,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 11,
+      "text": "Base",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Base"
+        ],
+        "counted_words": [
+          "Base"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        21
+      ],
+      "source_start": "01:13.380",
+      "source_end": "01:14.250",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 88,
+      "paragraph_char_end": 92,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 12,
+      "text": "whatever",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "whatever"
+        ],
+        "counted_words": [
+          "whatever"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        21
+      ],
+      "source_start": "01:13.380",
+      "source_end": "01:14.250",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 93,
+      "paragraph_char_end": 101,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 13,
+      "text": "Make sure of the two",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Make",
+          "sure",
+          "of",
+          "the",
+          "two"
+        ],
+        "counted_words": [
+          "Make",
+          "sure",
+          "of",
+          "the",
+          "two"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        23
+      ],
+      "source_start": "01:21.210",
+      "source_end": "01:22.110",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 102,
+      "paragraph_char_end": 122,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 14,
+      "text": "Science",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Science"
+        ],
+        "counted_words": [
+          "Science"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        27
+      ],
+      "source_start": "01:38.980",
+      "source_end": "01:39.810",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 123,
+      "paragraph_char_end": 130,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 15,
+      "text": "Make sure",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Make",
+          "sure"
+        ],
+        "counted_words": [
+          "Make",
+          "sure"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        29
+      ],
+      "source_start": "01:47.210",
+      "source_end": "01:47.810",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 131,
+      "paragraph_char_end": 140,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 16,
+      "text": "Sometimes I'm pretty sure I did",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Sometimes",
+          "I'm",
+          "pretty",
+          "sure",
+          "I",
+          "did"
+        ],
+        "counted_words": [
+          "Sometimes",
+          "I'm",
+          "pretty",
+          "sure",
+          "I",
+          "did"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        31,
+        35
+      ],
+      "source_start": "01:50.910",
+      "source_end": "02:10.380",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 141,
+      "paragraph_char_end": 172,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 17,
+      "text": "uh I collected multiple leaves of different trees",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "uh",
+          "I",
+          "collected",
+          "multiple",
+          "leaves",
+          "of",
+          "different",
+          "trees"
+        ],
+        "counted_words": [
+          "I",
+          "collected",
+          "multiple",
+          "leaves",
+          "of",
+          "different",
+          "trees"
+        ],
+        "excluded_fillers": [
+          "uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        35
+      ],
+      "source_start": "02:03.410",
+      "source_end": "02:10.380",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 173,
+      "paragraph_char_end": 222,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 18,
+      "text": "and studying them",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "studying",
+          "them"
+        ],
+        "counted_words": [
+          "and",
+          "studying",
+          "them"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        35
+      ],
+      "source_start": "02:03.410",
+      "source_end": "02:10.380",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 223,
+      "paragraph_char_end": 240,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 19,
+      "text": "It's a while ago",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "It's",
+          "a",
+          "while",
+          "ago"
+        ],
+        "counted_words": [
+          "It's",
+          "a",
+          "while",
+          "ago"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        37
+      ],
+      "source_start": "02:14.280",
+      "source_end": "02:15.480",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 241,
+      "paragraph_char_end": 257,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 20,
+      "text": "so It's kinda Kinda Terry blossoms",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "so",
+          "It's",
+          "kinda",
+          "Kinda",
+          "Terry",
+          "blossoms"
+        ],
+        "counted_words": [
+          "so",
+          "It's",
+          "kinda",
+          "Kinda",
+          "Terry",
+          "blossoms"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        37,
+        38,
+        40,
+        42
+      ],
+      "source_start": "02:14.280",
+      "source_end": "02:29.780",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 258,
+      "paragraph_char_end": 292,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 21,
+      "text": "Scribbles",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Scribbles"
+        ],
+        "counted_words": [
+          "Scribbles"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        48
+      ],
+      "source_start": "02:53.710",
+      "source_end": "02:54.380",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 293,
+      "paragraph_char_end": 302,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 22,
+      "text": "Alfredo Chicken",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Alfredo",
+          "Chicken"
+        ],
+        "counted_words": [
+          "Alfredo",
+          "Chicken"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        51,
+        53
+      ],
+      "source_start": "03:01.750",
+      "source_end": "03:06.480",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 303,
+      "paragraph_char_end": 318,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 23,
+      "text": "Yeah",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        56
+      ],
+      "source_start": "03:10.780",
+      "source_end": "03:11.110",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 319,
+      "paragraph_char_end": 323,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 24,
+      "text": "Sometimes",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Sometimes"
+        ],
+        "counted_words": [
+          "Sometimes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        58
+      ],
+      "source_start": "03:17.710",
+      "source_end": "03:18.410",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 324,
+      "paragraph_char_end": 333,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 25,
+      "text": "Uh Donald's or Taco Bell",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "Donald's",
+          "or",
+          "Taco",
+          "Bell"
+        ],
+        "counted_words": [
+          "Donald's",
+          "or",
+          "Taco",
+          "Bell"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        59,
+        60
+      ],
+      "source_start": "03:19.480",
+      "source_end": "03:22.550",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 334,
+      "paragraph_char_end": 358,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 26,
+      "text": "Uh chicken nuggets",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "chicken",
+          "nuggets"
+        ],
+        "counted_words": [
+          "chicken",
+          "nuggets"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        62
+      ],
+      "source_start": "03:25.710",
+      "source_end": "03:32.050",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 359,
+      "paragraph_char_end": 377,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 27,
+      "text": "or like those macho tacos",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "or",
+          "like",
+          "those",
+          "macho",
+          "tacos"
+        ],
+        "counted_words": [
+          "or",
+          "like",
+          "those",
+          "macho",
+          "tacos"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        62
+      ],
+      "source_start": "03:25.710",
+      "source_end": "03:32.050",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 378,
+      "paragraph_char_end": 403,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 28,
+      "text": "Uh Really I think so",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "Really",
+          "I",
+          "think",
+          "so"
+        ],
+        "counted_words": [
+          "Really",
+          "I",
+          "think",
+          "so"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        64,
+        68,
+        73
+      ],
+      "source_start": "03:32.780",
+      "source_end": "04:04.380",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 404,
+      "paragraph_char_end": 424,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 29,
+      "text": "Cosmo",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Cosmo"
+        ],
+        "counted_words": [
+          "Cosmo"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        75
+      ],
+      "source_start": "04:09.780",
+      "source_end": "04:11.310",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 425,
+      "paragraph_char_end": 430,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 30,
+      "text": "there's a maybe Indoor",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "there's",
+          "a",
+          "maybe",
+          "Indoor"
+        ],
+        "counted_words": [
+          "there's",
+          "a",
+          "maybe",
+          "Indoor"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        75,
+        78
+      ],
+      "source_start": "04:09.780",
+      "source_end": "04:20.280",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 431,
+      "paragraph_char_end": 453,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 31,
+      "text": "Yeah",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        80
+      ],
+      "source_start": "04:25.610",
+      "source_end": "04:25.950",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 454,
+      "paragraph_char_end": 458,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 32,
+      "text": "Uh I honestly wa watch cartoons",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "I",
+          "honestly",
+          "wa",
+          "watch",
+          "cartoons"
+        ],
+        "counted_words": [
+          "I",
+          "honestly",
+          "wa",
+          "watch",
+          "cartoons"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        82,
+        83
+      ],
+      "source_start": "04:28.750",
+      "source_end": "04:35.410",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 459,
+      "paragraph_char_end": 490,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 33,
+      "text": "so maybe Gravity Falls",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "so",
+          "maybe",
+          "Gravity",
+          "Falls"
+        ],
+        "counted_words": [
+          "so",
+          "maybe",
+          "Gravity",
+          "Falls"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        83
+      ],
+      "source_start": "04:31.750",
+      "source_end": "04:35.410",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 491,
+      "paragraph_char_end": 513,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 34,
+      "text": "Uh I've seen Carrie Potter",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "I've",
+          "seen",
+          "Carrie",
+          "Potter"
+        ],
+        "counted_words": [
+          "I've",
+          "seen",
+          "Carrie",
+          "Potter"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        86,
+        87
+      ],
+      "source_start": "04:45.110",
+      "source_end": "04:48.910",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 514,
+      "paragraph_char_end": 540,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 35,
+      "text": "It's hard to choose a favorite",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "It's",
+          "hard",
+          "to",
+          "choose",
+          "a",
+          "favorite"
+        ],
+        "counted_words": [
+          "It's",
+          "hard",
+          "to",
+          "choose",
+          "a",
+          "favorite"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        89
+      ],
+      "source_start": "04:53.110",
+      "source_end": "04:54.550",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 541,
+      "paragraph_char_end": 571,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 36,
+      "text": "I'd be like the last two",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "I'd",
+          "be",
+          "like",
+          "the",
+          "last",
+          "two"
+        ],
+        "counted_words": [
+          "I'd",
+          "be",
+          "like",
+          "the",
+          "last",
+          "two"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        92
+      ],
+      "source_start": "05:00.350",
+      "source_end": "05:02.510",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 572,
+      "paragraph_char_end": 596,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 37,
+      "text": "Not much",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Not",
+          "much"
+        ],
+        "counted_words": [
+          "Not",
+          "much"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        96
+      ],
+      "source_start": "05:12.680",
+      "source_end": "05:13.480",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 597,
+      "paragraph_char_end": 605,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 38,
+      "text": "I make sure to put in how I feel",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "I",
+          "make",
+          "sure",
+          "to",
+          "put",
+          "in",
+          "how",
+          "I",
+          "feel"
+        ],
+        "counted_words": [
+          "I",
+          "make",
+          "sure",
+          "to",
+          "put",
+          "in",
+          "how",
+          "I",
+          "feel"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        100
+      ],
+      "source_start": "05:26.310",
+      "source_end": "05:28.280",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 606,
+      "paragraph_char_end": 638,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 39,
+      "text": "Uh If I remember correctly there's a pool near my house",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "If",
+          "I",
+          "remember",
+          "correctly",
+          "there's",
+          "a",
+          "pool",
+          "near",
+          "my",
+          "house"
+        ],
+        "counted_words": [
+          "If",
+          "I",
+          "remember",
+          "correctly",
+          "there's",
+          "a",
+          "pool",
+          "near",
+          "my",
+          "house"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        106,
+        107
+      ],
+      "source_start": "05:45.480",
+      "source_end": "05:51.910",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 639,
+      "paragraph_char_end": 694,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 40,
+      "text": "so we'll go there sometimes",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "so",
+          "we'll",
+          "go",
+          "there",
+          "sometimes"
+        ],
+        "counted_words": [
+          "so",
+          "we'll",
+          "go",
+          "there",
+          "sometimes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        107
+      ],
+      "source_start": "05:47.310",
+      "source_end": "05:51.910",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 695,
+      "paragraph_char_end": 722,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 41,
+      "text": "Yeah",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        109
+      ],
+      "source_start": "05:55.010",
+      "source_end": "05:55.350",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 723,
+      "paragraph_char_end": 727,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 42,
+      "text": "Yeah",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        113
+      ],
+      "source_start": "06:07.150",
+      "source_end": "06:08.110",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 728,
+      "paragraph_char_end": 732,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 43,
+      "text": "sometimes We sometimes like play games together",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "sometimes",
+          "We",
+          "sometimes",
+          "like",
+          "play",
+          "games",
+          "together"
+        ],
+        "counted_words": [
+          "sometimes",
+          "We",
+          "sometimes",
+          "like",
+          "play",
+          "games",
+          "together"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        113,
+        115
+      ],
+      "source_start": "06:07.150",
+      "source_end": "06:14.210",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 733,
+      "paragraph_char_end": 780,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 44,
+      "text": "Uh Mario Kart",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "Mario",
+          "Kart"
+        ],
+        "counted_words": [
+          "Mario",
+          "Kart"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        117
+      ],
+      "source_start": "06:15.910",
+      "source_end": "06:17.110",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 781,
+      "paragraph_char_end": 794,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 45,
+      "text": "Yeah",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        119
+      ],
+      "source_start": "06:19.350",
+      "source_end": "06:19.710",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 795,
+      "paragraph_char_end": 799,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 46,
+      "text": "It's a mixture",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "It's",
+          "a",
+          "mixture"
+        ],
+        "counted_words": [
+          "It's",
+          "a",
+          "mixture"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        121
+      ],
+      "source_start": "06:23.810",
+      "source_end": "06:24.680",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 800,
+      "paragraph_char_end": 814,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 47,
+      "text": "No",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "No"
+        ],
+        "counted_words": [
+          "No"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        124
+      ],
+      "source_start": "06:30.510",
+      "source_end": "06:33.380",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 815,
+      "paragraph_char_end": 817,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 48,
+      "text": "it's Mario Kart",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "it's",
+          "Mario",
+          "Kart"
+        ],
+        "counted_words": [
+          "it's",
+          "Mario",
+          "Kart"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        124
+      ],
+      "source_start": "06:30.510",
+      "source_end": "06:33.380",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 818,
+      "paragraph_char_end": 833,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 49,
+      "text": "since he's focused on that",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "since",
+          "he's",
+          "focused",
+          "on",
+          "that"
+        ],
+        "counted_words": [
+          "since",
+          "he's",
+          "focused",
+          "on",
+          "that"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        124
+      ],
+      "source_start": "06:30.510",
+      "source_end": "06:33.380",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 834,
+      "paragraph_char_end": 860,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 50,
+      "text": "Uh Nancy",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Uh",
+          "Nancy"
+        ],
+        "counted_words": [
+          "Nancy"
+        ],
+        "excluded_fillers": [
+          "Uh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        126
+      ],
+      "source_start": "06:38.250",
+      "source_end": "06:39.880",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 861,
+      "paragraph_char_end": 869,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    },
+    {
+      "utterance_id": 51,
+      "text": "Link",
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "Link"
+        ],
+        "counted_words": [
+          "Link"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      },
+      "source_rows": [
+        126
+      ],
+      "source_start": "06:38.250",
+      "source_end": "06:39.880",
+      "timing_status": "source_segment_envelope_not_utterance_alignment",
+      "paragraph_char_start": 870,
+      "paragraph_char_end": 874,
+      "context": "one_target_speaker_paragraph",
+      "normalization": "source_punctuation_withheld_word_spelling_retained"
+    }
+  ],
+  "paragraph_input_policy": "Original punctuation, source row and speaker-turn cuts withheld; spelling retained. Offsets refer to reconstructed paragraph."
+}

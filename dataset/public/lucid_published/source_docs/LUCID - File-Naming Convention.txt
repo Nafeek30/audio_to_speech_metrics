@@ -1,0 +1,185 @@
+LUCID File-Naming Convention
+
+DIAPIXUK RECORDINGS (stereo conversations):
+	* Casual:
+		LCD_A@@B##S&cvP
+			where:
+				LCD = LUCID acronym
+				A = Channel 1's gender (F = Female, M = Male)
+				@@ = Channel 1's participant number (1 or 2 digits)
+				(A@@ = Channel 1 talker's talker code)
+				B = Channel 2's gender (F = Female, M = Male)
+				## = Channel 2's participant number (1 or 2 digits)
+				S = Image scene (B = Beach, F = Farm, S = Street)
+				& = Image number (1-4)
+				(S& = Image identification code)
+				cv = Plain, casual, conversational speech
+				P = Position number (1-3)
+		
+			Example: LCD_F13F14F1cv1.wav
+				LCD = LUCID
+				F = Channel 1 talker is female
+				13 = Channel 1 talker's participant number #13
+				(F13 = Channel 1 talker's talker code)
+				F = Channel 2 talker is female
+				14 = Channel 2 talker's participant number #14
+				(F14 = Channel 2 talker's talker code)
+				F = Farm scene
+				1 = Image 1
+				(F1 = Farm scene #1 pair of images used)
+				cv = Plain, casual, conversational speech
+				1 = Position 1
+		
+	* Vocoded:
+		LCD_A@@B##S&clvP
+			where:
+				LCD = LUCID acronym
+				A = Channel 1's gender (F = Female, M = Male)
+				@@ = Channel 1's participant number (1 or 2 digits)
+				(A@@ = Channel 1 talker's talker code)
+				B = Channel 2's gender (F = Female, M = Male)
+				## = Channel 2's participant number (1 or 2 digits)
+				S = Image scene (B = Beach, F = Farm, S = Street)
+				& = Image number (1-4)
+				(S& = Image identification code)
+				cl = Clear speech
+				v = Vocoded condition
+				P = Position number (1-3)
+			
+			Example: LCD_F21F22F4clv2.wav
+				LCD = LUCID
+				F = Channel 1 talker is female
+				21 = Channel 1 talker's participant number #21
+				(F21 = Channel 1 talker's talker code)
+				F = Channel 2 talker is female
+				22 = Channel 2 talker's participant number #22
+				(F22 = Channel 2 talker's talker code)
+				F = Farm scene
+				4 = Image 4
+				(F4 = Farm scene #4 pair of images used)
+				cl = Clear speech
+				v = Vocoded
+				2 = Position 2
+								
+	* Babble:
+		LCD_A@@BBB#S&clvP
+			where:
+				LCD = LUCID acronym
+				A = Channel 1's gender (F = Female, M = Male)
+				@@ = Channel 1's participant number (1 or 2 digits)
+				(A@@ = Channel 1 talker's talker code)
+				BBB = Channel 2 identifier (BEM = Babble, male native English speaker and confederate babble listener; BEF = Babble, female native English speaker and confederate babble listener)
+				# = Channel 2's participant number (1 digit)
+				(BBB# = Channel 2 talker's talker code)
+				S = Image scene (B = Beach, F = Farm, S = Street)
+				& = Image number (1-4)
+				(S& = Image identification code)
+				cl = Clear speech
+				n = Noise condition
+				P = Position number (1-3)
+
+			Example: LCD_M14BEM3S1cln1.wav
+				LCD = LUCID acronym
+				M = Channel 1 talker's gender is M
+				14 = Channel 1 talker's participant number #14
+				(M14 = Channel 1 talker's talker code)
+				BEM = Channel 2 talker is a native English speaker and confederate babble listener
+				3 = Channel 2's participant number #3
+				(BEM3 = Channel 2's talker code)
+				S = Street scene
+				1 = Image 1
+				(S1 = Street scene #1 pair of images used)
+				cl = Clear speech
+				n = Noise condition
+				1 = Position 1
+		
+	* L2:
+		LCD_A@@BB#S&clL2P
+			where:
+				LCD = LUCID acronym
+				A = Channel 1's gender (F = Female, M = Male)
+				@@ = Channel 1's participant number (1 or 2 digits)
+				(A@@ = Channel 1 talker's talker code)
+				BB = Channel 2 identifier (CM = Male, non-native speaker of English confederate listener; CF = Female, non-native speaker of English confederate listener)
+				# = Channel 2's participant number (1 digit)
+				(BB# = Channel 2 talker's talker code)
+				S = Image scene (B = Beach, F = Farm, S = Street)
+				& = Image number (1-4)
+				(S& = Image identification code)
+				cl = Clear speech
+				L2 = L2 condition (native speaker of British English speaking with a low-proficiency, non-native speaker of English)
+				P = Position number (1-3)
+
+			Example: LCD_M25CM1S1clL22.wav
+				LCD = LUCID acronym
+				M = Channel 1 talker's gender is M
+				25 = Channel 1 talker's participant number #25
+				(M25 = Channel 1 talker's talker code)
+				CM = Channel 2 talker is a male, non-native speaker of English confederate listener
+				1 = Channel 2's participant number #1
+				(CM1 = Channel 2's talker code)
+				S = Street scene
+				1 = Image 1
+				(S1 = Street scene #1 pair of images used)
+				cl = Clear speech
+				L2 = L2 condition
+				2 = Position 2
+		
+
+SENTENCE READING RECORDINGS:
+	LCD_G##Stt_Nc
+		where:
+			LCD = LUCID acronym
+			G = Gender of talker (F = female, M = male)
+			## = Talker's participant number (1 or 2 digits)
+			(G## = Talker's talker code)
+			S = Sentence reading
+			tt = Speaking style (cl = clear, cv = plain)
+			N = Normalized
+			c = checked
+
+	Example: LCD_F21Scv_Nc.wav
+		LCD = LUCID
+		F = Talker is a female
+		21 = Talker's participant number
+		(F21 = Talker's talker code)
+		S = Sentence reading
+		cv = Plain speaking style
+		N = Normalized
+		c = checked
+
+	Example: LCD_M33Scl_Nc.wav
+		LCD = LUCID
+		M = Talker is a male
+		33 = Talker's participant number
+		(M33 = Talker's talker code)
+		S = Sentence reading
+		cl = Clear speaking style
+		N = Normalized
+		c = checked
+
+
+PICTURE NAMING RECORDINGS:
+	LCD_G##_P_ssss
+		LCD = LUCID
+		G = Gender of talker (F = female, M = male)
+		## = Talker's participant number (1 or 2 digits)
+		(G## = Talker's talker code)
+		P = Picture naming
+		ssss = Speaking style (2 or 4 digits: cl = clear, conv = plain)
+
+	Example: LCD_F11_P_conv.wav
+		LCD = LUCID
+		F = Talker is a female
+		11 = Talker's participant number is #11
+		(F11 = Talker's talker code)
+		P = Picture naming
+		conv = Plain speaking style
+
+	Example: LCD_M36_P_cl.wav
+		LCD = LUCID
+		M = Talker is a male
+		36 = Talker's participant number is #36
+		(M36 = Talker's talker code)
+		P = Picture naming
+		cl = Clear speaking style

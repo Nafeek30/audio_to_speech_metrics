@@ -1,0 +1,30 @@
+{
+  "assignments": [
+    {
+      "reference_speaker": "CHI",
+      "predicted_speaker": "S02",
+      "edits": {
+        "substitutions": 19,
+        "deletions": 14,
+        "insertions": 2
+      },
+      "reference_words": 186,
+      "predicted_words": 174
+    },
+    {
+      "reference_speaker": "EXP",
+      "predicted_speaker": "S01",
+      "edits": {
+        "substitutions": 13,
+        "deletions": 10,
+        "insertions": 14
+      },
+      "reference_words": 318,
+      "predicted_words": 322
+    }
+  ],
+  "word_edits": 72,
+  "reference_words": 504,
+  "cpwer_percent": 14.285714285714286,
+  "role": "Oracle minimum-edit mapping for evaluation only; automatic target-role identification is unvalidated"
+}

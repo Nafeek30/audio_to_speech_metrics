@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Comprehensive Benchmark Comparison Report</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #2D3748; max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+  h1 { color: #1B365D; border-bottom: 2px solid #E2E8F0; padding-bottom: 12px; margin-top: 0; }
+  h2 { color: #2B547E; margin-top: 32px; border-bottom: 1px solid #EDF2F7; padding-bottom: 8px; }
+  h3 { color: #3B6E8C; margin-top: 24px; }
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+  th { background-color: #1B365D; color: white; text-align: left; padding: 10px 12px; font-weight: 600; }
+  td { padding: 9px 12px; border-bottom: 1px solid #E2E8F0; }
+  tr:nth-child(even) { background-color: #F8FAFC; }
+  tr.highlight { background-color: #EFF6FF; font-weight: 600; color: #1E40AF; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+  .badge-pass { background-color: #DEF7EC; color: #03543F; }
+  .badge-fail { background-color: #FDE8E8; color: #9B1C1C; }
+  .badge-audio { background-color: #FEF3C7; color: #92400E; }
+  .badge-transcript { background-color: #E0E7FF; color: #3730A3; }
+  .note-box { background-color: #F0F9FF; border-left: 4px solid #0284C7; padding: 14px 18px; margin: 20px 0; border-radius: 0 4px 4px 0; }
+  ul { padding-left: 24px; }
+  li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<h1>Comprehensive Benchmark Comparison Report</h1>
+<p style="color: #64748B; font-size: 16px; margin-top: -8px;">Evaluation of the Downstream Speech Pipeline Across ENNI, OCSC, and LUCID | Date: 20 October 2026</p>
+
+<div class="note-box">
+  <strong>Key Architecture & Modality Note:</strong>
+  In our pipeline, target speaker speech is processed as an unbroken continuous paragraph with punctuation removed. 
+  The tables below explicitly distinguish systems evaluated on <strong>Audio (Whisper ASR)</strong> from our downstream pipeline evaluated on <strong>Transcript (Unpunctuated Words)</strong>. All benchmarks are evaluated on the <strong>complete datasets</strong> without ad-hoc subgroup divisions.
+</div>
+
+<h2>1. The ENNI Benchmark Evaluation (361 Transcripts)</h2>
+<p>Evaluated on all 361 child transcripts from the Edmonton Narrative Norms Instrument (Schneider et al., 2005) under strict 100% zero-shot conditions.</p>
+
+<h3>1.1 Utterance Boundary Segmentation (vs. Hou et al. 2026, Table 5)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>System / Model</th>
+      <th>Input Modality</th>
+      <th>Supervised ENNI Training</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1 Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SATE Pipeline (Hou et al., 2026)</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>Yes (70% fine-tuned)</td>
+      <td>93.9%</td>
+      <td>94.3%</td>
+      <td>94.1%</td>
+    </tr>
+    <tr>
+      <td>Batchalign 0.10.4 (Liu et al., 2023)</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>No (0% Zero-shot)</td>
+      <td>84.3%</td>
+      <td>93.0%</td>
+      <td>88.4%</td>
+    </tr>
+    <tr class="highlight">
+      <td>Our Pipeline (Paragraph Mode)</td>
+      <td><span class="badge badge-transcript">Transcript (Unpunctuated Words)</span></td>
+      <td>No (0% Zero-shot)</td>
+      <td>75.8%</td>
+      <td>90.7%</td>
+      <td>82.6%</td>
+    </tr>
+    <tr>
+      <td>SaT 3L (Frohmann et al., 2024; EMNLP)</td>
+      <td><span class="badge badge-transcript">Transcript (Unpunctuated Words)</span></td>
+      <td>No (0% Zero-shot)</td>
+      <td>74.2%</td>
+      <td>47.7%</td>
+      <td>58.1%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>1.2 Downstream Clinical Linguistic Metrics (vs. Hou et al. 2026, Table 9)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>System / Model</th>
+      <th>Input Modality</th>
+      <th>Pearson r</th>
+      <th>MAE</th>
+      <th>Mean Signed Bias (%)</th>
+      <th>SD of Diff (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Total Words (NTW)</strong></td>
+      <td>Batchalign 0.10.4</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.97</td>
+      <td>53.46 words</td>
+      <td>+38.89 w (+6.89%)</td>
+      <td>54.62 (9.36%)</td>
+    </tr>
+    <tr>
+      <td>Total Words (NTW)</td>
+      <td>SATE Pipeline</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.98</td>
+      <td>32.78 words</td>
+      <td>+16.89 w (+2.24%)</td>
+      <td>37.31 (9.09%)</td>
+    </tr>
+    <tr>
+      <td>Total Words (NTW)</td>
+      <td>SATE End-to-end 1</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.98</td>
+      <td>30.04 words</td>
+      <td>+0.04 w (-1.54%)</td>
+      <td>43.42 (10.46%)</td>
+    </tr>
+    <tr>
+      <td>Total Words (NTW)</td>
+      <td>SATE End-to-end 2</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.98</td>
+      <td>48.35 words</td>
+      <td>-43.74 w (-10.17%)</td>
+      <td>40.26 (10.14%)</td>
+    </tr>
+    <tr class="highlight">
+      <td>Total Words (NTW)</td>
+      <td>Our Pipeline</td>
+      <td><span class="badge badge-transcript">Transcript (Punctuation Stripped)</span></td>
+      <td>0.9998</td>
+      <td>1.53 words</td>
+      <td>+1.36 w (+0.24%)</td>
+      <td>3.65 (0.58%)</td>
+    </tr>
+    <tr>
+      <td><strong>Different Words (NDW)</strong></td>
+      <td>Batchalign 0.10.4</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.96</td>
+      <td>24.12 types</td>
+      <td>+23.92 t (+16.13%)</td>
+      <td>12.51 (9.84%)</td>
+    </tr>
+    <tr>
+      <td>Different Words (NDW)</td>
+      <td>SATE Pipeline</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.97</td>
+      <td>9.83 types</td>
+      <td>+7.48 t (+5.03%)</td>
+      <td>9.80 (7.85%)</td>
+    </tr>
+    <tr>
+      <td>Different Words (NDW)</td>
+      <td>SATE End-to-end 1</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.97</td>
+      <td>10.05 types</td>
+      <td>+7.32 t (+4.80%)</td>
+      <td>10.84 (7.33%)</td>
+    </tr>
+    <tr>
+      <td>Different Words (NDW)</td>
+      <td>SATE End-to-end 2</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.96</td>
+      <td>7.72 types</td>
+      <td>+2.35 t (+1.67%)</td>
+      <td>9.80 (7.55%)</td>
+    </tr>
+    <tr class="highlight">
+      <td>Different Words (NDW)</td>
+      <td>Our Pipeline</td>
+      <td><span class="badge badge-transcript">Transcript (Punctuation Stripped)</span></td>
+      <td>1.0000</td>
+      <td>0.00 types</td>
+      <td>0.00 t (0.00%)</td>
+      <td>0.00 (0.00%)</td>
+    </tr>
+    <tr>
+      <td><strong>Total Utterances (NTU)</strong></td>
+      <td>SATE End-to-end 2</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.90</td>
+      <td>13.61 utts</td>
+      <td>+10.07 u (+10.35%)</td>
+      <td>13.84 (18.71%)</td>
+    </tr>
+    <tr>
+      <td>Total Utterances (NTU)</td>
+      <td>Batchalign 0.10.4</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.88</td>
+      <td>16.17 utts</td>
+      <td>+14.98 u (+17.59%)</td>
+      <td>13.95 (14.84%)</td>
+    </tr>
+    <tr>
+      <td>Total Utterances (NTU)</td>
+      <td>SATE End-to-end 1</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.91</td>
+      <td>17.49 utts</td>
+      <td>+14.68 u (+15.21%)</td>
+      <td>15.65 (19.09%)</td>
+    </tr>
+    <tr>
+      <td>Total Utterances (NTU)</td>
+      <td>SATE Pipeline</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.92</td>
+      <td>19.88 utts</td>
+      <td>+18.03 u (+19.64%)</td>
+      <td>15.15 (17.61%)</td>
+    </tr>
+    <tr class="highlight">
+      <td>Total Utterances (NTU)</td>
+      <td>Our Pipeline</td>
+      <td><span class="badge badge-transcript">Transcript (Punctuation Stripped)</span></td>
+      <td>0.93</td>
+      <td>21.21 utts</td>
+      <td>+21.17 u (+23.48%)</td>
+      <td>16.79 (16.27%)</td>
+    </tr>
+    <tr>
+      <td><strong>Mean Length of Utt (MLU)</strong></td>
+      <td>Batchalign 0.10.4</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.78</td>
+      <td>1.42 morph</td>
+      <td>-1.36 m (-18.85%)</td>
+      <td>0.87 (13.24%)</td>
+    </tr>
+    <tr>
+      <td>Mean Length of Utt (MLU)</td>
+      <td>SATE End-to-end 1</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.77</td>
+      <td>1.84 morph</td>
+      <td>-1.81 m (-24.96%)</td>
+      <td>1.00 (12.92%)</td>
+    </tr>
+    <tr>
+      <td>Mean Length of Utt (MLU)</td>
+      <td>SATE Pipeline</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.78</td>
+      <td>1.89 morph</td>
+      <td>-1.85 m (-25.69%)</td>
+      <td>1.01 (13.29%)</td>
+    </tr>
+    <tr>
+      <td>Mean Length of Utt (MLU)</td>
+      <td>SATE End-to-end 2</td>
+      <td><span class="badge badge-audio">Audio (Whisper ASR)</span></td>
+      <td>0.78</td>
+      <td>2.10 morph</td>
+      <td>-2.06 m (-28.84%)</td>
+      <td>0.99 (13.34%)</td>
+    </tr>
+    <tr class="highlight">
+      <td>Mean Length of Utt (MLU)</td>
+      <td>Our Pipeline (MLUw)</td>
+      <td><span class="badge badge-transcript">Transcript (Punctuation Stripped)</span></td>
+      <td>0.86</td>
+      <td>1.32 words</td>
+      <td>-1.32 w (-17.77%)</td>
+      <td>0.87 (12.73%)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>2. The OCSC Conversational Dialogue Benchmark (111 Test Transcripts)</h2>
+<p>Evaluated head-to-head on 111 unpunctuated conversational dialogue transcripts from the Ohio Child Speech Corpus (Wagner et al., 2025):</p>
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Input Modality</th>
+      <th>Clinical Ground Truth</th>
+      <th>Batchalign 0.10.4</th>
+      <th>Our Production Pipeline</th>
+      <th>Outcome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="highlight">
+      <td>Segmentation F1</td>
+      <td>Transcript (Unpunctuated)</td>
+      <td>100.0%</td>
+      <td>56.31%</td>
+      <td>85.56%</td>
+      <td>+29.25% F1 superiority</td>
+    </tr>
+    <tr>
+      <td>Segmentation Precision</td>
+      <td>Transcript (Unpunctuated)</td>
+      <td>100.0%</td>
+      <td>47.93%</td>
+      <td>84.82%</td>
+      <td>+36.89% precision</td>
+    </tr>
+    <tr>
+      <td>Segmentation Recall</td>
+      <td>Transcript (Unpunctuated)</td>
+      <td>100.0%</td>
+      <td>68.25%</td>
+      <td>86.32%</td>
+      <td>+18.07% recall</td>
+    </tr>
+    <tr class="highlight">
+      <td>Mean Length of Utt (MLUw)</td>
+      <td>Transcript (Unpunctuated)</td>
+      <td>3.99 words</td>
+      <td>8.52 w (+113.64%)</td>
+      <td>4.34 w (+8.75%)</td>
+      <td>Batchalign failed catastrophically</td>
+    </tr>
+    <tr>
+      <td>Utterance Count (NTU)</td>
+      <td>Transcript (Unpunctuated)</td>
+      <td>71.9 utts</td>
+      <td>33.7 u (-53.13%)</td>
+      <td>64.8 u (-9.81%)</td>
+      <td>Batchalign missed half the utterances</td>
+    </tr>
+    <tr>
+      <td>Length Standard Deviation</td>
+      <td>Transcript (Unpunctuated)</td>
+      <td>2.53 words</td>
+      <td>5.82 w (+130.04%)</td>
+      <td>2.91 w (+15.02%)</td>
+      <td>Accurate variance preserved</td>
+    </tr>
+    <tr>
+      <td>MATTR50 (Lexical Diversity)</td>
+      <td>Transcript (Unpunctuated)</td>
+      <td>0.812</td>
+      <td>0.774 (-4.68%)</td>
+      <td>0.808 (-0.49%)</td>
+      <td>Ten-fold higher lexical fidelity</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>3. The LUCID Acoustic & Sociolinguistic Benchmark (180 Transcripts)</h2>
+<p>Evaluated on 180 recordings from the London English corpus (Baker & Hazan, 2011; Baese-Berk et al., 2021):</p>
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Input Modality</th>
+      <th>Metric</th>
+      <th>Published Reference</th>
+      <th>Our Pipeline Measured</th>
+      <th>APE (%)</th>
+      <th>Status (&le; 5%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Babble Noise</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>Word Count (Tokens)</td>
+      <td>1,284.5 words</td>
+      <td>1,294.3 words</td>
+      <td>0.76%</td>
+      <td><span class="badge badge-pass">PASSED</span></td>
+    </tr>
+    <tr>
+      <td>Babble Noise</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>MATTR50</td>
+      <td>0.732</td>
+      <td>0.735</td>
+      <td>0.44%</td>
+      <td><span class="badge badge-pass">PASSED</span></td>
+    </tr>
+    <tr>
+      <td>Babble Noise</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>HD-D42</td>
+      <td>0.718</td>
+      <td>0.721</td>
+      <td>0.37%</td>
+      <td><span class="badge badge-pass">PASSED</span></td>
+    </tr>
+    <tr>
+      <td>Babble Noise</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>MTLD</td>
+      <td>56.24</td>
+      <td>54.84</td>
+      <td>2.49%</td>
+      <td><span class="badge badge-pass">PASSED</span></td>
+    </tr>
+    <tr>
+      <td>L2 Talker</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>Word Count (Tokens)</td>
+      <td>1,142.1 words</td>
+      <td>1,163.5 words</td>
+      <td>1.87%</td>
+      <td><span class="badge badge-pass">PASSED</span></td>
+    </tr>
+    <tr>
+      <td>L2 Talker</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>MATTR50</td>
+      <td>0.715</td>
+      <td>0.718</td>
+      <td>0.44%</td>
+      <td><span class="badge badge-pass">PASSED</span></td>
+    </tr>
+    <tr>
+      <td>L2 Talker</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>HD-D42</td>
+      <td>0.699</td>
+      <td>0.701</td>
+      <td>0.25%</td>
+      <td><span class="badge badge-pass">PASSED</span></td>
+    </tr>
+    <tr>
+      <td>L2 Talker</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>MTLD</td>
+      <td>51.30</td>
+      <td>50.06</td>
+      <td>2.42%</td>
+      <td><span class="badge badge-pass">PASSED</span></td>
+    </tr>
+    <tr>
+      <td>Quiet (noBarrier)</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>Word Count (Tokens)</td>
+      <td>1,410.2 words</td>
+      <td>1,176.1 words</td>
+      <td>16.60%</td>
+      <td><span class="badge badge-fail">FAILED (Tier Overlap)</span></td>
+    </tr>
+    <tr>
+      <td>Quiet (noBarrier)</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>TTR</td>
+      <td>0.225</td>
+      <td>0.242</td>
+      <td>7.56%</td>
+      <td><span class="badge badge-fail">FAILED (Tier Overlap)</span></td>
+    </tr>
+    <tr>
+      <td>Quiet (noBarrier)</td>
+      <td>Aligned Transcript TextGrids</td>
+      <td>MTLD</td>
+      <td>62.10</td>
+      <td>55.59</td>
+      <td>10.49%</td>
+      <td><span class="badge badge-fail">FAILED (Tier Overlap)</span></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

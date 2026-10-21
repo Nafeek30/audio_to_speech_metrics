@@ -1,0 +1,237 @@
+{
+  "author_reference_cells_checked": 2700,
+  "all_saved_reference_cells_match_fresh_author_csv": true,
+  "matched_comparisons": [
+    {
+      "condition": "noBarrier",
+      "metric": "basic_ntokens",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 662.7833333333333,
+      "our_saved_output_mean": 669.3,
+      "difference_of_means": 6.5166666666666515,
+      "relative_difference_of_means_percent": 0.9832272990167704,
+      "existing_mean_participant_ape_percent": 16.598744564751833
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "basic_ntypes",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 205.75,
+      "our_saved_output_mean": 207.55,
+      "difference_of_means": 1.8000000000000114,
+      "relative_difference_of_means_percent": 0.874848116646421,
+      "existing_mean_participant_ape_percent": 12.050306709409693
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "simple_ttr_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 0.31743423573333335,
+      "our_saved_output_mean": 0.31722953515721025,
+      "difference_of_means": -0.00020470057612309578,
+      "relative_difference_of_means_percent": -0.06448597948176528,
+      "existing_mean_participant_ape_percent": 7.5568142072399365
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "mattr50_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 0.6975476351166666,
+      "our_saved_output_mean": 0.6980718282377716,
+      "difference_of_means": 0.0005241931211049655,
+      "relative_difference_of_means_percent": 0.07514800347897285,
+      "existing_mean_participant_ape_percent": 2.1059713208172703
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "hdd42_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 0.7689519341166666,
+      "our_saved_output_mean": 0.7693583020180512,
+      "difference_of_means": 0.00040636790138459666,
+      "relative_difference_of_means_percent": 0.05284698345305701,
+      "existing_mean_participant_ape_percent": 2.1182779120438613
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "mtld_original_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 39.8048167315,
+      "our_saved_output_mean": 39.8378873130772,
+      "difference_of_means": 0.033070581577206326,
+      "relative_difference_of_means_percent": 0.08308185866117943,
+      "existing_mean_participant_ape_percent": 10.493577684908512
+    },
+    {
+      "condition": "babble",
+      "metric": "basic_ntokens",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 756.75,
+      "our_saved_output_mean": 762.6333333333333,
+      "difference_of_means": 5.883333333333326,
+      "relative_difference_of_means_percent": 0.7774474176852759,
+      "existing_mean_participant_ape_percent": 0.7648169253403355
+    },
+    {
+      "condition": "babble",
+      "metric": "basic_ntypes",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 184.41666666666666,
+      "our_saved_output_mean": 187.06666666666666,
+      "difference_of_means": 2.6500000000000057,
+      "relative_difference_of_means_percent": 1.436963398102127,
+      "existing_mean_participant_ape_percent": 1.7557266169284174
+    },
+    {
+      "condition": "babble",
+      "metric": "simple_ttr_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 0.25335245025,
+      "our_saved_output_mean": 0.25509854919030167,
+      "difference_of_means": 0.0017460989403016436,
+      "relative_difference_of_means_percent": 0.6891975738062329,
+      "existing_mean_participant_ape_percent": 1.3059921967544017
+    },
+    {
+      "condition": "babble",
+      "metric": "mattr50_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 0.6242043320833334,
+      "our_saved_output_mean": 0.625430329639825,
+      "difference_of_means": 0.0012259975564916648,
+      "relative_difference_of_means_percent": 0.19640965201247435,
+      "existing_mean_participant_ape_percent": 0.43767078174603763
+    },
+    {
+      "condition": "babble",
+      "metric": "hdd42_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 0.7295597634333333,
+      "our_saved_output_mean": 0.7315469599000106,
+      "difference_of_means": 0.0019871964666773323,
+      "relative_difference_of_means_percent": 0.2723829583645783,
+      "existing_mean_participant_ape_percent": 0.3733018331250582
+    },
+    {
+      "condition": "babble",
+      "metric": "mtld_original_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 28.709712604,
+      "our_saved_output_mean": 28.828219344761013,
+      "difference_of_means": 0.11850674076101342,
+      "relative_difference_of_means_percent": 0.4127757821738083,
+      "existing_mean_participant_ape_percent": 2.494049355197705
+    },
+    {
+      "condition": "L2",
+      "metric": "basic_ntokens",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 1095.9166666666667,
+      "our_saved_output_mean": 1115.1166666666666,
+      "difference_of_means": 19.199999999999818,
+      "relative_difference_of_means_percent": 1.7519580260056102,
+      "existing_mean_participant_ape_percent": 1.8724894472311788
+    },
+    {
+      "condition": "L2",
+      "metric": "basic_ntypes",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 230.75,
+      "our_saved_output_mean": 232.46666666666667,
+      "difference_of_means": 1.7166666666666686,
+      "relative_difference_of_means_percent": 0.7439508847959561,
+      "existing_mean_participant_ape_percent": 1.3283505101660713
+    },
+    {
+      "condition": "L2",
+      "metric": "simple_ttr_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 0.21569986503333333,
+      "our_saved_output_mean": 0.21339860899099547,
+      "difference_of_means": -0.002301256042337857,
+      "relative_difference_of_means_percent": -1.0668787585853292,
+      "existing_mean_participant_ape_percent": 1.5690061867717113
+    },
+    {
+      "condition": "L2",
+      "metric": "mattr50_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 0.65084676945,
+      "our_saved_output_mean": 0.6495342860657265,
+      "difference_of_means": -0.0013124833842734773,
+      "relative_difference_of_means_percent": -0.2016578165368471,
+      "existing_mean_participant_ape_percent": 0.4389149253498699
+    },
+    {
+      "condition": "L2",
+      "metric": "hdd42_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 0.7390926648833334,
+      "our_saved_output_mean": 0.7382716053356134,
+      "difference_of_means": -0.0008210595477199378,
+      "relative_difference_of_means_percent": -0.11109020380408498,
+      "existing_mean_participant_ape_percent": 0.2457311509112658
+    },
+    {
+      "condition": "L2",
+      "metric": "mtld_original_aw",
+      "samples": 60,
+      "speakers": 20,
+      "published_sample_mean": 32.03395746733333,
+      "our_saved_output_mean": 31.929707410374817,
+      "difference_of_means": -0.10425005695851297,
+      "relative_difference_of_means_percent": -0.3254360847073675,
+      "existing_mean_participant_ape_percent": 2.4224293930629366
+    }
+  ],
+  "earlier_paper_descriptive_comparisons": [
+    {
+      "paper": "Baker_Hazan_2011",
+      "condition": "noBarrier",
+      "published_mean": 613.0,
+      "our_saved_mean": 669.3,
+      "mean_difference": 56.299999999999955,
+      "mean_relative_difference_percent": 9.184339314845017,
+      "unit": "words per speaker per conversation",
+      "comparison_scope": "Descriptive means only: exact participant matching and counting/cleaning equivalence with the earlier publication are not established. This is not paired sample error."
+    },
+    {
+      "paper": "Hazan_etal_2015",
+      "condition": "babble",
+      "published_mean": 2157.0,
+      "our_saved_mean": 2287.9,
+      "mean_difference": 130.9000000000001,
+      "mean_relative_difference_percent": 6.068613815484474,
+      "unit": "words per speaker across three picture tasks",
+      "comparison_scope": "Descriptive means only: exact participant matching and counting/cleaning equivalence with the earlier publication are not established. This is not paired sample error."
+    },
+    {
+      "paper": "Hazan_etal_2015",
+      "condition": "L2",
+      "published_mean": 3170.0,
+      "our_saved_mean": 3345.35,
+      "mean_difference": 175.3499999999999,
+      "mean_relative_difference_percent": 5.531545741324919,
+      "unit": "words per speaker across three picture tasks",
+      "comparison_scope": "Descriptive means only: exact participant matching and counting/cleaning equivalence with the earlier publication are not established. This is not paired sample error."
+    }
+  ],
+  "no_inference_or_rescoring": true
+}

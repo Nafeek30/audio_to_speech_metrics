@@ -1,0 +1,62 @@
+{
+  "worker_pid": 35547,
+  "reason": "Resume epoch checkpoint with final test hold and eval-only ensemble comparison",
+  "saved_progress": {
+    "fold_1": {
+      "selection_frozen": true,
+      "evaluated": true,
+      "latest_epoch": {
+        "epoch": 3,
+        "mean_training_loss": 0.20546296933809152,
+        "inner_objective": 15.863587033939629,
+        "elapsed_seconds": 304.6347624580376
+      }
+    },
+    "fold_2": {
+      "selection_frozen": true,
+      "evaluated": true,
+      "latest_epoch": {
+        "epoch": 6,
+        "mean_training_loss": 0.17108630106235162,
+        "inner_objective": 15.069842246048855,
+        "elapsed_seconds": 606.5879845410818
+      },
+      "checkpoint": {
+        "epoch": 6,
+        "saved_utc": "2026-10-16T03:31:57.955581+00:00",
+        "next_epoch": 7,
+        "full_optimizer_scheduler_rng_saved": true,
+        "path": "outputs/results/participant_cv_v1/fold_2/training_state.pt"
+      }
+    },
+    "fold_3": {
+      "selection_frozen": false,
+      "evaluated": false,
+      "latest_epoch": {
+        "epoch": 4,
+        "mean_training_loss": 0.17381615180466042,
+        "inner_objective": 14.565987811277237,
+        "elapsed_seconds": 409.1108497499954
+      },
+      "checkpoint": {
+        "epoch": 4,
+        "saved_utc": "2026-10-16T03:44:22.728479+00:00",
+        "next_epoch": 5,
+        "full_optimizer_scheduler_rng_saved": true,
+        "path": "outputs/results/participant_cv_v1/fold_3/training_state.pt"
+      }
+    },
+    "fold_4": {
+      "selection_frozen": false,
+      "evaluated": false
+    },
+    "fold_5": {
+      "selection_frozen": false,
+      "evaluated": false
+    },
+    "final": {
+      "selection_frozen": false,
+      "evaluated": false
+    }
+  }
+}

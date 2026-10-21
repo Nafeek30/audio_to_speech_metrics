@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-10-16T02:02:11.760680+00:00",
+  "failure": "Margin-zero parity failed in six of 278 validation context-recording comparisons, one cut each. No calibration candidate was selected/scored and no final metrics were computed from this cache.",
+  "repair": "Restore original model.features single-document preprocessing. Memoize only identical token sequences. Cache validation words only, pass both-context zero-margin guard, then select unchanged 14 candidates. Cache only the chosen context on all transcripts after selection and verify selected validation predictions again before final scoring.",
+  "unchanged": "Model weights, candidate margins/contexts, selection objective, partitions, source word streams and prior reported results.",
+  "code_sha256": "e56c981c2be1106911c6efae4f9105baa6765b38093d55e39791790ed852952b"
+}

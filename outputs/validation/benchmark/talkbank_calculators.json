@@ -1,0 +1,1193 @@
+{
+  "scope": "Six preselected validation paragraphs; same normalized input; not a test-set outcome",
+  "results": [
+    {
+      "corpus": "ocsc",
+      "participant": "ocsc/4006",
+      "recording": "transcripts/4/4006.cha#section5",
+      "source_sha256": "0f2b36f4770b3fddadb1536dcc237b3dbcbbc7b21a1b0bddcd07f6eeeced3aee",
+      "checks": {
+        "surface_calculator_checks": {
+          "TNW": {
+            "custom": 112,
+            "clan": 112.0,
+            "absolute_error": 0.0
+          },
+          "NDW": {
+            "custom": 63,
+            "clan": 63.0,
+            "absolute_error": 0.0
+          },
+          "TTR": {
+            "custom": 0.5625,
+            "clan": 0.562,
+            "absolute_error": 0.0004999999999999449
+          },
+          "MATTR": {
+            "custom": 0.6323809523809524,
+            "clan": 0.632,
+            "absolute_error": 0.0003809523809523707
+          },
+          "MLUw": {
+            "custom": 3.111111111111111,
+            "clan": 3.111,
+            "absolute_error": 0.00011111111111095084
+          }
+        },
+        "taaled_normalized_checks": {
+          "basic_ntokens": {
+            "custom": 122,
+            "reference": 122,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_ntypes": {
+            "custom": 63,
+            "reference": 63,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_ncontent_tokens": {
+            "custom": 46,
+            "reference": 46,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_ncontent_types": {
+            "custom": 38,
+            "reference": 38,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_nfunction_tokens": {
+            "custom": 76,
+            "reference": 76,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_nfunction_types": {
+            "custom": 25,
+            "reference": 25,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "lexical_density_tokens": {
+            "custom": 0.3770491803278688,
+            "reference": 0.3770491803278688,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "lexical_density_types": {
+            "custom": 0.6031746031746031,
+            "reference": 0.6031746031746031,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "simple_ttr_aw": {
+            "custom": 0.5163934426229508,
+            "reference": 0.5163934426229508,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "root_ttr_aw": {
+            "custom": 5.7037520006786675,
+            "reference": 5.7037520006786675,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "log_ttr_aw": {
+            "custom": 0.8624305946648033,
+            "reference": 0.8624305946648033,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "maas_ttr_aw": {
+            "custom": 0.0659375258824387,
+            "reference": 0.0659375258824387,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "mattr50_aw": {
+            "custom": 0.5986301369863014,
+            "reference": 0.5986301369863014,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "msttr50_aw": {
+            "custom": 0.56,
+            "reference": 0.56,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "hdd42_aw": {
+            "custom": 0.6780025582625501,
+            "reference": 0.67800255826255,
+            "difference": 1.1102230246251565e-16,
+            "absolute_error": 1.1102230246251565e-16,
+            "absolute_percent_error": 1.637490907807509e-14
+          },
+          "mtld_original_aw": {
+            "custom": 18.772377496233105,
+            "reference": 18.772377496233105,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "mtld_mean_factor_length_aw": {
+            "custom": 19.86095238095238,
+            "reference": 19.86095238095238,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          }
+        },
+        "taaled_same_tokens_checks": {
+          "basic_ntokens": {
+            "custom": 122,
+            "taaled": 122,
+            "absolute_error": 0
+          },
+          "basic_ntypes": {
+            "custom": 63,
+            "taaled": 63,
+            "absolute_error": 0
+          },
+          "simple_ttr_aw": {
+            "custom": 0.5163934426229508,
+            "taaled": 0.5163934426229508,
+            "absolute_error": 0.0
+          },
+          "mattr50_aw": {
+            "custom": 0.5986301369863014,
+            "taaled": 0.5986301369863014,
+            "absolute_error": 0.0
+          }
+        },
+        "policy": "Case-folded filler-excluded surface text for CLAN/custom. TAALED same-token checks isolate calculators; normalized checks include differences between the two preprocessing implementations.",
+        "official_outputs": {
+          "mlu": {
+            "command": "mlu +t*PAR -t%mor",
+            "output_sha256": "a0892ac8b9a54efba7688f125a3f16b747884a2a508cd3b4a5cfb6ecf071c6ee",
+            "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_fsegc9fe/sample.cha\nWed Oct 14 14:47:55 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_fsegc9fe/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 36, words = 112\n\tRatio of words over utterances = 3.111\n\tStandard deviation = 2.283\n\n",
+            "utterances": 36.0,
+            "total": 112.0,
+            "mlu": 3.111
+          },
+          "freq": {
+            "command": "freq +t*PAR -t%mor +k +b50",
+            "output_sha256": "6d41a0e44fa7b96e8767bee0e7b77ae5635d5ae7b2ffe595a8d8e1b0b2f498f0",
+            "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_69d8kecs/sample.cha\nWed Oct 14 14:47:55 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_69d8kecs/sample.cha>\nSpeaker: *PAR:\n 18 a\n  1 about\n  1 all\n  5 and\n  1 away\n  3 because\n  1 bed\n  2 boat\n  1 carrot\n  1 clouds\n  1 don't\n  1 fish\n  1 fishes\n  2 fishing\n  1 floor\n  1 from\n  1 garden\n  1 gate\n  1 giant\n  1 girl\n  6 he's\n  1 head\n  1 her\n  1 holding\n  4 in\n  3 is\n  1 it\n  1 know\n  1 lion\n  1 lizard\n  2 man\n  4 no\n  3 on\n  1 other\n  1 outside\n  1 person\n  1 plants\n  1 put\n  1 robot\n  1 running\n  1 shape\n  1 silly\n  1 sleep\n  1 sleeping\n  1 slimy\n  3 squid\n  2 swimming\n  2 table\n  1 tent\n  1 that\n  1 that's\n  3 the\n  1 there\n  1 they're\n  2 to\n  1 tt\n  1 vegetables\n  1 walking\n  2 water\n  1 what\n  1 what's\n  1 with\n  1 yeah\n------------------------------\n   63  Total number of different item types used\n  112  Total number of items (tokens)\n0.562  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.632  MATTR\n\n",
+            "NDW": 63.0,
+            "TNW": 112.0,
+            "TTR": 0.562,
+            "MATTR": 0.632
+          }
+        }
+      }
+    },
+    {
+      "corpus": "ocsc",
+      "participant": "ocsc/4006",
+      "recording": "transcripts/4/4006.cha#section7",
+      "source_sha256": "0f2b36f4770b3fddadb1536dcc237b3dbcbbc7b21a1b0bddcd07f6eeeced3aee",
+      "checks": {
+        "surface_calculator_checks": {
+          "TNW": {
+            "custom": 323,
+            "clan": 323.0,
+            "absolute_error": 0.0
+          },
+          "NDW": {
+            "custom": 143,
+            "clan": 143.0,
+            "absolute_error": 0.0
+          },
+          "TTR": {
+            "custom": 0.44272445820433437,
+            "clan": 0.443,
+            "absolute_error": 0.00027554179566563475
+          },
+          "MATTR": {
+            "custom": 0.6724817518248175,
+            "clan": 0.672,
+            "absolute_error": 0.0004817518248174668
+          },
+          "MLUw": {
+            "custom": 5.47457627118644,
+            "clan": 5.475,
+            "absolute_error": 0.0004237288135593431
+          }
+        },
+        "taaled_normalized_checks": {
+          "basic_ntokens": {
+            "custom": 337,
+            "reference": 336,
+            "difference": 1,
+            "absolute_error": 1,
+            "absolute_percent_error": 0.2976190476190476
+          },
+          "basic_ntypes": {
+            "custom": 134,
+            "reference": 133,
+            "difference": 1,
+            "absolute_error": 1,
+            "absolute_percent_error": 0.7518796992481203
+          },
+          "basic_ncontent_tokens": {
+            "custom": 132,
+            "reference": 131,
+            "difference": 1,
+            "absolute_error": 1,
+            "absolute_percent_error": 0.7633587786259542
+          },
+          "basic_ncontent_types": {
+            "custom": 90,
+            "reference": 89,
+            "difference": 1,
+            "absolute_error": 1,
+            "absolute_percent_error": 1.1235955056179776
+          },
+          "basic_nfunction_tokens": {
+            "custom": 205,
+            "reference": 205,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_nfunction_types": {
+            "custom": 44,
+            "reference": 44,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "lexical_density_tokens": {
+            "custom": 0.3916913946587537,
+            "reference": 0.3898809523809524,
+            "difference": 0.0018104422778013052,
+            "absolute_error": 0.0018104422778013052,
+            "absolute_percent_error": 0.46435771400094544
+          },
+          "lexical_density_types": {
+            "custom": 0.6716417910447762,
+            "reference": 0.6691729323308271,
+            "difference": 0.0024688587139490847,
+            "absolute_error": 0.0024688587139490847,
+            "absolute_percent_error": 0.3689418078148632
+          },
+          "simple_ttr_aw": {
+            "custom": 0.39762611275964393,
+            "reference": 0.3958333333333333,
+            "difference": 0.00179277942631062,
+            "absolute_error": 0.00179277942631062,
+            "absolute_percent_error": 0.4529126971732093
+          },
+          "root_ttr_aw": {
+            "custom": 7.2994451234181,
+            "reference": 7.255744850346747,
+            "difference": 0.04370027307135338,
+            "absolute_error": 0.04370027307135338,
+            "absolute_percent_error": 0.602285140570578
+          },
+          "log_ttr_aw": {
+            "custom": 0.8415412389414845,
+            "reference": 0.8406834584630298,
+            "difference": 0.0008577804784546395,
+            "absolute_error": 0.0008577804784546395,
+            "absolute_percent_error": 0.1020337048171338
+          },
+          "maas_ttr_aw": {
+            "custom": 0.06269064984707247,
+            "reference": 0.06306221138341023,
+            "difference": -0.00037156153633775835,
+            "absolute_error": 0.00037156153633775835,
+            "absolute_percent_error": 0.5891983934383643
+          },
+          "mattr50_aw": {
+            "custom": 0.6473611111111112,
+            "reference": 0.6456445993031359,
+            "difference": 0.001716511807975274,
+            "absolute_error": 0.001716511807975274,
+            "absolute_percent_error": 0.265860166696656
+          },
+          "msttr50_aw": {
+            "custom": 0.6333333333333333,
+            "reference": 0.63,
+            "difference": 0.0033333333333332993,
+            "absolute_error": 0.0033333333333332993,
+            "absolute_percent_error": 0.5291005291005237
+          },
+          "hdd42_aw": {
+            "custom": 0.74602734859356,
+            "reference": 0.7448105736012691,
+            "difference": 0.0012167749922908921,
+            "absolute_error": 0.0012167749922908921,
+            "absolute_percent_error": 0.16336704061646243
+          },
+          "mtld_original_aw": {
+            "custom": 28.154072208228378,
+            "reference": 27.10099988138183,
+            "difference": 1.0530723268465465,
+            "absolute_error": 1.0530723268465465,
+            "absolute_percent_error": 3.8857323768707097
+          },
+          "mtld_mean_factor_length_aw": {
+            "custom": 28.059666666666665,
+            "reference": 26.996480000000002,
+            "difference": 1.0631866666666632,
+            "absolute_error": 1.0631866666666632,
+            "absolute_percent_error": 3.9382418251070623
+          }
+        },
+        "taaled_same_tokens_checks": {
+          "basic_ntokens": {
+            "custom": 337,
+            "taaled": 337,
+            "absolute_error": 0
+          },
+          "basic_ntypes": {
+            "custom": 134,
+            "taaled": 134,
+            "absolute_error": 0
+          },
+          "simple_ttr_aw": {
+            "custom": 0.39762611275964393,
+            "taaled": 0.39762611275964393,
+            "absolute_error": 0.0
+          },
+          "mattr50_aw": {
+            "custom": 0.6473611111111112,
+            "taaled": 0.6473611111111112,
+            "absolute_error": 0.0
+          }
+        },
+        "policy": "Case-folded filler-excluded surface text for CLAN/custom. TAALED same-token checks isolate calculators; normalized checks include differences between the two preprocessing implementations.",
+        "official_outputs": {
+          "mlu": {
+            "command": "mlu +t*PAR -t%mor",
+            "output_sha256": "859cadf533cdaaffc621976b202718900723ce9f6ead9e89b7dd7c5edaad8d7b",
+            "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ab8vopwb/sample.cha\nWed Oct 14 14:47:56 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ab8vopwb/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 59, words = 323\n\tRatio of words over utterances = 5.475\n\tStandard deviation = 2.479\n\n",
+            "utterances": 59.0,
+            "total": 323.0,
+            "mlu": 5.475
+          },
+          "freq": {
+            "command": "freq +t*PAR -t%mor +k +b50",
+            "output_sha256": "cbd498b33cd6894567a2163ecc4d41effeb364b7d023115fc61027e8c64d9f70",
+            "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ekln0k_p/sample.cha\nWed Oct 14 14:47:56 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ekln0k_p/sample.cha>\nSpeaker: *PAR:\n  6 a\n  1 all\n  1 already\n 22 and\n  1 bag\n  1 ball\n  1 bear\n  1 big\n  4 bigger\n  1 blocks\n  1 blue\n  1 both\n  1 bottom\n  1 bowl\n  1 brush\n  1 brushing\n  1 building\n  1 but\n  1 butts\n  1 can\n  2 car\n  2 cereal\n  1 chair\n  1 chance\n  1 clothes\n  1 costumes\n  1 crunchies\n  1 cupcake\n  1 cups\n  2 do\n  2 don't\n  2 down\n  1 dressing\n  1 drink\n  1 each\n  1 eat\n  1 eating\n  2 feed\n  1 feeding\n  1 fighting\n  1 foot\n  1 frosting\n  1 full\n  1 get\n  1 grab\n  3 hands\n  2 have\n  9 he's\n  2 her\n  5 his\n  7 i\n  1 icing\n  2 if\n  6 in\n  2 into\n  7 it\n  1 it's\n  2 juice\n  3 just\n  2 kick\n  1 kind\n  1 lifts\n  2 like\n  2 little\n  1 make\n  1 me\n  3 milk\n  1 mommy\n  3 my\n  2 net\n  2 no\n  4 of\n 13 on\n  3 one\n  1 only\n  3 other\n  5 our\n  2 out\n  1 over\n  3 paint\n  1 paintbrushes\n  1 painting\n  1 paper\n  1 people\n  1 pizza\n  1 plates\n  1 played\n  1 playing\n  1 pull\n  6 put\n  3 putting\n  1 really\n  1 ride\n  3 riding\n  1 rolls\n  1 rub\n  1 run\n  1 same\n  1 score\n  1 scrub\n  1 seatbelt\n  3 she's\n  1 shoe\n  1 shorts\n  1 sit\n  1 sitting\n  2 slide\n  1 small\n  1 soap\n  1 soccer\n  1 sometimes\n  1 spoons\n  2 squirt\n  1 stack\n  2 sucker\n  1 swing\n  1 teddy\n  2 teeth\n 11 the\n  2 them\n  9 then\n  3 they're\n  1 tie\n  1 ties\n  3 to\n  2 together\n  1 toothpaste\n  1 top\n  1 tops\n  1 tower\n  2 toys\n  1 two\n  1 tying\n  3 up\n  1 want\n  1 was\n  1 washing\n  2 water\n 27 we\n  1 whatever\n  4 with\n  1 yeah\n  1 you\n------------------------------\n  143  Total number of different item types used\n  323  Total number of items (tokens)\n0.443  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.672  MATTR\n\n",
+            "NDW": 143.0,
+            "TNW": 323.0,
+            "TTR": 0.443,
+            "MATTR": 0.672
+          }
+        }
+      }
+    },
+    {
+      "corpus": "ocsc",
+      "participant": "ocsc/4006",
+      "recording": "transcripts/4/4006.cha#section8",
+      "source_sha256": "0f2b36f4770b3fddadb1536dcc237b3dbcbbc7b21a1b0bddcd07f6eeeced3aee",
+      "checks": {
+        "surface_calculator_checks": {
+          "TNW": {
+            "custom": 244,
+            "clan": 244.0,
+            "absolute_error": 0.0
+          },
+          "NDW": {
+            "custom": 127,
+            "clan": 127.0,
+            "absolute_error": 0.0
+          },
+          "TTR": {
+            "custom": 0.5204918032786885,
+            "clan": 0.52,
+            "absolute_error": 0.0004918032786884741
+          },
+          "MATTR": {
+            "custom": 0.713948717948718,
+            "clan": 0.714,
+            "absolute_error": 5.1282051282020014e-05
+          },
+          "MLUw": {
+            "custom": 4.0,
+            "clan": 4.0,
+            "absolute_error": 0.0
+          }
+        },
+        "taaled_normalized_checks": {
+          "basic_ntokens": {
+            "custom": 251,
+            "reference": 250,
+            "difference": 1,
+            "absolute_error": 1,
+            "absolute_percent_error": 0.4
+          },
+          "basic_ntypes": {
+            "custom": 115,
+            "reference": 114,
+            "difference": 1,
+            "absolute_error": 1,
+            "absolute_percent_error": 0.8771929824561403
+          },
+          "basic_ncontent_tokens": {
+            "custom": 104,
+            "reference": 103,
+            "difference": 1,
+            "absolute_error": 1,
+            "absolute_percent_error": 0.970873786407767
+          },
+          "basic_ncontent_types": {
+            "custom": 74,
+            "reference": 73,
+            "difference": 1,
+            "absolute_error": 1,
+            "absolute_percent_error": 1.36986301369863
+          },
+          "basic_nfunction_tokens": {
+            "custom": 147,
+            "reference": 147,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_nfunction_types": {
+            "custom": 41,
+            "reference": 41,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "lexical_density_tokens": {
+            "custom": 0.41434262948207173,
+            "reference": 0.412,
+            "difference": 0.0023426294820717564,
+            "absolute_error": 0.0023426294820717564,
+            "absolute_percent_error": 0.568599388852368
+          },
+          "lexical_density_types": {
+            "custom": 0.6434782608695652,
+            "reference": 0.6403508771929824,
+            "difference": 0.003127383676582718,
+            "absolute_error": 0.003127383676582718,
+            "absolute_percent_error": 0.4883859440142875
+          },
+          "simple_ttr_aw": {
+            "custom": 0.4581673306772908,
+            "reference": 0.456,
+            "difference": 0.002167330677290802,
+            "absolute_error": 0.002167330677290802,
+            "absolute_percent_error": 0.47529181519535124
+          },
+          "root_ttr_aw": {
+            "custom": 7.258735635624737,
+            "reference": 7.209993065183905,
+            "difference": 0.0487425704408313,
+            "absolute_error": 0.0487425704408313,
+            "absolute_percent_error": 0.6760418491413351
+          },
+          "log_ttr_aw": {
+            "custom": 0.8587408454353469,
+            "reference": 0.8577799460777888,
+            "difference": 0.0009608993575580538,
+            "absolute_error": 0.0009608993575580538,
+            "absolute_percent_error": 0.11202166265972759
+          },
+          "maas_ttr_aw": {
+            "custom": 0.058865983862785444,
+            "reference": 0.05930926270377034,
+            "difference": -0.0004432788409848981,
+            "absolute_error": 0.0004432788409848981,
+            "absolute_percent_error": 0.7474023799603202
+          },
+          "mattr50_aw": {
+            "custom": 0.6643564356435644,
+            "reference": 0.6622885572139303,
+            "difference": 0.0020678784296340735,
+            "absolute_error": 0.0020678784296340735,
+            "absolute_percent_error": 0.31223224485911116
+          },
+          "msttr50_aw": {
+            "custom": 0.652,
+            "reference": 0.656,
+            "difference": -0.0040000000000000036,
+            "absolute_error": 0.0040000000000000036,
+            "absolute_percent_error": 0.6097560975609762
+          },
+          "hdd42_aw": {
+            "custom": 0.7572751107332011,
+            "reference": 0.7556833706158196,
+            "difference": 0.0015917401173815016,
+            "absolute_error": 0.0015917401173815016,
+            "absolute_percent_error": 0.2106358534903798
+          },
+          "mtld_original_aw": {
+            "custom": 30.272739056657134,
+            "reference": 28.02862272919307,
+            "difference": 2.244116327464063,
+            "absolute_error": 2.244116327464063,
+            "absolute_percent_error": 8.00651658537155
+          },
+          "mtld_mean_factor_length_aw": {
+            "custom": 30.347058823529412,
+            "reference": 27.58111111111111,
+            "difference": 2.7659477124183027,
+            "absolute_error": 2.7659477124183027,
+            "absolute_percent_error": 10.028412928237813
+          }
+        },
+        "taaled_same_tokens_checks": {
+          "basic_ntokens": {
+            "custom": 251,
+            "taaled": 251,
+            "absolute_error": 0
+          },
+          "basic_ntypes": {
+            "custom": 115,
+            "taaled": 115,
+            "absolute_error": 0
+          },
+          "simple_ttr_aw": {
+            "custom": 0.4581673306772908,
+            "taaled": 0.4581673306772908,
+            "absolute_error": 0.0
+          },
+          "mattr50_aw": {
+            "custom": 0.6643564356435644,
+            "taaled": 0.6643564356435644,
+            "absolute_error": 0.0
+          }
+        },
+        "policy": "Case-folded filler-excluded surface text for CLAN/custom. TAALED same-token checks isolate calculators; normalized checks include differences between the two preprocessing implementations.",
+        "official_outputs": {
+          "mlu": {
+            "command": "mlu +t*PAR -t%mor",
+            "output_sha256": "3ad3c99780abbb4904ce3e5a3f8c68ef6c266b4983c74c6923f6c7ea3f88f29c",
+            "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_t_mioh5h/sample.cha\nWed Oct 14 14:47:57 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_t_mioh5h/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 61, words = 244\n\tRatio of words over utterances = 4.000\n\tStandard deviation = 3.110\n\n",
+            "utterances": 61.0,
+            "total": 244.0,
+            "mlu": 4.0
+          },
+          "freq": {
+            "command": "freq +t*PAR -t%mor +k +b50",
+            "output_sha256": "8016770f6cd16981ce05744a8b37e756a9fb98051efe2d6a0ff5daef6c7dcdb4",
+            "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_egsklizu/sample.cha\nWed Oct 14 14:47:57 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_egsklizu/sample.cha>\nSpeaker: *PAR:\n 15 a\n  1 ah\n  1 all\n  6 and\n  1 animal\n  1 any\n  1 are\n  1 at\n  1 bathtub\n  1 be\n  2 bear\n  2 bears\n  1 because\n  1 big\n  3 bird\n  2 boat\n  1 box\n  1 boy\n  1 bread\n  1 builded\n  1 bunnies\n  1 but\n  1 can\n  3 can't\n  2 cause\n  1 chicken's\n  1 chickens\n  2 cup\n  1 daddy's\n  1 dead\n  2 do\n  1 dog\n  1 doing\n  3 don't\n  1 drop\n  1 ducky\n  1 earth\n  4 eat\n  1 eated\n  1 eats\n  1 elephants\n  1 every\n  1 favorite\n  1 fly\n  1 free\n  2 frog\n  1 giant\n  3 giraffe\n  1 giraffes\n  1 girl\n  1 goat\n  1 going\n  1 green\n  6 he\n  3 he's\n  1 him\n  2 his\n  3 house\n  5 i\n  1 ih\n  7 in\n  7 is\n  1 it\n  1 it's\n  1 jumped\n  1 just\n  1 king\n  4 know\n  1 lady's\n  2 lettuce\n  1 little\n  2 make\n  1 mayonnaise\n  1 mean\n  1 mommy's\n  1 moon\n  1 more\n  1 mouth\n  3 my\n  1 names\n  7 no\n  2 of\n  1 on\n  7 one\n  1 or\n  1 out\n  1 outer\n  1 planet\n  3 planets\n  1 play\n  1 potatoes\n  1 rocketship\n  1 rubber\n  1 running\n  2 sandwich\n  1 saturn\n  1 school\n  1 see\n  1 she\n  1 shoe\n  1 small\n  1 so\n  1 space\n  1 ss\n  1 star's\n  1 stars\n  1 student\n  2 tell\n 18 the\n  1 them\n  2 then\n  1 there\n  2 think\n  3 to\n  1 tomato\n  1 tomatoes\n  1 trying\n  1 two\n  1 violins\n  1 wammy\n  1 was\n  3 we\n  2 what\n  2 with\n  5 yeah\n  2 yes\n  1 you\n------------------------------\n  127  Total number of different item types used\n  244  Total number of items (tokens)\n0.520  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.714  MATTR\n\n",
+            "NDW": 127.0,
+            "TNW": 244.0,
+            "TTR": 0.52,
+            "MATTR": 0.714
+          }
+        }
+      }
+    },
+    {
+      "corpus": "nyu_emerson",
+      "participant": "nyu_emerson/2006",
+      "recording": "transcripts/2006.cha#section2",
+      "source_sha256": "be087637bf838c5493d98a43837687a8a92a2291fab401b0875a1fc299ba913b",
+      "checks": {
+        "surface_calculator_checks": {
+          "TNW": {
+            "custom": 268,
+            "clan": 268.0,
+            "absolute_error": 0.0
+          },
+          "NDW": {
+            "custom": 129,
+            "clan": 129.0,
+            "absolute_error": 0.0
+          },
+          "TTR": {
+            "custom": 0.48134328358208955,
+            "clan": 0.481,
+            "absolute_error": 0.00034328358208957077
+          },
+          "MATTR": {
+            "custom": 0.6954337899543379,
+            "clan": 0.695,
+            "absolute_error": 0.00043378995433795975
+          },
+          "MLUw": {
+            "custom": 3.0454545454545454,
+            "clan": 3.045,
+            "absolute_error": 0.00045454545454548523
+          }
+        },
+        "taaled_normalized_checks": {
+          "basic_ntokens": {
+            "custom": 282,
+            "reference": 283,
+            "difference": -1,
+            "absolute_error": 1,
+            "absolute_percent_error": 0.35335689045936397
+          },
+          "basic_ntypes": {
+            "custom": 125,
+            "reference": 126,
+            "difference": -1,
+            "absolute_error": 1,
+            "absolute_percent_error": 0.7936507936507936
+          },
+          "basic_ncontent_tokens": {
+            "custom": 102,
+            "reference": 103,
+            "difference": -1,
+            "absolute_error": 1,
+            "absolute_percent_error": 0.970873786407767
+          },
+          "basic_ncontent_types": {
+            "custom": 72,
+            "reference": 73,
+            "difference": -1,
+            "absolute_error": 1,
+            "absolute_percent_error": 1.36986301369863
+          },
+          "basic_nfunction_tokens": {
+            "custom": 180,
+            "reference": 180,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_nfunction_types": {
+            "custom": 53,
+            "reference": 53,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "lexical_density_tokens": {
+            "custom": 0.3617021276595745,
+            "reference": 0.36395759717314485,
+            "difference": -0.002255469513570363,
+            "absolute_error": 0.002255469513570363,
+            "absolute_percent_error": 0.619706672175158
+          },
+          "lexical_density_types": {
+            "custom": 0.576,
+            "reference": 0.5793650793650794,
+            "difference": -0.0033650793650794597,
+            "absolute_error": 0.0033650793650794597,
+            "absolute_percent_error": 0.5808219178082354
+          },
+          "simple_ttr_aw": {
+            "custom": 0.4432624113475177,
+            "reference": 0.4452296819787986,
+            "difference": -0.001967270631280882,
+            "absolute_error": 0.001967270631280882,
+            "absolute_percent_error": 0.44185522908927743
+          },
+          "root_ttr_aw": {
+            "custom": 7.443641677192671,
+            "reference": 7.489922558299827,
+            "difference": -0.04628088110715556,
+            "absolute_error": 0.04628088110715556,
+            "absolute_percent_error": 0.6179086732461634
+          },
+          "log_ttr_aw": {
+            "custom": 0.8557946234480371,
+            "reference": 0.8566694532137826,
+            "difference": -0.0008748297657454884,
+            "absolute_error": 0.0008748297657454884,
+            "absolute_percent_error": 0.10211987394479606
+          },
+          "maas_ttr_aw": {
+            "custom": 0.058853353343682725,
+            "reference": 0.05845963771945231,
+            "difference": 0.00039371562423041323,
+            "absolute_error": 0.00039371562423041323,
+            "absolute_percent_error": 0.6734828329245791
+          },
+          "mattr50_aw": {
+            "custom": 0.6858369098712447,
+            "reference": 0.686923076923077,
+            "difference": -0.0010861670518322875,
+            "absolute_error": 0.0010861670518322875,
+            "absolute_percent_error": 0.1581206234470295
+          },
+          "msttr50_aw": {
+            "custom": 0.6880000000000001,
+            "reference": 0.6880000000000001,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "hdd42_aw": {
+            "custom": 0.7787901126342265,
+            "reference": 0.7801111189855965,
+            "difference": -0.001321006351370002,
+            "absolute_error": 0.001321006351370002,
+            "absolute_percent_error": 0.169335665038046
+          },
+          "mtld_original_aw": {
+            "custom": 33.43833552435206,
+            "reference": 33.602668874037995,
+            "difference": -0.16433334968593272,
+            "absolute_error": 0.16433334968593272,
+            "absolute_percent_error": 0.4890485047540361
+          },
+          "mtld_mean_factor_length_aw": {
+            "custom": 33.30971342383107,
+            "reference": 33.48889894419307,
+            "difference": -0.17918552036199742,
+            "absolute_error": 0.17918552036199742,
+            "absolute_percent_error": 0.5350594555545038
+          }
+        },
+        "taaled_same_tokens_checks": {
+          "basic_ntokens": {
+            "custom": 282,
+            "taaled": 282,
+            "absolute_error": 0
+          },
+          "basic_ntypes": {
+            "custom": 125,
+            "taaled": 125,
+            "absolute_error": 0
+          },
+          "simple_ttr_aw": {
+            "custom": 0.4432624113475177,
+            "taaled": 0.4432624113475177,
+            "absolute_error": 0.0
+          },
+          "mattr50_aw": {
+            "custom": 0.6858369098712447,
+            "taaled": 0.6858369098712447,
+            "absolute_error": 0.0
+          }
+        },
+        "policy": "Case-folded filler-excluded surface text for CLAN/custom. TAALED same-token checks isolate calculators; normalized checks include differences between the two preprocessing implementations.",
+        "official_outputs": {
+          "mlu": {
+            "command": "mlu +t*PAR -t%mor",
+            "output_sha256": "498f4f5908ca87cd7c23ae4f01179b192b381398ee42116f2ec7f5527b1f3a0c",
+            "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_04e1xgtu/sample.cha\nWed Oct 14 14:47:57 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_04e1xgtu/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 88, words = 268\n\tRatio of words over utterances = 3.045\n\tStandard deviation = 2.848\n\n",
+            "utterances": 88.0,
+            "total": 268.0,
+            "mlu": 3.045
+          },
+          "freq": {
+            "command": "freq +t*PAR -t%mor +k +b50",
+            "output_sha256": "1f100daa22df62072b96666a0afac5e26ab40e63de8afd69415cde3e79da7e8d",
+            "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_qzhtcp12/sample.cha\nWed Oct 14 14:47:57 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_qzhtcp12/sample.cha>\nSpeaker: *PAR:\n  8 a\n 13 and\n  1 are\n  1 around\n  1 attach\n  1 ay\n  1 bad\n  1 be\n  1 big\n  1 boss\n  1 but\n  1 can\n  1 car\n  1 clock\n  1 comes\n  1 could\n  1 course\n  1 crane\n  1 did\n  1 do\n  3 don't\n  1 fast\n  1 fighted\n  1 firstname\n  3 friend\n  1 friendly\n  4 from\n  1 gasps\n  1 gavin\n  1 giant\n  1 go\n  1 go-kart\n  1 god\n  3 godzilla\n  1 godzilla's\n  1 guys\n  1 h\n  1 have\n  6 he\n  4 he's\n  1 head\n  1 heard\n  1 help\n  1 helps\n  1 here\n  1 him\n  1 hums\n 10 i\n  1 i'll\n  2 in\n  7 is\n  2 it\n  2 it's\n  1 j\n  4 just\n  1 know\n  2 ladder\n  3 laughs\n  1 light\n  2 like\n  7 look\n  1 lots\n  4 m\n  1 making\n  1 man\n  3 maybe\n  1 me\n  1 mine\n  6 my\n  4 no\n  1 noise\n  1 not\n  2 of\n  1 off\n  2 okay\n  1 on\n  1 one\n  2 over\n  1 ow\n  1 pac\n  3 protect\n  1 race\n  1 racetrack\n  1 ready\n  2 red\n  1 save\n  2 scary\n  1 set\n  1 siren\n  1 so\n  1 spikes\n  1 supposed\n  1 switch\n  3 t\n  8 that\n  1 that's\n  4 the\n  1 them\n  4 there\n  3 there's\n  1 these\n  1 they\n  1 thi\n  1 things\n  1 thirteen\n  1 this\n  1 tiny\n  1 to\n  1 tow\n  2 toys\n  1 truck\n  2 up\n  2 v\n  3 video\n  1 violence\n  3 vocalizes\n  1 vs\n  1 wait\n  1 wanna\n  1 was\n  1 watched\n  4 well\n  2 what\n  1 will\n  4 with\n  3 worry\n  2 wow\n 15 yeah\n  5 you\n------------------------------\n  129  Total number of different item types used\n  268  Total number of items (tokens)\n0.481  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.695  MATTR\n\n",
+            "NDW": 129.0,
+            "TNW": 268.0,
+            "TTR": 0.481,
+            "MATTR": 0.695
+          }
+        }
+      }
+    },
+    {
+      "corpus": "nyu_emerson",
+      "participant": "nyu_emerson/2006",
+      "recording": "transcripts/2006.cha#section3",
+      "source_sha256": "be087637bf838c5493d98a43837687a8a92a2291fab401b0875a1fc299ba913b",
+      "checks": {
+        "surface_calculator_checks": {
+          "TNW": {
+            "custom": 102,
+            "clan": 102.0,
+            "absolute_error": 0.0
+          },
+          "NDW": {
+            "custom": 56,
+            "clan": 56.0,
+            "absolute_error": 0.0
+          },
+          "TTR": {
+            "custom": 0.5490196078431373,
+            "clan": 0.549,
+            "absolute_error": 1.9607843137259273e-05
+          },
+          "MATTR": {
+            "custom": 0.629811320754717,
+            "clan": 0.63,
+            "absolute_error": 0.00018867924528298552
+          },
+          "MLUw": {
+            "custom": 4.857142857142857,
+            "clan": 4.857,
+            "absolute_error": 0.00014285714285655615
+          }
+        },
+        "taaled_normalized_checks": {
+          "basic_ntokens": {
+            "custom": 98,
+            "reference": 101,
+            "difference": -3,
+            "absolute_error": 3,
+            "absolute_percent_error": 2.9702970297029703
+          },
+          "basic_ntypes": {
+            "custom": 51,
+            "reference": 53,
+            "difference": -2,
+            "absolute_error": 2,
+            "absolute_percent_error": 3.7735849056603774
+          },
+          "basic_ncontent_tokens": {
+            "custom": 37,
+            "reference": 40,
+            "difference": -3,
+            "absolute_error": 3,
+            "absolute_percent_error": 7.5
+          },
+          "basic_ncontent_types": {
+            "custom": 26,
+            "reference": 28,
+            "difference": -2,
+            "absolute_error": 2,
+            "absolute_percent_error": 7.142857142857143
+          },
+          "basic_nfunction_tokens": {
+            "custom": 61,
+            "reference": 61,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_nfunction_types": {
+            "custom": 25,
+            "reference": 25,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "lexical_density_tokens": {
+            "custom": 0.37755102040816324,
+            "reference": 0.39603960396039606,
+            "difference": -0.018488583552232818,
+            "absolute_error": 0.018488583552232818,
+            "absolute_percent_error": 4.668367346938786
+          },
+          "lexical_density_types": {
+            "custom": 0.5098039215686274,
+            "reference": 0.5283018867924528,
+            "difference": -0.018497965223825408,
+            "absolute_error": 0.018497965223825408,
+            "absolute_percent_error": 3.501400560224095
+          },
+          "simple_ttr_aw": {
+            "custom": 0.5204081632653061,
+            "reference": 0.5247524752475248,
+            "difference": -0.004344311982218629,
+            "absolute_error": 0.004344311982218629,
+            "absolute_percent_error": 0.8278783211397766
+          },
+          "root_ttr_aw": {
+            "custom": 5.151777977216275,
+            "reference": 5.273697108112943,
+            "difference": -0.12191913089666784,
+            "absolute_error": 0.12191913089666784,
+            "absolute_percent_error": 2.3118341534842806
+          },
+          "log_ttr_aw": {
+            "custom": 0.8575471147865966,
+            "reference": 0.8602791409376932,
+            "difference": -0.002732026151096578,
+            "absolute_error": 0.002732026151096578,
+            "absolute_percent_error": 0.3175743803480699
+          },
+          "maas_ttr_aw": {
+            "custom": null,
+            "reference": 0.06970980846181343,
+            "difference": null,
+            "absolute_error": null,
+            "absolute_percent_error": null
+          },
+          "mattr50_aw": {
+            "custom": 0.5848979591836735,
+            "reference": 0.5907692307692308,
+            "difference": -0.005871271585557336,
+            "absolute_error": 0.005871271585557336,
+            "absolute_percent_error": 0.9938350340136115
+          },
+          "msttr50_aw": {
+            "custom": 0.62,
+            "reference": 0.62,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "hdd42_aw": {
+            "custom": 0.7184812714793101,
+            "reference": 0.7287138565529183,
+            "difference": -0.010232585073608247,
+            "absolute_error": 0.010232585073608247,
+            "absolute_percent_error": 1.40419795528688
+          },
+          "mtld_original_aw": {
+            "custom": 25.273669500882043,
+            "reference": 26.208347847869398,
+            "difference": -0.9346783469873543,
+            "absolute_error": 0.9346783469873543,
+            "absolute_percent_error": 3.5663382995862474
+          },
+          "mtld_mean_factor_length_aw": {
+            "custom": 24.959,
+            "reference": 25.991,
+            "difference": -1.032,
+            "absolute_error": 1.032,
+            "absolute_percent_error": 3.9706052094955946
+          }
+        },
+        "taaled_same_tokens_checks": {
+          "basic_ntokens": {
+            "custom": 98,
+            "taaled": 98,
+            "absolute_error": 0
+          },
+          "basic_ntypes": {
+            "custom": 51,
+            "taaled": 51,
+            "absolute_error": 0
+          },
+          "simple_ttr_aw": {
+            "custom": 0.5204081632653061,
+            "taaled": 0.5204081632653061,
+            "absolute_error": 0.0
+          },
+          "mattr50_aw": {
+            "custom": 0.5848979591836735,
+            "taaled": 0.5848979591836735,
+            "absolute_error": 0.0
+          }
+        },
+        "policy": "Case-folded filler-excluded surface text for CLAN/custom. TAALED same-token checks isolate calculators; normalized checks include differences between the two preprocessing implementations.",
+        "official_outputs": {
+          "mlu": {
+            "command": "mlu +t*PAR -t%mor",
+            "output_sha256": "3d08704310ba24245f1ef852d237e09c64eb1143207effb48dbd4c5ea69f5908",
+            "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_cavu94q4/sample.cha\nWed Oct 14 14:47:58 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_cavu94q4/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 21, words = 102\n\tRatio of words over utterances = 4.857\n\tStandard deviation = 3.642\n\n",
+            "utterances": 21.0,
+            "total": 102.0,
+            "mlu": 4.857
+          },
+          "freq": {
+            "command": "freq +t*PAR -t%mor +k +b50",
+            "output_sha256": "fc9cf9a22e8464b66face28c7c5560880344863be13e6a6f467c3ac1d0a3fd0b",
+            "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_sc4_tr1l/sample.cha\nWed Oct 14 14:47:58 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_sc4_tr1l/sample.cha>\nSpeaker: *PAR:\n  1 a\n  2 alright\n  2 and\n  1 back\n  1 bad\n  4 be\n  1 cage\n  5 can\n  2 cat\n  2 could\n  2 find\n  1 firstname's\n  1 for\n  1 gasps\n  1 get\n  1 going\n  2 have\n  1 his\n  1 hold\n  4 i\n  1 i'll\n  3 it\n  1 it's\n  2 just\n  1 leave\n  2 mom\n  1 mommy\n  2 need\n  1 off\n  3 okay\n  6 one\n  2 out\n  2 pet\n  1 pets\n  1 second\n  1 sick\n  1 stick\n  1 sticks\n  1 take\n  5 that\n  6 the\n  2 they\n  1 they're\n  1 thing\n  1 think\n  2 this\n  2 to\n  2 tongue\n  1 toys\n  1 two\n  1 w\n  3 wait\n  1 want\n  1 what\n  1 woo\n  2 you\n------------------------------\n   56  Total number of different item types used\n  102  Total number of items (tokens)\n0.549  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.630  MATTR\n\n",
+            "NDW": 56.0,
+            "TNW": 102.0,
+            "TTR": 0.549,
+            "MATTR": 0.63
+          }
+        }
+      }
+    },
+    {
+      "corpus": "nyu_emerson",
+      "participant": "nyu_emerson/2006",
+      "recording": "transcripts/2006.cha#section4",
+      "source_sha256": "be087637bf838c5493d98a43837687a8a92a2291fab401b0875a1fc299ba913b",
+      "checks": {
+        "surface_calculator_checks": {
+          "TNW": {
+            "custom": 65,
+            "clan": 65.0,
+            "absolute_error": 0.0
+          },
+          "NDW": {
+            "custom": 49,
+            "clan": 49.0,
+            "absolute_error": 0.0
+          },
+          "TTR": {
+            "custom": 0.7538461538461538,
+            "clan": 0.754,
+            "absolute_error": 0.00015384615384617106
+          },
+          "MATTR": {
+            "custom": 0.7875,
+            "clan": 0.788,
+            "absolute_error": 0.000500000000000056
+          },
+          "MLUw": {
+            "custom": 3.4210526315789473,
+            "clan": 3.421,
+            "absolute_error": 5.2631578947526236e-05
+          }
+        },
+        "taaled_normalized_checks": {
+          "basic_ntokens": {
+            "custom": 69,
+            "reference": 69,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_ntypes": {
+            "custom": 48,
+            "reference": 48,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_ncontent_tokens": {
+            "custom": 27,
+            "reference": 27,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_ncontent_types": {
+            "custom": 25,
+            "reference": 25,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_nfunction_tokens": {
+            "custom": 42,
+            "reference": 42,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "basic_nfunction_types": {
+            "custom": 23,
+            "reference": 23,
+            "difference": 0,
+            "absolute_error": 0,
+            "absolute_percent_error": 0.0
+          },
+          "lexical_density_tokens": {
+            "custom": 0.391304347826087,
+            "reference": 0.391304347826087,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "lexical_density_types": {
+            "custom": 0.5208333333333334,
+            "reference": 0.5208333333333334,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "simple_ttr_aw": {
+            "custom": 0.6956521739130435,
+            "reference": 0.6956521739130435,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "root_ttr_aw": {
+            "custom": 5.778520948116921,
+            "reference": 5.778520948116921,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "log_ttr_aw": {
+            "custom": 0.9142899468175075,
+            "reference": 0.9142899468175075,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "maas_ttr_aw": {
+            "custom": null,
+            "reference": null,
+            "difference": null,
+            "absolute_error": null,
+            "absolute_percent_error": null
+          },
+          "mattr50_aw": {
+            "custom": 0.766,
+            "reference": 0.766,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "msttr50_aw": {
+            "custom": 0.82,
+            "reference": 0.82,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "hdd42_aw": {
+            "custom": 0.7841633497242915,
+            "reference": 0.7841633497242915,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "mtld_original_aw": {
+            "custom": 60.82464454976303,
+            "reference": 60.82464454976303,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          },
+          "mtld_mean_factor_length_aw": {
+            "custom": 61.35333333333332,
+            "reference": 61.35333333333332,
+            "difference": 0.0,
+            "absolute_error": 0.0,
+            "absolute_percent_error": 0.0
+          }
+        },
+        "taaled_same_tokens_checks": {
+          "basic_ntokens": {
+            "custom": 69,
+            "taaled": 69,
+            "absolute_error": 0
+          },
+          "basic_ntypes": {
+            "custom": 48,
+            "taaled": 48,
+            "absolute_error": 0
+          },
+          "simple_ttr_aw": {
+            "custom": 0.6956521739130435,
+            "taaled": 0.6956521739130435,
+            "absolute_error": 0.0
+          },
+          "mattr50_aw": {
+            "custom": 0.766,
+            "taaled": 0.766,
+            "absolute_error": 0.0
+          }
+        },
+        "policy": "Case-folded filler-excluded surface text for CLAN/custom. TAALED same-token checks isolate calculators; normalized checks include differences between the two preprocessing implementations.",
+        "official_outputs": {
+          "mlu": {
+            "command": "mlu +t*PAR -t%mor",
+            "output_sha256": "140e0607d7b95bf637e29f7afe5148166e8cf2f989270a58165c5dda9b4995a8",
+            "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_w4_z1t20/sample.cha\nWed Oct 14 14:47:58 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_w4_z1t20/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 19, words = 65\n\tRatio of words over utterances = 3.421\n\tStandard deviation = 2.662\n\n",
+            "utterances": 19.0,
+            "total": 65.0,
+            "mlu": 3.421
+          },
+          "freq": {
+            "command": "freq +t*PAR -t%mor +k +b50",
+            "output_sha256": "31181e43bac61fa0d89c507972fceff4337da026ea93f3fd5a1139ac1e83e169",
+            "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_dg2tvtog/sample.cha\nWed Oct 14 14:47:58 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_dg2tvtog/sample.cha>\nSpeaker: *PAR:\n  3 a\n  1 always\n  1 be\n  1 bed\n  1 can\n  1 cat\n  1 clock\n  1 don't\n  1 food\n  1 going\n  1 got\n  1 great\n  1 guy\n  1 have\n  1 he\n  1 here\n  4 i\n  1 idea\n  1 it\n  2 it's\n  1 know\n  2 laughs\n  1 look\n  2 maybe\n  1 mom\n  1 mommy\n  1 no\n  1 not\n  2 of\n  2 on\n  1 out\n  1 part\n  1 piece\n  2 put\n  1 right\n  1 see\n  1 sticks\n  1 talk\n  1 tape\n  1 that\n  1 that's\n  4 the\n  2 this\n  1 tongue\n  1 tray\n  1 vocalizes\n  1 we\n  1 with\n  2 yeah\n------------------------------\n   49  Total number of different item types used\n   65  Total number of items (tokens)\n0.754  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.788  MATTR\n\n",
+            "NDW": 49.0,
+            "TNW": 65.0,
+            "TTR": 0.754,
+            "MATTR": 0.788
+          }
+        }
+      }
+    }
+  ]
+}

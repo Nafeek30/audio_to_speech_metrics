@@ -1,0 +1,330 @@
+{
+  "primary_rater": "Nafee",
+  "primary_source": "outputs/manual_utterances/all_nafee_utterances.xlsx",
+  "primary_source_sha256": "f63474d45d346598e5528ebbf7fd196f086eb2824aae7e650fbfe973879ad9e2",
+  "participants": [
+    {
+      "patient_id": "P1",
+      "n_recordings": 2,
+      "worksheet_auto_rows": 97,
+      "manual_total": 111,
+      "pipeline_total": 96,
+      "manual_eligible": 111,
+      "pipeline_eligible": 96,
+      "manual_mlu": 11.27027027027027,
+      "pipeline_mlu": 13.03125,
+      "manual_sd": 6.630459261396911,
+      "pipeline_sd": 13.722285041888371,
+      "sd_ape": 106.9582890250252
+    },
+    {
+      "patient_id": "P2",
+      "n_recordings": 1,
+      "worksheet_auto_rows": 121,
+      "manual_total": 136,
+      "pipeline_total": 119,
+      "manual_eligible": 135,
+      "pipeline_eligible": 119,
+      "manual_mlu": 8.718518518518518,
+      "pipeline_mlu": 9.890756302521009,
+      "manual_sd": 5.724090549600647,
+      "pipeline_sd": 6.3216181259648625,
+      "sd_ape": 10.43882117493587
+    },
+    {
+      "patient_id": "P3",
+      "n_recordings": 1,
+      "worksheet_auto_rows": 115,
+      "manual_total": 107,
+      "pipeline_total": 116,
+      "manual_eligible": 106,
+      "pipeline_eligible": 115,
+      "manual_mlu": 10.00943396226415,
+      "pipeline_mlu": 9.226086956521739,
+      "manual_sd": 8.045267310331933,
+      "pipeline_sd": 6.398452081239401,
+      "sd_ape": 20.469366219536937
+    },
+    {
+      "patient_id": "P4",
+      "n_recordings": 1,
+      "worksheet_auto_rows": 108,
+      "manual_total": 113,
+      "pipeline_total": 109,
+      "manual_eligible": 91,
+      "pipeline_eligible": 87,
+      "manual_mlu": 4.263736263736264,
+      "pipeline_mlu": 4.459770114942529,
+      "manual_sd": 3.865414879955248,
+      "pipeline_sd": 4.370235264718816,
+      "sd_ape": 13.059927600046189
+    },
+    {
+      "patient_id": "P5",
+      "n_recordings": 2,
+      "worksheet_auto_rows": 110,
+      "manual_total": 119,
+      "pipeline_total": 109,
+      "manual_eligible": 119,
+      "pipeline_eligible": 109,
+      "manual_mlu": 5.5966386554621845,
+      "pipeline_mlu": 6.110091743119266,
+      "manual_sd": 4.651410426253927,
+      "pipeline_sd": 5.850334342427679,
+      "sd_ape": 25.775491868158397
+    },
+    {
+      "patient_id": "P6",
+      "n_recordings": 2,
+      "worksheet_auto_rows": 121,
+      "manual_total": 122,
+      "pipeline_total": 121,
+      "manual_eligible": 119,
+      "pipeline_eligible": 118,
+      "manual_mlu": 5.226890756302521,
+      "pipeline_mlu": 5.271186440677966,
+      "manual_sd": 3.7872785173390335,
+      "pipeline_sd": 3.7521993933257027,
+      "sd_ape": 0.9262356558338788
+    },
+    {
+      "patient_id": "P7",
+      "n_recordings": 1,
+      "worksheet_auto_rows": 123,
+      "manual_total": 121,
+      "pipeline_total": 123,
+      "manual_eligible": 115,
+      "pipeline_eligible": 117,
+      "manual_mlu": 2.973913043478261,
+      "pipeline_mlu": 2.923076923076923,
+      "manual_sd": 2.1687939728767205,
+      "pipeline_sd": 2.1961654467039855,
+      "sd_ape": 1.2620596594041196
+    },
+    {
+      "patient_id": "P8",
+      "n_recordings": 1,
+      "worksheet_auto_rows": 106,
+      "manual_total": 112,
+      "pipeline_total": 105,
+      "manual_eligible": 110,
+      "pipeline_eligible": 103,
+      "manual_mlu": 7.945454545454545,
+      "pipeline_mlu": 8.485436893203884,
+      "manual_sd": 6.058557229446573,
+      "pipeline_sd": 8.423112075838361,
+      "sd_ape": 39.02834877748248
+    },
+    {
+      "patient_id": "P9",
+      "n_recordings": 1,
+      "worksheet_auto_rows": 102,
+      "manual_total": 95,
+      "pipeline_total": 101,
+      "manual_eligible": 94,
+      "pipeline_eligible": 100,
+      "manual_mlu": 13.74468085106383,
+      "pipeline_mlu": 12.92,
+      "manual_sd": 9.62149208826401,
+      "pipeline_sd": 7.138179039503002,
+      "sd_ape": 25.810061744893744
+    },
+    {
+      "patient_id": "P10",
+      "n_recordings": 2,
+      "worksheet_auto_rows": 117,
+      "manual_total": 111,
+      "pipeline_total": 118,
+      "manual_eligible": 111,
+      "pipeline_eligible": 118,
+      "manual_mlu": 5.171171171171171,
+      "pipeline_mlu": 4.864406779661017,
+      "manual_sd": 4.531916592097372,
+      "pipeline_sd": 4.522852059241441,
+      "sd_ape": 0.20001543876021302
+    }
+  ],
+  "n_recordings": 14,
+  "manual_utterances": 1147,
+  "pipeline_utterances": 1117,
+  "worksheet_auto_rows": 1120,
+  "aggregation": "Combine each participant's sampled utterances without merging boundaries across recordings.",
+  "summary": [
+    {
+      "method": "Previous",
+      "metric": "basic_ntokens",
+      "n_participants": 10,
+      "pipeline_mean": 861.8,
+      "reference_mean": 861.8,
+      "mape": 0.0
+    },
+    {
+      "method": "Previous",
+      "metric": "basic_ntypes",
+      "n_participants": 10,
+      "pipeline_mean": 264,
+      "reference_mean": 263.7,
+      "mape": 0.19576399785472212
+    },
+    {
+      "method": "Previous",
+      "metric": "basic_ncontent_tokens",
+      "n_participants": 10,
+      "pipeline_mean": 333.4,
+      "reference_mean": 332.7,
+      "mape": 0.4178586534700176
+    },
+    {
+      "method": "Previous",
+      "metric": "basic_ncontent_types",
+      "n_participants": 10,
+      "pipeline_mean": 173.2,
+      "reference_mean": 173.5,
+      "mape": 0.3359569865837433
+    },
+    {
+      "method": "Previous",
+      "metric": "basic_nfunction_tokens",
+      "n_participants": 10,
+      "pipeline_mean": 528.4,
+      "reference_mean": 529.1,
+      "mape": 0.2597543151921377
+    },
+    {
+      "method": "Previous",
+      "metric": "basic_nfunction_types",
+      "n_participants": 10,
+      "pipeline_mean": 90.8,
+      "reference_mean": 90.2,
+      "mape": 0.9609384015190985
+    },
+    {
+      "method": "Previous",
+      "metric": "simple_ttr_aw",
+      "n_participants": 10,
+      "pipeline_mean": 0.31934930721338955,
+      "reference_mean": 0.318853765328559,
+      "mape": 0.19576399785472345
+    },
+    {
+      "method": "Previous",
+      "metric": "mattr50_aw",
+      "n_participants": 10,
+      "pipeline_mean": 0.6973146148186319,
+      "reference_mean": 0.6965723259639801,
+      "mape": 0.13056093746269856
+    },
+    {
+      "method": "Previous",
+      "metric": "total_utterances",
+      "n_participants": 10,
+      "pipeline_mean": 103.1,
+      "reference_mean": 114.7,
+      "mape": 11.170054206520684
+    },
+    {
+      "method": "Previous",
+      "metric": "mlu_words",
+      "n_participants": 10,
+      "pipeline_mean": 8.552889236524923,
+      "reference_mean": 7.4920708037721715,
+      "mape": 13.990006124651392
+    },
+    {
+      "method": "Previous",
+      "metric": "mlu_words_sd",
+      "n_participants": 10,
+      "pipeline_mean": 7.033890482193743,
+      "reference_mean": 5.508468082756237,
+      "mape": 36.030963347551875
+    },
+    {
+      "method": "Revised",
+      "metric": "basic_ntokens",
+      "n_participants": 10,
+      "pipeline_mean": 861.8,
+      "reference_mean": 861.8,
+      "mape": 0.0
+    },
+    {
+      "method": "Revised",
+      "metric": "basic_ntypes",
+      "n_participants": 10,
+      "pipeline_mean": 263.8,
+      "reference_mean": 263.7,
+      "mape": 0.2931282990406794
+    },
+    {
+      "method": "Revised",
+      "metric": "basic_ncontent_tokens",
+      "n_participants": 10,
+      "pipeline_mean": 333.2,
+      "reference_mean": 332.7,
+      "mape": 0.3672513660206249
+    },
+    {
+      "method": "Revised",
+      "metric": "basic_ncontent_types",
+      "n_participants": 10,
+      "pipeline_mean": 173,
+      "reference_mean": 173.5,
+      "mape": 0.4480097172805418
+    },
+    {
+      "method": "Revised",
+      "metric": "basic_nfunction_tokens",
+      "n_participants": 10,
+      "pipeline_mean": 528.6,
+      "reference_mean": 529.1,
+      "mape": 0.23087399979820655
+    },
+    {
+      "method": "Revised",
+      "metric": "basic_nfunction_types",
+      "n_participants": 10,
+      "pipeline_mean": 90.8,
+      "reference_mean": 90.2,
+      "mape": 1.0294198259327263
+    },
+    {
+      "method": "Revised",
+      "metric": "simple_ttr_aw",
+      "n_participants": 10,
+      "pipeline_mean": 0.31929190895817594,
+      "reference_mean": 0.318853765328559,
+      "mape": 0.2931282990406806
+    },
+    {
+      "method": "Revised",
+      "metric": "mattr50_aw",
+      "n_participants": 10,
+      "pipeline_mean": 0.6973292798931573,
+      "reference_mean": 0.6965723259639801,
+      "mape": 0.14854213069187477
+    },
+    {
+      "method": "Revised",
+      "metric": "total_utterances",
+      "n_participants": 10,
+      "pipeline_mean": 111.7,
+      "reference_mean": 114.7,
+      "mape": 6.7712573293293445
+    },
+    {
+      "method": "Revised",
+      "metric": "mlu_words",
+      "n_participants": 10,
+      "pipeline_mean": 7.718206215372433,
+      "reference_mean": 7.4920708037721715,
+      "mape": 7.19536574150183
+    },
+    {
+      "method": "Revised",
+      "metric": "mlu_words_sd",
+      "n_participants": 10,
+      "pipeline_mean": 6.269543287085162,
+      "reference_mean": 5.508468082756237,
+      "mape": 24.3928617164077
+    }
+  ]
+}

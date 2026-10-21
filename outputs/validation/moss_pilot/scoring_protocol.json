@@ -1,0 +1,9 @@
+{
+  "registered_utc": "2026-10-15T21:28:14.412699+00:00",
+  "audio_protocol_sha256": "21e5d3b381930971d8f97d852f0b05da57d85b08387201a4053272237abd8f14",
+  "target_mapping": "Evaluation-only oracle: minimum total per-speaker word edit assignment, one-to-one over all reference and predicted speakers, dummy speakers permitted. Map CHI using this assignment. Report explicitly as oracle mapping, not validated automatic patient identification.",
+  "wer": "Compute casefolded surface-word Levenshtein rates with fillers/repetitions retained only if reference has no xxx/yyy/www. If placeholders present, ordinary WER is unavailable and token edit rate is descriptive only. Never relabel placeholders as actual words.",
+  "downstream": "Compare all metrics of frozen latest MiniLM on oracle-mapped MOSS target words with native original CHI/CLAN task reference. Also raw MOSS source segments as an audio-informed baseline, labeled separate context. No model/threshold/normalizer changes based on this pilot.",
+  "boundaries": "No boundary F1 on mismatched ASR word streams; exact source-word agreement required. Report count/MLUw/SD errors independently of word identity.",
+  "statistics": "One fixed public sample, no population average, CI, human-level or published-score superiority claim. All missing/unscorable results and errors retained."
+}

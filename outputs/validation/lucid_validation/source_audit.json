@@ -1,0 +1,225 @@
+{
+  "purpose": "Check published supplement identity and expose discrepancies. These are source/arithmetic audits, not independent pipeline validation.",
+  "article": "https://doi.org/10.3389/fpsyg.2021.661415",
+  "article_table1_checks": [
+    {
+      "condition": "noBarrier",
+      "article_table1_tokens": 662.78,
+      "supplement_mean_tokens": 662.7833333333333,
+      "absolute_difference": 0.0033333333333303017,
+      "within_0_01_word": true
+    },
+    {
+      "condition": "L2",
+      "article_table1_tokens": 1095.92,
+      "supplement_mean_tokens": 1095.9166666666667,
+      "absolute_difference": 0.0033333333333303017,
+      "within_0_01_word": true
+    },
+    {
+      "condition": "babble",
+      "article_table1_tokens": 756.75,
+      "supplement_mean_tokens": 756.75,
+      "absolute_difference": 0.0,
+      "within_0_01_word": true
+    },
+    {
+      "condition": "vocoder",
+      "article_table1_tokens": 785.21,
+      "supplement_mean_tokens": 785.2166666666667,
+      "absolute_difference": 0.006666666666660603,
+      "within_0_01_word": true
+    }
+  ],
+  "published_TTR_precision_matches": 240,
+  "published_TTR_rows": 240,
+  "largest_token_discrepancies": [
+    {
+      "reference_id": "index167.txt",
+      "speaker": "M17",
+      "condition": "noBarrier",
+      "scene": "farm",
+      "method": "custom",
+      "metric": "basic_ntokens",
+      "reference": 461.0,
+      "predicted": 1298,
+      "signed_error": 837.0,
+      "absolute_error": 837.0,
+      "ape": 181.56182212581345,
+      "within_published_precision": false,
+      "status": "scored",
+      "candidate_files": [
+        "dataset/public/lucid_published/textgrids/noBarrierCondition/noBarrierCondition/LCD_M17M18F4cv1.TextGrid"
+      ]
+    },
+    {
+      "reference_id": "index166.txt",
+      "speaker": "M17",
+      "condition": "noBarrier",
+      "scene": "beach",
+      "method": "custom",
+      "metric": "basic_ntokens",
+      "reference": 500.0,
+      "predicted": 1003,
+      "signed_error": 503.0,
+      "absolute_error": 503.0,
+      "ape": 100.6,
+      "within_published_precision": false,
+      "status": "scored",
+      "candidate_files": [
+        "dataset/public/lucid_published/textgrids/noBarrierCondition/noBarrierCondition/LCD_M17M18B4cv2.TextGrid"
+      ]
+    },
+    {
+      "reference_id": "index162.txt",
+      "speaker": "M13",
+      "condition": "noBarrier",
+      "scene": "shop",
+      "method": "custom",
+      "metric": "basic_ntokens",
+      "reference": 813.0,
+      "predicted": 1609,
+      "signed_error": 796.0,
+      "absolute_error": 796.0,
+      "ape": 97.9089790897909,
+      "within_published_precision": false,
+      "status": "scored",
+      "candidate_files": [
+        "dataset/public/lucid_published/textgrids/noBarrierCondition/noBarrierCondition/LCD_M13M14S2cv1.TextGrid"
+      ]
+    },
+    {
+      "reference_id": "index168.txt",
+      "speaker": "M17",
+      "condition": "noBarrier",
+      "scene": "shop",
+      "method": "custom",
+      "metric": "basic_ntokens",
+      "reference": 463.0,
+      "predicted": 909,
+      "signed_error": 446.0,
+      "absolute_error": 446.0,
+      "ape": 96.32829373650108,
+      "within_published_precision": false,
+      "status": "scored",
+      "candidate_files": [
+        "dataset/public/lucid_published/textgrids/noBarrierCondition/noBarrierCondition/LCD_M17M18S4cv3.TextGrid"
+      ]
+    },
+    {
+      "reference_id": "index158.txt",
+      "speaker": "M11",
+      "condition": "noBarrier",
+      "scene": "farm",
+      "method": "custom",
+      "metric": "basic_ntokens",
+      "reference": 541.0,
+      "predicted": 924,
+      "signed_error": 383.0,
+      "absolute_error": 383.0,
+      "ape": 70.79482439926063,
+      "within_published_precision": false,
+      "status": "scored",
+      "candidate_files": [
+        "dataset/public/lucid_published/textgrids/noBarrierCondition/noBarrierCondition/LCD_M11M12F1cv3.TextGrid"
+      ]
+    },
+    {
+      "reference_id": "index155.txt",
+      "speaker": "M9",
+      "condition": "noBarrier",
+      "scene": "farm",
+      "method": "custom",
+      "metric": "basic_ntokens",
+      "reference": 500.0,
+      "predicted": 813,
+      "signed_error": 313.0,
+      "absolute_error": 313.0,
+      "ape": 62.6,
+      "within_published_precision": false,
+      "status": "scored",
+      "candidate_files": [
+        "dataset/public/lucid_published/textgrids/noBarrierCondition/noBarrierCondition/LCD_M9M10F2cv2.TextGrid"
+      ]
+    },
+    {
+      "reference_id": "index161.txt",
+      "speaker": "M13",
+      "condition": "noBarrier",
+      "scene": "farm",
+      "method": "custom",
+      "metric": "basic_ntokens",
+      "reference": 1168.0,
+      "predicted": 550,
+      "signed_error": -618.0,
+      "absolute_error": 618.0,
+      "ape": 52.91095890410959,
+      "within_published_precision": false,
+      "status": "scored",
+      "candidate_files": [
+        "dataset/public/lucid_published/textgrids/noBarrierCondition/noBarrierCondition/LCD_M13M14F2cv2.TextGrid"
+      ]
+    },
+    {
+      "reference_id": "index180.txt",
+      "speaker": "M41",
+      "condition": "noBarrier",
+      "scene": "shop",
+      "method": "custom",
+      "metric": "basic_ntokens",
+      "reference": 939.0,
+      "predicted": 451,
+      "signed_error": -488.0,
+      "absolute_error": 488.0,
+      "ape": 51.97018104366347,
+      "within_published_precision": false,
+      "status": "scored",
+      "candidate_files": [
+        "dataset/public/lucid_published/textgrids/noBarrierCondition/noBarrierCondition/LCD_M41M42S3cv1.TextGrid"
+      ]
+    },
+    {
+      "reference_id": "index170.txt",
+      "speaker": "M25",
+      "condition": "noBarrier",
+      "scene": "farm",
+      "method": "custom",
+      "metric": "basic_ntokens",
+      "reference": 567.0,
+      "predicted": 826,
+      "signed_error": 259.0,
+      "absolute_error": 259.0,
+      "ape": 45.67901234567901,
+      "within_published_precision": false,
+      "status": "scored",
+      "candidate_files": [
+        "dataset/public/lucid_published/textgrids/noBarrierCondition/noBarrierCondition/LCD_M25M26F3cv3.TextGrid"
+      ]
+    },
+    {
+      "reference_id": "index175.txt",
+      "speaker": "M35",
+      "condition": "noBarrier",
+      "scene": "beach",
+      "method": "custom",
+      "metric": "basic_ntokens",
+      "reference": 572.0,
+      "predicted": 825,
+      "signed_error": 253.0,
+      "absolute_error": 253.0,
+      "ape": 44.23076923076923,
+      "within_published_precision": false,
+      "status": "scored",
+      "candidate_files": [
+        "dataset/public/lucid_published/textgrids/noBarrierCondition/noBarrierCondition/LCD_M35M36B2cv1.TextGrid"
+      ]
+    }
+  ],
+  "exact_token_matches_by_method": {
+    "custom": 0,
+    "taaled_current": 0
+  },
+  "scope": "The metadata join is documented but the original indexN.txt cleaned texts, original source/tier mapping, and historical GUI configuration remain unavailable. Do not infer the cause from errors, remap files to minimize error, or describe these as exact same-input reproduction.",
+  "supplement_listing": "osf_listing.json: only TAALED_results.csv, TAALES_results.csv and LDLS_Analysis.R were present in the public OSF root.",
+  "unchanged_results_sha256": "f6dafc3fee6b5d4fe5256a221e4639b4d76203974495765da8b42f7c542e267e"
+}

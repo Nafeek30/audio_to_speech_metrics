@@ -1,0 +1,6 @@
+System,Domain_Trained_on_ENNI,Seg_Precision,Seg_Recall,Seg_F1,NTU_r,NTU_MAE,NTU_Bias,MLU_r,MLU_MAE,MLU_Bias
+"SaT 3L (Frohmann et al., 2024)",No (Zero-shot),74.2%,47.7%,58.1%,-,-,-,-,-,-
+"Batchalign 0.10.4 (Liu et al., 2023)",No (Zero-shot),84.3%,93.0%,88.4%,-,-,-,-,-,-
+"SATE Pipeline (Hou et al., 2026)",Yes (70% fine-tuned),93.9%,94.3%,94.1%,.92,19.88 utts,+19.64%,.78 (MLUm),1.89 morph,-25.69%
+"Our Pipeline (Paragraph Mode, Zero-Shot)",No (Zero-shot),75.8%,90.7%,82.6%,0.93,21.21 utts,+23.48%,0.86 (MLUw),1.32 words,-17.77%
+"Our Pipeline (Turn-Aware Mode, Zero-Shot)",No (Zero-shot),75.2%,93.1%,83.2%,0.93,21.21 utts,+23.48%,0.86 (MLUw),1.32 words,-17.77%

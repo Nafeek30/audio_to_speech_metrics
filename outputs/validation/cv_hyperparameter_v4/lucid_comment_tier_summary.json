@@ -1,0 +1,49 @@
+{
+  "scope": "Source-only TextGrid comment-versus-numeric-tier consistency audit; no published numeric-score matching, transcript/model modification or cohort changes",
+  "files": 300,
+  "intervals_with_speaker_comment": 446725,
+  "speaker_tier_mismatches": 0,
+  "other_tiers_with_inherited_speaker_comments": [
+    {
+      "comment": "Speaker B",
+      "tier": "mixed",
+      "intervals": 3327
+    },
+    {
+      "comment": "Speaker B",
+      "tier": "",
+      "intervals": 58
+    },
+    {
+      "comment": "Speaker A",
+      "tier": "mixed",
+      "intervals": 44407
+    },
+    {
+      "comment": "Speaker A",
+      "tier": "",
+      "intervals": 456
+    },
+    {
+      "comment": "Speaker B",
+      "tier": "keywords",
+      "intervals": 58
+    },
+    {
+      "comment": "Speaker A",
+      "tier": "keywords",
+      "intervals": 331
+    },
+    {
+      "comment": "Speaker B",
+      "tier": "keyword",
+      "intervals": 2
+    },
+    {
+      "comment": "Speaker A",
+      "tier": "keyword",
+      "intervals": 72
+    }
+  ],
+  "interpretation": "No Speaker A/B numeric tier contradicts its available speaker comment. Comments inherited by mixed, keyword and unnamed tiers do not identify a mislabeled speaker tier. This audit does not resolve published target mapping or authorize score-matched source selection."
+}

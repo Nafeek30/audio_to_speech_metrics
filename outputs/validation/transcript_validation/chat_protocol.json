@@ -1,0 +1,26 @@
+{
+  "registered_utc": "2026-10-16T00:01:54.874731+00:00",
+  "purpose": "Fix native CHAT/FREQ eligibility policy and compare three transcript workflows on public validation only. No audio or private participants.",
+  "candidates": [
+    "paragraph_ml",
+    "turn_ml",
+    "turn_rules"
+  ],
+  "inputs": "Same target spoken words. Paragraph ML withholds all turn cuts. Turn ML/rules use only observed speaker transitions, merging consecutive target-speaker CHAT rows; no gold target-row punctuation/utterance ends supplied. This compares workflows with explicitly different available context, not architecture-only effects.",
+  "model": "Existing frozen latest MiniLM bundle, no retraining/threshold changes.",
+  "model_sha256": "ad8f44b88979572231ff59e886d0e8464b15a2d6d9037841d2e2b23dd861ebbb",
+  "native_policy": "Faithful predicted words; only uh/um explicitly pause-coded. Native MLU -t%mor and FREQ +k +b50 on both predicted and original coded CHAT. Ratios from exact counts; native SD/MATTR precision retained. Original retrace/unintelligibility conventions remain reference information, not fabricated predictions.",
+  "selection": "Validation participants only: mean recording APE within participant, mean participant within corpus, mean across eligible-count/MLUw/population-SD and equally across corpora. Select minimum; fixed tie order paragraph_ml,turn_ml,turn_rules. Test results not used for selection. All-data report separates train/validation/test.",
+  "reference": "All prepared sections in both original corpora; original coded human CHAT, same target CHI. Verbal reference units join explicit continuations; eligible MLU count distinct. Zero denominators/short MATTR unavailable.",
+  "targets": "Project engineering goals, not clinical standards: mean participant APE <=5% for counts/MLUw/TNW/NDW/TTR/MATTR, <=10% SD. Do not conceal failing metrics behind composite.",
+  "previous_test_exposure": "Existing final tests already inspected; corrected reruns are descriptive, not independent confirmation.",
+  "input_hashes": {
+    "talkbank_spoken_development.jsonl": "d66d60ce3ff0d665d7f459e2fecbf1a2254a674ca6cfac5a92ee520da527242b",
+    "talkbank_spoken_test.jsonl": "50f9b71a18beee8618db28900c924fcb9858fb8b921664831ac50d067b61a4d6",
+    "metric_training.json": "c1a4e1d02b25282a708db1078a4f058b8ff67f5b9f5614abdf4dac94fb004005"
+  },
+  "code": {
+    "speech_pipeline/chat_metrics.py": "77e08afe1cba3024b43e678a5dfbbb6f33b746cd0cdb52ebe6af142a9573caff",
+    "speech_pipeline/research/transcript_chat.py": "d07f232633a33ba0c1e7bab5dae89b9ff526f66ca8dd766fc8df3386236e52ff"
+  }
+}

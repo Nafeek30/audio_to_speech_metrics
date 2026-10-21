@@ -1,0 +1,220 @@
+
+DETACHED RUNNER START 2026-10-16T03:20:35.951743+00:00
+PREPARED 1 / 128
+PREPARED 101 / 128
+COMPLETE fold_1 participants 47 sections 128 summary [{"corpus": "nyu_emerson", "metric": "eligible_mlu_utterances", "mean_participant_ape": 14.115592348497671}, {"corpus": "nyu_emerson", "metric": "MLUw", "mean_participant_ape": 8.326302880662839}, {"corpus": "nyu_emerson", "metric": "length_sd", "mean_participant_ape": 5.208675303589779}, {"corpus": "ocsc", "metric": "eligible_mlu_utterances", "mean_participant_ape": 8.590770516016134}, {"corpus": "ocsc", "metric": "MLUw", "mean_participant_ape": 7.85908077204771}, {"corpus": "ocsc", "metric": "length_sd", "mean_participant_ape": 12.471478744777194}]
+PREPARED 1 / 62
+TRAIN fold_2 fit children 148 inner children 37 windows 1559 device mps
+BATCH fold_2 epoch 1 50 / 195
+BATCH fold_2 epoch 1 100 / 195
+BATCH fold_2 epoch 1 150 / 195
+EPOCH fold_2 {"epoch": 1, "mean_training_loss": 0.8725128435171567, "inner_objective": 16.828210878088896, "elapsed_seconds": 113.40108841599431}
+BATCH fold_2 epoch 2 50 / 195
+BATCH fold_2 epoch 2 100 / 195
+BATCH fold_2 epoch 2 150 / 195
+EPOCH fold_2 {"epoch": 2, "mean_training_loss": 0.26003149167085304, "inner_objective": 16.49713232042852, "elapsed_seconds": 208.60726012510713}
+BATCH fold_2 epoch 3 50 / 195
+BATCH fold_2 epoch 3 100 / 195
+BATCH fold_2 epoch 3 150 / 195
+EPOCH fold_2 {"epoch": 3, "mean_training_loss": 0.20912244602655752, "inner_objective": 15.154484552076001, "elapsed_seconds": 308.69248987501487}
+BATCH fold_2 epoch 4 50 / 195
+BATCH fold_2 epoch 4 100 / 195
+BATCH fold_2 epoch 4 150 / 195
+EPOCH fold_2 {"epoch": 4, "mean_training_loss": 0.18337078736378595, "inner_objective": 15.995751997748522, "elapsed_seconds": 406.3103166250512}
+BATCH fold_2 epoch 5 50 / 195
+BATCH fold_2 epoch 5 100 / 195
+BATCH fold_2 epoch 5 150 / 195
+EPOCH fold_2 {"epoch": 5, "mean_training_loss": 0.17129745605664376, "inner_objective": 14.715776292734057, "elapsed_seconds": 506.51830891601276}
+BATCH fold_2 epoch 6 50 / 195
+BATCH fold_2 epoch 6 100 / 195
+BATCH fold_2 epoch 6 150 / 195
+EPOCH fold_2 {"epoch": 6, "mean_training_loss": 0.17108630106235162, "inner_objective": 15.069842246048855, "elapsed_seconds": 606.5879845410818}
+FROZEN fold_2 {"selected_epoch": 5, "margin": 1.0, "inner_objective": 13.508736110848643}
+PREPARED 1 / 110
+PREPARED 101 / 110
+COMPLETE fold_2 participants 46 sections 129 summary [{"corpus": "nyu_emerson", "metric": "eligible_mlu_utterances", "mean_participant_ape": 9.751927888727089}, {"corpus": "nyu_emerson", "metric": "MLUw", "mean_participant_ape": 8.391272313633237}, {"corpus": "nyu_emerson", "metric": "length_sd", "mean_participant_ape": 26.179206169397972}, {"corpus": "ocsc", "metric": "eligible_mlu_utterances", "mean_participant_ape": 9.79870787850157}, {"corpus": "ocsc", "metric": "MLUw", "mean_participant_ape": 10.551572305320523}, {"corpus": "ocsc", "metric": "length_sd", "mean_participant_ape": 19.48841677852761}]
+PREPARED 1 / 21
+TRAIN fold_3 fit children 148 inner children 37 windows 1587 device mps
+BATCH fold_3 epoch 1 50 / 199
+BATCH fold_3 epoch 1 100 / 199
+BATCH fold_3 epoch 1 150 / 199
+EPOCH fold_3 {"epoch": 1, "mean_training_loss": 0.8665622025728226, "inner_objective": 12.09334551779036, "elapsed_seconds": 103.96489154198207}
+BATCH fold_3 epoch 2 50 / 199
+BATCH fold_3 epoch 2 100 / 199
+BATCH fold_3 epoch 2 150 / 199
+EPOCH fold_3 {"epoch": 2, "mean_training_loss": 0.24495945391642987, "inner_objective": 11.83118391512969, "elapsed_seconds": 207.7593876250321}
+BATCH fold_3 epoch 3 50 / 199
+BATCH fold_3 epoch 3 100 / 199
+BATCH fold_3 epoch 3 150 / 199
+EPOCH fold_3 {"epoch": 3, "mean_training_loss": 0.19088196421238646, "inner_objective": 14.26200877206517, "elapsed_seconds": 306.6859529169742}
+BATCH fold_3 epoch 4 50 / 199
+BATCH fold_3 epoch 4 100 / 199
+BATCH fold_3 epoch 4 150 / 199
+EPOCH fold_3 {"epoch": 4, "mean_training_loss": 0.17381615180466042, "inner_objective": 14.565987811277237, "elapsed_seconds": 409.1108497499954}
+
+DETACHED RUNNER START 2026-10-16T03:44:44.535560+00:00
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/research/participant_cv.py", line 23, in <module>
+    from speech_pipeline import ROOT, utterances as auto
+  File "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/utterances.py", line 10, in <module>
+    from openpyxl import load_workbook
+ModuleNotFoundError: No module named 'openpyxl'
+
+DETACHED RUNNER START 2026-10-16T03:47:06.376565+00:00
+RESUMED fold_3 after epoch 4 optimizer/scheduler/RNG restored
+TRAIN fold_3 fit children 148 inner children 37 windows 1587 device mps
+FROZEN fold_3 {"selected_epoch": 2, "margin": 0.25, "inner_objective": 11.75064751974938}
+PREPARED 1 / 87
+COMPLETE fold_3 participants 46 sections 128 summary [{"corpus": "nyu_emerson", "metric": "eligible_mlu_utterances", "mean_participant_ape": 17.261397633017094}, {"corpus": "nyu_emerson", "metric": "MLUw", "mean_participant_ape": 9.914755546603619}, {"corpus": "nyu_emerson", "metric": "length_sd", "mean_participant_ape": 31.134609266246585}, {"corpus": "ocsc", "metric": "eligible_mlu_utterances", "mean_participant_ape": 8.168060433513944}, {"corpus": "ocsc", "metric": "MLUw", "mean_participant_ape": 9.873822662430442}, {"corpus": "ocsc", "metric": "length_sd", "mean_participant_ape": 16.74298849293912}]
+PREPARED 1 / 11
+TRAIN fold_4 fit children 148 inner children 37 windows 1691 device mps
+BATCH fold_4 epoch 1 50 / 212
+BATCH fold_4 epoch 1 100 / 212
+BATCH fold_4 epoch 1 150 / 212
+BATCH fold_4 epoch 1 200 / 212
+EPOCH fold_4 {"epoch": 1, "mean_training_loss": 0.7765005786182746, "inner_objective": 12.567661875920862, "elapsed_seconds": 101.43989220797084}
+BATCH fold_4 epoch 2 50 / 212
+BATCH fold_4 epoch 2 100 / 212
+BATCH fold_4 epoch 2 150 / 212
+BATCH fold_4 epoch 2 200 / 212
+EPOCH fold_4 {"epoch": 2, "mean_training_loss": 0.2737986630988571, "inner_objective": 12.142264189710119, "elapsed_seconds": 199.05158750002738}
+BATCH fold_4 epoch 3 50 / 212
+BATCH fold_4 epoch 3 100 / 212
+BATCH fold_4 epoch 3 150 / 212
+BATCH fold_4 epoch 3 200 / 212
+EPOCH fold_4 {"epoch": 3, "mean_training_loss": 0.21591341130013736, "inner_objective": 12.585522521064368, "elapsed_seconds": 300.0584828329738}
+BATCH fold_4 epoch 4 50 / 212
+BATCH fold_4 epoch 4 100 / 212
+BATCH fold_4 epoch 4 150 / 212
+BATCH fold_4 epoch 4 200 / 212
+EPOCH fold_4 {"epoch": 4, "mean_training_loss": 0.19228697026956756, "inner_objective": 12.573405974243576, "elapsed_seconds": 400.173734290991}
+FROZEN fold_4 {"selected_epoch": 2, "margin": 0.0, "inner_objective": 12.142264189710119}
+PREPARED 1 / 66
+COMPLETE fold_4 participants 46 sections 126 summary [{"corpus": "nyu_emerson", "metric": "eligible_mlu_utterances", "mean_participant_ape": 21.761251668867175}, {"corpus": "nyu_emerson", "metric": "MLUw", "mean_participant_ape": 12.180563767308307}, {"corpus": "nyu_emerson", "metric": "length_sd", "mean_participant_ape": 9.63196608611403}, {"corpus": "ocsc", "metric": "eligible_mlu_utterances", "mean_participant_ape": 9.52797997983536}, {"corpus": "ocsc", "metric": "MLUw", "mean_participant_ape": 8.454463048169226}, {"corpus": "ocsc", "metric": "length_sd", "mean_participant_ape": 12.110186395150686}]
+TRAIN fold_5 fit children 148 inner children 37 windows 1706 device mps
+BATCH fold_5 epoch 1 50 / 214
+BATCH fold_5 epoch 1 100 / 214
+BATCH fold_5 epoch 1 150 / 214
+BATCH fold_5 epoch 1 200 / 214
+EPOCH fold_5 {"epoch": 1, "mean_training_loss": 0.7290257483581516, "inner_objective": 10.36550218641397, "elapsed_seconds": 98.94508208299521}
+BATCH fold_5 epoch 2 50 / 214
+BATCH fold_5 epoch 2 100 / 214
+BATCH fold_5 epoch 2 150 / 214
+BATCH fold_5 epoch 2 200 / 214
+EPOCH fold_5 {"epoch": 2, "mean_training_loss": 0.23510611781450075, "inner_objective": 9.09483666068832, "elapsed_seconds": 195.76918850000948}
+BATCH fold_5 epoch 3 50 / 214
+BATCH fold_5 epoch 3 100 / 214
+BATCH fold_5 epoch 3 150 / 214
+BATCH fold_5 epoch 3 200 / 214
+EPOCH fold_5 {"epoch": 3, "mean_training_loss": 0.1925742582670439, "inner_objective": 9.26486257680097, "elapsed_seconds": 295.51323887496255}
+BATCH fold_5 epoch 4 50 / 214
+BATCH fold_5 epoch 4 100 / 214
+BATCH fold_5 epoch 4 150 / 214
+BATCH fold_5 epoch 4 200 / 214
+EPOCH fold_5 {"epoch": 4, "mean_training_loss": 0.17724517308105933, "inner_objective": 9.885206830835953, "elapsed_seconds": 394.2081662910059}
+FROZEN fold_5 {"selected_epoch": 2, "margin": 0.0, "inner_objective": 9.09483666068832}
+PREPARED 1 / 45
+COMPLETE fold_5 participants 46 sections 119 summary [{"corpus": "nyu_emerson", "metric": "eligible_mlu_utterances", "mean_participant_ape": 19.11972741149889}, {"corpus": "nyu_emerson", "metric": "MLUw", "mean_participant_ape": 14.056771221279874}, {"corpus": "nyu_emerson", "metric": "length_sd", "mean_participant_ape": 28.76919423196555}, {"corpus": "ocsc", "metric": "eligible_mlu_utterances", "mean_participant_ape": 9.753045039447438}, {"corpus": "ocsc", "metric": "MLUw", "mean_participant_ape": 8.752952408689001}, {"corpus": "ocsc", "metric": "length_sd", "mean_participant_ape": 13.671420923183408}]
+REPORT /Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/results/participant_cv_v1/REPORT.md
+PREPARED 1 / 139
+PREPARED 101 / 139
+TRAIN final fit children 231 inner children 49 windows 2582 device mps
+BATCH final epoch 1 50 / 323
+BATCH final epoch 1 100 / 323
+BATCH final epoch 1 150 / 323
+BATCH final epoch 1 200 / 323
+BATCH final epoch 1 250 / 323
+BATCH final epoch 1 300 / 323
+EPOCH final {"epoch": 1, "mean_training_loss": 0.6990889302071404, "inner_objective": 17.85093514468011, "elapsed_seconds": 161.0073193749413}
+BATCH final epoch 2 50 / 323
+BATCH final epoch 2 100 / 323
+BATCH final epoch 2 150 / 323
+BATCH final epoch 2 200 / 323
+BATCH final epoch 2 250 / 323
+BATCH final epoch 2 300 / 323
+EPOCH final {"epoch": 2, "mean_training_loss": 0.2266710480853869, "inner_objective": 12.32819014125049, "elapsed_seconds": 311.7081349159125}
+BATCH final epoch 3 50 / 323
+BATCH final epoch 3 100 / 323
+BATCH final epoch 3 150 / 323
+BATCH final epoch 3 200 / 323
+BATCH final epoch 3 250 / 323
+BATCH final epoch 3 300 / 323
+EPOCH final {"epoch": 3, "mean_training_loss": 0.1938043755043771, "inner_objective": 11.807088814203796, "elapsed_seconds": 461.39438704098575}
+BATCH final epoch 4 50 / 323
+BATCH final epoch 4 100 / 323
+BATCH final epoch 4 150 / 323
+BATCH final epoch 4 200 / 323
+BATCH final epoch 4 250 / 323
+BATCH final epoch 4 300 / 323
+EPOCH final {"epoch": 4, "mean_training_loss": 0.17673203690502295, "inner_objective": 17.966386457951018, "elapsed_seconds": 608.8105573329376}
+BATCH final epoch 5 50 / 323
+BATCH final epoch 5 100 / 323
+BATCH final epoch 5 150 / 323
+BATCH final epoch 5 200 / 323
+BATCH final epoch 5 250 / 323
+BATCH final epoch 5 300 / 323
+EPOCH final {"epoch": 5, "mean_training_loss": 0.16315875649913547, "inner_objective": 17.82261942086767, "elapsed_seconds": 755.8650128749432}
+FROZEN final {"selected_epoch": 3, "margin": 0.0, "inner_objective": 11.807088814203796}
+DEVELOPMENT COMPLETE; final single-model test held for ensemble selection
+EMISSIONS validation fold_1 sections 139
+EMISSIONS validation fold_2 sections 139
+EMISSIONS validation fold_3 sections 139
+EMISSIONS validation fold_4 sections 139
+EMISSIONS validation fold_5 sections 139
+EMISSIONS validation final sections 139
+DEVELOPMENT full_train margin 0.0 objective 11.807088814203796
+DEVELOPMENT full_train margin 0.25 objective 19.895154741279196
+DEVELOPMENT full_train margin 0.5 objective 20.412567055793062
+DEVELOPMENT full_train margin 0.75 objective 21.276737073363172
+DEVELOPMENT full_train margin 1.0 objective 23.23859061914541
+DEVELOPMENT full_train margin 1.5 objective 27.00563701612906
+DEVELOPMENT full_train margin 2.0 objective 33.01742163189254
+DEVELOPMENT five_fold_ensemble margin 0.0 objective 12.684397108767401
+DEVELOPMENT five_fold_ensemble margin 0.25 objective 16.256776704994554
+DEVELOPMENT five_fold_ensemble margin 0.5 objective 17.290846974149726
+
+DETACHED RUNNER START 2026-10-16T04:44:47.493323+00:00
+REPORT /Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/results/participant_cv_v1/REPORT.md
+DEVELOPMENT COMPLETE; final single-model test held for ensemble selection
+DEVELOPMENT full_train margin -1.0 objective 14.180625558454926
+DEVELOPMENT full_train margin -0.5 objective 12.744157550855652
+DEVELOPMENT full_train margin -0.25 objective 12.07172312530971
+DEVELOPMENT full_train margin -0.125 objective 12.091768405484139
+REUSED DEVELOPMENT full_train margin 0.0 objective 11.807088814203796
+DEVELOPMENT full_train margin 0.125 objective 19.96421751272011
+REUSED DEVELOPMENT full_train margin 0.25 objective 19.895154741279196
+REUSED DEVELOPMENT full_train margin 0.5 objective 20.412567055793062
+REUSED DEVELOPMENT full_train margin 0.75 objective 21.276737073363172
+REUSED DEVELOPMENT full_train margin 1.0 objective 23.23859061914541
+REUSED DEVELOPMENT full_train margin 1.5 objective 27.00563701612906
+REUSED DEVELOPMENT full_train margin 2.0 objective 33.01742163189254
+DEVELOPMENT five_fold_ensemble margin -1.0 objective 17.814958939523404
+DEVELOPMENT five_fold_ensemble margin -0.5 objective 13.516648724821804
+DEVELOPMENT five_fold_ensemble margin -0.25 objective 12.736362728213573
+DEVELOPMENT five_fold_ensemble margin -0.125 objective 13.395815554650332
+REUSED DEVELOPMENT five_fold_ensemble margin 0.0 objective 12.684397108767401
+DEVELOPMENT five_fold_ensemble margin 0.125 objective 15.815724175222485
+REUSED DEVELOPMENT five_fold_ensemble margin 0.25 objective 16.256776704994554
+REUSED DEVELOPMENT five_fold_ensemble margin 0.5 objective 17.290846974149726
+DEVELOPMENT five_fold_ensemble margin 0.75 objective 20.354060834878695
+DEVELOPMENT five_fold_ensemble margin 1.0 objective 23.718561503861014
+DEVELOPMENT five_fold_ensemble margin 1.5 objective 34.19608761389384
+DEVELOPMENT five_fold_ensemble margin 2.0 objective 46.563111789801916
+DEVELOPMENT six_model_ensemble margin -1.0 objective 16.644996359104606
+DEVELOPMENT six_model_ensemble margin -0.5 objective 13.382324245069938
+DEVELOPMENT six_model_ensemble margin -0.25 objective 11.55705245156104
+DEVELOPMENT six_model_ensemble margin -0.125 objective 11.562321155752793
+DEVELOPMENT six_model_ensemble margin 0.0 objective 12.73163293537686
+DEVELOPMENT six_model_ensemble margin 0.125 objective 15.997468349900549
+DEVELOPMENT six_model_ensemble margin 0.25 objective 17.12120551023603
+DEVELOPMENT six_model_ensemble margin 0.5 objective 18.930606688814798
+DEVELOPMENT six_model_ensemble margin 0.75 objective 20.74612928644529
+DEVELOPMENT six_model_ensemble margin 1.0 objective 24.273378992209103
+DEVELOPMENT six_model_ensemble margin 1.5 objective 33.37306567760106
+DEVELOPMENT six_model_ensemble margin 2.0 objective 44.141367218750254
+IMPROVEMENT FROZEN six_model_ensemble margin -0.25 eval objective 11.55705245156104
+PREPARED 1 / 126
+PREPARED 101 / 126
+EMISSIONS test fold_1 sections 126

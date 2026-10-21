@@ -1,0 +1,56 @@
+# ==============================================================================
+# OS & IDE Files
+# ==============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ==============================================================================
+# Python & Environment
+# ==============================================================================
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.build/
+dist/
+build/
+.codex_tmp/
+.chart-data-*/
+*.inspect.ndjson
+
+# ==============================================================================
+# Media & Raw Data Files (Protected Participant Audio & Video)
+# (Must never be committed to public repository per IRB / TalkBank agreements)
+# ==============================================================================
+*.mp4
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.mov
+*.avi
+dataset/raw_videos/
+dataset/public/**/audio/
+dataset/public/**/media/
+dataset/public/lucid_published/audio/
+dataset/public/ocsc/audio/
+
+# ==============================================================================
+# Model Checkpoints & Large Binary Weights (> 50-100 MB)
+# (Exceeds GitHub file size limit; host externally or reproduce via CV scripts)
+# ==============================================================================
+*.safetensors
+*.pt
+*.bin
+*.pth
+*.onnx
+outputs/runtime/
+outputs/**/preview_*.png

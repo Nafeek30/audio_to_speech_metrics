@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-16T03:48:35.386336+00:00",
+  "policy": "Activate newly selected candidate only if its original-eval objective strictly improves the archived production workflow. Otherwise retain archived production. Never use test metrics for activation.",
+  "comparison": "same corpus-balanced mean participant APE: eligible count, MLUw, length SD",
+  "baseline_eval_objective": 11.35342133442171,
+  "baseline_workflow_sha256": "68ab5afcccd600b8553d6bdab453c3c0c46c9b47c9cd03b73864e5f9f80004d9",
+  "baseline_weights_sha256": "ad8f44b88979572231ff59e886d0e8464b15a2d6d9037841d2e2b23dd861ebbb",
+  "baseline_margin": 0.25,
+  "fresh_candidate_evaluation_started": false
+}

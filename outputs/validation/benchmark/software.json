@@ -1,0 +1,366 @@
+{
+  "source": "https://dali.talkbank.org/clan/unix-clan.zip",
+  "archive_sha256": "a9dabc78eb74b153e5e459b92592d4a310dda54af11cf4de71745c7bd0697706",
+  "binary_sha256": {
+    "mlu": "e6c1bbef66e496cd6cc0dcb63c8c0a205fada0b527326b89cc59b248fbd1adac",
+    "freq": "fb2309d3b09ab829845cdd94e1c9217c8239a9ab509bd105395b13cf20491fa3",
+    "timedur": "3fab89bb4a89819ad054d22ae5eb7e54f1823b4a43a3ecf493aa96262cc4b19d"
+  },
+  "build": "make -j2 mlu freq timedur with documented Apple Unix flags",
+  "segmentation_experiment": {
+    "python": "3.13.1",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "device": "CPU; MPS and CUDA unavailable",
+    "packages": {
+      "torch": "2.10.0",
+      "transformers": "4.57.6",
+      "safetensors": "0.8.0",
+      "wtpsplit": "2.2.2",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.1",
+      "scipy": "1.18.1",
+      "spacy": "3.8.14",
+      "en-core-web-sm": "3.8.0",
+      "taaled": "0.32",
+      "pylats": "0.64",
+      "pylangacq": "0.23.0"
+    },
+    "pretrained": {
+      "bert": {
+        "revision": "387825ce42dbb39b87911cdf8e383ee3b25184f8",
+        "files": {
+          "config.json": "61716a972c73e9cc1d6f1165e27e577c1f4012a3cc480e431f427a78d5071ece",
+          "pytorch_model.bin": "01671831dfec6818302153919efbfd6ee4ad91dd9fba7f3649bdd6cb7b0f16e4",
+          "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+        }
+      },
+      "sat": {
+        "revision": "137da054051ad9f1eac42025f758db4ac9f22535",
+        "files": {
+          "config.json": "d61498bc239f773126ee794446cdcad88822967e0b02ae7bd070f725c98be791",
+          "model.safetensors": "3e19cb0e5dbe9790d37d918d7e87880cb6577d497833f0f0627d80ae6ca1fe90"
+        }
+      },
+      "sat_tokenizer": {
+        "revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+        "files": {
+          "config.json": "d66ed8cd4f2a93b358c245e50736fa389ed4f35c0bae7aad0b32abb20c62b579",
+          "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+          "tokenizer.json": "a898ea75433890f6610f4e470b8ebeb0c21dce5c8dd61f892eb09eb5919d2e2c",
+          "tokenizer_config.json": "994f46754c5bf4014f1aa92d34b1374319c3a6b3f702105cd5b742beaecd18ce"
+        }
+      }
+    },
+    "production_bundle": {
+      "model.safetensors": "ef4fbe8a99fcfd19dd999ea07f6e4fe56cb2065529e4e407251bb7f2dd0c4696",
+      "segmenter.json": "2db295685ab738a75c2ec183acc58341732a1efdff7854644b1a0e9c79238c48",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+    },
+    "frozen_training_sha256": "9d4c962b1938eac125d10f311ea5c189906b7072c44a4653d657bb33d4d7a464",
+    "frozen_protocol_sha256": "f04f1df927620a6058044b8929ae6057c72e651c8a5e4301f067085915b51f77",
+    "selection_sha256": "8d855cb31bda2d185e6c8fc6b88ef5893564c9770886ee2b1195e8c32668931c",
+    "final_code_sha256": {
+      "speech_pipeline/metrics.py": "1afcab3ce177e78811eba852c505aa121b58cb6b0fae32669f4607973d3018ea",
+      "speech_pipeline/__init__.py": "0da46facb41bc052783d6834f764fba1df6fa85f23ac898a041d08bc5fd6b0af",
+      "speech_pipeline/export.py": "1b5f4a0da6369e30bb6b6b6d852154fbbb3e3428f84d31035dc8f8b7f35661a1",
+      "speech_pipeline/utterances.py": "0c4819a26a02239f4cca6bad819095e212b092a33b554379a897807d6488b5ed",
+      "speech_pipeline/taaled.py": "92581b9b1c7df044e2d693d0d75ffc1c21e046e129cdbcc67ff9c89c49c37cfe",
+      "speech_pipeline/pipeline.py": "296ef81cddb09e772318b51f49466bdd6ebd2b7dab8e6501fdda65093de0a00a",
+      "speech_pipeline/clan.py": "7f1d0ef1ec9073becb31c81b7edc0c3fe82e83a15d2525009e88f5ed1e3e16de",
+      "speech_pipeline/boundary_model.py": "f939cb54a80ce1264a123e0fd5340e02306118b71f1522ba18f7ab1d7bb87244",
+      "speech_pipeline/corpora.py": "e9d852a80b7bbb8c9afe1c8a8b059f5c07ec807c8c69a51fcf03ad0aeaa67f84",
+      "speech_pipeline/__main__.py": "9fb9f6e8f2a2f0afa774694ef5495fe43230541b0ff47e8cf3796c3949286d71",
+      "speech_pipeline/segmentation.py": "34a8b9b2b9b86745699d0b8c76895aa8ee8d01571e3ca7db63ea625a4b3e4b8d",
+      "speech_pipeline/research/segmentation.py": "48cf6e457a279f357b40235ad5365ed6867c181a17a0b07062f8a192c997e082",
+      "speech_pipeline/research/validation.py": "0e72c0aafd4f5dd5ad540b258bb7a1b4c5c75868b8b42551a9f3433bad71b501"
+    },
+    "verification": {
+      "unit_tests_passed": 44,
+      "all_public_sources_match_frozen_data": true,
+      "default_pipeline_clan_checks": 74,
+      "pretrained_trial_clan_checks": 74,
+      "public_selected_clan_checks": 6,
+      "actual_trained_paragraph_smoke": "Passed: original words preserved; 17 TAALED comparisons and official CLAN checks"
+    }
+  },
+  "reassessment": {
+    "python": "3.13.1",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "torch": "2.10.0",
+      "transformers": "4.57.6",
+      "safetensors": "0.8.0",
+      "spacy": "3.8.14",
+      "en-core-web-sm": "3.8.0",
+      "numpy": "2.5.1",
+      "taaled": "0.32",
+      "pylats": "0.64",
+      "pylangacq": "0.23.0"
+    },
+    "device": "BERT context trained on CPU; MiniLM and CRF trained locally on Apple MPS outside restricted filesystem sandbox. Production segmenter inference on CPU. Earlier CPU-only availability statement describes the restricted runtime.",
+    "gpu_sequence_numerical_check": "Synthetic MPS CRF likelihood and gradients matched CPU within 1e-5; no private data used",
+    "pretrained": {
+      "bert": {
+        "id": "google/bert_uncased_L-4_H-256_A-4",
+        "revision": "387825ce42dbb39b87911cdf8e383ee3b25184f8",
+        "files": {
+          "config.json": "61716a972c73e9cc1d6f1165e27e577c1f4012a3cc480e431f427a78d5071ece",
+          "pytorch_model.bin": "01671831dfec6818302153919efbfd6ee4ad91dd9fba7f3649bdd6cb7b0f16e4",
+          "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+        }
+      },
+      "minilm": {
+        "id": "microsoft/MiniLM-L12-H384-uncased",
+        "revision": "44acabbec0ef496f6dbc93adadea57f376b7c0ec",
+        "files": {
+          "config.json": "235fcbb1b55045e08e0e061994023b71089e101d906074f0fd88a1ee8081226e",
+          "pytorch_model.bin": "bcc275fe3e183a68e629c55355be77ef51c2ee780990173ca8f8edc65152fae7",
+          "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+          "tokenizer_config.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+        }
+      },
+      "batchalign": {
+        "id": "talkbank/CHATUtterance-en",
+        "revision": "764ec3f762c2e24df2def8df98b5fe34940085c6",
+        "files": {
+          "config.json": "c896f9350aeea5d21e3ef9da72270dc4b2d430bee3dd3123f149bfe5e2f0d305",
+          "pytorch_model.bin": "6be729c5ffab29b74b9e57fa610ceca204aecc92249d888fab894132395dad6e",
+          "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+          "tokenizer.json": "d196924b969280759c519bd90f87fb7af99a842c215f31e842dac05a6ad2058d",
+          "tokenizer_config.json": "aa1682f605197045027e3b9892312d5f6e75957b736a66af5393a18a8a20d63e"
+        }
+      }
+    },
+    "selected": {
+      "name": "minilm_context",
+      "validation_f1": 0.8690160109421514,
+      "decoder": "argmax",
+      "weights_sha256": "9f90262f4154c2261034872153b9c7cde9040cca892fd99f763ca532265a9b31",
+      "before_final_evaluation": true,
+      "recorded_utc": "2026-10-15T02:16:25.873304+00:00"
+    },
+    "production_bundle": {
+      "model.safetensors": "9f90262f4154c2261034872153b9c7cde9040cca892fd99f763ca532265a9b31",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "segmenter.json": "2f0b62106cb5702fdc8a1f93ebb650e4bdd5a51cdcbf6311b856871692eb33fa"
+    },
+    "frozen_training_sha256": "9d4c962b1938eac125d10f311ea5c189906b7072c44a4653d657bb33d4d7a464",
+    "evidence_sha256": "a0a54564a2219c597cb8d3b59d6479e130e24fa62d42665a7fd6cfd37311b78d",
+    "final_code_sha256": {
+      "speech_pipeline/__init__.py": "0da46facb41bc052783d6834f764fba1df6fa85f23ac898a041d08bc5fd6b0af",
+      "speech_pipeline/__main__.py": "9fb9f6e8f2a2f0afa774694ef5495fe43230541b0ff47e8cf3796c3949286d71",
+      "speech_pipeline/boundary_model.py": "f939cb54a80ce1264a123e0fd5340e02306118b71f1522ba18f7ab1d7bb87244",
+      "speech_pipeline/clan.py": "7f1d0ef1ec9073becb31c81b7edc0c3fe82e83a15d2525009e88f5ed1e3e16de",
+      "speech_pipeline/corpora.py": "7877c2a392b0b0b4502c566e162d91527f7abe77eb4fde5f16f39b2e7c7c7322",
+      "speech_pipeline/export.py": "1b5f4a0da6369e30bb6b6b6d852154fbbb3e3428f84d31035dc8f8b7f35661a1",
+      "speech_pipeline/metrics.py": "1afcab3ce177e78811eba852c505aa121b58cb6b0fae32669f4607973d3018ea",
+      "speech_pipeline/pipeline.py": "4ae165befdace5001e1e1e341005484c56228bd804b35171f66de839ca207792",
+      "speech_pipeline/segmentation.py": "f76f43f3e37e6fe11d1c1aa8290c6f88b18cdf5f5fc038296b78ffe94a92dfe6",
+      "speech_pipeline/taaled.py": "92581b9b1c7df044e2d693d0d75ffc1c21e046e129cdbcc67ff9c89c49c37cfe",
+      "speech_pipeline/utterances.py": "0c4819a26a02239f4cca6bad819095e212b092a33b554379a897807d6488b5ed",
+      "speech_pipeline/research/reassessment.py": "a7472c4db16a291bcbb82037cac92e2754a237129cc4b7be16c867fb45f50480",
+      "speech_pipeline/research/segmentation.py": "81c8d57326d9ce3d27d8c9e4cbad52bd9ee88856795a0699bc21f905a68164e6",
+      "speech_pipeline/research/validation.py": "e57740d427b420d9736e6903602a2a624e049cbd5736fc95c7c7898c58a3db32"
+    },
+    "verification": {
+      "unit_tests_passed": 48,
+      "lockfile_check": "uv lock --check --offline passed; 115 packages",
+      "actual_trained_paragraph_smoke": "Passed: source words preserved; fixed argmax; 17 TAALED comparisons and official CLAN including SD",
+      "runtime": {
+        "checked_recordings": 74,
+        "conditions": [
+          {
+            "dataset": "uncorrected",
+            "recordings": 37,
+            "participants": 10,
+            "comparison_sha256": "defa48c3243f8549987cb5e786ff9e8a0d1377bcfc6fb475f80d7fda36d93259"
+          },
+          {
+            "dataset": "corrected",
+            "recordings": 37,
+            "participants": 10,
+            "comparison_sha256": "b7a6d83008df179f9010298d48db1359df7f3a010f1447f33800326137b8826c"
+          }
+        ],
+        "taaled_measures_per_recording": 17,
+        "maximum_pipeline_taaled_absolute_errors": {
+          "basic_ntokens": 9,
+          "basic_ntypes": 9,
+          "basic_ncontent_tokens": 10,
+          "basic_ncontent_types": 10,
+          "basic_nfunction_tokens": 2,
+          "basic_nfunction_types": 2,
+          "lexical_density_tokens": 0.01089453100751131,
+          "lexical_density_types": 0.011978860833822602,
+          "simple_ttr_aw": 0.007548488554953714,
+          "root_ttr_aw": 0.21156656395693396,
+          "log_ttr_aw": 0.0033132267954125716,
+          "maas_ttr_aw": 0.0014811921855923948,
+          "mattr50_aw": 0.008253546099290743,
+          "msttr50_aw": 0.014285714285714346,
+          "hdd42_aw": 0.005946831861275537,
+          "mtld_original_aw": 6.617360516807928,
+          "mtld_mean_factor_length_aw": 5.923156268568036
+        },
+        "taaled_scope": "Identical source text with each implementation's own preprocessing; differences are retained, not claimed as calculator agreement",
+        "source_words_preserved": true,
+        "all_clan_within_display_precision": true,
+        "length_sd_verified": true,
+        "canonical_outputs": "Explicit paragraph mode; application speaker-turn default remains established rules",
+        "exact_frozen_private_predictions": 14,
+        "public_sources_unchanged": 907,
+        "private_sources_unchanged": 15,
+        "publication_sha256": {
+          "conference_paper/conference_paper.docx": "1956b1c199884166a811dd9174189fb876a94a0caa05a11780b4e217ddf02eb7",
+          "thompson_center_poster/Thompson_Center_Poster.pdf": "40211c883408cf74e1664b9cfac746d33723d33cb3f4a06430ee8a0b59c9e956",
+          "thompson_center_poster/Thompson_Center_Poster.pptx": "c5c797ead522256c272c6a1a696cd6636b35d5d1d382550ab3836d5fdbbbd5b0",
+          "thompson_center_poster/Thompson_Center_Abstract.docx": "a0df61d90dcf43f57f968f4fb7bf9ad5bea8f881c00099a037c17937f5f66eef"
+        },
+        "selected_weights_unchanged": true
+      },
+      "selected_test_clan": {
+        "records": 20,
+        "computed_records": 20,
+        "all_within_display_precision": true,
+        "length_sd_within_display_precision": true
+      }
+    },
+    "reference_scope": {
+      "name": "CHATUtterance checkpoint, common word-gap adapter",
+      "role": "Frozen external reference only; not used for candidate selection or adaptation",
+      "model": "talkbank/CHATUtterance-en",
+      "revision": "764ec3f762c2e24df2def8df98b5fe34940085c6",
+      "training_provenance": "Official pinned model card says MICASE, distinct from OCSC and NYU-Emerson",
+      "source_repository": "Jemoka/batchalign2",
+      "source_commit": "d8bb0cd05d968b31333e6cfbbd4e93b93d288236",
+      "adapter": "First subtoken of each complete word; six-class argmax labels 2/3/4 are utterance ends. Fixed 512-subtoken windows, stride 256, center-weighted six-class logits. Preserve every source word; no Punkt, capitalization, or hanging-word postfilter. This evaluates the checkpoint, not the complete published Batchalign pipeline.",
+      "registered_before_reference_or_final_scores": true
+    },
+    "interpretation": "Models and deployment were frozen before final scores; no test-driven tuning. Historic benchmark inspection prevents a pristine test claim."
+  },
+  "metric_round": {
+    "selected": {
+      "name": "minilm_metric",
+      "validation_objective": 9.233384414233138,
+      "validation_f1": 0.8571548503546993,
+      "weights_sha256": "ad8f44b88979572231ff59e886d0e8464b15a2d6d9037841d2e2b23dd861ebbb",
+      "recorded_utc": "2026-10-15T16:18:40.030077+00:00",
+      "before_final_evaluation": true
+    },
+    "protocol_sha256": "b97c7d2ec3608e2d9fe6bf5c128ddbc0a02b35ea054f9b3f2239338055f2bb52",
+    "packages": {
+      "torch": "2.10.0",
+      "transformers": "4.57.6",
+      "safetensors": "0.8.0",
+      "sentencepiece": "0.2.1",
+      "protobuf": "6.33.6",
+      "numpy": "2.5.1",
+      "spacy": "3.8.14",
+      "en-core-web-sm": "3.8.0",
+      "taaled": "0.32",
+      "pylats": "0.64"
+    },
+    "production_bundle": {
+      "model.safetensors": "ad8f44b88979572231ff59e886d0e8464b15a2d6d9037841d2e2b23dd861ebbb",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "segmenter.json": "ee5fd2e397ae7ae7ad0b891844cb6bcc61191ab5ba8c9a72a934a25fe5d638c0"
+    },
+    "pretrained": {
+      "deberta": {
+        "id": "microsoft/deberta-v3-base",
+        "revision": "8ccc9b6f36199bec6961081d44eb72fb3f7353f3",
+        "files": [
+          "config.json",
+          "pytorch_model.bin",
+          "spm.model",
+          "tokenizer_config.json"
+        ]
+      },
+      "roberta": {
+        "id": "FacebookAI/roberta-base",
+        "revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+        "files": [
+          "config.json",
+          "merges.txt",
+          "model.safetensors",
+          "pytorch_model.bin",
+          "tokenizer.json",
+          "tokenizer_config.json",
+          "vocab.json"
+        ]
+      },
+      "minilm": {
+        "id": "microsoft/MiniLM-L12-H384-uncased",
+        "revision": "44acabbec0ef496f6dbc93adadea57f376b7c0ec"
+      },
+      "chat": {
+        "id": "talkbank/CHATUtterance-en",
+        "revision": "764ec3f762c2e24df2def8df98b5fe34940085c6"
+      }
+    },
+    "verification": {
+      "checked_recordings": 74,
+      "exact_frozen_private_predictions": 14,
+      "conditions": [
+        {
+          "dataset": "uncorrected",
+          "comparison_sha256": "17322f17c850a12f0941bda684385795c9ded2c574cdb6fb2924b6b8d97c072e",
+          "device": "mps"
+        },
+        {
+          "dataset": "corrected",
+          "comparison_sha256": "c866341bcf6928742a7cf3c8a76c44b6efec8c079f645c057887cce18d4980a0",
+          "device": "mps"
+        }
+      ],
+      "source_words_preserved": true,
+      "all_clan_within_display_precision": true,
+      "length_sd_verified": true,
+      "taaled_measures_per_recording": 17,
+      "maximum_pipeline_taaled_absolute_errors": {
+        "basic_ntokens": 9,
+        "basic_ntypes": 9,
+        "basic_ncontent_tokens": 10,
+        "basic_ncontent_types": 10,
+        "basic_nfunction_tokens": 2,
+        "basic_nfunction_types": 2,
+        "lexical_density_tokens": 0.01089453100751131,
+        "lexical_density_types": 0.016215635738831558,
+        "simple_ttr_aw": 0.007595084163317611,
+        "root_ttr_aw": 0.21215033216617307,
+        "log_ttr_aw": 0.00335783073067919,
+        "maas_ttr_aw": 0.0015005882249284203,
+        "mattr50_aw": 0.00827507598784194,
+        "msttr50_aw": 0.014285714285714235,
+        "hdd42_aw": 0.0059774517571282715,
+        "mtld_original_aw": 6.617360516807928,
+        "mtld_mean_factor_length_aw": 6.834821428571431
+      },
+      "taaled_scope": "Separate preprocessing retained; differences not described as exact calculator agreement",
+      "public_sources_unchanged": 907,
+      "publication_sha256": {
+        "conference_paper/conference_paper.docx": "1956b1c199884166a811dd9174189fb876a94a0caa05a11780b4e217ddf02eb7",
+        "thompson_center_poster/Thompson_Center_Poster.pdf": "40211c883408cf74e1664b9cfac746d33723d33cb3f4a06430ee8a0b59c9e956",
+        "thompson_center_poster/Thompson_Center_Poster.pptx": "c5c797ead522256c272c6a1a696cd6636b35d5d1d382550ab3836d5fdbbbd5b0",
+        "thompson_center_poster/Thompson_Center_Abstract.docx": "a0df61d90dcf43f57f968f4fb7bf9ad5bea8f881c00099a037c17937f5f66eef"
+      },
+      "selected_weights_unchanged": true
+    },
+    "final_code_sha256": {
+      "speech_pipeline/__init__.py": "0da46facb41bc052783d6834f764fba1df6fa85f23ac898a041d08bc5fd6b0af",
+      "speech_pipeline/__main__.py": "9fb9f6e8f2a2f0afa774694ef5495fe43230541b0ff47e8cf3796c3949286d71",
+      "speech_pipeline/boundary_model.py": "f939cb54a80ce1264a123e0fd5340e02306118b71f1522ba18f7ab1d7bb87244",
+      "speech_pipeline/clan.py": "7f1d0ef1ec9073becb31c81b7edc0c3fe82e83a15d2525009e88f5ed1e3e16de",
+      "speech_pipeline/corpora.py": "848c56a0fab84766fefdf86ac87c65c57c5ac8e26197027a8d7879a96936251c",
+      "speech_pipeline/export.py": "1b5f4a0da6369e30bb6b6b6d852154fbbb3e3428f84d31035dc8f8b7f35661a1",
+      "speech_pipeline/metrics.py": "1afcab3ce177e78811eba852c505aa121b58cb6b0fae32669f4607973d3018ea",
+      "speech_pipeline/pipeline.py": "cb3d5759a63573baed173985384abc4bf1a0300bff95204979714d2c493a7d73",
+      "speech_pipeline/segmentation.py": "e56d5b303ab815e48985001dde9497c361892aeba2239619319171542472377a",
+      "speech_pipeline/taaled.py": "92581b9b1c7df044e2d693d0d75ffc1c21e046e129cdbcc67ff9c89c49c37cfe",
+      "speech_pipeline/utterances.py": "0c4819a26a02239f4cca6bad819095e212b092a33b554379a897807d6488b5ed",
+      "speech_pipeline/research/metric_training.py": "8e7683f87d7e710437b341c73db8a36a157be2df418fba34bdcf5dd9b2a70de9",
+      "speech_pipeline/research/validation.py": "ad48099ff8b48f7c3ca6cdfcddbf8bad6b222de14ca702650ec95ba9b3437118"
+    },
+    "scope": "Transcript paragraphs only; audio deferred. Final groups opened only after public-validation selection. No post-final tuning."
+  }
+}

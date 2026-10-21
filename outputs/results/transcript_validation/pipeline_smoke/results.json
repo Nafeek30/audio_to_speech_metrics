@@ -1,0 +1,4213 @@
+{
+  "run_utc": "2026-10-16T00:07:14.254434+00:00",
+  "input": "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/validation/transcript_validation/smoke_input.txt",
+  "input_sha256": "23db6a92147cfb8ecc97c761c08320ab0288aea610a0c8201052c49e999a512d",
+  "segmenter": {
+    "name": "pretrained_joint_gap_segmentation",
+    "kind": "pretrained",
+    "device": "cpu",
+    "selected": "minilm_metric",
+    "threshold": null,
+    "decoding": "argmax",
+    "artifacts": {
+      "model.safetensors": "ad8f44b88979572231ff59e886d0e8464b15a2d6d9037841d2e2b23dd861ebbb",
+      "segmenter.json": "ee5fd2e397ae7ae7ad0b891844cb6bcc61191ab5ba8c9a72a934a25fe5d638c0",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+    },
+    "training_input_sha256": "d66d60ce3ff0d665d7f459e2fecbf1a2254a674ca6cfac5a92ee520da527242b"
+  },
+  "utterances": [
+    {
+      "utterance_id": 1,
+      "text": "er top left",
+      "source_start": 0,
+      "source_end": 11,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "er",
+          "top",
+          "left"
+        ],
+        "counted_words": [
+          "er",
+          "top",
+          "left"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 2,
+      "text": "they're",
+      "source_start": 12,
+      "source_end": 19,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "they're"
+        ],
+        "counted_words": [
+          "they're"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 3,
+      "text": "we're at the beach",
+      "source_start": 20,
+      "source_end": 38,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "we're",
+          "at",
+          "the",
+          "beach"
+        ],
+        "counted_words": [
+          "we're",
+          "at",
+          "the",
+          "beach"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 4,
+      "text": "and there's a red and pink sort of",
+      "source_start": 39,
+      "source_end": 73,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "there's",
+          "a",
+          "red",
+          "and",
+          "pink",
+          "sort",
+          "of"
+        ],
+        "counted_words": [
+          "and",
+          "there's",
+          "a",
+          "red",
+          "and",
+          "pink",
+          "sort",
+          "of"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 5,
+      "text": "err there's a red and pink screen at the on the s on the beach",
+      "source_start": 74,
+      "source_end": 136,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "err",
+          "there's",
+          "a",
+          "red",
+          "and",
+          "pink",
+          "screen",
+          "at",
+          "the",
+          "on",
+          "the",
+          "s",
+          "on",
+          "the",
+          "beach"
+        ],
+        "counted_words": [
+          "err",
+          "there's",
+          "a",
+          "red",
+          "and",
+          "pink",
+          "screen",
+          "at",
+          "the",
+          "on",
+          "the",
+          "s",
+          "on",
+          "the",
+          "beach"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 15,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 6,
+      "text": "that's got three panels",
+      "source_start": 137,
+      "source_end": 160,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "that's",
+          "got",
+          "three",
+          "panels"
+        ],
+        "counted_words": [
+          "that's",
+          "got",
+          "three",
+          "panels"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 7,
+      "text": "er sections",
+      "source_start": 161,
+      "source_end": 172,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "er",
+          "sections"
+        ],
+        "counted_words": [
+          "er",
+          "sections"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 8,
+      "text": "yeah",
+      "source_start": 173,
+      "source_end": 177,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 9,
+      "text": "and I've also got a yellow fish in the middle",
+      "source_start": 178,
+      "source_end": 223,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "I've",
+          "also",
+          "got",
+          "a",
+          "yellow",
+          "fish",
+          "in",
+          "the",
+          "middle"
+        ],
+        "counted_words": [
+          "and",
+          "I've",
+          "also",
+          "got",
+          "a",
+          "yellow",
+          "fish",
+          "in",
+          "the",
+          "middle"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 10,
+      "text": "okay",
+      "source_start": 224,
+      "source_end": 228,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 11,
+      "text": "okay",
+      "source_start": 229,
+      "source_end": 233,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 12,
+      "text": "er going across there's a shack er that has a green sign which says shack open",
+      "source_start": 234,
+      "source_end": 312,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "er",
+          "going",
+          "across",
+          "there's",
+          "a",
+          "shack",
+          "er",
+          "that",
+          "has",
+          "a",
+          "green",
+          "sign",
+          "which",
+          "says",
+          "shack",
+          "open"
+        ],
+        "counted_words": [
+          "er",
+          "going",
+          "across",
+          "there's",
+          "a",
+          "shack",
+          "er",
+          "that",
+          "has",
+          "a",
+          "green",
+          "sign",
+          "which",
+          "says",
+          "shack",
+          "open"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 16,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 13,
+      "text": "okay",
+      "source_start": 313,
+      "source_end": 317,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 14,
+      "text": "difference",
+      "source_start": 318,
+      "source_end": 328,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "difference"
+        ],
+        "counted_words": [
+          "difference"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 15,
+      "text": "ermm there's a window on the left of the sign",
+      "source_start": 329,
+      "source_end": 374,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "ermm",
+          "there's",
+          "a",
+          "window",
+          "on",
+          "the",
+          "left",
+          "of",
+          "the",
+          "sign"
+        ],
+        "counted_words": [
+          "ermm",
+          "there's",
+          "a",
+          "window",
+          "on",
+          "the",
+          "left",
+          "of",
+          "the",
+          "sign"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 16,
+      "text": "and a door on the right that opens",
+      "source_start": 375,
+      "source_end": 409,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "a",
+          "door",
+          "on",
+          "the",
+          "right",
+          "that",
+          "opens"
+        ],
+        "counted_words": [
+          "and",
+          "a",
+          "door",
+          "on",
+          "the",
+          "right",
+          "that",
+          "opens"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 17,
+      "text": "yeah",
+      "source_start": 410,
+      "source_end": 414,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 18,
+      "text": "mine's shut to you",
+      "source_start": 415,
+      "source_end": 433,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "mine's",
+          "shut",
+          "to",
+          "you"
+        ],
+        "counted_words": [
+          "mine's",
+          "shut",
+          "to",
+          "you"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 19,
+      "text": "er",
+      "source_start": 434,
+      "source_end": 436,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "er"
+        ],
+        "counted_words": [
+          "er"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 20,
+      "text": "and it goes on to like a balcony thing",
+      "source_start": 437,
+      "source_end": 475,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "it",
+          "goes",
+          "on",
+          "to",
+          "like",
+          "a",
+          "balcony",
+          "thing"
+        ],
+        "counted_words": [
+          "and",
+          "it",
+          "goes",
+          "on",
+          "to",
+          "like",
+          "a",
+          "balcony",
+          "thing"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 21,
+      "text": "okay",
+      "source_start": 476,
+      "source_end": 480,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 22,
+      "text": "and then there's a man playing golf",
+      "source_start": 481,
+      "source_end": 516,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "there's",
+          "a",
+          "man",
+          "playing",
+          "golf"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "there's",
+          "a",
+          "man",
+          "playing",
+          "golf"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 23,
+      "text": "he's er got a ball in front of him",
+      "source_start": 517,
+      "source_end": 551,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "he's",
+          "er",
+          "got",
+          "a",
+          "ball",
+          "in",
+          "front",
+          "of",
+          "him"
+        ],
+        "counted_words": [
+          "he's",
+          "er",
+          "got",
+          "a",
+          "ball",
+          "in",
+          "front",
+          "of",
+          "him"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 24,
+      "text": "okay",
+      "source_start": 552,
+      "source_end": 556,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 25,
+      "text": "that's a difference",
+      "source_start": 557,
+      "source_end": 576,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "that's",
+          "a",
+          "difference"
+        ],
+        "counted_words": [
+          "that's",
+          "a",
+          "difference"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 26,
+      "text": "and on the green there's a flag with a red flag",
+      "source_start": 577,
+      "source_end": 624,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "on",
+          "the",
+          "green",
+          "there's",
+          "a",
+          "flag",
+          "with",
+          "a",
+          "red",
+          "flag"
+        ],
+        "counted_words": [
+          "and",
+          "on",
+          "the",
+          "green",
+          "there's",
+          "a",
+          "flag",
+          "with",
+          "a",
+          "red",
+          "flag"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 27,
+      "text": "yeah",
+      "source_start": 625,
+      "source_end": 629,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 28,
+      "text": "cool",
+      "source_start": 630,
+      "source_end": 634,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "cool"
+        ],
+        "counted_words": [
+          "cool"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 29,
+      "text": "and then moving down there's er like a a tent with a blue table in it",
+      "source_start": 635,
+      "source_end": 704,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "moving",
+          "down",
+          "there's",
+          "er",
+          "like",
+          "a",
+          "a",
+          "tent",
+          "with",
+          "a",
+          "blue",
+          "table",
+          "in",
+          "it"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "moving",
+          "down",
+          "there's",
+          "er",
+          "like",
+          "a",
+          "a",
+          "tent",
+          "with",
+          "a",
+          "blue",
+          "table",
+          "in",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 16,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 30,
+      "text": "there's a blue table in the tent",
+      "source_start": 705,
+      "source_end": 737,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "there's",
+          "a",
+          "blue",
+          "table",
+          "in",
+          "the",
+          "tent"
+        ],
+        "counted_words": [
+          "there's",
+          "a",
+          "blue",
+          "table",
+          "in",
+          "the",
+          "tent"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 31,
+      "text": "and a woman sitting behind it",
+      "source_start": 738,
+      "source_end": 767,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "a",
+          "woman",
+          "sitting",
+          "behind",
+          "it"
+        ],
+        "counted_words": [
+          "and",
+          "a",
+          "woman",
+          "sitting",
+          "behind",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 32,
+      "text": "and on the table there's a grey box",
+      "source_start": 768,
+      "source_end": 803,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "on",
+          "the",
+          "table",
+          "there's",
+          "a",
+          "grey",
+          "box"
+        ],
+        "counted_words": [
+          "and",
+          "on",
+          "the",
+          "table",
+          "there's",
+          "a",
+          "grey",
+          "box"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 33,
+      "text": "and a white box",
+      "source_start": 804,
+      "source_end": 819,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "a",
+          "white",
+          "box"
+        ],
+        "counted_words": [
+          "and",
+          "a",
+          "white",
+          "box"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 34,
+      "text": "cool",
+      "source_start": 820,
+      "source_end": 824,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "cool"
+        ],
+        "counted_words": [
+          "cool"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 35,
+      "text": "and then hanging down is a sign that's red an s",
+      "source_start": 825,
+      "source_end": 872,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "hanging",
+          "down",
+          "is",
+          "a",
+          "sign",
+          "that's",
+          "red",
+          "an",
+          "s"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "hanging",
+          "down",
+          "is",
+          "a",
+          "sign",
+          "that's",
+          "red",
+          "an",
+          "s"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 36,
+      "text": "okay",
+      "source_start": 873,
+      "source_end": 877,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 37,
+      "text": "er mine says last seats half price",
+      "source_start": 878,
+      "source_end": 912,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "er",
+          "mine",
+          "says",
+          "last",
+          "seats",
+          "half",
+          "price"
+        ],
+        "counted_words": [
+          "er",
+          "mine",
+          "says",
+          "last",
+          "seats",
+          "half",
+          "price"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 38,
+      "text": "okay",
+      "source_start": 913,
+      "source_end": 917,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 39,
+      "text": "ermm",
+      "source_start": 918,
+      "source_end": 922,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "ermm"
+        ],
+        "counted_words": [
+          "ermm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 40,
+      "text": "and then in front of that on the beach is a another sign that ha in front of the shack or the tent",
+      "source_start": 923,
+      "source_end": 1021,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "in",
+          "front",
+          "of",
+          "that",
+          "on",
+          "the",
+          "beach",
+          "is",
+          "a",
+          "another",
+          "sign",
+          "that",
+          "ha",
+          "in",
+          "front",
+          "of",
+          "the",
+          "shack",
+          "or",
+          "the",
+          "tent"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "in",
+          "front",
+          "of",
+          "that",
+          "on",
+          "the",
+          "beach",
+          "is",
+          "a",
+          "another",
+          "sign",
+          "that",
+          "ha",
+          "in",
+          "front",
+          "of",
+          "the",
+          "shack",
+          "or",
+          "the",
+          "tent"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 23,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 41,
+      "text": "there's another sign",
+      "source_start": 1022,
+      "source_end": 1042,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "there's",
+          "another",
+          "sign"
+        ],
+        "counted_words": [
+          "there's",
+          "another",
+          "sign"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 42,
+      "text": "okay",
+      "source_start": 1043,
+      "source_end": 1047,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 43,
+      "text": "ermm",
+      "source_start": 1048,
+      "source_end": 1052,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "ermm"
+        ],
+        "counted_words": [
+          "ermm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 44,
+      "text": "and mine says South Pavillion Paul Simon",
+      "source_start": 1053,
+      "source_end": 1093,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "mine",
+          "says",
+          "South",
+          "Pavillion",
+          "Paul",
+          "Simon"
+        ],
+        "counted_words": [
+          "and",
+          "mine",
+          "says",
+          "South",
+          "Pavillion",
+          "Paul",
+          "Simon"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 45,
+      "text": "tribute do I think that's a difference",
+      "source_start": 1094,
+      "source_end": 1132,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "tribute",
+          "do",
+          "I",
+          "think",
+          "that's",
+          "a",
+          "difference"
+        ],
+        "counted_words": [
+          "tribute",
+          "do",
+          "I",
+          "think",
+          "that's",
+          "a",
+          "difference"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 46,
+      "text": "so is that number five",
+      "source_start": 1133,
+      "source_end": 1155,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "so",
+          "is",
+          "that",
+          "number",
+          "five"
+        ],
+        "counted_words": [
+          "so",
+          "is",
+          "that",
+          "number",
+          "five"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 47,
+      "text": "yeah",
+      "source_start": 1156,
+      "source_end": 1160,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 48,
+      "text": "okay",
+      "source_start": 1161,
+      "source_end": 1165,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 49,
+      "text": "and I've got two people poin",
+      "source_start": 1166,
+      "source_end": 1194,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "I've",
+          "got",
+          "two",
+          "people",
+          "poin"
+        ],
+        "counted_words": [
+          "and",
+          "I've",
+          "got",
+          "two",
+          "people",
+          "poin"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 50,
+      "text": "and the lady is pointing to the sign",
+      "source_start": 1195,
+      "source_end": 1231,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "the",
+          "lady",
+          "is",
+          "pointing",
+          "to",
+          "the",
+          "sign"
+        ],
+        "counted_words": [
+          "and",
+          "the",
+          "lady",
+          "is",
+          "pointing",
+          "to",
+          "the",
+          "sign"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 51,
+      "text": "yeah",
+      "source_start": 1232,
+      "source_end": 1236,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 52,
+      "text": "with flowers",
+      "source_start": 1237,
+      "source_end": 1249,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "with",
+          "flowers"
+        ],
+        "counted_words": [
+          "with",
+          "flowers"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 53,
+      "text": "and there's a man next to her whose also looking but not pointing",
+      "source_start": 1250,
+      "source_end": 1315,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "there's",
+          "a",
+          "man",
+          "next",
+          "to",
+          "her",
+          "whose",
+          "also",
+          "looking",
+          "but",
+          "not",
+          "pointing"
+        ],
+        "counted_words": [
+          "and",
+          "there's",
+          "a",
+          "man",
+          "next",
+          "to",
+          "her",
+          "whose",
+          "also",
+          "looking",
+          "but",
+          "not",
+          "pointing"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 13,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 54,
+      "text": "yeah",
+      "source_start": 1316,
+      "source_end": 1320,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 55,
+      "text": "he doesn't look happy",
+      "source_start": 1321,
+      "source_end": 1342,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "he",
+          "doesn't",
+          "look",
+          "happy"
+        ],
+        "counted_words": [
+          "he",
+          "doesn't",
+          "look",
+          "happy"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 56,
+      "text": "umm",
+      "source_start": 1343,
+      "source_end": 1346,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "umm"
+        ],
+        "counted_words": [],
+        "excluded_fillers": [
+          "umm"
+        ],
+        "include_mlu": false,
+        "exclusion_reason": "no_eligible_words",
+        "word_count": null,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 57,
+      "text": "okay above them is a boy sitting down",
+      "source_start": 1347,
+      "source_end": 1384,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay",
+          "above",
+          "them",
+          "is",
+          "a",
+          "boy",
+          "sitting",
+          "down"
+        ],
+        "counted_words": [
+          "okay",
+          "above",
+          "them",
+          "is",
+          "a",
+          "boy",
+          "sitting",
+          "down"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 58,
+      "text": "and he's got one sock on",
+      "source_start": 1385,
+      "source_end": 1409,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "he's",
+          "got",
+          "one",
+          "sock",
+          "on"
+        ],
+        "counted_words": [
+          "and",
+          "he's",
+          "got",
+          "one",
+          "sock",
+          "on"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 59,
+      "text": "and one sock on the ground",
+      "source_start": 1410,
+      "source_end": 1436,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "one",
+          "sock",
+          "on",
+          "the",
+          "ground"
+        ],
+        "counted_words": [
+          "and",
+          "one",
+          "sock",
+          "on",
+          "the",
+          "ground"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 60,
+      "text": "yeah",
+      "source_start": 1437,
+      "source_end": 1441,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 61,
+      "text": "okay",
+      "source_start": 1442,
+      "source_end": 1446,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 62,
+      "text": "that's different",
+      "source_start": 1447,
+      "source_end": 1463,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "that's",
+          "different"
+        ],
+        "counted_words": [
+          "that's",
+          "different"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 63,
+      "text": "okay",
+      "source_start": 1464,
+      "source_end": 1468,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 64,
+      "text": "and moving up",
+      "source_start": 1469,
+      "source_end": 1482,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "moving",
+          "up"
+        ],
+        "counted_words": [
+          "and",
+          "moving",
+          "up"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 65,
+      "text": "there's a girl in a red bikini",
+      "source_start": 1483,
+      "source_end": 1513,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "there's",
+          "a",
+          "girl",
+          "in",
+          "a",
+          "red",
+          "bikini"
+        ],
+        "counted_words": [
+          "there's",
+          "a",
+          "girl",
+          "in",
+          "a",
+          "red",
+          "bikini"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 66,
+      "text": "and she's got her legs",
+      "source_start": 1514,
+      "source_end": 1536,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "she's",
+          "got",
+          "her",
+          "legs"
+        ],
+        "counted_words": [
+          "and",
+          "she's",
+          "got",
+          "her",
+          "legs"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 67,
+      "text": "she's standing up",
+      "source_start": 1537,
+      "source_end": 1554,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "she's",
+          "standing",
+          "up"
+        ],
+        "counted_words": [
+          "she's",
+          "standing",
+          "up"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 68,
+      "text": "and her legs are crossed",
+      "source_start": 1555,
+      "source_end": 1579,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "her",
+          "legs",
+          "are",
+          "crossed"
+        ],
+        "counted_words": [
+          "and",
+          "her",
+          "legs",
+          "are",
+          "crossed"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 69,
+      "text": "yeah",
+      "source_start": 1580,
+      "source_end": 1584,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 70,
+      "text": "with a her left leg going over",
+      "source_start": 1585,
+      "source_end": 1615,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "with",
+          "a",
+          "her",
+          "left",
+          "leg",
+          "going",
+          "over"
+        ],
+        "counted_words": [
+          "with",
+          "a",
+          "her",
+          "left",
+          "leg",
+          "going",
+          "over"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 71,
+      "text": "cool",
+      "source_start": 1616,
+      "source_end": 1620,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "cool"
+        ],
+        "counted_words": [
+          "cool"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 72,
+      "text": "and her hands are on her hips",
+      "source_start": 1621,
+      "source_end": 1650,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "her",
+          "hands",
+          "are",
+          "on",
+          "her",
+          "hips"
+        ],
+        "counted_words": [
+          "and",
+          "her",
+          "hands",
+          "are",
+          "on",
+          "her",
+          "hips"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 73,
+      "text": "ah no sign",
+      "source_start": 1651,
+      "source_end": 1661,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "ah",
+          "no",
+          "sign"
+        ],
+        "counted_words": [
+          "ah",
+          "no",
+          "sign"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 74,
+      "text": "okay",
+      "source_start": 1662,
+      "source_end": 1666,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 75,
+      "text": "I don't have that",
+      "source_start": 1667,
+      "source_end": 1684,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "have",
+          "that"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "have",
+          "that"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 76,
+      "text": "so that's seven",
+      "source_start": 1685,
+      "source_end": 1700,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "so",
+          "that's",
+          "seven"
+        ],
+        "counted_words": [
+          "so",
+          "that's",
+          "seven"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 77,
+      "text": "okay",
+      "source_start": 1701,
+      "source_end": 1705,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 78,
+      "text": "and across to the left there's a boy in swimming trunks",
+      "source_start": 1706,
+      "source_end": 1761,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "across",
+          "to",
+          "the",
+          "left",
+          "there's",
+          "a",
+          "boy",
+          "in",
+          "swimming",
+          "trunks"
+        ],
+        "counted_words": [
+          "and",
+          "across",
+          "to",
+          "the",
+          "left",
+          "there's",
+          "a",
+          "boy",
+          "in",
+          "swimming",
+          "trunks"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 79,
+      "text": "yeah",
+      "source_start": 1762,
+      "source_end": 1766,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 80,
+      "text": "stripey ones",
+      "source_start": 1767,
+      "source_end": 1779,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "stripey",
+          "ones"
+        ],
+        "counted_words": [
+          "stripey",
+          "ones"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 81,
+      "text": "and blue flip flops",
+      "source_start": 1780,
+      "source_end": 1799,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "blue",
+          "flip",
+          "flops"
+        ],
+        "counted_words": [
+          "and",
+          "blue",
+          "flip",
+          "flops"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 82,
+      "text": "and next to him is a radio on the ground",
+      "source_start": 1800,
+      "source_end": 1840,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "next",
+          "to",
+          "him",
+          "is",
+          "a",
+          "radio",
+          "on",
+          "the",
+          "ground"
+        ],
+        "counted_words": [
+          "and",
+          "next",
+          "to",
+          "him",
+          "is",
+          "a",
+          "radio",
+          "on",
+          "the",
+          "ground"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 83,
+      "text": "yeah",
+      "source_start": 1841,
+      "source_end": 1845,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 84,
+      "text": "that's mine",
+      "source_start": 1846,
+      "source_end": 1857,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "that's",
+          "mine"
+        ],
+        "counted_words": [
+          "that's",
+          "mine"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 85,
+      "text": "and the aerial is up",
+      "source_start": 1858,
+      "source_end": 1878,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "the",
+          "aerial",
+          "is",
+          "up"
+        ],
+        "counted_words": [
+          "and",
+          "the",
+          "aerial",
+          "is",
+          "up"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 86,
+      "text": "yeah",
+      "source_start": 1879,
+      "source_end": 1883,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 87,
+      "text": "cool",
+      "source_start": 1884,
+      "source_end": 1888,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "cool"
+        ],
+        "counted_words": [
+          "cool"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 88,
+      "text": "and then there's just in front of him is another boy who is carrying a basket of peaches",
+      "source_start": 1889,
+      "source_end": 1977,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "there's",
+          "just",
+          "in",
+          "front",
+          "of",
+          "him",
+          "is",
+          "another",
+          "boy",
+          "who",
+          "is",
+          "carrying",
+          "a",
+          "basket",
+          "of",
+          "peaches"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "there's",
+          "just",
+          "in",
+          "front",
+          "of",
+          "him",
+          "is",
+          "another",
+          "boy",
+          "who",
+          "is",
+          "carrying",
+          "a",
+          "basket",
+          "of",
+          "peaches"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 89,
+      "text": "what's he carrying in your basket",
+      "source_start": 1978,
+      "source_end": 2011,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "what's",
+          "he",
+          "carrying",
+          "in",
+          "your",
+          "basket"
+        ],
+        "counted_words": [
+          "what's",
+          "he",
+          "carrying",
+          "in",
+          "your",
+          "basket"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 90,
+      "text": "okay",
+      "source_start": 2012,
+      "source_end": 2016,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 91,
+      "text": "it's a difference",
+      "source_start": 2017,
+      "source_end": 2034,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "it's",
+          "a",
+          "difference"
+        ],
+        "counted_words": [
+          "it's",
+          "a",
+          "difference"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 92,
+      "text": "oh mine too",
+      "source_start": 2035,
+      "source_end": 2046,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "oh",
+          "mine",
+          "too"
+        ],
+        "counted_words": [
+          "mine",
+          "too"
+        ],
+        "excluded_fillers": [
+          "oh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "Brown_listed_filler_assignment_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 93,
+      "text": "hang on",
+      "source_start": 2047,
+      "source_end": 2054,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "hang",
+          "on"
+        ],
+        "counted_words": [
+          "hang",
+          "on"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 94,
+      "text": "um mine says peaches on the basket",
+      "source_start": 2055,
+      "source_end": 2089,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "um",
+          "mine",
+          "says",
+          "peaches",
+          "on",
+          "the",
+          "basket"
+        ],
+        "counted_words": [
+          "mine",
+          "says",
+          "peaches",
+          "on",
+          "the",
+          "basket"
+        ],
+        "excluded_fillers": [
+          "um"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 95,
+      "text": "and then there's lots inside",
+      "source_start": 2090,
+      "source_end": 2118,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "there's",
+          "lots",
+          "inside"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "there's",
+          "lots",
+          "inside"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 96,
+      "text": "yeah",
+      "source_start": 2119,
+      "source_end": 2123,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 97,
+      "text": "yeah",
+      "source_start": 2124,
+      "source_end": 2128,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 98,
+      "text": "do you have what three peaches hanging down",
+      "source_start": 2129,
+      "source_end": 2172,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "do",
+          "you",
+          "have",
+          "what",
+          "three",
+          "peaches",
+          "hanging",
+          "down"
+        ],
+        "counted_words": [
+          "do",
+          "you",
+          "have",
+          "what",
+          "three",
+          "peaches",
+          "hanging",
+          "down"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 99,
+      "text": "do you have three peaches that are hanging down on a string",
+      "source_start": 2173,
+      "source_end": 2232,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "do",
+          "you",
+          "have",
+          "three",
+          "peaches",
+          "that",
+          "are",
+          "hanging",
+          "down",
+          "on",
+          "a",
+          "string"
+        ],
+        "counted_words": [
+          "do",
+          "you",
+          "have",
+          "three",
+          "peaches",
+          "that",
+          "are",
+          "hanging",
+          "down",
+          "on",
+          "a",
+          "string"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 100,
+      "text": "okay",
+      "source_start": 2233,
+      "source_end": 2237,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 101,
+      "text": "so eight",
+      "source_start": 2238,
+      "source_end": 2246,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "so",
+          "eight"
+        ],
+        "counted_words": [
+          "so",
+          "eight"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 102,
+      "text": "okay",
+      "source_start": 2247,
+      "source_end": 2251,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 103,
+      "text": "er",
+      "source_start": 2252,
+      "source_end": 2254,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "er"
+        ],
+        "counted_words": [
+          "er"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 104,
+      "text": "and then there's the bottom left",
+      "source_start": 2255,
+      "source_end": 2287,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "there's",
+          "the",
+          "bottom",
+          "left"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "there's",
+          "the",
+          "bottom",
+          "left"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 105,
+      "text": "there's two green bins",
+      "source_start": 2288,
+      "source_end": 2310,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "there's",
+          "two",
+          "green",
+          "bins"
+        ],
+        "counted_words": [
+          "there's",
+          "two",
+          "green",
+          "bins"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 106,
+      "text": "one says recycling",
+      "source_start": 2311,
+      "source_end": 2329,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "one",
+          "says",
+          "recycling"
+        ],
+        "counted_words": [
+          "one",
+          "says",
+          "recycling"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 107,
+      "text": "one says waste",
+      "source_start": 2330,
+      "source_end": 2344,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "one",
+          "says",
+          "waste"
+        ],
+        "counted_words": [
+          "one",
+          "says",
+          "waste"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 108,
+      "text": "okay",
+      "source_start": 2345,
+      "source_end": 2349,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 109,
+      "text": "and they're both closed",
+      "source_start": 2350,
+      "source_end": 2373,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "they're",
+          "both",
+          "closed"
+        ],
+        "counted_words": [
+          "and",
+          "they're",
+          "both",
+          "closed"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 110,
+      "text": "are both the bins lids down",
+      "source_start": 2374,
+      "source_end": 2401,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "are",
+          "both",
+          "the",
+          "bins",
+          "lids",
+          "down"
+        ],
+        "counted_words": [
+          "are",
+          "both",
+          "the",
+          "bins",
+          "lids",
+          "down"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 111,
+      "text": "yeah",
+      "source_start": 2402,
+      "source_end": 2406,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 112,
+      "text": "and then there's a woman in pink and purple",
+      "source_start": 2407,
+      "source_end": 2450,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "there's",
+          "a",
+          "woman",
+          "in",
+          "pink",
+          "and",
+          "purple"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "there's",
+          "a",
+          "woman",
+          "in",
+          "pink",
+          "and",
+          "purple"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 113,
+      "text": "she's got a pink top and purple skirt and flip flops",
+      "source_start": 2451,
+      "source_end": 2503,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "she's",
+          "got",
+          "a",
+          "pink",
+          "top",
+          "and",
+          "purple",
+          "skirt",
+          "and",
+          "flip",
+          "flops"
+        ],
+        "counted_words": [
+          "she's",
+          "got",
+          "a",
+          "pink",
+          "top",
+          "and",
+          "purple",
+          "skirt",
+          "and",
+          "flip",
+          "flops"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 114,
+      "text": "yeah",
+      "source_start": 2504,
+      "source_end": 2508,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 115,
+      "text": "and she's pushing a green pram",
+      "source_start": 2509,
+      "source_end": 2539,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "she's",
+          "pushing",
+          "a",
+          "green",
+          "pram"
+        ],
+        "counted_words": [
+          "and",
+          "she's",
+          "pushing",
+          "a",
+          "green",
+          "pram"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 116,
+      "text": "no",
+      "source_start": 2540,
+      "source_end": 2542,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "no"
+        ],
+        "counted_words": [
+          "no"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 117,
+      "text": "no not pans",
+      "source_start": 2543,
+      "source_end": 2554,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "no",
+          "not",
+          "pans"
+        ],
+        "counted_words": [
+          "no",
+          "not",
+          "pans"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 118,
+      "text": "ermm a green pram",
+      "source_start": 2555,
+      "source_end": 2572,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "ermm",
+          "a",
+          "green",
+          "pram"
+        ],
+        "counted_words": [
+          "ermm",
+          "a",
+          "green",
+          "pram"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 119,
+      "text": "what she doing",
+      "source_start": 2573,
+      "source_end": 2587,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "what",
+          "she",
+          "doing"
+        ],
+        "counted_words": [
+          "what",
+          "she",
+          "doing"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 120,
+      "text": "okay",
+      "source_start": 2588,
+      "source_end": 2592,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 121,
+      "text": "that's a difference",
+      "source_start": 2593,
+      "source_end": 2612,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "that's",
+          "a",
+          "difference"
+        ],
+        "counted_words": [
+          "that's",
+          "a",
+          "difference"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 122,
+      "text": "okay",
+      "source_start": 2613,
+      "source_end": 2617,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 123,
+      "text": "er",
+      "source_start": 2618,
+      "source_end": 2620,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "er"
+        ],
+        "counted_words": [
+          "er"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 124,
+      "text": "and then above her is a bucket that's got fish in it",
+      "source_start": 2621,
+      "source_end": 2673,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "above",
+          "her",
+          "is",
+          "a",
+          "bucket",
+          "that's",
+          "got",
+          "fish",
+          "in",
+          "it"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "above",
+          "her",
+          "is",
+          "a",
+          "bucket",
+          "that's",
+          "got",
+          "fish",
+          "in",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 125,
+      "text": "there's two purple fish and a few grey ones",
+      "source_start": 2674,
+      "source_end": 2717,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "there's",
+          "two",
+          "purple",
+          "fish",
+          "and",
+          "a",
+          "few",
+          "grey",
+          "ones"
+        ],
+        "counted_words": [
+          "there's",
+          "two",
+          "purple",
+          "fish",
+          "and",
+          "a",
+          "few",
+          "grey",
+          "ones"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 126,
+      "text": "and then I've got three shells",
+      "source_start": 2718,
+      "source_end": 2748,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "I've",
+          "got",
+          "three",
+          "shells"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "I've",
+          "got",
+          "three",
+          "shells"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 127,
+      "text": "okay",
+      "source_start": 2749,
+      "source_end": 2753,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 128,
+      "text": "eleven",
+      "source_start": 2754,
+      "source_end": 2760,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "eleven"
+        ],
+        "counted_words": [
+          "eleven"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 129,
+      "text": "and next to the bucket is a a net",
+      "source_start": 2761,
+      "source_end": 2794,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "next",
+          "to",
+          "the",
+          "bucket",
+          "is",
+          "a",
+          "a",
+          "net"
+        ],
+        "counted_words": [
+          "and",
+          "next",
+          "to",
+          "the",
+          "bucket",
+          "is",
+          "a",
+          "a",
+          "net"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 130,
+      "text": "that's",
+      "source_start": 2795,
+      "source_end": 2801,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "that's"
+        ],
+        "counted_words": [
+          "that's"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 131,
+      "text": "yeah",
+      "source_start": 2802,
+      "source_end": 2806,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "yeah"
+        ],
+        "counted_words": [
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 132,
+      "text": "that's stan",
+      "source_start": 2807,
+      "source_end": 2818,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "that's",
+          "stan"
+        ],
+        "counted_words": [
+          "that's",
+          "stan"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 133,
+      "text": "let's um pushed into the ground",
+      "source_start": 2819,
+      "source_end": 2850,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "let's",
+          "um",
+          "pushed",
+          "into",
+          "the",
+          "ground"
+        ],
+        "counted_words": [
+          "let's",
+          "pushed",
+          "into",
+          "the",
+          "ground"
+        ],
+        "excluded_fillers": [
+          "um"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 134,
+      "text": "and the net is at the top",
+      "source_start": 2851,
+      "source_end": 2876,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "and",
+          "the",
+          "net",
+          "is",
+          "at",
+          "the",
+          "top"
+        ],
+        "counted_words": [
+          "and",
+          "the",
+          "net",
+          "is",
+          "at",
+          "the",
+          "top"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 135,
+      "text": "okay",
+      "source_start": 2877,
+      "source_end": 2881,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 136,
+      "text": "we're missing one",
+      "source_start": 2882,
+      "source_end": 2899,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "we're",
+          "missing",
+          "one"
+        ],
+        "counted_words": [
+          "we're",
+          "missing",
+          "one"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 137,
+      "text": "no",
+      "source_start": 2900,
+      "source_end": 2902,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "no"
+        ],
+        "counted_words": [
+          "no"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 138,
+      "text": "ah",
+      "source_start": 2903,
+      "source_end": 2905,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "ah"
+        ],
+        "counted_words": [
+          "ah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 139,
+      "text": "okay",
+      "source_start": 2906,
+      "source_end": 2910,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "okay"
+        ],
+        "counted_words": [
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 140,
+      "text": "that's difference",
+      "source_start": 2911,
+      "source_end": 2928,
+      "reviewed": false,
+      "method": "pretrained_joint_gap_segmentation",
+      "scoring": {
+        "surface_words": [
+          "that's",
+          "difference"
+        ],
+        "counted_words": [
+          "that's",
+          "difference"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    }
+  ],
+  "chat_file": "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/results/transcript_validation/pipeline_smoke/transcript.cha",
+  "chat_sha256": "d62a284dc913fa708c1f0b48bffe72fc5e8bcce789ccd1acdd4608c7afa22e7e",
+  "chat_metrics": {
+    "values": {
+      "total_utterances": 140,
+      "eligible_mlu_utterances": 140.0,
+      "MLUw": 4.307142857142857,
+      "length_sd": 4.106,
+      "mlu_words": 603.0,
+      "TNW": 603.0,
+      "NDW": 190.0,
+      "TTR": 0.3150912106135987,
+      "MATTR": 0.701
+    },
+    "official_outputs": {
+      "mlu": {
+        "command": "mlu +t*PAR -t%mor",
+        "output_sha256": "2e64add881f69c04da1381020cf52a9f3dec97ca85981df6d8992edf10152023",
+        "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_wpkvnm7l/sample.cha\nThu Oct 15 19:07:14 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_wpkvnm7l/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 140, words = 603\n\tRatio of words over utterances = 4.307\n\tStandard deviation = 4.106\n\n",
+        "utterances": 140.0,
+        "total": 603.0,
+        "mlu": 4.307,
+        "sd": 4.106
+      },
+      "freq": {
+        "command": "freq +t*PAR -t%mor +k +b50",
+        "output_sha256": "84ff53e1d5ebf9872bb3dc7bdab59a1a02cf9bb25e1f88bcf1ed592494fa01dd",
+        "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_8rublcej/sample.cha\nThu Oct 15 19:07:14 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_8rublcej/sample.cha>\nSpeaker: *PAR:\n 42 a\n  2 above\n  2 across\n  1 aerial\n  2 ah\n  2 also\n  1 an\n 42 and\n  3 another\n  4 are\n  3 at\n  1 balcony\n  1 ball\n  3 basket\n  3 beach\n  1 behind\n  1 bikini\n  2 bins\n  3 blue\n  2 both\n  1 bottom\n  2 box\n  3 boy\n  2 bucket\n  1 but\n  2 carrying\n  1 closed\n  4 cool\n  1 crossed\n  6 difference\n  1 different\n  3 do\n  1 doesn't\n  1 doing\n  1 don't\n  1 door\n  6 down\n  1 eight\n  1 eleven\n 10 er\n  4 ermm\n  1 err\n  1 few\n  3 fish\n  1 five\n  2 flag\n  2 flip\n  2 flops\n  1 flowers\n  4 front\n  1 girl\n  1 goes\n  2 going\n  1 golf\n  9 got\n  5 green\n  2 grey\n  3 ground\n  1 ha\n  1 half\n  1 hands\n  1 hang\n  3 hanging\n  1 happy\n  1 has\n  3 have\n  2 he\n  2 he's\n  7 her\n  3 him\n  1 hips\n  2 i\n  3 i've\n 12 in\n  1 inside\n  1 into\n 12 is\n  4 it\n  1 it's\n  1 just\n  1 lady\n  1 last\n  5 left\n  1 leg\n  2 legs\n  1 let's\n  1 lids\n  2 like\n  1 look\n  1 looking\n  1 lots\n  2 man\n  1 middle\n  5 mine\n  1 mine's\n  1 missing\n  2 moving\n  2 net\n  3 next\n  4 no\n  2 not\n  1 number\n  7 of\n  1 oh\n 23 okay\n 15 on\n  5 one\n  2 ones\n  1 open\n  1 opens\n  1 or\n  1 over\n  1 panels\n  1 pans\n  1 paul\n  1 pavillion\n  4 peaches\n  1 people\n  4 pink\n  1 playing\n  1 poin\n  2 pointing\n  2 pram\n  1 price\n  3 purple\n  1 pushed\n  1 pushing\n  1 radio\n  1 recycling\n  5 red\n  1 right\n  2 s\n  6 says\n  1 screen\n  1 seats\n  1 sections\n  1 seven\n  3 shack\n  1 she\n  4 she's\n  1 shells\n  1 shut\n  7 sign\n  1 simon\n  2 sitting\n  1 skirt\n  3 so\n  2 sock\n  1 sort\n  1 south\n  1 stan\n  1 standing\n  1 string\n  1 stripey\n  1 swimming\n  3 table\n  3 tent\n  7 that\n 12 that's\n 27 the\n  1 them\n 10 then\n 19 there's\n  2 they're\n  1 thing\n  1 think\n  4 three\n  7 to\n  1 too\n  3 top\n  1 tribute\n  1 trunks\n  3 two\n  1 umm\n  3 up\n  1 waste\n  2 we're\n  2 what\n  1 what's\n  1 which\n  1 white\n  1 who\n  1 whose\n  1 window\n  4 with\n  2 woman\n 16 yeah\n  1 yellow\n  3 you\n  1 your\n------------------------------\n  190  Total number of different item types used\n  603  Total number of items (tokens)\n0.315  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.701  MATTR\n\n",
+        "NDW": 190.0,
+        "TNW": 603.0,
+        "TTR": 0.315,
+        "MATTR": 0.701
+      }
+    },
+    "engine": "native_CLAN_MLU_FREQ",
+    "policy": "Faithful words, uh/um pause-marked; other words retained. Native MLU and FREQ have distinct eligibility policies. Ratios from exact counts; SD/MATTR native three-decimal precision.",
+    "unavailable": [
+      "MLUm",
+      "PGU",
+      "maze_percentage",
+      "production_error_counts",
+      "WPM"
+    ]
+  },
+  "lexical_metrics": {
+    "basic_ntokens": 575,
+    "basic_ntypes": 167,
+    "basic_ncontent_tokens": 204,
+    "basic_ncontent_types": 108,
+    "basic_nfunction_tokens": 371,
+    "basic_nfunction_types": 59,
+    "lexical_density_tokens": 0.35478260869565215,
+    "lexical_density_types": 0.6467065868263473,
+    "simple_ttr_aw": 0.29043478260869565,
+    "log_ttr_aw": 0.8054289850224942,
+    "maas_ttr_aw": 0.07050522958837768,
+    "mattr50_aw": 0.671444866920152,
+    "msttr50_aw": 0.6745454545454546,
+    "hdd42_aw": 0.7349276809753839,
+    "mtld_original_aw": 32.88398692810458
+  },
+  "lexical_profile": "Historical TAALED 1.4.1 dictionary/category rules with current spaCy model; fixed pause cleaning. Vocabulary measures use the whole source text, independent of predicted utterance cuts.",
+  "lexical_pause_removals": {
+    "er": 10,
+    "err": 1,
+    "um": 2
+  },
+  "lexical_assets": {
+    "real_words.txt": "321e466037d790f4964971287499a6e302a81046929318c3687cf56a079d78d6",
+    "adj_lem_list.txt": "1dfca246e94a23a4e29c9e6b0bd96674971de76ed40f14862f7eb4e710d9e682"
+  },
+  "scope": "Target-speaker transcript only. Automatic boundaries remain unreviewed; no audio, clinical diagnosis or invented morphology/grammar/maze labels."
+}

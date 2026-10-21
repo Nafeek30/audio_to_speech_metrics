@@ -1,0 +1,371 @@
+REUSED BASELINE fold_1 epoch 1 inner margin 0.125
+COMPLETE lr2_count1 fold_1 sections 128 objective 9.125913204338458
+REUSED BASELINE fold_2 epoch 5 inner margin 1.0
+COMPLETE lr2_count1 fold_2 sections 129 objective 14.026850555684666
+REUSED BASELINE fold_3 epoch 2 inner margin 0.125
+COMPLETE lr2_count1 fold_3 sections 128 objective 15.132032061548399
+REUSED BASELINE fold_4 epoch 2 inner margin -0.125
+COMPLETE lr2_count1 fold_4 sections 126 objective 12.557393410971756
+REUSED BASELINE fold_5 epoch 2 inner margin 0.125
+COMPLETE lr2_count1 fold_5 sections 119 objective 14.970613054286195
+TRAIN lr2_count025 fold_1 fit children 147 inner children 37 windows 1661 device mps
+BATCH lr2_count025 fold_1 epoch 1 50 / 208
+BATCH lr2_count025 fold_1 epoch 1 100 / 208
+BATCH lr2_count025 fold_1 epoch 1 150 / 208
+BATCH lr2_count025 fold_1 epoch 1 200 / 208
+EPOCH lr2_count025 fold_1 {"epoch": 1, "mean_training_loss": 0.5264881207392766, "inner_objective": 12.63235873064476, "elapsed_seconds": 107.3199284169823}
+BATCH lr2_count025 fold_1 epoch 2 50 / 208
+BATCH lr2_count025 fold_1 epoch 2 100 / 208
+BATCH lr2_count025 fold_1 epoch 2 150 / 208
+BATCH lr2_count025 fold_1 epoch 2 200 / 208
+EPOCH lr2_count025 fold_1 {"epoch": 2, "mean_training_loss": 0.20678368418549115, "inner_objective": 15.218139674868441, "elapsed_seconds": 202.49915895797312}
+BATCH lr2_count025 fold_1 epoch 3 50 / 208
+BATCH lr2_count025 fold_1 epoch 3 100 / 208
+BATCH lr2_count025 fold_1 epoch 3 150 / 208
+BATCH lr2_count025 fold_1 epoch 3 200 / 208
+EPOCH lr2_count025 fold_1 {"epoch": 3, "mean_training_loss": 0.1714735752186523, "inner_objective": 15.880046115133318, "elapsed_seconds": 304.0081233329838}
+FROZEN lr2_count025 fold_1 {"selected_epoch": 1, "margin": 0.125, "inner_objective": 12.552451255548112}
+COMPLETE lr2_count025 fold_1 sections 128 objective 9.531692243313403
+TRAIN lr2_count025 fold_2 fit children 148 inner children 37 windows 1559 device mps
+BATCH lr2_count025 fold_2 epoch 1 50 / 195
+BATCH lr2_count025 fold_2 epoch 1 100 / 195
+BATCH lr2_count025 fold_2 epoch 1 150 / 195
+EPOCH lr2_count025 fold_2 {"epoch": 1, "mean_training_loss": 0.5567615162867766, "inner_objective": 15.640915054665337, "elapsed_seconds": 106.7898835829692}
+BATCH lr2_count025 fold_2 epoch 2 50 / 195
+BATCH lr2_count025 fold_2 epoch 2 100 / 195
+BATCH lr2_count025 fold_2 epoch 2 150 / 195
+EPOCH lr2_count025 fold_2 {"epoch": 2, "mean_training_loss": 0.21202653925388287, "inner_objective": 17.229508036131207, "elapsed_seconds": 211.6153693329543}
+BATCH lr2_count025 fold_2 epoch 3 50 / 195
+BATCH lr2_count025 fold_2 epoch 3 100 / 195
+BATCH lr2_count025 fold_2 epoch 3 150 / 195
+EPOCH lr2_count025 fold_2 {"epoch": 3, "mean_training_loss": 0.17950877126974937, "inner_objective": 15.104667800614337, "elapsed_seconds": 317.1326122080209}
+BATCH lr2_count025 fold_2 epoch 4 50 / 195
+BATCH lr2_count025 fold_2 epoch 4 100 / 195
+BATCH lr2_count025 fold_2 epoch 4 150 / 195
+EPOCH lr2_count025 fold_2 {"epoch": 4, "mean_training_loss": 0.157634827036124, "inner_objective": 16.157018159828045, "elapsed_seconds": 422.2697003749199}
+BATCH lr2_count025 fold_2 epoch 5 50 / 195
+BATCH lr2_count025 fold_2 epoch 5 100 / 195
+BATCH lr2_count025 fold_2 epoch 5 150 / 195
+EPOCH lr2_count025 fold_2 {"epoch": 5, "mean_training_loss": 0.14995620208672988, "inner_objective": 14.999542477144237, "elapsed_seconds": 525.8865931669716}
+BATCH lr2_count025 fold_2 epoch 6 50 / 195
+BATCH lr2_count025 fold_2 epoch 6 100 / 195
+BATCH lr2_count025 fold_2 epoch 6 150 / 195
+EPOCH lr2_count025 fold_2 {"epoch": 6, "mean_training_loss": 0.14952025856727208, "inner_objective": 15.769878430063693, "elapsed_seconds": 631.1943010420073}
+
+STAGE START 2026-10-16T04:59:11.286291+00:00
+RESUMED fold_2 after epoch 6 optimizer/scheduler/RNG restored
+TRAIN lr2_count025 fold_2 fit children 148 inner children 37 windows 1559 device mps
+FROZEN lr2_count025 fold_2 {"selected_epoch": 5, "margin": 1.0, "inner_objective": 13.285770454947643}
+COMPLETE lr2_count025 fold_2 sections 129 objective 14.11253779165564
+TRAIN lr2_count025 fold_3 fit children 148 inner children 37 windows 1587 device mps
+BATCH lr2_count025 fold_3 epoch 1 50 / 199
+BATCH lr2_count025 fold_3 epoch 1 100 / 199
+BATCH lr2_count025 fold_3 epoch 1 150 / 199
+EPOCH lr2_count025 fold_3 {"epoch": 1, "mean_training_loss": 0.5435758058599491, "inner_objective": 11.32119978859347, "elapsed_seconds": 85.26865908305626}
+BATCH lr2_count025 fold_3 epoch 2 50 / 199
+BATCH lr2_count025 fold_3 epoch 2 100 / 199
+BATCH lr2_count025 fold_3 epoch 2 150 / 199
+EPOCH lr2_count025 fold_3 {"epoch": 2, "mean_training_loss": 0.19991574893195427, "inner_objective": 11.240601565254726, "elapsed_seconds": 160.2990228330018}
+BATCH lr2_count025 fold_3 epoch 3 50 / 199
+BATCH lr2_count025 fold_3 epoch 3 100 / 199
+BATCH lr2_count025 fold_3 epoch 3 150 / 199
+EPOCH lr2_count025 fold_3 {"epoch": 3, "mean_training_loss": 0.16208495480481105, "inner_objective": 13.905440541834146, "elapsed_seconds": 234.197679416975}
+BATCH lr2_count025 fold_3 epoch 4 50 / 199
+BATCH lr2_count025 fold_3 epoch 4 100 / 199
+BATCH lr2_count025 fold_3 epoch 4 150 / 199
+EPOCH lr2_count025 fold_3 {"epoch": 4, "mean_training_loss": 0.15065153032990555, "inner_objective": 14.605303296693535, "elapsed_seconds": 306.2770753749646}
+FROZEN lr2_count025 fold_3 {"selected_epoch": 2, "margin": 0.0, "inner_objective": 11.240601565254726}
+COMPLETE lr2_count025 fold_3 sections 128 objective 13.738277961318778
+TRAIN lr2_count025 fold_4 fit children 148 inner children 37 windows 1691 device mps
+BATCH lr2_count025 fold_4 epoch 1 50 / 212
+BATCH lr2_count025 fold_4 epoch 1 100 / 212
+BATCH lr2_count025 fold_4 epoch 1 150 / 212
+BATCH lr2_count025 fold_4 epoch 1 200 / 212
+EPOCH lr2_count025 fold_4 {"epoch": 1, "mean_training_loss": 0.503860038828175, "inner_objective": 12.64721137132529, "elapsed_seconds": 72.53233995800838}
+BATCH lr2_count025 fold_4 epoch 2 50 / 212
+BATCH lr2_count025 fold_4 epoch 2 100 / 212
+BATCH lr2_count025 fold_4 epoch 2 150 / 212
+BATCH lr2_count025 fold_4 epoch 2 200 / 212
+EPOCH lr2_count025 fold_4 {"epoch": 2, "mean_training_loss": 0.21905623095215493, "inner_objective": 12.720444377474935, "elapsed_seconds": 144.76532058301382}
+BATCH lr2_count025 fold_4 epoch 3 50 / 212
+BATCH lr2_count025 fold_4 epoch 3 100 / 212
+BATCH lr2_count025 fold_4 epoch 3 150 / 212
+BATCH lr2_count025 fold_4 epoch 3 200 / 212
+EPOCH lr2_count025 fold_4 {"epoch": 3, "mean_training_loss": 0.18276445079102832, "inner_objective": 13.227819868764001, "elapsed_seconds": 217.90387645806186}
+FROZEN lr2_count025 fold_4 {"selected_epoch": 1, "margin": 0.5, "inner_objective": 12.165586577949972}
+COMPLETE lr2_count025 fold_4 sections 126 objective 12.503936345965675
+TRAIN lr2_count025 fold_5 fit children 148 inner children 37 windows 1706 device mps
+BATCH lr2_count025 fold_5 epoch 1 50 / 214
+BATCH lr2_count025 fold_5 epoch 1 100 / 214
+BATCH lr2_count025 fold_5 epoch 1 150 / 214
+BATCH lr2_count025 fold_5 epoch 1 200 / 214
+EPOCH lr2_count025 fold_5 {"epoch": 1, "mean_training_loss": 0.49441741281580703, "inner_objective": 9.12274862811192, "elapsed_seconds": 74.28182300005574}
+BATCH lr2_count025 fold_5 epoch 2 50 / 214
+BATCH lr2_count025 fold_5 epoch 2 100 / 214
+BATCH lr2_count025 fold_5 epoch 2 150 / 214
+BATCH lr2_count025 fold_5 epoch 2 200 / 214
+EPOCH lr2_count025 fold_5 {"epoch": 2, "mean_training_loss": 0.2048841897293786, "inner_objective": 9.283933439557211, "elapsed_seconds": 147.42728358402383}
+BATCH lr2_count025 fold_5 epoch 3 50 / 214
+BATCH lr2_count025 fold_5 epoch 3 100 / 214
+BATCH lr2_count025 fold_5 epoch 3 150 / 214
+BATCH lr2_count025 fold_5 epoch 3 200 / 214
+EPOCH lr2_count025 fold_5 {"epoch": 3, "mean_training_loss": 0.16760229305407712, "inner_objective": 9.704631376655525, "elapsed_seconds": 221.1033668750897}
+FROZEN lr2_count025 fold_5 {"selected_epoch": 1, "margin": 0.0, "inner_objective": 9.12274862811192}
+COMPLETE lr2_count025 fold_5 sections 119 objective 16.919789708687755
+TRAIN lr3_count1 fold_1 fit children 147 inner children 37 windows 1661 device mps
+BATCH lr3_count1 fold_1 epoch 1 50 / 208
+BATCH lr3_count1 fold_1 epoch 1 100 / 208
+BATCH lr3_count1 fold_1 epoch 1 150 / 208
+BATCH lr3_count1 fold_1 epoch 1 200 / 208
+EPOCH lr3_count1 fold_1 {"epoch": 1, "mean_training_loss": 0.7439237901797662, "inner_objective": 13.963917544544968, "elapsed_seconds": 75.4983709580265}
+BATCH lr3_count1 fold_1 epoch 2 50 / 208
+BATCH lr3_count1 fold_1 epoch 2 100 / 208
+BATCH lr3_count1 fold_1 epoch 2 150 / 208
+BATCH lr3_count1 fold_1 epoch 2 200 / 208
+EPOCH lr3_count1 fold_1 {"epoch": 2, "mean_training_loss": 0.22803015566359347, "inner_objective": 13.12110669531738, "elapsed_seconds": 146.43807637493592}
+BATCH lr3_count1 fold_1 epoch 3 50 / 208
+BATCH lr3_count1 fold_1 epoch 3 100 / 208
+BATCH lr3_count1 fold_1 epoch 3 150 / 208
+BATCH lr3_count1 fold_1 epoch 3 200 / 208
+EPOCH lr3_count1 fold_1 {"epoch": 3, "mean_training_loss": 0.18248613386486584, "inner_objective": 13.209104152398625, "elapsed_seconds": 220.44489441695623}
+BATCH lr3_count1 fold_1 epoch 4 50 / 208
+BATCH lr3_count1 fold_1 epoch 4 100 / 208
+BATCH lr3_count1 fold_1 epoch 4 150 / 208
+BATCH lr3_count1 fold_1 epoch 4 200 / 208
+EPOCH lr3_count1 fold_1 {"epoch": 4, "mean_training_loss": 0.17170322399873, "inner_objective": 13.92520515320608, "elapsed_seconds": 293.58649220794905}
+FROZEN lr3_count1 fold_1 {"selected_epoch": 2, "margin": -0.125, "inner_objective": 12.932796261241151}
+COMPLETE lr3_count1 fold_1 sections 128 objective 9.055708456840042
+TRAIN lr3_count1 fold_2 fit children 148 inner children 37 windows 1559 device mps
+BATCH lr3_count1 fold_2 epoch 1 50 / 195
+BATCH lr3_count1 fold_2 epoch 1 100 / 195
+BATCH lr3_count1 fold_2 epoch 1 150 / 195
+EPOCH lr3_count1 fold_2 {"epoch": 1, "mean_training_loss": 0.7971770322475678, "inner_objective": 15.608706309084177, "elapsed_seconds": 69.65851895802189}
+BATCH lr3_count1 fold_2 epoch 2 50 / 195
+BATCH lr3_count1 fold_2 epoch 2 100 / 195
+BATCH lr3_count1 fold_2 epoch 2 150 / 195
+EPOCH lr3_count1 fold_2 {"epoch": 2, "mean_training_loss": 0.23239329625398686, "inner_objective": 16.082159496381195, "elapsed_seconds": 137.68863212503493}
+BATCH lr3_count1 fold_2 epoch 3 50 / 195
+BATCH lr3_count1 fold_2 epoch 3 100 / 195
+BATCH lr3_count1 fold_2 epoch 3 150 / 195
+EPOCH lr3_count1 fold_2 {"epoch": 3, "mean_training_loss": 0.18806829005479814, "inner_objective": 14.013613519398893, "elapsed_seconds": 206.48915412498172}
+BATCH lr3_count1 fold_2 epoch 4 50 / 195
+BATCH lr3_count1 fold_2 epoch 4 100 / 195
+BATCH lr3_count1 fold_2 epoch 4 150 / 195
+EPOCH lr3_count1 fold_2 {"epoch": 4, "mean_training_loss": 0.16237794747337317, "inner_objective": 16.091726957687612, "elapsed_seconds": 275.6316934999777}
+BATCH lr3_count1 fold_2 epoch 5 50 / 195
+BATCH lr3_count1 fold_2 epoch 5 100 / 195
+BATCH lr3_count1 fold_2 epoch 5 150 / 195
+EPOCH lr3_count1 fold_2 {"epoch": 5, "mean_training_loss": 0.15272304515043894, "inner_objective": 14.60191838531499, "elapsed_seconds": 346.70475183299277}
+FROZEN lr3_count1 fold_2 {"selected_epoch": 3, "margin": 0.75, "inner_objective": 13.460565146172852}
+COMPLETE lr3_count1 fold_2 sections 129 objective 12.936464710719846
+TRAIN lr3_count1 fold_3 fit children 148 inner children 37 windows 1587 device mps
+BATCH lr3_count1 fold_3 epoch 1 50 / 199
+BATCH lr3_count1 fold_3 epoch 1 100 / 199
+BATCH lr3_count1 fold_3 epoch 1 150 / 199
+EPOCH lr3_count1 fold_3 {"epoch": 1, "mean_training_loss": 0.7676594382404682, "inner_objective": 11.176284362283686, "elapsed_seconds": 67.61723362491466}
+BATCH lr3_count1 fold_3 epoch 2 50 / 199
+BATCH lr3_count1 fold_3 epoch 2 100 / 199
+BATCH lr3_count1 fold_3 epoch 2 150 / 199
+EPOCH lr3_count1 fold_3 {"epoch": 2, "mean_training_loss": 0.22041053126505272, "inner_objective": 11.876270149151955, "elapsed_seconds": 134.18036991602276}
+BATCH lr3_count1 fold_3 epoch 3 50 / 199
+BATCH lr3_count1 fold_3 epoch 3 100 / 199
+BATCH lr3_count1 fold_3 epoch 3 150 / 199
+EPOCH lr3_count1 fold_3 {"epoch": 3, "mean_training_loss": 0.16961519038257886, "inner_objective": 13.83412170453582, "elapsed_seconds": 200.7220381660154}
+FROZEN lr3_count1 fold_3 {"selected_epoch": 1, "margin": 0.25, "inner_objective": 10.9082944260034}
+COMPLETE lr3_count1 fold_3 sections 128 objective 16.591767340141185
+TRAIN lr3_count1 fold_4 fit children 148 inner children 37 windows 1691 device mps
+BATCH lr3_count1 fold_4 epoch 1 50 / 212
+BATCH lr3_count1 fold_4 epoch 1 100 / 212
+BATCH lr3_count1 fold_4 epoch 1 150 / 212
+BATCH lr3_count1 fold_4 epoch 1 200 / 212
+EPOCH lr3_count1 fold_4 {"epoch": 1, "mean_training_loss": 0.6956444646249402, "inner_objective": 12.097452292671171, "elapsed_seconds": 69.01295020792168}
+BATCH lr3_count1 fold_4 epoch 2 50 / 212
+BATCH lr3_count1 fold_4 epoch 2 100 / 212
+BATCH lr3_count1 fold_4 epoch 2 150 / 212
+BATCH lr3_count1 fold_4 epoch 2 200 / 212
+EPOCH lr3_count1 fold_4 {"epoch": 2, "mean_training_loss": 0.254647044640667, "inner_objective": 12.28819155536141, "elapsed_seconds": 137.31550308293663}
+BATCH lr3_count1 fold_4 epoch 3 50 / 212
+BATCH lr3_count1 fold_4 epoch 3 100 / 212
+BATCH lr3_count1 fold_4 epoch 3 150 / 212
+BATCH lr3_count1 fold_4 epoch 3 200 / 212
+EPOCH lr3_count1 fold_4 {"epoch": 3, "mean_training_loss": 0.19544047075060178, "inner_objective": 12.097668955344526, "elapsed_seconds": 205.69318683294114}
+FROZEN lr3_count1 fold_4 {"selected_epoch": 1, "margin": 0.0, "inner_objective": 12.097452292671171}
+COMPLETE lr3_count1 fold_4 sections 126 objective 12.693108422708754
+TRAIN lr3_count1 fold_5 fit children 148 inner children 37 windows 1706 device mps
+BATCH lr3_count1 fold_5 epoch 1 50 / 214
+BATCH lr3_count1 fold_5 epoch 1 100 / 214
+BATCH lr3_count1 fold_5 epoch 1 150 / 214
+BATCH lr3_count1 fold_5 epoch 1 200 / 214
+EPOCH lr3_count1 fold_5 {"epoch": 1, "mean_training_loss": 0.6453404338838898, "inner_objective": 9.635966329619988, "elapsed_seconds": 69.18988824996632}
+BATCH lr3_count1 fold_5 epoch 2 50 / 214
+BATCH lr3_count1 fold_5 epoch 2 100 / 214
+BATCH lr3_count1 fold_5 epoch 2 150 / 214
+BATCH lr3_count1 fold_5 epoch 2 200 / 214
+EPOCH lr3_count1 fold_5 {"epoch": 2, "mean_training_loss": 0.21337961973013164, "inner_objective": 8.98538120548915, "elapsed_seconds": 137.7640433339402}
+BATCH lr3_count1 fold_5 epoch 3 50 / 214
+BATCH lr3_count1 fold_5 epoch 3 100 / 214
+BATCH lr3_count1 fold_5 epoch 3 150 / 214
+BATCH lr3_count1 fold_5 epoch 3 200 / 214
+EPOCH lr3_count1 fold_5 {"epoch": 3, "mean_training_loss": 0.17225099215719186, "inner_objective": 10.786228927732921, "elapsed_seconds": 208.43864545901306}
+BATCH lr3_count1 fold_5 epoch 4 50 / 214
+BATCH lr3_count1 fold_5 epoch 4 100 / 214
+BATCH lr3_count1 fold_5 epoch 4 150 / 214
+BATCH lr3_count1 fold_5 epoch 4 200 / 214
+EPOCH lr3_count1 fold_5 {"epoch": 4, "mean_training_loss": 0.1570757625224156, "inner_objective": 11.151766377468311, "elapsed_seconds": 278.71477004198823}
+FROZEN lr3_count1 fold_5 {"selected_epoch": 2, "margin": 0.125, "inner_objective": 8.87372088549653}
+COMPLETE lr3_count1 fold_5 sections 119 objective 16.35182840878031
+TRAIN lr3_count025 fold_1 fit children 147 inner children 37 windows 1661 device mps
+BATCH lr3_count025 fold_1 epoch 1 50 / 208
+BATCH lr3_count025 fold_1 epoch 1 100 / 208
+BATCH lr3_count025 fold_1 epoch 1 150 / 208
+BATCH lr3_count025 fold_1 epoch 1 200 / 208
+EPOCH lr3_count025 fold_1 {"epoch": 1, "mean_training_loss": 0.483762447292415, "inner_objective": 14.59859547680289, "elapsed_seconds": 68.40537649998441}
+BATCH lr3_count025 fold_1 epoch 2 50 / 208
+BATCH lr3_count025 fold_1 epoch 2 100 / 208
+BATCH lr3_count025 fold_1 epoch 2 150 / 208
+BATCH lr3_count025 fold_1 epoch 2 200 / 208
+EPOCH lr3_count025 fold_1 {"epoch": 2, "mean_training_loss": 0.19010228258915818, "inner_objective": 14.333022706815724, "elapsed_seconds": 138.33691325003747}
+BATCH lr3_count025 fold_1 epoch 3 50 / 208
+BATCH lr3_count025 fold_1 epoch 3 100 / 208
+BATCH lr3_count025 fold_1 epoch 3 150 / 208
+BATCH lr3_count025 fold_1 epoch 3 200 / 208
+EPOCH lr3_count025 fold_1 {"epoch": 3, "mean_training_loss": 0.1537738237888194, "inner_objective": 13.282096222684197, "elapsed_seconds": 209.06059100001585}
+BATCH lr3_count025 fold_1 epoch 4 50 / 208
+BATCH lr3_count025 fold_1 epoch 4 100 / 208
+BATCH lr3_count025 fold_1 epoch 4 150 / 208
+BATCH lr3_count025 fold_1 epoch 4 200 / 208
+EPOCH lr3_count025 fold_1 {"epoch": 4, "mean_training_loss": 0.14580503081043178, "inner_objective": 12.782587015677928, "elapsed_seconds": 280.2293785830261}
+
+STAGE START 2026-10-16T05:40:23.410258+00:00
+RESUMED fold_1 after epoch 4 optimizer/scheduler/RNG restored
+TRAIN lr3_count025 fold_1 fit children 147 inner children 37 windows 1661 device mps
+BATCH lr3_count025 fold_1 epoch 5 50 / 208
+BATCH lr3_count025 fold_1 epoch 5 100 / 208
+BATCH lr3_count025 fold_1 epoch 5 150 / 208
+BATCH lr3_count025 fold_1 epoch 5 200 / 208
+EPOCH lr3_count025 fold_1 {"epoch": 5, "mean_training_loss": 0.1285497615642201, "inner_objective": 12.981491754807088, "elapsed_seconds": 376.95595641690306}
+BATCH lr3_count025 fold_1 epoch 6 50 / 208
+BATCH lr3_count025 fold_1 epoch 6 100 / 208
+BATCH lr3_count025 fold_1 epoch 6 150 / 208
+BATCH lr3_count025 fold_1 epoch 6 200 / 208
+EPOCH lr3_count025 fold_1 {"epoch": 6, "mean_training_loss": 0.12677572603122547, "inner_objective": 11.881311844328854, "elapsed_seconds": 451.6875621250365}
+FROZEN lr3_count025 fold_1 {"selected_epoch": 6, "margin": -0.125, "inner_objective": 11.712827711144747}
+COMPLETE lr3_count025 fold_1 sections 128 objective 9.064729144176232
+TRAIN lr3_count025 fold_2 fit children 148 inner children 37 windows 1559 device mps
+BATCH lr3_count025 fold_2 epoch 1 50 / 195
+BATCH lr3_count025 fold_2 epoch 1 100 / 195
+BATCH lr3_count025 fold_2 epoch 1 150 / 195
+EPOCH lr3_count025 fold_2 {"epoch": 1, "mean_training_loss": 0.5139745277472031, "inner_objective": 15.647970993702854, "elapsed_seconds": 78.87428145902231}
+BATCH lr3_count025 fold_2 epoch 2 50 / 195
+BATCH lr3_count025 fold_2 epoch 2 100 / 195
+BATCH lr3_count025 fold_2 epoch 2 150 / 195
+EPOCH lr3_count025 fold_2 {"epoch": 2, "mean_training_loss": 0.19372731649722807, "inner_objective": 14.375233221805033, "elapsed_seconds": 153.37520229211077}
+BATCH lr3_count025 fold_2 epoch 3 50 / 195
+BATCH lr3_count025 fold_2 epoch 3 100 / 195
+BATCH lr3_count025 fold_2 epoch 3 150 / 195
+EPOCH lr3_count025 fold_2 {"epoch": 3, "mean_training_loss": 0.16103762346200454, "inner_objective": 14.889984275037285, "elapsed_seconds": 228.82159066712484}
+BATCH lr3_count025 fold_2 epoch 4 50 / 195
+BATCH lr3_count025 fold_2 epoch 4 100 / 195
+BATCH lr3_count025 fold_2 epoch 4 150 / 195
+EPOCH lr3_count025 fold_2 {"epoch": 4, "mean_training_loss": 0.141344113007952, "inner_objective": 16.938529137272173, "elapsed_seconds": 303.5033523750026}
+FROZEN lr3_count025 fold_2 {"selected_epoch": 2, "margin": 0.5, "inner_objective": 13.72787243289264}
+COMPLETE lr3_count025 fold_2 sections 129 objective 13.61646511823342
+TRAIN lr3_count025 fold_3 fit children 148 inner children 37 windows 1587 device mps
+BATCH lr3_count025 fold_3 epoch 1 50 / 199
+BATCH lr3_count025 fold_3 epoch 1 100 / 199
+BATCH lr3_count025 fold_3 epoch 1 150 / 199
+EPOCH lr3_count025 fold_3 {"epoch": 1, "mean_training_loss": 0.49081439131767907, "inner_objective": 11.816162762803927, "elapsed_seconds": 77.94797654193826}
+BATCH lr3_count025 fold_3 epoch 2 50 / 199
+BATCH lr3_count025 fold_3 epoch 2 100 / 199
+BATCH lr3_count025 fold_3 epoch 2 150 / 199
+EPOCH lr3_count025 fold_3 {"epoch": 2, "mean_training_loss": 0.17911783529061767, "inner_objective": 11.848529391015441, "elapsed_seconds": 154.96553637483157}
+BATCH lr3_count025 fold_3 epoch 3 50 / 199
+BATCH lr3_count025 fold_3 epoch 3 100 / 199
+BATCH lr3_count025 fold_3 epoch 3 150 / 199
+EPOCH lr3_count025 fold_3 {"epoch": 3, "mean_training_loss": 0.1443975465793406, "inner_objective": 14.718596952181215, "elapsed_seconds": 229.59358779201284}
+FROZEN lr3_count025 fold_3 {"selected_epoch": 1, "margin": -0.125, "inner_objective": 11.727816397941039}
+COMPLETE lr3_count025 fold_3 sections 128 objective 14.9681018587086
+TRAIN lr3_count025 fold_4 fit children 148 inner children 37 windows 1691 device mps
+BATCH lr3_count025 fold_4 epoch 1 50 / 212
+BATCH lr3_count025 fold_4 epoch 1 100 / 212
+BATCH lr3_count025 fold_4 epoch 1 150 / 212
+BATCH lr3_count025 fold_4 epoch 1 200 / 212
+EPOCH lr3_count025 fold_4 {"epoch": 1, "mean_training_loss": 0.465943020961757, "inner_objective": 11.970620061491331, "elapsed_seconds": 73.57601962494664}
+BATCH lr3_count025 fold_4 epoch 2 50 / 212
+BATCH lr3_count025 fold_4 epoch 2 100 / 212
+BATCH lr3_count025 fold_4 epoch 2 150 / 212
+BATCH lr3_count025 fold_4 epoch 2 200 / 212
+EPOCH lr3_count025 fold_4 {"epoch": 2, "mean_training_loss": 0.19827184562553773, "inner_objective": 12.66732760576208, "elapsed_seconds": 149.81290179211646}
+BATCH lr3_count025 fold_4 epoch 3 50 / 212
+BATCH lr3_count025 fold_4 epoch 3 100 / 212
+BATCH lr3_count025 fold_4 epoch 3 150 / 212
+BATCH lr3_count025 fold_4 epoch 3 200 / 212
+EPOCH lr3_count025 fold_4 {"epoch": 3, "mean_training_loss": 0.16195646467847083, "inner_objective": 12.494797950849744, "elapsed_seconds": 225.44286204199307}
+FROZEN lr3_count025 fold_4 {"selected_epoch": 1, "margin": 0.0, "inner_objective": 11.970620061491331}
+COMPLETE lr3_count025 fold_4 sections 126 objective 12.320500311856962
+TRAIN lr3_count025 fold_5 fit children 148 inner children 37 windows 1706 device mps
+BATCH lr3_count025 fold_5 epoch 1 50 / 214
+BATCH lr3_count025 fold_5 epoch 1 100 / 214
+BATCH lr3_count025 fold_5 epoch 1 150 / 214
+BATCH lr3_count025 fold_5 epoch 1 200 / 214
+EPOCH lr3_count025 fold_5 {"epoch": 1, "mean_training_loss": 0.44954408231739684, "inner_objective": 9.609544475770965, "elapsed_seconds": 75.22622258309275}
+BATCH lr3_count025 fold_5 epoch 2 50 / 214
+BATCH lr3_count025 fold_5 epoch 2 100 / 214
+BATCH lr3_count025 fold_5 epoch 2 150 / 214
+BATCH lr3_count025 fold_5 epoch 2 200 / 214
+EPOCH lr3_count025 fold_5 {"epoch": 2, "mean_training_loss": 0.1863291884345986, "inner_objective": 9.340178807970853, "elapsed_seconds": 149.3383652921766}
+BATCH lr3_count025 fold_5 epoch 3 50 / 214
+BATCH lr3_count025 fold_5 epoch 3 100 / 214
+BATCH lr3_count025 fold_5 epoch 3 150 / 214
+BATCH lr3_count025 fold_5 epoch 3 200 / 214
+EPOCH lr3_count025 fold_5 {"epoch": 3, "mean_training_loss": 0.1487443113751779, "inner_objective": 10.638327846071144, "elapsed_seconds": 225.39726437511854}
+BATCH lr3_count025 fold_5 epoch 4 50 / 214
+BATCH lr3_count025 fold_5 epoch 4 100 / 214
+BATCH lr3_count025 fold_5 epoch 4 150 / 214
+BATCH lr3_count025 fold_5 epoch 4 200 / 214
+EPOCH lr3_count025 fold_5 {"epoch": 4, "mean_training_loss": 0.136296920130186, "inner_objective": 10.906749006735902, "elapsed_seconds": 299.9600279170554}
+FROZEN lr3_count025 fold_5 {"selected_epoch": 2, "margin": 0.125, "inner_objective": 8.745352011945796}
+COMPLETE lr3_count025 fold_5 sections 119 objective 16.716730287240715
+CV RECIPE SELECTED {"frozen_utc": "2026-10-21T01:54:26.238384+00:00", "configuration": "lr2_count1", "recipe": {"encoder_lr": 2e-05, "head_lr": 0.0001, "count_weight": 1.0}, "cv_objective": 13.160230900272445, "candidates": [{"configuration": "lr2_count1", "recipe": {"encoder_lr": 2e-05, "head_lr": 0.0001, "count_weight": 1.0}, "objective": 13.160230900272445, "fold_mean": 13.162560457365894, "fold_sd": 2.47768128329587}, {"configuration": "lr2_count025", "recipe": {"encoder_lr": 2e-05, "head_lr": 0.0001, "count_weight": 0.25}, "objective": 13.356632686719115, "fold_mean": 13.361246810188252, "fold_sd": 2.681897071149256}, {"configuration": "lr3_count1", "recipe": {"encoder_lr": 3e-05, "head_lr": 0.00015, "count_weight": 1.0}, "objective": 13.519631156877596, "fold_mean": 13.525775467838027, "fold_sd": 3.0987498303892465}, {"configuration": "lr3_count025", "recipe": {"encoder_lr": 3e-05, "head_lr": 0.00015, "count_weight": 0.25}, "objective": 13.332301950292626, "fold_mean": 13.337305344043187, "fold_sd": 2.891657840047176}], "cv_results_sha256": "939a89dc9281c9d14600b6c4c3eb51c05963e420c55d5fa20cf77b436fa4802d", "protocol_sha256": "98ea656be3f3a4dbddc6b1b7b62761c4e2fc169545604df658a67abefde05903", "original_eval_or_test_used_for_recipe_selection": false, "ranking_rule": "Minimum pooled out-of-fold corpus-balanced mean participant APE across eligible-count, MLUw and length SD. Every recipe must complete all five folds. Exact ties retain listed recipe order. No best-fold selection."}
+TRAIN lr2_count1 final fit children 231 inner children 49 windows 2582 device mps
+BATCH lr2_count1 final epoch 1 50 / 323
+BATCH lr2_count1 final epoch 1 100 / 323
+BATCH lr2_count1 final epoch 1 150 / 323
+BATCH lr2_count1 final epoch 1 200 / 323
+BATCH lr2_count1 final epoch 1 250 / 323
+BATCH lr2_count1 final epoch 1 300 / 323
+EPOCH lr2_count1 final {"epoch": 1, "mean_training_loss": 0.6990889738495505, "inner_objective": 17.85093514468011, "elapsed_seconds": 117.71053787507117}
+BATCH lr2_count1 final epoch 2 50 / 323
+BATCH lr2_count1 final epoch 2 100 / 323
+BATCH lr2_count1 final epoch 2 150 / 323
+BATCH lr2_count1 final epoch 2 200 / 323
+BATCH lr2_count1 final epoch 2 250 / 323
+BATCH lr2_count1 final epoch 2 300 / 323
+EPOCH lr2_count1 final {"epoch": 2, "mean_training_loss": 0.2266712769081718, "inner_objective": 12.32819014125049, "elapsed_seconds": 233.09113866603002}
+BATCH lr2_count1 final epoch 3 50 / 323
+BATCH lr2_count1 final epoch 3 100 / 323
+BATCH lr2_count1 final epoch 3 150 / 323
+BATCH lr2_count1 final epoch 3 200 / 323
+BATCH lr2_count1 final epoch 3 250 / 323
+BATCH lr2_count1 final epoch 3 300 / 323
+EPOCH lr2_count1 final {"epoch": 3, "mean_training_loss": 0.19380451162164056, "inner_objective": 11.807088814203796, "elapsed_seconds": 343.8775158331264}
+BATCH lr2_count1 final epoch 4 50 / 323
+BATCH lr2_count1 final epoch 4 100 / 323
+BATCH lr2_count1 final epoch 4 150 / 323
+BATCH lr2_count1 final epoch 4 200 / 323
+BATCH lr2_count1 final epoch 4 250 / 323
+BATCH lr2_count1 final epoch 4 300 / 323
+EPOCH lr2_count1 final {"epoch": 4, "mean_training_loss": 0.17673205192151822, "inner_objective": 17.966386457951018, "elapsed_seconds": 455.71432220819406}
+BATCH lr2_count1 final epoch 5 50 / 323
+BATCH lr2_count1 final epoch 5 100 / 323
+BATCH lr2_count1 final epoch 5 150 / 323
+BATCH lr2_count1 final epoch 5 200 / 323
+BATCH lr2_count1 final epoch 5 250 / 323
+BATCH lr2_count1 final epoch 5 300 / 323
+EPOCH lr2_count1 final {"epoch": 5, "mean_training_loss": 0.16315877279583885, "inner_objective": 17.82261942086767, "elapsed_seconds": 566.9421815001406}
+FROZEN lr2_count1 final {"selected_epoch": 3, "margin": 0.0, "inner_objective": 11.807088814203796}
+COMPLETE lr2_count1 final sections 126 objective 14.11969383626168
+CV SEARCH AND FINAL TEST AUDIT PASSED
+REPORT /Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/results/cv_hyperparameter_v4/REPORT.md
+
+STAGE START 2026-10-21T01:27:10.583917+00:00

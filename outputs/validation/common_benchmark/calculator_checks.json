@@ -1,0 +1,2912 @@
+[
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4002",
+    "recording": "transcripts/4/4002.cha#section5",
+    "method": "reference",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 69,
+          "reference": 69.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 175,
+          "reference": 175.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.536231884057971,
+          "reference": 2.536,
+          "difference": 0.00023188405797114342,
+          "absolute_error": 0.00023188405797114342,
+          "absolute_percent_error": 0.009143693137663384
+        },
+        "mlu_words_sd": {
+          "custom": 1.1743602655004577,
+          "reference": 1.174,
+          "difference": 0.00036026550045775707,
+          "absolute_error": 0.00036026550045775707,
+          "absolute_percent_error": 0.03068701026045631
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 175,
+          "reference": 175.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 72,
+          "reference": 72.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4114285714285714,
+          "reference": 0.411,
+          "difference": 0.0004285714285714448,
+          "absolute_error": 0.0004285714285714448,
+          "absolute_percent_error": 0.10427528675704253
+        },
+        "MATTR": {
+          "custom": 0.5274603174603175,
+          "reference": 0.527,
+          "difference": 0.0004603174603174942,
+          "absolute_error": 0.0004603174603174942,
+          "absolute_percent_error": 0.08734676666366113
+        },
+        "MLUw": {
+          "custom": 2.536231884057971,
+          "reference": 2.536,
+          "difference": 0.00023188405797114342,
+          "absolute_error": 0.00023188405797114342,
+          "absolute_percent_error": 0.009143693137663384
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "c06da7bd9e24d28a87176c2bc8ccd0ae34c5a04e9716464077ce8ac99eb169f7",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_87am6yr1/sample.cha\nThu Oct 15 15:55:10 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_87am6yr1/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 69, words = 175\n\tRatio of words over utterances = 2.536\n\tStandard deviation = 1.174\n\n",
+          "utterances": 69.0,
+          "total": 175.0,
+          "mlu": 2.536,
+          "sd": 1.174
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "c29e77594f16108d1ef03b3298c50f007b9243f2690dd1c4ba604fc077835f06",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_a425rz_6/sample.cha\nThu Oct 15 15:55:10 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_a425rz_6/sample.cha>\nSpeaker: *PAR:\n 33 a\n  2 airplane\n  1 airplanes\n 24 and\n  4 another\n  1 are\n  2 because\n  1 bed\n  1 beet\n  1 beets\n  1 bigger\n  1 blanket\n  1 blue\n  1 boat\n  1 book\n  1 bulb\n  1 cars\n  1 caterpillar\n  1 clock\n  2 doing\n  6 don't\n  1 fence\n  3 fish\n  1 flower\n  1 food\n  1 funny\n  1 grass\n  1 him\n 12 i\n  1 i'm\n  1 is\n  7 know\n  1 leaf\n  1 leaves\n  1 light\n  1 lion\n  1 lions\n  2 maybe\n  1 more\n  2 mouse\n  5 no\n  1 octopus\n  1 outfit\n  2 paper\n  1 pen\n  4 person\n  1 picture\n  1 pillow\n  1 pretend\n  1 princess\n  1 purple\n  2 round\n  1 s\n  2 science\n  1 see\n  2 she\n  1 she's\n  1 sheet\n  1 sky\n  3 slug\n  1 snow\n  1 sock\n  1 some\n  1 spin\n  1 swimming\n  1 there\n  2 they're\n  1 think\n  1 vagonfly\n  1 window\n  1 with\n  3 yeah\n------------------------------\n   72  Total number of different item types used\n  175  Total number of items (tokens)\n0.411  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.527  MATTR\n\n",
+          "NDW": 72.0,
+          "TNW": 175.0,
+          "TTR": 0.411,
+          "MATTR": 0.527
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4002",
+    "recording": "transcripts/4/4002.cha#section5",
+    "method": "previous_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 70,
+          "reference": 70.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 175,
+          "reference": 175.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.5,
+          "reference": 2.5,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words_sd": {
+          "custom": 1.2392393980641052,
+          "reference": 1.239,
+          "difference": 0.00023939806410511189,
+          "absolute_error": 0.00023939806410511189,
+          "absolute_percent_error": 0.0193218776517443
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 175,
+          "reference": 175.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 72,
+          "reference": 72.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4114285714285714,
+          "reference": 0.411,
+          "difference": 0.0004285714285714448,
+          "absolute_error": 0.0004285714285714448,
+          "absolute_percent_error": 0.10427528675704253
+        },
+        "MATTR": {
+          "custom": 0.5274603174603175,
+          "reference": 0.527,
+          "difference": 0.0004603174603174942,
+          "absolute_error": 0.0004603174603174942,
+          "absolute_percent_error": 0.08734676666366113
+        },
+        "MLUw": {
+          "custom": 2.5,
+          "reference": 2.5,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "4df61fad42b0be85467de103f511610d403a88e3a0d0bed92c242f88c18797f0",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_f08ol66u/sample.cha\nThu Oct 15 15:55:10 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_f08ol66u/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 70, words = 175\n\tRatio of words over utterances = 2.500\n\tStandard deviation = 1.239\n\n",
+          "utterances": 70.0,
+          "total": 175.0,
+          "mlu": 2.5,
+          "sd": 1.239
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "8ca3a0be293445c2a503914589438634c3b521c22775e9ddc394e4b474134577",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_mt84z9pj/sample.cha\nThu Oct 15 15:55:10 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_mt84z9pj/sample.cha>\nSpeaker: *PAR:\n 33 a\n  2 airplane\n  1 airplanes\n 24 and\n  4 another\n  1 are\n  2 because\n  1 bed\n  1 beet\n  1 beets\n  1 bigger\n  1 blanket\n  1 blue\n  1 boat\n  1 book\n  1 bulb\n  1 cars\n  1 caterpillar\n  1 clock\n  2 doing\n  6 don't\n  1 fence\n  3 fish\n  1 flower\n  1 food\n  1 funny\n  1 grass\n  1 him\n 12 i\n  1 i'm\n  1 is\n  7 know\n  1 leaf\n  1 leaves\n  1 light\n  1 lion\n  1 lions\n  2 maybe\n  1 more\n  2 mouse\n  5 no\n  1 octopus\n  1 outfit\n  2 paper\n  1 pen\n  4 person\n  1 picture\n  1 pillow\n  1 pretend\n  1 princess\n  1 purple\n  2 round\n  1 s\n  2 science\n  1 see\n  2 she\n  1 she's\n  1 sheet\n  1 sky\n  3 slug\n  1 snow\n  1 sock\n  1 some\n  1 spin\n  1 swimming\n  1 there\n  2 they're\n  1 think\n  1 vagonfly\n  1 window\n  1 with\n  3 yeah\n------------------------------\n   72  Total number of different item types used\n  175  Total number of items (tokens)\n0.411  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.527  MATTR\n\n",
+          "NDW": 72.0,
+          "TNW": 175.0,
+          "TTR": 0.411,
+          "MATTR": 0.527
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4002",
+    "recording": "transcripts/4/4002.cha#section5",
+    "method": "latest_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 70,
+          "reference": 70.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 175,
+          "reference": 175.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.5,
+          "reference": 2.5,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words_sd": {
+          "custom": 1.250714081749188,
+          "reference": 1.251,
+          "difference": -0.0002859182508119229,
+          "absolute_error": 0.0002859182508119229,
+          "absolute_percent_error": 0.022855175924214464
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 175,
+          "reference": 175.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 72,
+          "reference": 72.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4114285714285714,
+          "reference": 0.411,
+          "difference": 0.0004285714285714448,
+          "absolute_error": 0.0004285714285714448,
+          "absolute_percent_error": 0.10427528675704253
+        },
+        "MATTR": {
+          "custom": 0.5274603174603175,
+          "reference": 0.527,
+          "difference": 0.0004603174603174942,
+          "absolute_error": 0.0004603174603174942,
+          "absolute_percent_error": 0.08734676666366113
+        },
+        "MLUw": {
+          "custom": 2.5,
+          "reference": 2.5,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "a676f446d64cfb6adcba714101ad745e9e74c8377ef3a9db02631f6b679b02e7",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_7l06c_0j/sample.cha\nThu Oct 15 15:55:10 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_7l06c_0j/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 70, words = 175\n\tRatio of words over utterances = 2.500\n\tStandard deviation = 1.251\n\n",
+          "utterances": 70.0,
+          "total": 175.0,
+          "mlu": 2.5,
+          "sd": 1.251
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "1f4a09fb0aa1af3f53b03e33023bf42a37145eae4ad06d507f30820cbc8d9517",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_uun_pm0h/sample.cha\nThu Oct 15 15:55:10 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_uun_pm0h/sample.cha>\nSpeaker: *PAR:\n 33 a\n  2 airplane\n  1 airplanes\n 24 and\n  4 another\n  1 are\n  2 because\n  1 bed\n  1 beet\n  1 beets\n  1 bigger\n  1 blanket\n  1 blue\n  1 boat\n  1 book\n  1 bulb\n  1 cars\n  1 caterpillar\n  1 clock\n  2 doing\n  6 don't\n  1 fence\n  3 fish\n  1 flower\n  1 food\n  1 funny\n  1 grass\n  1 him\n 12 i\n  1 i'm\n  1 is\n  7 know\n  1 leaf\n  1 leaves\n  1 light\n  1 lion\n  1 lions\n  2 maybe\n  1 more\n  2 mouse\n  5 no\n  1 octopus\n  1 outfit\n  2 paper\n  1 pen\n  4 person\n  1 picture\n  1 pillow\n  1 pretend\n  1 princess\n  1 purple\n  2 round\n  1 s\n  2 science\n  1 see\n  2 she\n  1 she's\n  1 sheet\n  1 sky\n  3 slug\n  1 snow\n  1 sock\n  1 some\n  1 spin\n  1 swimming\n  1 there\n  2 they're\n  1 think\n  1 vagonfly\n  1 window\n  1 with\n  3 yeah\n------------------------------\n   72  Total number of different item types used\n  175  Total number of items (tokens)\n0.411  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.527  MATTR\n\n",
+          "NDW": 72.0,
+          "TNW": 175.0,
+          "TTR": 0.411,
+          "MATTR": 0.527
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4002",
+    "recording": "transcripts/4/4002.cha#section5",
+    "method": "rules",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 10,
+          "reference": 10.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 175,
+          "reference": 175.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 17.5,
+          "reference": 17.5,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words_sd": {
+          "custom": 17.7214559221301,
+          "reference": 17.721,
+          "difference": 0.0004559221301008165,
+          "absolute_error": 0.0004559221301008165,
+          "absolute_percent_error": 0.0025727787940907202
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 175,
+          "reference": 175.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 72,
+          "reference": 72.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4114285714285714,
+          "reference": 0.411,
+          "difference": 0.0004285714285714448,
+          "absolute_error": 0.0004285714285714448,
+          "absolute_percent_error": 0.10427528675704253
+        },
+        "MATTR": {
+          "custom": 0.5274603174603175,
+          "reference": 0.527,
+          "difference": 0.0004603174603174942,
+          "absolute_error": 0.0004603174603174942,
+          "absolute_percent_error": 0.08734676666366113
+        },
+        "MLUw": {
+          "custom": 17.5,
+          "reference": 17.5,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "7e6a60b48a18fefe81819b2d6f80a6b09d3eb83ad0df50e79351253a6b2047ec",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ezetvimo/sample.cha\nThu Oct 15 15:55:10 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ezetvimo/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 10, words = 175\n\tRatio of words over utterances = 17.500\n\tStandard deviation = 17.721\n\n",
+          "utterances": 10.0,
+          "total": 175.0,
+          "mlu": 17.5,
+          "sd": 17.721
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "6b10f5eaf55658ebf1f2e6ffb7d8d914b4ba4e613f222ba6880a8918b62eb208",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_bilv6e5s/sample.cha\nThu Oct 15 15:55:10 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_bilv6e5s/sample.cha>\nSpeaker: *PAR:\n 33 a\n  2 airplane\n  1 airplanes\n 24 and\n  4 another\n  1 are\n  2 because\n  1 bed\n  1 beet\n  1 beets\n  1 bigger\n  1 blanket\n  1 blue\n  1 boat\n  1 book\n  1 bulb\n  1 cars\n  1 caterpillar\n  1 clock\n  2 doing\n  6 don't\n  1 fence\n  3 fish\n  1 flower\n  1 food\n  1 funny\n  1 grass\n  1 him\n 12 i\n  1 i'm\n  1 is\n  7 know\n  1 leaf\n  1 leaves\n  1 light\n  1 lion\n  1 lions\n  2 maybe\n  1 more\n  2 mouse\n  5 no\n  1 octopus\n  1 outfit\n  2 paper\n  1 pen\n  4 person\n  1 picture\n  1 pillow\n  1 pretend\n  1 princess\n  1 purple\n  2 round\n  1 s\n  2 science\n  1 see\n  2 she\n  1 she's\n  1 sheet\n  1 sky\n  3 slug\n  1 snow\n  1 sock\n  1 some\n  1 spin\n  1 swimming\n  1 there\n  2 they're\n  1 think\n  1 vagonfly\n  1 window\n  1 with\n  3 yeah\n------------------------------\n   72  Total number of different item types used\n  175  Total number of items (tokens)\n0.411  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.527  MATTR\n\n",
+          "NDW": 72.0,
+          "TNW": 175.0,
+          "TTR": 0.411,
+          "MATTR": 0.527
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4002",
+    "recording": "transcripts/4/4002.cha#section5",
+    "method": "batchalign_0.10.4",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 16,
+          "reference": 16.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 175,
+          "reference": 175.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 10.9375,
+          "reference": 10.938,
+          "difference": -0.0005000000000006111,
+          "absolute_error": 0.0005000000000006111,
+          "absolute_percent_error": 0.004571219601395237
+        },
+        "mlu_words_sd": {
+          "custom": 8.554741010106618,
+          "reference": 8.555,
+          "difference": -0.0002589898933820223,
+          "absolute_error": 0.0002589898933820223,
+          "absolute_percent_error": 0.0030273511792170927
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 175,
+          "reference": 175.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 72,
+          "reference": 72.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4114285714285714,
+          "reference": 0.411,
+          "difference": 0.0004285714285714448,
+          "absolute_error": 0.0004285714285714448,
+          "absolute_percent_error": 0.10427528675704253
+        },
+        "MATTR": {
+          "custom": 0.5274603174603175,
+          "reference": 0.527,
+          "difference": 0.0004603174603174942,
+          "absolute_error": 0.0004603174603174942,
+          "absolute_percent_error": 0.08734676666366113
+        },
+        "MLUw": {
+          "custom": 10.9375,
+          "reference": 10.938,
+          "difference": -0.0005000000000006111,
+          "absolute_error": 0.0005000000000006111,
+          "absolute_percent_error": 0.004571219601395237
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "2f45e760fd8b01d0819a0f4f6bc6ff903a731d947a6be3a7c4d9acd399aed172",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_w073n0nr/sample.cha\nThu Oct 15 15:55:10 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_w073n0nr/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 16, words = 175\n\tRatio of words over utterances = 10.938\n\tStandard deviation = 8.555\n\n",
+          "utterances": 16.0,
+          "total": 175.0,
+          "mlu": 10.938,
+          "sd": 8.555
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "21d05ed865e41b2f177227ad3229960035d469f9d081f41934111d3f4111a2fb",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_o0j4hil0/sample.cha\nThu Oct 15 15:55:10 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_o0j4hil0/sample.cha>\nSpeaker: *PAR:\n 33 a\n  2 airplane\n  1 airplanes\n 24 and\n  4 another\n  1 are\n  2 because\n  1 bed\n  1 beet\n  1 beets\n  1 bigger\n  1 blanket\n  1 blue\n  1 boat\n  1 book\n  1 bulb\n  1 cars\n  1 caterpillar\n  1 clock\n  2 doing\n  6 don't\n  1 fence\n  3 fish\n  1 flower\n  1 food\n  1 funny\n  1 grass\n  1 him\n 12 i\n  1 i'm\n  1 is\n  7 know\n  1 leaf\n  1 leaves\n  1 light\n  1 lion\n  1 lions\n  2 maybe\n  1 more\n  2 mouse\n  5 no\n  1 octopus\n  1 outfit\n  2 paper\n  1 pen\n  4 person\n  1 picture\n  1 pillow\n  1 pretend\n  1 princess\n  1 purple\n  2 round\n  1 s\n  2 science\n  1 see\n  2 she\n  1 she's\n  1 sheet\n  1 sky\n  3 slug\n  1 snow\n  1 sock\n  1 some\n  1 spin\n  1 swimming\n  1 there\n  2 they're\n  1 think\n  1 vagonfly\n  1 window\n  1 with\n  3 yeah\n------------------------------\n   72  Total number of different item types used\n  175  Total number of items (tokens)\n0.411  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.527  MATTR\n\n",
+          "NDW": 72.0,
+          "TNW": 175.0,
+          "TTR": 0.411,
+          "MATTR": 0.527
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4014",
+    "recording": "transcripts/4/4014.cha#section5",
+    "method": "reference",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 36,
+          "reference": 36.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 92,
+          "reference": 92.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.5555555555555554,
+          "reference": 2.556,
+          "difference": -0.00044444444444469156,
+          "absolute_error": 0.00044444444444469156,
+          "absolute_percent_error": 0.01738828029908809
+        },
+        "mlu_words_sd": {
+          "custom": 1.6740576859243737,
+          "reference": 1.674,
+          "difference": 5.768592437371822e-05,
+          "absolute_error": 5.768592437371822e-05,
+          "absolute_percent_error": 0.0034459930928147087
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 92,
+          "reference": 92.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 50,
+          "reference": 50.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.5434782608695652,
+          "reference": 0.543,
+          "difference": 0.00047826086956515024,
+          "absolute_error": 0.00047826086956515024,
+          "absolute_percent_error": 0.08807750820720998
+        },
+        "MATTR": {
+          "custom": 0.6586046511627908,
+          "reference": 0.659,
+          "difference": -0.00039534883720926395,
+          "absolute_error": 0.00039534883720926395,
+          "absolute_percent_error": 0.059992236298826086
+        },
+        "MLUw": {
+          "custom": 2.5555555555555554,
+          "reference": 2.556,
+          "difference": -0.00044444444444469156,
+          "absolute_error": 0.00044444444444469156,
+          "absolute_percent_error": 0.01738828029908809
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "cf55884ed38406bfe4690c87de53eda1f63f39cc7ac3b43c4cacf38811243fcf",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_yp9lx3fu/sample.cha\nThu Oct 15 15:55:11 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_yp9lx3fu/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 36, words = 92\n\tRatio of words over utterances = 2.556\n\tStandard deviation = 1.674\n\n",
+          "utterances": 36.0,
+          "total": 92.0,
+          "mlu": 2.556,
+          "sd": 1.674
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "7d2a292adaa57847102f5079838bf042aa3aecf9ab64fe8e1ded93164b554eab",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_x28ig7yg/sample.cha\nThu Oct 15 15:55:11 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_x28ig7yg/sample.cha>\nSpeaker: *PAR:\n  5 a\n  1 ah\n  1 and\n  1 at\n  1 box\n  1 butterfly\n  2 did\n  1 eh\n  1 ew\n  2 fish\n  1 getting\n  1 girl\n  2 go\n  7 he\n  1 he's\n  1 her\n  2 here\n  4 house\n  1 hunhunh\n  3 i\n  1 in\n  1 into\n  1 is\n  1 it\n  2 kid\n  1 mic\n  1 octopus\n  2 one\n  1 outside\n  1 picnic\n  1 plane\n  1 playing\n  1 riding\n  2 right\n  1 see\n  2 she\n  1 sleeping\n  7 that\n  4 the\n  5 this\n  1 tiger\n  1 toy\n  1 up\n  1 use\n  1 went\n  1 with\n  1 working\n  3 yeah\n  5 yes\n  1 you\n------------------------------\n   50  Total number of different item types used\n   92  Total number of items (tokens)\n0.543  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.659  MATTR\n\n",
+          "NDW": 50.0,
+          "TNW": 92.0,
+          "TTR": 0.543,
+          "MATTR": 0.659
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4014",
+    "recording": "transcripts/4/4014.cha#section5",
+    "method": "previous_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 45,
+          "reference": 45.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 110,
+          "reference": 110.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.4444444444444446,
+          "reference": 2.444,
+          "difference": 0.00044444444444469156,
+          "absolute_error": 0.00044444444444469156,
+          "absolute_percent_error": 0.018185124568113404
+        },
+        "mlu_words_sd": {
+          "custom": 1.5428048851297584,
+          "reference": 1.543,
+          "difference": -0.00019511487024148622,
+          "absolute_error": 0.00019511487024148622,
+          "absolute_percent_error": 0.012645163333861712
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 110,
+          "reference": 110.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 55,
+          "reference": 55.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.5,
+          "reference": 0.5,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "MATTR": {
+          "custom": 0.6308196721311475,
+          "reference": 0.631,
+          "difference": -0.0001803278688524701,
+          "absolute_error": 0.0001803278688524701,
+          "absolute_percent_error": 0.02857810916837878
+        },
+        "MLUw": {
+          "custom": 2.4444444444444446,
+          "reference": 2.444,
+          "difference": 0.00044444444444469156,
+          "absolute_error": 0.00044444444444469156,
+          "absolute_percent_error": 0.018185124568113404
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "f987797053e2c8154ac647a0264c106b2c2065ee7c4ebefe72ac1c511e0f7161",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ko41pqj4/sample.cha\nThu Oct 15 15:55:11 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ko41pqj4/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 45, words = 110\n\tRatio of words over utterances = 2.444\n\tStandard deviation = 1.543\n\n",
+          "utterances": 45.0,
+          "total": 110.0,
+          "mlu": 2.444,
+          "sd": 1.543
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "45e82e845107ed003d3e0d5706f5200a434034317b79617a0babaf61b2b7da65",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_7k41nhng/sample.cha\nThu Oct 15 15:55:11 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_7k41nhng/sample.cha>\nSpeaker: *PAR:\n  8 a\n  1 ah\n  2 and\n  1 at\n  1 box\n  1 butterfly\n  1 cat\n  2 did\n  1 eh\n  1 ew\n  2 fish\n  1 getting\n  2 girl\n  2 go\n  7 he\n  2 he's\n  1 her\n  3 here\n  4 house\n  3 i\n  1 in\n  1 into\n  1 is\n  1 it\n  3 kid\n  1 little\n  1 marker\n  1 me\n  1 mic\n  1 octopus\n  2 one\n  1 outside\n  1 picnic\n  1 plane\n  1 playing\n  1 riding\n  2 right\n  1 see\n  2 she\n  1 sleeping\n  9 that\n  1 that's\n  4 the\n  6 this\n  1 tiger\n  2 toy\n  1 up\n  1 use\n  1 went\n  1 with\n  1 working\n  1 writing\n  3 yeah\n  5 yes\n  2 you\n------------------------------\n   55  Total number of different item types used\n  110  Total number of items (tokens)\n0.500  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.631  MATTR\n\n",
+          "NDW": 55.0,
+          "TNW": 110.0,
+          "TTR": 0.5,
+          "MATTR": 0.631
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4014",
+    "recording": "transcripts/4/4014.cha#section5",
+    "method": "latest_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 43,
+          "reference": 43.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 110,
+          "reference": 110.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.558139534883721,
+          "reference": 2.558,
+          "difference": 0.00013953488372120404,
+          "absolute_error": 0.00013953488372120404,
+          "absolute_percent_error": 0.005454842991446601
+        },
+        "mlu_words_sd": {
+          "custom": 1.6325515139334181,
+          "reference": 1.633,
+          "difference": -0.00044848606658187684,
+          "absolute_error": 0.00044848606658187684,
+          "absolute_percent_error": 0.02746393549184794
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 110,
+          "reference": 110.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 55,
+          "reference": 55.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.5,
+          "reference": 0.5,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "MATTR": {
+          "custom": 0.6308196721311475,
+          "reference": 0.631,
+          "difference": -0.0001803278688524701,
+          "absolute_error": 0.0001803278688524701,
+          "absolute_percent_error": 0.02857810916837878
+        },
+        "MLUw": {
+          "custom": 2.558139534883721,
+          "reference": 2.558,
+          "difference": 0.00013953488372120404,
+          "absolute_error": 0.00013953488372120404,
+          "absolute_percent_error": 0.005454842991446601
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "e534a2d62163baac8364b4333c95b9f6a1daeeaabdd6dce01b324f3cc0a2c9b1",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_jnk17_4j/sample.cha\nThu Oct 15 15:55:11 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_jnk17_4j/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 43, words = 110\n\tRatio of words over utterances = 2.558\n\tStandard deviation = 1.633\n\n",
+          "utterances": 43.0,
+          "total": 110.0,
+          "mlu": 2.558,
+          "sd": 1.633
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "85d5a2c2fe09612e459d9aa845ad683cc950a7ed9150b36881aade1962cced10",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_e9e2kx29/sample.cha\nThu Oct 15 15:55:11 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_e9e2kx29/sample.cha>\nSpeaker: *PAR:\n  8 a\n  1 ah\n  2 and\n  1 at\n  1 box\n  1 butterfly\n  1 cat\n  2 did\n  1 eh\n  1 ew\n  2 fish\n  1 getting\n  2 girl\n  2 go\n  7 he\n  2 he's\n  1 her\n  3 here\n  4 house\n  3 i\n  1 in\n  1 into\n  1 is\n  1 it\n  3 kid\n  1 little\n  1 marker\n  1 me\n  1 mic\n  1 octopus\n  2 one\n  1 outside\n  1 picnic\n  1 plane\n  1 playing\n  1 riding\n  2 right\n  1 see\n  2 she\n  1 sleeping\n  9 that\n  1 that's\n  4 the\n  6 this\n  1 tiger\n  2 toy\n  1 up\n  1 use\n  1 went\n  1 with\n  1 working\n  1 writing\n  3 yeah\n  5 yes\n  2 you\n------------------------------\n   55  Total number of different item types used\n  110  Total number of items (tokens)\n0.500  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.631  MATTR\n\n",
+          "NDW": 55.0,
+          "TNW": 110.0,
+          "TTR": 0.5,
+          "MATTR": 0.631
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4014",
+    "recording": "transcripts/4/4014.cha#section5",
+    "method": "rules",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 6,
+          "reference": 6.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 24,
+          "reference": 24.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 4.0,
+          "reference": 4.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words_sd": {
+          "custom": 4.242640687119285,
+          "reference": 4.243,
+          "difference": -0.00035931288071555656,
+          "absolute_error": 0.00035931288071555656,
+          "absolute_percent_error": 0.008468368623982007
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 24,
+          "reference": 24.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 16,
+          "reference": 16.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.6666666666666666,
+          "reference": 0.667,
+          "difference": -0.00033333333333340764,
+          "absolute_error": 0.00033333333333340764,
+          "absolute_percent_error": 0.049975012493764265
+        },
+        "MATTR": {
+          "custom": null,
+          "reference": null,
+          "difference": null,
+          "absolute_error": null,
+          "absolute_percent_error": null
+        },
+        "MLUw": {
+          "custom": 4.0,
+          "reference": 4.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "0f116f9bcd4e3a2d443a3593ab4f1668237c9749ac3d68e54e187ac267ae6501",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_55hexjy3/sample.cha\nThu Oct 15 15:55:11 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_55hexjy3/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 6, words = 24\n\tRatio of words over utterances = 4.000\n\tStandard deviation = 4.243\n\n",
+          "utterances": 6.0,
+          "total": 24.0,
+          "mlu": 4.0,
+          "sd": 4.243
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k",
+          "output_sha256": "c9a7d0222eb4e0a6717bbba14d373eeb4281531f716da455d22f2fd0ac4fa704",
+          "output": "clan-freq +t*PAR -t%mor +f +k /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_jwrrnuuf/sample.cha\nThu Oct 15 15:55:11 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_jwrrnuuf/sample.cha>\nSpeaker: *PAR:\n  1 a\n  1 ah\n  1 butterfly\n  2 did\n  1 ew\n  2 go\n  1 he\n  1 her\n  3 house\n  1 i\n  1 into\n  1 that\n  2 this\n  3 yeah\n  2 yes\n  1 you\n------------------------------\n   16  Total number of different item types used\n   24  Total number of items (tokens)\n0.667  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n\n",
+          "NDW": 16.0,
+          "TNW": 24.0,
+          "TTR": 0.667,
+          "MATTR": null
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4014",
+    "recording": "transcripts/4/4014.cha#section5",
+    "method": "batchalign_0.10.4",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 7,
+          "reference": 7.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 56,
+          "reference": 56.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 8.0,
+          "reference": 8.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words_sd": {
+          "custom": 5.0426750270636544,
+          "reference": 5.043,
+          "difference": -0.0003249729363457021,
+          "absolute_error": 0.0003249729363457021,
+          "absolute_percent_error": 0.006444039983059729
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 56,
+          "reference": 56.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 37,
+          "reference": 37.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.6607142857142857,
+          "reference": 0.661,
+          "difference": -0.00028571428571433355,
+          "absolute_error": 0.00028571428571433355,
+          "absolute_percent_error": 0.04322455154528495
+        },
+        "MATTR": {
+          "custom": 0.7085714285714285,
+          "reference": 0.709,
+          "difference": -0.0004285714285714448,
+          "absolute_error": 0.0004285714285714448,
+          "absolute_percent_error": 0.06044731009470308
+        },
+        "MLUw": {
+          "custom": 8.0,
+          "reference": 8.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "c2915519a017e713377c7bdc2c395ac44b7a1a3ff2e2a512db076db40ce461fc",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_7_exz0km/sample.cha\nThu Oct 15 15:55:11 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_7_exz0km/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 7, words = 56\n\tRatio of words over utterances = 8.000\n\tStandard deviation = 5.043\n\n",
+          "utterances": 7.0,
+          "total": 56.0,
+          "mlu": 8.0,
+          "sd": 5.043
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "12fc8c54874e13867c2708a12bb42efff2c7176297b1fac14787d99193e26b76",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_nremyntk/sample.cha\nThu Oct 15 15:55:11 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_nremyntk/sample.cha>\nSpeaker: *PAR:\n  1 a\n  1 ah\n  1 and\n  1 at\n  1 butterfly\n  1 did\n  1 eh\n  1 girl\n  2 go\n  6 he\n  1 he's\n  1 her\n  2 here\n  4 house\n  1 i\n  1 in\n  1 into\n  1 it\n  1 mic\n  1 one\n  1 outside\n  1 picnic\n  1 playing\n  2 right\n  1 see\n  1 she\n  1 sleeping\n  4 that\n  1 the\n  4 this\n  1 toy\n  1 use\n  1 with\n  1 working\n  1 yeah\n  3 yes\n  1 you\n------------------------------\n   37  Total number of different item types used\n   56  Total number of items (tokens)\n0.661  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.709  MATTR\n\n",
+          "NDW": 37.0,
+          "TNW": 56.0,
+          "TTR": 0.661,
+          "MATTR": 0.709
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4021",
+    "recording": "transcripts/4/4021.cha#section5",
+    "method": "reference",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 130,
+          "reference": 130.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 366,
+          "reference": 366.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.8153846153846156,
+          "reference": 2.815,
+          "difference": 0.0003846153846156497,
+          "absolute_error": 0.0003846153846156497,
+          "absolute_percent_error": 0.013663068725245106
+        },
+        "mlu_words_sd": {
+          "custom": 1.9005449234146399,
+          "reference": 1.901,
+          "difference": -0.00045507658536014794,
+          "absolute_error": 0.00045507658536014794,
+          "absolute_percent_error": 0.023938799861133505
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 366,
+          "reference": 366.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 147,
+          "reference": 147.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4016393442622951,
+          "reference": 0.402,
+          "difference": -0.0003606557377049402,
+          "absolute_error": 0.0003606557377049402,
+          "absolute_percent_error": 0.08971535763804482
+        },
+        "MATTR": {
+          "custom": 0.6259936908517351,
+          "reference": 0.626,
+          "difference": -6.309148264938003e-06,
+          "absolute_error": 6.309148264938003e-06,
+          "absolute_percent_error": 0.0010078511605332273
+        },
+        "MLUw": {
+          "custom": 2.8153846153846156,
+          "reference": 2.815,
+          "difference": 0.0003846153846156497,
+          "absolute_error": 0.0003846153846156497,
+          "absolute_percent_error": 0.013663068725245106
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "bffdd75ca97c2dbb1ba71da7b5043fe89ded820d303f752a143747ee31f0ad2a",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_q1wtsxz3/sample.cha\nThu Oct 15 15:55:11 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_q1wtsxz3/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 130, words = 366\n\tRatio of words over utterances = 2.815\n\tStandard deviation = 1.901\n\n",
+          "utterances": 130.0,
+          "total": 366.0,
+          "mlu": 2.815,
+          "sd": 1.901
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "6e2d42d3931c2eab66c811c441cc911843cd8a824ce812dd5f68528d0fa98ce8",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ccbly06l/sample.cha\nThu Oct 15 15:55:12 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ccbly06l/sample.cha>\nSpeaker: *PAR:\n 31 a\n  2 actually\n  1 airplane\n  9 and\n  3 another\n  2 any\n  3 are\n  2 at\n  1 be\n  1 because\n  1 been\n  1 big\n  1 boat\n  3 book\n  1 books\n  3 boy\n  1 broken\n  1 but\n  1 buttons\n  2 buzzers\n  3 can\n  1 can't\n  1 car\n  4 carrot\n  1 carrot's\n  1 carrots\n  1 chch\n  1 cho\n  1 come\n  1 could\n  3 didn't\n  1 do\n  1 doesn't\n  4 doing\n  5 don't\n  1 done\n  1 elephant\n  1 even\n  2 fishes\n  1 fishie\n  1 fishies\n  1 flower\n  1 flyer\n  2 for\n  1 from\n  2 glasses\n  1 go\n  1 guys\n  1 happened\n  2 has\n  2 have\n  1 he\n  3 he's\n  1 helicop\n  1 helicopter\n  1 here\n  1 his\n  1 holding\n 11 i\n  1 i'm\n  5 is\n  3 it\n  2 know\n  1 light\n  4 like\n  8 lily\n  1 lion\n  1 lions\n  1 lookin\n  1 looking\n  1 lots\n  1 maybe\n  1 mess\n  5 messy\n  1 might\n  1 mine\n  1 mouse\n  1 move\n  1 name\n  1 need\n  2 never\n  9 no\n  5 not\n  2 octopus\n  1 of\n  5 one\n  2 one's\n  3 ones\n  1 open\n  1 out\n  6 pad\n  2 pads\n  2 pet\n  1 pillow\n  3 pizza\n  1 place\n  3 play\n  1 playing\n  2 police\n  1 potatoes\n  1 pulled\n  1 real\n  1 right\n  2 scary\n  1 science\n  1 scientist\n  1 see\n  2 seems\n  1 she\n  1 shelf\n  1 should\n  1 small\n  2 snail\n  1 snails\n  1 sock\n  1 squishing\n  1 straw\n  2 super\n  1 take\n  1 taking\n 14 that\n  1 that's\n  3 the\n  2 they're\n  2 things\n  1 think\n  5 this\n 12 those\n  1 three\n  2 to\n  1 too\n  3 toys\n  5 two\n  2 up\n  1 want\n  2 water\n  1 we\n  3 well\n 10 what\n  6 what's\n  1 where's\n  5 why\n  1 window\n  2 with\n 16 yeah\n  1 yet\n  4 you\n------------------------------\n  147  Total number of different item types used\n  366  Total number of items (tokens)\n0.402  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.626  MATTR\n\n",
+          "NDW": 147.0,
+          "TNW": 366.0,
+          "TTR": 0.402,
+          "MATTR": 0.626
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4021",
+    "recording": "transcripts/4/4021.cha#section5",
+    "method": "previous_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 144,
+          "reference": 144.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 383,
+          "reference": 383.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.6597222222222223,
+          "reference": 2.66,
+          "difference": -0.0002777777777778212,
+          "absolute_error": 0.0002777777777778212,
+          "absolute_percent_error": 0.01044277360066997
+        },
+        "mlu_words_sd": {
+          "custom": 1.683923965872422,
+          "reference": 1.684,
+          "difference": -7.603412757783978e-05,
+          "absolute_error": 7.603412757783978e-05,
+          "absolute_percent_error": 0.0045150907112731465
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 383,
+          "reference": 383.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 151,
+          "reference": 151.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.39425587467362927,
+          "reference": 0.394,
+          "difference": 0.00025587467362925276,
+          "absolute_error": 0.00025587467362925276,
+          "absolute_percent_error": 0.06494281056580019
+        },
+        "MATTR": {
+          "custom": 0.6238922155688623,
+          "reference": 0.624,
+          "difference": -0.00010778443113768077,
+          "absolute_error": 0.00010778443113768077,
+          "absolute_percent_error": 0.01727314601565397
+        },
+        "MLUw": {
+          "custom": 2.6597222222222223,
+          "reference": 2.66,
+          "difference": -0.0002777777777778212,
+          "absolute_error": 0.0002777777777778212,
+          "absolute_percent_error": 0.01044277360066997
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "9b1ba9bee5da0b4a5ab9de4e9d222d6c03cd1bdc69fa6560700887687f2a4a35",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_9ya266hs/sample.cha\nThu Oct 15 15:55:12 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_9ya266hs/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 144, words = 383\n\tRatio of words over utterances = 2.660\n\tStandard deviation = 1.684\n\n",
+          "utterances": 144.0,
+          "total": 383.0,
+          "mlu": 2.66,
+          "sd": 1.684
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "7728194edfd1fae7b9e854a2f84aa8e45435ae50b6bdcf6b49330fab660126c5",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_e21q8kb9/sample.cha\nThu Oct 15 15:55:12 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_e21q8kb9/sample.cha>\nSpeaker: *PAR:\n 34 a\n  3 actually\n  1 airplane\n  9 and\n  3 another\n  2 any\n  3 are\n  1 around\n  2 at\n  1 be\n  1 because\n  1 been\n  1 big\n  1 boat\n  3 book\n  1 books\n  3 boy\n  1 broken\n  1 but\n  1 buttons\n  2 buzzers\n  3 can\n  1 can't\n  1 car\n  4 carrot\n  1 carrot's\n  1 carrots\n  1 chch\n  1 cho\n  1 come\n  1 could\n  3 didn't\n  1 do\n  1 doesn't\n  5 doing\n  5 don't\n  1 done\n  1 elephant\n  1 even\n  2 fishes\n  3 fishie\n  1 fishies\n  1 flower\n  1 flyer\n  2 for\n  1 from\n  2 glasses\n  1 go\n  1 guys\n  1 happened\n  2 has\n  2 have\n  1 he\n  3 he's\n  1 helicop\n  1 helicopter\n  1 here\n  1 his\n  1 holding\n 11 i\n  1 i'm\n  6 is\n  3 it\n  2 know\n  1 light\n  4 like\n  8 lily\n  1 lion\n  1 lions\n  1 little\n  1 lookin\n  1 looking\n  1 lots\n  1 maybe\n  1 mess\n  5 messy\n  1 might\n  1 mine\n  1 mouse\n  1 move\n  1 name\n  1 need\n  2 never\n 10 no\n  5 not\n  3 octopus\n  1 of\n  6 one\n  2 one's\n  3 ones\n  1 open\n  1 out\n  6 pad\n  2 pads\n  2 pet\n  1 pillow\n  3 pizza\n  1 place\n  3 play\n  1 playing\n  2 police\n  1 potatoes\n  1 pulled\n  1 real\n  1 right\n  2 scary\n  1 science\n  1 scientist\n  1 see\n  2 seems\n  1 she\n  1 shelf\n  1 should\n  1 small\n  3 snail\n  1 snails\n  1 sock\n  1 something\n  1 squishing\n  1 straw\n  2 super\n  1 take\n  1 taking\n 14 that\n  1 that's\n  3 the\n  2 they're\n  2 things\n  1 think\n  6 this\n 12 those\n  1 three\n  2 to\n  1 too\n  3 toys\n  1 turning\n  5 two\n  2 up\n  1 want\n  2 water\n  1 we\n  3 well\n 11 what\n  5 what's\n  1 where's\n  5 why\n  1 window\n  2 with\n 16 yeah\n  1 yet\n  4 you\n------------------------------\n  151  Total number of different item types used\n  383  Total number of items (tokens)\n0.394  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.624  MATTR\n\n",
+          "NDW": 151.0,
+          "TNW": 383.0,
+          "TTR": 0.394,
+          "MATTR": 0.624
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4021",
+    "recording": "transcripts/4/4021.cha#section5",
+    "method": "latest_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 142,
+          "reference": 142.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 378,
+          "reference": 378.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.6619718309859155,
+          "reference": 2.662,
+          "difference": -2.8169014084422628e-05,
+          "absolute_error": 2.8169014084422628e-05,
+          "absolute_percent_error": 0.0010581898604215864
+        },
+        "mlu_words_sd": {
+          "custom": 1.6310686203458544,
+          "reference": 1.631,
+          "difference": 6.86203458544199e-05,
+          "absolute_error": 6.86203458544199e-05,
+          "absolute_percent_error": 0.0042072560303139115
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 378,
+          "reference": 378.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 149,
+          "reference": 149.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.3941798941798942,
+          "reference": 0.394,
+          "difference": 0.0001798941798941689,
+          "absolute_error": 0.0001798941798941689,
+          "absolute_percent_error": 0.04565842129293626
+        },
+        "MATTR": {
+          "custom": 0.6210334346504559,
+          "reference": 0.621,
+          "difference": 3.343465045591021e-05,
+          "absolute_error": 3.343465045591021e-05,
+          "absolute_percent_error": 0.00538400168372145
+        },
+        "MLUw": {
+          "custom": 2.6619718309859155,
+          "reference": 2.662,
+          "difference": -2.8169014084422628e-05,
+          "absolute_error": 2.8169014084422628e-05,
+          "absolute_percent_error": 0.0010581898604215864
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "e9fd99b79cdb7b0871b3d8c65995de591fcbfe68a8efc6ecb423ed02ecd8f476",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_zrngw91n/sample.cha\nThu Oct 15 15:55:12 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_zrngw91n/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 142, words = 378\n\tRatio of words over utterances = 2.662\n\tStandard deviation = 1.631\n\n",
+          "utterances": 142.0,
+          "total": 378.0,
+          "mlu": 2.662,
+          "sd": 1.631
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "c108d9681acb34dbbe26fdc62ebb749ffbb554762ba2179dc1024fddae9554a6",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_8g9euutr/sample.cha\nThu Oct 15 15:55:12 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_8g9euutr/sample.cha>\nSpeaker: *PAR:\n 33 a\n  3 actually\n  1 airplane\n  9 and\n  3 another\n  2 any\n  3 are\n  1 around\n  2 at\n  1 be\n  1 because\n  1 been\n  1 big\n  1 boat\n  3 book\n  1 books\n  3 boy\n  1 broken\n  1 but\n  1 buttons\n  2 buzzers\n  3 can\n  1 can't\n  1 car\n  5 carrot\n  1 carrot's\n  1 carrots\n  1 chch\n  1 cho\n  1 come\n  1 could\n  3 didn't\n  1 do\n  1 doesn't\n  5 doing\n  5 don't\n  1 done\n  1 elephant\n  1 even\n  2 fishes\n  3 fishie\n  1 fishies\n  1 flower\n  1 flyer\n  2 for\n  1 from\n  2 glasses\n  1 go\n  1 guys\n  1 happened\n  2 has\n  2 have\n  1 he\n  3 he's\n  1 helicop\n  1 helicopter\n  1 here\n  1 his\n  1 holding\n 11 i\n  1 i'm\n  6 is\n  3 it\n  2 know\n  1 light\n  3 like\n  8 lily\n  1 lion\n  1 lions\n  1 little\n  1 lookin\n  1 looking\n  1 lots\n  1 maybe\n  1 mess\n  5 messy\n  1 might\n  1 mine\n  1 mouse\n  1 move\n  1 name\n  1 need\n  2 never\n 10 no\n  5 not\n  3 octopus\n  1 of\n  6 one\n  2 one's\n  3 ones\n  1 open\n  1 out\n  6 pad\n  2 pads\n  2 pet\n  1 pillow\n  3 pizza\n  1 place\n  3 play\n  1 playing\n  2 police\n  1 potatoes\n  1 pulled\n  1 real\n  1 right\n  2 scary\n  1 science\n  1 scientist\n  1 see\n  1 seems\n  1 she\n  1 shelf\n  1 should\n  1 small\n  3 snail\n  1 snails\n  1 sock\n  1 squishing\n  2 super\n  1 take\n  1 taking\n 13 that\n  1 that's\n  3 the\n  2 they're\n  2 things\n  1 think\n  6 this\n 12 those\n  1 three\n  2 to\n  1 too\n  3 toys\n  1 turning\n  5 two\n  2 up\n  1 want\n  2 water\n  1 we\n  3 well\n 11 what\n  5 what's\n  1 where's\n  5 why\n  1 window\n  2 with\n 16 yeah\n  1 yet\n  4 you\n------------------------------\n  149  Total number of different item types used\n  378  Total number of items (tokens)\n0.394  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.621  MATTR\n\n",
+          "NDW": 149.0,
+          "TNW": 378.0,
+          "TTR": 0.394,
+          "MATTR": 0.621
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4021",
+    "recording": "transcripts/4/4021.cha#section5",
+    "method": "rules",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 30,
+          "reference": 30.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 261,
+          "reference": 261.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 8.7,
+          "reference": 8.7,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words_sd": {
+          "custom": 8.877499647986475,
+          "reference": 8.877,
+          "difference": 0.0004996479864747272,
+          "absolute_error": 0.0004996479864747272,
+          "absolute_percent_error": 0.005628568057617744
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 261,
+          "reference": 261.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 123,
+          "reference": 123.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.47126436781609193,
+          "reference": 0.471,
+          "difference": 0.00026436781609195936,
+          "absolute_error": 0.00026436781609195936,
+          "absolute_percent_error": 0.05612904800253914
+        },
+        "MATTR": {
+          "custom": 0.6562264150943397,
+          "reference": 0.656,
+          "difference": 0.00022641509433962703,
+          "absolute_error": 0.00022641509433962703,
+          "absolute_percent_error": 0.03451449608835778
+        },
+        "MLUw": {
+          "custom": 8.7,
+          "reference": 8.7,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "bccf7ba8c99e4d707c4831cd95e93636b1a3e9040eb4c6489f61b27f8e30d288",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference__cs5jpcl/sample.cha\nThu Oct 15 15:55:12 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference__cs5jpcl/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 30, words = 261\n\tRatio of words over utterances = 8.700\n\tStandard deviation = 8.877\n\n",
+          "utterances": 30.0,
+          "total": 261.0,
+          "mlu": 8.7,
+          "sd": 8.877
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "24508bd2c67ee0eb6dbaadbde2b52b8dd38f8a389cb6a6b6214c7a6f71a2efec",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_zcfo5no7/sample.cha\nThu Oct 15 15:55:12 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_zcfo5no7/sample.cha>\nSpeaker: *PAR:\n 22 a\n  2 actually\n  1 airplane\n  6 and\n  2 another\n  1 any\n  2 are\n  1 at\n  1 be\n  1 because\n  1 been\n  3 book\n  1 books\n  2 boy\n  1 broken\n  1 buzzers\n  1 can\n  1 car\n  1 carrot\n  1 carrot's\n  1 carrots\n  1 chch\n  1 cho\n  1 could\n  3 didn't\n  1 do\n  1 doesn't\n  3 doing\n  3 don't\n  1 done\n  1 elephant\n  1 even\n  1 fishes\n  1 flower\n  1 flyer\n  2 glasses\n  1 go\n  1 guys\n  1 happened\n  1 has\n  2 have\n  3 he's\n  1 helicop\n  1 helicopter\n  1 here\n  1 his\n  1 holding\n  9 i\n  4 is\n  1 it\n  1 know\n  1 light\n  2 like\n  5 lily\n  1 lions\n  1 looking\n  1 lots\n  1 maybe\n  1 mess\n  4 messy\n  1 mine\n  1 mouse\n  1 move\n  1 name\n  2 never\n  7 no\n  5 not\n  1 octopus\n  1 of\n  5 one\n  1 one's\n  3 ones\n  1 out\n  4 pad\n  1 pads\n  2 pet\n  1 pillow\n  2 pizza\n  1 place\n  3 play\n  1 playing\n  2 police\n  1 potatoes\n  1 pulled\n  1 real\n  2 scary\n  1 science\n  1 scientist\n  1 seems\n  1 she\n  1 shelf\n  1 should\n  1 small\n  1 snail\n  1 sock\n  2 super\n  1 taking\n  7 that\n  1 that's\n  3 the\n  2 they're\n  2 things\n  1 think\n  4 this\n  9 those\n  1 three\n  2 to\n  1 too\n  3 toys\n  2 two\n  1 up\n  1 want\n  2 water\n  1 we\n  3 well\n  6 what\n  2 what's\n  3 why\n  1 window\n  2 with\n 13 yeah\n  1 yet\n  2 you\n------------------------------\n  123  Total number of different item types used\n  261  Total number of items (tokens)\n0.471  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.656  MATTR\n\n",
+          "NDW": 123.0,
+          "TNW": 261.0,
+          "TTR": 0.471,
+          "MATTR": 0.656
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "ocsc",
+    "participant": "ocsc/4021",
+    "recording": "transcripts/4/4021.cha#section5",
+    "method": "batchalign_0.10.4",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 55,
+          "reference": 55.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 316,
+          "reference": 316.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 5.745454545454545,
+          "reference": 5.745,
+          "difference": 0.00045454545454504114,
+          "absolute_error": 0.00045454545454504114,
+          "absolute_percent_error": 0.00791201835587539
+        },
+        "mlu_words_sd": {
+          "custom": 4.234997828992389,
+          "reference": 4.235,
+          "difference": -2.171007611018183e-06,
+          "absolute_error": 2.171007611018183e-06,
+          "absolute_percent_error": 5.126346188944942e-05
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 316,
+          "reference": 316.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 135,
+          "reference": 135.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4272151898734177,
+          "reference": 0.427,
+          "difference": 0.00021518987341773155,
+          "absolute_error": 0.00021518987341773155,
+          "absolute_percent_error": 0.050395754898766174
+        },
+        "MATTR": {
+          "custom": 0.6363295880149813,
+          "reference": 0.636,
+          "difference": 0.00032958801498128576,
+          "absolute_error": 0.00032958801498128576,
+          "absolute_percent_error": 0.051822014934164426
+        },
+        "MLUw": {
+          "custom": 5.745454545454545,
+          "reference": 5.745,
+          "difference": 0.00045454545454504114,
+          "absolute_error": 0.00045454545454504114,
+          "absolute_percent_error": 0.00791201835587539
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "4c1d721e56e4ec76f41ce642195646ad597444bc74ff457dc564256fdda292ad",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_gzv5td74/sample.cha\nThu Oct 15 15:55:12 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_gzv5td74/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 55, words = 316\n\tRatio of words over utterances = 5.745\n\tStandard deviation = 4.235\n\n",
+          "utterances": 55.0,
+          "total": 316.0,
+          "mlu": 5.745,
+          "sd": 4.235
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "fa426f3b5a15d03c8f88eb2372fb75e022964bfd923fab0c352da5538b40f436",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_r6jh6qwz/sample.cha\nThu Oct 15 15:55:12 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_r6jh6qwz/sample.cha>\nSpeaker: *PAR:\n 27 a\n  2 actually\n  1 airplane\n  8 and\n  2 another\n  1 any\n  3 are\n  2 at\n  1 be\n  1 because\n  1 been\n  1 big\n  1 boat\n  2 book\n  1 books\n  3 boy\n  1 broken\n  1 but\n  1 buttons\n  2 buzzers\n  3 can\n  1 car\n  3 carrot\n  1 carrot's\n  1 carrots\n  1 chch\n  1 cho\n  1 come\n  1 could\n  3 didn't\n  1 do\n  1 doesn't\n  4 doing\n  2 don't\n  1 done\n  1 elephant\n  1 even\n  2 fishes\n  1 fishies\n  1 flower\n  1 flyer\n  2 for\n  1 from\n  2 glasses\n  1 go\n  1 guys\n  1 happened\n  1 has\n  2 have\n  1 he\n  2 he's\n  1 helicop\n  1 helicopter\n  1 here\n  1 his\n  1 holding\n  8 i\n  1 i'm\n  4 is\n  2 it\n  1 light\n  3 like\n  8 lily\n  1 lion\n  1 lions\n  1 lookin\n  1 looking\n  1 lots\n  2 messy\n  1 move\n  1 name\n  2 never\n  7 no\n  3 not\n  2 octopus\n  1 of\n  5 one\n  2 one's\n  3 ones\n  1 open\n  1 out\n  6 pad\n  2 pads\n  2 pet\n  1 pillow\n  3 pizza\n  1 place\n  3 play\n  1 playing\n  2 police\n  1 potatoes\n  1 pulled\n  1 real\n  1 right\n  2 scary\n  1 science\n  1 scientist\n  1 seems\n  1 she\n  1 shelf\n  1 should\n  1 small\n  1 snail\n  1 snails\n  1 sock\n  1 squishing\n  2 super\n  1 take\n 12 that\n  1 that's\n  2 the\n  2 they're\n  2 things\n  1 think\n  5 this\n 12 those\n  1 three\n  2 to\n  1 too\n  3 toys\n  5 two\n  2 up\n  1 want\n  2 water\n  1 we\n  3 well\n  9 what\n  4 what's\n  1 where's\n  5 why\n  1 window\n  2 with\n 14 yeah\n  1 yet\n  4 you\n------------------------------\n  135  Total number of different item types used\n  316  Total number of items (tokens)\n0.427  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.636  MATTR\n\n",
+          "NDW": 135.0,
+          "TNW": 316.0,
+          "TTR": 0.427,
+          "MATTR": 0.636
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2011",
+    "recording": "transcripts/2011.cha#section2",
+    "method": "reference",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 49,
+          "reference": 49.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 162,
+          "reference": 162.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 3.306122448979592,
+          "reference": 3.306,
+          "difference": 0.00012244897959190482,
+          "absolute_error": 0.00012244897959190482,
+          "absolute_percent_error": 0.0037038408829977256
+        },
+        "mlu_words_sd": {
+          "custom": 2.53307977131858,
+          "reference": 2.533,
+          "difference": 7.977131858005748e-05,
+          "absolute_error": 7.977131858005748e-05,
+          "absolute_percent_error": 0.0031492822179256803
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 162,
+          "reference": 162.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 79,
+          "reference": 79.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4876543209876543,
+          "reference": 0.488,
+          "difference": -0.00034567901234566767,
+          "absolute_error": 0.00034567901234566767,
+          "absolute_percent_error": 0.07083586318558764
+        },
+        "MATTR": {
+          "custom": 0.6690265486725664,
+          "reference": 0.669,
+          "difference": 2.6548672566351073e-05,
+          "absolute_error": 2.6548672566351073e-05,
+          "absolute_percent_error": 0.0039684114448955265
+        },
+        "MLUw": {
+          "custom": 3.306122448979592,
+          "reference": 3.306,
+          "difference": 0.00012244897959190482,
+          "absolute_error": 0.00012244897959190482,
+          "absolute_percent_error": 0.0037038408829977256
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "97a1fbc67e9897dac4156ad4152e07911f514be4d088bdcd531a33813feaf109",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_lyqm95_s/sample.cha\nThu Oct 15 15:55:30 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_lyqm95_s/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 49, words = 162\n\tRatio of words over utterances = 3.306\n\tStandard deviation = 2.533\n\n",
+          "utterances": 49.0,
+          "total": 162.0,
+          "mlu": 3.306,
+          "sd": 2.533
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "c4eabee8e6dab516a0b8603c749052e4871d4976339ca823bad8aabfdca80119",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_c6r1pjgs/sample.cha\nThu Oct 15 15:55:30 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_c6r1pjgs/sample.cha>\nSpeaker: *PAR:\n  3 a\n  1 again\n  3 air\n  1 almost\n  1 alright\n  5 and\n  2 ball\n  1 be\n  1 because\n  1 big\n  2 bottom\n  1 can\n  4 catch\n  1 catched\n  1 catching\n  1 close\n  1 cowboy\n  1 did\n  2 do\n  1 face\n  1 fell\n  1 fine\n  4 get\n  1 giant\n  1 go\n  2 gonna\n  3 here\n  1 hockey\n  1 hocus-pocus\n  1 how\n  5 i\n  1 i'll\n  1 i'm\n  5 in\n  4 is\n  7 it\n  4 it's\n  2 jokes\n  1 just\n  1 kidding\n  1 kinda\n  1 might\n  1 more\n  1 mouth\n  4 my\n  1 net\n  4 no\n  1 nope\n  3 not\n  3 on\n  1 one\n  2 out\n  1 piggy\n  1 play\n  1 poison\n  3 ready\n  1 scored\n  3 set\n  1 sit\n  1 so\n  1 some\n  1 stop\n  1 sure\n  3 that\n  4 the\n  2 then\n  6 there\n  1 there's\n  1 thing\n  2 this\n  1 to\n  1 up\n  2 was\n  1 what\n  4 why\n  1 woo\n  2 wowie\n  9 yeah\n  3 you\n------------------------------\n   79  Total number of different item types used\n  162  Total number of items (tokens)\n0.488  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.669  MATTR\n\n",
+          "NDW": 79.0,
+          "TNW": 162.0,
+          "TTR": 0.488,
+          "MATTR": 0.669
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2011",
+    "recording": "transcripts/2011.cha#section2",
+    "method": "previous_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 60,
+          "reference": 60.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 167,
+          "reference": 167.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.783333333333333,
+          "reference": 2.783,
+          "difference": 0.0003333333333332966,
+          "absolute_error": 0.0003333333333332966,
+          "absolute_percent_error": 0.01197748233321224
+        },
+        "mlu_words_sd": {
+          "custom": 2.415861934980741,
+          "reference": 2.416,
+          "difference": -0.00013806501925905934,
+          "absolute_error": 0.00013806501925905934,
+          "absolute_percent_error": 0.005714611724298814
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 167,
+          "reference": 167.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 82,
+          "reference": 82.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.49101796407185627,
+          "reference": 0.491,
+          "difference": 1.7964071856280128e-05,
+          "absolute_error": 1.7964071856280128e-05,
+          "absolute_percent_error": 0.003658670439160922
+        },
+        "MATTR": {
+          "custom": 0.6777966101694916,
+          "reference": 0.678,
+          "difference": -0.00020338983050849357,
+          "absolute_error": 0.00020338983050849357,
+          "absolute_percent_error": 0.02999850007499905
+        },
+        "MLUw": {
+          "custom": 2.783333333333333,
+          "reference": 2.783,
+          "difference": 0.0003333333333332966,
+          "absolute_error": 0.0003333333333332966,
+          "absolute_percent_error": 0.01197748233321224
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "e0731591cab2ee8eb52bb727e0c3aa63e9e72ca8b8da8644a2345396d8857670",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_hg7uoq5x/sample.cha\nThu Oct 15 15:55:30 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_hg7uoq5x/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 60, words = 167\n\tRatio of words over utterances = 2.783\n\tStandard deviation = 2.416\n\n",
+          "utterances": 60.0,
+          "total": 167.0,
+          "mlu": 2.783,
+          "sd": 2.416
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "0b86046983a3cffffbc8f09c53b5d6857f88cc74bbfc9146873d4f179913c7cf",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_59pmv6lr/sample.cha\nThu Oct 15 15:55:30 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_59pmv6lr/sample.cha>\nSpeaker: *PAR:\n  3 a\n  1 again\n  3 air\n  1 almost\n  1 alright\n  5 and\n  2 ball\n  1 be\n  1 because\n  1 behind\n  1 big\n  2 bottom\n  1 can\n  4 catch\n  1 catched\n  1 catching\n  1 close\n  1 cowboy\n  1 did\n  2 do\n  1 face\n  1 fell\n  1 fine\n  4 get\n  1 giant\n  1 go\n  2 gonna\n  4 here\n  1 hockey\n  1 hocus-pocus\n  1 how\n  5 i\n  1 i'll\n  1 i'm\n  5 in\n  4 is\n  7 it\n  4 it's\n  2 jokes\n  1 just\n  1 kidding\n  1 kinda\n  1 look\n  1 might\n  1 more\n  1 mouth\n  4 my\n  1 net\n  4 no\n  1 nope\n  3 not\n  1 okay\n  3 on\n  2 one\n  2 out\n  1 piggy\n  1 play\n  1 poison\n  3 ready\n  1 scored\n  3 set\n  1 sit\n  1 so\n  1 some\n  1 stop\n  1 sure\n  3 that\n  4 the\n  2 then\n  6 there\n  1 there's\n  1 thing\n  2 this\n  1 to\n  1 up\n  2 was\n  1 what\n  4 why\n  1 woo\n  2 wowie\n  9 yeah\n  3 you\n------------------------------\n   82  Total number of different item types used\n  167  Total number of items (tokens)\n0.491  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.678  MATTR\n\n",
+          "NDW": 82.0,
+          "TNW": 167.0,
+          "TTR": 0.491,
+          "MATTR": 0.678
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2011",
+    "recording": "transcripts/2011.cha#section2",
+    "method": "latest_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 61,
+          "reference": 61.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 167,
+          "reference": 167.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.737704918032787,
+          "reference": 2.738,
+          "difference": -0.0002950819672129512,
+          "absolute_error": 0.0002950819672129512,
+          "absolute_percent_error": 0.010777281490611804
+        },
+        "mlu_words_sd": {
+          "custom": 2.4151274571413635,
+          "reference": 2.415,
+          "difference": 0.00012745714136341846,
+          "absolute_error": 0.00012745714136341846,
+          "absolute_percent_error": 0.005277728420845485
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 167,
+          "reference": 167.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 82,
+          "reference": 82.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.49101796407185627,
+          "reference": 0.491,
+          "difference": 1.7964071856280128e-05,
+          "absolute_error": 1.7964071856280128e-05,
+          "absolute_percent_error": 0.003658670439160922
+        },
+        "MATTR": {
+          "custom": 0.6777966101694916,
+          "reference": 0.678,
+          "difference": -0.00020338983050849357,
+          "absolute_error": 0.00020338983050849357,
+          "absolute_percent_error": 0.02999850007499905
+        },
+        "MLUw": {
+          "custom": 2.737704918032787,
+          "reference": 2.738,
+          "difference": -0.0002950819672129512,
+          "absolute_error": 0.0002950819672129512,
+          "absolute_percent_error": 0.010777281490611804
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "e4b42d973231a0ba7be43bccdff4467c6bce081c6079bb331f80a78fcc717495",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_7ugod2d4/sample.cha\nThu Oct 15 15:55:30 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_7ugod2d4/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 61, words = 167\n\tRatio of words over utterances = 2.738\n\tStandard deviation = 2.415\n\n",
+          "utterances": 61.0,
+          "total": 167.0,
+          "mlu": 2.738,
+          "sd": 2.415
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "7e401238f313d2d101d607530490e2b30e805c0c6debc41bde178816fc9de73d",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_1e6vftpd/sample.cha\nThu Oct 15 15:55:30 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_1e6vftpd/sample.cha>\nSpeaker: *PAR:\n  3 a\n  1 again\n  3 air\n  1 almost\n  1 alright\n  5 and\n  2 ball\n  1 be\n  1 because\n  1 behind\n  1 big\n  2 bottom\n  1 can\n  4 catch\n  1 catched\n  1 catching\n  1 close\n  1 cowboy\n  1 did\n  2 do\n  1 face\n  1 fell\n  1 fine\n  4 get\n  1 giant\n  1 go\n  2 gonna\n  4 here\n  1 hockey\n  1 hocus-pocus\n  1 how\n  5 i\n  1 i'll\n  1 i'm\n  5 in\n  4 is\n  7 it\n  4 it's\n  2 jokes\n  1 just\n  1 kidding\n  1 kinda\n  1 look\n  1 might\n  1 more\n  1 mouth\n  4 my\n  1 net\n  4 no\n  1 nope\n  3 not\n  1 okay\n  3 on\n  2 one\n  2 out\n  1 piggy\n  1 play\n  1 poison\n  3 ready\n  1 scored\n  3 set\n  1 sit\n  1 so\n  1 some\n  1 stop\n  1 sure\n  3 that\n  4 the\n  2 then\n  6 there\n  1 there's\n  1 thing\n  2 this\n  1 to\n  1 up\n  2 was\n  1 what\n  4 why\n  1 woo\n  2 wowie\n  9 yeah\n  3 you\n------------------------------\n   82  Total number of different item types used\n  167  Total number of items (tokens)\n0.491  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.678  MATTR\n\n",
+          "NDW": 82.0,
+          "TNW": 167.0,
+          "TTR": 0.491,
+          "MATTR": 0.678
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2011",
+    "recording": "transcripts/2011.cha#section2",
+    "method": "rules",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 18,
+          "reference": 18.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 127,
+          "reference": 127.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 7.055555555555555,
+          "reference": 7.056,
+          "difference": -0.00044444444444469156,
+          "absolute_error": 0.00044444444444469156,
+          "absolute_percent_error": 0.006298815822628849
+        },
+        "mlu_words_sd": {
+          "custom": 9.594397799539191,
+          "reference": 9.594,
+          "difference": 0.0003977995391917233,
+          "absolute_error": 0.0003977995391917233,
+          "absolute_percent_error": 0.004146336660326488
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 127,
+          "reference": 127.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 64,
+          "reference": 64.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.5039370078740157,
+          "reference": 0.504,
+          "difference": -6.299212598426251e-05,
+          "absolute_error": 6.299212598426251e-05,
+          "absolute_percent_error": 0.01249843769529018
+        },
+        "MATTR": {
+          "custom": 0.6723076923076923,
+          "reference": 0.672,
+          "difference": 0.0003076923076922311,
+          "absolute_error": 0.0003076923076922311,
+          "absolute_percent_error": 0.04578754578753439
+        },
+        "MLUw": {
+          "custom": 7.055555555555555,
+          "reference": 7.056,
+          "difference": -0.00044444444444469156,
+          "absolute_error": 0.00044444444444469156,
+          "absolute_percent_error": 0.006298815822628849
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "4b657a1cf31ccd550a8c3ea79dc946e43e63e73500347e2466f015558b2932da",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_sjy6f5xz/sample.cha\nThu Oct 15 15:55:30 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_sjy6f5xz/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 18, words = 127\n\tRatio of words over utterances = 7.056\n\tStandard deviation = 9.594\n\n",
+          "utterances": 18.0,
+          "total": 127.0,
+          "mlu": 7.056,
+          "sd": 9.594
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "4e20a3d860c622552b77d851b3f553433bf603f9b6dbe606f0ee4fa12512e539",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_k2s5v_60/sample.cha\nThu Oct 15 15:55:30 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_k2s5v_60/sample.cha>\nSpeaker: *PAR:\n  1 again\n  3 air\n  1 almost\n  1 alright\n  3 and\n  2 ball\n  1 because\n  2 bottom\n  1 can\n  4 catch\n  1 catched\n  1 catching\n  1 close\n  1 did\n  2 do\n  1 face\n  1 fell\n  3 get\n  1 go\n  2 gonna\n  2 here\n  1 hockey\n  1 how\n  5 i\n  1 i'll\n  1 i'm\n  1 in\n  2 is\n  7 it\n  3 it's\n  2 jokes\n  1 just\n  1 kidding\n  1 more\n  1 mouth\n  4 my\n  1 net\n  4 no\n  1 nope\n  3 not\n  3 on\n  1 one\n  2 out\n  1 play\n  3 ready\n  1 scored\n  3 set\n  1 sit\n  1 so\n  1 stop\n  1 sure\n  2 that\n  4 the\n  2 then\n  2 there\n  2 this\n  1 to\n  1 up\n  2 was\n  1 what\n  3 why\n  2 wowie\n  8 yeah\n  3 you\n------------------------------\n   64  Total number of different item types used\n  127  Total number of items (tokens)\n0.504  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.672  MATTR\n\n",
+          "NDW": 64.0,
+          "TNW": 127.0,
+          "TTR": 0.504,
+          "MATTR": 0.672
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2011",
+    "recording": "transcripts/2011.cha#section2",
+    "method": "batchalign_0.10.4",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 26,
+          "reference": 26.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 146,
+          "reference": 146.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 5.615384615384615,
+          "reference": 5.615,
+          "difference": 0.0003846153846147615,
+          "absolute_error": 0.0003846153846147615,
+          "absolute_percent_error": 0.006849784231785601
+        },
+        "mlu_words_sd": {
+          "custom": 4.133139271387597,
+          "reference": 4.133,
+          "difference": 0.00013927138759672886,
+          "absolute_error": 0.00013927138759672886,
+          "absolute_percent_error": 0.003369740808050541
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 146,
+          "reference": 146.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 73,
+          "reference": 73.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.5,
+          "reference": 0.5,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "MATTR": {
+          "custom": 0.6884536082474226,
+          "reference": 0.688,
+          "difference": 0.0004536082474226877,
+          "absolute_error": 0.0004536082474226877,
+          "absolute_percent_error": 0.06593143131143717
+        },
+        "MLUw": {
+          "custom": 5.615384615384615,
+          "reference": 5.615,
+          "difference": 0.0003846153846147615,
+          "absolute_error": 0.0003846153846147615,
+          "absolute_percent_error": 0.006849784231785601
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "810efd9091132ba2ed87f9d615696c969a809c5372229266b57d74b8931a9c71",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ry4_7x9s/sample.cha\nThu Oct 15 15:55:30 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ry4_7x9s/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 26, words = 146\n\tRatio of words over utterances = 5.615\n\tStandard deviation = 4.133\n\n",
+          "utterances": 26.0,
+          "total": 146.0,
+          "mlu": 5.615,
+          "sd": 4.133
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "ba02660858262cb236a33f42d266ca795dbc81c7f445418768b8e3dd0fe6980e",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_udvbsx7j/sample.cha\nThu Oct 15 15:55:30 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_udvbsx7j/sample.cha>\nSpeaker: *PAR:\n  2 a\n  1 again\n  3 air\n  1 almost\n  1 alright\n  4 and\n  1 because\n  1 big\n  1 bottom\n  1 can\n  4 catch\n  1 catched\n  1 catching\n  1 close\n  1 did\n  2 do\n  1 face\n  1 fell\n  1 fine\n  4 get\n  1 giant\n  1 go\n  2 gonna\n  3 here\n  1 hockey\n  1 how\n  5 i\n  1 i'll\n  1 i'm\n  5 in\n  4 is\n  7 it\n  4 it's\n  2 jokes\n  1 just\n  1 kidding\n  1 kinda\n  1 might\n  1 more\n  1 mouth\n  4 my\n  1 net\n  3 no\n  1 nope\n  3 not\n  3 on\n  1 one\n  2 out\n  1 piggy\n  1 play\n  1 poison\n  3 ready\n  1 scored\n  3 set\n  1 sit\n  1 so\n  1 some\n  1 stop\n  1 sure\n  3 that\n  4 the\n  2 then\n  6 there\n  1 there's\n  1 thing\n  2 this\n  1 to\n  1 up\n  2 was\n  1 what\n  3 why\n  6 yeah\n  3 you\n------------------------------\n   73  Total number of different item types used\n  146  Total number of items (tokens)\n0.500  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.688  MATTR\n\n",
+          "NDW": 73.0,
+          "TNW": 146.0,
+          "TTR": 0.5,
+          "MATTR": 0.688
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2015",
+    "recording": "transcripts/2015.cha#section2",
+    "method": "reference",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 72,
+          "reference": 72.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 207,
+          "reference": 207.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.875,
+          "reference": 2.875,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words_sd": {
+          "custom": 1.6991623753419736,
+          "reference": 1.699,
+          "difference": 0.00016237534197349746,
+          "absolute_error": 0.00016237534197349746,
+          "absolute_percent_error": 0.009557112535226453
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 207,
+          "reference": 207.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 86,
+          "reference": 86.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.41545893719806765,
+          "reference": 0.415,
+          "difference": 0.000458937198067666,
+          "absolute_error": 0.000458937198067666,
+          "absolute_percent_error": 0.11058727664281108
+        },
+        "MATTR": {
+          "custom": 0.4977215189873418,
+          "reference": 0.498,
+          "difference": -0.0002784810126582049,
+          "absolute_error": 0.0002784810126582049,
+          "absolute_percent_error": 0.0559198820598805
+        },
+        "MLUw": {
+          "custom": 2.875,
+          "reference": 2.875,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "f3193da3aeac6cbf2c6e53b13df4b4911f67e1aee74e8c2abe2ec615cf57bfb5",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_zdlqip1s/sample.cha\nThu Oct 15 15:55:30 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_zdlqip1s/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 72, words = 207\n\tRatio of words over utterances = 2.875\n\tStandard deviation = 1.699\n\n",
+          "utterances": 72.0,
+          "total": 207.0,
+          "mlu": 2.875,
+          "sd": 1.699
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "efa7a35ee1747f6aaa77914bbef43a9b7ab5c3ad268204778c301ae51df944e6",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_h74bxg57/sample.cha\nThu Oct 15 15:55:30 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_h74bxg57/sample.cha>\nSpeaker: *PAR:\n  7 a\n  1 again\n  1 ah\n  7 and\n  1 apart\n  1 around\n  3 asleep\n  2 back\n  2 ball\n  1 big\n  1 both\n  1 build\n  1 circle\n 26 clap\n  3 clappers\n 11 cluck\n  2 do\n  1 doll\n  1 down\n  2 elbows\n  1 eyes\n  3 falling\n  1 feet\n  1 for\n  1 froggies\n  1 green\n  1 gum\n  1 have\n  1 he's\n  3 here\n  3 house\n  3 i\n  1 i'm\n  1 in\n  2 it\n  2 knees\n  4 let's\n  1 make\n  1 maracas\n  1 mickey\n  1 mirror\n  1 monkeys\n  1 nah\n  4 no\n  1 not\n  1 okay\n  2 on\n  2 orange\n  1 out\n  1 peppa\n  1 pig\n  1 play\n  2 put\n  1 see\n 22 shake\n  1 shut\n  1 sideways\n  3 sing\n  1 slide\n  1 stop\n  1 ta\n  1 take\n  5 the\n  1 these\n  1 they're\n 10 think\n  1 thinking\n  2 this\n  1 through\n  2 thumbs\n  1 to\n  2 together\n  1 tongue\n  1 tooty\n  1 top\n  2 tower\n  2 turn\n  2 up\n  1 vocalizes\n  2 wanna\n  1 want\n  1 yay\n  5 yeah\n  1 yellow\n  1 yes\n  1 you\n------------------------------\n   86  Total number of different item types used\n  207  Total number of items (tokens)\n0.415  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.498  MATTR\n\n",
+          "NDW": 86.0,
+          "TNW": 207.0,
+          "TTR": 0.415,
+          "MATTR": 0.498
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2015",
+    "recording": "transcripts/2015.cha#section2",
+    "method": "previous_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 138,
+          "reference": 138.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 230,
+          "reference": 230.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 1.6666666666666667,
+          "reference": 1.667,
+          "difference": -0.0003333333333332966,
+          "absolute_error": 0.0003333333333332966,
+          "absolute_percent_error": 0.019996000799837828
+        },
+        "mlu_words_sd": {
+          "custom": 1.2702466571687205,
+          "reference": 1.27,
+          "difference": 0.000246657168720521,
+          "absolute_error": 0.000246657168720521,
+          "absolute_percent_error": 0.019421824308702443
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 230,
+          "reference": 230.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 93,
+          "reference": 93.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4043478260869565,
+          "reference": 0.404,
+          "difference": 0.0003478260869564931,
+          "absolute_error": 0.0003478260869564931,
+          "absolute_percent_error": 0.08609556607833986
+        },
+        "MATTR": {
+          "custom": 0.5093922651933702,
+          "reference": 0.509,
+          "difference": 0.0003922651933702115,
+          "absolute_error": 0.0003922651933702115,
+          "absolute_percent_error": 0.0770658533143834
+        },
+        "MLUw": {
+          "custom": 1.6666666666666667,
+          "reference": 1.667,
+          "difference": -0.0003333333333332966,
+          "absolute_error": 0.0003333333333332966,
+          "absolute_percent_error": 0.019996000799837828
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "6bf9f67180c4deb3ede2254b3edb4a19930e93731ba9c2b5bdda29c8425beee0",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_qr4uvt7s/sample.cha\nThu Oct 15 15:55:31 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_qr4uvt7s/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 138, words = 230\n\tRatio of words over utterances = 1.667\n\tStandard deviation = 1.270\n\n",
+          "utterances": 138.0,
+          "total": 230.0,
+          "mlu": 1.667,
+          "sd": 1.27
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "28d980544fa791e59807e664bb2da6c714086c53f70be1ed866c728ab1a42e37",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_nt6i0ml3/sample.cha\nThu Oct 15 15:55:31 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_nt6i0ml3/sample.cha>\nSpeaker: *PAR:\n 10 a\n  1 again\n  1 ah\n  7 and\n  1 apart\n  1 around\n  3 asleep\n  2 back\n  2 ball\n  1 big\n  1 both\n  1 build\n  1 circle\n 26 clap\n  3 clappers\n 11 cluck\n  2 do\n  1 doll\n  1 down\n  2 elbows\n  1 eyes\n  3 falling\n  1 feet\n  1 for\n  1 froggies\n  1 got\n  1 green\n  1 gum\n  1 have\n  1 he's\n  3 here\n  3 house\n  3 i\n  1 i'm\n  2 in\n  2 it\n  1 it's\n  2 knees\n  4 let's\n  2 like\n  1 make\n  1 maracas\n  1 mickey\n  1 mirror\n  1 monkeys\n  1 nah\n  4 no\n  1 not\n  1 okay\n  2 on\n  2 orange\n  1 out\n  1 peppa\n  1 pig\n  1 play\n  2 put\n  2 see\n 27 shake\n  1 shut\n  1 sideways\n  3 sing\n  1 slide\n  1 something\n  1 stop\n  1 supposed\n  1 ta\n  1 take\n  5 the\n  2 these\n  1 they're\n 10 think\n  1 thinking\n  3 this\n  1 through\n  3 thumbs\n  2 to\n  2 together\n  1 tongue\n  1 tooty\n  1 top\n  2 tower\n  2 turn\n  3 up\n  1 vocalizes\n  2 wanna\n  1 want\n  1 we\n  1 well\n  1 yay\n  5 yeah\n  1 yellow\n  1 yes\n  1 you\n------------------------------\n   93  Total number of different item types used\n  230  Total number of items (tokens)\n0.404  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.509  MATTR\n\n",
+          "NDW": 93.0,
+          "TNW": 230.0,
+          "TTR": 0.404,
+          "MATTR": 0.509
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2015",
+    "recording": "transcripts/2015.cha#section2",
+    "method": "latest_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 137,
+          "reference": 137.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 225,
+          "reference": 225.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 1.6423357664233578,
+          "reference": 1.642,
+          "difference": 0.0003357664233578639,
+          "absolute_error": 0.0003357664233578639,
+          "absolute_percent_error": 0.02044862505224506
+        },
+        "mlu_words_sd": {
+          "custom": 1.2942163667830933,
+          "reference": 1.294,
+          "difference": 0.00021636678309322477,
+          "absolute_error": 0.00021636678309322477,
+          "absolute_percent_error": 0.016720771490975637
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 225,
+          "reference": 225.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 91,
+          "reference": 91.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.40444444444444444,
+          "reference": 0.404,
+          "difference": 0.000444444444444414,
+          "absolute_error": 0.000444444444444414,
+          "absolute_percent_error": 0.11001100110010247
+        },
+        "MATTR": {
+          "custom": 0.5025000000000001,
+          "reference": 0.502,
+          "difference": 0.000500000000000056,
+          "absolute_error": 0.000500000000000056,
+          "absolute_percent_error": 0.09960159362550916
+        },
+        "MLUw": {
+          "custom": 1.6423357664233578,
+          "reference": 1.642,
+          "difference": 0.0003357664233578639,
+          "absolute_error": 0.0003357664233578639,
+          "absolute_percent_error": 0.02044862505224506
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "336fa99a028b3868fdb50e5d4ddfbf95d02953a59fd8a7f95b8757c7eff66eda",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_f5c3mnqs/sample.cha\nThu Oct 15 15:55:31 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_f5c3mnqs/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 137, words = 225\n\tRatio of words over utterances = 1.642\n\tStandard deviation = 1.294\n\n",
+          "utterances": 137.0,
+          "total": 225.0,
+          "mlu": 1.642,
+          "sd": 1.294
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "0544d4d82400101c0d1469c930d8158f15c1be86b68b898e5f4d75fac22a65df",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_lmtsiumm/sample.cha\nThu Oct 15 15:55:31 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_lmtsiumm/sample.cha>\nSpeaker: *PAR:\n 10 a\n  1 again\n  1 ah\n  7 and\n  1 apart\n  1 around\n  3 asleep\n  2 back\n  2 ball\n  1 big\n  1 both\n  1 build\n  1 circle\n 26 clap\n  3 clappers\n 11 cluck\n  2 do\n  1 doll\n  1 down\n  2 elbows\n  1 eyes\n  3 falling\n  1 feet\n  1 for\n  1 froggies\n  1 got\n  1 green\n  1 gum\n  1 have\n  1 he's\n  3 here\n  3 house\n  3 i\n  1 i'm\n  2 in\n  2 it\n  2 knees\n  4 let's\n  1 like\n  1 make\n  1 maracas\n  1 mickey\n  1 mirror\n  1 monkeys\n  1 nah\n  4 no\n  1 not\n  1 okay\n  2 on\n  2 orange\n  1 out\n  1 peppa\n  1 pig\n  1 play\n  2 put\n  2 see\n 27 shake\n  1 shut\n  1 sideways\n  3 sing\n  1 slide\n  1 something\n  1 stop\n  1 ta\n  1 take\n  5 the\n  2 these\n  1 they're\n 10 think\n  1 thinking\n  2 this\n  1 through\n  3 thumbs\n  1 to\n  2 together\n  1 tongue\n  1 tooty\n  1 top\n  2 tower\n  2 turn\n  3 up\n  1 vocalizes\n  2 wanna\n  1 want\n  1 we\n  1 well\n  1 yay\n  5 yeah\n  1 yellow\n  1 yes\n  1 you\n------------------------------\n   91  Total number of different item types used\n  225  Total number of items (tokens)\n0.404  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.502  MATTR\n\n",
+          "NDW": 91.0,
+          "TNW": 225.0,
+          "TTR": 0.404,
+          "MATTR": 0.502
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2015",
+    "recording": "transcripts/2015.cha#section2",
+    "method": "rules",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 14,
+          "reference": 14.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 66,
+          "reference": 66.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 4.714285714285714,
+          "reference": 4.714,
+          "difference": 0.0002857142857140005,
+          "absolute_error": 0.0002857142857140005,
+          "absolute_percent_error": 0.0060609733923207565
+        },
+        "mlu_words_sd": {
+          "custom": 4.934261725477298,
+          "reference": 4.934,
+          "difference": 0.00026172547729785833,
+          "absolute_error": 0.00026172547729785833,
+          "absolute_percent_error": 0.00530452933315481
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 66,
+          "reference": 66.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 38,
+          "reference": 38.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.5757575757575758,
+          "reference": 0.576,
+          "difference": -0.00024242424242415517,
+          "absolute_error": 0.00024242424242415517,
+          "absolute_percent_error": 0.04208754208752694
+        },
+        "MATTR": {
+          "custom": 0.5847058823529412,
+          "reference": 0.585,
+          "difference": -0.0002941176470587781,
+          "absolute_error": 0.0002941176470587781,
+          "absolute_percent_error": 0.05027652086474839
+        },
+        "MLUw": {
+          "custom": 4.714285714285714,
+          "reference": 4.714,
+          "difference": 0.0002857142857140005,
+          "absolute_error": 0.0002857142857140005,
+          "absolute_percent_error": 0.0060609733923207565
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "88df913604ac38c225278739dfb940e139a301dd1b26546b684b9a2dc6e926c5",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_sfpvd67d/sample.cha\nThu Oct 15 15:55:31 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_sfpvd67d/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 14, words = 66\n\tRatio of words over utterances = 4.714\n\tStandard deviation = 4.934\n\n",
+          "utterances": 14.0,
+          "total": 66.0,
+          "mlu": 4.714,
+          "sd": 4.934
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "6f71bdc90660dcaaf950cef0cbea90ae23a11369434236864d698688dcc0d8af",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_lsi6_yb6/sample.cha\nThu Oct 15 15:55:31 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_lsi6_yb6/sample.cha>\nSpeaker: *PAR:\n  2 a\n  4 and\n  1 apart\n  1 back\n  2 ball\n  1 big\n  1 clappers\n  1 do\n  1 elbows\n  1 feet\n  1 froggies\n  1 green\n  1 gum\n  1 house\n  2 i\n  1 it\n  2 knees\n  1 maracas\n  1 monkeys\n  1 nah\n  3 no\n  2 orange\n  1 out\n  1 play\n 10 shake\n  1 slide\n  1 stop\n  3 the\n  1 through\n  2 thumbs\n  2 together\n  1 tongue\n  1 tower\n  2 up\n  2 wanna\n  4 yeah\n  1 yellow\n  1 yes\n------------------------------\n   38  Total number of different item types used\n   66  Total number of items (tokens)\n0.576  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.585  MATTR\n\n",
+          "NDW": 38.0,
+          "TNW": 66.0,
+          "TTR": 0.576,
+          "MATTR": 0.585
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2015",
+    "recording": "transcripts/2015.cha#section2",
+    "method": "batchalign_0.10.4",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 24,
+          "reference": 24.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 153,
+          "reference": 153.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 6.375,
+          "reference": 6.375,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words_sd": {
+          "custom": 5.4681844945709965,
+          "reference": 5.468,
+          "difference": 0.00018449457099656286,
+          "absolute_error": 0.00018449457099656286,
+          "absolute_percent_error": 0.0033740777431704983
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 153,
+          "reference": 153.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 71,
+          "reference": 71.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.46405228758169936,
+          "reference": 0.464,
+          "difference": 5.228758169933956e-05,
+          "absolute_error": 5.228758169933956e-05,
+          "absolute_percent_error": 0.011268875366236972
+        },
+        "MATTR": {
+          "custom": 0.5032692307692308,
+          "reference": 0.503,
+          "difference": 0.00026923076923079936,
+          "absolute_error": 0.00026923076923079936,
+          "absolute_percent_error": 0.05352500382322055
+        },
+        "MLUw": {
+          "custom": 6.375,
+          "reference": 6.375,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "0f43a0b08c371aa20defe70d2f4e8cfebc8655c388b486d80fa2a2133756934e",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ankszmji/sample.cha\nThu Oct 15 15:55:31 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ankszmji/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 24, words = 153\n\tRatio of words over utterances = 6.375\n\tStandard deviation = 5.468\n\n",
+          "utterances": 24.0,
+          "total": 153.0,
+          "mlu": 6.375,
+          "sd": 5.468
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "8c53eca3f4b0b9068443fac1711e54730376ed6eaf0933012226fff2a0c91fba",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_tout0xmu/sample.cha\nThu Oct 15 15:55:31 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_tout0xmu/sample.cha>\nSpeaker: *PAR:\n  4 a\n  1 again\n  1 ah\n  7 and\n  1 apart\n  1 around\n  2 asleep\n  2 back\n  2 ball\n  1 big\n  1 build\n 26 clap\n  2 clappers\n 11 cluck\n  2 do\n  1 doll\n  1 down\n  2 elbows\n  1 eyes\n  2 falling\n  1 feet\n  1 for\n  1 froggies\n  1 green\n  1 gum\n  1 have\n  2 here\n  3 house\n  1 i\n  1 i'm\n  1 in\n  2 it\n  2 knees\n  3 let's\n  1 make\n  1 maracas\n  1 monkeys\n  3 no\n  1 not\n  1 okay\n  2 orange\n  1 out\n  1 peppa\n  1 pig\n  1 play\n  1 put\n 10 shake\n  1 shut\n  1 sideways\n  3 sing\n  1 stop\n  1 ta\n  1 take\n  4 the\n  1 these\n  1 they're\n  1 this\n  2 thumbs\n  1 to\n  2 together\n  1 tongue\n  1 tooty\n  2 tower\n  2 turn\n  2 up\n  1 wanna\n  1 yay\n  3 yeah\n  1 yellow\n  1 yes\n  1 you\n------------------------------\n   71  Total number of different item types used\n  153  Total number of items (tokens)\n0.464  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.503  MATTR\n\n",
+          "NDW": 71.0,
+          "TNW": 153.0,
+          "TTR": 0.464,
+          "MATTR": 0.503
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2020",
+    "recording": "transcripts/2020.cha#section2",
+    "method": "reference",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 59,
+          "reference": 59.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 141,
+          "reference": 141.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 2.389830508474576,
+          "reference": 2.39,
+          "difference": -0.0001694915254240037,
+          "absolute_error": 0.0001694915254240037,
+          "absolute_percent_error": 0.007091695624435301
+        },
+        "mlu_words_sd": {
+          "custom": 1.551565083572313,
+          "reference": 1.552,
+          "difference": -0.00043491642768711536,
+          "absolute_error": 0.00043491642768711536,
+          "absolute_percent_error": 0.02802296570148939
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 141,
+          "reference": 141.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 59,
+          "reference": 59.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.41843971631205673,
+          "reference": 0.418,
+          "difference": 0.0004397163120567482,
+          "absolute_error": 0.0004397163120567482,
+          "absolute_percent_error": 0.10519528996572924
+        },
+        "MATTR": {
+          "custom": 0.5454347826086957,
+          "reference": 0.545,
+          "difference": 0.00043478260869567187,
+          "absolute_error": 0.00043478260869567187,
+          "absolute_percent_error": 0.07977662544874713
+        },
+        "MLUw": {
+          "custom": 2.389830508474576,
+          "reference": 2.39,
+          "difference": -0.0001694915254240037,
+          "absolute_error": 0.0001694915254240037,
+          "absolute_percent_error": 0.007091695624435301
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "86d711982b356b8e8552b66b4d0353d2d3a386477798b9fb54de781cd2982d61",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_6u4xplai/sample.cha\nThu Oct 15 15:55:31 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_6u4xplai/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 59, words = 141\n\tRatio of words over utterances = 2.390\n\tStandard deviation = 1.552\n\n",
+          "utterances": 59.0,
+          "total": 141.0,
+          "mlu": 2.39,
+          "sd": 1.552
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "fccf4d0b4c428e56d204ffb8b6a5fbf57ef73d52ebeccfe9404938ec8e58721b",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference__9ju085k/sample.cha\nThu Oct 15 15:55:31 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference__9ju085k/sample.cha>\nSpeaker: *PAR:\n  1 a\n  1 ambulance\n  1 and\n  4 beep\n  1 coming\n  1 don't\n  1 engine\n  2 four\n  1 fun\n  1 garbage\n  3 go\n  1 going\n  3 gone\n  1 green\n  2 he\n  3 he's\n  1 here\n  1 house\n  1 i'm\n  1 in\n  1 inside\n  2 is\n  3 it\n  5 it's\n  1 me\n  2 mine\n  5 mommy\n  1 mommy's\n  4 my\n 16 no\n  3 not\n  1 of\n  2 on\n  8 one\n  1 other\n  1 out\n  1 park\n  2 people\n  1 picking\n  2 right\n  1 say\n  4 so\n  5 that\n  1 that's\n  5 the\n  2 there\n  1 they\n  1 this\n  6 three\n  1 tickle\n  1 tiny\n  1 toy\n  1 toys\n  5 two\n  1 what's\n  1 wheel\n  3 where\n  2 yeah\n  6 yes\n------------------------------\n   59  Total number of different item types used\n  141  Total number of items (tokens)\n0.418  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.545  MATTR\n\n",
+          "NDW": 59.0,
+          "TNW": 141.0,
+          "TTR": 0.418,
+          "MATTR": 0.545
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2020",
+    "recording": "transcripts/2020.cha#section2",
+    "method": "previous_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 82,
+          "reference": 82.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 153,
+          "reference": 153.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 1.8658536585365855,
+          "reference": 1.866,
+          "difference": -0.00014634146341463428,
+          "absolute_error": 0.00014634146341463428,
+          "absolute_percent_error": 0.007842522155125094
+        },
+        "mlu_words_sd": {
+          "custom": 1.0793199656914874,
+          "reference": 1.079,
+          "difference": 0.0003199656914874005,
+          "absolute_error": 0.0003199656914874005,
+          "absolute_percent_error": 0.029653910239796154
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 153,
+          "reference": 153.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 63,
+          "reference": 63.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4117647058823529,
+          "reference": 0.412,
+          "difference": -0.00023529411764705577,
+          "absolute_error": 0.00023529411764705577,
+          "absolute_percent_error": 0.057110222729867904
+        },
+        "MATTR": {
+          "custom": 0.5605769230769231,
+          "reference": 0.561,
+          "difference": -0.0004230769230769704,
+          "absolute_error": 0.0004230769230769704,
+          "absolute_percent_error": 0.07541478129714267
+        },
+        "MLUw": {
+          "custom": 1.8658536585365855,
+          "reference": 1.866,
+          "difference": -0.00014634146341463428,
+          "absolute_error": 0.00014634146341463428,
+          "absolute_percent_error": 0.007842522155125094
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "548a8a6d7aba27cd13e64abc2529cff8840f6240649e2f862484099b1aa9fba1",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_8f4nr04s/sample.cha\nThu Oct 15 15:55:31 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_8f4nr04s/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 82, words = 153\n\tRatio of words over utterances = 1.866\n\tStandard deviation = 1.079\n\n",
+          "utterances": 82.0,
+          "total": 153.0,
+          "mlu": 1.866,
+          "sd": 1.079
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "c15bd8a304aaac973a8a7756c6154a9d72fdff7517609fa8c602e649529ebead",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_89dzi3jp/sample.cha\nThu Oct 15 15:55:31 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_89dzi3jp/sample.cha>\nSpeaker: *PAR:\n  1 a\n  1 ambulance\n  1 and\n  4 beep\n  1 childname's\n  3 coming\n  1 don't\n  1 engine\n  2 four\n  1 fun\n  1 garbage\n  3 go\n  1 going\n  3 gone\n  1 green\n  2 he\n  3 he's\n  1 here\n  1 home\n  1 house\n  1 i'm\n  2 in\n  1 inside\n  2 is\n  3 it\n  7 it's\n  1 me\n  2 mine\n  5 mommy\n  1 mommy's\n  1 much\n  5 my\n 18 no\n  3 not\n  1 of\n  2 on\n  8 one\n  1 other\n  1 out\n  1 park\n  2 people\n  1 picking\n  2 right\n  1 room\n  1 say\n  4 so\n  4 that\n  2 that's\n  5 the\n  2 there\n  1 they\n  1 this\n  6 three\n  1 tickle\n  1 tiny\n  1 toy\n  1 toys\n  5 two\n  1 what's\n  1 wheel\n  3 where\n  2 yeah\n  6 yes\n------------------------------\n   63  Total number of different item types used\n  153  Total number of items (tokens)\n0.412  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.561  MATTR\n\n",
+          "NDW": 63.0,
+          "TNW": 153.0,
+          "TTR": 0.412,
+          "MATTR": 0.561
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2020",
+    "recording": "transcripts/2020.cha#section2",
+    "method": "latest_minilm",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 78,
+          "reference": 78.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 149,
+          "reference": 149.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 1.9102564102564104,
+          "reference": 1.91,
+          "difference": 0.00025641025641043313,
+          "absolute_error": 0.00025641025641043313,
+          "absolute_percent_error": 0.013424620754472939
+        },
+        "mlu_words_sd": {
+          "custom": 1.1343799552935203,
+          "reference": 1.134,
+          "difference": 0.00037995529352041757,
+          "absolute_error": 0.00037995529352041757,
+          "absolute_percent_error": 0.0335057578060333
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 149,
+          "reference": 149.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 62,
+          "reference": 62.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4161073825503356,
+          "reference": 0.416,
+          "difference": 0.00010738255033559962,
+          "absolute_error": 0.00010738255033559962,
+          "absolute_percent_error": 0.025813113061442218
+        },
+        "MATTR": {
+          "custom": 0.5546,
+          "reference": 0.555,
+          "difference": -0.00040000000000006697,
+          "absolute_error": 0.00040000000000006697,
+          "absolute_percent_error": 0.07207207207208413
+        },
+        "MLUw": {
+          "custom": 1.9102564102564104,
+          "reference": 1.91,
+          "difference": 0.00025641025641043313,
+          "absolute_error": 0.00025641025641043313,
+          "absolute_percent_error": 0.013424620754472939
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "170d0f44643d838791f995dc708c4fe0f63ecbea558794813b6db8c1983fc760",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_vu7os1e6/sample.cha\nThu Oct 15 15:55:31 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_vu7os1e6/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 78, words = 149\n\tRatio of words over utterances = 1.910\n\tStandard deviation = 1.134\n\n",
+          "utterances": 78.0,
+          "total": 149.0,
+          "mlu": 1.91,
+          "sd": 1.134
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "1d66a0ffc8b4d8fb20adc4514b4f9d4138b95533639fe970cb7fe18bf45297e9",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_pfle29wx/sample.cha\nThu Oct 15 15:55:32 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_pfle29wx/sample.cha>\nSpeaker: *PAR:\n  1 a\n  1 ambulance\n  1 and\n  4 beep\n  3 coming\n  1 don't\n  1 engine\n  2 four\n  1 fun\n  1 garbage\n  3 go\n  1 going\n  3 gone\n  1 green\n  2 he\n  3 he's\n  1 here\n  1 home\n  1 house\n  1 i'm\n  2 in\n  1 inside\n  2 is\n  3 it\n  6 it's\n  1 me\n  2 mine\n  5 mommy\n  1 mommy's\n  1 much\n  4 my\n 18 no\n  3 not\n  1 of\n  2 on\n  8 one\n  1 other\n  1 out\n  1 park\n  2 people\n  1 picking\n  2 right\n  1 room\n  1 say\n  4 so\n  4 that\n  1 that's\n  5 the\n  2 there\n  1 they\n  1 this\n  6 three\n  1 tickle\n  1 tiny\n  1 toy\n  1 toys\n  5 two\n  1 what's\n  1 wheel\n  3 where\n  2 yeah\n  6 yes\n------------------------------\n   62  Total number of different item types used\n  149  Total number of items (tokens)\n0.416  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.555  MATTR\n\n",
+          "NDW": 62.0,
+          "TNW": 149.0,
+          "TTR": 0.416,
+          "MATTR": 0.555
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2020",
+    "recording": "transcripts/2020.cha#section2",
+    "method": "rules",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 14,
+          "reference": 14.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 66,
+          "reference": 66.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 4.714285714285714,
+          "reference": 4.714,
+          "difference": 0.0002857142857140005,
+          "absolute_error": 0.0002857142857140005,
+          "absolute_percent_error": 0.0060609733923207565
+        },
+        "mlu_words_sd": {
+          "custom": 4.430874976934521,
+          "reference": 4.431,
+          "difference": -0.00012502306547901298,
+          "absolute_error": 0.00012502306547901298,
+          "absolute_percent_error": 0.002821554174656127
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 66,
+          "reference": 66.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 29,
+          "reference": 29.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.4393939393939394,
+          "reference": 0.439,
+          "difference": 0.0003939393939393909,
+          "absolute_error": 0.0003939393939393909,
+          "absolute_percent_error": 0.08973562504314143
+        },
+        "MATTR": {
+          "custom": 0.5117647058823529,
+          "reference": 0.512,
+          "difference": -0.00023529411764711128,
+          "absolute_error": 0.00023529411764711128,
+          "absolute_percent_error": 0.04595588235295142
+        },
+        "MLUw": {
+          "custom": 4.714285714285714,
+          "reference": 4.714,
+          "difference": 0.0002857142857140005,
+          "absolute_error": 0.0002857142857140005,
+          "absolute_percent_error": 0.0060609733923207565
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "d2c5b1dc6b2d125024c91fd4cbae224686a492c9d8e3a45776b6b6c249ea4270",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference__pkqdkr9/sample.cha\nThu Oct 15 15:55:32 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference__pkqdkr9/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 14, words = 66\n\tRatio of words over utterances = 4.714\n\tStandard deviation = 4.431\n\n",
+          "utterances": 14.0,
+          "total": 66.0,
+          "mlu": 4.714,
+          "sd": 4.431
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "df5df932f4339e4d40ea9b595af22a34ecb4787a72c5b78edb6aeb26b396261e",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_e0ejp9hq/sample.cha\nThu Oct 15 15:55:32 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_e0ejp9hq/sample.cha>\nSpeaker: *PAR:\n  1 and\n  3 beep\n  2 four\n  1 go\n  3 gone\n  2 he\n  2 he's\n  1 here\n  1 i'm\n  1 it\n  2 it's\n  2 mine\n  2 mommy\n 13 no\n  4 one\n  1 out\n  1 park\n  1 picking\n  1 right\n  3 so\n  2 that\n  1 the\n  1 they\n  1 this\n  5 three\n  3 two\n  1 wheel\n  2 yeah\n  3 yes\n------------------------------\n   29  Total number of different item types used\n   66  Total number of items (tokens)\n0.439  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.512  MATTR\n\n",
+          "NDW": 29.0,
+          "TNW": 66.0,
+          "TTR": 0.439,
+          "MATTR": 0.512
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  },
+  {
+    "corpus": "nyu_emerson",
+    "participant": "nyu_emerson/2020",
+    "recording": "transcripts/2020.cha#section2",
+    "method": "batchalign_0.10.4",
+    "check": {
+      "status": "software_reference_computed",
+      "metrics": {
+        "mlu_nutterances": {
+          "custom": 20,
+          "reference": 20.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_nwords": {
+          "custom": 109,
+          "reference": 109.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words": {
+          "custom": 5.45,
+          "reference": 5.45,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "mlu_words_sd": {
+          "custom": 3.980891859872609,
+          "reference": 3.981,
+          "difference": -0.00010814012739102097,
+          "absolute_error": 0.00010814012739102097,
+          "absolute_percent_error": 0.002716406113816151
+        }
+      },
+      "requested_metrics": {
+        "TNW": {
+          "custom": 109,
+          "reference": 109.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "NDW": {
+          "custom": 51,
+          "reference": 51.0,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        },
+        "TTR": {
+          "custom": 0.46788990825688076,
+          "reference": 0.468,
+          "difference": -0.00011009174311926717,
+          "absolute_error": 0.00011009174311926717,
+          "absolute_percent_error": 0.023523876734886148
+        },
+        "MATTR": {
+          "custom": 0.5346666666666666,
+          "reference": 0.535,
+          "difference": -0.00033333333333340764,
+          "absolute_error": 0.00033333333333340764,
+          "absolute_percent_error": 0.06230529595016965
+        },
+        "MLUw": {
+          "custom": 5.45,
+          "reference": 5.45,
+          "difference": 0.0,
+          "absolute_error": 0.0,
+          "absolute_percent_error": 0.0
+        }
+      },
+      "official_outputs": {
+        "mlu": {
+          "command": "mlu +t*PAR -t%mor",
+          "output_sha256": "f41623f5c6a3a9fab3f7525206b2c222fcc97d601aa2a915e18a5306a1759703",
+          "output": "clan-mlu +t*PAR -t%mor +f /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ddlnbejj/sample.cha\nThu Oct 15 15:55:32 2026\nclan-mlu (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_ddlnbejj/sample.cha>\nMLU for Speaker: *PAR:\n  MLU (xxx, yyy and www are EXCLUDED from the utterance and morpheme counts):\n\tNumber of: utterances = 20, words = 109\n\tRatio of words over utterances = 5.450\n\tStandard deviation = 3.981\n\n",
+          "utterances": 20.0,
+          "total": 109.0,
+          "mlu": 5.45,
+          "sd": 3.981
+        },
+        "freq": {
+          "command": "freq +t*PAR -t%mor +k +b50",
+          "output_sha256": "056fa700cc5825e0657786ab0ad2995bd4745981e8f47d22b95a5c4194eabd23",
+          "output": "clan-freq +t*PAR -t%mor +f +k +b50 /var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_v9u4b81r/sample.cha\nThu Oct 15 15:55:32 2026\nclan-freq (21-Sep-2026) is conducting analyses on:\n  ONLY speaker main tiers matching: *PAR;\n    and those speakers' ALL dependent tiers EXCEPT the ones matching: %MOR;\n****************************************\nFrom file </var/folders/0p/r7nsr3cx305crq5q3lrx021h0000gn/T/clan_reference_v9u4b81r/sample.cha>\nSpeaker: *PAR:\n  1 a\n  1 ambulance\n  1 and\n  4 beep\n  1 coming\n  1 don't\n  1 engine\n  2 four\n  1 garbage\n  2 go\n  1 going\n  3 gone\n  1 green\n  1 he\n  3 he's\n  1 here\n  1 house\n  1 i'm\n  1 in\n  1 inside\n  1 is\n  2 it\n  4 it's\n  2 mine\n  3 mommy\n  2 my\n 13 no\n  3 not\n  1 on\n  5 one\n  1 other\n  1 out\n  1 park\n  2 people\n  1 picking\n  2 right\n  1 say\n  3 so\n  3 that\n  1 that's\n  5 the\n  2 there\n  1 they\n  5 three\n  1 tiny\n  3 two\n  1 what's\n  1 wheel\n  3 where\n  1 yeah\n  5 yes\n------------------------------\n   51  Total number of different item types used\n  109  Total number of items (tokens)\n0.468  Type/Token ratio\n    This TTR number was not calculated on the basis of %mor line forms.\n    If you want a TTR based on lemmas, run FREQ on the %mor line\n    with option: +sm;*,o%\n0.535  MATTR\n\n",
+          "NDW": 51.0,
+          "TNW": 109.0,
+          "TTR": 0.468,
+          "MATTR": 0.535
+        }
+      },
+      "scope": "Identical normalized predicted text; calculator check, not a gold-boundary validation"
+    }
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "format": "gap_probability_ensemble_v1",
+  "name": "six_model_ensemble",
+  "margin": -0.25,
+  "members": [
+    {
+      "name": "fold_1",
+      "model_directory": "outputs/results/participant_cv_v1/fold_1/model",
+      "weights_sha256": "c1d5083b6c643449c6f30387aa03e4a3047d2d3eebd69853d18f2a1dae08cd73",
+      "selection_sha256": "a47cd7b4301f7bb4e800528e3eca11a2b80b750830e208d6fc2912bbae415198"
+    },
+    {
+      "name": "fold_2",
+      "model_directory": "outputs/results/participant_cv_v1/fold_2/model",
+      "weights_sha256": "928be4808642e351610934bbc13d23b21435f0f41fc45330ff3c2952a151dcfd",
+      "selection_sha256": "c2b13fa17f37bffd41e017421e09ac9e6812da6dcafb4303b78c0d0e3be81bd8"
+    },
+    {
+      "name": "fold_3",
+      "model_directory": "outputs/results/participant_cv_v1/fold_3/model",
+      "weights_sha256": "405a7b2bdd8a6086553136f34a46c3c6c6eb5ecc187abc87db7f3faf6fce9195",
+      "selection_sha256": "1eddd485a1601a61763afcf36acefecd09ec051e9bf7266b4bbd2cfac518f42e"
+    },
+    {
+      "name": "fold_4",
+      "model_directory": "outputs/results/participant_cv_v1/fold_4/model",
+      "weights_sha256": "2724d846e2ecb557ae139f3aaea2d09ce4a4ee5a1f5f83333f534bb24755d053",
+      "selection_sha256": "ea35cea08abb35c200098d5ea50b3f5f5c52eccc8c2c91132c700b87ccfa1e82"
+    },
+    {
+      "name": "fold_5",
+      "model_directory": "outputs/results/participant_cv_v1/fold_5/model",
+      "weights_sha256": "ef0dcdd2eb793e4572f5ecd9c7593b3871a9978e954f06a3314550543a5286ad",
+      "selection_sha256": "8f25b37ec8244f28d0d8d1149096f6d1a6b2e6bcd23b53c93e6f33f93ab3f4d7"
+    },
+    {
+      "name": "final",
+      "model_directory": "outputs/results/participant_cv_v1/final/model",
+      "weights_sha256": "1c677124856eaf71606c4fba8e2132d9acd83c02c8c26785c265ea8539bf4e2a",
+      "selection_sha256": "4ecfb925f940803a378270796a16ca53d53720e782f5f0aa5a9c91bc720e687e"
+    }
+  ],
+  "rule_feature_kind": "clause",
+  "threshold": null,
+  "decoding": "ensemble_probability_margin",
+  "input_sha256": "206e478138b7d8516fcc190fab5b7f3c079ac03f840c9e59c8d92597ace63026",
+  "protocol_sha256": "76933d5be942237661f3be870f23672339c0d522ebce82c4e5feedade937bdcb"
+}

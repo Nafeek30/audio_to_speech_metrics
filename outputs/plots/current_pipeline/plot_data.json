@@ -1,0 +1,120 @@
+{
+  "figures": {
+    "01_child_vocabulary_errors.png": {
+      "evaluation": "Existing retained-model test",
+      "values": [
+        {
+          "corpus": "ocsc",
+          "values": {
+            "TNW": 1.8648245774278769,
+            "NDW": 1.7887785230669693,
+            "TTR": 1.1373051718003928,
+            "MATTR": 0.4929184157272904
+          }
+        },
+        {
+          "corpus": "nyu_emerson",
+          "values": {
+            "TNW": 2.3401250211078586,
+            "NDW": 1.6912927328494782,
+            "TTR": 1.8978187148157,
+            "MATTR": 1.9684094464631348
+          }
+        }
+      ]
+    },
+    "02_child_utterance_errors.png": {
+      "evaluation": "Existing retained-model test",
+      "values": [
+        {
+          "corpus": "ocsc",
+          "values": {
+            "total_utterances": 10.793119256376148,
+            "MLUw": 8.701138198999546,
+            "length_sd": 14.243118299805898
+          }
+        },
+        {
+          "corpus": "nyu_emerson",
+          "values": {
+            "total_utterances": 26.448505656841252,
+            "MLUw": 16.56521778796958,
+            "length_sd": 13.698089134152585
+          }
+        }
+      ]
+    },
+    "03_lucid_vocabulary_errors.png": {
+      "evaluation": "Provisional lexical-reference comparison",
+      "aggregation": "Mean APE within speaker over all available scored samples, then equal mean over 40 speakers; all three scored conditions included",
+      "values": {
+        "basic_ntokens": 5.100948680685816,
+        "basic_ntypes": 4.1492696600607175,
+        "simple_ttr_aw": 2.9663482209715006,
+        "mattr50_aw": 0.8504292113332934
+      },
+      "counts": {
+        "basic_ntokens": {
+          "speakers": 40,
+          "samples": 180
+        },
+        "basic_ntypes": {
+          "speakers": 40,
+          "samples": 180
+        },
+        "simple_ttr_aw": {
+          "speakers": 40,
+          "samples": 180
+        },
+        "mattr50_aw": {
+          "speakers": 40,
+          "samples": 180
+        }
+      }
+    },
+    "04_cross_validation_comparison.png": {
+      "evaluation": "Five-fold CV tuning, not a new final test",
+      "values": [
+        {
+          "corpus": "ocsc",
+          "values": {
+            "lr2_count1": {
+              "eligible_mlu_utterances": 9.06692404209699,
+              "MLUw": 9.047400908527921,
+              "length_sd": 14.825939925548115
+            },
+            "lr2_count025": {
+              "eligible_mlu_utterances": 8.836197677002128,
+              "MLUw": 8.667363072916096,
+              "length_sd": 14.731392308125864
+            }
+          }
+        },
+        {
+          "corpus": "nyu_emerson",
+          "values": {
+            "lr2_count1": {
+              "eligible_mlu_utterances": 16.275273261752236,
+              "MLUw": 10.274841296737478,
+              "length_sd": 19.471005966971937
+            },
+            "lr2_count025": {
+              "eligible_mlu_utterances": 17.486212402894274,
+              "MLUw": 10.998358041920486,
+              "length_sd": 19.420272617455833
+            }
+          }
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "outputs/results/transcript_validation/chat_calibrated_results.json": "02fc00313920f03ae77b2c124c3343a9e16b9f75649514b4f1755c7f6f63725d",
+    "outputs/results/transcript_validation/lucid_results.json": "a9cb35eb6977f19eb74f1954bae5aa89a1be653ed26f841ba7b09579962a4f8b",
+    "outputs/results/cv_hyperparameter_v4/stopped_search_summary.json": "1a81d44c735f6324604e63bdbae4039d104cf09b9ab1033fdcfeea6fb104a8ef"
+  },
+  "format": "PNG, white background, 3200 x 1800 pixels, 200 DPI",
+  "notes": "No HD-D42 plotted. No source results, cohorts or model weights modified. LUCID aggregation is a new descriptive summary of saved per-sample errors, not a new model run.",
+  "main_titles_removed": true,
+  "figure_2_subtitle": "Ohio Child Speech Corpus: 45 participants; New York University and Emerson College corpus: 4 participants"
+}

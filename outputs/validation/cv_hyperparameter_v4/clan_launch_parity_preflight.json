@@ -1,0 +1,108 @@
+{
+  "checks": [
+    {
+      "name": "nyu_emerson/transcripts/2023.cha#section3",
+      "all_native_values_exact": true,
+      "original_seconds": 0.13603887509088963,
+      "spawn_seconds": 0.11506087495945394,
+      "values": {
+        "total_utterances": 3,
+        "eligible_mlu_utterances": 2.0,
+        "MLUw": 1.0,
+        "length_sd": 0.0,
+        "mlu_words": 2.0,
+        "TNW": 2.0,
+        "NDW": 1.0,
+        "TTR": 0.5,
+        "MATTR": null
+      }
+    },
+    {
+      "name": "nyu_emerson/transcripts/2006.cha#section2",
+      "all_native_values_exact": true,
+      "original_seconds": 0.1397117079468444,
+      "spawn_seconds": 0.12809095799457282,
+      "values": {
+        "total_utterances": 90,
+        "eligible_mlu_utterances": 78.0,
+        "MLUw": 3.0384615384615383,
+        "length_sd": 2.457,
+        "mlu_words": 237.0,
+        "TNW": 250.0,
+        "NDW": 122.0,
+        "TTR": 0.488,
+        "MATTR": 0.702
+      }
+    },
+    {
+      "name": "ocsc/transcripts/6/6006.cha#section7",
+      "all_native_values_exact": true,
+      "original_seconds": 0.14742741698864847,
+      "spawn_seconds": 0.1344312500441447,
+      "values": {
+        "total_utterances": 7,
+        "eligible_mlu_utterances": 6.0,
+        "MLUw": 2.3333333333333335,
+        "length_sd": 1.599,
+        "mlu_words": 14.0,
+        "TNW": 14.0,
+        "NDW": 12.0,
+        "TTR": 0.8571428571428571,
+        "MATTR": null
+      }
+    },
+    {
+      "name": "ocsc/transcripts/5/5034.cha#section7",
+      "all_native_values_exact": true,
+      "original_seconds": 0.1699569160118699,
+      "spawn_seconds": 0.15915020799729973,
+      "values": {
+        "total_utterances": 341,
+        "eligible_mlu_utterances": 331.0,
+        "MLUw": 6.2749244712990935,
+        "length_sd": 4.201,
+        "mlu_words": 2077.0,
+        "TNW": 2139.0,
+        "NDW": 558.0,
+        "TTR": 0.2608695652173913,
+        "MATTR": 0.706
+      }
+    },
+    {
+      "name": "predicted_21",
+      "all_native_values_exact": true,
+      "original_seconds": 0.1261799590429291,
+      "spawn_seconds": 0.10633891599718481,
+      "values": {
+        "total_utterances": 1,
+        "eligible_mlu_utterances": 1.0,
+        "MLUw": 4.0,
+        "length_sd": null,
+        "mlu_words": 4.0,
+        "TNW": 4.0,
+        "NDW": 4.0,
+        "TTR": 1.0,
+        "MATTR": null
+      }
+    },
+    {
+      "name": "predicted_319",
+      "all_native_values_exact": true,
+      "original_seconds": 0.12900158402044326,
+      "spawn_seconds": 0.12142687500454485,
+      "values": {
+        "total_utterances": 1,
+        "eligible_mlu_utterances": 1.0,
+        "MLUw": 80.0,
+        "length_sd": null,
+        "mlu_words": 80.0,
+        "TNW": 80.0,
+        "NDW": 4.0,
+        "TTR": 0.05,
+        "MATTR": 0.08
+      }
+    }
+  ],
+  "all_exact": true,
+  "scope": "Launch-only optimization; same binaries/arguments/PTYs/input bytes and native parsed values; original eval representative cases and synthetic pause/long cases. No model or selection changes."
+}

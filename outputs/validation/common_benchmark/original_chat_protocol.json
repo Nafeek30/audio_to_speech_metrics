@@ -1,0 +1,11 @@
+{
+  "registered_utc": "2026-10-15T20:57:43.588753+00:00",
+  "primary_protocol": "protocol.json remains unchanged; no training, choice or tuning",
+  "purpose": "Quantify reference-policy sensitivity using original annotated CHAT rather than only normalized gold words",
+  "scope": "All 126 public test task sections; native CLAN MLU -t%mor and FREQ +k +b50 on original main tiers, target CHI",
+  "measures": "Eligible MLU utterances (distinct from total units), word MLU, population length SD, MLU eligible words, FREQ TNW/NDW/TTR/MATTR50",
+  "comparisons": "Frozen system predictions and frozen normalized gold; all records retained. Native FREQ word policy differs from clinical TNW policy; agreement reflects both coding and segmentation differences.",
+  "endpoints": "Mean recording APE within child, mean child within corpus, no new composite or selection; zero denominators missing",
+  "input_sha256": "50f9b71a18beee8618db28900c924fcb9858fb8b921664831ac50d067b61a4d6",
+  "predictions_sha256": "54a9b6488bc841c2952709e95116ac8b49f114377b7641f1a6491f0fcfcf0057"
+}

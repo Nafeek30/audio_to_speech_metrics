@@ -1,0 +1,52 @@
+{
+  "scope": "Historical held-out benchmark, already inspected across research rounds; not fresh confirmation.",
+  "architecture": "Two transformer encoder layers, width 64, four heads; word and position embeddings; binary word-gap boundary prediction",
+  "combined_architecture": "Two transformer encoder layers, width 64, four heads; word and position embeddings plus learned rule-gap embeddings; binary word-gap boundary prediction",
+  "original_figure": "outputs/results/benchmark/talkbank_results.png",
+  "source_files": {
+    "talkbank_model": {
+      "path": "outputs/results/benchmark/talkbank_model.json",
+      "sha256": "ac956dee8ed7a82d017d5a3fbdef5a45956b5e1b6c45e3e84f708b81258c1b9c"
+    },
+    "hybrid_model": {
+      "path": "outputs/results/benchmark/hybrid_model.json",
+      "sha256": "f486d9e60f787e6848c36fc553fe3598fa282d7d0e30db6b1e5c6ddccbe6af3e"
+    }
+  },
+  "aggregation": "Micro-aggregated saved TP/FP/FN; no new predictions or evaluation run.",
+  "results": [
+    {
+      "method": "spaCy + rules",
+      "participants": 49,
+      "records": 126,
+      "tp": 3333,
+      "fp": 636,
+      "fn": 8706,
+      "Precision": 83.97581254724112,
+      "Recall": 27.685023673062545,
+      "F1": 41.64167916041979
+    },
+    {
+      "method": "Model only",
+      "participants": 49,
+      "records": 126,
+      "tp": 8820,
+      "fp": 7440,
+      "fn": 3219,
+      "Precision": 54.24354243542435,
+      "Recall": 73.26189882880638,
+      "F1": 62.334358104526665
+    },
+    {
+      "method": "Combined",
+      "participants": 49,
+      "records": 126,
+      "tp": 8963,
+      "fp": 5704,
+      "fn": 3076,
+      "Precision": 61.10997477330061,
+      "Recall": 74.44970512501038,
+      "F1": 67.12349284804912
+    }
+  ]
+}

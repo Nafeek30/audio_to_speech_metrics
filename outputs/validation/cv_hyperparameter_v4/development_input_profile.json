@@ -1,0 +1,58 @@
+{
+  "scope": "Original train+eval only. Descriptive development profile; source data and cohorts remain unchanged. Current CV grid registered separately.",
+  "training_summary": [
+    {
+      "corpus": "nyu_emerson",
+      "participants": 20,
+      "sections": 63,
+      "source_words": 5336,
+      "possible_nonfinal_gaps": 5273,
+      "supervised_gaps": 4651,
+      "supervised_positive_boundaries": 1841,
+      "masked_nonfinal_gap_percent": 11.795941589228143
+    },
+    {
+      "corpus": "ocsc",
+      "participants": 211,
+      "sections": 567,
+      "source_words": 229378,
+      "possible_nonfinal_gaps": 228811,
+      "supervised_gaps": 226350,
+      "supervised_positive_boundaries": 49401,
+      "masked_nonfinal_gap_percent": 1.075560178487922
+    }
+  ],
+  "summary": [
+    {
+      "corpus": "ocsc",
+      "participants": 256,
+      "sections": 692,
+      "source_words": 283546,
+      "median_words_per_section": 320.0,
+      "median_words_per_observed_turn": 5.0,
+      "percent_observed_turns_at_most_three_words": 40.559667384188955,
+      "unintelligibility_tokens_per_thousand_source_words": 5.730992502098425,
+      "uh_um_tokens_per_thousand_source_words": 27.48054989313903,
+      "reference_freq_words": 270267.0,
+      "reference_mlu_words": 265434.0,
+      "reference_percent_freq_words_absent_from_mlu": 1.788231637602815,
+      "sections_with_more_observed_turns_than_human_verbal_units": 0
+    },
+    {
+      "corpus": "nyu_emerson",
+      "participants": 24,
+      "sections": 77,
+      "source_words": 6592,
+      "median_words_per_section": 60.0,
+      "median_words_per_observed_turn": 2.0,
+      "percent_observed_turns_at_most_three_words": 70.06985491671145,
+      "unintelligibility_tokens_per_thousand_source_words": 79.49029126213593,
+      "uh_um_tokens_per_thousand_source_words": 6.371359223300971,
+      "reference_freq_words": 5859.0,
+      "reference_mlu_words": 5436.0,
+      "reference_percent_freq_words_absent_from_mlu": 7.2196620583717355,
+      "sections_with_more_observed_turns_than_human_verbal_units": 1
+    }
+  ],
+  "interpretation": "Observed turns are input contexts, not gold utterances. Short turns, unintelligibility and native FREQ/MLU eligibility differences are descriptive indicators; they do not prove a causal explanation for model errors. Verbal-unit floor counts are distinct from native eligible MLU counts."
+}

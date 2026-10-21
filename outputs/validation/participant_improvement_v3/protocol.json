@@ -1,0 +1,64 @@
+{
+  "registered_utc": "2026-10-16T04:43:42.286731+00:00",
+  "reason": "User requests best possible results. Fresh full-train model eval optimum is at lower grid endpoint zero; prospectively test a fixed range in both directions before fresh test. No weight/participant changes.",
+  "parent_protocol_sha256": "b86f6311d8b942a3eabbffcd64401c743f0d3995665d0651c43323181a15373f",
+  "cohort_manifest_sha256": "206e478138b7d8516fcc190fab5b7f3c079ac03f840c9e59c8d92597ace63026",
+  "candidates": [
+    {
+      "name": "full_train",
+      "members": [
+        "final"
+      ]
+    },
+    {
+      "name": "five_fold_ensemble",
+      "members": [
+        "fold_1",
+        "fold_2",
+        "fold_3",
+        "fold_4",
+        "fold_5"
+      ]
+    },
+    {
+      "name": "six_model_ensemble",
+      "members": [
+        "fold_1",
+        "fold_2",
+        "fold_3",
+        "fold_4",
+        "fold_5",
+        "final"
+      ]
+    }
+  ],
+  "margins": [
+    -1.0,
+    -0.5,
+    -0.25,
+    -0.125,
+    0.0,
+    0.125,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "method": "Equal mean of boundary probabilities, converted to log odds before the common boundary margin. Singleton uses exact original logits.",
+  "selection": "Minimum original-eval corpus-balanced mean participant APE across eligible utterance count, MLUw and length SD. Ties keep listed candidate then margin order.",
+  "gradients": "Original training participants only; five-fold training recipe unchanged; final full-training model selected epoch on original eval.",
+  "cv_use": "Fold models provide a fixed variance-reduction ensemble candidate. Outer-fold metrics never choose candidates, members, weights or margins.",
+  "original_test": "Open only after candidate, margin and all component weight hashes are frozen; score chosen candidate once. Never select from final test.",
+  "oof_policy": "Five-fold OOF scores describe the dedicated held-out fold model only. Ensemble is evaluated on original eval/test, which every member excludes from gradients.",
+  "new_final_test_scored_at_registration": false,
+  "extension_of_protocol_sha256": "48717e3efd847b263631562af8d70e6dd7c23c07bbe87e75ad3ff546c6571b1b",
+  "previous_development_candidates_sha256": "23945fde1e9b636440b1fc5703ba41abe8cd36ca254d9bc4f3f7d5fba7616bdb",
+  "preserved_prior_comparisons": 10,
+  "refinement_evidence": "Full-train original-eval objective: margin 0 = 11.8071%, .25 = 19.8952%; test never opened. Broaden threshold calibration to both sides for newly trained scores.",
+  "implementation_sha256": {
+    "speech_pipeline/research/participant_improvement_refined.py": "017f5e23670ae7e9be827017375eb952940b11d68c0af9447111a1cdd2a19253",
+    "speech_pipeline/ensemble.py": "e73f20fa81b8bae8138fdc296dfa620c694a824695f238bf831ad2caad9d4f55"
+  }
+}

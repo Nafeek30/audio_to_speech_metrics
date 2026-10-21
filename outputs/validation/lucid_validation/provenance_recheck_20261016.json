@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "name": "metadata",
+      "error": "HTTPSConnectionPool(host='api.osf.io', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "name": "csv",
+      "url": "https://files.osf.io/v1/resources/dfhpu/providers/osfstorage/601468e6dd2225034e58b1e6?view_only=49d95d90424941da82217a239ab7450c",
+      "http_status": 500,
+      "bytes": 0
+    },
+    {
+      "name": "r_script",
+      "url": "https://osf.io/download/yw32m/?view_only=49d95d90424941da82217a239ab7450c",
+      "http_status": 500,
+      "bytes": 265
+    }
+  ],
+  "local_sha256": "f4e9ad97e50d859311f04502a2c462826a783b064a5e4ce6e4282b058b947b63"
+}

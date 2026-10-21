@@ -1,0 +1,54 @@
+{
+  "records": 895,
+  "participants": 329,
+  "participant_overlap": 0,
+  "assignments_preserved": true,
+  "file_hashes_verified": true,
+  "test_status": "Historically exposed descriptive test, not a pristine independent test. Do not reshuffle to erase exposure.",
+  "raw_CHAT_files_unchanged": 333,
+  "model_weights_unchanged": true,
+  "lucid_published_values_unchanged": true,
+  "validation_reference_values_unchanged": 139,
+  "data_roles": {
+    "train": {
+      "ocsc": {
+        "records": 567,
+        "participants": 211,
+        "assigned_participants": 211
+      },
+      "nyu_emerson": {
+        "records": 63,
+        "participants": 20,
+        "assigned_participants": 22
+      }
+    },
+    "validation": {
+      "ocsc": {
+        "records": 125,
+        "participants": 45,
+        "assigned_participants": 45
+      },
+      "nyu_emerson": {
+        "records": 14,
+        "participants": 4,
+        "assigned_participants": 4
+      }
+    },
+    "test": {
+      "ocsc": {
+        "records": 111,
+        "participants": 45,
+        "assigned_participants": 45
+      },
+      "nyu_emerson": {
+        "records": 15,
+        "participants": 4,
+        "assigned_participants": 4
+      }
+    }
+  },
+  "retraining_required_for_detected_overlap": false,
+  "isolated_exports_match_all_original_records_and_order": true,
+  "tests_log": "outputs/validation/cohorts_v1/regression_tests.log",
+  "source_file": "outputs/validation/cohorts_v1/manifest.json"
+}

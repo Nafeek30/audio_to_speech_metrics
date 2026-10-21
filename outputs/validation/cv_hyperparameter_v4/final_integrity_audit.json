@@ -1,0 +1,202 @@
+{
+  "complete": true,
+  "audited_utc": "2026-10-21T02:05:41.899939+00:00",
+  "cohort_conclusion": "Train, eval and test cohorts are participant-independent.",
+  "configurations": 4,
+  "folds_per_configuration": 5,
+  "cv_jobs": [
+    {
+      "configuration": "lr2_count1",
+      "fold": "fold_1",
+      "sections": 128,
+      "fit": 147,
+      "inner": 37,
+      "heldout": 47,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr2_count1",
+      "fold": "fold_2",
+      "sections": 129,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr2_count1",
+      "fold": "fold_3",
+      "sections": 128,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr2_count1",
+      "fold": "fold_4",
+      "sections": 126,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr2_count1",
+      "fold": "fold_5",
+      "sections": 119,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr2_count025",
+      "fold": "fold_1",
+      "sections": 128,
+      "fit": 147,
+      "inner": 37,
+      "heldout": 47,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr2_count025",
+      "fold": "fold_2",
+      "sections": 129,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr2_count025",
+      "fold": "fold_3",
+      "sections": 128,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr2_count025",
+      "fold": "fold_4",
+      "sections": 126,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr2_count025",
+      "fold": "fold_5",
+      "sections": 119,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr3_count1",
+      "fold": "fold_1",
+      "sections": 128,
+      "fit": 147,
+      "inner": 37,
+      "heldout": 47,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr3_count1",
+      "fold": "fold_2",
+      "sections": 129,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr3_count1",
+      "fold": "fold_3",
+      "sections": 128,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr3_count1",
+      "fold": "fold_4",
+      "sections": 126,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr3_count1",
+      "fold": "fold_5",
+      "sections": 119,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr3_count025",
+      "fold": "fold_1",
+      "sections": 128,
+      "fit": 147,
+      "inner": 37,
+      "heldout": 47,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr3_count025",
+      "fold": "fold_2",
+      "sections": 129,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr3_count025",
+      "fold": "fold_3",
+      "sections": 128,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr3_count025",
+      "fold": "fold_4",
+      "sections": 126,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    },
+    {
+      "configuration": "lr3_count025",
+      "fold": "fold_5",
+      "sections": 119,
+      "fit": 148,
+      "inner": 37,
+      "heldout": 46,
+      "overlap": 0
+    }
+  ],
+  "final_training_recipe": {
+    "encoder_lr": 2e-05,
+    "head_lr": 0.0001,
+    "count_weight": 1.0
+  },
+  "selected_configuration": "lr2_count1",
+  "all_cv_gradient_inner_and_heldout_roles_disjoint": true,
+  "original_eval_test_outside_hyperparameter_search": true,
+  "all_original_words_native_references_outputs_verified": true,
+  "cv_results_sha256": "939a89dc9281c9d14600b6c4c3eb51c05963e420c55d5fa20cf77b436fa4802d",
+  "cv_selection_sha256": "1ecd62518c4a4fe0560279d4e59bcf269a43386a43080c39a1945bf676021215",
+  "final_selection_sha256": "a1ccc9dc298e61dfa1d09e51c28c4180734ca8b0b8ed29c8cfeb23f0550eebe4",
+  "final_test_sha256": "5b18bf2f488e4274875921c3fa590d55c326deb848f4f2ec27e30dc1f90dd721"
+}

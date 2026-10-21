@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img">
+<title>Inference: use the trained model on new text</title>
+<rect width="1440" height="810" fill="white"/>
+<polyline points="300,370 340,370 340,250 390,250" fill="none" stroke="#64748B" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="390,250 377.0,244.0 377.0,256.0" fill="#64748B"/>
+<polyline points="300,430 340,430 340,560 390,560" fill="none" stroke="#64748B" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="390,560 377.0,554.0 377.0,566.0" fill="#64748B"/>
+<polyline points="710,250 760,250 760,370 800,370" fill="none" stroke="#64748B" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="800,370 787.0,364.0 787.0,376.0" fill="#64748B"/>
+<polyline points="710,560 760,560 760,430 800,430" fill="none" stroke="#64748B" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="800,430 787.0,424.0 787.0,436.0" fill="#64748B"/>
+<polyline points="1060,400 1130,400" fill="none" stroke="#64748B" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1130,400 1117.0,394.0 1117.0,406.0" fill="#64748B"/>
+<text x="720.0" y="80.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="39" font-weight="700" fill="#172B4D">Inference: use the trained model on new text</text>
+<rect x="60" y="320" width="230" height="160" rx="18" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+<text x="175.0" y="340.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172B4D">Target-speaker</text>
+<text x="175.0" y="370.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172B4D">words</text>
+<text x="175.0" y="400.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172B4D"></text>
+<text x="175.0" y="430.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172B4D">No human</text>
+<text x="175.0" y="460.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172B4D">answer sheet</text>
+<rect x="400" y="170" width="300" height="160" rx="18" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+<text x="550.0" y="218.75" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172B4D">Tokenizer + MiniLM</text>
+<text x="550.0" y="250.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172B4D"></text>
+<text x="550.0" y="281.25" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172B4D">Word-context features</text>
+<rect x="400" y="480" width="300" height="160" rx="18" fill="#FFF1D6" stroke="#D4952B" stroke-width="2"/>
+<text x="550.0" y="513.125" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172B4D">spaCy + rules</text>
+<text x="550.0" y="544.375" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172B4D"></text>
+<text x="550.0" y="575.625" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172B4D">0 / 1 suggestion</text>
+<text x="550.0" y="606.875" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#172B4D">→ rule embedding</text>
+<rect x="810" y="320" width="240" height="160" rx="18" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+<text x="930.0" y="355.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172B4D">Trained classifier</text>
+<text x="930.0" y="385.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172B4D"></text>
+<text x="930.0" y="415.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172B4D">Combine both</text>
+<text x="930.0" y="445.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172B4D">inputs</text>
+<rect x="1140" y="320" width="240" height="160" rx="18" fill="#DCFCE7" stroke="#22A06B" stroke-width="2"/>
+<text x="1260.0" y="342.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#172B4D">Predicted</text>
+<text x="1260.0" y="371.25" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#172B4D">utterances</text>
+<text x="1260.0" y="400.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#172B4D"></text>
+<text x="1260.0" y="428.75" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#172B4D">CONTINUE / END</text>
+<text x="1260.0" y="457.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#172B4D">at each word gap</text>
+</svg>

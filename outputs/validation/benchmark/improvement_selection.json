@@ -1,0 +1,15 @@
+{
+  "selected": "bert_joint",
+  "criterion": "Validation micro boundary F1; within 0.001 prefer smaller/faster",
+  "validation_scores": {
+    "hybrid_overlap": 0.6833371393773312,
+    "sat_pretrained": 0.7483755987079048,
+    "lexical_joint_1e-05": 0.8342511013215859,
+    "lexical_joint_0.0001": 0.8273742364704509,
+    "bert_joint": 0.8453866312042868,
+    "bert_joint_masked": 0.8443663347002539
+  },
+  "selection_recorded_before_new_test_evaluation": true,
+  "input_sha256": "9d4c962b1938eac125d10f311ea5c189906b7072c44a4653d657bb33d4d7a464",
+  "test_status": "Previously inspected research benchmark; not a new untouched confirmatory test. No new candidate, epoch, threshold or ensemble selection uses test outcomes."
+}

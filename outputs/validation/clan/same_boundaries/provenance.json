@@ -1,0 +1,18 @@
+{
+  "method": "conversation_clause_predictions_v5",
+  "code_sha256": {
+    "automatic_utterances.py": "9e4d8cdd6fa5f58de1e1555533d8c52108213c7e1bf44b72a73dc83f0528047e",
+    "export_corrected_clan.py": "d8c5ed22324f47fac9fa45e3ade741edae32a437d588cfd9b102dab9fa049e42"
+  },
+  "versions": {
+    "spacy": "3.8.14",
+    "en-core-web-sm": "3.8.0"
+  },
+  "uncorrected_report_sha256": "8d38e33b6a2e424df2bd0830d9c84eaef1b98e877b6cdac902a7a39cd2570094",
+  "corrected_turn_policy": "Original target speaker turns mapped by minimum-edit exact-word anchors; interpolate uncertain breaks; ignore corrected line breaks as boundaries",
+  "corrected_boundary_policy": "Unchanged automatic_utterances.split_turn applied within mapped source turns",
+  "active_publication_reference": true,
+  "returned_clan_version": "31-Aug-2026",
+  "returned_corrected_output_count": 37,
+  "comparison_report": "outputs/utterance_revision_20261001/analysis/corrected/comparison.json"
+}

@@ -1,0 +1,60 @@
+{
+  "updated_utc": "2026-10-20T16:19:45.786576+00:00",
+  "current_user_priority": "Paused at user request; handoff saved; no experiments until user resumes",
+  "ocsc": {
+    "complete": true,
+    "recordings": 301,
+    "bytes": 54991744472,
+    "cohorts": {
+      "train": 211,
+      "test": 45,
+      "validation": 45
+    },
+    "verification": "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/validation/moss_audio_v1/acquisition/ocsc_verification.json"
+  },
+  "nyu_emerson": {
+    "status": "deferred_by_user",
+    "recordings_downloaded": 0,
+    "expected_recordings": 28,
+    "cohorts": {
+      "train": 20,
+      "validation": 4,
+      "test": 4
+    },
+    "last_permission_check": "outputs/validation/moss_audio_v1/nyu_acquisition/permission_check.json",
+    "ocsc_session_control": "accessible",
+    "access_at_deferral": "account_not_authorized; authenticated HTTP 401/403 with OCSC accessible"
+  },
+  "moss": {
+    "state": "paused_by_user; runtime and reference inventory ready; no fine-tuning started",
+    "training_ran": false,
+    "new_inference_or_scoring_ran": false,
+    "base_revision": "704aa4a9c304e8520be88901e0d1960158ef5b15",
+    "source_revision": "e3bdd93f8ad58418e04659818efd5fd87a0bc486",
+    "pending": [
+      "separately sealed OCSC-only scope and prefix-policy amendment",
+      "audited training windows",
+      "prefix target-speaker mapper",
+      "training/CV/checkpoint/evaluation runner"
+    ],
+    "speaker_mapping_policy": {
+      "user_limit": "no more than first three reference sentences",
+      "implementation": "pending",
+      "proposed_interpretation": "initial child CHAT utterances; inference unit and sentence interpretation must be defined",
+      "freeze_before_scoring_remainder": true,
+      "primary_score_excludes_calibration_prefix": true,
+      "later_reference_matching_or_asr_word_replacement": false,
+      "report_as": "reference-assisted target identification",
+      "historical_pilot": "full-reference oracle; does not meet new prefix rule"
+    }
+  },
+  "original_cohorts_unchanged": true,
+  "original_transcript_experiment_stop_marker_preserved": true,
+  "handoff": "HANDOFF_2026-10-20.md",
+  "paused_by_user": true,
+  "future_selected_sources": [
+    "ocsc"
+  ],
+  "historical_registration_preserved": true,
+  "production_activation_performed": false
+}

@@ -1,0 +1,2504 @@
+{
+  "patient_id": "P5",
+  "uncorrected_source": "PXL_20230427_185802030_transcription.xlsx",
+  "corrected_source": "P5_T2_corrected.txt",
+  "target_speaker": "S03",
+  "chat_filename": "P5_PXL_20230427_185802030_transcription.cha",
+  "method": "conversation_clause_predictions_v5",
+  "raw_sha256": "3c478b649b4668f90f0d7416d9d182479cd6edc570c33b74aca682f28e395c10",
+  "corrected_sha256": "f95f2788b97089305b027359ff3545955e337d26f81d06c290e80397ca941a16",
+  "normalized_corrected_text": "TV. Stardew Valley's a good one. It's a little farming game. Talk to people, go onto mines, farm. Yeah. Kinda, you build up your farm while also helping out the town. No, the main quests are always fun, trying to help out. There's a quest where you can help rebuild a community center, and there's these little little magical creatures who give you rewards when you complete a task in there, so, that's cool. Yeah. Kinda, mixture of everything. I've never really been on it, I've seen the compilations, so on YouTube, I'll get some of those videos. Yeah. I'd say editing. Pictures, videos. Sometimes, sometimes I'll help my friends make videos for their thing, so. Pictures, yeah. They'll ask me to help them edit something, I'll do it and send it back to them. Yeah. Yeah, we have a library event set at, that I go to sometimes with my friends, so. There's an art club where you can do any kind of art, book club, teen after hours, where teens can come hang out after hours. Yeah. Cream soda. noodles, nachos, pizza. sausage, pepperoni. Domino's. Sometimes. Domino's, yeah, Domino's. Bananas. I've never really had a peach. Those are good. I think we're growing some in the backyard. Yeah. Blackberries, blueberries, vegetables. Depends. Yes. Choppy's. I think so, I think last year we did, I think we might grow some more this year. Sometimes, yeah. I think it's seeing how everything comes along and watering the stuff. Kinda. Yeah. Depends on how well you take care of them. Sometimes they can, the plants can stay over like winter and then they'll grow back, especially bushes like blackberry, blueberry. I'll sometimes water, I'll sometimes pick, my brother's really into the weeding, so he'll weed. It's kinda, the size of these two tables together. Yeah. We have chickens that I take care of. Yeah, feed, water, collect eggs. I'd say, regular. Yeah. Just chickens. Maybe ducks.",
+  "utterances": [
+    {
+      "utterance_id": 1,
+      "text": "TV.",
+      "turn_id": 1,
+      "source_rows": [
+        6
+      ],
+      "corrected_char_start": 0,
+      "corrected_char_end": 3,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "TV"
+        ],
+        "counted_words": [
+          "TV"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 2,
+      "text": "Stardew Valley's a good one.",
+      "turn_id": 2,
+      "source_rows": [
+        9
+      ],
+      "corrected_char_start": 4,
+      "corrected_char_end": 32,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Stardew",
+          "Valley's",
+          "a",
+          "good",
+          "one"
+        ],
+        "counted_words": [
+          "Stardew",
+          "Valley's",
+          "a",
+          "good",
+          "one"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 3,
+      "text": "It's a little farming game.",
+      "turn_id": 3,
+      "source_rows": [
+        11,
+        12
+      ],
+      "corrected_char_start": 33,
+      "corrected_char_end": 60,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "It's",
+          "a",
+          "little",
+          "farming",
+          "game"
+        ],
+        "counted_words": [
+          "It's",
+          "a",
+          "little",
+          "farming",
+          "game"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 4,
+      "text": "Talk to people, go onto mines, farm.",
+      "turn_id": 4,
+      "source_rows": [
+        15
+      ],
+      "corrected_char_start": 61,
+      "corrected_char_end": 97,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Talk",
+          "to",
+          "people",
+          "go",
+          "onto",
+          "mines",
+          "farm"
+        ],
+        "counted_words": [
+          "Talk",
+          "to",
+          "people",
+          "go",
+          "onto",
+          "mines",
+          "farm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 5,
+      "text": "Yeah.",
+      "turn_id": 5,
+      "source_rows": [
+        17
+      ],
+      "corrected_char_start": 98,
+      "corrected_char_end": 103,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 6,
+      "text": "Kinda, you build up your farm while also helping out the town.",
+      "turn_id": 6,
+      "source_rows": [
+        19
+      ],
+      "corrected_char_start": 104,
+      "corrected_char_end": 166,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Kinda",
+          "you",
+          "build",
+          "up",
+          "your",
+          "farm",
+          "while",
+          "also",
+          "helping",
+          "out",
+          "the",
+          "town"
+        ],
+        "counted_words": [
+          "Kinda",
+          "you",
+          "build",
+          "up",
+          "your",
+          "farm",
+          "while",
+          "also",
+          "helping",
+          "out",
+          "the",
+          "town"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 7,
+      "text": "No, the main quests are always fun, trying to help out.",
+      "turn_id": 7,
+      "source_rows": [
+        23
+      ],
+      "corrected_char_start": 167,
+      "corrected_char_end": 222,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "No",
+          "the",
+          "main",
+          "quests",
+          "are",
+          "always",
+          "fun",
+          "trying",
+          "to",
+          "help",
+          "out"
+        ],
+        "counted_words": [
+          "No",
+          "the",
+          "main",
+          "quests",
+          "are",
+          "always",
+          "fun",
+          "trying",
+          "to",
+          "help",
+          "out"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 8,
+      "text": "There's a quest where you can help rebuild a community center, and there's these little little magical creatures who give you rewards when you complete a task in there, so, that's cool.",
+      "turn_id": 8,
+      "source_rows": [
+        25,
+        26
+      ],
+      "corrected_char_start": 223,
+      "corrected_char_end": 408,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "There's",
+          "a",
+          "quest",
+          "where",
+          "you",
+          "can",
+          "help",
+          "rebuild",
+          "a",
+          "community",
+          "center",
+          "and",
+          "there's",
+          "these",
+          "little",
+          "little",
+          "magical",
+          "creatures",
+          "who",
+          "give",
+          "you",
+          "rewards",
+          "when",
+          "you",
+          "complete",
+          "a",
+          "task",
+          "in",
+          "there",
+          "so",
+          "that's",
+          "cool"
+        ],
+        "counted_words": [
+          "There's",
+          "a",
+          "quest",
+          "where",
+          "you",
+          "can",
+          "help",
+          "rebuild",
+          "a",
+          "community",
+          "center",
+          "and",
+          "there's",
+          "these",
+          "little",
+          "little",
+          "magical",
+          "creatures",
+          "who",
+          "give",
+          "you",
+          "rewards",
+          "when",
+          "you",
+          "complete",
+          "a",
+          "task",
+          "in",
+          "there",
+          "so",
+          "that's",
+          "cool"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 32,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 9,
+      "text": "Yeah.",
+      "turn_id": 9,
+      "source_rows": [
+        28
+      ],
+      "corrected_char_start": 409,
+      "corrected_char_end": 414,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 10,
+      "text": "Kinda, mixture of everything.",
+      "turn_id": 10,
+      "source_rows": [
+        30
+      ],
+      "corrected_char_start": 415,
+      "corrected_char_end": 444,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Kinda",
+          "mixture",
+          "of",
+          "everything"
+        ],
+        "counted_words": [
+          "Kinda",
+          "mixture",
+          "of",
+          "everything"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 11,
+      "text": "I've never really been on it, I've seen the compilations, so on YouTube, I'll get some of those videos.",
+      "turn_id": 11,
+      "source_rows": [
+        32
+      ],
+      "corrected_char_start": 445,
+      "corrected_char_end": 548,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I've",
+          "never",
+          "really",
+          "been",
+          "on",
+          "it",
+          "I've",
+          "seen",
+          "the",
+          "compilations",
+          "so",
+          "on",
+          "YouTube",
+          "I'll",
+          "get",
+          "some",
+          "of",
+          "those",
+          "videos"
+        ],
+        "counted_words": [
+          "I've",
+          "never",
+          "really",
+          "been",
+          "on",
+          "it",
+          "I've",
+          "seen",
+          "the",
+          "compilations",
+          "so",
+          "on",
+          "YouTube",
+          "I'll",
+          "get",
+          "some",
+          "of",
+          "those",
+          "videos"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 19,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 12,
+      "text": "Yeah.",
+      "turn_id": 12,
+      "source_rows": [
+        35
+      ],
+      "corrected_char_start": 549,
+      "corrected_char_end": 554,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 13,
+      "text": "I'd say editing.",
+      "turn_id": 13,
+      "source_rows": [
+        37
+      ],
+      "corrected_char_start": 555,
+      "corrected_char_end": 571,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I'd",
+          "say",
+          "editing"
+        ],
+        "counted_words": [
+          "I'd",
+          "say",
+          "editing"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 14,
+      "text": "Pictures, videos.",
+      "turn_id": 14,
+      "source_rows": [
+        39
+      ],
+      "corrected_char_start": 572,
+      "corrected_char_end": 589,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Pictures",
+          "videos"
+        ],
+        "counted_words": [
+          "Pictures",
+          "videos"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 15,
+      "text": "Sometimes, sometimes I'll help my friends make videos for their thing, so.",
+      "turn_id": 15,
+      "source_rows": [
+        41
+      ],
+      "corrected_char_start": 590,
+      "corrected_char_end": 664,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Sometimes",
+          "sometimes",
+          "I'll",
+          "help",
+          "my",
+          "friends",
+          "make",
+          "videos",
+          "for",
+          "their",
+          "thing",
+          "so"
+        ],
+        "counted_words": [
+          "Sometimes",
+          "sometimes",
+          "I'll",
+          "help",
+          "my",
+          "friends",
+          "make",
+          "videos",
+          "for",
+          "their",
+          "thing",
+          "so"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 16,
+      "text": "Pictures, yeah.",
+      "turn_id": 16,
+      "source_rows": [
+        43
+      ],
+      "corrected_char_start": 665,
+      "corrected_char_end": 680,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Pictures",
+          "yeah"
+        ],
+        "counted_words": [
+          "Pictures",
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 17,
+      "text": "They'll ask me to help them edit something, I'll do it and send it back to them.",
+      "turn_id": 17,
+      "source_rows": [
+        46
+      ],
+      "corrected_char_start": 681,
+      "corrected_char_end": 761,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "They'll",
+          "ask",
+          "me",
+          "to",
+          "help",
+          "them",
+          "edit",
+          "something",
+          "I'll",
+          "do",
+          "it",
+          "and",
+          "send",
+          "it",
+          "back",
+          "to",
+          "them"
+        ],
+        "counted_words": [
+          "They'll",
+          "ask",
+          "me",
+          "to",
+          "help",
+          "them",
+          "edit",
+          "something",
+          "I'll",
+          "do",
+          "it",
+          "and",
+          "send",
+          "it",
+          "back",
+          "to",
+          "them"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 17,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 18,
+      "text": "Yeah.",
+      "turn_id": 18,
+      "source_rows": [
+        48
+      ],
+      "corrected_char_start": 762,
+      "corrected_char_end": 767,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 19,
+      "text": "Yeah, we have a library event set at, that I go to sometimes with my friends, so.",
+      "turn_id": 19,
+      "source_rows": [
+        51
+      ],
+      "corrected_char_start": 768,
+      "corrected_char_end": 849,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "we",
+          "have",
+          "a",
+          "library",
+          "event",
+          "set",
+          "at",
+          "that",
+          "I",
+          "go",
+          "to",
+          "sometimes",
+          "with",
+          "my",
+          "friends",
+          "so"
+        ],
+        "counted_words": [
+          "Yeah",
+          "we",
+          "have",
+          "a",
+          "library",
+          "event",
+          "set",
+          "at",
+          "that",
+          "I",
+          "go",
+          "to",
+          "sometimes",
+          "with",
+          "my",
+          "friends",
+          "so"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 17,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 20,
+      "text": "There's an art club where you can do any kind of art, book club, teen after hours, where teens can come hang out after hours.",
+      "turn_id": 20,
+      "source_rows": [
+        53
+      ],
+      "corrected_char_start": 850,
+      "corrected_char_end": 975,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "There's",
+          "an",
+          "art",
+          "club",
+          "where",
+          "you",
+          "can",
+          "do",
+          "any",
+          "kind",
+          "of",
+          "art",
+          "book",
+          "club",
+          "teen",
+          "after",
+          "hours",
+          "where",
+          "teens",
+          "can",
+          "come",
+          "hang",
+          "out",
+          "after",
+          "hours"
+        ],
+        "counted_words": [
+          "There's",
+          "an",
+          "art",
+          "club",
+          "where",
+          "you",
+          "can",
+          "do",
+          "any",
+          "kind",
+          "of",
+          "art",
+          "book",
+          "club",
+          "teen",
+          "after",
+          "hours",
+          "where",
+          "teens",
+          "can",
+          "come",
+          "hang",
+          "out",
+          "after",
+          "hours"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 25,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 21,
+      "text": "Yeah.",
+      "turn_id": 21,
+      "source_rows": [
+        55
+      ],
+      "corrected_char_start": 976,
+      "corrected_char_end": 981,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 22,
+      "text": "Cream soda.",
+      "turn_id": 22,
+      "source_rows": [
+        57,
+        58
+      ],
+      "corrected_char_start": 982,
+      "corrected_char_end": 993,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Cream",
+          "soda"
+        ],
+        "counted_words": [
+          "Cream",
+          "soda"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 23,
+      "text": "noodles, nachos, pizza.",
+      "turn_id": 23,
+      "source_rows": [
+        62
+      ],
+      "corrected_char_start": 994,
+      "corrected_char_end": 1017,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "noodles",
+          "nachos",
+          "pizza"
+        ],
+        "counted_words": [
+          "noodles",
+          "nachos",
+          "pizza"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 24,
+      "text": "sausage, pepperoni.",
+      "turn_id": 24,
+      "source_rows": [
+        64
+      ],
+      "corrected_char_start": 1018,
+      "corrected_char_end": 1037,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "sausage",
+          "pepperoni"
+        ],
+        "counted_words": [
+          "sausage",
+          "pepperoni"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 25,
+      "text": "Domino's.",
+      "turn_id": 25,
+      "source_rows": [
+        66
+      ],
+      "corrected_char_start": 1038,
+      "corrected_char_end": 1047,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Domino's"
+        ],
+        "counted_words": [
+          "Domino's"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 26,
+      "text": "Sometimes.",
+      "turn_id": 26,
+      "source_rows": [
+        69
+      ],
+      "corrected_char_start": 1048,
+      "corrected_char_end": 1058,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Sometimes"
+        ],
+        "counted_words": [
+          "Sometimes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 27,
+      "text": "Domino's, yeah, Domino's.",
+      "turn_id": 27,
+      "source_rows": [
+        72
+      ],
+      "corrected_char_start": 1059,
+      "corrected_char_end": 1084,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Domino's",
+          "yeah",
+          "Domino's"
+        ],
+        "counted_words": [
+          "Domino's",
+          "yeah",
+          "Domino's"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 28,
+      "text": "Bananas.",
+      "turn_id": 27,
+      "source_rows": [
+        72
+      ],
+      "corrected_char_start": 1085,
+      "corrected_char_end": 1093,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Bananas"
+        ],
+        "counted_words": [
+          "Bananas"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 29,
+      "text": "I've",
+      "turn_id": 28,
+      "source_rows": [
+        83
+      ],
+      "corrected_char_start": 1094,
+      "corrected_char_end": 1098,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I've"
+        ],
+        "counted_words": [
+          "I've"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 30,
+      "text": "never really had a peach.",
+      "turn_id": 29,
+      "source_rows": [
+        86
+      ],
+      "corrected_char_start": 1099,
+      "corrected_char_end": 1124,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "never",
+          "really",
+          "had",
+          "a",
+          "peach"
+        ],
+        "counted_words": [
+          "never",
+          "really",
+          "had",
+          "a",
+          "peach"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 31,
+      "text": "Those are good.",
+      "turn_id": 30,
+      "source_rows": [
+        89
+      ],
+      "corrected_char_start": 1125,
+      "corrected_char_end": 1140,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Those",
+          "are",
+          "good"
+        ],
+        "counted_words": [
+          "Those",
+          "are",
+          "good"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 32,
+      "text": "I think we're growing some in the backyard.",
+      "turn_id": 31,
+      "source_rows": [
+        91
+      ],
+      "corrected_char_start": 1141,
+      "corrected_char_end": 1184,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "think",
+          "we're",
+          "growing",
+          "some",
+          "in",
+          "the",
+          "backyard"
+        ],
+        "counted_words": [
+          "I",
+          "think",
+          "we're",
+          "growing",
+          "some",
+          "in",
+          "the",
+          "backyard"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 33,
+      "text": "Yeah.",
+      "turn_id": 32,
+      "source_rows": [
+        94
+      ],
+      "corrected_char_start": 1185,
+      "corrected_char_end": 1190,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 34,
+      "text": "Blackberries, blueberries, vegetables.",
+      "turn_id": 33,
+      "source_rows": [
+        96
+      ],
+      "corrected_char_start": 1191,
+      "corrected_char_end": 1229,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Blackberries",
+          "blueberries",
+          "vegetables"
+        ],
+        "counted_words": [
+          "Blackberries",
+          "blueberries",
+          "vegetables"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 35,
+      "text": "Depends.",
+      "turn_id": 34,
+      "source_rows": [
+        98
+      ],
+      "corrected_char_start": 1230,
+      "corrected_char_end": 1238,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Depends"
+        ],
+        "counted_words": [
+          "Depends"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 36,
+      "text": "Yes.",
+      "turn_id": 35,
+      "source_rows": [
+        101
+      ],
+      "corrected_char_start": 1239,
+      "corrected_char_end": 1243,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yes"
+        ],
+        "counted_words": [
+          "Yes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 37,
+      "text": "Choppy's.",
+      "turn_id": 36,
+      "source_rows": [
+        104
+      ],
+      "corrected_char_start": 1244,
+      "corrected_char_end": 1253,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Choppy's"
+        ],
+        "counted_words": [
+          "Choppy's"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 38,
+      "text": "I think so, I think last year we did, I think we might grow some more this year.",
+      "turn_id": 37,
+      "source_rows": [
+        107
+      ],
+      "corrected_char_start": 1254,
+      "corrected_char_end": 1334,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "think",
+          "so",
+          "I",
+          "think",
+          "last",
+          "year",
+          "we",
+          "did",
+          "I",
+          "think",
+          "we",
+          "might",
+          "grow",
+          "some",
+          "more",
+          "this",
+          "year"
+        ],
+        "counted_words": [
+          "I",
+          "think",
+          "so",
+          "I",
+          "think",
+          "last",
+          "year",
+          "we",
+          "did",
+          "I",
+          "think",
+          "we",
+          "might",
+          "grow",
+          "some",
+          "more",
+          "this",
+          "year"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 39,
+      "text": "Sometimes, yeah.",
+      "turn_id": 38,
+      "source_rows": [
+        110
+      ],
+      "corrected_char_start": 1335,
+      "corrected_char_end": 1351,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Sometimes",
+          "yeah"
+        ],
+        "counted_words": [
+          "Sometimes",
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 40,
+      "text": "I think it's seeing how everything comes along and watering the stuff.",
+      "turn_id": 39,
+      "source_rows": [
+        112
+      ],
+      "corrected_char_start": 1352,
+      "corrected_char_end": 1422,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "think",
+          "it's",
+          "seeing",
+          "how",
+          "everything",
+          "comes",
+          "along",
+          "and",
+          "watering",
+          "the",
+          "stuff"
+        ],
+        "counted_words": [
+          "I",
+          "think",
+          "it's",
+          "seeing",
+          "how",
+          "everything",
+          "comes",
+          "along",
+          "and",
+          "watering",
+          "the",
+          "stuff"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 41,
+      "text": "Kinda.",
+      "turn_id": 40,
+      "source_rows": [
+        114
+      ],
+      "corrected_char_start": 1423,
+      "corrected_char_end": 1429,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Kinda"
+        ],
+        "counted_words": [
+          "Kinda"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 42,
+      "text": "Yeah.",
+      "turn_id": 41,
+      "source_rows": [
+        117
+      ],
+      "corrected_char_start": 1430,
+      "corrected_char_end": 1435,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 43,
+      "text": "Depends on how well you take care of them.",
+      "turn_id": 42,
+      "source_rows": [
+        119,
+        120
+      ],
+      "corrected_char_start": 1436,
+      "corrected_char_end": 1478,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Depends",
+          "on",
+          "how",
+          "well",
+          "you",
+          "take",
+          "care",
+          "of",
+          "them"
+        ],
+        "counted_words": [
+          "Depends",
+          "on",
+          "how",
+          "well",
+          "you",
+          "take",
+          "care",
+          "of",
+          "them"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 44,
+      "text": "Sometimes they can, the plants can stay over like winter",
+      "turn_id": 42,
+      "source_rows": [
+        119,
+        120
+      ],
+      "corrected_char_start": 1479,
+      "corrected_char_end": 1535,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Sometimes",
+          "they",
+          "can",
+          "the",
+          "plants",
+          "can",
+          "stay",
+          "over",
+          "like",
+          "winter"
+        ],
+        "counted_words": [
+          "Sometimes",
+          "they",
+          "can",
+          "the",
+          "plants",
+          "can",
+          "stay",
+          "over",
+          "like",
+          "winter"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 45,
+      "text": "and then they'll grow back, especially bushes like blackberry, blueberry.",
+      "turn_id": 42,
+      "source_rows": [
+        119,
+        120
+      ],
+      "corrected_char_start": 1536,
+      "corrected_char_end": 1609,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "then",
+          "they'll",
+          "grow",
+          "back",
+          "especially",
+          "bushes",
+          "like",
+          "blackberry",
+          "blueberry"
+        ],
+        "counted_words": [
+          "and",
+          "then",
+          "they'll",
+          "grow",
+          "back",
+          "especially",
+          "bushes",
+          "like",
+          "blackberry",
+          "blueberry"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 46,
+      "text": "I'll sometimes water, I'll sometimes pick, my brother's really into the weeding, so he'll weed.",
+      "turn_id": 43,
+      "source_rows": [
+        122
+      ],
+      "corrected_char_start": 1610,
+      "corrected_char_end": 1705,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I'll",
+          "sometimes",
+          "water",
+          "I'll",
+          "sometimes",
+          "pick",
+          "my",
+          "brother's",
+          "really",
+          "into",
+          "the",
+          "weeding",
+          "so",
+          "he'll",
+          "weed"
+        ],
+        "counted_words": [
+          "I'll",
+          "sometimes",
+          "water",
+          "I'll",
+          "sometimes",
+          "pick",
+          "my",
+          "brother's",
+          "really",
+          "into",
+          "the",
+          "weeding",
+          "so",
+          "he'll",
+          "weed"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 15,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 47,
+      "text": "It's kinda, the size of these two tables together.",
+      "turn_id": 44,
+      "source_rows": [
+        124
+      ],
+      "corrected_char_start": 1706,
+      "corrected_char_end": 1756,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "It's",
+          "kinda",
+          "the",
+          "size",
+          "of",
+          "these",
+          "two",
+          "tables",
+          "together"
+        ],
+        "counted_words": [
+          "It's",
+          "kinda",
+          "the",
+          "size",
+          "of",
+          "these",
+          "two",
+          "tables",
+          "together"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 48,
+      "text": "Yeah.",
+      "turn_id": 45,
+      "source_rows": [
+        128,
+        129
+      ],
+      "corrected_char_start": 1757,
+      "corrected_char_end": 1762,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 49,
+      "text": "We have chickens that I take care of.",
+      "turn_id": 45,
+      "source_rows": [
+        128,
+        129
+      ],
+      "corrected_char_start": 1763,
+      "corrected_char_end": 1800,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "We",
+          "have",
+          "chickens",
+          "that",
+          "I",
+          "take",
+          "care",
+          "of"
+        ],
+        "counted_words": [
+          "We",
+          "have",
+          "chickens",
+          "that",
+          "I",
+          "take",
+          "care",
+          "of"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 50,
+      "text": "Yeah, feed, water, collect eggs.",
+      "turn_id": 46,
+      "source_rows": [
+        132
+      ],
+      "corrected_char_start": 1801,
+      "corrected_char_end": 1833,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "feed",
+          "water",
+          "collect",
+          "eggs"
+        ],
+        "counted_words": [
+          "Yeah",
+          "feed",
+          "water",
+          "collect",
+          "eggs"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 51,
+      "text": "I'd",
+      "turn_id": 46,
+      "source_rows": [
+        132
+      ],
+      "corrected_char_start": 1834,
+      "corrected_char_end": 1837,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I'd"
+        ],
+        "counted_words": [
+          "I'd"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 52,
+      "text": "say, regular.",
+      "turn_id": 47,
+      "source_rows": [
+        134
+      ],
+      "corrected_char_start": 1838,
+      "corrected_char_end": 1851,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "say",
+          "regular"
+        ],
+        "counted_words": [
+          "say",
+          "regular"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 53,
+      "text": "Yeah.",
+      "turn_id": 48,
+      "source_rows": [
+        138
+      ],
+      "corrected_char_start": 1852,
+      "corrected_char_end": 1857,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 54,
+      "text": "Just chickens.",
+      "turn_id": 49,
+      "source_rows": [
+        140
+      ],
+      "corrected_char_start": 1858,
+      "corrected_char_end": 1872,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Just",
+          "chickens"
+        ],
+        "counted_words": [
+          "Just",
+          "chickens"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 55,
+      "text": "Maybe ducks.",
+      "turn_id": 50,
+      "source_rows": [
+        142
+      ],
+      "corrected_char_start": 1873,
+      "corrected_char_end": 1885,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Maybe",
+          "ducks"
+        ],
+        "counted_words": [
+          "Maybe",
+          "ducks"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    }
+  ],
+  "turn_alignment": [
+    {
+      "source_word_gap": 1,
+      "corrected_word_gap": 1,
+      "left_source_anchor": 0,
+      "right_source_anchor": 2,
+      "left_corrected_anchor": 0,
+      "right_corrected_anchor": 1,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 7,
+      "corrected_word_gap": 6,
+      "left_source_anchor": 6,
+      "right_source_anchor": 11,
+      "left_corrected_anchor": 5,
+      "right_corrected_anchor": 6,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 16,
+      "corrected_word_gap": 11,
+      "left_source_anchor": 15,
+      "right_source_anchor": 16,
+      "left_corrected_anchor": 10,
+      "right_corrected_anchor": 11,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 23,
+      "corrected_word_gap": 18,
+      "left_source_anchor": 22,
+      "right_source_anchor": 23,
+      "left_corrected_anchor": 17,
+      "right_corrected_anchor": 18,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 24,
+      "corrected_word_gap": 19,
+      "left_source_anchor": 23,
+      "right_source_anchor": 24,
+      "left_corrected_anchor": 18,
+      "right_corrected_anchor": 19,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 36,
+      "corrected_word_gap": 31,
+      "left_source_anchor": 35,
+      "right_source_anchor": 36,
+      "left_corrected_anchor": 30,
+      "right_corrected_anchor": 31,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 48,
+      "corrected_word_gap": 42,
+      "left_source_anchor": 47,
+      "right_source_anchor": 48,
+      "left_corrected_anchor": 41,
+      "right_corrected_anchor": 42,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 84,
+      "corrected_word_gap": 74,
+      "left_source_anchor": 83,
+      "right_source_anchor": 84,
+      "left_corrected_anchor": 73,
+      "right_corrected_anchor": 74,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 85,
+      "corrected_word_gap": 75,
+      "left_source_anchor": 84,
+      "right_source_anchor": 85,
+      "left_corrected_anchor": 74,
+      "right_corrected_anchor": 75,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 90,
+      "corrected_word_gap": 79,
+      "left_source_anchor": 89,
+      "right_source_anchor": 90,
+      "left_corrected_anchor": 78,
+      "right_corrected_anchor": 79,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 108,
+      "corrected_word_gap": 98,
+      "left_source_anchor": 107,
+      "right_source_anchor": 108,
+      "left_corrected_anchor": 97,
+      "right_corrected_anchor": 98,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 109,
+      "corrected_word_gap": 99,
+      "left_source_anchor": 108,
+      "right_source_anchor": 109,
+      "left_corrected_anchor": 98,
+      "right_corrected_anchor": 99,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 112,
+      "corrected_word_gap": 102,
+      "left_source_anchor": 111,
+      "right_source_anchor": 112,
+      "left_corrected_anchor": 101,
+      "right_corrected_anchor": 102,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 114,
+      "corrected_word_gap": 104,
+      "left_source_anchor": 113,
+      "right_source_anchor": 114,
+      "left_corrected_anchor": 103,
+      "right_corrected_anchor": 104,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 126,
+      "corrected_word_gap": 116,
+      "left_source_anchor": 125,
+      "right_source_anchor": 126,
+      "left_corrected_anchor": 115,
+      "right_corrected_anchor": 116,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 128,
+      "corrected_word_gap": 118,
+      "left_source_anchor": 127,
+      "right_source_anchor": 128,
+      "left_corrected_anchor": 117,
+      "right_corrected_anchor": 118,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 144,
+      "corrected_word_gap": 135,
+      "left_source_anchor": 143,
+      "right_source_anchor": 144,
+      "left_corrected_anchor": 134,
+      "right_corrected_anchor": 135,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 145,
+      "corrected_word_gap": 136,
+      "left_source_anchor": 144,
+      "right_source_anchor": 145,
+      "left_corrected_anchor": 135,
+      "right_corrected_anchor": 136,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 163,
+      "corrected_word_gap": 153,
+      "left_source_anchor": 162,
+      "right_source_anchor": 163,
+      "left_corrected_anchor": 152,
+      "right_corrected_anchor": 153,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 188,
+      "corrected_word_gap": 178,
+      "left_source_anchor": 187,
+      "right_source_anchor": 188,
+      "left_corrected_anchor": 177,
+      "right_corrected_anchor": 178,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 189,
+      "corrected_word_gap": 179,
+      "left_source_anchor": 188,
+      "right_source_anchor": 190,
+      "left_corrected_anchor": 178,
+      "right_corrected_anchor": 179,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 192,
+      "corrected_word_gap": 181,
+      "left_source_anchor": 191,
+      "right_source_anchor": 194,
+      "left_corrected_anchor": 180,
+      "right_corrected_anchor": 182,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 196,
+      "corrected_word_gap": 184,
+      "left_source_anchor": 195,
+      "right_source_anchor": 197,
+      "left_corrected_anchor": 183,
+      "right_corrected_anchor": 184,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 199,
+      "corrected_word_gap": 186,
+      "left_source_anchor": 198,
+      "right_source_anchor": 199,
+      "left_corrected_anchor": 185,
+      "right_corrected_anchor": 186,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 200,
+      "corrected_word_gap": 187,
+      "left_source_anchor": 199,
+      "right_source_anchor": 200,
+      "left_corrected_anchor": 186,
+      "right_corrected_anchor": 187,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 201,
+      "corrected_word_gap": 188,
+      "left_source_anchor": 200,
+      "right_source_anchor": 201,
+      "left_corrected_anchor": 187,
+      "right_corrected_anchor": 188,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 205,
+      "corrected_word_gap": 192,
+      "left_source_anchor": 203,
+      "right_source_anchor": 206,
+      "left_corrected_anchor": 190,
+      "right_corrected_anchor": 193,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 206,
+      "corrected_word_gap": 193,
+      "left_source_anchor": 203,
+      "right_source_anchor": 206,
+      "left_corrected_anchor": 190,
+      "right_corrected_anchor": 193,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 211,
+      "corrected_word_gap": 198,
+      "left_source_anchor": 210,
+      "right_source_anchor": 212,
+      "left_corrected_anchor": 197,
+      "right_corrected_anchor": 200,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 213,
+      "corrected_word_gap": 201,
+      "left_source_anchor": 212,
+      "right_source_anchor": 213,
+      "left_corrected_anchor": 200,
+      "right_corrected_anchor": 201,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 221,
+      "corrected_word_gap": 209,
+      "left_source_anchor": 220,
+      "right_source_anchor": 221,
+      "left_corrected_anchor": 208,
+      "right_corrected_anchor": 209,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 222,
+      "corrected_word_gap": 210,
+      "left_source_anchor": 221,
+      "right_source_anchor": 222,
+      "left_corrected_anchor": 209,
+      "right_corrected_anchor": 210,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 225,
+      "corrected_word_gap": 213,
+      "left_source_anchor": 224,
+      "right_source_anchor": 226,
+      "left_corrected_anchor": 212,
+      "right_corrected_anchor": 214,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 226,
+      "corrected_word_gap": 214,
+      "left_source_anchor": 224,
+      "right_source_anchor": 226,
+      "left_corrected_anchor": 212,
+      "right_corrected_anchor": 214,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 227,
+      "corrected_word_gap": 215,
+      "left_source_anchor": 226,
+      "right_source_anchor": 227,
+      "left_corrected_anchor": 214,
+      "right_corrected_anchor": 215,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 228,
+      "corrected_word_gap": 216,
+      "left_source_anchor": 227,
+      "right_source_anchor": 228,
+      "left_corrected_anchor": 215,
+      "right_corrected_anchor": 216,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 247,
+      "corrected_word_gap": 234,
+      "left_source_anchor": 246,
+      "right_source_anchor": 247,
+      "left_corrected_anchor": 233,
+      "right_corrected_anchor": 234,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 249,
+      "corrected_word_gap": 236,
+      "left_source_anchor": 248,
+      "right_source_anchor": 250,
+      "left_corrected_anchor": 235,
+      "right_corrected_anchor": 236,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 262,
+      "corrected_word_gap": 248,
+      "left_source_anchor": 261,
+      "right_source_anchor": 262,
+      "left_corrected_anchor": 247,
+      "right_corrected_anchor": 248,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 263,
+      "corrected_word_gap": 249,
+      "left_source_anchor": 262,
+      "right_source_anchor": 263,
+      "left_corrected_anchor": 248,
+      "right_corrected_anchor": 249,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 264,
+      "corrected_word_gap": 250,
+      "left_source_anchor": 263,
+      "right_source_anchor": 264,
+      "left_corrected_anchor": 249,
+      "right_corrected_anchor": 250,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 294,
+      "corrected_word_gap": 279,
+      "left_source_anchor": 293,
+      "right_source_anchor": 294,
+      "left_corrected_anchor": 278,
+      "right_corrected_anchor": 279,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 310,
+      "corrected_word_gap": 294,
+      "left_source_anchor": 309,
+      "right_source_anchor": 310,
+      "left_corrected_anchor": 293,
+      "right_corrected_anchor": 294,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 320,
+      "corrected_word_gap": 303,
+      "left_source_anchor": 319,
+      "right_source_anchor": 320,
+      "left_corrected_anchor": 302,
+      "right_corrected_anchor": 303,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 329,
+      "corrected_word_gap": 312,
+      "left_source_anchor": 328,
+      "right_source_anchor": 329,
+      "left_corrected_anchor": 311,
+      "right_corrected_anchor": 312,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 334,
+      "corrected_word_gap": 318,
+      "left_source_anchor": 333,
+      "right_source_anchor": 334,
+      "left_corrected_anchor": 316,
+      "right_corrected_anchor": 318,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 336,
+      "corrected_word_gap": 320,
+      "left_source_anchor": 335,
+      "right_source_anchor": 336,
+      "left_corrected_anchor": 319,
+      "right_corrected_anchor": 320,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 337,
+      "corrected_word_gap": 321,
+      "left_source_anchor": 336,
+      "right_source_anchor": 337,
+      "left_corrected_anchor": 320,
+      "right_corrected_anchor": 321,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 339,
+      "corrected_word_gap": 323,
+      "left_source_anchor": 338,
+      "right_source_anchor": 341,
+      "left_corrected_anchor": 322,
+      "right_corrected_anchor": 325,
+      "review_required": true
+    }
+  ],
+  "corrected_exact_word_anchor_fraction": 0.9138461538461539,
+  "corrected_metrics": {
+    "total_utterances": 55,
+    "mlu_nutterances": 55,
+    "total_words": 325,
+    "mlu_nwords": 325,
+    "mlu_words": 5.909090909090909,
+    "mlu_words_sd": 6.769645424507381,
+    "mlu_words_sample_sd": 6.832039788874745,
+    "mlu_morphemes": null,
+    "mlu_status": "provisional_documented_exclusions_pending_review",
+    "clinical_mlu_words": null,
+    "flagged_utterances": 18,
+    "excluded_utterances": 0,
+    "policy": "Utterances retain fillers and repetitions; word metrics exclude listed fillers"
+  },
+  "uncorrected_metrics": {
+    "total_utterances": 54,
+    "mlu_nutterances": 54,
+    "total_words": 334,
+    "mlu_nwords": 334,
+    "mlu_words": 6.185185185185185,
+    "mlu_words_sd": 7.110435924736297,
+    "mlu_words_sample_sd": 7.177202046086094,
+    "mlu_morphemes": null,
+    "mlu_status": "provisional_documented_exclusions_pending_review",
+    "clinical_mlu_words": null,
+    "flagged_utterances": 17,
+    "excluded_utterances": 0,
+    "policy": "Utterances retain fillers and repetitions; word metrics exclude listed fillers"
+  }
+}

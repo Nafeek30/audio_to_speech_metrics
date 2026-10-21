@@ -1,0 +1,5500 @@
+{
+  "method": "conversation_clause_predictions_v5",
+  "raw_sha256": "77dc5ab2a70f785d51bdb77eb11e171ebd19469ffffc88a124c648b8fb7493de",
+  "source_file": "P3/P3_T1_corrected.txt",
+  "target_speaker": "S01",
+  "turn_mapping": [
+    {
+      "source_word_gap": 2,
+      "corrected_word_gap": 1,
+      "left_source_anchor": 1,
+      "right_source_anchor": 2,
+      "left_corrected_anchor": 0,
+      "right_corrected_anchor": 1,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 3,
+      "corrected_word_gap": 2,
+      "left_source_anchor": 2,
+      "right_source_anchor": 3,
+      "left_corrected_anchor": 1,
+      "right_corrected_anchor": 2,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 18,
+      "corrected_word_gap": 17,
+      "left_source_anchor": 17,
+      "right_source_anchor": 18,
+      "left_corrected_anchor": 16,
+      "right_corrected_anchor": 17,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 60,
+      "corrected_word_gap": 53,
+      "left_source_anchor": 59,
+      "right_source_anchor": 65,
+      "left_corrected_anchor": 52,
+      "right_corrected_anchor": 58,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 68,
+      "corrected_word_gap": 61,
+      "left_source_anchor": 67,
+      "right_source_anchor": 68,
+      "left_corrected_anchor": 60,
+      "right_corrected_anchor": 61,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 95,
+      "corrected_word_gap": 88,
+      "left_source_anchor": 94,
+      "right_source_anchor": 95,
+      "left_corrected_anchor": 87,
+      "right_corrected_anchor": 88,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 96,
+      "corrected_word_gap": 89,
+      "left_source_anchor": 95,
+      "right_source_anchor": 96,
+      "left_corrected_anchor": 88,
+      "right_corrected_anchor": 89,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 146,
+      "corrected_word_gap": 136,
+      "left_source_anchor": 145,
+      "right_source_anchor": 146,
+      "left_corrected_anchor": 135,
+      "right_corrected_anchor": 136,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 151,
+      "corrected_word_gap": 141,
+      "left_source_anchor": 150,
+      "right_source_anchor": 151,
+      "left_corrected_anchor": 140,
+      "right_corrected_anchor": 141,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 152,
+      "corrected_word_gap": 142,
+      "left_source_anchor": 151,
+      "right_source_anchor": 152,
+      "left_corrected_anchor": 141,
+      "right_corrected_anchor": 142,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 170,
+      "corrected_word_gap": 157,
+      "left_source_anchor": 169,
+      "right_source_anchor": 170,
+      "left_corrected_anchor": 156,
+      "right_corrected_anchor": 157,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 182,
+      "corrected_word_gap": 169,
+      "left_source_anchor": 181,
+      "right_source_anchor": 182,
+      "left_corrected_anchor": 168,
+      "right_corrected_anchor": 169,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 183,
+      "corrected_word_gap": 170,
+      "left_source_anchor": 182,
+      "right_source_anchor": 183,
+      "left_corrected_anchor": 169,
+      "right_corrected_anchor": 170,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 249,
+      "corrected_word_gap": 234,
+      "left_source_anchor": 248,
+      "right_source_anchor": 249,
+      "left_corrected_anchor": 233,
+      "right_corrected_anchor": 234,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 311,
+      "corrected_word_gap": 296,
+      "left_source_anchor": 310,
+      "right_source_anchor": 311,
+      "left_corrected_anchor": 295,
+      "right_corrected_anchor": 296,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 357,
+      "corrected_word_gap": 339,
+      "left_source_anchor": 356,
+      "right_source_anchor": 357,
+      "left_corrected_anchor": 338,
+      "right_corrected_anchor": 339,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 360,
+      "corrected_word_gap": 342,
+      "left_source_anchor": 359,
+      "right_source_anchor": 360,
+      "left_corrected_anchor": 341,
+      "right_corrected_anchor": 342,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 451,
+      "corrected_word_gap": 426,
+      "left_source_anchor": 450,
+      "right_source_anchor": 451,
+      "left_corrected_anchor": 425,
+      "right_corrected_anchor": 426,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 452,
+      "corrected_word_gap": 427,
+      "left_source_anchor": 451,
+      "right_source_anchor": 452,
+      "left_corrected_anchor": 426,
+      "right_corrected_anchor": 427,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 458,
+      "corrected_word_gap": 431,
+      "left_source_anchor": 457,
+      "right_source_anchor": 458,
+      "left_corrected_anchor": 430,
+      "right_corrected_anchor": 431,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 475,
+      "corrected_word_gap": 447,
+      "left_source_anchor": 474,
+      "right_source_anchor": 475,
+      "left_corrected_anchor": 446,
+      "right_corrected_anchor": 447,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 481,
+      "corrected_word_gap": 453,
+      "left_source_anchor": 480,
+      "right_source_anchor": 481,
+      "left_corrected_anchor": 452,
+      "right_corrected_anchor": 453,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 576,
+      "corrected_word_gap": 548,
+      "left_source_anchor": 575,
+      "right_source_anchor": 576,
+      "left_corrected_anchor": 547,
+      "right_corrected_anchor": 548,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 609,
+      "corrected_word_gap": 581,
+      "left_source_anchor": 608,
+      "right_source_anchor": 609,
+      "left_corrected_anchor": 580,
+      "right_corrected_anchor": 581,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 642,
+      "corrected_word_gap": 613,
+      "left_source_anchor": 641,
+      "right_source_anchor": 642,
+      "left_corrected_anchor": 612,
+      "right_corrected_anchor": 613,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 721,
+      "corrected_word_gap": 691,
+      "left_source_anchor": 720,
+      "right_source_anchor": 721,
+      "left_corrected_anchor": 690,
+      "right_corrected_anchor": 691,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 722,
+      "corrected_word_gap": 692,
+      "left_source_anchor": 721,
+      "right_source_anchor": 722,
+      "left_corrected_anchor": 691,
+      "right_corrected_anchor": 692,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 732,
+      "corrected_word_gap": 702,
+      "left_source_anchor": 731,
+      "right_source_anchor": 732,
+      "left_corrected_anchor": 701,
+      "right_corrected_anchor": 702,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 775,
+      "corrected_word_gap": 745,
+      "left_source_anchor": 774,
+      "right_source_anchor": 775,
+      "left_corrected_anchor": 742,
+      "right_corrected_anchor": 745,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 803,
+      "corrected_word_gap": 773,
+      "left_source_anchor": 802,
+      "right_source_anchor": 803,
+      "left_corrected_anchor": 772,
+      "right_corrected_anchor": 773,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 821,
+      "corrected_word_gap": 791,
+      "left_source_anchor": 820,
+      "right_source_anchor": 821,
+      "left_corrected_anchor": 790,
+      "right_corrected_anchor": 791,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 883,
+      "corrected_word_gap": 850,
+      "left_source_anchor": 882,
+      "right_source_anchor": 883,
+      "left_corrected_anchor": 849,
+      "right_corrected_anchor": 850,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 899,
+      "corrected_word_gap": 866,
+      "left_source_anchor": 898,
+      "right_source_anchor": 900,
+      "left_corrected_anchor": 865,
+      "right_corrected_anchor": 866,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 906,
+      "corrected_word_gap": 872,
+      "left_source_anchor": 905,
+      "right_source_anchor": 906,
+      "left_corrected_anchor": 871,
+      "right_corrected_anchor": 872,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 914,
+      "corrected_word_gap": 880,
+      "left_source_anchor": 913,
+      "right_source_anchor": 916,
+      "left_corrected_anchor": 879,
+      "right_corrected_anchor": 881,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 915,
+      "corrected_word_gap": 880,
+      "left_source_anchor": 913,
+      "right_source_anchor": 916,
+      "left_corrected_anchor": 879,
+      "right_corrected_anchor": 881,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 1010,
+      "corrected_word_gap": 972,
+      "left_source_anchor": 1009,
+      "right_source_anchor": 1010,
+      "left_corrected_anchor": 971,
+      "right_corrected_anchor": 972,
+      "review_required": false
+    }
+  ],
+  "utterances": [
+    {
+      "utterance_id": 1,
+      "text": "Yeah.",
+      "turn_id": 1,
+      "source_rows": [
+        2
+      ],
+      "corrected_char_start": 0,
+      "corrected_char_end": 5,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 2,
+      "text": "Yeah.",
+      "turn_id": 2,
+      "source_rows": [
+        4
+      ],
+      "corrected_char_start": 6,
+      "corrected_char_end": 11,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 3,
+      "text": "Just kinda mostly slept in and kinda went outside, cause mostly it was nice outside.",
+      "turn_id": 3,
+      "source_rows": [
+        6
+      ],
+      "corrected_char_start": 12,
+      "corrected_char_end": 96,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Just",
+          "kinda",
+          "mostly",
+          "slept",
+          "in",
+          "and",
+          "kinda",
+          "went",
+          "outside",
+          "cause",
+          "mostly",
+          "it",
+          "was",
+          "nice",
+          "outside"
+        ],
+        "counted_words": [
+          "Just",
+          "kinda",
+          "mostly",
+          "slept",
+          "in",
+          "and",
+          "kinda",
+          "went",
+          "outside",
+          "cause",
+          "mostly",
+          "it",
+          "was",
+          "nice",
+          "outside"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 15,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 4,
+      "text": "We'd like to go at our houses this gravel that we like to go down this gravel road goes down to this bridge.",
+      "turn_id": 4,
+      "source_rows": [
+        8,
+        9
+      ],
+      "corrected_char_start": 97,
+      "corrected_char_end": 205,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "We'd",
+          "like",
+          "to",
+          "go",
+          "at",
+          "our",
+          "houses",
+          "this",
+          "gravel",
+          "that",
+          "we",
+          "like",
+          "to",
+          "go",
+          "down",
+          "this",
+          "gravel",
+          "road",
+          "goes",
+          "down",
+          "to",
+          "this",
+          "bridge"
+        ],
+        "counted_words": [
+          "We'd",
+          "like",
+          "to",
+          "go",
+          "at",
+          "our",
+          "houses",
+          "this",
+          "gravel",
+          "that",
+          "we",
+          "like",
+          "to",
+          "go",
+          "down",
+          "this",
+          "gravel",
+          "road",
+          "goes",
+          "down",
+          "to",
+          "this",
+          "bridge"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 23,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 5,
+      "text": "We have to go down there.",
+      "turn_id": 4,
+      "source_rows": [
+        8,
+        9
+      ],
+      "corrected_char_start": 206,
+      "corrected_char_end": 231,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "We",
+          "have",
+          "to",
+          "go",
+          "down",
+          "there"
+        ],
+        "counted_words": [
+          "We",
+          "have",
+          "to",
+          "go",
+          "down",
+          "there"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 6,
+      "text": "Take our bikes and ride down there.",
+      "turn_id": 4,
+      "source_rows": [
+        8,
+        9
+      ],
+      "corrected_char_start": 232,
+      "corrected_char_end": 267,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Take",
+          "our",
+          "bikes",
+          "and",
+          "ride",
+          "down",
+          "there"
+        ],
+        "counted_words": [
+          "Take",
+          "our",
+          "bikes",
+          "and",
+          "ride",
+          "down",
+          "there"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 7,
+      "text": "Kinda,",
+      "turn_id": 5,
+      "source_rows": [
+        11
+      ],
+      "corrected_char_start": 268,
+      "corrected_char_end": 274,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Kinda"
+        ],
+        "counted_words": [
+          "Kinda"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 8,
+      "text": "but my legs will get tired, so.",
+      "turn_id": 5,
+      "source_rows": [
+        11
+      ],
+      "corrected_char_start": 275,
+      "corrected_char_end": 306,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "my",
+          "legs",
+          "will",
+          "get",
+          "tired",
+          "so"
+        ],
+        "counted_words": [
+          "but",
+          "my",
+          "legs",
+          "will",
+          "get",
+          "tired",
+          "so"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 9,
+      "text": "Mostly just biking.",
+      "turn_id": 6,
+      "source_rows": [
+        13
+      ],
+      "corrected_char_start": 307,
+      "corrected_char_end": 326,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Mostly",
+          "just",
+          "biking"
+        ],
+        "counted_words": [
+          "Mostly",
+          "just",
+          "biking"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 10,
+      "text": "All that stuff I did as a kid, I just don't really do anymore, cause I'm getting older.",
+      "turn_id": 6,
+      "source_rows": [
+        13
+      ],
+      "corrected_char_start": 327,
+      "corrected_char_end": 414,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "All",
+          "that",
+          "stuff",
+          "I",
+          "did",
+          "as",
+          "a",
+          "kid",
+          "I",
+          "just",
+          "don't",
+          "really",
+          "do",
+          "anymore",
+          "cause",
+          "I'm",
+          "getting",
+          "older"
+        ],
+        "counted_words": [
+          "All",
+          "that",
+          "stuff",
+          "I",
+          "did",
+          "as",
+          "a",
+          "kid",
+          "I",
+          "just",
+          "don't",
+          "really",
+          "do",
+          "anymore",
+          "cause",
+          "I'm",
+          "getting",
+          "older"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 11,
+      "text": "I'm starting high school next year.",
+      "turn_id": 6,
+      "source_rows": [
+        13
+      ],
+      "corrected_char_start": 415,
+      "corrected_char_end": 450,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I'm",
+          "starting",
+          "high",
+          "school",
+          "next",
+          "year"
+        ],
+        "counted_words": [
+          "I'm",
+          "starting",
+          "high",
+          "school",
+          "next",
+          "year"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 12,
+      "text": "Yeah.",
+      "turn_id": 7,
+      "source_rows": [
+        16
+      ],
+      "corrected_char_start": 451,
+      "corrected_char_end": 456,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 13,
+      "text": "I like science, cause it's pretty easy to do and there's not a bunch of homework that she gives us.",
+      "turn_id": 8,
+      "source_rows": [
+        18,
+        19,
+        20
+      ],
+      "corrected_char_start": 457,
+      "corrected_char_end": 556,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "science",
+          "cause",
+          "it's",
+          "pretty",
+          "easy",
+          "to",
+          "do",
+          "and",
+          "there's",
+          "not",
+          "a",
+          "bunch",
+          "of",
+          "homework",
+          "that",
+          "she",
+          "gives",
+          "us"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "science",
+          "cause",
+          "it's",
+          "pretty",
+          "easy",
+          "to",
+          "do",
+          "and",
+          "there's",
+          "not",
+          "a",
+          "bunch",
+          "of",
+          "homework",
+          "that",
+          "she",
+          "gives",
+          "us"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 20,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 14,
+      "text": "Unlike math and just almost every week is what she does.",
+      "turn_id": 8,
+      "source_rows": [
+        18,
+        19,
+        20
+      ],
+      "corrected_char_start": 557,
+      "corrected_char_end": 613,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Unlike",
+          "math",
+          "and",
+          "just",
+          "almost",
+          "every",
+          "week",
+          "is",
+          "what",
+          "she",
+          "does"
+        ],
+        "counted_words": [
+          "Unlike",
+          "math",
+          "and",
+          "just",
+          "almost",
+          "every",
+          "week",
+          "is",
+          "what",
+          "she",
+          "does"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 15,
+      "text": "But math, science is pretty easy.",
+      "turn_id": 8,
+      "source_rows": [
+        18,
+        19,
+        20
+      ],
+      "corrected_char_start": 614,
+      "corrected_char_end": 647,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "math",
+          "science",
+          "is",
+          "pretty",
+          "easy"
+        ],
+        "counted_words": [
+          "But",
+          "math",
+          "science",
+          "is",
+          "pretty",
+          "easy"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 16,
+      "text": "Plus it can be interesting when I'm done with stuff.",
+      "turn_id": 8,
+      "source_rows": [
+        18,
+        19,
+        20
+      ],
+      "corrected_char_start": 648,
+      "corrected_char_end": 700,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Plus",
+          "it",
+          "can",
+          "be",
+          "interesting",
+          "when",
+          "I'm",
+          "done",
+          "with",
+          "stuff"
+        ],
+        "counted_words": [
+          "Plus",
+          "it",
+          "can",
+          "be",
+          "interesting",
+          "when",
+          "I'm",
+          "done",
+          "with",
+          "stuff"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 17,
+      "text": "I like reading a lot.",
+      "turn_id": 9,
+      "source_rows": [
+        22
+      ],
+      "corrected_char_start": 701,
+      "corrected_char_end": 722,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "reading",
+          "a",
+          "lot"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "reading",
+          "a",
+          "lot"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 18,
+      "text": "Yeah.",
+      "turn_id": 10,
+      "source_rows": [
+        24
+      ],
+      "corrected_char_start": 723,
+      "corrected_char_end": 728,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 19,
+      "text": "I like the I Survived series.",
+      "turn_id": 11,
+      "source_rows": [
+        26,
+        27,
+        28
+      ],
+      "corrected_char_start": 729,
+      "corrected_char_end": 758,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "the",
+          "I",
+          "Survived",
+          "series"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "the",
+          "I",
+          "Survived",
+          "series"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 20,
+      "text": "And then Harry Potter and.",
+      "turn_id": 11,
+      "source_rows": [
+        26,
+        27,
+        28
+      ],
+      "corrected_char_start": 759,
+      "corrected_char_end": 785,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "then",
+          "Harry",
+          "Potter",
+          "and"
+        ],
+        "counted_words": [
+          "And",
+          "then",
+          "Harry",
+          "Potter",
+          "and"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 21,
+      "text": "other kind of books.",
+      "turn_id": 11,
+      "source_rows": [
+        26,
+        27,
+        28
+      ],
+      "corrected_char_start": 786,
+      "corrected_char_end": 806,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "other",
+          "kind",
+          "of",
+          "books"
+        ],
+        "counted_words": [
+          "other",
+          "kind",
+          "of",
+          "books"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 22,
+      "text": "I haven't read all of them.",
+      "turn_id": 12,
+      "source_rows": [
+        30
+      ],
+      "corrected_char_start": 807,
+      "corrected_char_end": 834,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "haven't",
+          "read",
+          "all",
+          "of",
+          "them"
+        ],
+        "counted_words": [
+          "I",
+          "haven't",
+          "read",
+          "all",
+          "of",
+          "them"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 23,
+      "text": "I just read the first one.",
+      "turn_id": 12,
+      "source_rows": [
+        30
+      ],
+      "corrected_char_start": 835,
+      "corrected_char_end": 861,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "just",
+          "read",
+          "the",
+          "first",
+          "one"
+        ],
+        "counted_words": [
+          "I",
+          "just",
+          "read",
+          "the",
+          "first",
+          "one"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 24,
+      "text": "Yeah.",
+      "turn_id": 13,
+      "source_rows": [
+        32
+      ],
+      "corrected_char_start": 862,
+      "corrected_char_end": 867,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 25,
+      "text": "There was one,",
+      "turn_id": 14,
+      "source_rows": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "corrected_char_start": 868,
+      "corrected_char_end": 882,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "There",
+          "was",
+          "one"
+        ],
+        "counted_words": [
+          "There",
+          "was",
+          "one"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 26,
+      "text": "but it wasn't exactly after school.",
+      "turn_id": 14,
+      "source_rows": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "corrected_char_start": 883,
+      "corrected_char_end": 918,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "it",
+          "wasn't",
+          "exactly",
+          "after",
+          "school"
+        ],
+        "counted_words": [
+          "but",
+          "it",
+          "wasn't",
+          "exactly",
+          "after",
+          "school"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 27,
+      "text": "It's just some of the events that was after school.",
+      "turn_id": 14,
+      "source_rows": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "corrected_char_start": 919,
+      "corrected_char_end": 970,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "It's",
+          "just",
+          "some",
+          "of",
+          "the",
+          "events",
+          "that",
+          "was",
+          "after",
+          "school"
+        ],
+        "counted_words": [
+          "It's",
+          "just",
+          "some",
+          "of",
+          "the",
+          "events",
+          "that",
+          "was",
+          "after",
+          "school"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 28,
+      "text": "It was JRTC.",
+      "turn_id": 14,
+      "source_rows": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "corrected_char_start": 971,
+      "corrected_char_end": 983,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "It",
+          "was",
+          "JRTC"
+        ],
+        "counted_words": [
+          "It",
+          "was",
+          "JRTC"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 29,
+      "text": "That one where it's the.",
+      "turn_id": 14,
+      "source_rows": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "corrected_char_start": 984,
+      "corrected_char_end": 1008,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "That",
+          "one",
+          "where",
+          "it's",
+          "the"
+        ],
+        "counted_words": [
+          "That",
+          "one",
+          "where",
+          "it's",
+          "the"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 30,
+      "text": "I don't know how to explain that,",
+      "turn_id": 14,
+      "source_rows": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "corrected_char_start": 1009,
+      "corrected_char_end": 1042,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "know",
+          "how",
+          "to",
+          "explain",
+          "that"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "know",
+          "how",
+          "to",
+          "explain",
+          "that"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 31,
+      "text": "but I quit it because it wasn't as fun as I thought it was.",
+      "turn_id": 14,
+      "source_rows": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "corrected_char_start": 1043,
+      "corrected_char_end": 1102,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "I",
+          "quit",
+          "it",
+          "because",
+          "it",
+          "wasn't",
+          "as",
+          "fun",
+          "as",
+          "I",
+          "thought",
+          "it",
+          "was"
+        ],
+        "counted_words": [
+          "but",
+          "I",
+          "quit",
+          "it",
+          "because",
+          "it",
+          "wasn't",
+          "as",
+          "fun",
+          "as",
+          "I",
+          "thought",
+          "it",
+          "was"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 14,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 32,
+      "text": "Especially when some of the kids weren't exactly listening",
+      "turn_id": 14,
+      "source_rows": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "corrected_char_start": 1103,
+      "corrected_char_end": 1161,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Especially",
+          "when",
+          "some",
+          "of",
+          "the",
+          "kids",
+          "weren't",
+          "exactly",
+          "listening"
+        ],
+        "counted_words": [
+          "Especially",
+          "when",
+          "some",
+          "of",
+          "the",
+          "kids",
+          "weren't",
+          "exactly",
+          "listening"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 33,
+      "text": "and that didn't even make it fun.",
+      "turn_id": 14,
+      "source_rows": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "corrected_char_start": 1162,
+      "corrected_char_end": 1195,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "that",
+          "didn't",
+          "even",
+          "make",
+          "it",
+          "fun"
+        ],
+        "counted_words": [
+          "and",
+          "that",
+          "didn't",
+          "even",
+          "make",
+          "it",
+          "fun"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 34,
+      "text": "I do like to write a lot of stories.",
+      "turn_id": 15,
+      "source_rows": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "corrected_char_start": 1196,
+      "corrected_char_end": 1232,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "do",
+          "like",
+          "to",
+          "write",
+          "a",
+          "lot",
+          "of",
+          "stories"
+        ],
+        "counted_words": [
+          "I",
+          "do",
+          "like",
+          "to",
+          "write",
+          "a",
+          "lot",
+          "of",
+          "stories"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 35,
+      "text": "My sisters wrote a few,",
+      "turn_id": 15,
+      "source_rows": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "corrected_char_start": 1233,
+      "corrected_char_end": 1256,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "My",
+          "sisters",
+          "wrote",
+          "a",
+          "few"
+        ],
+        "counted_words": [
+          "My",
+          "sisters",
+          "wrote",
+          "a",
+          "few"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 36,
+      "text": "but I wrote probably the most right now.",
+      "turn_id": 15,
+      "source_rows": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "corrected_char_start": 1257,
+      "corrected_char_end": 1297,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "I",
+          "wrote",
+          "probably",
+          "the",
+          "most",
+          "right",
+          "now"
+        ],
+        "counted_words": [
+          "but",
+          "I",
+          "wrote",
+          "probably",
+          "the",
+          "most",
+          "right",
+          "now"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 37,
+      "text": "But I also like, sometimes I will do drawings,",
+      "turn_id": 15,
+      "source_rows": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "corrected_char_start": 1298,
+      "corrected_char_end": 1344,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "I",
+          "also",
+          "like",
+          "sometimes",
+          "I",
+          "will",
+          "do",
+          "drawings"
+        ],
+        "counted_words": [
+          "But",
+          "I",
+          "also",
+          "like",
+          "sometimes",
+          "I",
+          "will",
+          "do",
+          "drawings"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 38,
+      "text": "but then I eventually give up because it just doesn't look that good.",
+      "turn_id": 15,
+      "source_rows": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "corrected_char_start": 1345,
+      "corrected_char_end": 1414,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "then",
+          "I",
+          "eventually",
+          "give",
+          "up",
+          "because",
+          "it",
+          "just",
+          "doesn't",
+          "look",
+          "that",
+          "good"
+        ],
+        "counted_words": [
+          "but",
+          "then",
+          "I",
+          "eventually",
+          "give",
+          "up",
+          "because",
+          "it",
+          "just",
+          "doesn't",
+          "look",
+          "that",
+          "good"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 13,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 39,
+      "text": "I do like listening to music a lot and just kinda sometimes watching YouTube from time to time.",
+      "turn_id": 15,
+      "source_rows": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "corrected_char_start": 1415,
+      "corrected_char_end": 1510,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "do",
+          "like",
+          "listening",
+          "to",
+          "music",
+          "a",
+          "lot",
+          "and",
+          "just",
+          "kinda",
+          "sometimes",
+          "watching",
+          "YouTube",
+          "from",
+          "time",
+          "to",
+          "time"
+        ],
+        "counted_words": [
+          "I",
+          "do",
+          "like",
+          "listening",
+          "to",
+          "music",
+          "a",
+          "lot",
+          "and",
+          "just",
+          "kinda",
+          "sometimes",
+          "watching",
+          "YouTube",
+          "from",
+          "time",
+          "to",
+          "time"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 40,
+      "text": "Probably, since I watch anime, there will be specific anime music I listen to and then some country music and other kind of music.",
+      "turn_id": 16,
+      "source_rows": [
+        50,
+        51
+      ],
+      "corrected_char_start": 1511,
+      "corrected_char_end": 1641,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Probably",
+          "since",
+          "I",
+          "watch",
+          "anime",
+          "there",
+          "will",
+          "be",
+          "specific",
+          "anime",
+          "music",
+          "I",
+          "listen",
+          "to",
+          "and",
+          "then",
+          "some",
+          "country",
+          "music",
+          "and",
+          "other",
+          "kind",
+          "of",
+          "music"
+        ],
+        "counted_words": [
+          "Probably",
+          "since",
+          "I",
+          "watch",
+          "anime",
+          "there",
+          "will",
+          "be",
+          "specific",
+          "anime",
+          "music",
+          "I",
+          "listen",
+          "to",
+          "and",
+          "then",
+          "some",
+          "country",
+          "music",
+          "and",
+          "other",
+          "kind",
+          "of",
+          "music"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 24,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 41,
+      "text": "That my sisters listen to",
+      "turn_id": 16,
+      "source_rows": [
+        50,
+        51
+      ],
+      "corrected_char_start": 1642,
+      "corrected_char_end": 1667,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "That",
+          "my",
+          "sisters",
+          "listen",
+          "to"
+        ],
+        "counted_words": [
+          "That",
+          "my",
+          "sisters",
+          "listen",
+          "to"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 42,
+      "text": "and I'm like, oh, that sounds really cool.",
+      "turn_id": 16,
+      "source_rows": [
+        50,
+        51
+      ],
+      "corrected_char_start": 1668,
+      "corrected_char_end": 1710,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "I'm",
+          "like",
+          "oh",
+          "that",
+          "sounds",
+          "really",
+          "cool"
+        ],
+        "counted_words": [
+          "and",
+          "I'm",
+          "like",
+          "that",
+          "sounds",
+          "really",
+          "cool"
+        ],
+        "excluded_fillers": [
+          "oh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "Brown_listed_filler_assignment_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 43,
+      "text": "I was listening to that too.",
+      "turn_id": 16,
+      "source_rows": [
+        50,
+        51
+      ],
+      "corrected_char_start": 1711,
+      "corrected_char_end": 1739,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "was",
+          "listening",
+          "to",
+          "that",
+          "too"
+        ],
+        "counted_words": [
+          "I",
+          "was",
+          "listening",
+          "to",
+          "that",
+          "too"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 44,
+      "text": "I follow some.",
+      "turn_id": 17,
+      "source_rows": [
+        53
+      ],
+      "corrected_char_start": 1740,
+      "corrected_char_end": 1754,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "follow",
+          "some"
+        ],
+        "counted_words": [
+          "I",
+          "follow",
+          "some"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 45,
+      "text": "I've watched, someone who sends videos of, he sends them every day.",
+      "turn_id": 18,
+      "source_rows": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "corrected_char_start": 1755,
+      "corrected_char_end": 1822,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I've",
+          "watched",
+          "someone",
+          "who",
+          "sends",
+          "videos",
+          "of",
+          "he",
+          "sends",
+          "them",
+          "every",
+          "day"
+        ],
+        "counted_words": [
+          "I've",
+          "watched",
+          "someone",
+          "who",
+          "sends",
+          "videos",
+          "of",
+          "he",
+          "sends",
+          "them",
+          "every",
+          "day"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 46,
+      "text": "I'm not subscribed",
+      "turn_id": 18,
+      "source_rows": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "corrected_char_start": 1823,
+      "corrected_char_end": 1841,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I'm",
+          "not",
+          "subscribed"
+        ],
+        "counted_words": [
+          "I'm",
+          "not",
+          "subscribed"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 47,
+      "text": "or follow to him,",
+      "turn_id": 18,
+      "source_rows": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "corrected_char_start": 1842,
+      "corrected_char_end": 1859,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "or",
+          "follow",
+          "to",
+          "him"
+        ],
+        "counted_words": [
+          "or",
+          "follow",
+          "to",
+          "him"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 48,
+      "text": "but I watch him from time to time.",
+      "turn_id": 18,
+      "source_rows": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "corrected_char_start": 1860,
+      "corrected_char_end": 1894,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "I",
+          "watch",
+          "him",
+          "from",
+          "time",
+          "to",
+          "time"
+        ],
+        "counted_words": [
+          "but",
+          "I",
+          "watch",
+          "him",
+          "from",
+          "time",
+          "to",
+          "time"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 49,
+      "text": "He's he's his YouTube, his YouTube channel is called Dylan Anderson.",
+      "turn_id": 18,
+      "source_rows": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "corrected_char_start": 1895,
+      "corrected_char_end": 1963,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "He's",
+          "he's",
+          "his",
+          "YouTube",
+          "his",
+          "YouTube",
+          "channel",
+          "is",
+          "called",
+          "Dylan",
+          "Anderson"
+        ],
+        "counted_words": [
+          "He's",
+          "he's",
+          "his",
+          "YouTube",
+          "his",
+          "YouTube",
+          "channel",
+          "is",
+          "called",
+          "Dylan",
+          "Anderson"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 50,
+      "text": "He sends these videos of stuff that interesting happens almost every day.",
+      "turn_id": 18,
+      "source_rows": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "corrected_char_start": 1964,
+      "corrected_char_end": 2037,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "He",
+          "sends",
+          "these",
+          "videos",
+          "of",
+          "stuff",
+          "that",
+          "interesting",
+          "happens",
+          "almost",
+          "every",
+          "day"
+        ],
+        "counted_words": [
+          "He",
+          "sends",
+          "these",
+          "videos",
+          "of",
+          "stuff",
+          "that",
+          "interesting",
+          "happens",
+          "almost",
+          "every",
+          "day"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 51,
+      "text": "Like there'll be this dog, her name is Ray, and she has a, she had to remove her ear",
+      "turn_id": 18,
+      "source_rows": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "corrected_char_start": 2038,
+      "corrected_char_end": 2122,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Like",
+          "there'll",
+          "be",
+          "this",
+          "dog",
+          "her",
+          "name",
+          "is",
+          "Ray",
+          "and",
+          "she",
+          "has",
+          "a",
+          "she",
+          "had",
+          "to",
+          "remove",
+          "her",
+          "ear"
+        ],
+        "counted_words": [
+          "Like",
+          "there'll",
+          "be",
+          "this",
+          "dog",
+          "her",
+          "name",
+          "is",
+          "Ray",
+          "and",
+          "she",
+          "has",
+          "a",
+          "she",
+          "had",
+          "to",
+          "remove",
+          "her",
+          "ear"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 19,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 52,
+      "text": "and her ear got stuck to the top of her head as she grew up.",
+      "turn_id": 18,
+      "source_rows": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "corrected_char_start": 2123,
+      "corrected_char_end": 2183,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "her",
+          "ear",
+          "got",
+          "stuck",
+          "to",
+          "the",
+          "top",
+          "of",
+          "her",
+          "head",
+          "as",
+          "she",
+          "grew",
+          "up"
+        ],
+        "counted_words": [
+          "and",
+          "her",
+          "ear",
+          "got",
+          "stuck",
+          "to",
+          "the",
+          "top",
+          "of",
+          "her",
+          "head",
+          "as",
+          "she",
+          "grew",
+          "up"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 15,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 53,
+      "text": "Yeah.",
+      "turn_id": 19,
+      "source_rows": [
+        61
+      ],
+      "corrected_char_start": 2184,
+      "corrected_char_end": 2189,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 54,
+      "text": "Interesting wholesome videos, yeah.",
+      "turn_id": 20,
+      "source_rows": [
+        63
+      ],
+      "corrected_char_start": 2190,
+      "corrected_char_end": 2225,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Interesting",
+          "wholesome",
+          "videos",
+          "yeah"
+        ],
+        "counted_words": [
+          "Interesting",
+          "wholesome",
+          "videos",
+          "yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 55,
+      "text": "Not entirely.",
+      "turn_id": 21,
+      "source_rows": [
+        65
+      ],
+      "corrected_char_start": 2226,
+      "corrected_char_end": 2239,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Not",
+          "entirely"
+        ],
+        "counted_words": [
+          "Not",
+          "entirely"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 56,
+      "text": "I just like, I watch a lot of them, just equal amount of time.",
+      "turn_id": 21,
+      "source_rows": [
+        65
+      ],
+      "corrected_char_start": 2240,
+      "corrected_char_end": 2302,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "just",
+          "like",
+          "I",
+          "watch",
+          "a",
+          "lot",
+          "of",
+          "them",
+          "just",
+          "equal",
+          "amount",
+          "of",
+          "time"
+        ],
+        "counted_words": [
+          "I",
+          "just",
+          "like",
+          "I",
+          "watch",
+          "a",
+          "lot",
+          "of",
+          "them",
+          "just",
+          "equal",
+          "amount",
+          "of",
+          "time"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 14,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 57,
+      "text": "Once,",
+      "turn_id": 22,
+      "source_rows": [
+        68
+      ],
+      "corrected_char_start": 2303,
+      "corrected_char_end": 2308,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Once"
+        ],
+        "counted_words": [
+          "Once"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 58,
+      "text": "but I didn't like it.",
+      "turn_id": 22,
+      "source_rows": [
+        68
+      ],
+      "corrected_char_start": 2309,
+      "corrected_char_end": 2330,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "I",
+          "didn't",
+          "like",
+          "it"
+        ],
+        "counted_words": [
+          "but",
+          "I",
+          "didn't",
+          "like",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 59,
+      "text": "Especially on how many times I had to go home because someone I knew or someone in my family.",
+      "turn_id": 23,
+      "source_rows": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "corrected_char_start": 2331,
+      "corrected_char_end": 2424,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Especially",
+          "on",
+          "how",
+          "many",
+          "times",
+          "I",
+          "had",
+          "to",
+          "go",
+          "home",
+          "because",
+          "someone",
+          "I",
+          "knew",
+          "or",
+          "someone",
+          "in",
+          "my",
+          "family"
+        ],
+        "counted_words": [
+          "Especially",
+          "on",
+          "how",
+          "many",
+          "times",
+          "I",
+          "had",
+          "to",
+          "go",
+          "home",
+          "because",
+          "someone",
+          "I",
+          "knew",
+          "or",
+          "someone",
+          "in",
+          "my",
+          "family"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 19,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 60,
+      "text": "My mom before had gotton covid, or someone that was at school that was next to her had covid, like three or four times I got sent home because of it.",
+      "turn_id": 23,
+      "source_rows": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "corrected_char_start": 2425,
+      "corrected_char_end": 2574,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "My",
+          "mom",
+          "before",
+          "had",
+          "gotton",
+          "covid",
+          "or",
+          "someone",
+          "that",
+          "was",
+          "at",
+          "school",
+          "that",
+          "was",
+          "next",
+          "to",
+          "her",
+          "had",
+          "covid",
+          "like",
+          "three",
+          "or",
+          "four",
+          "times",
+          "I",
+          "got",
+          "sent",
+          "home",
+          "because",
+          "of",
+          "it"
+        ],
+        "counted_words": [
+          "My",
+          "mom",
+          "before",
+          "had",
+          "gotton",
+          "covid",
+          "or",
+          "someone",
+          "that",
+          "was",
+          "at",
+          "school",
+          "that",
+          "was",
+          "next",
+          "to",
+          "her",
+          "had",
+          "covid",
+          "like",
+          "three",
+          "or",
+          "four",
+          "times",
+          "I",
+          "got",
+          "sent",
+          "home",
+          "because",
+          "of",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 31,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 61,
+      "text": "And then when a break came along and I just kinda forgot it and forgot how to do it and.",
+      "turn_id": 23,
+      "source_rows": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "corrected_char_start": 2575,
+      "corrected_char_end": 2663,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "then",
+          "when",
+          "a",
+          "break",
+          "came",
+          "along",
+          "and",
+          "I",
+          "just",
+          "kinda",
+          "forgot",
+          "it",
+          "and",
+          "forgot",
+          "how",
+          "to",
+          "do",
+          "it",
+          "and"
+        ],
+        "counted_words": [
+          "And",
+          "then",
+          "when",
+          "a",
+          "break",
+          "came",
+          "along",
+          "and",
+          "I",
+          "just",
+          "kinda",
+          "forgot",
+          "it",
+          "and",
+          "forgot",
+          "how",
+          "to",
+          "do",
+          "it",
+          "and"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 20,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 62,
+      "text": "my grade went down.",
+      "turn_id": 23,
+      "source_rows": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "corrected_char_start": 2664,
+      "corrected_char_end": 2683,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "my",
+          "grade",
+          "went",
+          "down"
+        ],
+        "counted_words": [
+          "my",
+          "grade",
+          "went",
+          "down"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 63,
+      "text": "And Dad said it was, wasn't exactly entirely my fault because of winter break and being sent back because of covid.",
+      "turn_id": 23,
+      "source_rows": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "corrected_char_start": 2684,
+      "corrected_char_end": 2799,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "Dad",
+          "said",
+          "it",
+          "was",
+          "wasn't",
+          "exactly",
+          "entirely",
+          "my",
+          "fault",
+          "because",
+          "of",
+          "winter",
+          "break",
+          "and",
+          "being",
+          "sent",
+          "back",
+          "because",
+          "of",
+          "covid"
+        ],
+        "counted_words": [
+          "And",
+          "Dad",
+          "said",
+          "it",
+          "was",
+          "wasn't",
+          "exactly",
+          "entirely",
+          "my",
+          "fault",
+          "because",
+          "of",
+          "winter",
+          "break",
+          "and",
+          "being",
+          "sent",
+          "back",
+          "because",
+          "of",
+          "covid"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 21,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 64,
+      "text": "Especially with a really heavy trombone you have to carry all the way with your heavy traffic keeper and backpack all at the same time to.",
+      "turn_id": 24,
+      "source_rows": [
+        75,
+        76
+      ],
+      "corrected_char_start": 2800,
+      "corrected_char_end": 2938,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Especially",
+          "with",
+          "a",
+          "really",
+          "heavy",
+          "trombone",
+          "you",
+          "have",
+          "to",
+          "carry",
+          "all",
+          "the",
+          "way",
+          "with",
+          "your",
+          "heavy",
+          "traffic",
+          "keeper",
+          "and",
+          "backpack",
+          "all",
+          "at",
+          "the",
+          "same",
+          "time",
+          "to"
+        ],
+        "counted_words": [
+          "Especially",
+          "with",
+          "a",
+          "really",
+          "heavy",
+          "trombone",
+          "you",
+          "have",
+          "to",
+          "carry",
+          "all",
+          "the",
+          "way",
+          "with",
+          "your",
+          "heavy",
+          "traffic",
+          "keeper",
+          "and",
+          "backpack",
+          "all",
+          "at",
+          "the",
+          "same",
+          "time",
+          "to"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 26,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 65,
+      "text": "Your dad's car to pick you up.",
+      "turn_id": 24,
+      "source_rows": [
+        75,
+        76
+      ],
+      "corrected_char_start": 2939,
+      "corrected_char_end": 2969,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Your",
+          "dad's",
+          "car",
+          "to",
+          "pick",
+          "you",
+          "up"
+        ],
+        "counted_words": [
+          "Your",
+          "dad's",
+          "car",
+          "to",
+          "pick",
+          "you",
+          "up"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 66,
+      "text": "Yeah, I play trombone.",
+      "turn_id": 25,
+      "source_rows": [
+        78
+      ],
+      "corrected_char_start": 2970,
+      "corrected_char_end": 2992,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "I",
+          "play",
+          "trombone"
+        ],
+        "counted_words": [
+          "Yeah",
+          "I",
+          "play",
+          "trombone"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 67,
+      "text": "I thought it wasn't too bad at first,",
+      "turn_id": 25,
+      "source_rows": [
+        78
+      ],
+      "corrected_char_start": 2993,
+      "corrected_char_end": 3030,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "thought",
+          "it",
+          "wasn't",
+          "too",
+          "bad",
+          "at",
+          "first"
+        ],
+        "counted_words": [
+          "I",
+          "thought",
+          "it",
+          "wasn't",
+          "too",
+          "bad",
+          "at",
+          "first"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 68,
+      "text": "but ever since covid, I got got back home and winter break, I just, I'm done, I can't do it.",
+      "turn_id": 25,
+      "source_rows": [
+        78
+      ],
+      "corrected_char_start": 3031,
+      "corrected_char_end": 3123,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "ever",
+          "since",
+          "covid",
+          "I",
+          "got",
+          "got",
+          "back",
+          "home",
+          "and",
+          "winter",
+          "break",
+          "I",
+          "just",
+          "I'm",
+          "done",
+          "I",
+          "can't",
+          "do",
+          "it"
+        ],
+        "counted_words": [
+          "but",
+          "ever",
+          "since",
+          "covid",
+          "I",
+          "got",
+          "got",
+          "back",
+          "home",
+          "and",
+          "winter",
+          "break",
+          "I",
+          "just",
+          "I'm",
+          "done",
+          "I",
+          "can't",
+          "do",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 20,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 69,
+      "text": "My sister, I think in sixth grade, whenever she went to sixth grade, she tried doing.",
+      "turn_id": 26,
+      "source_rows": [
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "corrected_char_start": 3124,
+      "corrected_char_end": 3209,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "My",
+          "sister",
+          "I",
+          "think",
+          "in",
+          "sixth",
+          "grade",
+          "whenever",
+          "she",
+          "went",
+          "to",
+          "sixth",
+          "grade",
+          "she",
+          "tried",
+          "doing"
+        ],
+        "counted_words": [
+          "My",
+          "sister",
+          "I",
+          "think",
+          "in",
+          "sixth",
+          "grade",
+          "whenever",
+          "she",
+          "went",
+          "to",
+          "sixth",
+          "grade",
+          "she",
+          "tried",
+          "doing"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 16,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 70,
+      "text": "I don't know.",
+      "turn_id": 26,
+      "source_rows": [
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "corrected_char_start": 3210,
+      "corrected_char_end": 3223,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "know"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "know"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 71,
+      "text": "Yeah.",
+      "turn_id": 26,
+      "source_rows": [
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "corrected_char_start": 3224,
+      "corrected_char_end": 3229,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 72,
+      "text": "Yeah, since my sister is younger, I can't remember,",
+      "turn_id": 26,
+      "source_rows": [
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "corrected_char_start": 3230,
+      "corrected_char_end": 3281,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "since",
+          "my",
+          "sister",
+          "is",
+          "younger",
+          "I",
+          "can't",
+          "remember"
+        ],
+        "counted_words": [
+          "Yeah",
+          "since",
+          "my",
+          "sister",
+          "is",
+          "younger",
+          "I",
+          "can't",
+          "remember"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 73,
+      "text": "but she's, she played the French horn.",
+      "turn_id": 26,
+      "source_rows": [
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "corrected_char_start": 3282,
+      "corrected_char_end": 3320,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "she's",
+          "she",
+          "played",
+          "the",
+          "French",
+          "horn"
+        ],
+        "counted_words": [
+          "but",
+          "she's",
+          "she",
+          "played",
+          "the",
+          "French",
+          "horn"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 74,
+      "text": "But she didn't like it as well because sometimes it wouldn't work and it was just kinda heavy.",
+      "turn_id": 26,
+      "source_rows": [
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "corrected_char_start": 3321,
+      "corrected_char_end": 3415,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "she",
+          "didn't",
+          "like",
+          "it",
+          "as",
+          "well",
+          "because",
+          "sometimes",
+          "it",
+          "wouldn't",
+          "work",
+          "and",
+          "it",
+          "was",
+          "just",
+          "kinda",
+          "heavy"
+        ],
+        "counted_words": [
+          "But",
+          "she",
+          "didn't",
+          "like",
+          "it",
+          "as",
+          "well",
+          "because",
+          "sometimes",
+          "it",
+          "wouldn't",
+          "work",
+          "and",
+          "it",
+          "was",
+          "just",
+          "kinda",
+          "heavy"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 75,
+      "text": "But I've seen her play it a few times,",
+      "turn_id": 26,
+      "source_rows": [
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "corrected_char_start": 3416,
+      "corrected_char_end": 3454,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "I've",
+          "seen",
+          "her",
+          "play",
+          "it",
+          "a",
+          "few",
+          "times"
+        ],
+        "counted_words": [
+          "But",
+          "I've",
+          "seen",
+          "her",
+          "play",
+          "it",
+          "a",
+          "few",
+          "times"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 76,
+      "text": "but yeah, it kinda designed terrible from time to time because it didn't work right.",
+      "turn_id": 26,
+      "source_rows": [
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "corrected_char_start": 3455,
+      "corrected_char_end": 3539,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "yeah",
+          "it",
+          "kinda",
+          "designed",
+          "terrible",
+          "from",
+          "time",
+          "to",
+          "time",
+          "because",
+          "it",
+          "didn't",
+          "work",
+          "right"
+        ],
+        "counted_words": [
+          "but",
+          "yeah",
+          "it",
+          "kinda",
+          "designed",
+          "terrible",
+          "from",
+          "time",
+          "to",
+          "time",
+          "because",
+          "it",
+          "didn't",
+          "work",
+          "right"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 15,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 77,
+      "text": "Yeah.",
+      "turn_id": 27,
+      "source_rows": [
+        86
+      ],
+      "corrected_char_start": 3540,
+      "corrected_char_end": 3545,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 78,
+      "text": "Yeah, I did mine.",
+      "turn_id": 28,
+      "source_rows": [
+        88
+      ],
+      "corrected_char_start": 3546,
+      "corrected_char_end": 3563,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "I",
+          "did",
+          "mine"
+        ],
+        "counted_words": [
+          "Yeah",
+          "I",
+          "did",
+          "mine"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 79,
+      "text": "I think Emma did hers too.",
+      "turn_id": 28,
+      "source_rows": [
+        88
+      ],
+      "corrected_char_start": 3564,
+      "corrected_char_end": 3590,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "think",
+          "Emma",
+          "did",
+          "hers",
+          "too"
+        ],
+        "counted_words": [
+          "I",
+          "think",
+          "Emma",
+          "did",
+          "hers",
+          "too"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 80,
+      "text": "I went to my brother's concerts",
+      "turn_id": 29,
+      "source_rows": [
+        90,
+        91
+      ],
+      "corrected_char_start": 3591,
+      "corrected_char_end": 3622,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "went",
+          "to",
+          "my",
+          "brother's",
+          "concerts"
+        ],
+        "counted_words": [
+          "I",
+          "went",
+          "to",
+          "my",
+          "brother's",
+          "concerts"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 81,
+      "text": "and whenever since I had autism, I didn't like the specific like loud sounds,",
+      "turn_id": 29,
+      "source_rows": [
+        90,
+        91
+      ],
+      "corrected_char_start": 3623,
+      "corrected_char_end": 3700,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "whenever",
+          "since",
+          "I",
+          "had",
+          "autism",
+          "I",
+          "didn't",
+          "like",
+          "the",
+          "specific",
+          "like",
+          "loud",
+          "sounds"
+        ],
+        "counted_words": [
+          "and",
+          "whenever",
+          "since",
+          "I",
+          "had",
+          "autism",
+          "I",
+          "didn't",
+          "like",
+          "the",
+          "specific",
+          "like",
+          "loud",
+          "sounds"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 14,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 82,
+      "text": "but I'm okay with it now. Since there's everyone around me that I haven't really been to a concert really since.",
+      "turn_id": 29,
+      "source_rows": [
+        90,
+        91
+      ],
+      "corrected_char_start": 3701,
+      "corrected_char_end": 3813,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "I'm",
+          "okay",
+          "with",
+          "it",
+          "now",
+          "Since",
+          "there's",
+          "everyone",
+          "around",
+          "me",
+          "that",
+          "I",
+          "haven't",
+          "really",
+          "been",
+          "to",
+          "a",
+          "concert",
+          "really",
+          "since"
+        ],
+        "counted_words": [
+          "but",
+          "I'm",
+          "okay",
+          "with",
+          "it",
+          "now",
+          "Since",
+          "there's",
+          "everyone",
+          "around",
+          "me",
+          "that",
+          "I",
+          "haven't",
+          "really",
+          "been",
+          "to",
+          "a",
+          "concert",
+          "really",
+          "since"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 21,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 83,
+      "text": "I like",
+      "turn_id": 29,
+      "source_rows": [
+        90,
+        91
+      ],
+      "corrected_char_start": 3814,
+      "corrected_char_end": 3820,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like"
+        ],
+        "counted_words": [
+          "I",
+          "like"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 84,
+      "text": "the clarinets have, they're really, they have a really pretty sound.",
+      "turn_id": 30,
+      "source_rows": [
+        94,
+        95
+      ],
+      "corrected_char_start": 3821,
+      "corrected_char_end": 3889,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "the",
+          "clarinets",
+          "have",
+          "they're",
+          "really",
+          "they",
+          "have",
+          "a",
+          "really",
+          "pretty",
+          "sound"
+        ],
+        "counted_words": [
+          "the",
+          "clarinets",
+          "have",
+          "they're",
+          "really",
+          "they",
+          "have",
+          "a",
+          "really",
+          "pretty",
+          "sound"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 85,
+      "text": "I have two friends that have played clarinets.",
+      "turn_id": 30,
+      "source_rows": [
+        94,
+        95
+      ],
+      "corrected_char_start": 3890,
+      "corrected_char_end": 3936,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "have",
+          "two",
+          "friends",
+          "that",
+          "have",
+          "played",
+          "clarinets"
+        ],
+        "counted_words": [
+          "I",
+          "have",
+          "two",
+          "friends",
+          "that",
+          "have",
+          "played",
+          "clarinets"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 86,
+      "text": "And they do a pretty good job playing them.",
+      "turn_id": 30,
+      "source_rows": [
+        94,
+        95
+      ],
+      "corrected_char_start": 3937,
+      "corrected_char_end": 3980,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "they",
+          "do",
+          "a",
+          "pretty",
+          "good",
+          "job",
+          "playing",
+          "them"
+        ],
+        "counted_words": [
+          "And",
+          "they",
+          "do",
+          "a",
+          "pretty",
+          "good",
+          "job",
+          "playing",
+          "them"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 87,
+      "text": "It's probably one of the easiest to play too, besides your fingers hurting from playing all them keys.",
+      "turn_id": 31,
+      "source_rows": [
+        97
+      ],
+      "corrected_char_start": 3981,
+      "corrected_char_end": 4083,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "It's",
+          "probably",
+          "one",
+          "of",
+          "the",
+          "easiest",
+          "to",
+          "play",
+          "too",
+          "besides",
+          "your",
+          "fingers",
+          "hurting",
+          "from",
+          "playing",
+          "all",
+          "them",
+          "keys"
+        ],
+        "counted_words": [
+          "It's",
+          "probably",
+          "one",
+          "of",
+          "the",
+          "easiest",
+          "to",
+          "play",
+          "too",
+          "besides",
+          "your",
+          "fingers",
+          "hurting",
+          "from",
+          "playing",
+          "all",
+          "them",
+          "keys"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 88,
+      "text": "Especially in JRTC when we had to do this march thing for some reason, it was because of.",
+      "turn_id": 32,
+      "source_rows": [
+        99,
+        100,
+        101
+      ],
+      "corrected_char_start": 4084,
+      "corrected_char_end": 4173,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Especially",
+          "in",
+          "JRTC",
+          "when",
+          "we",
+          "had",
+          "to",
+          "do",
+          "this",
+          "march",
+          "thing",
+          "for",
+          "some",
+          "reason",
+          "it",
+          "was",
+          "because",
+          "of"
+        ],
+        "counted_words": [
+          "Especially",
+          "in",
+          "JRTC",
+          "when",
+          "we",
+          "had",
+          "to",
+          "do",
+          "this",
+          "march",
+          "thing",
+          "for",
+          "some",
+          "reason",
+          "it",
+          "was",
+          "because",
+          "of"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 89,
+      "text": "Something, I can't remember,",
+      "turn_id": 32,
+      "source_rows": [
+        99,
+        100,
+        101
+      ],
+      "corrected_char_start": 4174,
+      "corrected_char_end": 4202,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Something",
+          "I",
+          "can't",
+          "remember"
+        ],
+        "counted_words": [
+          "Something",
+          "I",
+          "can't",
+          "remember"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 90,
+      "text": "but we had to like march down.",
+      "turn_id": 32,
+      "source_rows": [
+        99,
+        100,
+        101
+      ],
+      "corrected_char_start": 4203,
+      "corrected_char_end": 4233,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "we",
+          "had",
+          "to",
+          "like",
+          "march",
+          "down"
+        ],
+        "counted_words": [
+          "but",
+          "we",
+          "had",
+          "to",
+          "like",
+          "march",
+          "down"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 91,
+      "text": "It was January or February, it was really cold.",
+      "turn_id": 32,
+      "source_rows": [
+        99,
+        100,
+        101
+      ],
+      "corrected_char_start": 4234,
+      "corrected_char_end": 4281,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "It",
+          "was",
+          "January",
+          "or",
+          "February",
+          "it",
+          "was",
+          "really",
+          "cold"
+        ],
+        "counted_words": [
+          "It",
+          "was",
+          "January",
+          "or",
+          "February",
+          "it",
+          "was",
+          "really",
+          "cold"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 92,
+      "text": "So everybody was cold.",
+      "turn_id": 32,
+      "source_rows": [
+        99,
+        100,
+        101
+      ],
+      "corrected_char_start": 4282,
+      "corrected_char_end": 4304,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "So",
+          "everybody",
+          "was",
+          "cold"
+        ],
+        "counted_words": [
+          "So",
+          "everybody",
+          "was",
+          "cold"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 93,
+      "text": "They're like, oh, I wanna get this done.",
+      "turn_id": 32,
+      "source_rows": [
+        99,
+        100,
+        101
+      ],
+      "corrected_char_start": 4305,
+      "corrected_char_end": 4345,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "They're",
+          "like",
+          "oh",
+          "I",
+          "wanna",
+          "get",
+          "this",
+          "done"
+        ],
+        "counted_words": [
+          "They're",
+          "like",
+          "I",
+          "wanna",
+          "get",
+          "this",
+          "done"
+        ],
+        "excluded_fillers": [
+          "oh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "Brown_listed_filler_assignment_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 94,
+      "text": "By the time it was done, like, oh, yes.",
+      "turn_id": 32,
+      "source_rows": [
+        99,
+        100,
+        101
+      ],
+      "corrected_char_start": 4346,
+      "corrected_char_end": 4385,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "By",
+          "the",
+          "time",
+          "it",
+          "was",
+          "done",
+          "like",
+          "oh",
+          "yes"
+        ],
+        "counted_words": [
+          "By",
+          "the",
+          "time",
+          "it",
+          "was",
+          "done",
+          "like",
+          "yes"
+        ],
+        "excluded_fillers": [
+          "oh"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "Brown_listed_filler_assignment_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 95,
+      "text": "Yeah, I quit.",
+      "turn_id": 33,
+      "source_rows": [
+        103
+      ],
+      "corrected_char_start": 4386,
+      "corrected_char_end": 4399,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "I",
+          "quit"
+        ],
+        "counted_words": [
+          "Yeah",
+          "I",
+          "quit"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 96,
+      "text": "Plus the kids weren't listening, so it didn't really make it too fun.",
+      "turn_id": 33,
+      "source_rows": [
+        103
+      ],
+      "corrected_char_start": 4400,
+      "corrected_char_end": 4469,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Plus",
+          "the",
+          "kids",
+          "weren't",
+          "listening",
+          "so",
+          "it",
+          "didn't",
+          "really",
+          "make",
+          "it",
+          "too",
+          "fun"
+        ],
+        "counted_words": [
+          "Plus",
+          "the",
+          "kids",
+          "weren't",
+          "listening",
+          "so",
+          "it",
+          "didn't",
+          "really",
+          "make",
+          "it",
+          "too",
+          "fun"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 13,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 97,
+      "text": "Besides the ones I've already said.",
+      "turn_id": 34,
+      "source_rows": [
+        105,
+        106
+      ],
+      "corrected_char_start": 4470,
+      "corrected_char_end": 4505,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Besides",
+          "the",
+          "ones",
+          "I've",
+          "already",
+          "said"
+        ],
+        "counted_words": [
+          "Besides",
+          "the",
+          "ones",
+          "I've",
+          "already",
+          "said"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 98,
+      "text": "I don't think there's anything else besides those.",
+      "turn_id": 35,
+      "source_rows": [
+        108
+      ],
+      "corrected_char_start": 4506,
+      "corrected_char_end": 4556,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "think",
+          "there's",
+          "anything",
+          "else",
+          "besides",
+          "those"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "think",
+          "there's",
+          "anything",
+          "else",
+          "besides",
+          "those"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 99,
+      "text": "Badminton?",
+      "turn_id": 37,
+      "source_rows": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "corrected_char_start": 4557,
+      "corrected_char_end": 4567,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Badminton"
+        ],
+        "counted_words": [
+          "Badminton"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 100,
+      "text": "We have those,",
+      "turn_id": 37,
+      "source_rows": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "corrected_char_start": 4568,
+      "corrected_char_end": 4582,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "We",
+          "have",
+          "those"
+        ],
+        "counted_words": [
+          "We",
+          "have",
+          "those"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 101,
+      "text": "but we probably haven't done it yet because of how windy it is.",
+      "turn_id": 37,
+      "source_rows": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "corrected_char_start": 4583,
+      "corrected_char_end": 4646,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "we",
+          "probably",
+          "haven't",
+          "done",
+          "it",
+          "yet",
+          "because",
+          "of",
+          "how",
+          "windy",
+          "it",
+          "is"
+        ],
+        "counted_words": [
+          "but",
+          "we",
+          "probably",
+          "haven't",
+          "done",
+          "it",
+          "yet",
+          "because",
+          "of",
+          "how",
+          "windy",
+          "it",
+          "is"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 13,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 102,
+      "text": "But we'll probably try it this summer.",
+      "turn_id": 37,
+      "source_rows": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "corrected_char_start": 4647,
+      "corrected_char_end": 4685,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "we'll",
+          "probably",
+          "try",
+          "it",
+          "this",
+          "summer"
+        ],
+        "counted_words": [
+          "But",
+          "we'll",
+          "probably",
+          "try",
+          "it",
+          "this",
+          "summer"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 103,
+      "text": "I probably will, me and my sister will go out there and probably play it for a little bit outside during the summer.",
+      "turn_id": 37,
+      "source_rows": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "corrected_char_start": 4686,
+      "corrected_char_end": 4802,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "probably",
+          "will",
+          "me",
+          "and",
+          "my",
+          "sister",
+          "will",
+          "go",
+          "out",
+          "there",
+          "and",
+          "probably",
+          "play",
+          "it",
+          "for",
+          "a",
+          "little",
+          "bit",
+          "outside",
+          "during",
+          "the",
+          "summer"
+        ],
+        "counted_words": [
+          "I",
+          "probably",
+          "will",
+          "me",
+          "and",
+          "my",
+          "sister",
+          "will",
+          "go",
+          "out",
+          "there",
+          "and",
+          "probably",
+          "play",
+          "it",
+          "for",
+          "a",
+          "little",
+          "bit",
+          "outside",
+          "during",
+          "the",
+          "summer"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 23,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 104,
+      "text": "Cause it won't be, if it isn't very windy or rainy or wet.",
+      "turn_id": 37,
+      "source_rows": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "corrected_char_start": 4803,
+      "corrected_char_end": 4861,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Cause",
+          "it",
+          "won't",
+          "be",
+          "if",
+          "it",
+          "isn't",
+          "very",
+          "windy",
+          "or",
+          "rainy",
+          "or",
+          "wet"
+        ],
+        "counted_words": [
+          "Cause",
+          "it",
+          "won't",
+          "be",
+          "if",
+          "it",
+          "isn't",
+          "very",
+          "windy",
+          "or",
+          "rainy",
+          "or",
+          "wet"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 13,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 105,
+      "text": "Cause we even tried to do these weird things we got for Easter that are kinda like that,",
+      "turn_id": 37,
+      "source_rows": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "corrected_char_start": 4862,
+      "corrected_char_end": 4950,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Cause",
+          "we",
+          "even",
+          "tried",
+          "to",
+          "do",
+          "these",
+          "weird",
+          "things",
+          "we",
+          "got",
+          "for",
+          "Easter",
+          "that",
+          "are",
+          "kinda",
+          "like",
+          "that"
+        ],
+        "counted_words": [
+          "Cause",
+          "we",
+          "even",
+          "tried",
+          "to",
+          "do",
+          "these",
+          "weird",
+          "things",
+          "we",
+          "got",
+          "for",
+          "Easter",
+          "that",
+          "are",
+          "kinda",
+          "like",
+          "that"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 106,
+      "text": "but they're different.",
+      "turn_id": 37,
+      "source_rows": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "corrected_char_start": 4951,
+      "corrected_char_end": 4973,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "they're",
+          "different"
+        ],
+        "counted_words": [
+          "but",
+          "they're",
+          "different"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 107,
+      "text": "And it was windy",
+      "turn_id": 37,
+      "source_rows": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "corrected_char_start": 4974,
+      "corrected_char_end": 4990,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "it",
+          "was",
+          "windy"
+        ],
+        "counted_words": [
+          "And",
+          "it",
+          "was",
+          "windy"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 108,
+      "text": "and the fall kept going back, so.",
+      "turn_id": 37,
+      "source_rows": [
+        113,
+        114,
+        115,
+        116,
+        117
+      ],
+      "corrected_char_start": 4991,
+      "corrected_char_end": 5024,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "the",
+          "fall",
+          "kept",
+          "going",
+          "back",
+          "so"
+        ],
+        "counted_words": [
+          "and",
+          "the",
+          "fall",
+          "kept",
+          "going",
+          "back",
+          "so"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 109,
+      "text": "I, my brother said he played tennis in high school",
+      "turn_id": 38,
+      "source_rows": [
+        119,
+        120,
+        121
+      ],
+      "corrected_char_start": 5025,
+      "corrected_char_end": 5075,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "my",
+          "brother",
+          "said",
+          "he",
+          "played",
+          "tennis",
+          "in",
+          "high",
+          "school"
+        ],
+        "counted_words": [
+          "I",
+          "my",
+          "brother",
+          "said",
+          "he",
+          "played",
+          "tennis",
+          "in",
+          "high",
+          "school"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 110,
+      "text": "and I was kinda wanting to try that.",
+      "turn_id": 38,
+      "source_rows": [
+        119,
+        120,
+        121
+      ],
+      "corrected_char_start": 5076,
+      "corrected_char_end": 5112,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "I",
+          "was",
+          "kinda",
+          "wanting",
+          "to",
+          "try",
+          "that"
+        ],
+        "counted_words": [
+          "and",
+          "I",
+          "was",
+          "kinda",
+          "wanting",
+          "to",
+          "try",
+          "that"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 111,
+      "text": "But considering I'm not that fast and I don't have, sometimes don't have much of a good reaction time.",
+      "turn_id": 38,
+      "source_rows": [
+        119,
+        120,
+        121
+      ],
+      "corrected_char_start": 5113,
+      "corrected_char_end": 5215,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "considering",
+          "I'm",
+          "not",
+          "that",
+          "fast",
+          "and",
+          "I",
+          "don't",
+          "have",
+          "sometimes",
+          "don't",
+          "have",
+          "much",
+          "of",
+          "a",
+          "good",
+          "reaction",
+          "time"
+        ],
+        "counted_words": [
+          "But",
+          "considering",
+          "I'm",
+          "not",
+          "that",
+          "fast",
+          "and",
+          "I",
+          "don't",
+          "have",
+          "sometimes",
+          "don't",
+          "have",
+          "much",
+          "of",
+          "a",
+          "good",
+          "reaction",
+          "time"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 19,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 112,
+      "text": "I just don't know yet.",
+      "turn_id": 38,
+      "source_rows": [
+        119,
+        120,
+        121
+      ],
+      "corrected_char_start": 5216,
+      "corrected_char_end": 5238,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "just",
+          "don't",
+          "know",
+          "yet"
+        ],
+        "counted_words": [
+          "I",
+          "just",
+          "don't",
+          "know",
+          "yet"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 113,
+      "text": "I may try it for a little",
+      "turn_id": 38,
+      "source_rows": [
+        119,
+        120,
+        121
+      ],
+      "corrected_char_start": 5239,
+      "corrected_char_end": 5264,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "may",
+          "try",
+          "it",
+          "for",
+          "a",
+          "little"
+        ],
+        "counted_words": [
+          "I",
+          "may",
+          "try",
+          "it",
+          "for",
+          "a",
+          "little"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 114,
+      "text": "and see if it sounds fun,",
+      "turn_id": 38,
+      "source_rows": [
+        119,
+        120,
+        121
+      ],
+      "corrected_char_start": 5265,
+      "corrected_char_end": 5290,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "see",
+          "if",
+          "it",
+          "sounds",
+          "fun"
+        ],
+        "counted_words": [
+          "and",
+          "see",
+          "if",
+          "it",
+          "sounds",
+          "fun"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 115,
+      "text": "but I'm not for sure yet.",
+      "turn_id": 38,
+      "source_rows": [
+        119,
+        120,
+        121
+      ],
+      "corrected_char_start": 5291,
+      "corrected_char_end": 5316,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "I'm",
+          "not",
+          "for",
+          "sure",
+          "yet"
+        ],
+        "counted_words": [
+          "but",
+          "I'm",
+          "not",
+          "for",
+          "sure",
+          "yet"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    }
+  ]
+}

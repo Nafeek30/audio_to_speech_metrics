@@ -1,0 +1,965 @@
+{
+  "label_source_sha256": "f63474d45d346598e5528ebbf7fd196f086eb2824aae7e650fbfe973879ad9e2",
+  "baseline_source_sha256": "285f0662b35a6244ce8e9b4f676c6b6cad68e5b7821e5e9a79a980faa81c51ff",
+  "pipeline_source_sha256": "9e4d8cdd6fa5f58de1e1555533d8c52108213c7e1bf44b72a73dc83f0528047e",
+  "verified": [
+    {
+      "method": "Previous",
+      "patient_id": "P1",
+      "source_file": "P1_20230420_1_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 25,
+      "tn": 557,
+      "fn": 21,
+      "fp": 21,
+      "reference_tokens": 625,
+      "pipeline_tokens": 625,
+      "reference_possible_gaps": 624,
+      "pipeline_possible_gaps": 624,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P1",
+      "source_file": "P1_20230420_1_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 30,
+      "tn": 554,
+      "fn": 16,
+      "fp": 24,
+      "reference_tokens": 625,
+      "pipeline_tokens": 625,
+      "reference_possible_gaps": 624,
+      "pipeline_possible_gaps": 624,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P1",
+      "source_file": "PXL_20230420_194637673_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 32,
+      "tn": 591,
+      "fn": 31,
+      "fp": 1,
+      "reference_tokens": 656,
+      "pipeline_tokens": 656,
+      "reference_possible_gaps": 655,
+      "pipeline_possible_gaps": 655,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P1",
+      "source_file": "PXL_20230420_194637673_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 39,
+      "tn": 591,
+      "fn": 24,
+      "fp": 1,
+      "reference_tokens": 656,
+      "pipeline_tokens": 656,
+      "reference_possible_gaps": 655,
+      "pipeline_possible_gaps": 655,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P2",
+      "source_file": "PXL_20230420_205152473_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 85,
+      "tn": 1090,
+      "fn": 50,
+      "fp": 20,
+      "reference_tokens": 1246,
+      "pipeline_tokens": 1246,
+      "reference_possible_gaps": 1245,
+      "pipeline_possible_gaps": 1245,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P2",
+      "source_file": "PXL_20230420_205152473_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 96,
+      "tn": 1088,
+      "fn": 39,
+      "fp": 22,
+      "reference_tokens": 1246,
+      "pipeline_tokens": 1246,
+      "reference_possible_gaps": 1245,
+      "pipeline_possible_gaps": 1245,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P3",
+      "source_file": "PXL_20230420_214504953_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 77,
+      "tn": 949,
+      "fn": 29,
+      "fp": 15,
+      "reference_tokens": 1071,
+      "pipeline_tokens": 1071,
+      "reference_possible_gaps": 1070,
+      "pipeline_possible_gaps": 1070,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P3",
+      "source_file": "PXL_20230420_214504953_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 97,
+      "tn": 946,
+      "fn": 9,
+      "fp": 18,
+      "reference_tokens": 1071,
+      "pipeline_tokens": 1071,
+      "reference_possible_gaps": 1070,
+      "pipeline_possible_gaps": 1070,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P4",
+      "source_file": "PXL_20230425_175033658_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 97,
+      "tn": 314,
+      "fn": 15,
+      "fp": 3,
+      "reference_tokens": 430,
+      "pipeline_tokens": 430,
+      "reference_possible_gaps": 429,
+      "pipeline_possible_gaps": 429,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P4",
+      "source_file": "PXL_20230425_175033658_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 104,
+      "tn": 313,
+      "fn": 8,
+      "fp": 4,
+      "reference_tokens": 430,
+      "pipeline_tokens": 430,
+      "reference_possible_gaps": 429,
+      "pipeline_possible_gaps": 429,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P5",
+      "source_file": "PXL_20230427_185802030_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 52,
+      "tn": 277,
+      "fn": 11,
+      "fp": 0,
+      "reference_tokens": 341,
+      "pipeline_tokens": 341,
+      "reference_possible_gaps": 340,
+      "pipeline_possible_gaps": 340,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P5",
+      "source_file": "PXL_20230427_185802030_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 53,
+      "tn": 277,
+      "fn": 10,
+      "fp": 0,
+      "reference_tokens": 341,
+      "pipeline_tokens": 341,
+      "reference_possible_gaps": 340,
+      "pipeline_possible_gaps": 340,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P5",
+      "source_file": "PXL_20230427_190713183_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 50,
+      "tn": 283,
+      "fn": 4,
+      "fp": 2,
+      "reference_tokens": 340,
+      "pipeline_tokens": 340,
+      "reference_possible_gaps": 339,
+      "pipeline_possible_gaps": 339,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P5",
+      "source_file": "PXL_20230427_190713183_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 51,
+      "tn": 282,
+      "fn": 3,
+      "fp": 3,
+      "reference_tokens": 340,
+      "pipeline_tokens": 340,
+      "reference_possible_gaps": 339,
+      "pipeline_possible_gaps": 339,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P6",
+      "source_file": "PXL_20230501_201946887_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 58,
+      "tn": 234,
+      "fn": 3,
+      "fp": 1,
+      "reference_tokens": 297,
+      "pipeline_tokens": 297,
+      "reference_possible_gaps": 296,
+      "pipeline_possible_gaps": 296,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P6",
+      "source_file": "PXL_20230501_201946887_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 60,
+      "tn": 234,
+      "fn": 1,
+      "fp": 1,
+      "reference_tokens": 297,
+      "pipeline_tokens": 297,
+      "reference_possible_gaps": 296,
+      "pipeline_possible_gaps": 296,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P6",
+      "source_file": "PXL_20230501_203009298_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 55,
+      "tn": 275,
+      "fn": 4,
+      "fp": 1,
+      "reference_tokens": 336,
+      "pipeline_tokens": 336,
+      "reference_possible_gaps": 335,
+      "pipeline_possible_gaps": 335,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P6",
+      "source_file": "PXL_20230501_203009298_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 57,
+      "tn": 275,
+      "fn": 2,
+      "fp": 1,
+      "reference_tokens": 336,
+      "pipeline_tokens": 336,
+      "reference_possible_gaps": 335,
+      "pipeline_possible_gaps": 335,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P7",
+      "source_file": "PXL_20230501_212057286_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 119,
+      "tn": 230,
+      "fn": 1,
+      "fp": 3,
+      "reference_tokens": 354,
+      "pipeline_tokens": 354,
+      "reference_possible_gaps": 353,
+      "pipeline_possible_gaps": 353,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P7",
+      "source_file": "PXL_20230501_212057286_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 119,
+      "tn": 230,
+      "fn": 1,
+      "fp": 3,
+      "reference_tokens": 354,
+      "pipeline_tokens": 354,
+      "reference_possible_gaps": 353,
+      "pipeline_possible_gaps": 353,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P8",
+      "source_file": "PXL_20230504_211646717_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 92,
+      "tn": 773,
+      "fn": 19,
+      "fp": 1,
+      "reference_tokens": 886,
+      "pipeline_tokens": 886,
+      "reference_possible_gaps": 885,
+      "pipeline_possible_gaps": 885,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P8",
+      "source_file": "PXL_20230504_211646717_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 102,
+      "tn": 772,
+      "fn": 9,
+      "fp": 2,
+      "reference_tokens": 886,
+      "pipeline_tokens": 886,
+      "reference_possible_gaps": 885,
+      "pipeline_possible_gaps": 885,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P9",
+      "source_file": "PXL_20230511_204818926_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 84,
+      "tn": 1193,
+      "fn": 10,
+      "fp": 15,
+      "reference_tokens": 1303,
+      "pipeline_tokens": 1303,
+      "reference_possible_gaps": 1302,
+      "pipeline_possible_gaps": 1302,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P9",
+      "source_file": "PXL_20230511_204818926_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 84,
+      "tn": 1192,
+      "fn": 10,
+      "fp": 16,
+      "reference_tokens": 1303,
+      "pipeline_tokens": 1303,
+      "reference_possible_gaps": 1302,
+      "pipeline_possible_gaps": 1302,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P10",
+      "source_file": "PXL_20230516_192321553_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 55,
+      "tn": 224,
+      "fn": 7,
+      "fp": 9,
+      "reference_tokens": 296,
+      "pipeline_tokens": 296,
+      "reference_possible_gaps": 295,
+      "pipeline_possible_gaps": 295,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P10",
+      "source_file": "PXL_20230516_192321553_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 59,
+      "tn": 224,
+      "fn": 3,
+      "fp": 9,
+      "reference_tokens": 296,
+      "pipeline_tokens": 296,
+      "reference_possible_gaps": 295,
+      "pipeline_possible_gaps": 295,
+      "word_edits": 0
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P10",
+      "source_file": "PXL_20230516_193208326_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 36,
+      "tn": 223,
+      "fn": 11,
+      "fp": 8,
+      "reference_tokens": 279,
+      "pipeline_tokens": 279,
+      "reference_possible_gaps": 278,
+      "pipeline_possible_gaps": 278,
+      "word_edits": 0
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P10",
+      "source_file": "PXL_20230516_193208326_transcription.xlsx",
+      "regenerated_predictions_match_saved": true,
+      "tp": 40,
+      "tn": 223,
+      "fn": 7,
+      "fp": 8,
+      "reference_tokens": 279,
+      "pipeline_tokens": 279,
+      "reference_possible_gaps": 278,
+      "pipeline_possible_gaps": 278,
+      "word_edits": 0
+    }
+  ],
+  "pairs": [
+    {
+      "method": "Previous",
+      "patient_id": "P1",
+      "metric": "total_utterances",
+      "pipeline_value": 81,
+      "reference_value": 111,
+      "absolute_percent_error": 27.027027027027028
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P1",
+      "metric": "mlu_words",
+      "pipeline_value": 15.444444444444445,
+      "reference_value": 11.27027027027027,
+      "absolute_percent_error": 37.03703703703704
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P1",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 15.169006738481553,
+      "reference_value": 6.630459261396911,
+      "absolute_percent_error": 128.77761766514092
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P1",
+      "metric": "total_utterances",
+      "pipeline_value": 96,
+      "reference_value": 111,
+      "absolute_percent_error": 13.513513513513514
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P1",
+      "metric": "mlu_words",
+      "pipeline_value": 13.03125,
+      "reference_value": 11.27027027027027,
+      "absolute_percent_error": 15.625
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P1",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 13.722285041888371,
+      "reference_value": 6.630459261396911,
+      "absolute_percent_error": 106.9582890250252
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P2",
+      "metric": "total_utterances",
+      "pipeline_value": 106,
+      "reference_value": 136,
+      "absolute_percent_error": 22.058823529411764
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P2",
+      "metric": "mlu_words",
+      "pipeline_value": 11.209523809523809,
+      "reference_value": 8.718518518518518,
+      "absolute_percent_error": 28.571428571428566
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P2",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 7.508338524087087,
+      "reference_value": 5.724090549600647,
+      "absolute_percent_error": 31.17085516075425
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P2",
+      "metric": "total_utterances",
+      "pipeline_value": 119,
+      "reference_value": 136,
+      "absolute_percent_error": 12.5
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P2",
+      "metric": "mlu_words",
+      "pipeline_value": 9.890756302521009,
+      "reference_value": 8.718518518518518,
+      "absolute_percent_error": 13.445378151260512
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P2",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 6.3216181259648625,
+      "reference_value": 5.724090549600647,
+      "absolute_percent_error": 10.43882117493587
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P3",
+      "metric": "total_utterances",
+      "pipeline_value": 93,
+      "reference_value": 107,
+      "absolute_percent_error": 13.08411214953271
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P3",
+      "metric": "mlu_words",
+      "pipeline_value": 11.532608695652174,
+      "reference_value": 10.00943396226415,
+      "absolute_percent_error": 15.21739130434783
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P3",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 8.062865882438158,
+      "reference_value": 8.045267310331933,
+      "absolute_percent_error": 0.21874440496991984
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P3",
+      "metric": "total_utterances",
+      "pipeline_value": 116,
+      "reference_value": 107,
+      "absolute_percent_error": 8.411214953271028
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P3",
+      "metric": "mlu_words",
+      "pipeline_value": 9.226086956521739,
+      "reference_value": 10.00943396226415,
+      "absolute_percent_error": 7.826086956521741
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P3",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 6.398452081239401,
+      "reference_value": 8.045267310331933,
+      "absolute_percent_error": 20.469366219536937
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P4",
+      "metric": "total_utterances",
+      "pipeline_value": 101,
+      "reference_value": 113,
+      "absolute_percent_error": 10.619469026548673
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P4",
+      "metric": "mlu_words",
+      "pipeline_value": 4.9113924050632916,
+      "reference_value": 4.263736263736264,
+      "absolute_percent_error": 15.189873417721529
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P4",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 5.37502398797761,
+      "reference_value": 3.865414879955248,
+      "absolute_percent_error": 39.054258207849585
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P4",
+      "metric": "total_utterances",
+      "pipeline_value": 109,
+      "reference_value": 113,
+      "absolute_percent_error": 3.5398230088495577
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P4",
+      "metric": "mlu_words",
+      "pipeline_value": 4.459770114942529,
+      "reference_value": 4.263736263736264,
+      "absolute_percent_error": 4.597701149425296
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P4",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 4.370235264718816,
+      "reference_value": 3.865414879955248,
+      "absolute_percent_error": 13.059927600046189
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P5",
+      "metric": "total_utterances",
+      "pipeline_value": 106,
+      "reference_value": 119,
+      "absolute_percent_error": 10.92436974789916
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P5",
+      "metric": "mlu_words",
+      "pipeline_value": 6.283018867924528,
+      "reference_value": 5.5966386554621845,
+      "absolute_percent_error": 12.264150943396228
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P5",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 6.199139801832418,
+      "reference_value": 4.651410426253927,
+      "absolute_percent_error": 33.27440999062676
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P5",
+      "metric": "total_utterances",
+      "pipeline_value": 109,
+      "reference_value": 119,
+      "absolute_percent_error": 8.403361344537815
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P5",
+      "metric": "mlu_words",
+      "pipeline_value": 6.110091743119266,
+      "reference_value": 5.5966386554621845,
+      "absolute_percent_error": 9.174311926605515
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P5",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 5.850334342427679,
+      "reference_value": 4.651410426253927,
+      "absolute_percent_error": 25.775491868158397
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P6",
+      "metric": "total_utterances",
+      "pipeline_value": 117,
+      "reference_value": 122,
+      "absolute_percent_error": 4.098360655737705
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P6",
+      "metric": "mlu_words",
+      "pipeline_value": 5.456140350877193,
+      "reference_value": 5.226890756302521,
+      "absolute_percent_error": 4.385964912280693
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P6",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 4.35112478073137,
+      "reference_value": 3.7872785173390335,
+      "absolute_percent_error": 14.887900660353289
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P6",
+      "metric": "total_utterances",
+      "pipeline_value": 121,
+      "reference_value": 122,
+      "absolute_percent_error": 0.819672131147541
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P6",
+      "metric": "mlu_words",
+      "pipeline_value": 5.271186440677966,
+      "reference_value": 5.226890756302521,
+      "absolute_percent_error": 0.8474576271186457
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P6",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 3.7521993933257027,
+      "reference_value": 3.7872785173390335,
+      "absolute_percent_error": 0.9262356558338788
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P7",
+      "metric": "total_utterances",
+      "pipeline_value": 123,
+      "reference_value": 121,
+      "absolute_percent_error": 1.6528925619834711
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P7",
+      "metric": "mlu_words",
+      "pipeline_value": 2.923076923076923,
+      "reference_value": 2.973913043478261,
+      "absolute_percent_error": 1.7094017094017202
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P7",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 2.1961654467039855,
+      "reference_value": 2.1687939728767205,
+      "absolute_percent_error": 1.2620596594041196
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P7",
+      "metric": "total_utterances",
+      "pipeline_value": 123,
+      "reference_value": 121,
+      "absolute_percent_error": 1.6528925619834711
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P7",
+      "metric": "mlu_words",
+      "pipeline_value": 2.923076923076923,
+      "reference_value": 2.973913043478261,
+      "absolute_percent_error": 1.7094017094017202
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P7",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 2.1961654467039855,
+      "reference_value": 2.1687939728767205,
+      "absolute_percent_error": 1.2620596594041196
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P8",
+      "metric": "total_utterances",
+      "pipeline_value": 94,
+      "reference_value": 112,
+      "absolute_percent_error": 16.071428571428573
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P8",
+      "metric": "mlu_words",
+      "pipeline_value": 9.5,
+      "reference_value": 7.945454545454545,
+      "absolute_percent_error": 19.56521739130435
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P8",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 9.841681545964283,
+      "reference_value": 6.058557229446573,
+      "absolute_percent_error": 62.44266040981648
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P8",
+      "metric": "total_utterances",
+      "pipeline_value": 105,
+      "reference_value": 112,
+      "absolute_percent_error": 6.25
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P8",
+      "metric": "mlu_words",
+      "pipeline_value": 8.485436893203884,
+      "reference_value": 7.945454545454545,
+      "absolute_percent_error": 6.796116504854379
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P8",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 8.423112075838361,
+      "reference_value": 6.058557229446573,
+      "absolute_percent_error": 39.02834877748248
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P9",
+      "metric": "total_utterances",
+      "pipeline_value": 100,
+      "reference_value": 95,
+      "absolute_percent_error": 5.2631578947368425
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P9",
+      "metric": "mlu_words",
+      "pipeline_value": 13.05050505050505,
+      "reference_value": 13.74468085106383,
+      "absolute_percent_error": 5.050505050505054
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P9",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 6.393452675875638,
+      "reference_value": 9.62149208826401,
+      "absolute_percent_error": 33.550299504230026
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P9",
+      "metric": "total_utterances",
+      "pipeline_value": 101,
+      "reference_value": 95,
+      "absolute_percent_error": 6.315789473684211
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P9",
+      "metric": "mlu_words",
+      "pipeline_value": 12.92,
+      "reference_value": 13.74468085106383,
+      "absolute_percent_error": 6.000000000000002
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P9",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 7.138179039503002,
+      "reference_value": 9.62149208826401,
+      "absolute_percent_error": 25.810061744893744
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P10",
+      "metric": "total_utterances",
+      "pipeline_value": 110,
+      "reference_value": 111,
+      "absolute_percent_error": 0.9009009009009009
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P10",
+      "metric": "mlu_words",
+      "pipeline_value": 5.218181818181818,
+      "reference_value": 5.171171171171171,
+      "absolute_percent_error": 0.9090909090909101
+    },
+    {
+      "method": "Previous",
+      "patient_id": "P10",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 5.242105437845332,
+      "reference_value": 4.531916592097372,
+      "absolute_percent_error": 15.67082781237341
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P10",
+      "metric": "total_utterances",
+      "pipeline_value": 118,
+      "reference_value": 111,
+      "absolute_percent_error": 6.306306306306307
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P10",
+      "metric": "mlu_words",
+      "pipeline_value": 4.864406779661017,
+      "reference_value": 5.171171171171171,
+      "absolute_percent_error": 5.932203389830494
+    },
+    {
+      "method": "Revised",
+      "patient_id": "P10",
+      "metric": "mlu_words_sd",
+      "pipeline_value": 4.522852059241441,
+      "reference_value": 4.531916592097372,
+      "absolute_percent_error": 0.20001543876021302
+    }
+  ],
+  "summary": [
+    {
+      "method": "Previous",
+      "metric": "total_utterances",
+      "mean_error_percent": 11.170054206520684,
+      "median_error_percent": 10.771919387223917
+    },
+    {
+      "method": "Previous",
+      "metric": "mlu_words",
+      "mean_error_percent": 13.990006124651392,
+      "median_error_percent": 13.727012180558878
+    },
+    {
+      "method": "Previous",
+      "metric": "mlu_words_sd",
+      "mean_error_percent": 36.030963347551875,
+      "median_error_percent": 32.222632575690504
+    },
+    {
+      "method": "Previous",
+      "metric": "boundary_f1",
+      "pooled_f1_percent": 85.30232558139535,
+      "tp": 917,
+      "tn": 7213,
+      "fn": 216,
+      "fp": 100
+    },
+    {
+      "method": "Revised",
+      "metric": "total_utterances",
+      "mean_error_percent": 6.7712573293293445,
+      "median_error_percent": 6.311047889995258
+    },
+    {
+      "method": "Revised",
+      "metric": "mlu_words",
+      "mean_error_percent": 7.19536574150183,
+      "median_error_percent": 6.398058252427191
+    },
+    {
+      "method": "Revised",
+      "metric": "mlu_words_sd",
+      "mean_error_percent": 24.3928617164077,
+      "median_error_percent": 16.764646909791562
+    },
+    {
+      "method": "Revised",
+      "metric": "boundary_f1",
+      "pooled_f1_percent": 88.64042933810376,
+      "tp": 991,
+      "tn": 7201,
+      "fn": 142,
+      "fp": 112
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "registered_utc": "2026-10-15T22:24:18.150778+00:00",
+  "before_any_pipeline_score": true,
+  "reason": "Source-only parser/annotation audit found valid empty unused tier names and malformed or embedded known non-speech codes in released TextGrids. Preserve raw data and initial rejected-row evidence; handle these with generic documented syntax repair before scoring.",
+  "no_changes": "No numeric published-value comparison, model change, performance-based source choice, or normalizer fitting occurred."
+}

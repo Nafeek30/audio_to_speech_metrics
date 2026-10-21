@@ -1,0 +1,1604 @@
+{
+  "cv": [
+    {
+      "configuration": "lr2_count1",
+      "recipe": {
+        "encoder_lr": 2e-05,
+        "head_lr": 0.0001,
+        "count_weight": 1.0
+      },
+      "objective": 13.160230900272445,
+      "fold_mean": 13.162560457365894,
+      "fold_sd": 2.47768128329587,
+      "summary": [
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "total_utterances",
+          "mean_participant_ape": 13.759282103796815,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "eligible_mlu_utterances",
+          "mean_participant_ape": 16.275273261752236,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "MLUw",
+          "mean_participant_ape": 10.274841296737478,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "length_sd",
+          "mean_participant_ape": 19.471005966971937,
+          "available": 60,
+          "missing": 3,
+          "participants": 20,
+          "target_ape": 10,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "mlu_words",
+          "mean_participant_ape": 7.747059894827487,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "TNW",
+          "mean_participant_ape": 3.21757963627849,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "NDW",
+          "mean_participant_ape": 2.7200949308935565,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "TTR",
+          "mean_participant_ape": 1.6431221999924523,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "MATTR",
+          "mean_participant_ape": 1.568355602073917,
+          "available": 34,
+          "missing": 29,
+          "participants": 13,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "total_utterances",
+          "mean_participant_ape": 9.637598895596225,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "eligible_mlu_utterances",
+          "mean_participant_ape": 9.06692404209699,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "MLUw",
+          "mean_participant_ape": 9.047400908527921,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "length_sd",
+          "mean_participant_ape": 14.825939925548115,
+          "available": 558,
+          "missing": 9,
+          "participants": 211,
+          "target_ape": 10,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "mlu_words",
+          "mean_participant_ape": 2.1438626771255436,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "TNW",
+          "mean_participant_ape": 1.5072181205931368,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "NDW",
+          "mean_participant_ape": 1.6747076523963642,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "TTR",
+          "mean_participant_ape": 1.0006136698808092,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "MATTR",
+          "mean_participant_ape": 0.5866785816800378,
+          "available": 519,
+          "missing": 48,
+          "participants": 209,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        }
+      ]
+    },
+    {
+      "configuration": "lr2_count025",
+      "recipe": {
+        "encoder_lr": 2e-05,
+        "head_lr": 0.0001,
+        "count_weight": 0.25
+      },
+      "objective": 13.356632686719115,
+      "fold_mean": 13.361246810188252,
+      "fold_sd": 2.681897071149256,
+      "summary": [
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "total_utterances",
+          "mean_participant_ape": 15.377184967434692,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "eligible_mlu_utterances",
+          "mean_participant_ape": 17.486212402894274,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "MLUw",
+          "mean_participant_ape": 10.998358041920486,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "length_sd",
+          "mean_participant_ape": 19.420272617455833,
+          "available": 60,
+          "missing": 3,
+          "participants": 20,
+          "target_ape": 10,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "mlu_words",
+          "mean_participant_ape": 7.074028280176675,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "TNW",
+          "mean_participant_ape": 3.21757963627849,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "NDW",
+          "mean_participant_ape": 2.7200949308935565,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "TTR",
+          "mean_participant_ape": 1.6431221999924523,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "MATTR",
+          "mean_participant_ape": 1.568355602073917,
+          "available": 34,
+          "missing": 29,
+          "participants": 13,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "total_utterances",
+          "mean_participant_ape": 9.482241688264244,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "eligible_mlu_utterances",
+          "mean_participant_ape": 8.836197677002128,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "MLUw",
+          "mean_participant_ape": 8.667363072916096,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "length_sd",
+          "mean_participant_ape": 14.731392308125864,
+          "available": 558,
+          "missing": 9,
+          "participants": 211,
+          "target_ape": 10,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "mlu_words",
+          "mean_participant_ape": 2.1222247456006933,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "TNW",
+          "mean_participant_ape": 1.5072181205931368,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "NDW",
+          "mean_participant_ape": 1.6747076523963642,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "TTR",
+          "mean_participant_ape": 1.0006136698808092,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "MATTR",
+          "mean_participant_ape": 0.5866785816800378,
+          "available": 519,
+          "missing": 48,
+          "participants": 209,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        }
+      ]
+    },
+    {
+      "configuration": "lr3_count1",
+      "recipe": {
+        "encoder_lr": 3e-05,
+        "head_lr": 0.00015,
+        "count_weight": 1.0
+      },
+      "objective": 13.519631156877596,
+      "fold_mean": 13.525775467838027,
+      "fold_sd": 3.0987498303892465,
+      "summary": [
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "total_utterances",
+          "mean_participant_ape": 14.18446861461987,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "eligible_mlu_utterances",
+          "mean_participant_ape": 16.12391825098804,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "MLUw",
+          "mean_participant_ape": 12.103210286547979,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "length_sd",
+          "mean_participant_ape": 20.308806655250887,
+          "available": 60,
+          "missing": 3,
+          "participants": 20,
+          "target_ape": 10,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "mlu_words",
+          "mean_participant_ape": 7.787603723792607,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "TNW",
+          "mean_participant_ape": 3.21757963627849,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "NDW",
+          "mean_participant_ape": 2.7200949308935565,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "TTR",
+          "mean_participant_ape": 1.6431221999924523,
+          "available": 63,
+          "missing": 0,
+          "participants": 20,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "nyu_emerson",
+          "metric": "MATTR",
+          "mean_participant_ape": 1.568355602073917,
+          "available": 34,
+          "missing": 29,
+          "participants": 13,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "total_utterances",
+          "mean_participant_ape": 9.53505099934354,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "eligible_mlu_utterances",
+          "mean_participant_ape": 9.080850623376792,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "MLUw",
+          "mean_participant_ape": 9.062077992490657,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "length_sd",
+          "mean_participant_ape": 14.438923132611226,
+          "available": 558,
+          "missing": 9,
+          "participants": 211,
+          "target_ape": 10,
+          "meets_engineering_target": false
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "mlu_words",
+          "mean_participant_ape": 2.137365942559351,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "TNW",
+          "mean_participant_ape": 1.5072181205931368,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "NDW",
+          "mean_participant_ape": 1.6747076523963642,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "TTR",
+          "mean_participant_ape": 1.0006136698808092,
+          "available": 567,
+          "missing": 0,
+          "participants": 211,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        },
+        {
+          "method": "cv_inner_selected",
+          "corpus": "ocsc",
+          "metric": "MATTR",
+          "mean_participant_ape": 0.5866785816800378,
+          "available": 519,
+          "missing": 48,
+          "participants": 209,
+          "target_ape": 5,
+          "meets_engineering_target": true
+        }
+      ]
+    }
+  ],
+  "old_cv": [
+    {
+      "method": "inner_selected_margin",
+      "corpus": "nyu_emerson",
+      "metric": "total_utterances",
+      "mean_participant_ape": 14.499786627388406,
+      "available": 63,
+      "missing": 0,
+      "participants": 20,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "nyu_emerson",
+      "metric": "eligible_mlu_utterances",
+      "mean_participant_ape": 16.401979390121582,
+      "available": 63,
+      "missing": 0,
+      "participants": 20,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "nyu_emerson",
+      "metric": "MLUw",
+      "mean_participant_ape": 10.573933145897577,
+      "available": 63,
+      "missing": 0,
+      "participants": 20,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "nyu_emerson",
+      "metric": "length_sd",
+      "mean_participant_ape": 20.18473021146278,
+      "available": 60,
+      "missing": 3,
+      "participants": 20,
+      "target_ape": 10,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "nyu_emerson",
+      "metric": "mlu_words",
+      "mean_participant_ape": 7.732855102310728,
+      "available": 63,
+      "missing": 0,
+      "participants": 20,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "nyu_emerson",
+      "metric": "TNW",
+      "mean_participant_ape": 3.21757963627849,
+      "available": 63,
+      "missing": 0,
+      "participants": 20,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "nyu_emerson",
+      "metric": "NDW",
+      "mean_participant_ape": 2.7200949308935565,
+      "available": 63,
+      "missing": 0,
+      "participants": 20,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "nyu_emerson",
+      "metric": "TTR",
+      "mean_participant_ape": 1.6431221999924523,
+      "available": 63,
+      "missing": 0,
+      "participants": 20,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "nyu_emerson",
+      "metric": "MATTR",
+      "mean_participant_ape": 1.568355602073917,
+      "available": 34,
+      "missing": 29,
+      "participants": 13,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "ocsc",
+      "metric": "total_utterances",
+      "mean_participant_ape": 9.748181837303237,
+      "available": 567,
+      "missing": 0,
+      "participants": 211,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "ocsc",
+      "metric": "eligible_mlu_utterances",
+      "mean_participant_ape": 9.164978445986838,
+      "available": 567,
+      "missing": 0,
+      "participants": 211,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "ocsc",
+      "metric": "MLUw",
+      "mean_participant_ape": 9.092504791619136,
+      "available": 567,
+      "missing": 0,
+      "participants": 211,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "ocsc",
+      "metric": "length_sd",
+      "mean_participant_ape": 14.885403387663763,
+      "available": 558,
+      "missing": 9,
+      "participants": 211,
+      "target_ape": 10,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "ocsc",
+      "metric": "mlu_words",
+      "mean_participant_ape": 2.146639873725507,
+      "available": 567,
+      "missing": 0,
+      "participants": 211,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "ocsc",
+      "metric": "TNW",
+      "mean_participant_ape": 1.5072181205931368,
+      "available": 567,
+      "missing": 0,
+      "participants": 211,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "ocsc",
+      "metric": "NDW",
+      "mean_participant_ape": 1.6747076523963642,
+      "available": 567,
+      "missing": 0,
+      "participants": 211,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "ocsc",
+      "metric": "TTR",
+      "mean_participant_ape": 1.0006136698808092,
+      "available": 567,
+      "missing": 0,
+      "participants": 211,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "inner_selected_margin",
+      "corpus": "ocsc",
+      "metric": "MATTR",
+      "mean_participant_ape": 0.5866785816800378,
+      "available": 519,
+      "missing": 48,
+      "participants": 209,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    }
+  ],
+  "test": [
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "nyu_emerson",
+      "metric": "total_utterances",
+      "mean_participant_ape": 26.448505656841252,
+      "available": 15,
+      "missing": 0,
+      "participants": 4,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "nyu_emerson",
+      "metric": "eligible_mlu_utterances",
+      "mean_participant_ape": 29.983006962812304,
+      "available": 15,
+      "missing": 0,
+      "participants": 4,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "nyu_emerson",
+      "metric": "MLUw",
+      "mean_participant_ape": 16.56521778796958,
+      "available": 15,
+      "missing": 0,
+      "participants": 4,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "nyu_emerson",
+      "metric": "length_sd",
+      "mean_participant_ape": 13.698089134152585,
+      "available": 15,
+      "missing": 0,
+      "participants": 4,
+      "target_ape": 10,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "nyu_emerson",
+      "metric": "mlu_words",
+      "mean_participant_ape": 8.853849290263645,
+      "available": 15,
+      "missing": 0,
+      "participants": 4,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "nyu_emerson",
+      "metric": "TNW",
+      "mean_participant_ape": 2.3401250211078586,
+      "available": 15,
+      "missing": 0,
+      "participants": 4,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "nyu_emerson",
+      "metric": "NDW",
+      "mean_participant_ape": 1.6912927328494782,
+      "available": 15,
+      "missing": 0,
+      "participants": 4,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "nyu_emerson",
+      "metric": "TTR",
+      "mean_participant_ape": 1.8978187148157,
+      "available": 15,
+      "missing": 0,
+      "participants": 4,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "nyu_emerson",
+      "metric": "MATTR",
+      "mean_participant_ape": 1.9684094464631348,
+      "available": 15,
+      "missing": 0,
+      "participants": 4,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "ocsc",
+      "metric": "total_utterances",
+      "mean_participant_ape": 10.793119256376148,
+      "available": 111,
+      "missing": 0,
+      "participants": 45,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "ocsc",
+      "metric": "eligible_mlu_utterances",
+      "mean_participant_ape": 10.360330185469115,
+      "available": 111,
+      "missing": 0,
+      "participants": 45,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "ocsc",
+      "metric": "MLUw",
+      "mean_participant_ape": 8.701138198999546,
+      "available": 111,
+      "missing": 0,
+      "participants": 45,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "ocsc",
+      "metric": "length_sd",
+      "mean_participant_ape": 14.243118299805898,
+      "available": 109,
+      "missing": 2,
+      "participants": 45,
+      "target_ape": 10,
+      "meets_engineering_target": false
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "ocsc",
+      "metric": "mlu_words",
+      "mean_participant_ape": 2.1861175984704806,
+      "available": 111,
+      "missing": 0,
+      "participants": 45,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "ocsc",
+      "metric": "TNW",
+      "mean_participant_ape": 1.8648245774278769,
+      "available": 111,
+      "missing": 0,
+      "participants": 45,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "ocsc",
+      "metric": "NDW",
+      "mean_participant_ape": 1.7887785230669693,
+      "available": 111,
+      "missing": 0,
+      "participants": 45,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "ocsc",
+      "metric": "TTR",
+      "mean_participant_ape": 1.1373051718003928,
+      "available": 111,
+      "missing": 0,
+      "participants": 45,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "method": "turn_ml/margin=0.25",
+      "corpus": "ocsc",
+      "metric": "MATTR",
+      "mean_participant_ape": 0.4929184157272904,
+      "available": 104,
+      "missing": 7,
+      "participants": 45,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    }
+  ],
+  "lucid": [
+    {
+      "condition": "noBarrier",
+      "metric": "basic_ntokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 16.598744564751833,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "basic_ntypes",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 12.050306709409693,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "basic_ncontent_tokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 21.357602600616417,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "basic_ncontent_types",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 15.307583742734863,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "basic_nfunction_tokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 15.43084632492975,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "basic_nfunction_types",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 8.431605732155578,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "lexical_density_tokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 6.215524512719771,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "lexical_density_types",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 3.2659265840401503,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "simple_ttr_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 7.5568142072399365,
+      "target_ape": 5,
+      "meets_engineering_target": false
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "log_ttr_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.950960062934685,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "maas_ttr_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 4.064188697623446,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "mattr50_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 2.1059713208172703,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "msttr50_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 2.0797597746022447,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "hdd42_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 2.1182779120438613,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "noBarrier",
+      "metric": "mtld_original_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 10.493577684908512,
+      "target_ape": 10,
+      "meets_engineering_target": false
+    },
+    {
+      "condition": "babble",
+      "metric": "basic_ntokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.7648169253403355,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "basic_ntypes",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.7557266169284174,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "basic_ncontent_tokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.641189226324795,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "basic_ncontent_types",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 2.4602981401922195,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "basic_nfunction_tokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.7682569286616076,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "basic_nfunction_types",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.49081303508625,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "lexical_density_tokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.1730970557525748,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "lexical_density_types",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.9938272923107636,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "simple_ttr_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.3059921967544017,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "log_ttr_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.26180106784502444,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "maas_ttr_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.024850590074666,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "mattr50_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.43767078174603763,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "msttr50_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.9515842380626554,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "hdd42_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.3733018331250582,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "babble",
+      "metric": "mtld_original_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 2.494049355197705,
+      "target_ape": 10,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "basic_ntokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.8724894472311788,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "basic_ntypes",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.3283505101660713,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "basic_ncontent_tokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.7477171439936694,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "basic_ncontent_types",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.9371588916345004,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "basic_nfunction_tokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 2.1123768980133613,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "basic_nfunction_types",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.95611700065269,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "lexical_density_tokens",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.1645397999540248,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "lexical_density_types",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.008060995351635,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "simple_ttr_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.5690061867717113,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "log_ttr_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.24861576118279222,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "maas_ttr_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.783383626233375,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "mattr50_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.4389149253498699,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "msttr50_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 1.1200107157215082,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "hdd42_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 0.2457311509112658,
+      "target_ape": 5,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "L2",
+      "metric": "mtld_original_aw",
+      "available": 60,
+      "speakers": 20,
+      "mean_participant_ape": 2.4224293930629366,
+      "target_ape": 10,
+      "meets_engineering_target": true
+    },
+    {
+      "condition": "vocoder",
+      "metric": "basic_ntokens",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "basic_ntypes",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "basic_ncontent_tokens",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "basic_ncontent_types",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "basic_nfunction_tokens",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "basic_nfunction_types",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "lexical_density_tokens",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "lexical_density_types",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "simple_ttr_aw",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "log_ttr_aw",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "maas_ttr_aw",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "mattr50_aw",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "msttr50_aw",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "hdd42_aw",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 5,
+      "meets_engineering_target": null
+    },
+    {
+      "condition": "vocoder",
+      "metric": "mtld_original_aw",
+      "available": 0,
+      "speakers": 0,
+      "mean_participant_ape": null,
+      "target_ape": 10,
+      "meets_engineering_target": null
+    }
+  ],
+  "age": [
+    {
+      "corpus": "nyu_emerson",
+      "participants": 24,
+      "age_available": 24,
+      "median_years": 4.583333333333333,
+      "min_years": 3.0833333333333335,
+      "max_years": 5.75
+    },
+    {
+      "corpus": "ocsc",
+      "participants": 256,
+      "age_available": 256,
+      "median_years": 7.224161533196441,
+      "min_years": 3.4714236824093083,
+      "max_years": 9.838809034907598
+    }
+  ],
+  "sources": {
+    "closed": "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/results/cv_hyperparameter_v4/stopped_search_summary.json",
+    "lucid": "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/results/transcript_validation/lucid_results.json",
+    "test": "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/results/transcript_validation/chat_calibrated_results.json",
+    "cohorts": "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/outputs/validation/cohorts_v1/manifest.json",
+    "model": "/Users/nafeekazi/Desktop/PhD/speech_pipeline_code/speech_pipeline/segmentation.py"
+  }
+}

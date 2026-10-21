@@ -1,0 +1,28 @@
+{
+  "registered_utc": "2026-10-16T01:51:17.626054+00:00",
+  "reason": "Native CHAT count/MLUw errors remain high. Test one global decision-margin calibration instead of forcing per-recording counts or training more encoders.",
+  "contexts": [
+    "paragraph_ml",
+    "turn_ml"
+  ],
+  "margins": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "selection": "Exactly 14 fixed candidates. Use only existing validation participants and native reference metrics; same count/MLUw/population-SD objective, participant then corpus balanced. Lowest objective, tie by listed context then margin. No participant/corpus-specific choice. No further grid expansion from these results.",
+  "inference": "Frozen latest MiniLM weights, features, word windows and logits; split when boundary logit difference > global margin. Observed-turn candidate keeps available speaker transitions. Paragraph candidate withholds them. No reference counts enter prediction.",
+  "speed": "Cache reference-free independent-context logits; spaCy.pipe docs supplied to the unchanged rule-feature functions. Mandatory margin-zero parity against every saved validation prediction in both contexts before selection/final scoring.",
+  "source_hashes": {
+    "speech_pipeline/segmentation.py": "7e3a8df25d5696b311e5aa73c597e473f0c8222cb133df2b4ff34209d5f57179",
+    "speech_pipeline/chat_metrics.py": "77e08afe1cba3024b43e678a5dfbbb6f33b746cd0cdb52ebe6af142a9573caff",
+    "outputs/validation/transcript_validation/chat_protocol.json": "f3d186a946daa43415fbad93ea2c1557cdeb7dff4db974720d5440d66956d00d",
+    "outputs/results/transcript_validation/chat_validation.json": "2a025675c8886ee69acf9d577c3c988c1b331f4a9a83563ce12f257b3b6df5dc"
+  },
+  "weights_sha256": "ad8f44b88979572231ff59e886d0e8464b15a2d6d9037841d2e2b23dd861ebbb",
+  "limitations": "Existing corpora/test already exposed. Reruns are descriptive. No audio/private data. Preserve prior results; report regressions. Engineering targets unchanged; no claim of clinical acceptability."
+}

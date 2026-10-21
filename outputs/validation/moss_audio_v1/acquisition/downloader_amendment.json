@@ -1,0 +1,29 @@
+{
+  "recorded_utc": "2026-10-20T14:56:46.488816+00:00",
+  "source": "speech_pipeline/audio_download.py",
+  "source_sha256": "c2950688a2a383c867cf2f2a8d13e66db7f6eb4952ecdfeeb6c2e00a77841bb2",
+  "repairs": [
+    "Authenticated TalkBank listings include authModals.js; require real child links before classifying that script as a sign-in page.",
+    "Normalize observed media URLs with an explicit HTTPS port, and prefer the actual f=save download links over player URLs returning an eleven-byte default range."
+  ],
+  "evidence": "Authenticated OCSC direct download probe succeeded; ordinary GET returned Content-Length 11 with RIFF prefix. NYU authenticated account remains explicitly not authorized.",
+  "scope": "Acquisition only; existing cohort/source/model/protocol files and user-stop marker unchanged.",
+  "regression_tests": "158 tests passed; see ../regression_tests.log.",
+  "final_source_sha256": "3c23718b83e29b160041ffd9e4d79318e990e3ce500162c41b86aa5140c3985a",
+  "parallel_transfer_policy": "Up to eight independent TalkBank clients/transfers; single coordinator writes reports under the existing acquisition lock. Every transfer retains its original job, participant, source and cohort. LUCID remains serial.",
+  "interrupted_attempts": "attempt1: rejected short player responses; attempt2: serial transfer changed to four workers; attempt3: four workers changed to eight. Matching partials preserved, completed recordings reverified and skipped.",
+  "updated_utc": "2026-10-20T15:54:34.595559+00:00",
+  "final_verification": {
+    "complete": true,
+    "recordings": 301,
+    "bytes": 54991744472,
+    "cohorts": {
+      "train": 211,
+      "test": 45,
+      "validation": 45
+    },
+    "duplicate_audio_across_participants": 0,
+    "unexpected_audio_paths": 0,
+    "remaining_partials": 0
+  }
+}

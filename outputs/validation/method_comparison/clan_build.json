@@ -1,0 +1,7 @@
+{
+  "source_url": "https://dali.talkbank.org/clan/unix-clan.zip",
+  "archive_sha256": "a9dabc78eb74b153e5e459b92592d4a310dda54af11cf4de71745c7bd0697706",
+  "binary_sha256": "e6c1bbef66e496cd6cc0dcb63c8c0a205fada0b527326b89cc59b248fbd1adac",
+  "build": "make mlu CFLAGS=\"-O -DUNX -DAPPLEUNX -fwritable-strings -fshort-wchar -Wcomment -Wno-deprecated-declarations -Wempty-body\"",
+  "command": "mlu +t*PAR -t%mor +f *.cha"
+}

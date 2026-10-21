@@ -1,0 +1,2664 @@
+{
+  "method": "conversation_clause_predictions_v5",
+  "raw_sha256": "30c694c76b0ca96cab98b94ac68215338457d527947683c7bb2426842835bbd6",
+  "source_file": "P6/PXL_20230501_201946887_transcription - CORRECTED.txt",
+  "target_speaker": "S02",
+  "turn_mapping": [
+    {
+      "source_word_gap": 1,
+      "corrected_word_gap": 1,
+      "left_source_anchor": 0,
+      "right_source_anchor": 1,
+      "left_corrected_anchor": 0,
+      "right_corrected_anchor": 1,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 2,
+      "corrected_word_gap": 2,
+      "left_source_anchor": 1,
+      "right_source_anchor": 2,
+      "left_corrected_anchor": 1,
+      "right_corrected_anchor": 2,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 4,
+      "corrected_word_gap": 7,
+      "left_source_anchor": 3,
+      "right_source_anchor": 4,
+      "left_corrected_anchor": 3,
+      "right_corrected_anchor": 7,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 5,
+      "corrected_word_gap": 8,
+      "left_source_anchor": 4,
+      "right_source_anchor": 6,
+      "left_corrected_anchor": 7,
+      "right_corrected_anchor": 10,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 6,
+      "corrected_word_gap": 10,
+      "left_source_anchor": 4,
+      "right_source_anchor": 6,
+      "left_corrected_anchor": 7,
+      "right_corrected_anchor": 10,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 8,
+      "corrected_word_gap": 12,
+      "left_source_anchor": 7,
+      "right_source_anchor": 8,
+      "left_corrected_anchor": 11,
+      "right_corrected_anchor": 12,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 11,
+      "corrected_word_gap": 15,
+      "left_source_anchor": 10,
+      "right_source_anchor": 11,
+      "left_corrected_anchor": 14,
+      "right_corrected_anchor": 15,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 14,
+      "corrected_word_gap": 19,
+      "left_source_anchor": 13,
+      "right_source_anchor": 14,
+      "left_corrected_anchor": 17,
+      "right_corrected_anchor": 19,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 25,
+      "corrected_word_gap": 30,
+      "left_source_anchor": 24,
+      "right_source_anchor": 25,
+      "left_corrected_anchor": 29,
+      "right_corrected_anchor": 30,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 26,
+      "corrected_word_gap": 31,
+      "left_source_anchor": 25,
+      "right_source_anchor": 26,
+      "left_corrected_anchor": 30,
+      "right_corrected_anchor": 31,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 33,
+      "corrected_word_gap": 38,
+      "left_source_anchor": 32,
+      "right_source_anchor": 33,
+      "left_corrected_anchor": 37,
+      "right_corrected_anchor": 38,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 34,
+      "corrected_word_gap": 40,
+      "left_source_anchor": 33,
+      "right_source_anchor": 34,
+      "left_corrected_anchor": 38,
+      "right_corrected_anchor": 40,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 47,
+      "corrected_word_gap": 53,
+      "left_source_anchor": 46,
+      "right_source_anchor": 47,
+      "left_corrected_anchor": 52,
+      "right_corrected_anchor": 53,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 76,
+      "corrected_word_gap": 82,
+      "left_source_anchor": 75,
+      "right_source_anchor": 76,
+      "left_corrected_anchor": 81,
+      "right_corrected_anchor": 82,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 81,
+      "corrected_word_gap": 87,
+      "left_source_anchor": 80,
+      "right_source_anchor": 81,
+      "left_corrected_anchor": 86,
+      "right_corrected_anchor": 87,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 82,
+      "corrected_word_gap": 88,
+      "left_source_anchor": 81,
+      "right_source_anchor": 82,
+      "left_corrected_anchor": 87,
+      "right_corrected_anchor": 88,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 85,
+      "corrected_word_gap": 91,
+      "left_source_anchor": 84,
+      "right_source_anchor": 85,
+      "left_corrected_anchor": 90,
+      "right_corrected_anchor": 91,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 94,
+      "corrected_word_gap": 100,
+      "left_source_anchor": 93,
+      "right_source_anchor": 96,
+      "left_corrected_anchor": 99,
+      "right_corrected_anchor": 101,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 96,
+      "corrected_word_gap": 101,
+      "left_source_anchor": 93,
+      "right_source_anchor": 96,
+      "left_corrected_anchor": 99,
+      "right_corrected_anchor": 101,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 100,
+      "corrected_word_gap": 105,
+      "left_source_anchor": 99,
+      "right_source_anchor": 100,
+      "left_corrected_anchor": 104,
+      "right_corrected_anchor": 105,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 101,
+      "corrected_word_gap": 106,
+      "left_source_anchor": 100,
+      "right_source_anchor": 101,
+      "left_corrected_anchor": 105,
+      "right_corrected_anchor": 106,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 105,
+      "corrected_word_gap": 110,
+      "left_source_anchor": 104,
+      "right_source_anchor": 105,
+      "left_corrected_anchor": 109,
+      "right_corrected_anchor": 110,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 109,
+      "corrected_word_gap": 114,
+      "left_source_anchor": 108,
+      "right_source_anchor": 109,
+      "left_corrected_anchor": 113,
+      "right_corrected_anchor": 114,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 113,
+      "corrected_word_gap": 118,
+      "left_source_anchor": 112,
+      "right_source_anchor": 113,
+      "left_corrected_anchor": 117,
+      "right_corrected_anchor": 118,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 114,
+      "corrected_word_gap": 119,
+      "left_source_anchor": 113,
+      "right_source_anchor": 114,
+      "left_corrected_anchor": 118,
+      "right_corrected_anchor": 119,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 123,
+      "corrected_word_gap": 128,
+      "left_source_anchor": 122,
+      "right_source_anchor": 123,
+      "left_corrected_anchor": 127,
+      "right_corrected_anchor": 128,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 128,
+      "corrected_word_gap": 133,
+      "left_source_anchor": 127,
+      "right_source_anchor": 128,
+      "left_corrected_anchor": 132,
+      "right_corrected_anchor": 133,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 137,
+      "corrected_word_gap": 142,
+      "left_source_anchor": 136,
+      "right_source_anchor": 137,
+      "left_corrected_anchor": 141,
+      "right_corrected_anchor": 142,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 158,
+      "corrected_word_gap": 163,
+      "left_source_anchor": 157,
+      "right_source_anchor": 158,
+      "left_corrected_anchor": 162,
+      "right_corrected_anchor": 163,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 163,
+      "corrected_word_gap": 168,
+      "left_source_anchor": 162,
+      "right_source_anchor": 163,
+      "left_corrected_anchor": 167,
+      "right_corrected_anchor": 168,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 170,
+      "corrected_word_gap": 175,
+      "left_source_anchor": 169,
+      "right_source_anchor": 170,
+      "left_corrected_anchor": 174,
+      "right_corrected_anchor": 175,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 174,
+      "corrected_word_gap": 179,
+      "left_source_anchor": 173,
+      "right_source_anchor": 174,
+      "left_corrected_anchor": 178,
+      "right_corrected_anchor": 179,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 175,
+      "corrected_word_gap": 180,
+      "left_source_anchor": 174,
+      "right_source_anchor": 175,
+      "left_corrected_anchor": 179,
+      "right_corrected_anchor": 180,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 184,
+      "corrected_word_gap": 189,
+      "left_source_anchor": 183,
+      "right_source_anchor": 184,
+      "left_corrected_anchor": 188,
+      "right_corrected_anchor": 189,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 193,
+      "corrected_word_gap": 198,
+      "left_source_anchor": 192,
+      "right_source_anchor": 193,
+      "left_corrected_anchor": 197,
+      "right_corrected_anchor": 198,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 194,
+      "corrected_word_gap": 199,
+      "left_source_anchor": 193,
+      "right_source_anchor": 194,
+      "left_corrected_anchor": 198,
+      "right_corrected_anchor": 199,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 201,
+      "corrected_word_gap": 206,
+      "left_source_anchor": 200,
+      "right_source_anchor": 201,
+      "left_corrected_anchor": 205,
+      "right_corrected_anchor": 206,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 202,
+      "corrected_word_gap": 207,
+      "left_source_anchor": 201,
+      "right_source_anchor": 202,
+      "left_corrected_anchor": 206,
+      "right_corrected_anchor": 207,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 220,
+      "corrected_word_gap": 225,
+      "left_source_anchor": 219,
+      "right_source_anchor": 220,
+      "left_corrected_anchor": 224,
+      "right_corrected_anchor": 225,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 240,
+      "corrected_word_gap": 245,
+      "left_source_anchor": 239,
+      "right_source_anchor": 240,
+      "left_corrected_anchor": 244,
+      "right_corrected_anchor": 245,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 241,
+      "corrected_word_gap": 246,
+      "left_source_anchor": 240,
+      "right_source_anchor": 241,
+      "left_corrected_anchor": 245,
+      "right_corrected_anchor": 246,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 246,
+      "corrected_word_gap": 251,
+      "left_source_anchor": 245,
+      "right_source_anchor": 246,
+      "left_corrected_anchor": 250,
+      "right_corrected_anchor": 251,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 247,
+      "corrected_word_gap": 252,
+      "left_source_anchor": 246,
+      "right_source_anchor": 247,
+      "left_corrected_anchor": 251,
+      "right_corrected_anchor": 252,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 250,
+      "corrected_word_gap": 255,
+      "left_source_anchor": 249,
+      "right_source_anchor": 250,
+      "left_corrected_anchor": 254,
+      "right_corrected_anchor": 255,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 264,
+      "corrected_word_gap": 269,
+      "left_source_anchor": 263,
+      "right_source_anchor": 265,
+      "left_corrected_anchor": 268,
+      "right_corrected_anchor": 269,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 265,
+      "corrected_word_gap": 269,
+      "left_source_anchor": 263,
+      "right_source_anchor": 265,
+      "left_corrected_anchor": 268,
+      "right_corrected_anchor": 269,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 266,
+      "corrected_word_gap": 270,
+      "left_source_anchor": 265,
+      "right_source_anchor": 266,
+      "left_corrected_anchor": 269,
+      "right_corrected_anchor": 270,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 267,
+      "corrected_word_gap": 271,
+      "left_source_anchor": 266,
+      "right_source_anchor": 267,
+      "left_corrected_anchor": 270,
+      "right_corrected_anchor": 271,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 272,
+      "corrected_word_gap": 276,
+      "left_source_anchor": 271,
+      "right_source_anchor": 272,
+      "left_corrected_anchor": 275,
+      "right_corrected_anchor": 276,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 284,
+      "corrected_word_gap": 287,
+      "left_source_anchor": 283,
+      "right_source_anchor": 284,
+      "left_corrected_anchor": 286,
+      "right_corrected_anchor": 287,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 291,
+      "corrected_word_gap": 294,
+      "left_source_anchor": 290,
+      "right_source_anchor": 291,
+      "left_corrected_anchor": 293,
+      "right_corrected_anchor": 294,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 296,
+      "corrected_word_gap": 299,
+      "left_source_anchor": 295,
+      "right_source_anchor": 297,
+      "left_corrected_anchor": 298,
+      "right_corrected_anchor": 302,
+      "review_required": true
+    }
+  ],
+  "utterances": [
+    {
+      "utterance_id": 1,
+      "text": "Name?",
+      "turn_id": 1,
+      "source_rows": [
+        3
+      ],
+      "corrected_char_start": 0,
+      "corrected_char_end": 5,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Name"
+        ],
+        "counted_words": [
+          "Name"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 2,
+      "text": "Oh.",
+      "turn_id": 2,
+      "source_rows": [
+        6
+      ],
+      "corrected_char_start": 6,
+      "corrected_char_end": 9,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Oh"
+        ],
+        "counted_words": [],
+        "excluded_fillers": [
+          "Oh"
+        ],
+        "include_mlu": false,
+        "exclusion_reason": "no_eligible_words",
+        "word_count": null,
+        "review_flags": [
+          "Brown_listed_filler_assignment_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 3,
+      "text": "We walked down the trail.",
+      "turn_id": 3,
+      "source_rows": [
+        13
+      ],
+      "corrected_char_start": 10,
+      "corrected_char_end": 35,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "We",
+          "walked",
+          "down",
+          "the",
+          "trail"
+        ],
+        "counted_words": [
+          "We",
+          "walked",
+          "down",
+          "the",
+          "trail"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 4,
+      "text": "Flowers.",
+      "turn_id": 4,
+      "source_rows": [
+        15
+      ],
+      "corrected_char_start": 36,
+      "corrected_char_end": 44,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Flowers"
+        ],
+        "counted_words": [
+          "Flowers"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 5,
+      "text": "Blue.",
+      "turn_id": 5,
+      "source_rows": [
+        17
+      ],
+      "corrected_char_start": 45,
+      "corrected_char_end": 50,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Blue"
+        ],
+        "counted_words": [
+          "Blue"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 6,
+      "text": "And",
+      "turn_id": 5,
+      "source_rows": [
+        17
+      ],
+      "corrected_char_start": 51,
+      "corrected_char_end": 54,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And"
+        ],
+        "counted_words": [
+          "And"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 7,
+      "text": "the orange.",
+      "turn_id": 6,
+      "source_rows": [
+        19
+      ],
+      "corrected_char_start": 55,
+      "corrected_char_end": 66,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "the",
+          "orange"
+        ],
+        "counted_words": [
+          "the",
+          "orange"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 8,
+      "text": "Lots of trees.",
+      "turn_id": 7,
+      "source_rows": [
+        22
+      ],
+      "corrected_char_start": 67,
+      "corrected_char_end": 81,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Lots",
+          "of",
+          "trees"
+        ],
+        "counted_words": [
+          "Lots",
+          "of",
+          "trees"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 9,
+      "text": "It was nice outside.",
+      "turn_id": 8,
+      "source_rows": [
+        26
+      ],
+      "corrected_char_start": 82,
+      "corrected_char_end": 102,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "It",
+          "was",
+          "nice",
+          "outside"
+        ],
+        "counted_words": [
+          "It",
+          "was",
+          "nice",
+          "outside"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 10,
+      "text": "Well, the park had these, something like a log on it.",
+      "turn_id": 9,
+      "source_rows": [
+        30
+      ],
+      "corrected_char_start": 103,
+      "corrected_char_end": 156,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Well",
+          "the",
+          "park",
+          "had",
+          "these",
+          "something",
+          "like",
+          "a",
+          "log",
+          "on",
+          "it"
+        ],
+        "counted_words": [
+          "Well",
+          "the",
+          "park",
+          "had",
+          "these",
+          "something",
+          "like",
+          "a",
+          "log",
+          "on",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 11,
+      "text": "Mm-mm.",
+      "turn_id": 10,
+      "source_rows": [
+        34
+      ],
+      "corrected_char_start": 157,
+      "corrected_char_end": 163,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Mm-mm"
+        ],
+        "counted_words": [
+          "Mm-mm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "hyphen_or_fragment_word_grouping_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 12,
+      "text": "I did like playing outside a lot.",
+      "turn_id": 11,
+      "source_rows": [
+        36
+      ],
+      "corrected_char_start": 164,
+      "corrected_char_end": 197,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "did",
+          "like",
+          "playing",
+          "outside",
+          "a",
+          "lot"
+        ],
+        "counted_words": [
+          "I",
+          "did",
+          "like",
+          "playing",
+          "outside",
+          "a",
+          "lot"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 13,
+      "text": "Mm-hmm.",
+      "turn_id": 12,
+      "source_rows": [
+        38
+      ],
+      "corrected_char_start": 198,
+      "corrected_char_end": 205,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Mm-hmm"
+        ],
+        "counted_words": [
+          "Mm-hmm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "hyphen_or_fragment_word_grouping_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 14,
+      "text": "Mm.",
+      "turn_id": 12,
+      "source_rows": [
+        38
+      ],
+      "corrected_char_start": 206,
+      "corrected_char_end": 209,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Mm"
+        ],
+        "counted_words": [],
+        "excluded_fillers": [
+          "Mm"
+        ],
+        "include_mlu": false,
+        "exclusion_reason": "no_eligible_words",
+        "word_count": null,
+        "review_flags": [
+          "Brown_listed_filler_assignment_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 15,
+      "text": "I like climbing up in the apple tree and playing with tire swing.",
+      "turn_id": 13,
+      "source_rows": [
+        42
+      ],
+      "corrected_char_start": 210,
+      "corrected_char_end": 275,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "climbing",
+          "up",
+          "in",
+          "the",
+          "apple",
+          "tree",
+          "and",
+          "playing",
+          "with",
+          "tire",
+          "swing"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "climbing",
+          "up",
+          "in",
+          "the",
+          "apple",
+          "tree",
+          "and",
+          "playing",
+          "with",
+          "tire",
+          "swing"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 13,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 16,
+      "text": "Well.",
+      "turn_id": 14,
+      "source_rows": [
+        45,
+        46,
+        47
+      ],
+      "corrected_char_start": 276,
+      "corrected_char_end": 281,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Well"
+        ],
+        "counted_words": [
+          "Well"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 17,
+      "text": "We did, well, there was the owner.",
+      "turn_id": 14,
+      "source_rows": [
+        45,
+        46,
+        47
+      ],
+      "corrected_char_start": 282,
+      "corrected_char_end": 316,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "We",
+          "did",
+          "well",
+          "there",
+          "was",
+          "the",
+          "owner"
+        ],
+        "counted_words": [
+          "We",
+          "did",
+          "well",
+          "there",
+          "was",
+          "the",
+          "owner"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 18,
+      "text": "He was in charge of the house.",
+      "turn_id": 14,
+      "source_rows": [
+        45,
+        46,
+        47
+      ],
+      "corrected_char_start": 317,
+      "corrected_char_end": 347,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "He",
+          "was",
+          "in",
+          "charge",
+          "of",
+          "the",
+          "house"
+        ],
+        "counted_words": [
+          "He",
+          "was",
+          "in",
+          "charge",
+          "of",
+          "the",
+          "house"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 19,
+      "text": "So, we never take good care of the apple tree, 'cause it wasn't ours.",
+      "turn_id": 14,
+      "source_rows": [
+        45,
+        46,
+        47
+      ],
+      "corrected_char_start": 348,
+      "corrected_char_end": 417,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "So",
+          "we",
+          "never",
+          "take",
+          "good",
+          "care",
+          "of",
+          "the",
+          "apple",
+          "tree",
+          "cause",
+          "it",
+          "wasn't",
+          "ours"
+        ],
+        "counted_words": [
+          "So",
+          "we",
+          "never",
+          "take",
+          "good",
+          "care",
+          "of",
+          "the",
+          "apple",
+          "tree",
+          "cause",
+          "it",
+          "wasn't",
+          "ours"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 14,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 20,
+      "text": "I don't like eating apples.",
+      "turn_id": 15,
+      "source_rows": [
+        49
+      ],
+      "corrected_char_start": 418,
+      "corrected_char_end": 445,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "like",
+          "eating",
+          "apples"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "like",
+          "eating",
+          "apples"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 21,
+      "text": "Mm-mm.",
+      "turn_id": 16,
+      "source_rows": [
+        51
+      ],
+      "corrected_char_start": 446,
+      "corrected_char_end": 452,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Mm-mm"
+        ],
+        "counted_words": [
+          "Mm-mm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "hyphen_or_fragment_word_grouping_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 22,
+      "text": "Benzies and strawberries.",
+      "turn_id": 17,
+      "source_rows": [
+        53
+      ],
+      "corrected_char_start": 453,
+      "corrected_char_end": 478,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Benzies",
+          "and",
+          "strawberries"
+        ],
+        "counted_words": [
+          "Benzies",
+          "and",
+          "strawberries"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 23,
+      "text": "I like eating all the different types of food.",
+      "turn_id": 18,
+      "source_rows": [
+        56
+      ],
+      "corrected_char_start": 479,
+      "corrected_char_end": 525,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "eating",
+          "all",
+          "the",
+          "different",
+          "types",
+          "of",
+          "food"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "eating",
+          "all",
+          "the",
+          "different",
+          "types",
+          "of",
+          "food"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 24,
+      "text": "Mmhmm.",
+      "turn_id": 19,
+      "source_rows": [
+        58
+      ],
+      "corrected_char_start": 526,
+      "corrected_char_end": 532,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Mmhmm"
+        ],
+        "counted_words": [],
+        "excluded_fillers": [
+          "Mmhmm"
+        ],
+        "include_mlu": false,
+        "exclusion_reason": "no_eligible_words",
+        "word_count": null,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 25,
+      "text": "Hmm.",
+      "turn_id": 20,
+      "source_rows": [
+        61,
+        62
+      ],
+      "corrected_char_start": 533,
+      "corrected_char_end": 537,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Hmm"
+        ],
+        "counted_words": [],
+        "excluded_fillers": [
+          "Hmm"
+        ],
+        "include_mlu": false,
+        "exclusion_reason": "no_eligible_words",
+        "word_count": null,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 26,
+      "text": "I don't know.",
+      "turn_id": 20,
+      "source_rows": [
+        61,
+        62
+      ],
+      "corrected_char_start": 538,
+      "corrected_char_end": 551,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "know"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "know"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 27,
+      "text": "Sometimes.",
+      "turn_id": 21,
+      "source_rows": [
+        65
+      ],
+      "corrected_char_start": 552,
+      "corrected_char_end": 562,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Sometimes"
+        ],
+        "counted_words": [
+          "Sometimes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 28,
+      "text": "What kind of toppings?",
+      "turn_id": 22,
+      "source_rows": [
+        67
+      ],
+      "corrected_char_start": 563,
+      "corrected_char_end": 585,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "What",
+          "kind",
+          "of",
+          "toppings"
+        ],
+        "counted_words": [
+          "What",
+          "kind",
+          "of",
+          "toppings"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 29,
+      "text": "I also like both.",
+      "turn_id": 23,
+      "source_rows": [
+        69
+      ],
+      "corrected_char_start": 586,
+      "corrected_char_end": 603,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "also",
+          "like",
+          "both"
+        ],
+        "counted_words": [
+          "I",
+          "also",
+          "like",
+          "both"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 30,
+      "text": "I don't know that.",
+      "turn_id": 24,
+      "source_rows": [
+        71
+      ],
+      "corrected_char_start": 604,
+      "corrected_char_end": 622,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "don't",
+          "know",
+          "that"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "know",
+          "that"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 31,
+      "text": "Sometimes.",
+      "turn_id": 25,
+      "source_rows": [
+        74
+      ],
+      "corrected_char_start": 623,
+      "corrected_char_end": 633,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Sometimes"
+        ],
+        "counted_words": [
+          "Sometimes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 32,
+      "text": "Hmm, I don't know what my favorite games is.",
+      "turn_id": 26,
+      "source_rows": [
+        76
+      ],
+      "corrected_char_start": 634,
+      "corrected_char_end": 678,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Hmm",
+          "I",
+          "don't",
+          "know",
+          "what",
+          "my",
+          "favorite",
+          "games",
+          "is"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "know",
+          "what",
+          "my",
+          "favorite",
+          "games",
+          "is"
+        ],
+        "excluded_fillers": [
+          "Hmm"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 33,
+      "text": "Yeah, Charlie likes playing tag.",
+      "turn_id": 27,
+      "source_rows": [
+        78
+      ],
+      "corrected_char_start": 679,
+      "corrected_char_end": 711,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "Charlie",
+          "likes",
+          "playing",
+          "tag"
+        ],
+        "counted_words": [
+          "Yeah",
+          "Charlie",
+          "likes",
+          "playing",
+          "tag"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 34,
+      "text": "Yeah, he wears me out because he's so fast.",
+      "turn_id": 28,
+      "source_rows": [
+        80
+      ],
+      "corrected_char_start": 712,
+      "corrected_char_end": 755,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "he",
+          "wears",
+          "me",
+          "out",
+          "because",
+          "he's",
+          "so",
+          "fast"
+        ],
+        "counted_words": [
+          "Yeah",
+          "he",
+          "wears",
+          "me",
+          "out",
+          "because",
+          "he's",
+          "so",
+          "fast"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 35,
+      "text": "Hmm, he's fast.",
+      "turn_id": 29,
+      "source_rows": [
+        82,
+        83
+      ],
+      "corrected_char_start": 756,
+      "corrected_char_end": 771,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Hmm",
+          "he's",
+          "fast"
+        ],
+        "counted_words": [
+          "he's",
+          "fast"
+        ],
+        "excluded_fillers": [
+          "Hmm"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 36,
+      "text": "But he always want me to get him,",
+      "turn_id": 29,
+      "source_rows": [
+        82,
+        83
+      ],
+      "corrected_char_start": 772,
+      "corrected_char_end": 805,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "he",
+          "always",
+          "want",
+          "me",
+          "to",
+          "get",
+          "him"
+        ],
+        "counted_words": [
+          "But",
+          "he",
+          "always",
+          "want",
+          "me",
+          "to",
+          "get",
+          "him"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 37,
+      "text": "but he's so fast, I can't get even get him.",
+      "turn_id": 29,
+      "source_rows": [
+        82,
+        83
+      ],
+      "corrected_char_start": 806,
+      "corrected_char_end": 849,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "he's",
+          "so",
+          "fast",
+          "I",
+          "can't",
+          "get",
+          "even",
+          "get",
+          "him"
+        ],
+        "counted_words": [
+          "but",
+          "he's",
+          "so",
+          "fast",
+          "I",
+          "can't",
+          "get",
+          "even",
+          "get",
+          "him"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 10,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 38,
+      "text": "Hmm, not usually I run.",
+      "turn_id": 30,
+      "source_rows": [
+        85
+      ],
+      "corrected_char_start": 850,
+      "corrected_char_end": 873,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Hmm",
+          "not",
+          "usually",
+          "I",
+          "run"
+        ],
+        "counted_words": [
+          "not",
+          "usually",
+          "I",
+          "run"
+        ],
+        "excluded_fillers": [
+          "Hmm"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 39,
+      "text": "Hmm, I don't know what sports means.",
+      "turn_id": 31,
+      "source_rows": [
+        87
+      ],
+      "corrected_char_start": 874,
+      "corrected_char_end": 910,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Hmm",
+          "I",
+          "don't",
+          "know",
+          "what",
+          "sports",
+          "means"
+        ],
+        "counted_words": [
+          "I",
+          "don't",
+          "know",
+          "what",
+          "sports",
+          "means"
+        ],
+        "excluded_fillers": [
+          "Hmm"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 40,
+      "text": "I do like swimming.",
+      "turn_id": 32,
+      "source_rows": [
+        89
+      ],
+      "corrected_char_start": 911,
+      "corrected_char_end": 930,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "do",
+          "like",
+          "swimming"
+        ],
+        "counted_words": [
+          "I",
+          "do",
+          "like",
+          "swimming"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 41,
+      "text": "Yeah.",
+      "turn_id": 33,
+      "source_rows": [
+        91
+      ],
+      "corrected_char_start": 931,
+      "corrected_char_end": 936,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 42,
+      "text": "Well, I go to do homeschool with my mom.",
+      "turn_id": 34,
+      "source_rows": [
+        93
+      ],
+      "corrected_char_start": 937,
+      "corrected_char_end": 977,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Well",
+          "I",
+          "go",
+          "to",
+          "do",
+          "homeschool",
+          "with",
+          "my",
+          "mom"
+        ],
+        "counted_words": [
+          "Well",
+          "I",
+          "go",
+          "to",
+          "do",
+          "homeschool",
+          "with",
+          "my",
+          "mom"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 43,
+      "text": "Well, my mom has to do her school first.",
+      "turn_id": 35,
+      "source_rows": [
+        96
+      ],
+      "corrected_char_start": 978,
+      "corrected_char_end": 1018,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Well",
+          "my",
+          "mom",
+          "has",
+          "to",
+          "do",
+          "her",
+          "school",
+          "first"
+        ],
+        "counted_words": [
+          "Well",
+          "my",
+          "mom",
+          "has",
+          "to",
+          "do",
+          "her",
+          "school",
+          "first"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 44,
+      "text": "Mm-hmm.",
+      "turn_id": 36,
+      "source_rows": [
+        98
+      ],
+      "corrected_char_start": 1019,
+      "corrected_char_end": 1026,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Mm-hmm"
+        ],
+        "counted_words": [
+          "Mm-hmm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "hyphen_or_fragment_word_grouping_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 45,
+      "text": "Hmm, I usually use the indoor pool.",
+      "turn_id": 37,
+      "source_rows": [
+        100
+      ],
+      "corrected_char_start": 1027,
+      "corrected_char_end": 1062,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Hmm",
+          "I",
+          "usually",
+          "use",
+          "the",
+          "indoor",
+          "pool"
+        ],
+        "counted_words": [
+          "I",
+          "usually",
+          "use",
+          "the",
+          "indoor",
+          "pool"
+        ],
+        "excluded_fillers": [
+          "Hmm"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 46,
+      "text": "Mm-hmm.",
+      "turn_id": 38,
+      "source_rows": [
+        102
+      ],
+      "corrected_char_start": 1063,
+      "corrected_char_end": 1070,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Mm-hmm"
+        ],
+        "counted_words": [
+          "Mm-hmm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "hyphen_or_fragment_word_grouping_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 47,
+      "text": "Yes, I can't remember what place it was in.",
+      "turn_id": 39,
+      "source_rows": [
+        104
+      ],
+      "corrected_char_start": 1071,
+      "corrected_char_end": 1114,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yes",
+          "I",
+          "can't",
+          "remember",
+          "what",
+          "place",
+          "it",
+          "was",
+          "in"
+        ],
+        "counted_words": [
+          "Yes",
+          "I",
+          "can't",
+          "remember",
+          "what",
+          "place",
+          "it",
+          "was",
+          "in"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 48,
+      "text": "Mom, what place was the indoor pool was at?",
+      "turn_id": 39,
+      "source_rows": [
+        104
+      ],
+      "corrected_char_start": 1115,
+      "corrected_char_end": 1158,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Mom",
+          "what",
+          "place",
+          "was",
+          "the",
+          "indoor",
+          "pool",
+          "was",
+          "at"
+        ],
+        "counted_words": [
+          "Mom",
+          "what",
+          "place",
+          "was",
+          "the",
+          "indoor",
+          "pool",
+          "was",
+          "at"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 49,
+      "text": "I like taking swim lessons with my teacher,",
+      "turn_id": 40,
+      "source_rows": [
+        106
+      ],
+      "corrected_char_start": 1159,
+      "corrected_char_end": 1202,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "taking",
+          "swim",
+          "lessons",
+          "with",
+          "my",
+          "teacher"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "taking",
+          "swim",
+          "lessons",
+          "with",
+          "my",
+          "teacher"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 50,
+      "text": "but my teacher said I could come there when it's open time.",
+      "turn_id": 40,
+      "source_rows": [
+        106
+      ],
+      "corrected_char_start": 1203,
+      "corrected_char_end": 1262,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "my",
+          "teacher",
+          "said",
+          "I",
+          "could",
+          "come",
+          "there",
+          "when",
+          "it's",
+          "open",
+          "time"
+        ],
+        "counted_words": [
+          "but",
+          "my",
+          "teacher",
+          "said",
+          "I",
+          "could",
+          "come",
+          "there",
+          "when",
+          "it's",
+          "open",
+          "time"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 51,
+      "text": "Mm-hmm.",
+      "turn_id": 41,
+      "source_rows": [
+        108
+      ],
+      "corrected_char_start": 1263,
+      "corrected_char_end": 1270,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Mm-hmm"
+        ],
+        "counted_words": [
+          "Mm-hmm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "hyphen_or_fragment_word_grouping_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 52,
+      "text": "Lots of kinds of things.",
+      "turn_id": 42,
+      "source_rows": [
+        110
+      ],
+      "corrected_char_start": 1271,
+      "corrected_char_end": 1295,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Lots",
+          "of",
+          "kinds",
+          "of",
+          "things"
+        ],
+        "counted_words": [
+          "Lots",
+          "of",
+          "kinds",
+          "of",
+          "things"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 53,
+      "text": "Yeah.",
+      "turn_id": 43,
+      "source_rows": [
+        112
+      ],
+      "corrected_char_start": 1296,
+      "corrected_char_end": 1301,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah"
+        ],
+        "counted_words": [
+          "Yeah"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 54,
+      "text": "Hmm, I'm starting.",
+      "turn_id": 44,
+      "source_rows": [
+        114
+      ],
+      "corrected_char_start": 1302,
+      "corrected_char_end": 1320,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Hmm",
+          "I'm",
+          "starting"
+        ],
+        "counted_words": [
+          "I'm",
+          "starting"
+        ],
+        "excluded_fillers": [
+          "Hmm"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 55,
+      "text": "Hmm.",
+      "turn_id": 45,
+      "source_rows": [
+        118,
+        119
+      ],
+      "corrected_char_start": 1321,
+      "corrected_char_end": 1325,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Hmm"
+        ],
+        "counted_words": [],
+        "excluded_fillers": [
+          "Hmm"
+        ],
+        "include_mlu": false,
+        "exclusion_reason": "no_eligible_words",
+        "word_count": null,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 56,
+      "text": "Sometimes I play ball with my mom and my brother and my teacher.",
+      "turn_id": 45,
+      "source_rows": [
+        118,
+        119
+      ],
+      "corrected_char_start": 1326,
+      "corrected_char_end": 1390,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Sometimes",
+          "I",
+          "play",
+          "ball",
+          "with",
+          "my",
+          "mom",
+          "and",
+          "my",
+          "brother",
+          "and",
+          "my",
+          "teacher"
+        ],
+        "counted_words": [
+          "Sometimes",
+          "I",
+          "play",
+          "ball",
+          "with",
+          "my",
+          "mom",
+          "and",
+          "my",
+          "brother",
+          "and",
+          "my",
+          "teacher"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 13,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 57,
+      "text": "Mm-hmm.",
+      "turn_id": 47,
+      "source_rows": [
+        123
+      ],
+      "corrected_char_start": 1391,
+      "corrected_char_end": 1398,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Mm-hmm"
+        ],
+        "counted_words": [
+          "Mm-hmm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "hyphen_or_fragment_word_grouping_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 58,
+      "text": "Mm-hmm.",
+      "turn_id": 48,
+      "source_rows": [
+        125
+      ],
+      "corrected_char_start": 1399,
+      "corrected_char_end": 1406,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Mm-hmm"
+        ],
+        "counted_words": [
+          "Mm-hmm"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [
+          "hyphen_or_fragment_word_grouping_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 59,
+      "text": "I like diving for things.",
+      "turn_id": 49,
+      "source_rows": [
+        127
+      ],
+      "corrected_char_start": 1407,
+      "corrected_char_end": 1432,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "diving",
+          "for",
+          "things"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "diving",
+          "for",
+          "things"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 60,
+      "text": "But Charlie, my brother, always want me to not get them.",
+      "turn_id": 50,
+      "source_rows": [
+        129
+      ],
+      "corrected_char_start": 1433,
+      "corrected_char_end": 1489,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "Charlie",
+          "my",
+          "brother",
+          "always",
+          "want",
+          "me",
+          "to",
+          "not",
+          "get",
+          "them"
+        ],
+        "counted_words": [
+          "But",
+          "Charlie",
+          "my",
+          "brother",
+          "always",
+          "want",
+          "me",
+          "to",
+          "not",
+          "get",
+          "them"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 61,
+      "text": "Yeah, he wants to have them all.",
+      "turn_id": 51,
+      "source_rows": [
+        131
+      ],
+      "corrected_char_start": 1490,
+      "corrected_char_end": 1522,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "he",
+          "wants",
+          "to",
+          "have",
+          "them",
+          "all"
+        ],
+        "counted_words": [
+          "Yeah",
+          "he",
+          "wants",
+          "to",
+          "have",
+          "them",
+          "all"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 62,
+      "text": "Usually someplace not too deep.",
+      "turn_id": 52,
+      "source_rows": [
+        133
+      ],
+      "corrected_char_start": 1523,
+      "corrected_char_end": 1554,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Usually",
+          "someplace",
+          "not",
+          "too",
+          "deep"
+        ],
+        "counted_words": [
+          "Usually",
+          "someplace",
+          "not",
+          "too",
+          "deep"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 63,
+      "text": "Mm, five feet?",
+      "turn_id": 53,
+      "source_rows": [
+        136
+      ],
+      "corrected_char_start": 1555,
+      "corrected_char_end": 1569,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Mm",
+          "five",
+          "feet"
+        ],
+        "counted_words": [
+          "five",
+          "feet"
+        ],
+        "excluded_fillers": [
+          "Mm"
+        ],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 2,
+        "review_flags": [
+          "Brown_listed_filler_assignment_requires_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    }
+  ]
+}

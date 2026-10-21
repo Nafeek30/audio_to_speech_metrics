@@ -1,0 +1,3315 @@
+{
+  "patient_id": "P3",
+  "uncorrected_source": "PXL_20230420_221051779_2_transcription.xlsx",
+  "corrected_source": "P3_T4_corrected.txt",
+  "target_speaker": "S03",
+  "chat_filename": "P3_PXL_20230420_221051779_2_transcription.cha",
+  "method": "conversation_clause_predictions_v5",
+  "raw_sha256": "9d7ab33034e4e1f23485c3dc3bd96a0c82bf261cd3330a75a3551e4aaa9e3597",
+  "corrected_sha256": "7fc7b0803167f3f1e82dae1d0cac477ececdd7a5455e63962306397aff199c7f",
+  "normalized_corrected_text": "Probably, I think Coke and a Fanta. I've seen it always, so if you couldn't pick up enough, you're sure, sometimes going back to that. I think I've tried the Dr. Pepper strawberry before. That's an, that, that was really good. Like my, my, my, mom will bring in mom and get some money and he keeps bringing it. Because everybody likes it. whenever we were in Illinois, we'd get something to eat on our way, I had seen that on there. And then, ooh, I haven't had one. Yeah, I like those. Probably. We don't really go to it often, but I would go to a town like Applebee's and probably Pizza Place, because they have some restaurants, because they've been there, because they were younger. And it was pretty good. There's strawberry banana shake is really good. Plus I like Pizza Place Service is only just this one girl, but that was the only waitress I've heard of, she worked hard. Most probably it's not, because there was a lot of people, you know, she was coming and going. Ooh, because there was, besides anybody else that was working there, it was the people on vacation, she was the only waitress out of any training there, she was cooking to get everyone. And I would be there. I also like Culver's, with their chicken's really good. I like Andy's, there ice cream's really good. And these are good. Only been there two times, but the other two times I've been to was at C and H. I've only been there probably two times, but it's really pretty good stuff. I just like the turkey. At Subway I would get, I mean, the turkey and the other sandwiches. Have you guys had that one ice cream place in Columbia ish called Orange Leaf? At Culver's, there's strawberry, they're chocolate, they're strawberry ice cream, so. They got like little strawberry pieces in there, like chocolate pieces, but at Orange Leaf, their pineapple ice cream. Yes, and, Orange Leaf, I haven't been there for a while, so I don't know what other flavors they have, but they probably have to be, like, every meat. Probably one of my favorite desserts. I would say. I couldn't, okay, I think, I'm, it was my sister's cake. It was this- it was this wild berry milkshake. So that for her birthday, they, he got a. Something to go with chocolate, I can't remember what, but it was really, they really, they really much. Lemon, it's a lemon, or I think it's. Yes, lemon bars, I, I never, they're very moist too today. They went to this, next to, my mom's cousin's mother's house, just across from me, there's like this house that was doing like a garage-ish house sale. And we'd go inside, and, down there, if you go down the tables, there'd be a spot, in this specific kitchen where. They were, they would serve food. And then they had lemon bars, and she got, I, and I think you got those, and everything. They actually had a good amount. my, my family, I saw them, and they were, they were, they'd say, we would have those for sure. Yes, we did cheesecake for my sister's birthday because they got it And it was the assorted, so they did different flavors, like strawberry, strawberry short cake. Probably strawberry, I like that. I've been called a French fry freak, and potato freak, all those kinds of stuff. But that's, that's eating entire jazz pizza by myself Most of it's small, thin crust, so it was pretty easy. I still would. I think I remember, probably once or twice as a kid. It was okay, but I didn't care for it too much, but it was still pretty good.",
+  "utterances": [
+    {
+      "utterance_id": 1,
+      "text": "Probably, I think Coke and a Fanta.",
+      "turn_id": 1,
+      "source_rows": [
+        8,
+        9
+      ],
+      "corrected_char_start": 0,
+      "corrected_char_end": 35,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Probably",
+          "I",
+          "think",
+          "Coke",
+          "and",
+          "a",
+          "Fanta"
+        ],
+        "counted_words": [
+          "Probably",
+          "I",
+          "think",
+          "Coke",
+          "and",
+          "a",
+          "Fanta"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 2,
+      "text": "I've seen it always, so if you couldn't pick up enough, you're sure, sometimes going back to that.",
+      "turn_id": 2,
+      "source_rows": [
+        13
+      ],
+      "corrected_char_start": 36,
+      "corrected_char_end": 134,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I've",
+          "seen",
+          "it",
+          "always",
+          "so",
+          "if",
+          "you",
+          "couldn't",
+          "pick",
+          "up",
+          "enough",
+          "you're",
+          "sure",
+          "sometimes",
+          "going",
+          "back",
+          "to",
+          "that"
+        ],
+        "counted_words": [
+          "I've",
+          "seen",
+          "it",
+          "always",
+          "so",
+          "if",
+          "you",
+          "couldn't",
+          "pick",
+          "up",
+          "enough",
+          "you're",
+          "sure",
+          "sometimes",
+          "going",
+          "back",
+          "to",
+          "that"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 3,
+      "text": "I think I've tried the Dr. Pepper strawberry before.",
+      "turn_id": 3,
+      "source_rows": [
+        18
+      ],
+      "corrected_char_start": 135,
+      "corrected_char_end": 187,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "think",
+          "I've",
+          "tried",
+          "the",
+          "Dr",
+          "Pepper",
+          "strawberry",
+          "before"
+        ],
+        "counted_words": [
+          "I",
+          "think",
+          "I've",
+          "tried",
+          "the",
+          "Dr",
+          "Pepper",
+          "strawberry",
+          "before"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 4,
+      "text": "That's an, that, that was really good.",
+      "turn_id": 4,
+      "source_rows": [
+        20
+      ],
+      "corrected_char_start": 188,
+      "corrected_char_end": 226,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "That's",
+          "an",
+          "that",
+          "that",
+          "was",
+          "really",
+          "good"
+        ],
+        "counted_words": [
+          "That's",
+          "an",
+          "that",
+          "that",
+          "was",
+          "really",
+          "good"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 5,
+      "text": "Like my, my, my, mom will bring in mom",
+      "turn_id": 5,
+      "source_rows": [
+        22,
+        23
+      ],
+      "corrected_char_start": 227,
+      "corrected_char_end": 265,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Like",
+          "my",
+          "my",
+          "my",
+          "mom",
+          "will",
+          "bring",
+          "in",
+          "mom"
+        ],
+        "counted_words": [
+          "Like",
+          "my",
+          "my",
+          "my",
+          "mom",
+          "will",
+          "bring",
+          "in",
+          "mom"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 6,
+      "text": "and get some money and he keeps bringing it. Because everybody likes",
+      "turn_id": 5,
+      "source_rows": [
+        22,
+        23
+      ],
+      "corrected_char_start": 266,
+      "corrected_char_end": 334,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "get",
+          "some",
+          "money",
+          "and",
+          "he",
+          "keeps",
+          "bringing",
+          "it",
+          "Because",
+          "everybody",
+          "likes"
+        ],
+        "counted_words": [
+          "and",
+          "get",
+          "some",
+          "money",
+          "and",
+          "he",
+          "keeps",
+          "bringing",
+          "it",
+          "Because",
+          "everybody",
+          "likes"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 7,
+      "text": "it.",
+      "turn_id": 6,
+      "source_rows": [
+        28,
+        29
+      ],
+      "corrected_char_start": 335,
+      "corrected_char_end": 338,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "it"
+        ],
+        "counted_words": [
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 8,
+      "text": "whenever we were in Illinois, we'd get something to eat on our way, I had seen that on there.",
+      "turn_id": 6,
+      "source_rows": [
+        28,
+        29
+      ],
+      "corrected_char_start": 339,
+      "corrected_char_end": 432,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "whenever",
+          "we",
+          "were",
+          "in",
+          "Illinois",
+          "we'd",
+          "get",
+          "something",
+          "to",
+          "eat",
+          "on",
+          "our",
+          "way",
+          "I",
+          "had",
+          "seen",
+          "that",
+          "on",
+          "there"
+        ],
+        "counted_words": [
+          "whenever",
+          "we",
+          "were",
+          "in",
+          "Illinois",
+          "we'd",
+          "get",
+          "something",
+          "to",
+          "eat",
+          "on",
+          "our",
+          "way",
+          "I",
+          "had",
+          "seen",
+          "that",
+          "on",
+          "there"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 19,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 9,
+      "text": "And then, ooh, I haven't had one.",
+      "turn_id": 6,
+      "source_rows": [
+        28,
+        29
+      ],
+      "corrected_char_start": 433,
+      "corrected_char_end": 466,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "then",
+          "ooh",
+          "I",
+          "haven't",
+          "had",
+          "one"
+        ],
+        "counted_words": [
+          "And",
+          "then",
+          "ooh",
+          "I",
+          "haven't",
+          "had",
+          "one"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 10,
+      "text": "Yeah, I like those.",
+      "turn_id": 7,
+      "source_rows": [
+        36
+      ],
+      "corrected_char_start": 467,
+      "corrected_char_end": 486,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yeah",
+          "I",
+          "like",
+          "those"
+        ],
+        "counted_words": [
+          "Yeah",
+          "I",
+          "like",
+          "those"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 11,
+      "text": "Probably.",
+      "turn_id": 8,
+      "source_rows": [
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 487,
+      "corrected_char_end": 496,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Probably"
+        ],
+        "counted_words": [
+          "Probably"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 12,
+      "text": "We don't really go to it often,",
+      "turn_id": 8,
+      "source_rows": [
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 497,
+      "corrected_char_end": 528,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "We",
+          "don't",
+          "really",
+          "go",
+          "to",
+          "it",
+          "often"
+        ],
+        "counted_words": [
+          "We",
+          "don't",
+          "really",
+          "go",
+          "to",
+          "it",
+          "often"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 13,
+      "text": "but I would go to a town like Applebee's and probably Pizza Place, because they have some restaurants, because they've been there, because they were younger.",
+      "turn_id": 8,
+      "source_rows": [
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 529,
+      "corrected_char_end": 686,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "I",
+          "would",
+          "go",
+          "to",
+          "a",
+          "town",
+          "like",
+          "Applebee's",
+          "and",
+          "probably",
+          "Pizza",
+          "Place",
+          "because",
+          "they",
+          "have",
+          "some",
+          "restaurants",
+          "because",
+          "they've",
+          "been",
+          "there",
+          "because",
+          "they",
+          "were",
+          "younger"
+        ],
+        "counted_words": [
+          "but",
+          "I",
+          "would",
+          "go",
+          "to",
+          "a",
+          "town",
+          "like",
+          "Applebee's",
+          "and",
+          "probably",
+          "Pizza",
+          "Place",
+          "because",
+          "they",
+          "have",
+          "some",
+          "restaurants",
+          "because",
+          "they've",
+          "been",
+          "there",
+          "because",
+          "they",
+          "were",
+          "younger"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 26,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 14,
+      "text": "And it was pretty good.",
+      "turn_id": 8,
+      "source_rows": [
+        39,
+        40,
+        41
+      ],
+      "corrected_char_start": 687,
+      "corrected_char_end": 710,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "it",
+          "was",
+          "pretty",
+          "good"
+        ],
+        "counted_words": [
+          "And",
+          "it",
+          "was",
+          "pretty",
+          "good"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 15,
+      "text": "There's strawberry banana shake is really good.",
+      "turn_id": 9,
+      "source_rows": [
+        44
+      ],
+      "corrected_char_start": 711,
+      "corrected_char_end": 758,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "There's",
+          "strawberry",
+          "banana",
+          "shake",
+          "is",
+          "really",
+          "good"
+        ],
+        "counted_words": [
+          "There's",
+          "strawberry",
+          "banana",
+          "shake",
+          "is",
+          "really",
+          "good"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 16,
+      "text": "Plus I like Pizza Place Service is only just this one girl,",
+      "turn_id": 10,
+      "source_rows": [
+        46,
+        47
+      ],
+      "corrected_char_start": 759,
+      "corrected_char_end": 818,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Plus",
+          "I",
+          "like",
+          "Pizza",
+          "Place",
+          "Service",
+          "is",
+          "only",
+          "just",
+          "this",
+          "one",
+          "girl"
+        ],
+        "counted_words": [
+          "Plus",
+          "I",
+          "like",
+          "Pizza",
+          "Place",
+          "Service",
+          "is",
+          "only",
+          "just",
+          "this",
+          "one",
+          "girl"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 17,
+      "text": "but that was the only waitress I've heard of, she worked hard.",
+      "turn_id": 10,
+      "source_rows": [
+        46,
+        47
+      ],
+      "corrected_char_start": 819,
+      "corrected_char_end": 881,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "that",
+          "was",
+          "the",
+          "only",
+          "waitress",
+          "I've",
+          "heard",
+          "of",
+          "she",
+          "worked",
+          "hard"
+        ],
+        "counted_words": [
+          "but",
+          "that",
+          "was",
+          "the",
+          "only",
+          "waitress",
+          "I've",
+          "heard",
+          "of",
+          "she",
+          "worked",
+          "hard"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 18,
+      "text": "Most probably it's not, because there was a lot of people, you know, she was coming and going.",
+      "turn_id": 10,
+      "source_rows": [
+        46,
+        47
+      ],
+      "corrected_char_start": 882,
+      "corrected_char_end": 976,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Most",
+          "probably",
+          "it's",
+          "not",
+          "because",
+          "there",
+          "was",
+          "a",
+          "lot",
+          "of",
+          "people",
+          "you",
+          "know",
+          "she",
+          "was",
+          "coming",
+          "and",
+          "going"
+        ],
+        "counted_words": [
+          "Most",
+          "probably",
+          "it's",
+          "not",
+          "because",
+          "there",
+          "was",
+          "a",
+          "lot",
+          "of",
+          "people",
+          "you",
+          "know",
+          "she",
+          "was",
+          "coming",
+          "and",
+          "going"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 19,
+      "text": "Ooh, because there was, besides anybody else that was working there, it was the people on vacation, she was the only waitress out of any training there, she was cooking to get everyone.",
+      "turn_id": 11,
+      "source_rows": [
+        49,
+        50
+      ],
+      "corrected_char_start": 977,
+      "corrected_char_end": 1162,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Ooh",
+          "because",
+          "there",
+          "was",
+          "besides",
+          "anybody",
+          "else",
+          "that",
+          "was",
+          "working",
+          "there",
+          "it",
+          "was",
+          "the",
+          "people",
+          "on",
+          "vacation",
+          "she",
+          "was",
+          "the",
+          "only",
+          "waitress",
+          "out",
+          "of",
+          "any",
+          "training",
+          "there",
+          "she",
+          "was",
+          "cooking",
+          "to",
+          "get",
+          "everyone"
+        ],
+        "counted_words": [
+          "Ooh",
+          "because",
+          "there",
+          "was",
+          "besides",
+          "anybody",
+          "else",
+          "that",
+          "was",
+          "working",
+          "there",
+          "it",
+          "was",
+          "the",
+          "people",
+          "on",
+          "vacation",
+          "she",
+          "was",
+          "the",
+          "only",
+          "waitress",
+          "out",
+          "of",
+          "any",
+          "training",
+          "there",
+          "she",
+          "was",
+          "cooking",
+          "to",
+          "get",
+          "everyone"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 33,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 20,
+      "text": "And I would be there.",
+      "turn_id": 11,
+      "source_rows": [
+        49,
+        50
+      ],
+      "corrected_char_start": 1163,
+      "corrected_char_end": 1184,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "I",
+          "would",
+          "be",
+          "there"
+        ],
+        "counted_words": [
+          "And",
+          "I",
+          "would",
+          "be",
+          "there"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 21,
+      "text": "I also like Culver's, with their chicken's really good.",
+      "turn_id": 12,
+      "source_rows": [
+        52,
+        53
+      ],
+      "corrected_char_start": 1185,
+      "corrected_char_end": 1240,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "also",
+          "like",
+          "Culver's",
+          "with",
+          "their",
+          "chicken's",
+          "really",
+          "good"
+        ],
+        "counted_words": [
+          "I",
+          "also",
+          "like",
+          "Culver's",
+          "with",
+          "their",
+          "chicken's",
+          "really",
+          "good"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 22,
+      "text": "I like Andy's, there ice cream's really good.",
+      "turn_id": 12,
+      "source_rows": [
+        52,
+        53
+      ],
+      "corrected_char_start": 1241,
+      "corrected_char_end": 1286,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "like",
+          "Andy's",
+          "there",
+          "ice",
+          "cream's",
+          "really",
+          "good"
+        ],
+        "counted_words": [
+          "I",
+          "like",
+          "Andy's",
+          "there",
+          "ice",
+          "cream's",
+          "really",
+          "good"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 23,
+      "text": "And these are good.",
+      "turn_id": 13,
+      "source_rows": [
+        58
+      ],
+      "corrected_char_start": 1287,
+      "corrected_char_end": 1306,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "these",
+          "are",
+          "good"
+        ],
+        "counted_words": [
+          "And",
+          "these",
+          "are",
+          "good"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 24,
+      "text": "Only been there two times,",
+      "turn_id": 14,
+      "source_rows": [
+        60
+      ],
+      "corrected_char_start": 1307,
+      "corrected_char_end": 1333,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Only",
+          "been",
+          "there",
+          "two",
+          "times"
+        ],
+        "counted_words": [
+          "Only",
+          "been",
+          "there",
+          "two",
+          "times"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 25,
+      "text": "but the other two times I've been to was at C and H.",
+      "turn_id": 14,
+      "source_rows": [
+        60
+      ],
+      "corrected_char_start": 1334,
+      "corrected_char_end": 1386,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "the",
+          "other",
+          "two",
+          "times",
+          "I've",
+          "been",
+          "to",
+          "was",
+          "at",
+          "C",
+          "and",
+          "H"
+        ],
+        "counted_words": [
+          "but",
+          "the",
+          "other",
+          "two",
+          "times",
+          "I've",
+          "been",
+          "to",
+          "was",
+          "at",
+          "C",
+          "and",
+          "H"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 13,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 26,
+      "text": "I've only been there probably two times,",
+      "turn_id": 15,
+      "source_rows": [
+        62
+      ],
+      "corrected_char_start": 1387,
+      "corrected_char_end": 1427,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I've",
+          "only",
+          "been",
+          "there",
+          "probably",
+          "two",
+          "times"
+        ],
+        "counted_words": [
+          "I've",
+          "only",
+          "been",
+          "there",
+          "probably",
+          "two",
+          "times"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 7,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 27,
+      "text": "but it's really pretty good stuff.",
+      "turn_id": 15,
+      "source_rows": [
+        62
+      ],
+      "corrected_char_start": 1428,
+      "corrected_char_end": 1462,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "it's",
+          "really",
+          "pretty",
+          "good",
+          "stuff"
+        ],
+        "counted_words": [
+          "but",
+          "it's",
+          "really",
+          "pretty",
+          "good",
+          "stuff"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 28,
+      "text": "I just like the turkey.",
+      "turn_id": 16,
+      "source_rows": [
+        74,
+        75
+      ],
+      "corrected_char_start": 1463,
+      "corrected_char_end": 1486,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "just",
+          "like",
+          "the",
+          "turkey"
+        ],
+        "counted_words": [
+          "I",
+          "just",
+          "like",
+          "the",
+          "turkey"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 29,
+      "text": "At Subway I would get, I mean, the turkey and the other sandwiches.",
+      "turn_id": 16,
+      "source_rows": [
+        74,
+        75
+      ],
+      "corrected_char_start": 1487,
+      "corrected_char_end": 1554,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "At",
+          "Subway",
+          "I",
+          "would",
+          "get",
+          "I",
+          "mean",
+          "the",
+          "turkey",
+          "and",
+          "the",
+          "other",
+          "sandwiches"
+        ],
+        "counted_words": [
+          "At",
+          "Subway",
+          "I",
+          "would",
+          "get",
+          "I",
+          "mean",
+          "the",
+          "turkey",
+          "and",
+          "the",
+          "other",
+          "sandwiches"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 13,
+        "review_flags": [
+          "possible_repair_or_abandonment_requires_audio",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 30,
+      "text": "Have you guys had that one ice cream place in Columbia ish called Orange",
+      "turn_id": 17,
+      "source_rows": [
+        80
+      ],
+      "corrected_char_start": 1555,
+      "corrected_char_end": 1627,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Have",
+          "you",
+          "guys",
+          "had",
+          "that",
+          "one",
+          "ice",
+          "cream",
+          "place",
+          "in",
+          "Columbia",
+          "ish",
+          "called",
+          "Orange"
+        ],
+        "counted_words": [
+          "Have",
+          "you",
+          "guys",
+          "had",
+          "that",
+          "one",
+          "ice",
+          "cream",
+          "place",
+          "in",
+          "Columbia",
+          "ish",
+          "called",
+          "Orange"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 14,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 31,
+      "text": "Leaf?",
+      "turn_id": 18,
+      "source_rows": [
+        84,
+        85
+      ],
+      "corrected_char_start": 1628,
+      "corrected_char_end": 1633,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Leaf"
+        ],
+        "counted_words": [
+          "Leaf"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 1,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 32,
+      "text": "At Culver's, there's strawberry, they're chocolate, they're strawberry ice cream, so.",
+      "turn_id": 18,
+      "source_rows": [
+        84,
+        85
+      ],
+      "corrected_char_start": 1634,
+      "corrected_char_end": 1719,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "At",
+          "Culver's",
+          "there's",
+          "strawberry",
+          "they're",
+          "chocolate",
+          "they're",
+          "strawberry",
+          "ice",
+          "cream",
+          "so"
+        ],
+        "counted_words": [
+          "At",
+          "Culver's",
+          "there's",
+          "strawberry",
+          "they're",
+          "chocolate",
+          "they're",
+          "strawberry",
+          "ice",
+          "cream",
+          "so"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 33,
+      "text": "They got like little strawberry pieces in there, like chocolate pieces, but at Orange Leaf, their pineapple ice cream.",
+      "turn_id": 18,
+      "source_rows": [
+        84,
+        85
+      ],
+      "corrected_char_start": 1720,
+      "corrected_char_end": 1838,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "They",
+          "got",
+          "like",
+          "little",
+          "strawberry",
+          "pieces",
+          "in",
+          "there",
+          "like",
+          "chocolate",
+          "pieces",
+          "but",
+          "at",
+          "Orange",
+          "Leaf",
+          "their",
+          "pineapple",
+          "ice",
+          "cream"
+        ],
+        "counted_words": [
+          "They",
+          "got",
+          "like",
+          "little",
+          "strawberry",
+          "pieces",
+          "in",
+          "there",
+          "like",
+          "chocolate",
+          "pieces",
+          "but",
+          "at",
+          "Orange",
+          "Leaf",
+          "their",
+          "pineapple",
+          "ice",
+          "cream"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 19,
+        "review_flags": [
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 34,
+      "text": "Yes, and, Orange Leaf, I haven't been there for a while, so I don't know what other flavors they have,",
+      "turn_id": 19,
+      "source_rows": [
+        87
+      ],
+      "corrected_char_start": 1839,
+      "corrected_char_end": 1941,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Yes",
+          "and",
+          "Orange",
+          "Leaf",
+          "I",
+          "haven't",
+          "been",
+          "there",
+          "for",
+          "a",
+          "while",
+          "so",
+          "I",
+          "don't",
+          "know",
+          "what",
+          "other",
+          "flavors",
+          "they",
+          "have"
+        ],
+        "counted_words": [
+          "Yes",
+          "and",
+          "Orange",
+          "Leaf",
+          "I",
+          "haven't",
+          "been",
+          "there",
+          "for",
+          "a",
+          "while",
+          "so",
+          "I",
+          "don't",
+          "know",
+          "what",
+          "other",
+          "flavors",
+          "they",
+          "have"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 20,
+        "review_flags": [
+          "surface_contraction_count_not_morphology",
+          "possible_multiword_name_requires_word_grouping_review"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 35,
+      "text": "but they probably have to be, like, every meat.",
+      "turn_id": 19,
+      "source_rows": [
+        87
+      ],
+      "corrected_char_start": 1942,
+      "corrected_char_end": 1989,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "they",
+          "probably",
+          "have",
+          "to",
+          "be",
+          "like",
+          "every",
+          "meat"
+        ],
+        "counted_words": [
+          "but",
+          "they",
+          "probably",
+          "have",
+          "to",
+          "be",
+          "like",
+          "every",
+          "meat"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 36,
+      "text": "Probably one of my favorite desserts.",
+      "turn_id": 20,
+      "source_rows": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 1990,
+      "corrected_char_end": 2027,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "Probably",
+          "one",
+          "of",
+          "my",
+          "favorite",
+          "desserts"
+        ],
+        "counted_words": [
+          "Probably",
+          "one",
+          "of",
+          "my",
+          "favorite",
+          "desserts"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 37,
+      "text": "I would say.",
+      "turn_id": 20,
+      "source_rows": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 2028,
+      "corrected_char_end": 2040,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "would",
+          "say"
+        ],
+        "counted_words": [
+          "I",
+          "would",
+          "say"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 38,
+      "text": "I couldn't, okay, I think, I'm, it was my sister's cake.",
+      "turn_id": 20,
+      "source_rows": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 2041,
+      "corrected_char_end": 2097,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "couldn't",
+          "okay",
+          "I",
+          "think",
+          "I'm",
+          "it",
+          "was",
+          "my",
+          "sister's",
+          "cake"
+        ],
+        "counted_words": [
+          "I",
+          "couldn't",
+          "okay",
+          "I",
+          "think",
+          "I'm",
+          "it",
+          "was",
+          "my",
+          "sister's",
+          "cake"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 39,
+      "text": "It was this-",
+      "turn_id": 20,
+      "source_rows": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 2098,
+      "corrected_char_end": 2110,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "It",
+          "was",
+          "this"
+        ],
+        "counted_words": [
+          "It",
+          "was",
+          "this"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 40,
+      "text": "it was this wild berry milkshake.",
+      "turn_id": 20,
+      "source_rows": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 2111,
+      "corrected_char_end": 2144,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "it",
+          "was",
+          "this",
+          "wild",
+          "berry",
+          "milkshake"
+        ],
+        "counted_words": [
+          "it",
+          "was",
+          "this",
+          "wild",
+          "berry",
+          "milkshake"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 41,
+      "text": "So that for her birthday, they, he got a. Something to go with chocolate, I can't remember what,",
+      "turn_id": 20,
+      "source_rows": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 2145,
+      "corrected_char_end": 2241,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "So",
+          "that",
+          "for",
+          "her",
+          "birthday",
+          "they",
+          "he",
+          "got",
+          "a",
+          "Something",
+          "to",
+          "go",
+          "with",
+          "chocolate",
+          "I",
+          "can't",
+          "remember",
+          "what"
+        ],
+        "counted_words": [
+          "So",
+          "that",
+          "for",
+          "her",
+          "birthday",
+          "they",
+          "he",
+          "got",
+          "a",
+          "Something",
+          "to",
+          "go",
+          "with",
+          "chocolate",
+          "I",
+          "can't",
+          "remember",
+          "what"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 18,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 42,
+      "text": "but it was really,",
+      "turn_id": 20,
+      "source_rows": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 2242,
+      "corrected_char_end": 2260,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "it",
+          "was",
+          "really"
+        ],
+        "counted_words": [
+          "but",
+          "it",
+          "was",
+          "really"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 43,
+      "text": "they really, they really much.",
+      "turn_id": 20,
+      "source_rows": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "corrected_char_start": 2261,
+      "corrected_char_end": 2291,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "they",
+          "really",
+          "they",
+          "really",
+          "much"
+        ],
+        "counted_words": [
+          "they",
+          "really",
+          "they",
+          "really",
+          "much"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 44,
+      "text": "Lemon, it's a lemon,",
+      "turn_id": 21,
+      "source_rows": [
+        98
+      ],
+      "corrected_char_start": 2292,
+      "corrected_char_end": 2312,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Lemon",
+          "it's",
+          "a",
+          "lemon"
+        ],
+        "counted_words": [
+          "Lemon",
+          "it's",
+          "a",
+          "lemon"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 45,
+      "text": "or I think it's.",
+      "turn_id": 21,
+      "source_rows": [
+        98
+      ],
+      "corrected_char_start": 2313,
+      "corrected_char_end": 2329,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "or",
+          "I",
+          "think",
+          "it's"
+        ],
+        "counted_words": [
+          "or",
+          "I",
+          "think",
+          "it's"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 46,
+      "text": "Yes, lemon bars, I, I never, they're very moist too today.",
+      "turn_id": 22,
+      "source_rows": [
+        100
+      ],
+      "corrected_char_start": 2330,
+      "corrected_char_end": 2388,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yes",
+          "lemon",
+          "bars",
+          "I",
+          "I",
+          "never",
+          "they're",
+          "very",
+          "moist",
+          "too",
+          "today"
+        ],
+        "counted_words": [
+          "Yes",
+          "lemon",
+          "bars",
+          "I",
+          "I",
+          "never",
+          "they're",
+          "very",
+          "moist",
+          "too",
+          "today"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 47,
+      "text": "They went to this, next to, my mom's cousin's mother's house, just across from me, there's like this house that was doing like a garage-ish house sale.",
+      "turn_id": 23,
+      "source_rows": [
+        103,
+        104,
+        105,
+        106
+      ],
+      "corrected_char_start": 2389,
+      "corrected_char_end": 2540,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "They",
+          "went",
+          "to",
+          "this",
+          "next",
+          "to",
+          "my",
+          "mom's",
+          "cousin's",
+          "mother's",
+          "house",
+          "just",
+          "across",
+          "from",
+          "me",
+          "there's",
+          "like",
+          "this",
+          "house",
+          "that",
+          "was",
+          "doing",
+          "like",
+          "a",
+          "garage-ish",
+          "house",
+          "sale"
+        ],
+        "counted_words": [
+          "They",
+          "went",
+          "to",
+          "this",
+          "next",
+          "to",
+          "my",
+          "mom's",
+          "cousin's",
+          "mother's",
+          "house",
+          "just",
+          "across",
+          "from",
+          "me",
+          "there's",
+          "like",
+          "this",
+          "house",
+          "that",
+          "was",
+          "doing",
+          "like",
+          "a",
+          "garage-ish",
+          "house",
+          "sale"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 27,
+        "review_flags": [
+          "hyphen_or_fragment_word_grouping_requires_review",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 48,
+      "text": "And we'd go inside, and, down there, if you go down the tables, there'd be a spot, in this specific kitchen where.",
+      "turn_id": 23,
+      "source_rows": [
+        103,
+        104,
+        105,
+        106
+      ],
+      "corrected_char_start": 2541,
+      "corrected_char_end": 2655,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "we'd",
+          "go",
+          "inside",
+          "and",
+          "down",
+          "there",
+          "if",
+          "you",
+          "go",
+          "down",
+          "the",
+          "tables",
+          "there'd",
+          "be",
+          "a",
+          "spot",
+          "in",
+          "this",
+          "specific",
+          "kitchen",
+          "where"
+        ],
+        "counted_words": [
+          "And",
+          "we'd",
+          "go",
+          "inside",
+          "and",
+          "down",
+          "there",
+          "if",
+          "you",
+          "go",
+          "down",
+          "the",
+          "tables",
+          "there'd",
+          "be",
+          "a",
+          "spot",
+          "in",
+          "this",
+          "specific",
+          "kitchen",
+          "where"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 22,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 49,
+      "text": "They were, they would serve food.",
+      "turn_id": 23,
+      "source_rows": [
+        103,
+        104,
+        105,
+        106
+      ],
+      "corrected_char_start": 2656,
+      "corrected_char_end": 2689,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "They",
+          "were",
+          "they",
+          "would",
+          "serve",
+          "food"
+        ],
+        "counted_words": [
+          "They",
+          "were",
+          "they",
+          "would",
+          "serve",
+          "food"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 50,
+      "text": "And then they had lemon bars,",
+      "turn_id": 23,
+      "source_rows": [
+        103,
+        104,
+        105,
+        106
+      ],
+      "corrected_char_start": 2690,
+      "corrected_char_end": 2719,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "then",
+          "they",
+          "had",
+          "lemon",
+          "bars"
+        ],
+        "counted_words": [
+          "And",
+          "then",
+          "they",
+          "had",
+          "lemon",
+          "bars"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 51,
+      "text": "and she got, I,",
+      "turn_id": 23,
+      "source_rows": [
+        103,
+        104,
+        105,
+        106
+      ],
+      "corrected_char_start": 2720,
+      "corrected_char_end": 2735,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "she",
+          "got",
+          "I"
+        ],
+        "counted_words": [
+          "and",
+          "she",
+          "got",
+          "I"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 4,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 52,
+      "text": "and I think you got those, and everything.",
+      "turn_id": 23,
+      "source_rows": [
+        103,
+        104,
+        105,
+        106
+      ],
+      "corrected_char_start": 2736,
+      "corrected_char_end": 2778,
+      "boundary_reason": "coordinate_clause_with_subject",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "and",
+          "I",
+          "think",
+          "you",
+          "got",
+          "those",
+          "and",
+          "everything"
+        ],
+        "counted_words": [
+          "and",
+          "I",
+          "think",
+          "you",
+          "got",
+          "those",
+          "and",
+          "everything"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 53,
+      "text": "They actually had a good amount.",
+      "turn_id": 24,
+      "source_rows": [
+        108
+      ],
+      "corrected_char_start": 2779,
+      "corrected_char_end": 2811,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "They",
+          "actually",
+          "had",
+          "a",
+          "good",
+          "amount"
+        ],
+        "counted_words": [
+          "They",
+          "actually",
+          "had",
+          "a",
+          "good",
+          "amount"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 54,
+      "text": "my, my family, I saw them, and they were, they were, they'd say, we would have those for sure.",
+      "turn_id": 24,
+      "source_rows": [
+        108
+      ],
+      "corrected_char_start": 2812,
+      "corrected_char_end": 2906,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "my",
+          "my",
+          "family",
+          "I",
+          "saw",
+          "them",
+          "and",
+          "they",
+          "were",
+          "they",
+          "were",
+          "they'd",
+          "say",
+          "we",
+          "would",
+          "have",
+          "those",
+          "for",
+          "sure"
+        ],
+        "counted_words": [
+          "my",
+          "my",
+          "family",
+          "I",
+          "saw",
+          "them",
+          "and",
+          "they",
+          "were",
+          "they",
+          "were",
+          "they'd",
+          "say",
+          "we",
+          "would",
+          "have",
+          "those",
+          "for",
+          "sure"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 19,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 55,
+      "text": "Yes, we did cheesecake for my sister's birthday because they got it",
+      "turn_id": 25,
+      "source_rows": [
+        112,
+        113
+      ],
+      "corrected_char_start": 2907,
+      "corrected_char_end": 2974,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Yes",
+          "we",
+          "did",
+          "cheesecake",
+          "for",
+          "my",
+          "sister's",
+          "birthday",
+          "because",
+          "they",
+          "got",
+          "it"
+        ],
+        "counted_words": [
+          "Yes",
+          "we",
+          "did",
+          "cheesecake",
+          "for",
+          "my",
+          "sister's",
+          "birthday",
+          "because",
+          "they",
+          "got",
+          "it"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 12,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 56,
+      "text": "And it was the assorted, so they did different flavors, like strawberry, strawberry short cake.",
+      "turn_id": 25,
+      "source_rows": [
+        112,
+        113
+      ],
+      "corrected_char_start": 2975,
+      "corrected_char_end": 3070,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "And",
+          "it",
+          "was",
+          "the",
+          "assorted",
+          "so",
+          "they",
+          "did",
+          "different",
+          "flavors",
+          "like",
+          "strawberry",
+          "strawberry",
+          "short",
+          "cake"
+        ],
+        "counted_words": [
+          "And",
+          "it",
+          "was",
+          "the",
+          "assorted",
+          "so",
+          "they",
+          "did",
+          "different",
+          "flavors",
+          "like",
+          "strawberry",
+          "strawberry",
+          "short",
+          "cake"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 15,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 57,
+      "text": "Probably strawberry, I like that.",
+      "turn_id": 26,
+      "source_rows": [
+        115
+      ],
+      "corrected_char_start": 3071,
+      "corrected_char_end": 3104,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Probably",
+          "strawberry",
+          "I",
+          "like",
+          "that"
+        ],
+        "counted_words": [
+          "Probably",
+          "strawberry",
+          "I",
+          "like",
+          "that"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 5,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 58,
+      "text": "I've been called a French fry freak, and potato freak, all those kinds of stuff.",
+      "turn_id": 27,
+      "source_rows": [
+        119
+      ],
+      "corrected_char_start": 3105,
+      "corrected_char_end": 3185,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "I've",
+          "been",
+          "called",
+          "a",
+          "French",
+          "fry",
+          "freak",
+          "and",
+          "potato",
+          "freak",
+          "all",
+          "those",
+          "kinds",
+          "of",
+          "stuff"
+        ],
+        "counted_words": [
+          "I've",
+          "been",
+          "called",
+          "a",
+          "French",
+          "fry",
+          "freak",
+          "and",
+          "potato",
+          "freak",
+          "all",
+          "those",
+          "kinds",
+          "of",
+          "stuff"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 15,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 59,
+      "text": "But that's, that's eating entire jazz pizza by myself",
+      "turn_id": 28,
+      "source_rows": [
+        121
+      ],
+      "corrected_char_start": 3186,
+      "corrected_char_end": 3239,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "But",
+          "that's",
+          "that's",
+          "eating",
+          "entire",
+          "jazz",
+          "pizza",
+          "by",
+          "myself"
+        ],
+        "counted_words": [
+          "But",
+          "that's",
+          "that's",
+          "eating",
+          "entire",
+          "jazz",
+          "pizza",
+          "by",
+          "myself"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 9,
+        "review_flags": [
+          "repetition_or_emphasis_requires_audio",
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 60,
+      "text": "Most of it's small, thin crust, so it was pretty easy.",
+      "turn_id": 29,
+      "source_rows": [
+        123
+      ],
+      "corrected_char_start": 3240,
+      "corrected_char_end": 3294,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": true,
+      "scoring": {
+        "surface_words": [
+          "Most",
+          "of",
+          "it's",
+          "small",
+          "thin",
+          "crust",
+          "so",
+          "it",
+          "was",
+          "pretty",
+          "easy"
+        ],
+        "counted_words": [
+          "Most",
+          "of",
+          "it's",
+          "small",
+          "thin",
+          "crust",
+          "so",
+          "it",
+          "was",
+          "pretty",
+          "easy"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 61,
+      "text": "I still would.",
+      "turn_id": 30,
+      "source_rows": [
+        127
+      ],
+      "corrected_char_start": 3295,
+      "corrected_char_end": 3309,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "still",
+          "would"
+        ],
+        "counted_words": [
+          "I",
+          "still",
+          "would"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 62,
+      "text": "I think I remember, probably once or twice as a kid.",
+      "turn_id": 31,
+      "source_rows": [
+        131,
+        132
+      ],
+      "corrected_char_start": 3310,
+      "corrected_char_end": 3362,
+      "boundary_reason": "turn_start",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "I",
+          "think",
+          "I",
+          "remember",
+          "probably",
+          "once",
+          "or",
+          "twice",
+          "as",
+          "a",
+          "kid"
+        ],
+        "counted_words": [
+          "I",
+          "think",
+          "I",
+          "remember",
+          "probably",
+          "once",
+          "or",
+          "twice",
+          "as",
+          "a",
+          "kid"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 11,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 63,
+      "text": "It was okay,",
+      "turn_id": 31,
+      "source_rows": [
+        131,
+        132
+      ],
+      "corrected_char_start": 3363,
+      "corrected_char_end": 3375,
+      "boundary_reason": "sentence_prediction",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "It",
+          "was",
+          "okay"
+        ],
+        "counted_words": [
+          "It",
+          "was",
+          "okay"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 3,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 64,
+      "text": "but I didn't care for it too much,",
+      "turn_id": 31,
+      "source_rows": [
+        131,
+        132
+      ],
+      "corrected_char_start": 3376,
+      "corrected_char_end": 3410,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "I",
+          "didn't",
+          "care",
+          "for",
+          "it",
+          "too",
+          "much"
+        ],
+        "counted_words": [
+          "but",
+          "I",
+          "didn't",
+          "care",
+          "for",
+          "it",
+          "too",
+          "much"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 8,
+        "review_flags": [
+          "surface_contraction_count_not_morphology"
+        ],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    },
+    {
+      "utterance_id": 65,
+      "text": "but it was still pretty good.",
+      "turn_id": 31,
+      "source_rows": [
+        131,
+        132
+      ],
+      "corrected_char_start": 3411,
+      "corrected_char_end": 3440,
+      "boundary_reason": "contrast_clause_with_subject",
+      "turn_mapping_review_required": false,
+      "scoring": {
+        "surface_words": [
+          "but",
+          "it",
+          "was",
+          "still",
+          "pretty",
+          "good"
+        ],
+        "counted_words": [
+          "but",
+          "it",
+          "was",
+          "still",
+          "pretty",
+          "good"
+        ],
+        "excluded_fillers": [],
+        "include_mlu": true,
+        "exclusion_reason": null,
+        "word_count": 6,
+        "review_flags": [],
+        "word_grouping_status": "surface_tokenization_not_reviewed_clinical_grouping"
+      }
+    }
+  ],
+  "turn_alignment": [
+    {
+      "source_word_gap": 8,
+      "corrected_word_gap": 7,
+      "left_source_anchor": 6,
+      "right_source_anchor": 8,
+      "left_corrected_anchor": 5,
+      "right_corrected_anchor": 7,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 26,
+      "corrected_word_gap": 25,
+      "left_source_anchor": 25,
+      "right_source_anchor": 26,
+      "left_corrected_anchor": 24,
+      "right_corrected_anchor": 25,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 34,
+      "corrected_word_gap": 34,
+      "left_source_anchor": 33,
+      "right_source_anchor": 34,
+      "left_corrected_anchor": 32,
+      "right_corrected_anchor": 34,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 41,
+      "corrected_word_gap": 41,
+      "left_source_anchor": 40,
+      "right_source_anchor": 41,
+      "left_corrected_anchor": 40,
+      "right_corrected_anchor": 41,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 63,
+      "corrected_word_gap": 62,
+      "left_source_anchor": 58,
+      "right_source_anchor": 65,
+      "left_corrected_anchor": 59,
+      "right_corrected_anchor": 63,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 91,
+      "corrected_word_gap": 89,
+      "left_source_anchor": 90,
+      "right_source_anchor": 91,
+      "left_corrected_anchor": 88,
+      "right_corrected_anchor": 89,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 94,
+      "corrected_word_gap": 93,
+      "left_source_anchor": 92,
+      "right_source_anchor": 94,
+      "left_corrected_anchor": 91,
+      "right_corrected_anchor": 93,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 135,
+      "corrected_word_gap": 132,
+      "left_source_anchor": 134,
+      "right_source_anchor": 135,
+      "left_corrected_anchor": 131,
+      "right_corrected_anchor": 132,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 142,
+      "corrected_word_gap": 139,
+      "left_source_anchor": 136,
+      "right_source_anchor": 142,
+      "left_corrected_anchor": 133,
+      "right_corrected_anchor": 139,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 187,
+      "corrected_word_gap": 181,
+      "left_source_anchor": 186,
+      "right_source_anchor": 187,
+      "left_corrected_anchor": 180,
+      "right_corrected_anchor": 181,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 229,
+      "corrected_word_gap": 219,
+      "left_source_anchor": 224,
+      "right_source_anchor": 229,
+      "left_corrected_anchor": 218,
+      "right_corrected_anchor": 219,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 247,
+      "corrected_word_gap": 236,
+      "left_source_anchor": 237,
+      "right_source_anchor": 247,
+      "left_corrected_anchor": 227,
+      "right_corrected_anchor": 236,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 251,
+      "corrected_word_gap": 240,
+      "left_source_anchor": 250,
+      "right_source_anchor": 251,
+      "left_corrected_anchor": 239,
+      "right_corrected_anchor": 240,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 270,
+      "corrected_word_gap": 258,
+      "left_source_anchor": 269,
+      "right_source_anchor": 270,
+      "left_corrected_anchor": 257,
+      "right_corrected_anchor": 258,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 284,
+      "corrected_word_gap": 271,
+      "left_source_anchor": 283,
+      "right_source_anchor": 284,
+      "left_corrected_anchor": 270,
+      "right_corrected_anchor": 271,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 304,
+      "corrected_word_gap": 289,
+      "left_source_anchor": 303,
+      "right_source_anchor": 314,
+      "left_corrected_anchor": 288,
+      "right_corrected_anchor": 302,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 315,
+      "corrected_word_gap": 303,
+      "left_source_anchor": 314,
+      "right_source_anchor": 319,
+      "left_corrected_anchor": 302,
+      "right_corrected_anchor": 308,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 345,
+      "corrected_word_gap": 334,
+      "left_source_anchor": 344,
+      "right_source_anchor": 345,
+      "left_corrected_anchor": 333,
+      "right_corrected_anchor": 334,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 376,
+      "corrected_word_gap": 363,
+      "left_source_anchor": 375,
+      "right_source_anchor": 376,
+      "left_corrected_anchor": 362,
+      "right_corrected_anchor": 363,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 441,
+      "corrected_word_gap": 419,
+      "left_source_anchor": 440,
+      "right_source_anchor": 441,
+      "left_corrected_anchor": 418,
+      "right_corrected_anchor": 419,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 450,
+      "corrected_word_gap": 427,
+      "left_source_anchor": 448,
+      "right_source_anchor": 450,
+      "left_corrected_anchor": 426,
+      "right_corrected_anchor": 427,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 461,
+      "corrected_word_gap": 438,
+      "left_source_anchor": 460,
+      "right_source_anchor": 461,
+      "left_corrected_anchor": 437,
+      "right_corrected_anchor": 438,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 554,
+      "corrected_word_gap": 511,
+      "left_source_anchor": 550,
+      "right_source_anchor": 554,
+      "left_corrected_anchor": 509,
+      "right_corrected_anchor": 511,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 581,
+      "corrected_word_gap": 536,
+      "left_source_anchor": 580,
+      "right_source_anchor": 581,
+      "left_corrected_anchor": 535,
+      "right_corrected_anchor": 536,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 610,
+      "corrected_word_gap": 563,
+      "left_source_anchor": 607,
+      "right_source_anchor": 610,
+      "left_corrected_anchor": 560,
+      "right_corrected_anchor": 563,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 615,
+      "corrected_word_gap": 568,
+      "left_source_anchor": 614,
+      "right_source_anchor": 620,
+      "left_corrected_anchor": 567,
+      "right_corrected_anchor": 571,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 632,
+      "corrected_word_gap": 583,
+      "left_source_anchor": 631,
+      "right_source_anchor": 632,
+      "left_corrected_anchor": 582,
+      "right_corrected_anchor": 583,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 645,
+      "corrected_word_gap": 592,
+      "left_source_anchor": 638,
+      "right_source_anchor": 645,
+      "left_corrected_anchor": 587,
+      "right_corrected_anchor": 592,
+      "review_required": true
+    },
+    {
+      "source_word_gap": 658,
+      "corrected_word_gap": 603,
+      "left_source_anchor": 657,
+      "right_source_anchor": 658,
+      "left_corrected_anchor": 602,
+      "right_corrected_anchor": 603,
+      "review_required": false
+    },
+    {
+      "source_word_gap": 661,
+      "corrected_word_gap": 606,
+      "left_source_anchor": 660,
+      "right_source_anchor": 661,
+      "left_corrected_anchor": 605,
+      "right_corrected_anchor": 606,
+      "review_required": false
+    }
+  ],
+  "corrected_exact_word_anchor_fraction": 0.832807570977918,
+  "corrected_metrics": {
+    "total_utterances": 65,
+    "mlu_nutterances": 65,
+    "total_words": 634,
+    "mlu_nwords": 634,
+    "mlu_words": 9.753846153846155,
+    "mlu_words_sd": 6.612414360023051,
+    "mlu_words_sample_sd": 6.663873613632054,
+    "mlu_morphemes": null,
+    "mlu_status": "provisional_documented_exclusions_pending_review",
+    "clinical_mlu_words": null,
+    "flagged_utterances": 36,
+    "excluded_utterances": 0,
+    "policy": "Utterances retain fillers and repetitions; word metrics exclude listed fillers"
+  },
+  "uncorrected_metrics": {
+    "total_utterances": 67,
+    "mlu_nutterances": 67,
+    "total_words": 681,
+    "mlu_nwords": 681,
+    "mlu_words": 10.164179104477611,
+    "mlu_words_sd": 7.376034235451219,
+    "mlu_words_sample_sd": 7.431703208114285,
+    "mlu_morphemes": null,
+    "mlu_status": "provisional_documented_exclusions_pending_review",
+    "clinical_mlu_words": null,
+    "flagged_utterances": 36,
+    "excluded_utterances": 0,
+    "policy": "Utterances retain fillers and repetitions; word metrics exclude listed fillers"
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "source_sha256": "f63474d45d346598e5528ebbf7fd196f086eb2824aae7e650fbfe973879ad9e2",
+  "definition": "All-word count equals content-token count plus function-token count. Category APEs use absolute differences, so opposing category differences do not cancel after taking absolute values.",
+  "participants": [
+    {
+      "participant": "P1",
+      "pipeline": {
+        "basic_ntokens": 1325,
+        "basic_ncontent_tokens": 472,
+        "basic_nfunction_tokens": 853
+      },
+      "human": {
+        "basic_ntokens": 1325,
+        "basic_ncontent_tokens": 468,
+        "basic_nfunction_tokens": 857
+      },
+      "signed_difference": {
+        "basic_ntokens": 0,
+        "basic_ncontent_tokens": 4,
+        "basic_nfunction_tokens": -4
+      },
+      "absolute_percentage_error": {
+        "basic_ntokens": 0.0,
+        "basic_ncontent_tokens": 0.8547008547008547,
+        "basic_nfunction_tokens": 0.46674445740956827
+      }
+    },
+    {
+      "participant": "P2",
+      "pipeline": {
+        "basic_ntokens": 1239,
+        "basic_ncontent_tokens": 476,
+        "basic_nfunction_tokens": 763
+      },
+      "human": {
+        "basic_ntokens": 1239,
+        "basic_ncontent_tokens": 477,
+        "basic_nfunction_tokens": 762
+      },
+      "signed_difference": {
+        "basic_ntokens": 0,
+        "basic_ncontent_tokens": -1,
+        "basic_nfunction_tokens": 1
+      },
+      "absolute_percentage_error": {
+        "basic_ntokens": 0.0,
+        "basic_ncontent_tokens": 0.20964360587002095,
+        "basic_nfunction_tokens": 0.13123359580052493
+      }
+    },
+    {
+      "participant": "P3",
+      "pipeline": {
+        "basic_ntokens": 1110,
+        "basic_ncontent_tokens": 374,
+        "basic_nfunction_tokens": 736
+      },
+      "human": {
+        "basic_ntokens": 1110,
+        "basic_ncontent_tokens": 375,
+        "basic_nfunction_tokens": 735
+      },
+      "signed_difference": {
+        "basic_ntokens": 0,
+        "basic_ncontent_tokens": -1,
+        "basic_nfunction_tokens": 1
+      },
+      "absolute_percentage_error": {
+        "basic_ntokens": 0.0,
+        "basic_ncontent_tokens": 0.26666666666666666,
+        "basic_nfunction_tokens": 0.1360544217687075
+      }
+    },
+    {
+      "participant": "P4",
+      "pipeline": {
+        "basic_ntokens": 401,
+        "basic_ncontent_tokens": 154,
+        "basic_nfunction_tokens": 247
+      },
+      "human": {
+        "basic_ntokens": 401,
+        "basic_ncontent_tokens": 155,
+        "basic_nfunction_tokens": 246
+      },
+      "signed_difference": {
+        "basic_ntokens": 0,
+        "basic_ncontent_tokens": -1,
+        "basic_nfunction_tokens": 1
+      },
+      "absolute_percentage_error": {
+        "basic_ntokens": 0.0,
+        "basic_ncontent_tokens": 0.6451612903225806,
+        "basic_nfunction_tokens": 0.4065040650406504
+      }
+    },
+    {
+      "participant": "P5",
+      "pipeline": {
+        "basic_ntokens": 699,
+        "basic_ncontent_tokens": 310,
+        "basic_nfunction_tokens": 389
+      },
+      "human": {
+        "basic_ntokens": 699,
+        "basic_ncontent_tokens": 310,
+        "basic_nfunction_tokens": 389
+      },
+      "signed_difference": {
+        "basic_ntokens": 0,
+        "basic_ncontent_tokens": 0,
+        "basic_nfunction_tokens": 0
+      },
+      "absolute_percentage_error": {
+        "basic_ntokens": 0.0,
+        "basic_ncontent_tokens": 0.0,
+        "basic_nfunction_tokens": 0.0
+      }
+    },
+    {
+      "participant": "P6",
+      "pipeline": {
+        "basic_ntokens": 661,
+        "basic_ncontent_tokens": 278,
+        "basic_nfunction_tokens": 383
+      },
+      "human": {
+        "basic_ntokens": 661,
+        "basic_ncontent_tokens": 277,
+        "basic_nfunction_tokens": 384
+      },
+      "signed_difference": {
+        "basic_ntokens": 0,
+        "basic_ncontent_tokens": 1,
+        "basic_nfunction_tokens": -1
+      },
+      "absolute_percentage_error": {
+        "basic_ntokens": 0.0,
+        "basic_ncontent_tokens": 0.36101083032490977,
+        "basic_nfunction_tokens": 0.2604166666666667
+      }
+    },
+    {
+      "participant": "P7",
+      "pipeline": {
+        "basic_ntokens": 367,
+        "basic_ncontent_tokens": 126,
+        "basic_nfunction_tokens": 241
+      },
+      "human": {
+        "basic_ntokens": 367,
+        "basic_ncontent_tokens": 126,
+        "basic_nfunction_tokens": 241
+      },
+      "signed_difference": {
+        "basic_ntokens": 0,
+        "basic_ncontent_tokens": 0,
+        "basic_nfunction_tokens": 0
+      },
+      "absolute_percentage_error": {
+        "basic_ntokens": 0.0,
+        "basic_ncontent_tokens": 0.0,
+        "basic_nfunction_tokens": 0.0
+      }
+    },
+    {
+      "participant": "P8",
+      "pipeline": {
+        "basic_ntokens": 923,
+        "basic_ncontent_tokens": 344,
+        "basic_nfunction_tokens": 579
+      },
+      "human": {
+        "basic_ntokens": 923,
+        "basic_ncontent_tokens": 342,
+        "basic_nfunction_tokens": 581
+      },
+      "signed_difference": {
+        "basic_ntokens": 0,
+        "basic_ncontent_tokens": 2,
+        "basic_nfunction_tokens": -2
+      },
+      "absolute_percentage_error": {
+        "basic_ntokens": 0.0,
+        "basic_ncontent_tokens": 0.5847953216374269,
+        "basic_nfunction_tokens": 0.3442340791738382
+      }
+    },
+    {
+      "participant": "P9",
+      "pipeline": {
+        "basic_ntokens": 1293,
+        "basic_ncontent_tokens": 530,
+        "basic_nfunction_tokens": 763
+      },
+      "human": {
+        "basic_ntokens": 1293,
+        "basic_ncontent_tokens": 528,
+        "basic_nfunction_tokens": 765
+      },
+      "signed_difference": {
+        "basic_ntokens": 0,
+        "basic_ncontent_tokens": 2,
+        "basic_nfunction_tokens": -2
+      },
+      "absolute_percentage_error": {
+        "basic_ntokens": 0.0,
+        "basic_ncontent_tokens": 0.3787878787878788,
+        "basic_nfunction_tokens": 0.26143790849673204
+      }
+    },
+    {
+      "participant": "P10",
+      "pipeline": {
+        "basic_ntokens": 600,
+        "basic_ncontent_tokens": 268,
+        "basic_nfunction_tokens": 332
+      },
+      "human": {
+        "basic_ntokens": 600,
+        "basic_ncontent_tokens": 269,
+        "basic_nfunction_tokens": 331
+      },
+      "signed_difference": {
+        "basic_ntokens": 0,
+        "basic_ncontent_tokens": -1,
+        "basic_nfunction_tokens": 1
+      },
+      "absolute_percentage_error": {
+        "basic_ntokens": 0.0,
+        "basic_ncontent_tokens": 0.37174721189591076,
+        "basic_nfunction_tokens": 0.3021148036253776
+      }
+    }
+  ],
+  "medians": {
+    "basic_ntokens": 0.0,
+    "basic_ncontent_tokens": 0.36637902111041026,
+    "basic_nfunction_tokens": 0.26092728758169936
+  }
+}

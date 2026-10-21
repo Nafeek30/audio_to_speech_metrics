@@ -1,0 +1,452 @@
+[
+  {
+    "id": "whole",
+    "title": "Whole pipeline",
+    "sub": "Current transcript workflow. A small audio pilot exists. Broader audio testing is next.",
+    "note": "Vocabulary processing and utterance processing use separate branches.",
+    "nodes": [
+      {
+        "id": "input",
+        "text": "Target-speaker text\nHuman now / ASR later",
+        "x": 64,
+        "y": 200,
+        "w": 240,
+        "h": 90
+      },
+      {
+        "id": "prepare",
+        "text": "Prepare words\nand observed turns",
+        "x": 350,
+        "y": 200,
+        "w": 270,
+        "h": 90
+      },
+      {
+        "id": "model",
+        "text": "Predict utterances\nCustom MiniLM model",
+        "x": 690,
+        "y": 200,
+        "w": 270,
+        "h": 90
+      },
+      {
+        "id": "chat",
+        "text": "Export predicted CHAT",
+        "x": 690,
+        "y": 335,
+        "w": 270,
+        "h": 72
+      },
+      {
+        "id": "clan",
+        "text": "Native CLAN\nMLU and FREQ",
+        "x": 1010,
+        "y": 335,
+        "w": 205,
+        "h": 90
+      },
+      {
+        "id": "surface",
+        "text": "Utterance count\nMLUw and length SD",
+        "x": 1010,
+        "y": 465,
+        "w": 205,
+        "h": 104
+      },
+      {
+        "id": "lex",
+        "text": "Historical TAALED\nprocessing rules",
+        "x": 350,
+        "y": 465,
+        "w": 270,
+        "h": 90
+      },
+      {
+        "id": "vocab",
+        "text": "Vocabulary counts\nand diversity measures",
+        "x": 690,
+        "y": 465,
+        "w": 270,
+        "h": 90
+      },
+      {
+        "id": "audio",
+        "text": "Planned audio / ASR\nSpeaker selection",
+        "x": 64,
+        "y": 465,
+        "w": 240,
+        "h": 90,
+        "planned": true,
+        "size": 23
+      }
+    ],
+    "edges": [
+      {
+        "a": "input",
+        "b": "prepare",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "prepare",
+        "b": "model",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "model",
+        "b": "chat",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      },
+      {
+        "a": "chat",
+        "b": "clan",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "clan",
+        "b": "surface",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      },
+      {
+        "a": "prepare",
+        "b": "lex",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      },
+      {
+        "a": "lex",
+        "b": "vocab",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "audio",
+        "b": "input",
+        "from": "top",
+        "to": "bottom",
+        "planned": true
+      }
+    ]
+  },
+  {
+    "id": "lucid",
+    "title": "LUCID comparison",
+    "sub": "Vocabulary measurements from human transcripts",
+    "note": "180 samples scored. 60 vocoder mappings remain ambiguous. Author-source reconfirmation is pending.",
+    "pending": true,
+    "nodes": [
+      {
+        "id": "tg",
+        "text": "300 downloaded\nLUCID TextGrids",
+        "x": 64,
+        "y": 205,
+        "w": 275,
+        "h": 90
+      },
+      {
+        "id": "speaker",
+        "text": "Extract target speaker\nApply lexical preparation",
+        "x": 420,
+        "y": 205,
+        "w": 300,
+        "h": 90
+      },
+      {
+        "id": "ours",
+        "text": "Our lexical calculations\n15 shared CSV fields",
+        "x": 860,
+        "y": 205,
+        "w": 350,
+        "h": 90
+      },
+      {
+        "id": "ref",
+        "text": "Local reference CSV\n240 sample rows\nSource check pending",
+        "x": 64,
+        "y": 425,
+        "w": 275,
+        "h": 110,
+        "size": 23
+      },
+      {
+        "id": "match",
+        "text": "Match speaker,\ncondition and scene",
+        "x": 420,
+        "y": 425,
+        "w": 300,
+        "h": 110
+      },
+      {
+        "id": "compare",
+        "text": "Compare corresponding values\nReport percentage differences",
+        "x": 860,
+        "y": 425,
+        "w": 350,
+        "h": 110
+      }
+    ],
+    "edges": [
+      {
+        "a": "tg",
+        "b": "speaker",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "speaker",
+        "b": "ours",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "ref",
+        "b": "match",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "speaker",
+        "b": "match",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      },
+      {
+        "a": "match",
+        "b": "compare",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "ours",
+        "b": "compare",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      }
+    ]
+  },
+  {
+    "id": "ocsc",
+    "title": "OCSC comparison",
+    "sub": "Human CHAT supplies the reference words and utterance coding.",
+    "note": "Inference receives words and observed speaker turns. Human utterance endings stay outside model inputs.",
+    "nodes": [
+      {
+        "id": "raw",
+        "text": "OCSC CHAT\n303 source children",
+        "x": 64,
+        "y": 205,
+        "w": 280,
+        "h": 90
+      },
+      {
+        "id": "select",
+        "text": "Select child speech\n301 children / 803 sections",
+        "x": 425,
+        "y": 205,
+        "w": 300,
+        "h": 90
+      },
+      {
+        "id": "predict",
+        "text": "Remove human utterance cuts\nRun retained boundary model",
+        "x": 855,
+        "y": 205,
+        "w": 355,
+        "h": 95,
+        "size": 23
+      },
+      {
+        "id": "reference",
+        "text": "Human CHAT + native CLAN\nReference metrics",
+        "x": 425,
+        "y": 450,
+        "w": 300,
+        "h": 105,
+        "size": 23
+      },
+      {
+        "id": "predicted",
+        "text": "Predicted CHAT + native CLAN\nComputed metrics",
+        "x": 855,
+        "y": 345,
+        "w": 355,
+        "h": 85,
+        "size": 23
+      },
+      {
+        "id": "compare",
+        "text": "Compare values on existing test\n45 children / 111 sections",
+        "x": 855,
+        "y": 475,
+        "w": 355,
+        "h": 95,
+        "size": 23
+      }
+    ],
+    "edges": [
+      {
+        "a": "raw",
+        "b": "select",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "select",
+        "b": "predict",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "select",
+        "b": "reference",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      },
+      {
+        "a": "predict",
+        "b": "predicted",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      },
+      {
+        "a": "predicted",
+        "b": "compare",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      },
+      {
+        "a": "reference",
+        "b": "compare",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      }
+    ]
+  },
+  {
+    "id": "nyu",
+    "title": "NYU–Emerson comparison",
+    "sub": "Human CHAT supplies the reference words and utterance coding.",
+    "note": "Inference receives words and observed speaker turns. Human utterance endings stay outside model inputs.",
+    "nodes": [
+      {
+        "id": "raw",
+        "text": "NYU–Emerson CHAT\n30 source children",
+        "x": 64,
+        "y": 205,
+        "w": 280,
+        "h": 90
+      },
+      {
+        "id": "select",
+        "text": "Select child speech\n28 children / 92 sections",
+        "x": 425,
+        "y": 205,
+        "w": 300,
+        "h": 90
+      },
+      {
+        "id": "predict",
+        "text": "Remove human utterance cuts\nRun retained boundary model",
+        "x": 855,
+        "y": 205,
+        "w": 355,
+        "h": 95,
+        "size": 23
+      },
+      {
+        "id": "reference",
+        "text": "Human CHAT + native CLAN\nReference metrics",
+        "x": 425,
+        "y": 450,
+        "w": 300,
+        "h": 105,
+        "size": 23
+      },
+      {
+        "id": "predicted",
+        "text": "Predicted CHAT + native CLAN\nComputed metrics",
+        "x": 855,
+        "y": 345,
+        "w": 355,
+        "h": 85,
+        "size": 23
+      },
+      {
+        "id": "compare",
+        "text": "Compare values on existing test\n4 children / 15 sections",
+        "x": 855,
+        "y": 475,
+        "w": 355,
+        "h": 95,
+        "size": 23
+      }
+    ],
+    "edges": [
+      {
+        "a": "raw",
+        "b": "select",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "select",
+        "b": "predict",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      },
+      {
+        "a": "select",
+        "b": "reference",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      },
+      {
+        "a": "predict",
+        "b": "predicted",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      },
+      {
+        "a": "predicted",
+        "b": "compare",
+        "from": "bottom",
+        "to": "top",
+        "planned": false
+      },
+      {
+        "a": "reference",
+        "b": "compare",
+        "from": "right",
+        "to": "left",
+        "planned": false
+      }
+    ]
+  }
+]

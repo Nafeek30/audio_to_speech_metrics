@@ -1,0 +1,28 @@
+{
+  "configuration": "lr2_count1",
+  "recipe": {
+    "encoder_lr": 2e-05,
+    "head_lr": 0.0001,
+    "count_weight": 1.0
+  },
+  "margin": 0.0,
+  "eval_sections_checked": 139,
+  "all_utterances_matched": true,
+  "activated": true,
+  "model_sha256": "536749495e695a24bbe2f1f2561cadf0e8e1a72ff5e13d5809a59486531380d2",
+  "cv_selection_sha256": "1ecd62518c4a4fe0560279d4e59bcf269a43386a43080c39a1945bf676021215",
+  "actual_cli_checks": [
+    {
+      "corpus": "nyu_emerson",
+      "key": "nyu_emerson/transcripts/2006.cha#section2",
+      "exact_utterances_and_native_metrics": true
+    },
+    {
+      "corpus": "ocsc",
+      "key": "ocsc/transcripts/4/4006.cha#section5",
+      "exact_utterances_and_native_metrics": true
+    }
+  ],
+  "workflow_sha256": "7910a8a69dad86a4f0a224c2b5b200ceecc67e06684e6aa5fbf4285c4cd55688",
+  "deployment_basis": "Registered five-fold CV recipe ranking; final eval checkpoint/margin; no test-based deployment choice"
+}

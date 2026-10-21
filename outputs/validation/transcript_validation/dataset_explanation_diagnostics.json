@@ -1,0 +1,115 @@
+{
+  "scope": "Read-only explanation after frozen calibration. New transcript inspection uses validation participants only; train/test summaries use already scored aggregates. No tuning or model changes.",
+  "corpora": {
+    "nyu_emerson": {
+      "train": {
+        "sections": 63,
+        "participants": 20,
+        "median_reference_eligible_count": 21.0,
+        "sections_reference_count_below10": 10,
+        "signed_count_percentage_error_participant_balanced": 5.584846394558545,
+        "overcount_sections": 41,
+        "undercount_sections": 7,
+        "median_reference_MLUw": 2.025,
+        "boundary_precision": 90.85743801652893,
+        "boundary_recall": 95.5458989679522,
+        "boundary_fp": 177,
+        "boundary_fn": 82
+      },
+      "validation": {
+        "sections": 14,
+        "participants": 4,
+        "median_reference_eligible_count": 19.0,
+        "sections_reference_count_below10": 2,
+        "signed_count_percentage_error_participant_balanced": 8.730380584944884,
+        "overcount_sections": 9,
+        "undercount_sections": 4,
+        "median_reference_MLUw": 1.9270833333333333,
+        "boundary_precision": 85.14285714285714,
+        "boundary_recall": 87.90560471976401,
+        "boundary_fp": 52,
+        "boundary_fn": 41
+      },
+      "test": {
+        "sections": 15,
+        "participants": 4,
+        "median_reference_eligible_count": 36.0,
+        "sections_reference_count_below10": 0,
+        "signed_count_percentage_error_participant_balanced": 28.792530772336114,
+        "overcount_sections": 13,
+        "undercount_sections": 2,
+        "median_reference_MLUw": 2.8904109589041096,
+        "boundary_precision": 74.6987951807229,
+        "boundary_recall": 93.0,
+        "boundary_fp": 189,
+        "boundary_fn": 42
+      },
+      "validation_text_diagnostics": {
+        "human_surface_utterances": 500,
+        "median_surface_utterance_length": 2.0,
+        "surface_utterances_1or2words_percent": 66.0,
+        "observed_target_turns": 311,
+        "verbal_target_rows": 503,
+        "unintelligible_rows_percent": 23.061630218687874,
+        "unintelligible_tokens_per100words": 10.90764331210191,
+        "retrace_marks_per100rows": 2.3856858846918487,
+        "filled_pauses_per100rows": 4.572564612326044
+      }
+    },
+    "ocsc": {
+      "train": {
+        "sections": 567,
+        "participants": 211,
+        "median_reference_eligible_count": 76.0,
+        "sections_reference_count_below10": 28,
+        "signed_count_percentage_error_participant_balanced": 3.48165161176196,
+        "overcount_sections": 315,
+        "undercount_sections": 185,
+        "median_reference_MLUw": 4.085106382978723,
+        "boundary_precision": 88.40909999600176,
+        "boundary_recall": 89.52045505151717,
+        "boundary_fp": 5798,
+        "boundary_fn": 5177
+      },
+      "validation": {
+        "sections": 125,
+        "participants": 45,
+        "median_reference_eligible_count": 82.0,
+        "sections_reference_count_below10": 6,
+        "signed_count_percentage_error_participant_balanced": 2.396691537352369,
+        "overcount_sections": 59,
+        "undercount_sections": 52,
+        "median_reference_MLUw": 4.05,
+        "boundary_precision": 88.44669354147011,
+        "boundary_recall": 88.3860461129682,
+        "boundary_fp": 1347,
+        "boundary_fn": 1355
+      },
+      "test": {
+        "sections": 111,
+        "participants": 45,
+        "median_reference_eligible_count": 91.0,
+        "sections_reference_count_below10": 6,
+        "signed_count_percentage_error_participant_balanced": 5.6179120714644135,
+        "overcount_sections": 71,
+        "undercount_sections": 31,
+        "median_reference_MLUw": 4.158878504672897,
+        "boundary_precision": 86.32173913043478,
+        "boundary_recall": 89.7883502170767,
+        "boundary_fp": 1573,
+        "boundary_fn": 1129
+      },
+      "validation_text_diagnostics": {
+        "human_surface_utterances": 12051,
+        "median_surface_utterance_length": 4.0,
+        "surface_utterances_1or2words_percent": 34.41208198489752,
+        "observed_target_turns": 6362,
+        "verbal_target_rows": 12132,
+        "unintelligible_rows_percent": 2.134849983514672,
+        "unintelligible_tokens_per100words": 0.5704474966770049,
+        "retrace_marks_per100rows": 0.7253544345532477,
+        "filled_pauses_per100rows": 12.042532146389712
+      }
+    }
+  }
+}

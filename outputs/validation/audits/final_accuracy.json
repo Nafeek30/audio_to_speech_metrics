@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-08",
+  "manuscript_sha256": "182e7a63d87bedf530bf35d510de77690c968ae54f1916a2e28d1117b55bef03",
+  "numerical_verification": {
+    "passed_checks": 2955,
+    "boundary": {
+      "Previous": {
+        "n": 8446,
+        "f1": 85.30232558139535,
+        "agreement": 96.25858394506275,
+        "kappa": 0.831659368787599,
+        "precision": 90.16715830875123,
+        "recall": 80.93556928508384
+      },
+      "Revised": {
+        "n": 8446,
+        "f1": 88.64042933810376,
+        "agreement": 96.99265924698082,
+        "kappa": 0.8690771029506053,
+        "precision": 89.84587488667272,
+        "recall": 87.46690203000882
+      }
+    },
+    "human_interrater": {
+      "n": 2840,
+      "f1": 85.47486033519553,
+      "agreement": 96.3380281690141,
+      "kappa": 0.8338044906998939,
+      "precision": 84.06593406593407,
+      "recall": 86.93181818181819
+    },
+    "wer_median": 10.278504084780748,
+    "abstract_words": 176,
+    "citation_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "scope": "Independent arithmetic/bootstrap verification from saved paired scores, boundary contingency counts, and transcript file hashes. Not an independent relabeling of recordings."
+  },
+  "source_recomputation": {
+    "passed_source_checks": 544,
+    "primary_labels": "Manual utterance column E; primary human workbook",
+    "fresh_predictions": 14,
+    "recomputed_complete_samples": 10,
+    "recomputed_WER_recordings": 37,
+    "recomputed_human_interrater_recordings": 4,
+    "versions": {
+      "spacy": "3.8.14",
+      "en-core-web-sm": "3.8.0",
+      "taaled": "0.32",
+      "pylats": "0.64"
+    }
+  },
+  "rendered_pages_inspected": 8,
+  "reference_audit": "conference_paper/reference_claim_audit_20261008.md",
+  "unresolved": [
+    "Exact MOSS model/provider/version and citation",
+    "Full text unavailable for references 3, 6, 10, 12, 15; accessible narrow claims checked",
+    "Primary spaCy software citation remains to be added"
+  ],
+  "limits": "Does not independently confirm author-supplied participant metadata, rater conduct, funding, clinical validity, or performance on independent recordings."
+}

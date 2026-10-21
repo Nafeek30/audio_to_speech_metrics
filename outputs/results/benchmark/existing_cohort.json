@@ -1,0 +1,97 @@
+{
+  "recordings": 14,
+  "participants": 10,
+  "metric_errors": {
+    "basic_ntokens": {
+      "median_participant_mean_recording_ape": 0.0,
+      "min_recording_ape": 0.0,
+      "max_recording_ape": 0.0
+    },
+    "basic_ntypes": {
+      "median_participant_mean_recording_ape": 0.303286589912879,
+      "min_recording_ape": 0.0,
+      "max_recording_ape": 1.2738853503184713
+    },
+    "basic_ncontent_tokens": {
+      "median_participant_mean_recording_ape": 0.36038371791547835,
+      "min_recording_ape": 0.0,
+      "max_recording_ape": 1.3513513513513513
+    },
+    "basic_ncontent_types": {
+      "median_participant_mean_recording_ape": 0.47619047619047616,
+      "min_recording_ape": 0.0,
+      "max_recording_ape": 0.9523809523809523
+    },
+    "basic_nfunction_tokens": {
+      "median_participant_mean_recording_ape": 0.2735760971055089,
+      "min_recording_ape": 0.0,
+      "max_recording_ape": 0.7159904534606205
+    },
+    "basic_nfunction_types": {
+      "median_participant_mean_recording_ape": 0.7041231126596981,
+      "min_recording_ape": 0.0,
+      "max_recording_ape": 4.545454545454546
+    },
+    "simple_ttr_aw": {
+      "median_participant_mean_recording_ape": 0.30328658991288115,
+      "min_recording_ape": 0.0,
+      "max_recording_ape": 1.273885350318477
+    },
+    "mattr50_aw": {
+      "median_participant_mean_recording_ape": 0.08218074310384381,
+      "min_recording_ape": 0.0,
+      "max_recording_ape": 0.7192174913693875
+    },
+    "total_utterances": {
+      "median_participant_mean_recording_ape": 6.282894736842105,
+      "min_recording_ape": 0.0,
+      "max_recording_ape": 35.9375
+    },
+    "mlu_words": {
+      "median_participant_mean_recording_ape": 6.398058252427191,
+      "min_recording_ape": 0.0,
+      "max_recording_ape": 56.09756097560976
+    },
+    "mlu_words_sd": {
+      "median_participant_mean_recording_ape": 16.764646909791562,
+      "min_recording_ape": 1.2620596594041196,
+      "max_recording_ape": 172.87591548929544
+    }
+  },
+  "boundary_f1": 0.8864042933810375,
+  "boundary_f1_cluster_bootstrap_ci": [
+    0.824258676294859,
+    0.9389960773581463
+  ],
+  "boundary_alignment_coverage_range": [
+    1.0,
+    1.0
+  ],
+  "mlu_repeated_measures_agreement": {
+    "bias": 0.32159054108664037,
+    "lower_loa": -3.017049264761847,
+    "upper_loa": 3.660230346935128,
+    "within_patient_variance": 2.901636142277305,
+    "between_patient_variance": 0.0,
+    "variance_ratio_log1p": 0.0,
+    "sd_difference": 1.7034189567682123,
+    "observed_difference_min": -1.8909090909090907,
+    "observed_difference_max": 5.609756097560975,
+    "bias_ci_lower": -0.20442533837166252,
+    "bias_ci_upper": 0.8852258407667966,
+    "lower_loa_ci_lower": -4.569490446794275,
+    "lower_loa_ci_upper": -0.7234625781973801,
+    "upper_loa_ci_lower": 0.7590553712675688,
+    "upper_loa_ci_upper": 6.196213788169336,
+    "normality_shapiro_p": 0.000789642713215136,
+    "difference_mean_slope": 0.1088084755485475,
+    "difference_mean_slope_ci_lower": -0.11762770511589835,
+    "difference_mean_slope_ci_upper": 0.27802354591640666,
+    "estimation_note": "REML between-patient variance at zero boundary."
+  },
+  "source_hashes": {
+    "outputs/results/human_comparison/metric_pairs.csv": "7623b640cbcb13f69527b19889599d85ecc531656d83280ac010ce7e2eaf6142",
+    "outputs/results/human_comparison/boundary_recordings.csv": "baf44480e9dbdff47bec99989b3ad40d96a4fa1042778270a420751662dcc07a"
+  },
+  "assessment": "Development-cohort descriptive results. No universal clinical acceptable-error threshold; prespecify intended-use tolerances and seek external validation."
+}
