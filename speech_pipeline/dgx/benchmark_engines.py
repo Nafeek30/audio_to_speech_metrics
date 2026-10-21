@@ -91,12 +91,24 @@ class WhisperEngine(BaseAudioEngine):
             ts = chunk.get("timestamp", (0.0, 0.0))
             t_start = ts[0] if (ts and ts[0] is not None) else 0.0
             t_end = ts[1] if (ts and len(ts) > 1 and ts[1] is not None) else t_start
+            text_str = chunk.get("text", "").strip()
+            if text_str:
+                segments.append({
+                    "segment_id": idx,
+                    "speaker": "SPEAKER_00",
+                    "text": text_str,
+                    "start": float(t_start),
+                    "end": float(t_end)
+                })
+        
+        # Fallback if chunks was empty or not populated by pipeline
+        if not segments and res.get("text", "").strip():
             segments.append({
-                "segment_id": idx,
+                "segment_id": 1,
                 "speaker": "SPEAKER_00",
-                "text": chunk.get("text", "").strip(),
-                "start": float(t_start),
-                "end": float(t_end)
+                "text": res["text"].strip(),
+                "start": 0.0,
+                "end": runtime
             })
             
         return {
@@ -243,6 +255,53 @@ class SenseVoiceEngine(BaseAudioEngine):
         }
 
 
+class NeMoEngine(BaseAudioEngine):
+    """DGX-accelerated NVIDIA NeMo FastConformer transcription and diarization engine."""
+    
+    def __init__(self, model_name_or_path: str = "nvidia/stt_en_fastconformer_transducer_large", device: str = "auto", dtype: Optional[str] = None):
+        super().__init__(model_name_or_path, device, dtype)
+        import nemo.collections.asr as nemo_asr
+        print(f"[*] Initializing NVIDIA NeMo ({self.model_identifier}) on {self.device}...", flush=True)
+        try:
+            self.model = nemo_asr.models.ASRModel.from_pretrained(model_name=self.model_identifier)
+        except Exception:
+            try:
+                self.model = nemo_asr.models.EncDecRNNTBPEModel.from_pretrained(model_name=self.model_identifier)
+            except Exception:
+                self.model = nemo_asr.models.EncDecCTCModelBPE.from_pretrained(model_name=self.model_identifier)
+        self.model = self.model.to(self.device).eval()
+
+    def transcribe_and_diarize(self, audio_path: Path) -> Dict[str, Any]:
+        start_time = time.monotonic()
+        audio_path = Path(audio_path).resolve()
+        
+        transcriptions = self.model.transcribe([str(audio_path)])
+        runtime = time.monotonic() - start_time
+        
+        text = transcriptions[0] if isinstance(transcriptions, list) and transcriptions else str(transcriptions)
+        if hasattr(text, 'text'):
+            text = text.text
+        text = str(text).strip()
+        
+        segments = [{
+            "segment_id": 1,
+            "speaker": "SPEAKER_00",
+            "text": text,
+            "start": 0.0,
+            "end": runtime
+        }]
+        
+        return {
+            "engine": "nemo_fastconformer",
+            "model": self.model_identifier,
+            "device": str(self.device),
+            "audio_file": str(audio_path),
+            "runtime_seconds": runtime,
+            "text": text,
+            "segments": segments
+        }
+
+
 def get_engine(engine_name: str, model_path_or_name: Optional[str] = None, device: str = "auto", dtype: Optional[str] = None) -> BaseAudioEngine:
     """Factory helper to load requested engine."""
     eng = engine_name.lower().strip()
@@ -254,5 +313,8 @@ def get_engine(engine_name: str, model_path_or_name: Optional[str] = None, devic
         return MossDiarizeEngine(target, device=device, dtype=dtype)
     elif eng in ("sensevoice", "funasr"):
         return SenseVoiceEngine(device=device, dtype=dtype)
+    elif eng in ("nemo", "fastconformer"):
+        target = model_path_or_name or "nvidia/stt_en_fastconformer_transducer_large"
+        return NeMoEngine(target, device=device, dtype=dtype)
     else:
-        raise ValueError(f"Unknown engine: {engine_name}. Choose 'whisper', 'moss', or 'sensevoice'.")
+        raise ValueError(f"Unknown engine: {engine_name}. Choose 'whisper', 'moss', 'sensevoice', or 'nemo'.")

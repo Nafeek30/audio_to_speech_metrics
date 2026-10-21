@@ -10,6 +10,7 @@ from speech_pipeline.dgx.device_utils import (
 from speech_pipeline.dgx.benchmark_engines import (
     BaseAudioEngine,
     MossDiarizeEngine,
+    NeMoEngine,
     SenseVoiceEngine,
     WhisperEngine,
     get_engine,
@@ -37,6 +38,7 @@ __all__ = [
     "WhisperEngine",
     "MossDiarizeEngine",
     "SenseVoiceEngine",
+    "NeMoEngine",
     "get_engine",
     "compute_wer",
     "compute_cpwer",

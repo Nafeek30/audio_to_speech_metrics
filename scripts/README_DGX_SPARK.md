@@ -65,7 +65,37 @@ python scripts/dgx_benchmark.py --audio-dir dataset/public/ocsc/audio/ --engine 
 
 ---
 
-## 3. Audio Model Fine-Tuning on DGX (`scripts/dgx_finetune.py`)
+## 3. Zero-Shot 4-Model ENNI External Benchmark Evaluation
+
+Evaluate **Whisper, MOSS-Transcribe-Diarize, SenseVoice, and NeMo** zero-shot on raw ENNI audio, extract the target child speech, segment into C-units, compute clinical LSA metrics, and benchmark against published literature (SATE, Batchalign, SaT 3L).
+
+### Step 1: Download & Reconstruct ENNI Continuous Audio
+Acquire continuous session WAV files directly from the open mirror into `dataset/public_external/enni/audio/` (gitignored, held-out test only):
+
+```bash
+# Option A: Download the 6 balanced representative pilot sessions (TD & SLI across ages)
+python scripts/download_enni_audio.py --pilot
+
+# Option B: Download all 350+ ENNI sessions
+python scripts/download_enni_audio.py --all
+```
+
+### Step 2: Run the 4-Model Zero-Shot Benchmark on DGX
+```bash
+python scripts/run_four_models_benchmark.py \
+  --engines whisper moss sensevoice nemo \
+  --device cuda \
+  --dtype bf16 \
+  --output-dir outputs/results/four_models_benchmark/
+```
+
+*This generates:*
+1. `outputs/results/four_models_benchmark/results.json`: Full 3-Tier scores (WER/cpWER, boundary F1, clinical metrics).
+2. `outputs/results/four_models_benchmark/REPORT.md`: Formatted comparison table directly benchmarking against SATE Pipeline (Hou et al., 2026), Batchalign 0.10.4 (Liu et al., 2023), and SaT 3L (Frohmann et al., 2024).
+
+---
+
+## 4. Audio Model Fine-Tuning on DGX (`scripts/dgx_finetune.py`)
 
 Fine-tune ASR / Diarization models (MOSS-Transcribe-Diarize or Whisper) using DGX Tensor Cores and LoRA (Low-Rank Adaptation):
 

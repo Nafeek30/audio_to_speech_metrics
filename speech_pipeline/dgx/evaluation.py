@@ -133,6 +133,10 @@ def evaluate_3tier(
     )
     mapped_hyp_speaker = target_assignment['hypothesis_speaker'] if target_assignment else None
     
+    # In single-speaker ASR hypotheses (e.g. standard Whisper without diarizer), map to the sole hypothesis speaker
+    if mapped_hyp_speaker is None and len(hyp_by_spk) == 1:
+        mapped_hyp_speaker = list(hyp_by_spk.keys())[0]
+
     tier1 = {
         "cpwer": cpwer_res['cpwer_percent'],
         "target_reference_speaker": target_speaker,
